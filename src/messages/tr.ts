@@ -1,0 +1,125 @@
+/** Arayüz sözlüğü — TR referans dil. de.ts ve en.ts bu tipe uymak zorunda. */
+export const tr = {
+  site: {
+    title: "Abitur & Sprachzertifikat",
+    tagline:
+      "Açık uçlu sorular, her adımı gerekçeli çözümler. Ücretsiz, reklamsız, açık kaynak.",
+  },
+  nav: {
+    home: "Ana sayfa",
+    abitur: "Abitur",
+    sz: "Sprachzertifikat",
+    language: "Dil",
+    skipToContent: "İçeriğe geç",
+  },
+  landing: {
+    mehr: "Burada başka neler var?",
+    mini: [
+      { pill: "Mathematik", titel: "Fonksiyon grafiği", text: "f(x) = x³ − 6x² + 9x eğrisi, katsayılardan noktası noktasına hesaplanır. Soruda katsayı değişirse çizim de değişir." },
+      { pill: "Mathematik", titel: "Belirli integral alanı", text: "−2 ile 2 arasında eğrinin altında kalan alan boyanır: integralin ne ölçtüğü tek bakışta görünür." },
+      { pill: "Physik", titel: "Kuvvet vektörleri", text: "Eğik düzlemde ağırlık G, düzleme paralel ve dik bileşenlerine ayrılır — açı değişince oklar da döner." },
+      { pill: "Chemie", titel: "Titrasyon eğrisi", text: "Eklenen baz miktarına karşı pH. Kırmızı nokta eşdeğerlik noktası: eğrinin en dik yeri." },
+      { pill: "Biologie", titel: "Enzim aktivitesi", text: "Sıcaklığa karşı aktivite. Optimumdan sonra enzim denatüre olur, eğri hızla düşer." },
+      { pill: "Deutsch", titel: "Argüman şeması", text: "Erörterung'un iskeleti: tez, karşı görüş, kanıt, sonuç. Yazmadan önce şemayı doldurursun." },
+    ],
+    pick: "Nereden başlamak istersin?",
+    kicker: "Özel Alman Lisesi öğrencileri tarafından",
+    heroA: "İki kapı.",
+    heroB: "Bir masa.",
+    heroText:
+      "Açık uçlu sorular, her adımı gerekçeli çözümler. Oturduğun yerden 40 dakika: oku, kendin yaz, sonra çözümü aç. Ücretsiz, reklamsız, hesapsız.",
+    tuer: "Kapı",
+    faecher: "ders",
+    szTitle: "Sprachzertifikat",
+    szDesc:
+      "Goethe-Zertifikat C1 ve C2. Lesen, Hören, Schreiben, Sprechen — gerçek sınav uzunluğunda metinler ve değerlendirme ölçütleri.",
+    szGo: "Modüllere git",
+    abiturTitle: "Abitur",
+    abiturDesc:
+      "Matematik, fizik, kimya, biyoloji, Almanca, İngilizce. Abitur sınav formatında açık uçlu sorular, AFB kademeleriyle.",
+    abiturGo: "Derslere git",
+    cta: "Başla",
+    warum: "Neden farklıyız?",
+    warum1Titel: "Abitur sisteminin aynısı.",
+    warum1:
+      "Her soru AFB I–III kademesiyle, operatörüyle ve Erwartungshorizont puan dağılımıyla yazılır. Sınavda ne görüyorsan burada da o.",
+    warum2Titel: "Her adımın gerekçesi var.",
+    warum2:
+      "“Bu adım neden atıldı?” her çözüm adımının yanında — Türkçesiyle birlikte.",
+    warum3Titel: "Hiçbir veri toplanmaz.",
+    warum3:
+      "Hesap gerekmez, takip yok. Yazdıkların yalnızca kendi tarayıcında kalır.",
+  },
+  abitur: {
+    title: "Abitur dersleri",
+    chooseFach: "Bir ders seç",
+    themen: "Konu alanları",
+  },
+  sz: {
+    title: "Sprachzertifikat",
+    chooseZertifikat: "Bir sertifika seç",
+    module: "Modüller",
+  },
+  liste: {
+    fertig: "Yazılmış dersler",
+    nochNicht: "Henüz yazılmadı",
+    oeffnen: "Aç",
+    bereit: "Hazır",
+    themenAnzahl: "konu alanı",
+    aufgaben: "Sorular",
+    leer: "Bu bölümde henüz soru yok.",
+    bald: "Yakında",
+    anzahl: "soru",
+  },
+  aufgabe: {
+    afb: "Anforderungsbereich",
+    nachVersuch: "Denedikten sonra",
+    tippHint: "tıkanmadıysan açma",
+    notiz: "not",
+    ansatzHint: "yalnızca ilk hamle",
+    loesungOeffnen: "Musterlösung aç",
+    erklaerMir: "Cevabı açıkla",
+    schritteNav: "Adımlar",
+    mitBegruendung: "her adımın gerekçesiyle",
+    material: "Materyal",
+    deinAnsatz: "Kendi çözümün",
+    deinAnsatzHinweis:
+      "Önce kendin dene. Yazdıkların yalnızca bu tarayıcıda kalır — hiçbir yere gönderilmez.",
+    platzhalter: "Çözümünü buraya yaz…",
+    gespeichert: "Bu tarayıcıya kaydedildi",
+    tipp: "İpucu",
+    ansatz: "Başlangıç adımı",
+    musterloesung: "Örnek çözüm (Musterlösung)",
+    erwartungshorizont: "Puanlama (Erwartungshorizont)",
+    warum: "Bu adım neden?",
+    schritt: "Adım",
+    punkte: "puan",
+    gesamt: "Toplam",
+    haeufigeFehler: "Sık yapılan hatalar",
+    dauer: "Süre",
+    minuten: "dk",
+    schwierigkeit: "Zorluk",
+    niveau: "Seviye",
+    operatoren: "Operatörler",
+    textsorte: "Metin türü",
+    quelle: "Kaynak",
+    geprueftVon: "İnceleyen",
+  },
+  demo: {
+    banner:
+      "Sorular, çıkmış Abitur sınavları ve okul Klausur'ları örnek alınarak yazıldı — sayılar ve bağlam değiştirildi, resmî sınav metni değildir. Bazı dersler henüz eksik.",
+  },
+  footer: {
+    wer: "Kimiz?",
+    werText: "Özel Alman Lisesi öğrencileri tarafından yazılıyor. Sınava hazırlanan ve sınavı yeni vermiş öğrenciler soruları kendileri hazırlıyor, çözümleri kendileri yazıyor.",
+    kontakt: "Bize ulaş",
+    kontaktLeer: "İletişim bilgileri henüz eklenmedi.",
+    mitmachen: "Katkıda bulun",
+    mitmachenText: "Soru yazmak, çözüm denetlemek veya çeviri yapmak istersen yaz — hangi ders ve konu olduğunu belirtmen yeterli.",
+    mitmachenCta: "Yazmak istiyorum",
+    license: "İçerik CC BY-SA 4.0 lisansıyla paylaşılmaktadır.",
+    nonprofit: "Kâr amacı gütmez · reklam yok · takip yok",
+  },
+};
+
+export type Messages = typeof tr;
