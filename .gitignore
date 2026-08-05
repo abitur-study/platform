@@ -39,3 +39,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ---------------------------------------------------------------
+# Telifli sınav kaynakları — ASLA yayınlanmaz.
+# Sorular bunlardan türetildi ama kendileri bize ait değil;
+# her sorunun `quelle` alanı kaynağı zaten belirtiyor.
+# ---------------------------------------------------------------
+/ABITUR APP/
+/docs/soru-yazimi/kaynaklar/
+
+# Bilgi grafiği — yerel araç çıktısı, türetilebilir
+/graphify-out/
+
+# Çalışma notları
+/bilmemne.md

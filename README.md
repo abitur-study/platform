@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Abitur & Sprachzertifikat
 
-## Getting Started
+İstanbul Erkek Lisesi / Alman Lisesi öğrencileri için ücretsiz, reklamsız,
+açık kaynak çalışma sitesi. Abitur dersleri ve Goethe-Zertifikat C1/C2.
 
-First, run the development server:
+**Açık uçlu sorular, her adımı gerekçeli çözümler.** Çoktan seçmeli yok —
+sınavda nasıl yazıyorsan burada da öyle yazıyorsun.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Neden farklı
+
+- **Çoktan seçmeli hiç yok.** Her soru Abitur sınav formatında, yazılı üretim.
+- **Her çözüm adımının gerekçesi var.** "Bu adım neden atıldı?" sorusunun
+  cevabı her adımın yanında — Almanca ve Türkçe.
+- **Hiçbir veri toplanmaz.** Hesap yok, takip yok, reklam yok, analytics yok.
+- Sorular çıkmış Abitur sınavları ve okul klausurları örnek alınarak yazıldı;
+  sayılar ve bağlam değiştirildi. Resmî sınav metni değildir.
+
+## Nasıl çalışıyor
+
+Çalışma anında sunucu ve veritabanı **yok** — build'in kendisi backend.
+
+```
+content/schema.ts          Zod sözleşmesi (bereich: abitur | sprachzertifikat)
+content/registry.ts        dersler, konular, sertifikalar, izinli operatörler
+content/aufgaben/**.json   sorular
+src/lib/content.ts         build sırasında okur ve doğrular
+src/lib/markdown.ts        Markdown + LaTeX → HTML (remark/rehype + KaTeX)
+src/app/[locale]/…         kök layout; params bir Promise, await edilir
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Soru eklemek = doğru klasöre bir JSON koymak. Rotalar `registry.ts`'ten
+kendiliğinden üretilir; kayıt ya da import gerekmez.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`src/i18n.ts` + `src/messages/{tr,de,en}.ts` — elle yazılmış i18n.
+`tr.ts` referans sözlüktür; tipi diğer iki dilde anahtar eşliğini zorunlu kılar.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Geliştirme
 
-## Learn More
+```bash
+npm install
+npm run dev        # http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+npm run validate   # şema + puan toplamları + LaTeX, her içerik JSON'u üzerinde
+npm run test       # doğrulayıcının kendi testleri
+npm run build      # out/ klasörüne statik export
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`npm run validate` on kapıdan geçirir: şema, çoktan seçmeli dedektörü, LaTeX
+derlemesi, `warum` alanlarının uzunluğu, puan toplamı, operatör beyaz listesi,
+`id` benzersizliği ve sorular arası metin benzerliği.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Soru yazmak
 
-## Deploy on Vercel
+`docs/soru-yazimi/BRIEF.md` kendi kendine yeten bir yazım kılavuzudur: şema,
+müfredat sınırları, KaTeX tuzakları ve doğrulama kapıları.
+`docs/soru-yazimi/ornek-aufgabe.json` hedef kalite seviyesidir.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Katkı vermek istersen hangi ders ve konu olduğunu belirterek yaz.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Lisans
+
+- **Kod:** [GNU AGPL-3.0](LICENSE) — türetilmiş bir servis çalıştıran herkes
+  kaynağını da açmak zorundadır. Bu proje ücretsiz kalsın diye böyle seçildi.
+- **İçerik** (`content/aufgaben/**`): CC BY-SA 4.0.
+
+Kâr amacı gütmez · reklam yok · takip yok.
