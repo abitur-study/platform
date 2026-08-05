@@ -1,0 +1,89 @@
+{
+  "bereich": "abitur",
+  "id": "physik-schwingungen-federpendel-022",
+  "titel": "Langsamer Schwingkreis und die Analogie zum Federpendel",
+  "fach": "physik",
+  "themenbereich": "Schwingungen und Schwingkreis",
+  "themenbereich_slug": "schwingungen",
+  "unterthema": "Analogie Schwingkreis — Federpendel",
+  "niveau": "GK",
+  "operatoren": ["berechnen", "darstellen", "skizzieren", "vergleichen"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 25,
+  "aufgabenstellung": "Eine Schülergruppe baut absichtlich einen sehr „langsamen“ Schwingkreis, damit man die Schwingung auf dem Bildschirm eines Messwerterfassungssystems mit bloßem Auge verfolgen kann. Verwendet werden eine Spule mit der Induktivität $L = 250\\ \\text{H}$ und ein Kondensator mit der Kapazität $C = 160\\ \\mu\\text{F}$.\n\nDer Kondensator wird zunächst über einen Vorwiderstand an eine Gleichspannungsquelle mit $U_0 = 50\\ \\text{V}$ gelegt und vollständig aufgeladen. Zur Zeit $t = 0$ wird ein Schalter umgelegt, sodass der Kondensator ausschließlich über die Spule entladen wird. Die ohmschen Widerstände im Schwingkreis werden vernachlässigt.\n\na) Berechnen Sie die Schwingungsdauer und die Kreisfrequenz der Schwingung.\n\nb) Berechnen Sie die zum Zeitpunkt $t = 0$ im Kondensator gespeicherte Energie sowie die größte Stromstärke, die nach dem Umlegen des Schalters im Schwingkreis auftreten kann. (Zur Kontrolle: $I_{\\text{max}} = 40\\ \\text{mA}$)\n\nc) Stellen Sie die Stromstärke $I$ als Funktion der Zeit $t$ dar und skizzieren Sie den zugehörigen Verlauf für eine volle Periode in ein beschriftetes $t$-$I$-Diagramm. Nutzen Sie dabei die Ergebnisse aus a) und b).\n\nd) Vergleichen Sie den elektromagnetischen Schwingkreis mit einem waagerecht schwingenden Federpendel, indem Sie den Größen $Q$, $I$, $L$, $\\frac{1}{C}$, $E_{\\text{el}}$ und $E_{\\text{magn}}$ die jeweils entsprechende mechanische Größe zuordnen.",
+  "material": [],
+  "tipps": [
+    "Für die Kreisfrequenz musst du nicht erst $T$ berechnen und dann umrechnen: $\\omega = \\frac{2\\pi}{T}$ vereinfacht sich mit der Thomsonschen Formel zu einem sehr kurzen Ausdruck.",
+    "Bei b) reicht die Überlegung, dass die Gesamtenergie erhalten bleibt und beide Energiemaxima zu verschiedenen Zeiten, aber mit demselben Betrag auftreten.",
+    "Überlege für c) zuerst, welchen Wert der Strom bei $t = 0$ hat, wenn der Kondensator in diesem Moment voll geladen ist. Daraus ergibt sich, ob eine Sinus- oder eine Kosinusfunktion passt."
+  ],
+  "loesung": {
+    "gesamtpunkte": 16,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Schwingungsdauer und Kreisfrequenz berechnen",
+        "inhalt": "Thomsonsche Schwingungsformel:\n\n$$T = 2\\pi\\sqrt{L\\cdot C} = 2\\pi\\cdot\\sqrt{250\\ \\text{H}\\cdot 160\\cdot 10^{-6}\\ \\text{F}} = 2\\pi\\cdot\\sqrt{0{,}040\\ \\text{s}^2} = 2\\pi\\cdot 0{,}20\\ \\text{s} \\approx 1{,}26\\ \\text{s}$$\n\nDie Kreisfrequenz folgt daraus:\n\n$$\\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{1{,}26\\ \\text{s}} \\approx 5{,}0\\ \\frac{1}{\\text{s}}$$\n\nKürzer geht es direkt: $\\omega = \\frac{2\\pi}{2\\pi\\sqrt{L\\,C}} = \\frac{1}{\\sqrt{L\\cdot C}} = \\frac{1}{0{,}20\\ \\text{s}} = 5{,}0\\ \\frac{1}{\\text{s}}$.",
+        "warum": {
+          "de": "Die ungewöhnlich großen Bauteilwerte sind kein Zufall: Nur mit einer Induktivität im Bereich von Hunderten Henry und einer Kapazität im Bereich von hundert Mikrofarad kommt man auf eine Periodendauer im Sekundenbereich, die man ohne Oszilloskop sehen kann. Ein üblicher Rundfunk-Schwingkreis mit $\\mu\\text{H}$ und $\\text{pF}$ schwingt millionenfach schneller.",
+          "tr": "Devre elemanlarının alışılmadık büyüklükte olması rastlantı değildir: periyodu saniye mertebesine, yani çıplak gözle görülebilir hale getirmek için yüzlerce henry'lik bir indüktans ve yüz mikrofarad mertebesinde bir kapasite gerekir. Alışıldık bir radyo devresi $\\mu\\text{H}$ ve $\\text{pF}$ ile milyonlarca kat hızlı salınır."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Gespeicherte Energie zum Zeitpunkt $t = 0$ berechnen",
+        "inhalt": "Bei $t = 0$ ist der Kondensator voll geladen und es fließt noch kein Strom; die gesamte Energie steckt im elektrischen Feld:\n\n$$E_{\\text{el,max}} = \\frac{1}{2}\\cdot C\\cdot U_0^2 = \\frac{1}{2}\\cdot 160\\cdot 10^{-6}\\ \\text{F}\\cdot (50\\ \\text{V})^2 = \\frac{1}{2}\\cdot 160\\cdot 10^{-6}\\cdot 2500\\ \\text{J} = 0{,}20\\ \\text{J}$$",
+        "warum": {
+          "de": "Die Spannung geht quadratisch ein, die Kapazität nur linear. Eine Verdopplung der Ladespannung vervierfacht die gespeicherte Energie — deshalb ist die Ladespannung und nicht die Kapazität die empfindlichste Stellschraube, wenn man im Versuch einen größeren Strom erreichen will.",
+          "tr": "Gerilim karesiyle, kapasite ise yalnızca birinci dereceden girer. Şarj gerilimini iki katına çıkarmak depolanan enerjiyi dört katına çıkarır — bu yüzden deneyde daha büyük bir akım isteniyorsa en duyarlı ayar düğmesi kapasite değil, şarj gerilimidir."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 3,
+        "titel": "Maximale Stromstärke aus der Energieerhaltung bestimmen",
+        "inhalt": "Da kein ohmscher Widerstand Energie entzieht, bleibt die Gesamtenergie erhalten. Ist der Kondensator vollständig entladen, sitzt die gesamte Energie im Magnetfeld der Spule, und dort ist der Strom maximal:\n\n$$E_{\\text{magn,max}} = E_{\\text{el,max}}\\quad\\Longrightarrow\\quad \\frac{1}{2}\\,L\\,I_{\\text{max}}^2 = \\frac{1}{2}\\,C\\,U_0^2$$\n\n$$I_{\\text{max}} = U_0\\cdot\\sqrt{\\frac{C}{L}} = 50\\ \\text{V}\\cdot\\sqrt{\\frac{160\\cdot 10^{-6}\\ \\text{F}}{250\\ \\text{H}}} = 50\\ \\text{V}\\cdot\\sqrt{6{,}4\\cdot 10^{-7}}\\ \\frac{\\text{A}}{\\text{V}} = 50\\cdot 8{,}0\\cdot 10^{-4}\\ \\text{A}$$\n\n$$I_{\\text{max}} = 0{,}040\\ \\text{A} = 40\\ \\text{mA}$$\n\nProbe über die Energie: $\\frac{1}{2}\\cdot 250\\ \\text{H}\\cdot (0{,}040\\ \\text{A})^2 = 0{,}20\\ \\text{J}$ — das stimmt mit Schritt 2 überein.",
+        "warum": {
+          "de": "Die Größenordnung ist die eigentliche Lehre: $50\\ \\text{V}$ liegen an, und trotzdem fließen nur $40\\ \\text{mA}$. Die Ursache ist das sehr große Verhältnis $L/C$, das wie eine starke Trägheit wirkt. Wer stattdessen mit dem ohmschen Gesetz rechnet, hat gar keinen Widerstand zur Verfügung und merkt daran, dass hier ein anderes Prinzip gefragt ist.",
+          "tr": "Asıl ders büyüklük mertebesindedir: $50\\ \\text{V}$ uygulanmasına rağmen yalnızca $40\\ \\text{mA}$ akar. Nedeni, güçlü bir atalet gibi davranan çok büyük $L/C$ oranıdır. Bunun yerine Ohm yasasını kullanmaya kalkan, elinde hiçbir direnç değeri olmadığını görür; bu da burada başka bir ilkenin sorulduğunun işaretidir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 4,
+        "titel": "Stromstärke als Zeitfunktion darstellen und skizzieren",
+        "inhalt": "Bei $t = 0$ ist der Kondensator voll geladen, also ist $I(0) = 0$. Eine Funktion, die bei $t = 0$ null ist und danach anwächst, ist der Sinus:\n\n$$I(t) = I_{\\text{max}}\\cdot\\sin(\\omega\\cdot t) = 40\\ \\text{mA}\\cdot\\sin\\left(5{,}0\\ \\frac{1}{\\text{s}}\\cdot t\\right)$$\n\nDazu gehört der Spannungsverlauf $U(t) = -U_0\\cdot\\cos(\\omega\\cdot t)$; Strom und Spannung sind um eine Viertelperiode gegeneinander verschoben.\n\n**Skizze:** Waagerechte Achse $t$ von $0$ bis $T = 1{,}26\\ \\text{s}$, senkrechte Achse $I$ von $-40\\ \\text{mA}$ bis $+40\\ \\text{mA}$. Der Graph beginnt im Ursprung, erreicht bei $t = T/4 \\approx 0{,}31\\ \\text{s}$ den Höchstwert $+40\\ \\text{mA}$, schneidet bei $t = T/2 \\approx 0{,}63\\ \\text{s}$ die Zeitachse, erreicht bei $t = 3T/4 \\approx 0{,}94\\ \\text{s}$ den Tiefstwert $-40\\ \\text{mA}$ und ist bei $t = T \\approx 1{,}26\\ \\text{s}$ wieder null.",
+        "warum": {
+          "de": "Sinus oder Kosinus entscheidet sich nicht durch Auswendiglernen, sondern durch die Anfangsbedingung: Man setzt $t = 0$ ein und prüft, ob das Ergebnis zum physikalischen Startzustand passt. Hätte man den Schalter im Moment des maximalen Stromes umgelegt, wäre der Kosinus richtig. Das negative Vorzeichen bei $U(t)$ hält fest, dass sich der Kondensator umpolt.",
+          "tr": "Sinüs mü kosinüs mü olduğuna ezberle değil, başlangıç koşuluyla karar verilir: $t = 0$ konur ve sonucun fiziksel başlangıç durumuna uyup uymadığına bakılır. Anahtar akımın maksimum olduğu anda kapatılsaydı doğru seçim kosinüs olurdu. $U(t)$'deki eksi işareti ise kondansatörün kutuplarının ters döndüğünü belirtir."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 5,
+        "titel": "Analogie zum Federpendel herstellen",
+        "inhalt": "Beide Systeme werden von derselben Art Schwingungsgleichung beschrieben; die Größen entsprechen einander so:\n\n$$\\begin{array}{c|c}\\text{Schwingkreis} & \\text{Federpendel} \\\\ \\hline \\text{Ladung } Q & \\text{Auslenkung } s \\\\ \\text{Stromstärke } I & \\text{Geschwindigkeit } v \\\\ \\text{Induktivität } L & \\text{Masse } m \\\\ \\frac{1}{C} & \\text{Federkonstante } D \\\\ E_{\\text{el}} = \\frac{1}{2}\\frac{Q^2}{C} & E_{\\text{Spann}} = \\frac{1}{2}D\\,s^2 \\\\ E_{\\text{magn}} = \\frac{1}{2}L\\,I^2 & E_{\\text{kin}} = \\frac{1}{2}m\\,v^2\\end{array}$$\n\nAuch die Formeln für die Schwingungsdauer entsprechen einander:\n\n$$T = 2\\pi\\sqrt{L\\cdot C}\\qquad\\longleftrightarrow\\qquad T = 2\\pi\\sqrt{\\frac{m}{D}}$$\n\nDer voll geladene Kondensator entspricht dem Umkehrpunkt des Pendels (maximale Auslenkung, Geschwindigkeit null), der entladene Kondensator der Ruhelage (Auslenkung null, größte Geschwindigkeit).",
+        "warum": {
+          "de": "Die einzige Zuordnung, die man wirklich verstehen muss, ist $\\frac{1}{C}$ zu $D$ — nicht $C$ zu $D$. Eine harte Feder erschwert die Auslenkung, und ein kleiner Kondensator erschwert das Aufnehmen von Ladung; „hart“ entspricht also „kleine Kapazität“. Das erkennt man auch daran, dass in beiden Formeln für $T$ die eine Größe im Zähler und die andere im Nenner steht.",
+          "tr": "Gerçekten anlaşılması gereken tek eşleştirme $C$ ile $D$ değil, $\\frac{1}{C}$ ile $D$ arasındaki eşleştirmedir. Sert bir yay uzamayı zorlaştırır, küçük bir kondansatör de yük almayı zorlaştırır; yani \"sert\", \"küçük kapasite\" demektir. Bunu, her iki $T$ formülünde bir büyüklüğün payda, diğerinin paydada bulunmasından da görebilirsiniz."
+        },
+        "teilpunkte": 4
+      }
+    ],
+    "haeufige_fehler": [
+      "$160\\ \\mu\\text{F}$ als $160\\cdot 10^{-3}\\ \\text{F}$ eingesetzt; das Präfix $\\mu$ steht für $10^{-6}$.",
+      "Kreisfrequenz $\\omega$ und Frequenz $f$ gleichgesetzt; zwischen beiden steht der Faktor $2\\pi$.",
+      "$I_{\\text{max}}$ über das ohmsche Gesetz statt über die Gleichsetzung der beiden Energiemaxima bestimmt.",
+      "Bei $t = 0$ eine Kosinusfunktion für $I(t)$ angesetzt, obwohl der Strom in diesem Moment null ist.",
+      "In der Analogie $C$ statt $\\frac{1}{C}$ der Federkonstante $D$ zugeordnet."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen Landesabitur Physik 2014, Grundkurs, Aufgabe B1",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

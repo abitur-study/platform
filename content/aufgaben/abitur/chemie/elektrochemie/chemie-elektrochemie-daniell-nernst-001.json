@@ -1,0 +1,89 @@
+{
+  "bereich": "abitur",
+  "id": "chemie-elektrochemie-daniell-nernst-001",
+  "titel": "Daniell-Element unter Nichtstandardbedingungen",
+  "fach": "chemie",
+  "themenbereich": "Elektrochemie",
+  "themenbereich_slug": "elektrochemie",
+  "unterthema": "Galvanische Zelle und Nernst-Gleichung",
+  "niveau": "LK",
+  "operatoren": ["darstellen", "berechnen", "erklären", "vergleichen"],
+  "sprache": "de",
+  "schwierigkeit": 4,
+  "bearbeitungszeit_min": 35,
+  "aufgabenstellung": "Ein Daniell-Element besteht aus einer Zink-Halbzelle und einer Kupfer-Halbzelle, die über eine Salzbrücke verbunden sind. Die Zink-Halbzelle enthält Zinksulfat-Lösung mit $c(\\mathrm{Zn^{2+}}) = 0{,}010\\ \\frac{\\text{mol}}{\\text{L}}$, die Kupfer-Halbzelle Kupfersulfat-Lösung mit $c(\\mathrm{Cu^{2+}}) = 1{,}0\\ \\frac{\\text{mol}}{\\text{L}}$. Die Temperatur beträgt $25\\ ^\\circ\\text{C}$.\n\nStandardpotentiale: $E^0(\\mathrm{Zn}/\\mathrm{Zn^{2+}}) = -0{,}76\\ \\text{V}$, $E^0(\\mathrm{Cu}/\\mathrm{Cu^{2+}}) = +0{,}34\\ \\text{V}$.\n\na) Stellen Sie die Redox-Teilgleichungen und die Gesamtgleichung dar. Ordnen Sie den Halbzellen jeweils Anode und Kathode sowie Minus- und Pluspol zu.\n\nb) Berechnen Sie die Zellspannung unter den angegebenen Bedingungen und vergleichen Sie sie mit der Standardzellspannung.\n\nc) Erklären Sie, wie an einer Metallelektrode in der Lösung ihres Salzes ein Potential entsteht.",
+  "material": [],
+  "tipps": [
+    "Das unedlere Metall hat das negativere Standardpotential. Welches Metall gibt seine Elektronen leichter ab?",
+    "Die Nernst-Gleichung lautet für eine Metall-Metallionen-Halbzelle bei $25\\ ^\\circ\\text{C}$: $E = E^0 + \\frac{0{,}059\\ \\text{V}}{z}\\cdot\\lg c(\\mathrm{Me}^{z+})$. Wie groß ist $z$ hier?",
+    "Achte auf das Vorzeichen des Logarithmus einer Zahl kleiner als eins."
+  ],
+  "loesung": {
+    "gesamtpunkte": 13,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Teilgleichungen aufstellen und Pole zuordnen",
+        "inhalt": "Zink ist das unedlere Metall und wird oxidiert:\n\n$$\\mathrm{Zn} \\longrightarrow \\mathrm{Zn^{2+}} + 2\\,e^-$$\n\nKupfer-Ionen werden reduziert:\n\n$$\\mathrm{Cu^{2+}} + 2\\,e^- \\longrightarrow \\mathrm{Cu}$$\n\nGesamtgleichung:\n\n$$\\mathrm{Zn} + \\mathrm{Cu^{2+}} \\longrightarrow \\mathrm{Zn^{2+}} + \\mathrm{Cu}$$\n\nZuordnung: Die Zink-Halbzelle ist die Anode, weil dort die Oxidation abläuft. Da die freigesetzten Elektronen sich an der Zinkelektrode sammeln, ist sie in der galvanischen Zelle zugleich der Minuspol. Die Kupfer-Halbzelle ist die Kathode (Reduktion) und der Pluspol.",
+        "warum": {
+          "de": "Die Merkregel „Anode gleich Oxidation, Kathode gleich Reduktion“ gilt immer. Die Zuordnung der *Pole* dagegen nicht: Bei der Elektrolyse ist die Anode der Pluspol, in der galvanischen Zelle der Minuspol. Deshalb muss man die Pole über die Elektronen begründen und darf sie nicht auswendig an die Begriffe koppeln — das ist die häufigste Verwechslung im ganzen Themengebiet.",
+          "tr": "\"Anot oksidasyon, katot redüksiyon\" kuralı her zaman geçerlidir. *Kutupların* atanması ise değil: elektrolizde anot artı kutup, galvanik hücrede eksi kutuptur. Bu yüzden kutupları elektronlar üzerinden gerekçelendirmek, kavramlara ezberden bağlamamak gerekir — bu konunun en sık yapılan karıştırmasıdır."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Nernst-Gleichung ansetzen",
+        "inhalt": "Für eine Metall-Metallionen-Halbzelle bei $25\\ ^\\circ\\text{C}$ gilt\n\n$$E = E^0 + \\frac{0{,}059\\ \\text{V}}{z}\\cdot\\lg c(\\mathrm{Me}^{z+})$$\n\nBeide Metalle geben zwei Elektronen ab, also $z = 2$ und $\\frac{0{,}059\\ \\text{V}}{2} = 0{,}0295\\ \\text{V}$.",
+        "warum": {
+          "de": "Die Nernst-Gleichung wird gebraucht, sobald die Konzentrationen von $1\\ \\frac{\\text{mol}}{\\text{L}}$ abweichen — genau das ist hier bei Zink der Fall. Der Faktor $\\frac{1}{z}$ ist keine Formalie: Er sorgt dafür, dass Halbzellen mit dreiwertigen Ionen empfindlicher auf Konzentrationsänderungen reagieren als solche mit einwertigen.",
+          "tr": "Nernst denklemi, derişimler $1\\ \\frac{\\text{mol}}{\\text{L}}$'den saptığı anda gerekir — burada çinkoda tam olarak bu durum vardır. $\\frac{1}{z}$ çarpanı biçimsel değildir: üç değerlikli iyonlu yarı hücrelerin derişim değişimlerine, tek değerliklilerden daha duyarlı tepki vermesini sağlar."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 3,
+        "titel": "Halbzellenpotentiale berechnen",
+        "inhalt": "Zink-Halbzelle mit $c(\\mathrm{Zn^{2+}}) = 0{,}010\\ \\frac{\\text{mol}}{\\text{L}}$, also $\\lg c = -2$:\n\n$$E(\\mathrm{Zn}) = -0{,}76\\ \\text{V} + 0{,}0295\\ \\text{V}\\cdot(-2) = -0{,}76\\ \\text{V} - 0{,}059\\ \\text{V} = -0{,}819\\ \\text{V}$$\n\nKupfer-Halbzelle mit $c(\\mathrm{Cu^{2+}}) = 1{,}0\\ \\frac{\\text{mol}}{\\text{L}}$, also $\\lg c = 0$:\n\n$$E(\\mathrm{Cu}) = +0{,}34\\ \\text{V} + 0{,}0295\\ \\text{V}\\cdot 0 = +0{,}34\\ \\text{V}$$\n\nDie Kupfer-Halbzelle liegt unter Standardbedingungen vor, ihr Potential bleibt daher unverändert.",
+        "warum": {
+          "de": "Das negative Vorzeichen des Logarithmus ist hier das ganze Ergebnis: Eine Verdünnung der Zinkionen macht die Zink-Halbzelle *negativer*, also unedler. Chemisch ist das plausibel — je weniger Zinkionen bereits in Lösung sind, desto leichter geht weiteres Zink in Lösung. Die Formel bestätigt nur, was die Anschauung erwarten lässt.",
+          "tr": "Logaritmanın eksi işareti burada sonucun ta kendisidir: çinko iyonlarının seyreltilmesi çinko yarı hücresini *daha negatif*, yani daha az soy yapar. Kimyasal olarak da makuldür — çözeltide ne kadar az çinko iyonu varsa, yeni çinkonun çözünmesi o kadar kolaydır. Formül yalnızca sezginin beklediğini doğrular."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 4,
+        "titel": "Zellspannung berechnen und vergleichen",
+        "inhalt": "Die Zellspannung ist die Differenz aus dem Potential der Kathode und dem der Anode:\n\n$$\\Delta E = E(\\mathrm{Kathode}) - E(\\mathrm{Anode}) = +0{,}34\\ \\text{V} - (-0{,}819\\ \\text{V}) \\approx 1{,}16\\ \\text{V}$$\n\nUnter Standardbedingungen wäre\n\n$$\\Delta E^0 = 0{,}34\\ \\text{V} - (-0{,}76\\ \\text{V}) = 1{,}10\\ \\text{V}$$\n\nDie Zellspannung ist also um $0{,}06\\ \\text{V}$ größer als der Standardwert. Das ist konsistent mit dem Prinzip von Le Chatelier: Durch die geringe Zinkionenkonzentration ist die Produktseite der Zellreaktion entlastet, die Triebkraft der Gesamtreaktion daher größer.",
+        "warum": {
+          "de": "Der Vergleich mit dem Standardwert ist die eigentliche Kontrolle der Rechnung. Ein Ergebnis unterhalb von $1{,}10\\ \\text{V}$ müsste sofort misstrauisch machen, denn ein Entfernen von Produktionen kann eine Reaktion nur begünstigen. Die Nernst-Gleichung ist im Grunde nichts anderes als Le Chatelier in quantitativer Form.",
+          "tr": "Standart değerle karşılaştırma, hesabın asıl kontrolüdür. $1{,}10\\ \\text{V}$'un altında bir sonuç hemen şüphe uyandırmalıdır, çünkü ürün taraflı iyonların azaltılması bir tepkimeyi ancak destekler. Nernst denklemi esasen Le Chatelier'nin nicel biçiminden başka bir şey değildir."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 5,
+        "titel": "Elektrochemische Doppelschicht erklären",
+        "inhalt": "Taucht ein Metall in die Lösung seines Salzes, laufen zwei gegenläufige Vorgänge ab: Metallatome geben Elektronen ab und gehen als Ionen in Lösung, und Metallionen aus der Lösung nehmen Elektronen auf und scheiden sich am Metall ab.\n\nBeim unedlen Zink überwiegt zunächst das Inlösunggehen. Die zurückbleibenden Elektronen laden die Elektrode negativ auf; die positiven Ionen werden davon elektrostatisch angezogen und lagern sich unmittelbar vor der Elektrodenoberfläche an. Es entsteht eine räumlich sehr dünne Ladungstrennung — die elektrochemische Doppelschicht.\n\nMit wachsender negativer Aufladung wird das weitere Inlösunggehen zunehmend erschwert und die Abscheidung erleichtert. Bei einer bestimmten Potentialdifferenz laufen beide Vorgänge gleich schnell ab: Es stellt sich ein dynamisches Gleichgewicht ein. Die dann vorliegende Spannung zwischen Metall und Lösung ist das Elektrodenpotential der Halbzelle.",
+        "warum": {
+          "de": "Erst dieses Modell erklärt, warum ein Elektrodenpotential überhaupt einen festen Wert hat und warum es von der Ionenkonzentration abhängt: Eine höhere Konzentration verschiebt das Gleichgewicht zugunsten der Abscheidung, die Elektrode lädt sich weniger negativ auf. Genau dieser Zusammenhang steckt hinter der Nernst-Gleichung — die Formel aus Schritt 2 ist die quantitative Fassung dieses Bildes.",
+          "tr": "Bir elektrot potansiyelinin neden belirli bir değeri olduğunu ve neden iyon derişimine bağlı olduğunu ancak bu model açıklar: daha yüksek derişim dengeyi çökelme lehine kaydırır, elektrot daha az negatif yüklenir. Nernst denkleminin arkasında tam olarak bu ilişki vardır — 2. adımdaki formül bu resmin nicel ifadesidir."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "Anode und Minuspol vertauscht, weil die Zuordnung aus der Elektrolyse übernommen wurde.",
+      "$z = 1$ statt $z = 2$ in die Nernst-Gleichung eingesetzt.",
+      "$\\lg 0{,}010 = -2$ als $+2$ gerechnet und dadurch eine zu kleine Zellspannung erhalten.",
+      "Zellspannung als Summe statt als Differenz der Halbzellenpotentiale gebildet.",
+      "Die Doppelschicht als chemische Bindung beschrieben statt als elektrostatische Ladungstrennung im dynamischen Gleichgewicht."
+    ]
+  },
+  "quelle": "eigene Erstellung (Beispielaufgabe, Phase 1)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam (Beispielaufgabe)",
+  "version": 1
+}

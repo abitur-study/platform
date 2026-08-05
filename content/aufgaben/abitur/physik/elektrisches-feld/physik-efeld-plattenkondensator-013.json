@@ -1,0 +1,75 @@
+{
+  "bereich": "abitur",
+  "id": "physik-efeld-plattenkondensator-013",
+  "titel": "Untersuchung eines geladenen Kügelchens im Plattenkondensator und Bestimmung eines unbekannten Gases",
+  "fach": "physik",
+  "themenbereich": "Elektrisches Feld und Kondensator",
+  "themenbereich_slug": "elektrisches-feld",
+  "unterthema": "Kräftegleichgewicht und Dielektrikum",
+  "niveau": "GK",
+  "operatoren": ["berechnen", "skizzieren", "zeigen", "ermitteln"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 35,
+  "aufgabenstellung": "**Teil 1 – Feldlinien und Kräfte**\n\nZwei parallele Metallplatten im Abstand $d = 12\\ \\text{cm}$ sind an eine Spannungsquelle angeschlossen. Zwischen den Platten hängt an einem isolierenden Faden der Länge $\\ell = 1{,}50\\ \\text{m}$ eine kleine, positiv geladene Kugel mit der Ladung $q = 3{,}0\\cdot 10^{-9}\\ \\text{C}$. Bei $U = 0\\ \\text{V}$ hängt die Kugel genau in der Mitte. Bei $U = 12\\ \\text{kV}$ wird sie um $\\Delta x = 2{,}5\\ \\text{cm}$ zur negativen Platte hin ausgelenkt.\n\na) Skizzieren Sie das Feldlinienbild zwischen den Platten (ohne Kugel) und geben Sie an, wie die Richtung der Feldlinien festgelegt ist und was der Abstand der Feldlinien aussagt.\n\nb) Skizzieren Sie in der gleichen Anordnung die auf die geladene Kugel wirkenden Kräfte (Gewichtskraft, elektrische Kraft, Fadenkraft) in der ausgelenkten Position.\n\nc) Zeigen Sie, dass für die Masse der Kugel näherungsweise $m = \\dfrac{q\\,U\\,\\ell}{g\\,d\\,\\Delta x}$ gilt, und berechnen Sie $m$.\n\n**Teil 2 – Dielektrikum**\n\nDie Kugel wird entfernt. Ein hochohmiges Voltmeter zeigt bei luftgefülltem Kondensator ($\\varepsilon_r = 1{,}000583$) eine Spannung von $U_{\\text{Luft}} = 22\\ \\text{kV}$ an, bei konstanter Ladung $Q = 3{,}0\\cdot 10^{-7}\\ \\text{C}$. Wird die Luft durch ein unbekanntes Gas ersetzt, sinkt die Spannung um $0{,}85\\,\\%$.\n\nd) Ermitteln Sie die Dielektrizitätszahl des Gases und identifizieren Sie es mithilfe der Tabelle: Luft (1,000583), He (1,000074), CH$_4$ (1,000886), SO$_2$ (1,009930).",
+  "material": [
+    {
+      "typ": "tabelle",
+      "titel": "Dielektrizitätszahlen von Gasen",
+      "inhalt": "$$\\begin{array}{c|c} \\text{Gas} & \\varepsilon_r \\\\ \\hline \\text{Luft} & 1{,}000583 \\\\ \\text{He} & 1{,}000074 \\\\ \\text{CH}_4 & 1{,}000886 \\\\ \\text{SO}_2 & 1{,}009930 \\end{array}$$",
+      "quelle": "eigene Erstellung",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Verwenden Sie das Kräftegleichgewicht: Die resultierende Kraft aus Gewicht und elektrischer Kraft muss in Richtung des Fadens zeigen.",
+    "Bei der Herleitung der Massenformel nutzen Sie die Kleinwinkelnäherung $\\tan\\alpha \\approx \\sin\\alpha$.",
+    "Für die Dielektrizitätszahl vergleichen Sie die Kapazitäten: $C = \\varepsilon_0 \\varepsilon_r A/d$ und $Q = C\\,U$ bei konstantem $Q$."
+  ],
+  "loesung": {
+    "gesamtpunkte": 17,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Feldlinien und Kräfte skizzieren",
+        "inhalt": "Die Feldlinien verlaufen von der positiven zur negativen Platte senkrecht zu den Oberflächen; dichtere Linien bedeuten größere Feldstärke. Die Kräfte: $\\vec{F}_G$ senkrecht nach unten, $\\vec{F}_{el}$ horizontal zur negativen Platte, $\\vec{F}_F$ entlang des Fadens.",
+        "warum": {
+          "de": "Die Feldlinienrichtung zeigt die Kraftrichtung auf eine positive Probeladung an. Der Abstand der Feldlinien ist ein Maß für die Stärke des Feldes – diese Grundaussage wird in fast jeder Klausur zur Elektrostatik abgefragt.",
+          "tr": "Alan çizgilerinin yönü, pozitif bir test yüküne etki eden kuvvetin yönünü gösterir. Alan çizgilerinin aralığı, alan şiddetinin bir ölçüsüdür – bu temel ifade hemen hemen her elektrostatik sınavında sorulur."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 2,
+        "titel": "Massenformel herleiten und Masse berechnen",
+        "inhalt": "Im Kräftegleichgewicht gilt $\\tan\\alpha = F_{el}/F_G = qE/(mg) = qU/(mgd)$. Mit $\\tan\\alpha \\approx \\sin\\alpha = \\Delta x/\\ell$ folgt $m = qU\\ell/(g d \\Delta x)$.\nEinsetzen: $m = \\frac{3{,}0\\cdot 10^{-9}\\cdot 1{,}2\\cdot 10^{4}\\cdot 1{,}50}{9{,}81\\cdot 0{,}12\\cdot 0{,}025} \\approx 1{,}84\\cdot 10^{-3}\\ \\text{kg} = 1{,}84\\ \\text{g}$.",
+        "warum": {
+          "de": "Die Kleinwinkelnäherung ist hier zulässig, weil $\\alpha \\approx 0{,}95^\\circ$ sehr klein ist. Würde man ohne Näherung rechnen, änderte sich das Ergebnis nur um weniger als 0,1 % – die Näherung ist also physikalisch gerechtfertigt.",
+          "tr": "Küçük açı yaklaşımı burada geçerlidir, çünkü $\\alpha \\approx 0{,}95^\\circ$ çok küçüktür. Yaklaşımsız hesaplansa sonuç %0,1'den az değişir – yaklaşım fiziksel olarak haklıdır."
+        },
+        "teilpunkte": 6
+      },
+      {
+        "nr": 3,
+        "titel": "Dielektrizitätszahl des Gases ermitteln",
+        "inhalt": "Bei konstanter Ladung $Q$ ist $U \\propto 1/C$ und $C \\propto \\varepsilon_r$, also $U_{\\text{Luft}}/U_{\\text{Gas}} = \\varepsilon_{\\text{Gas}}/\\varepsilon_{\\text{Luft}}$.\n$U_{\\text{Gas}} = 22\\,\\text{kV} - 0{,}0085\\cdot 22\\,\\text{kV} = 21{,}813\\,\\text{kV}$.\n$\\varepsilon_{\\text{Gas}} = \\varepsilon_{\\text{Luft}} \\cdot \\frac{U_{\\text{Luft}}}{U_{\\text{Gas}}} = 1{,}000583 \\cdot \\frac{22}{21{,}813} \\approx 1{,}0091$.\nDieser Wert liegt nahe bei $1{,}009930$ für SO$_2$; die Abweichung beträgt etwa 0,08 %, also handelt es sich um Schwefeldioxid.",
+        "warum": {
+          "de": "Die Spannungsabnahme bei konstanter Ladung ist ein direktes Maß für die Erhöhung der Kapazität durch das Dielektrikum. Da die Messung nur auf 0,1 % genau ist, reicht die Übereinstimmung mit SO$_2$ aus – eine perfekte Gleichheit ist bei Schülerversuchen nicht zu erwarten.",
+          "tr": "Sabit yük altında gerilim düşüşü, dielektrik nedeniyle kapasitans artışının doğrudan bir ölçüsüdür. Ölçüm %0,1 hassasiyetinde olduğundan, SO$_2$ ile uyum yeterlidir – öğrenci deneylerinde tam eşitlik beklenmez."
+        },
+        "teilpunkte": 7
+      }
+    ],
+    "haeufige_fehler": [
+      "Die Kleinwinkelnäherung wird nicht angewendet oder falsch angewendet (z. B. tan α statt sin α).",
+      "Bei der Dielektrikumsaufgabe wird die Spannungsdifferenz direkt als relativer Abfall genommen, ohne die neue Spannung zu berechnen.",
+      "Die Einheiten in der Massenformel werden nicht konsequent in SI umgerechnet (cm statt m)."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen Landesabitur Physik 2013, Grundkurs, Aufgabe A1",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-3-7-sonnet / 2026-08-05",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

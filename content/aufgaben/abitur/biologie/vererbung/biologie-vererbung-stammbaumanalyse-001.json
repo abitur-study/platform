@@ -1,0 +1,97 @@
+{
+  "bereich": "abitur",
+  "id": "biologie-vererbung-stammbaumanalyse-001",
+  "titel": "Stammbaumanalyse einer seltenen Erbkrankheit über drei Generationen",
+  "fach": "biologie",
+  "themenbereich": "Klassische Genetik und Vererbung",
+  "themenbereich_slug": "vererbung",
+  "unterthema": "Stammbaumanalyse",
+  "niveau": "LK",
+  "operatoren": ["bestimmen", "begründen", "berechnen", "beurteilen"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 40,
+  "aufgabenstellung": "In einer Familie tritt eine seltene Erbkrankheit auf. Material 1 gibt den Stammbaum wieder, den ein Humangenetiker nach den Angaben der Familie über drei Generationen erstellt hat. Die Krankheit selbst muss Ihnen nicht bekannt sein; alle nötigen Informationen stehen im Material.\n\na) Bestimmen Sie den Erbgang, der dieser Erkrankung zugrunde liegt.\n\nb) Begründen Sie Ihre Entscheidung, indem Sie die übrigen infrage kommenden Erbgänge einzeln am Stammbaum überprüfen und ausschließen.\n\nc) Bestimmen Sie die Genotypen der Personen I-1, I-2, II-2, II-3, II-4 und III-1. Geben Sie an, bei welchen weiteren Personen des Stammbaums der Genotyp nicht eindeutig festliegt.\n\nd) Das Ehepaar II-3 und II-4 wünscht sich ein weiteres Kind. Berechnen Sie mithilfe eines Kreuzungsschemas die Wahrscheinlichkeit dafür, dass dieses Kind erkrankt.\n\ne) Beurteilen Sie, wie sicher sich aus einem Stammbaum dieser Größe auf den Erbgang schließen lässt.",
+  "material": [
+    {
+      "typ": "text",
+      "titel": "Material 1: Stammbaum der Familie über drei Generationen",
+      "inhalt": "Die Personen sind nach Generation (römische Ziffer) und Position innerhalb der Generation (arabische Ziffer) benannt.\n\nGeneration I: Person I-1 (Mann) und Person I-2 (Frau) sind miteinander verheiratet; beide sind gesund. Aus dieser Ehe gehen drei Kinder hervor: Person II-1 (Tochter, gesund), Person II-2 (Sohn, erkrankt) und Person II-3 (Tochter, gesund).\n\nGeneration II: Person II-3 heiratet Person II-4, einen gesunden Mann, der nicht mit der Familie blutsverwandt ist. Person II-2 und Person II-1 haben keine Kinder.\n\nGeneration III: Aus der Ehe von Person II-3 und Person II-4 gehen drei Kinder hervor: Person III-1 (Sohn, erkrankt), Person III-2 (Tochter, gesund) und Person III-3 (Sohn, gesund).\n\nWeitere Angaben des Humangenetikers: In der gesamten Familie ist keine Blutsverwandtschaft der Ehepartner bekannt. Die Erkrankung ist in der Bevölkerung selten; die Häufigkeit des krank machenden Allels liegt unter 1 : 1000. Alle erkrankten Personen zeigen die Symptome bereits im Kindesalter, ein späteres Auftreten ist nicht beobachtet worden.",
+      "quelle": "eigene Erstellung (konstruierter Beispielstammbaum, Phase 1)",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Arbeite die Analyse immer in derselben Reihenfolge ab: erst dominant oder rezessiv, dann autosomal oder gonosomal. Für die erste Frage genügt bereits ein einziges Elternpaar im Stammbaum — suche eines, dessen Kind ein Merkmal zeigt, das keiner der beiden Elternteile hat.",
+    "Zähle die Merkmalsträger getrennt nach Geschlecht. Eine ungleiche Verteilung ist ein Hinweis auf den Ort des Gens, aber für sich genommen noch kein Beweis; du musst zeigen, welche Regel diese Verteilung erwarten lässt und welche ihr widerspricht.",
+    "Beim Kreuzungsschema eines gonosomalen Gens musst du die Geschlechtschromosomen mitschreiben. Ein Vater gibt seinen Söhnen das Y-Chromosom und seinen Töchtern sein X-Chromosom weiter — überlege daraus, von wem ein Sohn sein einziges X-Chromosom erhalten haben muss."
+  ],
+  "loesung": {
+    "gesamtpunkte": 16,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Rezessiven Erbgang nachweisen",
+        "inhalt": "Entscheidend sind die beiden Elternpaare mit erkranktem Kind:\n\nDas gesunde Ehepaar I-1 und I-2 hat den erkrankten Sohn II-2. Das gesunde Ehepaar II-3 und II-4 hat den erkrankten Sohn III-1.\n\nDas Merkmal überspringt also Generationen: Es tritt bei Kindern auf, deren Eltern es beide nicht zeigen. Das krank machende Allel muss demnach bei mindestens einem Elternteil vorhanden gewesen sein, ohne sich im Phänotyp zu äußern — es wird von einem gesunden Allel überdeckt.\n\nDamit ist der Erbgang **rezessiv**. Beide dominanten Erbgänge (autosomal-dominant und X-chromosomal-dominant) scheiden bereits hier aus: Ein dominantes Allel würde sich in jeder Generation phänotypisch zeigen, ein erkranktes Kind müsste also mindestens einen erkrankten Elternteil haben.",
+        "warum": {
+          "de": "Die Reihenfolge der Prüfung ist nicht beliebig, sondern der Kern der Methode: Ob ein Allel dominant oder rezessiv ist, entscheidet ein einziges Elternpaar, während die Frage autosomal oder gonosomal eine Aussage über viele Personen verlangt. Wer mit der Geschlechterverteilung beginnt, argumentiert mit einer Statistik, bevor er die logisch sichere Aussage genutzt hat.",
+          "tr": "İnceleme sırası keyfi değildir, yöntemin özüdür: bir alelin baskın mı çekinik mi olduğuna tek bir ebeveyn çifti karar verdirir, oysa otozomal mı gonozomal mı sorusu birçok bireyin birlikte değerlendirilmesini gerektirir. Cinsiyet dağılımından başlayan öğrenci, mantıken kesin olan çıkarımı kullanmadan istatistikle tartışmaya başlamış olur. Abitur'da bu iki adımın sırası puanlandırılır."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Y-chromosomale und autosomal-rezessive Vererbung ausschließen",
+        "inhalt": "Beide Merkmalsträger des Stammbaums, II-2 und III-1, sind männlich; keine Frau der Familie ist erkrankt.\n\n**Y-chromosomal ausgeschlossen:** Ein Y-chromosomales Merkmal geht vom Vater auf *alle* Söhne über. Der erkrankte II-2 hat aber den gesunden Vater I-1, und der erkrankte III-1 hat mit III-3 einen gesunden Bruder aus derselben Ehe. Beides widerspricht einer Y-chromosomalen Vererbung.\n\n**Autosomal-rezessiv sehr unwahrscheinlich:** Mit den reinen Erkrankungsfällen wäre dieser Erbgang zwar formal vereinbar, er verlangt aber, dass beide Elternteile heterozygot sind. In der zweiten Generation müsste demnach auch der eingeheiratete, nicht blutsverwandte II-4 zufällig Träger des Allels sein. Bei einer Allelhäufigkeit unter 1 : 1000 ist das äußerst selten. Außerdem wären bei autosomal-rezessivem Erbgang Töchter und Söhne mit gleicher Wahrscheinlichkeit betroffen; dass beide Merkmalsträger männlich sind, bliebe unerklärt.\n\n**Ergebnis:** Der Erbgang ist **X-chromosomal-rezessiv**. Frauen besitzen zwei X-Chromosomen und sind bei nur einem krank machenden Allel gesunde Konduktorinnen; Männer besitzen nur ein X-Chromosom, sind für dieses Gen hemizygot und erkranken bereits bei einem einzigen defekten Allel. Genau das erklärt die ausschließlich männlichen Merkmalsträger.",
+        "warum": {
+          "de": "Der Operator „begründen“ verlangt hier ein Ausschlussverfahren, nicht eine Behauptung: Ein Erbgang gilt erst dann als bestimmt, wenn die Alternativen am konkreten Stammbaum widerlegt sind. Wichtig ist auch die unterschiedliche Stärke der Argumente — Y-chromosomal ist logisch ausgeschlossen, autosomal-rezessiv nur sehr unwahrscheinlich gemacht. Diese Unterscheidung gehört in die Antwort.",
+          "tr": "Buradaki *begründen* (gerekçelendiriniz) operatörü bir iddiayı değil, eleme yöntemini ister: bir kalıtım yolu ancak alternatifleri somut soyağacı üzerinde çürütüldüğünde belirlenmiş sayılır. Argümanların gücünün farklı olduğunu da yazmalısın — Y'ye bağlı kalıtım mantıken imkânsızdır, otozomal çekinik ise yalnızca çok düşük olasılıklıdır. Türk öğrencilerin sık yaptığı hata: 'sadece erkekler hasta, öyleyse X'e bağlı' deyip geçmek; bu tek başına gerekçe sayılmaz."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 3,
+        "titel": "Genotypen der einzelnen Personen bestimmen",
+        "inhalt": "Bezeichnungen: $X^A$ ist das gesunde, dominante Allel, $X^a$ das krank machende, rezessive Allel.\n\nPerson I-1 (gesunder Mann): $X^A Y$.\n\nPerson I-2 (gesunde Frau): $X^A X^a$ — obligate Konduktorin. Ihr erkrankter Sohn II-2 hat sein einziges X-Chromosom von ihr erhalten, denn vom Vater stammt sein Y-Chromosom.\n\nPerson II-2 (erkrankter Mann): $X^a Y$.\n\nPerson II-3 (gesunde Frau): $X^A X^a$ — ebenfalls obligate Konduktorin, weil ihr Sohn III-1 erkrankt ist.\n\nPerson II-4 (gesunder Mann): $X^A Y$.\n\nPerson III-1 (erkrankter Mann): $X^a Y$.\n\nNicht eindeutig festgelegt sind die Genotypen der gesunden Töchter II-1 und III-2 sowie — der Vollständigkeit halber — bestätigt ist der gesunde Sohn III-3 als $X^A Y$. Die Töchter II-1 und III-2 haben von ihrem gesunden Vater sicher $X^A$ erhalten, von ihrer heterozygoten Mutter dagegen mit je $\\frac{1}{2}$ entweder $X^A$ oder $X^a$. Sie sind also mit einer Wahrscheinlichkeit von $\\frac{1}{2}$ homozygot $X^A X^A$ und mit $\\frac{1}{2}$ heterozygote Konduktorinnen $X^A X^a$.",
+        "warum": {
+          "de": "Genotypen werden im Stammbaum nicht geraten, sondern rückwärts aus dem Phänotyp der Nachkommen erschlossen: Ein erkrankter Sohn macht seine gesunde Mutter zwingend zur Konduktorin. Ebenso wichtig ist die Ehrlichkeit über das, was der Stammbaum *nicht* hergibt — bei gesunden Töchtern einer Konduktorin bleibt nur eine Wahrscheinlichkeitsaussage übrig.",
+          "tr": "Genotipler soyağacında tahmin edilmez, torunların fenotipinden geriye doğru çıkarılır: hasta bir oğul, sağlıklı annesini zorunlu olarak taşıyıcı (Konduktorin) yapar. Aynı derecede önemlisi, soyağacının *vermediği* bilgiyi dürüstçe belirtmektir — taşıyıcı bir annenin sağlıklı kızlarında elde kalan tek şey bir olasılık ifadesidir. Sık hata: erkeklerin genotipini $X^a X^a$ yazmak; erkekler bu gen için hemizigottur, $X^a Y$ olmalıdır."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 4,
+        "titel": "Kreuzungsschema aufstellen und Wahrscheinlichkeit berechnen",
+        "inhalt": "Zu kreuzen sind Person II-3 ($X^A X^a$) und Person II-4 ($X^A Y$).\n\nKeimzellen der Mutter II-3: mit je $\\frac{1}{2}$ eine Eizelle mit $X^A$ oder mit $X^a$.\nKeimzellen des Vaters II-4: mit je $\\frac{1}{2}$ ein Spermium mit $X^A$ oder mit $Y$.\n\nDie vier Felder des Kreuzungsschemas (Punnett-Quadrat) sind damit alle gleich wahrscheinlich, jedes mit $\\frac{1}{4}$:\n\n- Eizelle $X^A$ trifft Spermium $X^A$ ergibt $X^A X^A$: gesunde Tochter, keine Überträgerin.\n- Eizelle $X^a$ trifft Spermium $X^A$ ergibt $X^A X^a$: gesunde Tochter, Konduktorin.\n- Eizelle $X^A$ trifft Spermium $Y$ ergibt $X^A Y$: gesunder Sohn.\n- Eizelle $X^a$ trifft Spermium $Y$ ergibt $X^a Y$: erkrankter Sohn.\n\nWahrscheinlichkeit für ein erkranktes Kind:\n\n$$P(\\text{Kind erkrankt}) = \\frac{1}{4} = 25\\ \\%$$\n\nZusatzaussagen, die aus demselben Schema folgen: Ist das Kind ein Junge, so beträgt seine Erkrankungswahrscheinlichkeit $\\frac{1}{2} = 50\\ \\%$. Ein Mädchen erkrankt nicht, ist aber mit $\\frac{1}{2}$ selbst Konduktorin.",
+        "warum": {
+          "de": "Das Kreuzungsschema ist kein Ritual, sondern die Buchführung über die Keimzellen: Es garantiert, dass keine Kombination vergessen und keine doppelt gezählt wird. Beim Vater müssen unbedingt $X$ und $Y$ als die beiden möglichen Spermientypen auftauchen — nur dadurch entsteht die Kopplung von Geschlecht und Erkrankung, die diesen Erbgang ausmacht.",
+          "tr": "Punnett karesi bir ritüel değil, gametlerin muhasebesidir: hiçbir birleşimin atlanmadığını ve hiçbirinin iki kez sayılmadığını garanti eder. Babada mutlaka $X$ ve $Y$ iki olası sperm tipi olarak yer almalıdır — cinsiyet ile hastalık arasındaki bağ ancak böyle ortaya çıkar. En sık karıştırılan iki sayı: bir *çocuğun* hasta olma olasılığı $\\frac{1}{4}$, bir *oğlanın* hasta olma olasılığı ise $\\frac{1}{2}$'dir. Ayrıca her doğum bağımsızdır: önceki hasta çocuk, sonraki çocuğun olasılığını değiştirmez."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 5,
+        "titel": "Aussagekraft des Stammbaums beurteilen",
+        "inhalt": "Der Stammbaum umfasst nur zehn Personen und zwei Merkmalsträger. Daraus ergeben sich mehrere Einschränkungen:\n\nErstens sind die beobachteten Zahlenverhältnisse Zufallsstichproben. Die Mendelschen Regeln liefern Erwartungswerte, die sich erst bei großer Nachkommenzahl einstellen; bei drei Kindern pro Ehe kann jede Verteilung rein zufällig zustande kommen. Dass keine Frau erkrankt ist, wäre auch bei autosomal-rezessivem Erbgang nicht auffällig selten.\n\nZweitens ist die autosomal-rezessive Erklärung nicht streng widerlegt, sondern nur als unwahrscheinlich eingestuft worden — sie stützt sich auf die Seltenheit des Allels in der Bevölkerung, also auf eine Zusatzinformation von außerhalb des Stammbaums.\n\nDrittens bleiben Sonderfälle unberücksichtigt, die den Befund verfälschen können: eine Neumutation, eine unvollständige Penetranz oder unzutreffende Angaben der Familie über frühere Generationen.\n\nEntscheidende Zusatzinformation wäre ein erkrankter Vater mit Kindern: Bei X-chromosomal-rezessivem Erbgang wären alle seine Töchter Konduktorinnen und keiner seiner Söhne erkrankt. Endgültige Sicherheit liefert erst eine molekulargenetische Untersuchung oder die Auswertung mehrerer betroffener Familien.",
+        "warum": {
+          "de": "Der Operator „beurteilen“ verlangt ein begründetes Urteil über die Methode selbst, nicht die Wiederholung des Ergebnisses. Eine Stammbaumanalyse liefert die *wahrscheinlichste* Hypothese, keinen Beweis — wer diese Grenze benennt und angibt, welche Daten sie überwinden würden, zeigt genau das Verständnis, auf das die Aufgabe zielt.",
+          "tr": "*Beurteilen* (değerlendiriniz) operatörü sonucun tekrarını değil, yöntemin kendisi hakkında gerekçeli bir yargı ister. Soyağacı analizi *en olası* hipotezi verir, kanıt değil — bu sınırı adlandıran ve onu aşacak verinin ne olduğunu söyleyen öğrenci, sorunun hedeflediği anlayışı göstermiş olur. Türkçede sıkça 'kesinlikle X'e bağlıdır' denir; Abitur'da bu aşırı iddia puan kaybettirir."
+        },
+        "teilpunkte": 2
+      }
+    ],
+    "haeufige_fehler": [
+      "Aus „nur Männer sind betroffen“ direkt auf X-chromosomal geschlossen, ohne zuvor zu zeigen, dass der Erbgang rezessiv ist — die Reihenfolge dominant/rezessiv, dann autosomal/gonosomal gehört zur Begründung.",
+      "Genotyp erkrankter Männer als $X^a X^a$ geschrieben; Männer besitzen nur ein X-Chromosom und sind für dieses Gen hemizygot, also $X^a Y$.",
+      "Behauptet, der erkrankte Sohn habe das kranke Allel vom Vater geerbt — vom Vater stammt sein Y-Chromosom, das X-Chromosom kommt zwingend von der Mutter.",
+      "Den gesunden Töchtern einer Konduktorin ein eindeutiges Genotyp zugeschrieben, obwohl der Stammbaum nur eine Wahrscheinlichkeit von je $\\frac{1}{2}$ zulässt.",
+      "Die Wahrscheinlichkeit für ein erkranktes Kind ($\\frac{1}{4}$) mit der Wahrscheinlichkeit verwechselt, dass ein Sohn erkrankt ($\\frac{1}{2}$)."
+    ]
+  },
+  "quelle": "eigene Erstellung (Beispielaufgabe, Phase 1)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam (Beispielaufgabe)",
+  "version": 1
+}

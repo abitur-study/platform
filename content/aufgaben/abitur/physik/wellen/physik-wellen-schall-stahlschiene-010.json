@@ -1,0 +1,78 @@
+{
+  "bereich": "abitur",
+  "id": "physik-wellen-schall-stahlschiene-010",
+  "titel": "Ein Hammerschlag, zwei Signale — Schall in Luft und in Stahl",
+  "fach": "physik",
+  "themenbereich": "Wellen und Wellenoptik",
+  "themenbereich_slug": "wellen",
+  "unterthema": "Ausbreitungsgeschwindigkeit, Wellengleichung, y(t)- und y(x)-Diagramm",
+  "niveau": "GK",
+  "operatoren": ["berechnen", "bestimmen", "erklären"],
+  "sprache": "de",
+  "schwierigkeit": 2,
+  "bearbeitungszeit_min": 30,
+  "aufgabenstellung": "Auf einem stillgelegten, geraden Streckenabschnitt liegt eine durchgehend verschweißte Stahlschiene der Länge $s = 840\\ \\text{m}$. An einem Ende schlägt eine Arbeiterin einmal kräftig mit einem Hammer gegen die Schiene. Eine Beobachterin am anderen Ende legt ein Ohr an die Schiene — sie hört den einen Schlag zweimal kurz hintereinander.\n\nRechnen Sie mit $c_{\\text{Luft}} = 340\\ \\text{m/s}$ und $c_{\\text{Stahl}} = 5100\\ \\text{m/s}$.\n\na) Erklären Sie, warum die Beobachterin zwei Schläge hört, und berechnen Sie den zeitlichen Abstand der beiden Schläge.\n\nb) Statt des Hammers erzeugt nun ein Signalgeber an der Schiene einen gleichmäßigen Ton. Ein Mikrofon zeichnet die Auslenkung der Luft an einem festen Ort auf. Im aufgezeichneten $y(t)$-Diagramm liegen zwischen dem ersten und dem neunten Maximum genau $20{,}0\\ \\text{ms}$. Bestimmen Sie die Frequenz des Tons.\n\nc) Berechnen Sie die Wellenlänge dieses Tons in der Luft und in der Stahlschiene.\n\nd) Erklären Sie den Unterschied zwischen einem $y(t)$-Diagramm und einem $y(x)$-Diagramm derselben Welle und erklären Sie, welche Größe sich aus welchem Diagramm unmittelbar ablesen lässt. Erklären Sie außerdem, warum Schall in Luft eine Longitudinalwelle ist.",
+  "material": [],
+  "tipps": [
+    "Beide Signale starten im selben Augenblick am selben Ort und legen dieselbe Strecke zurück — verschieden ist nur die Geschwindigkeit im jeweiligen Medium.",
+    "Zwischen dem ersten und dem neunten Maximum liegen nicht neun, sondern acht vollständige Schwingungen. Zähle die Abstände, nicht die Maxima.",
+    "Die Frequenz wird vom Sender festgelegt, die Ausbreitungsgeschwindigkeit vom Medium. In $c = \\lambda\\cdot f$ bleibt also eine der drei Größen beim Übergang Stahl $\\to$ Luft gleich — überlege, welche."
+  ],
+  "loesung": {
+    "gesamtpunkte": 17,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Zwei Ausbreitungswege, zwei Laufzeiten",
+        "inhalt": "Der Hammerschlag erzeugt eine Störung, die sich in zwei verschiedenen Wellenträgern ausbreitet: einmal im Stahl der Schiene, einmal in der Luft darüber. Beide Wellen starten gleichzeitig am selben Ort und legen dieselbe Strecke $s = 840\\ \\text{m}$ zurück, aber mit sehr unterschiedlichen Geschwindigkeiten.\n\n$$t_{\\text{Stahl}} = \\frac{s}{c_{\\text{Stahl}}} = \\frac{840\\ \\text{m}}{5100\\ \\text{m/s}} \\approx 0{,}165\\ \\text{s}$$\n\n$$t_{\\text{Luft}} = \\frac{s}{c_{\\text{Luft}}} = \\frac{840\\ \\text{m}}{340\\ \\text{m/s}} \\approx 2{,}471\\ \\text{s}$$\n\nZuerst trifft also das Signal durch die Schiene ein, danach das durch die Luft. Der zeitliche Abstand ist die Differenz:\n\n$$\\Delta t = t_{\\text{Luft}} - t_{\\text{Stahl}} \\approx 2{,}471\\ \\text{s} - 0{,}165\\ \\text{s} \\approx 2{,}31\\ \\text{s}$$",
+        "warum": {
+          "de": "Entscheidend ist, dass es nur eine Störung, aber zwei Wellenträger gibt. Die Ausbreitungsgeschwindigkeit ist keine Eigenschaft des Hammers oder des Schlags, sondern des Mediums: Im Stahl sind die Teilchen fest gekoppelt und geben die Störung viel schneller weiter als die frei beweglichen Luftmoleküle. Deshalb wird hier subtrahiert und nicht addiert — die beiden Zeiten laufen parallel ab, sie folgen nicht aufeinander.",
+          "tr": "Burada tek bir bozulma ama iki farklı dalga taşıyıcısı olduğunu görmek belirleyicidir. Yayılma hızı çekicin ya da vuruşun değil, ortamın bir özelliğidir: çelikte tanecikler birbirine sıkıca bağlıdır ve bozulmayı serbestçe hareket eden hava moleküllerinden çok daha hızlı iletir. Bu yüzden iki süre toplanmaz, çıkarılır — iki yayılma aynı anda başlar, ardışık değildir."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 2,
+        "titel": "Frequenz aus dem $y(t)$-Diagramm ablesen",
+        "inhalt": "Zwischen zwei benachbarten Maxima liegt genau eine Schwingungsdauer $T$. Zwischen dem ersten und dem neunten Maximum liegen daher $9 - 1 = 8$ volle Schwingungen:\n\n$$8\\cdot T = 20{,}0\\ \\text{ms} \\quad\\Longrightarrow\\quad T = 2{,}50\\ \\text{ms} = 2{,}50\\cdot 10^{-3}\\ \\text{s}$$\n\n$$f = \\frac{1}{T} = \\frac{1}{2{,}50\\cdot 10^{-3}\\ \\text{s}} = 400\\ \\text{Hz}$$\n\nDer Ton hat die Frequenz $400\\ \\text{Hz}$ und liegt damit gut hörbar im mittleren Hörbereich.",
+        "warum": {
+          "de": "Man misst absichtlich über acht Perioden statt über eine einzige: Der Ablesefehler an den Diagrammrändern verteilt sich dadurch auf acht Perioden und wird achtmal kleiner. Der typische Fehler ist der Zählfehler am Zaunpfahl — neun Maxima begrenzen acht Intervalle, nicht neun. Wer durch 9 teilt, erhält $f \\approx 450\\ \\text{Hz}$ und merkt den Fehler nicht, weil das Ergebnis plausibel aussieht.",
+          "tr": "Tek bir periyot yerine bilerek sekiz periyot üzerinden ölçülür: böylece okuma hatası sekiz periyoda dağılır ve sekiz kat küçülür. Klasik hata çit kazığı sayma hatasıdır — dokuz maksimum dokuz değil, sekiz aralık sınırlar. Dokuza bölen $f \\approx 450\\ \\text{Hz}$ bulur ve sonuç makul göründüğü için hatasını fark etmez."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 3,
+        "titel": "Wellenlängen in Luft und in Stahl berechnen",
+        "inhalt": "Es gilt die Grundgleichung der Wellenlehre $c = \\lambda\\cdot f$, umgestellt $\\lambda = \\dfrac{c}{f}$.\n\nIn Luft:\n\n$$\\lambda_{\\text{Luft}} = \\frac{340\\ \\text{m/s}}{400\\ \\text{Hz}} = 0{,}85\\ \\text{m}$$\n\nIn Stahl:\n\n$$\\lambda_{\\text{Stahl}} = \\frac{5100\\ \\text{m/s}}{400\\ \\text{Hz}} = 12{,}75\\ \\text{m}$$\n\nDie Wellenlänge ist im Stahl also $15$-mal so groß wie in der Luft — genau um den Faktor, um den auch die Ausbreitungsgeschwindigkeit größer ist.",
+        "warum": {
+          "de": "Die Frequenz ist in beiden Medien dieselbe, denn sie wird allein vom Erreger vorgegeben: Der Signalgeber schiebt pro Sekunde 400-mal an, und kein Teilchen an der Grenzfläche kann Schwingungen verschlucken oder hinzuerfinden. Damit ist $\\lambda$ die Größe, die sich beim Medienwechsel anpasst. Wer stattdessen die Wellenlänge als unveränderlich ansieht, kommt in jeder Aufgabe zu Brechung und Medienwechsel auf ein falsches Ergebnis.",
+          "tr": "Frekans her iki ortamda da aynıdır, çünkü onu yalnızca kaynak belirler: sinyal üreteci saniyede 400 kez iter ve sınır yüzeyindeki hiçbir tanecik bir titreşimi yutamaz ya da yoktan var edemez. Dolayısıyla ortam değişince uyum sağlayan büyüklük $\\lambda$'dır. Bunun yerine dalga boyunu değişmez sayan öğrenci, ortam değişimi ve kırılma içeren her soruda yanlış sonuca varır."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 4,
+        "titel": "$y(t)$-Diagramm und $y(x)$-Diagramm unterscheiden",
+        "inhalt": "Beide Diagramme zeigen dieselbe Welle, aber sie halten je eine der beiden Variablen fest:\n\n**$y(t)$-Diagramm (Zeitdiagramm, Momentaufnahme *eines Ortes*):** Man bleibt an einem festen Ort — hier beim Mikrofon — und trägt die Auslenkung über der Zeit auf. Direkt ablesbar sind die Schwingungsdauer $T$ (Abstand zweier Maxima) und daraus $f = \\tfrac{1}{T}$.\n\n**$y(x)$-Diagramm (Ortsdiagramm, Momentaufnahme *eines Zeitpunktes*):** Man friert die Zeit ein — wie bei einem Foto — und trägt die Auslenkung aller Orte auf. Direkt ablesbar ist die Wellenlänge $\\lambda$ (Abstand zweier Maxima).\n\nDie Amplitude lässt sich aus beiden Diagrammen ablesen, die Ausbreitungsgeschwindigkeit aus keinem von beiden allein — dafür braucht man $c = \\lambda\\cdot f$, also beide Diagramme zusammen.\n\n**Longitudinalwelle:** Der Signalgeber verdichtet und verdünnt die Luft abwechselnd. Die Luftmoleküle schwingen dabei um ihre Ruhelage hin und her — und zwar in derselben Richtung, in der sich die Welle ausbreitet. Genau das ist die Definition einer Longitudinalwelle. Gase können Scherkräfte nicht übertragen, daher sind in Luft überhaupt nur Longitudinalwellen möglich.",
+        "warum": {
+          "de": "Beide Diagramme sehen aus wie eine Sinuskurve, und genau darin liegt die Falle: Ohne Blick auf die Achsenbeschriftung ist nicht entscheidbar, welches vorliegt. Wer im Zeitdiagramm eine Wellenlänge abliest, erhält eine Zeit in Metern — physikalisch sinnlos. Die Kontrolle ist immer die Einheit der waagerechten Achse: Sekunden bedeuten $T$, Meter bedeuten $\\lambda$.",
+          "tr": "Her iki grafik de sinüs eğrisi gibi görünür ve tuzak tam buradadır: eksen etiketlerine bakmadan hangisi olduğuna karar verilemez. Zaman grafiğinden dalga boyu okumaya kalkan, metre cinsinden bir süre elde eder — fiziksel olarak anlamsızdır. Kontrol her zaman yatay eksenin birimidir: saniye ise $T$, metre ise $\\lambda$ okunur."
+        },
+        "teilpunkte": 6
+      }
+    ],
+    "haeufige_fehler": [
+      "Die beiden Laufzeiten addiert statt subtrahiert — beide Wellen laufen gleichzeitig los, gesucht ist der Vorsprung der schnelleren.",
+      "Neun Maxima als neun Perioden gezählt; richtig sind acht Perioden zwischen dem ersten und dem neunten Maximum.",
+      "Angenommen, beim Übergang von Stahl in Luft ändere sich die Frequenz. Die Frequenz gibt der Erreger vor; es ändern sich $c$ und $\\lambda$.",
+      "Die Wellenlänge aus dem $y(t)$-Diagramm abgelesen — dort steht auf der waagerechten Achse eine Zeit, nicht ein Ort."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen Landesabitur Physik 2010, Grundkurs, Aufgabe B1 (Schwingungen und Wellen)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

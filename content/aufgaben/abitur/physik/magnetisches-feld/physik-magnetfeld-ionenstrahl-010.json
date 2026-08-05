@@ -1,0 +1,98 @@
+{
+  "bereich": "abitur",
+  "id": "physik-magnetfeld-ionenstrahl-010",
+  "titel": "Geschwindigkeitsfilter und Massenbestimmung in einer Ionenstrahlanlage",
+  "fach": "physik",
+  "themenbereich": "Magnetisches Feld und Lorentzkraft",
+  "themenbereich_slug": "magnetisches-feld",
+  "unterthema": "Geschwindigkeitsfilter und Kreisbahn",
+  "niveau": "GK",
+  "operatoren": ["berechnen", "zeigen", "beschreiben", "bestimmen", "erläutern"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 30,
+  "aufgabenstellung": "In einer Anlage zur Oberflächenhärtung von Turbinenschaufeln wird ein Strahl einfach positiv geladener Ionen ($q = 1{,}60\\cdot 10^{-19}\\ \\text{C}$) auf das Werkstück geschossen. Die Anlage besteht aus drei Abschnitten.\n\n**Abschnitt A:** Die Ionen treten mit vernachlässigbar kleiner Anfangsgeschwindigkeit ein und durchlaufen die Beschleunigungsspannung $U = 4{,}0\\ \\text{kV}$.\n\n**Abschnitt B:** Hier sind ein homogenes elektrisches Feld der Feldstärke $E_0 = 2{,}0\\cdot 10^{3}\\ \\frac{\\text{V}}{\\text{m}}$ und ein dazu senkrechtes homogenes Magnetfeld der Flussdichte $B_0 = 10\\ \\text{mT}$ einander überlagert; beide stehen senkrecht auf der Flugrichtung. Die elektrische Kraft auf die Ionen ist nach unten gerichtet, die Lorentzkraft nach oben. Nur Ionen, die diesen Abschnitt geradlinig durchfliegen, gelangen durch die enge Blende $S_2$ weiter.\n\n**Abschnitt C:** Ein homogenes Magnetfeld der Flussdichte $B_1 = 0{,}40\\ \\text{T}$ steht senkrecht auf der Flugrichtung. Die Ionen durchlaufen darin einen Halbkreis und treffen im Abstand $d$ (also im Abstand eines Bahndurchmessers) von der Blende auf das Werkstück.\n\na) Berechnen Sie die Geschwindigkeit, die Ionen der Masse $m = 3{,}2\\cdot 10^{-26}\\ \\text{kg}$ am Ende von Abschnitt A besitzen.\n\nb) Zeigen Sie, dass die Ionen, die Abschnitt B geradlinig durchfliegen, die Geschwindigkeit $v_0 = \\frac{E_0}{B_0}$ haben, und berechnen Sie deren Betrag. Beschreiben Sie außerdem die Bewegung von Ionen, deren Geschwindigkeit größer bzw. kleiner als $v_0$ ist.\n\nc) Zeigen Sie, dass für die spezifische Ladung der auftreffenden Ionen $\\frac{q}{m} = \\frac{2\\,v_0}{B_1\\cdot d}$ gilt, und bestimmen Sie die Masse der Ionen, deren Auftreffpunkt den Abstand $d = 0{,}20\\ \\text{m}$ von der Blende hat.\n\nd) Erläutern Sie, warum die kinetische Energie der Ionen vom Eintritt in Abschnitt B bis zum Auftreffen auf dem Werkstück konstant bleibt.",
+  "material": [],
+  "tipps": [
+    "In Abschnitt A wird am Ion Arbeit verrichtet. Welche Energieform steckt danach in der Bewegung? Die Länge der Beschleunigungsstrecke brauchst du dafür nicht zu kennen.",
+    "„Geradlinig durchfliegen“ heißt: Die Kräfte quer zur Bewegungsrichtung heben sich auf. Schreibe beide Kraftbeträge hin und schaue, welcher von den beiden von der Geschwindigkeit abhängt.",
+    "In Abschnitt C ist der Bahndurchmesser gegeben, nicht der Radius. Rechne zuerst allgemein mit $r$ und setze $r = \\frac{d}{2}$ erst ganz am Schluss ein."
+  ],
+  "loesung": {
+    "gesamtpunkte": 17,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Geschwindigkeit am Ende der Beschleunigungsstrecke",
+        "inhalt": "Die vom elektrischen Feld verrichtete Arbeit wird vollständig in kinetische Energie umgesetzt (Start praktisch aus der Ruhe):\n\n$$q\\,U = \\frac{1}{2}m\\,v^2 \\quad\\Longrightarrow\\quad v = \\sqrt{\\frac{2\\,q\\,U}{m}}$$\n\nEinsetzen von $q = 1{,}60\\cdot 10^{-19}\\ \\text{C}$, $U = 4{,}0\\cdot 10^{3}\\ \\text{V}$ und $m = 3{,}2\\cdot 10^{-26}\\ \\text{kg}$:\n\n$$v = \\sqrt{\\frac{2\\cdot 1{,}60\\cdot 10^{-19}\\cdot 4{,}0\\cdot 10^{3}}{3{,}2\\cdot 10^{-26}}} = \\sqrt{4{,}0\\cdot 10^{10}} = 2{,}0\\cdot 10^{5}\\ \\frac{\\text{m}}{\\text{s}}$$",
+        "warum": {
+          "de": "Der Energiesatz wird hier dem Kraftansatz vorgezogen, weil weder die Länge der Beschleunigungsstrecke noch die Feldstärke in Abschnitt A gegeben sind. Über $F = q\\,E$ und die Beschleunigung käme man nur weiter, wenn man beides kennt — die Energiebilanz braucht dagegen nur die Spannung, also genau die Größe, die man am Netzgerät einstellt.",
+          "tr": "Burada kuvvet yaklaşımı yerine enerji korunumu seçilir, çünkü A bölümündeki hızlanma yolunun uzunluğu da alan şiddeti de verilmemiştir. $F = q\\,E$ ve ivme üzerinden gitmek ancak ikisini de bilirsek işe yarar; enerji bilançosu ise yalnızca gerilime, yani güç kaynağında ayarladığın büyüklüğe ihtiyaç duyar."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Bedingung für die geradlinige Bahn im gekreuzten Feld",
+        "inhalt": "Eine geradlinige Bahn bedeutet, dass sich die beiden Querkräfte aufheben. Die elektrische Kraft $F_{el} = q\\,E_0$ zeigt nach unten, die Lorentzkraft $F_L = q\\,v\\,B_0$ nach oben:\n\n$$F_{el} = F_L \\quad\\Longleftrightarrow\\quad q\\,E_0 = q\\,v_0\\,B_0$$\n\nDie Ladung $q$ kürzt sich heraus:\n\n$$v_0 = \\frac{E_0}{B_0} = \\frac{2{,}0\\cdot 10^{3}\\ \\frac{\\text{V}}{\\text{m}}}{1{,}0\\cdot 10^{-2}\\ \\text{T}} = 2{,}0\\cdot 10^{5}\\ \\frac{\\text{m}}{\\text{s}}$$\n\nDas ist genau die Geschwindigkeit aus Schritt 1 — Ionen dieser Masse passieren die Blende also vollständig.",
+        "warum": {
+          "de": "Dass sich $q$ herauskürzt, ist die eigentliche Aussage dieses Aufbaus: Die durchgelassene Geschwindigkeit hängt weder von der Ladung noch von der Masse ab, sondern nur vom Verhältnis der beiden Feldgrößen. Deshalb heißt die Anordnung Geschwindigkeitsfilter und nicht Massenfilter — sortiert wird erst im Magnetfeld dahinter.",
+          "tr": "$q$'nun sadeleşmesi bu düzeneğin asıl mesajıdır: geçen hız ne yüke ne kütleye bağlıdır, yalnızca iki alan büyüklüğünün oranına bağlıdır. Bu yüzden düzeneğin adı hız filtresidir, kütle filtresi değil — kütleye göre ayırma işi arkadaki manyetik alanda yapılır."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 3,
+        "titel": "Verhalten bei abweichender Geschwindigkeit",
+        "inhalt": "Die elektrische Kraft $q\\,E_0$ ist von der Geschwindigkeit unabhängig, die Lorentzkraft $q\\,v\\,B_0$ wächst dagegen proportional zu $v$.\n\n- Für $v > v_0$ überwiegt die Lorentzkraft: Das Ion wird nach oben abgelenkt.\n- Für $v < v_0$ überwiegt die elektrische Kraft: Das Ion wird nach unten abgelenkt.\n\nIn beiden Fällen verlässt das Ion die Achse und wird von der Blende $S_2$ zurückgehalten. Es tritt also nicht in Abschnitt C ein.",
+        "warum": {
+          "de": "Der ganze Filter lebt von dieser Asymmetrie: Nur eine der beiden Kräfte hängt von $v$ ab, deshalb gibt es genau eine Gleichgewichtsgeschwindigkeit und nicht einen ganzen Bereich. Ein häufiges Missverständnis ist, der Filter würde zu schnelle Ionen abbremsen — er bremst nichts ab, er lenkt sie nur seitlich weg, und die Blende sortiert sie rein geometrisch aus.",
+          "tr": "Filtrenin tüm çalışma ilkesi bu asimetriye dayanır: iki kuvvetten yalnızca biri $v$'ye bağlıdır, bu yüzden bir hız aralığı değil tam olarak tek bir denge hızı vardır. Sık yapılan bir yanlış anlama, filtrenin çok hızlı iyonları yavaşlattığını sanmaktır — hiçbir şey yavaşlatılmaz, iyonlar yalnızca yana saptırılır ve diyafram onları tamamen geometrik olarak ayıklar."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 4,
+        "titel": "Spezifische Ladung aus dem Bahndurchmesser",
+        "inhalt": "In Abschnitt C wirkt die Lorentzkraft als Zentripetalkraft:\n\n$$q\\,v_0\\,B_1 = \\frac{m\\,v_0^{\\,2}}{r} \\quad\\Longrightarrow\\quad \\frac{q}{m} = \\frac{v_0}{B_1\\,r}$$\n\nDa die Ionen einen Halbkreis durchlaufen, ist der Abstand $d$ zwischen Blende und Auftreffpunkt der Bahndurchmesser, also $r = \\frac{d}{2}$:\n\n$$\\frac{q}{m} = \\frac{v_0}{B_1\\cdot\\frac{d}{2}} = \\frac{2\\,v_0}{B_1\\cdot d}$$",
+        "warum": {
+          "de": "Gemessen wird immer der Auftreffpunkt, nie der Bahnmittelpunkt — der liegt außerhalb der Apparatur und ist gar nicht zugänglich. Deshalb wird die Formel bewusst auf $d$ umgeschrieben: Sie enthält dann nur noch Größen, die man tatsächlich ablesen oder einstellen kann. Wer stattdessen $d$ direkt als $r$ einsetzt, erhält systematisch die doppelte Masse.",
+          "tr": "Ölçülen şey her zaman çarpma noktasıdır, çemberin merkezi değil — merkez aygıtın dışında kalır ve erişilemez. Bu yüzden formül bilinçli olarak $d$ cinsinden yazılır: böylece içinde yalnızca gerçekten okunabilen veya ayarlanabilen büyüklükler kalır. $d$'yi doğrudan $r$ yerine koyan biri sistematik olarak iki katı bir kütle bulur."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 5,
+        "titel": "Masse der Ionen bestimmen",
+        "inhalt": "Auflösen nach $m$ und Einsetzen von $v_0 = 2{,}0\\cdot 10^{5}\\ \\frac{\\text{m}}{\\text{s}}$, $B_1 = 0{,}40\\ \\text{T}$ und $d = 0{,}20\\ \\text{m}$:\n\n$$m = \\frac{q\\,B_1\\,d}{2\\,v_0} = \\frac{1{,}60\\cdot 10^{-19}\\cdot 0{,}40\\cdot 0{,}20}{2\\cdot 2{,}0\\cdot 10^{5}} = \\frac{1{,}28\\cdot 10^{-20}}{4{,}0\\cdot 10^{5}} = 3{,}2\\cdot 10^{-26}\\ \\text{kg}$$\n\nPlausibilitätskontrolle: $\\frac{3{,}2\\cdot 10^{-26}\\ \\text{kg}}{1{,}66\\cdot 10^{-27}\\ \\text{kg}} \\approx 19$, die Ionen haben also etwa 19 atomare Masseneinheiten — eine für Ionen sinnvolle Größenordnung.",
+        "warum": {
+          "de": "Das Ergebnis stimmt mit der in Teilaufgabe a) vorgegebenen Masse überein, und das ist kein Zufall: Nur Ionen mit $v = v_0$ kommen überhaupt bis Abschnitt C, und diese Geschwindigkeit erreicht bei der eingestellten Spannung genau diese Masse. Die Umrechnung in $\\text{u}$ ist der schnellste Selbsttest — kommt dort etwas wie $10^{5}$ oder $10^{-3}$ heraus, steckt ein Zehnerpotenzfehler in der Rechnung.",
+          "tr": "Sonuç a) şıkkında verilen kütleyle örtüşür ve bu tesadüf değildir: C bölümüne yalnızca $v = v_0$ olan iyonlar ulaşabilir ve ayarlanan gerilimde tam olarak bu kütle bu hıza çıkar. Sonucu $\\text{u}$ cinsine çevirmek en hızlı öz denetimdir — orada $10^{5}$ ya da $10^{-3}$ gibi bir şey çıkıyorsa hesapta bir onluk kuvvet hatası vardır."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 6,
+        "titel": "Konstanz der kinetischen Energie",
+        "inhalt": "Wegen $E_{kin} = \\frac{1}{2}m\\,v^2$ und konstanter Masse kann sich die kinetische Energie nur über den Betrag der Geschwindigkeit ändern.\n\n- In Abschnitt B heben sich elektrische Kraft und Lorentzkraft für die durchgelassenen Ionen gerade auf. Die resultierende Kraft ist null, es wird keine Arbeit verrichtet, $v$ bleibt nach Betrag und Richtung gleich.\n- In Abschnitt C wirkt nur die Lorentzkraft, und diese steht in jedem Bahnpunkt senkrecht auf der Geschwindigkeit. Wegen $W = F\\cdot s\\cdot\\cos 90^\\circ = 0$ verrichtet sie keine Arbeit; sie ändert nur die Richtung, nicht den Betrag von $\\vec{v}$.\n\nAuf beiden Teilstrecken bleibt der Betrag von $\\vec{v}$ also unverändert und damit auch $E_{kin}$.",
+        "warum": {
+          "de": "Hier steckt eine Aussage, die weit über diese Aufgabe hinausgeht: Ein Magnetfeld kann die kinetische Energie eines geladenen Teilchens grundsätzlich nicht ändern, weil die Lorentzkraft immer senkrecht zur Bewegung steht. Energie zuführen kann nur das elektrische Feld. Wer das einmal verstanden hat, erkennt sofort, dass jede Beschleunigeranlage eine elektrische Beschleunigungsstrecke braucht und Magnete nur zum Lenken taugen.",
+          "tr": "Burada bu sorunun çok ötesine geçen bir ilke saklıdır: manyetik alan, yüklü bir parçacığın kinetik enerjisini ilkesel olarak değiştiremez, çünkü Lorentz kuvveti harekete daima diktir. Enerji ancak elektrik alanla verilebilir. Bunu bir kez kavrayan, her hızlandırıcı düzeneğin elektriksel bir hızlanma bölgesine ihtiyaç duyduğunu, mıknatısların ise yalnızca yönlendirmeye yaradığını hemen görür."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "Im Geschwindigkeitsfilter wird mit der Beschleunigungsspannung statt mit dem Kräftegleichgewicht gerechnet — die Bedingung $v_0 = \\frac{E_0}{B_0}$ hat mit $U$ nichts zu tun.",
+      "Der Abstand $d = 0{,}20\\ \\text{m}$ wird als Radius eingesetzt; das Ergebnis für die Masse ist dann um den Faktor 2 zu groß.",
+      "$10\\ \\text{mT}$ und $4{,}0\\ \\text{kV}$ werden nicht in $\\text{T}$ bzw. $\\text{V}$ umgerechnet.",
+      "Es wird behauptet, das Magnetfeld in Abschnitt C bremse die Ionen ab oder beschleunige sie — es ändert nur die Bewegungsrichtung."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen, Landesabitur Physik Grundkurs 2007, Aufgabe A2",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

@@ -1,0 +1,98 @@
+{
+  "bereich": "abitur",
+  "id": "physik-efeld-schwebeteilchen-011",
+  "titel": "Latexkügelchen im Plattenkondensator — Elektronenüberschuss und veränderter Plattenabstand",
+  "fach": "physik",
+  "themenbereich": "Elektrisches Feld und Kondensator",
+  "themenbereich_slug": "elektrisches-feld",
+  "unterthema": "Kapazität, Ladungsträgerzahl und Plattenabstand",
+  "niveau": "GK",
+  "operatoren": ["berechnen", "erklären", "bestimmen"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 35,
+  "aufgabenstellung": "In einem Praktikumsversuch werden winzige, negativ geladene Latexkügelchen zwischen zwei waagerechte, luftgefüllte Kondensatorplatten gebracht. Der Plattenabstand beträgt zunächst $d_1 = 3{,}0\\ \\text{mm}$, die Plattenfläche jeweils $A = 150\\ \\text{cm}^2$. Ein bestimmtes Kügelchen der Masse $m = 4{,}20\\cdot 10^{-14}\\ \\text{kg}$ schwebt bewegungslos, wenn an die Platten die Spannung $U_1 = 350\\ \\text{V}$ angelegt wird. Rechnen Sie mit $g = 9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}$ und $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$.\n\na) Berechnen Sie die Ladung des Kügelchens und geben Sie sie als Vielfaches der Elementarladung an.\n\nb) Berechnen Sie die Kapazität des Kondensators und die Anzahl der Elektronen, die sich bei $U_1 = 350\\ \\text{V}$ zusätzlich auf der negativ geladenen Platte befinden.\n\nc) Die Platten werden nun bei **weiterhin angeschlossener** Spannungsquelle auf $d_2 = 8{,}0\\ \\text{mm}$ auseinandergezogen. Erklären Sie, wie sich dabei die Ladung auf den Platten ändert und welche Folge das für das Kügelchen hat.\n\nd) Bestimmen Sie die Spannung $U_2$, die man anlegen müsste, damit das Kügelchen beim Plattenabstand $d_2$ wieder schwebt.",
+  "material": [],
+  "tipps": [
+    "Ein schwebender Körper ist im Kräftegleichgewicht: Die elektrische Kraft $F_{\\text{el}} = q\\cdot E$ muss die Gewichtskraft $F_G = m\\cdot g$ genau ausgleichen. Für $E$ im homogenen Feld gilt $E = \\frac{U}{d}$.",
+    "Für die Zahl der Überschusselektronen auf einer Platte gilt $Q = N\\cdot e$. Die Plattenladung $Q$ bekommst du aus $Q = C\\cdot U$ — nicht zu verwechseln mit der Ladung $q$ des Kügelchens.",
+    "In Teilaufgabe c) bleibt die Spannung konstant, weil die Quelle angeschlossen bleibt. Frage dich in dieser Reihenfolge: Was passiert mit $C$, dann mit $Q$, dann mit $E$, dann mit $F_{\\text{el}}$?"
+  ],
+  "loesung": {
+    "gesamtpunkte": 18,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Kräftegleichgewicht aufstellen und Ladung des Kügelchens berechnen",
+        "inhalt": "Damit das Kügelchen schwebt, müssen die nach unten gerichtete Gewichtskraft und die nach oben gerichtete elektrische Kraft betragsgleich sein:\n\n$$F_{\\text{el}} = F_G \\quad\\Longleftrightarrow\\quad q\\cdot E = m\\cdot g \\quad\\Longleftrightarrow\\quad q\\cdot\\frac{U_1}{d_1} = m\\cdot g$$\n\n$$q = \\frac{m\\cdot g\\cdot d_1}{U_1} = \\frac{4{,}20\\cdot 10^{-14}\\ \\text{kg}\\cdot 9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}\\cdot 3{,}0\\cdot 10^{-3}\\ \\text{m}}{350\\ \\text{V}} \\approx 3{,}53\\cdot 10^{-18}\\ \\text{C}$$\n\nDa das Kügelchen negativ geladen ist und nach oben gezogen wird, muss die obere Platte positiv sein.",
+        "warum": {
+          "de": "Aus dem Schweben folgt nicht nur, dass die Kräfte gleich groß sind, sondern auch, dass keine dritte Kraft berücksichtigt werden muss: Reibung setzt eine Bewegung voraus, und der Auftrieb in Luft ist bei dieser Dichte vernachlässigbar. Genau deshalb ist der Schwebefall der einzige Zustand, aus dem sich die Ladung ohne jede Zusatzannahme gewinnen lässt.",
+          "tr": "Askıda kalmaktan yalnızca kuvvetlerin eşit olduğu değil, üçüncü bir kuvvetin hesaba katılmasına gerek olmadığı da çıkar: sürtünme hareket gerektirir, havadaki kaldırma kuvveti ise bu yoğunlukta ihmal edilebilir. Tam bu yüzden askı durumu, yükün hiçbir ek varsayım yapılmadan bulunabildiği tek durumdur."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 2,
+        "titel": "Ladung als Vielfaches der Elementarladung angeben",
+        "inhalt": "Jede Ladung ist ein ganzzahliges Vielfaches der Elementarladung, also $q = n\\cdot e$:\n\n$$n = \\frac{q}{e} = \\frac{3{,}53\\cdot 10^{-18}\\ \\text{C}}{1{,}602\\cdot 10^{-19}\\ \\text{C}} \\approx 22{,}0$$\n\nDas Kügelchen trägt also $22$ Überschusselektronen.",
+        "warum": {
+          "de": "Dass hier eine nahezu ganze Zahl herauskommt, ist die eigentliche Aussage: Ergäbe die Rechnung etwa $22{,}7$, wäre entweder ein Messwert ungenau oder ein Rechenfehler passiert — die Natur liefert keine halben Elektronen. Die Quantelung der Ladung wird damit zur Selbstkontrolle des eigenen Ergebnisses.",
+          "tr": "Burada neredeyse tam sayı çıkması işin asıl mesajıdır: hesap $22{,}7$ verseydi ya bir ölçüm değeri hatalı olurdu ya da işlem hatası yapılmış olurdu — doğa yarım elektron vermez. Yükün kuantumlu oluşu böylece kendi sonucunu denetleme aracına dönüşür."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 3,
+        "titel": "Kapazität des Kondensators berechnen",
+        "inhalt": "Für den luftgefüllten Plattenkondensator gilt $\\varepsilon_r \\approx 1$ und damit\n\n$$C = \\varepsilon_0\\cdot\\frac{A}{d_1} = 8{,}854\\cdot 10^{-12}\\ \\frac{\\text{As}}{\\text{Vm}}\\cdot\\frac{150\\cdot 10^{-4}\\ \\text{m}^2}{3{,}0\\cdot 10^{-3}\\ \\text{m}} \\approx 4{,}43\\cdot 10^{-11}\\ \\text{F} = 44{,}3\\ \\text{pF}$$",
+        "warum": {
+          "de": "Der Zahlenwert im Pikofarad-Bereich zeigt, warum Plattenkondensatoren aus dem Physiksaal nie als Energiespeicher taugen: Für nennenswerte Kapazitäten bräuchte man quadratkilometergroße Platten oder mikrometerdünne Abstände. Genau hier setzt die Technik mit Dielektrikum und aufgewickelten Folien an.",
+          "tr": "Sonucun pikofarad mertebesinde çıkması, fizik laboratuvarındaki levhalı kondansatörlerin neden hiçbir zaman enerji deposu olamayacağını gösterir: kayda değer bir sığa için kilometrekarelik levhalar ya da mikrometre inceliğinde aralıklar gerekirdi. Teknoloji tam burada dielektrik ve sarılmış folyolarla devreye girer."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 4,
+        "titel": "Anzahl der Überschusselektronen auf der Platte bestimmen",
+        "inhalt": "Die Plattenladung folgt aus der Definition der Kapazität:\n\n$$Q = C\\cdot U_1 = 4{,}43\\cdot 10^{-11}\\ \\text{F}\\cdot 350\\ \\text{V} \\approx 1{,}55\\cdot 10^{-8}\\ \\text{C}$$\n\nMit $Q = N\\cdot e$ ergibt sich\n\n$$N = \\frac{Q}{e} = \\frac{1{,}55\\cdot 10^{-8}\\ \\text{C}}{1{,}602\\cdot 10^{-19}\\ \\text{C}} \\approx 9{,}7\\cdot 10^{10}$$\n\nAuf der negativen Platte befinden sich also etwa $9{,}7\\cdot 10^{10}$ Elektronen mehr als im ungeladenen Zustand.",
+        "warum": {
+          "de": "Der Vergleich der beiden Zahlen ist der Kern dieser Teilaufgabe: $22$ Elektronen auf dem Kügelchen gegenüber rund $10^{11}$ auf der Platte. Das macht anschaulich, warum die Ladung des Kügelchens das Feld praktisch nicht stört und die Rechnung mit dem ungestörten homogenen Feld überhaupt zulässig ist.",
+          "tr": "Bu şıkkın özü iki sayının karşılaştırılmasıdır: kürecikte $22$ elektron, levhada ise yaklaşık $10^{11}$ elektron. Bu, küreciğin yükünün alanı pratikte hiç bozmadığını ve bozulmamış homojen alanla hesap yapmanın neden meşru olduğunu somutlaştırır."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 5,
+        "titel": "Auseinanderziehen der Platten bei konstanter Spannung erklären",
+        "inhalt": "Die Quelle bleibt angeschlossen, also ist $U = 350\\ \\text{V}$ konstant. Aus\n\n$$Q = C\\cdot U = \\varepsilon_0\\frac{A}{d}\\cdot U \\quad\\Longrightarrow\\quad Q \\sim \\frac{1}{d}$$\n\nfolgt: Beim Vergrößern von $d_1 = 3{,}0\\ \\text{mm}$ auf $d_2 = 8{,}0\\ \\text{mm}$ sinkt die Kapazität auf $C_2 = 44{,}3\\ \\text{pF}\\cdot\\frac{3{,}0}{8{,}0} \\approx 16{,}6\\ \\text{pF}$, und Ladung fließt von den Platten zur Quelle zurück: $Q_2 \\approx 5{,}8\\cdot 10^{-9}\\ \\text{C}$.\n\nGleichzeitig sinkt die Feldstärke:\n\n$$E_2 = \\frac{U_1}{d_2} = \\frac{350\\ \\text{V}}{8{,}0\\cdot 10^{-3}\\ \\text{m}} \\approx 4{,}4\\cdot 10^{4}\\ \\frac{\\text{V}}{\\text{m}}$$\n\ngegenüber $E_1 \\approx 1{,}17\\cdot 10^{5}\\ \\frac{\\text{V}}{\\text{m}}$. Die elektrische Kraft auf das Kügelchen fällt damit auf $F_{\\text{el}} = q\\cdot E_2 \\approx 1{,}5\\cdot 10^{-13}\\ \\text{N}$ und ist kleiner als die Gewichtskraft $F_G = m\\cdot g \\approx 4{,}1\\cdot 10^{-13}\\ \\text{N}$. Das Kügelchen beginnt zu sinken.",
+        "warum": {
+          "de": "Die Frage „angeschlossene Quelle oder abgetrennte Quelle?“ entscheidet über die gesamte Argumentation und wird deshalb im Abitur fast immer explizit erwähnt. Bleibt die Quelle dran, ist $U$ fest und $Q$ passt sich an; wird sie abgetrennt, ist $Q$ fest und $U$ passt sich an — dann bliebe $E$ hier sogar konstant und das Kügelchen schwebte weiter.",
+          "tr": "\"Kaynak bağlı mı, ayrılmış mı?\" sorusu bütün akıl yürütmeyi belirler; bu yüzden Abitur'da neredeyse her zaman açıkça belirtilir. Kaynak bağlıysa $U$ sabittir ve $Q$ ona uyar; ayrılmışsa $Q$ sabittir ve $U$ ona uyar — o durumda $E$ hiç değişmez ve kürecik askıda kalmayı sürdürürdü."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 6,
+        "titel": "Erforderliche Spannung beim neuen Plattenabstand bestimmen",
+        "inhalt": "Damit das Kügelchen weiterhin schwebt, muss die elektrische Kraft und damit die Feldstärke unverändert bleiben:\n\n$$\\frac{U_1}{d_1} = \\frac{U_2}{d_2} \\quad\\Longrightarrow\\quad U_2 = U_1\\cdot\\frac{d_2}{d_1} = 350\\ \\text{V}\\cdot\\frac{8{,}0\\ \\text{mm}}{3{,}0\\ \\text{mm}} \\approx 933\\ \\text{V}$$\n\nProbe über den Ansatz aus Schritt 1:\n\n$$U_2 = \\frac{m\\cdot g\\cdot d_2}{q} = \\frac{4{,}20\\cdot 10^{-14}\\ \\text{kg}\\cdot 9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}\\cdot 8{,}0\\cdot 10^{-3}\\ \\text{m}}{3{,}53\\cdot 10^{-18}\\ \\text{C}} \\approx 934\\ \\text{V}$$",
+        "warum": {
+          "de": "Der Verhältnisansatz kommt ohne die zuvor berechnete Ladung aus und ist damit gegen einen Folgefehler aus Teilaufgabe a) immun. Diese Unabhängigkeit ist im Abitur bares Geld wert: Wer den ersten Zahlenwert verrechnet, verliert mit dem Verhältnisweg keinen einzigen weiteren Punkt.",
+          "tr": "Oran yöntemi daha önce hesaplanan yüke hiç ihtiyaç duymaz, dolayısıyla a şıkkındaki olası bir hatanın devamını taşımaz. Bu bağımsızlık Abitur'da doğrudan puan demektir: ilk sayısal değeri yanlış bulan biri oran yoluyla ilerlerse tek bir puan daha kaybetmez."
+        },
+        "teilpunkte": 2
+      }
+    ],
+    "haeufige_fehler": [
+      "Die Ladung $q$ des Kügelchens mit der Plattenladung $Q$ verwechselt — beide kommen in dieser Aufgabe vor und unterscheiden sich um mehr als zehn Zehnerpotenzen.",
+      "Die Plattenfläche $150\\ \\text{cm}^2$ als $1{,}50\\ \\text{m}^2$ statt als $1{,}50\\cdot 10^{-2}\\ \\text{m}^2$ eingesetzt; bei Flächen wird der Umrechnungsfaktor quadriert.",
+      "In Teilaufgabe c) angenommen, die Ladung bleibe beim Auseinanderziehen erhalten. Das gilt nur bei abgetrennter Spannungsquelle.",
+      "$U_2$ über $U_2 = U_1\\cdot\\frac{d_1}{d_2}$ berechnet und damit eine kleinere statt einer größeren Spannung erhalten; ein größerer Abstand braucht bei gleicher Feldstärke mehr Spannung."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen Landesabitur Physik 2009, Grundkurs, Aufgabe A2 (Elektrostatik)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

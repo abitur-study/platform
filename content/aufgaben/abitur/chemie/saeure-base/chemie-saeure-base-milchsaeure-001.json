@@ -1,0 +1,88 @@
+{
+  "bereich": "abitur",
+  "id": "chemie-saeure-base-milchsaeure-001",
+  "titel": "pH-Wert und Pufferwirkung einer Milchsäure-Lösung",
+  "fach": "chemie",
+  "themenbereich": "Säure-Base-Chemie und Titration",
+  "themenbereich_slug": "saeure-base",
+  "unterthema": "pH-Berechnung und Puffer",
+  "niveau": "LK",
+  "operatoren": ["berechnen", "begründen", "erläutern"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 35,
+  "aufgabenstellung": "Milchsäure (2-Hydroxypropansäure) ist eine einprotonige Säure mit dem $\\mathrm{p}K_S$-Wert $3{,}86$. Im Labor stehen $50{,}0\\ \\text{mL}$ einer Milchsäure-Lösung der Konzentration $c_0 = 0{,}10\\ \\frac{\\text{mol}}{\\text{L}}$ zur Verfügung.\n\na) Formulieren Sie die Protolysegleichung von Milchsäure in Wasser und berechnen Sie den $\\mathrm{pH}$-Wert der Ausgangslösung.\n\nb) Zu den $50{,}0\\ \\text{mL}$ werden $25{,}0\\ \\text{mL}$ Natronlauge der Konzentration $0{,}10\\ \\frac{\\text{mol}}{\\text{L}}$ gegeben. Berechnen Sie den $\\mathrm{pH}$-Wert der entstehenden Lösung und begründen Sie Ihren Rechenweg.\n\nc) Erläutern Sie anhand von Reaktionsgleichungen, wie diese Lösung auf die Zugabe kleiner Mengen Säure beziehungsweise Lauge reagiert.",
+  "material": [],
+  "tipps": [
+    "Milchsäure ist eine schwache Säure. Was bedeutet das für die Konzentration der undissoziierten Säure im Gleichgewicht?",
+    "Rechne bei Aufgabenteil b) zuerst die Stoffmengen aus, nicht die Konzentrationen. Wie viel Säure ist vorhanden, wie viel Hydroxid wird zugegeben?",
+    "Wenn genau die Hälfte der Säure neutralisiert ist, liegen Säure und korrespondierende Base in gleicher Stoffmenge vor. Was macht das mit dem Logarithmus in der Henderson-Hasselbalch-Gleichung?"
+  ],
+  "loesung": {
+    "gesamtpunkte": 13,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Protolysegleichung und Säurekonstante",
+        "inhalt": "Milchsäure wird als $\\mathrm{HA}$ abgekürzt, das Lactat-Ion als $\\mathrm{A^-}$:\n\n$$\\mathrm{HA} + \\mathrm{H_2O} \\rightleftharpoons \\mathrm{A^-} + \\mathrm{H_3O^+}$$\n\nDas Massenwirkungsgesetz liefert die Säurekonstante:\n\n$$K_S = \\frac{c(\\mathrm{A^-})\\cdot c(\\mathrm{H_3O^+})}{c(\\mathrm{HA})}$$\n\nDer Doppelpfeil ist wesentlich: Milchsäure ist eine schwache Säure, sie protolysiert nur zu einem kleinen Teil.",
+        "warum": {
+          "de": "Ob man mit einem einfachen oder einem doppelten Pfeil schreibt, entscheidet über den gesamten Rechenweg. Bei einer starken Säure gilt $c(\\mathrm{H_3O^+}) = c_0$, und man ist nach einer Zeile fertig. Bei einer schwachen Säure stellt sich ein Gleichgewicht ein — erst dadurch wird der $\\mathrm{p}K_S$-Wert überhaupt gebraucht.",
+          "tr": "Tek okla mı çift okla mı yazdığın, bütün çözüm yolunu belirler. Kuvvetli bir asitte $c(\\mathrm{H_3O^+}) = c_0$ olur ve bir satırda iş biter. Zayıf bir asitte ise bir denge kurulur — $\\mathrm{p}K_S$ değerine ihtiyaç duyulmasının sebebi ancak budur."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 2,
+        "titel": "Näherungsformel herleiten und Voraussetzung prüfen",
+        "inhalt": "Aus der Protolyse entstehen $\\mathrm{H_3O^+}$ und $\\mathrm{A^-}$ in gleicher Menge, also $c(\\mathrm{H_3O^+}) = c(\\mathrm{A^-})$. Ist die Protolyse gering, gilt außerdem näherungsweise $c(\\mathrm{HA}) \\approx c_0$. Damit wird\n\n$$K_S \\approx \\frac{c(\\mathrm{H_3O^+})^2}{c_0} \\quad\\Longrightarrow\\quad c(\\mathrm{H_3O^+}) \\approx \\sqrt{K_S\\cdot c_0}$$\n\nLogarithmieren ergibt die übliche Form:\n\n$$\\mathrm{pH} \\approx \\tfrac{1}{2}\\left(\\mathrm{p}K_S - \\lg c_0\\right)$$\n\nDie Näherung ist zulässig, weil $\\mathrm{p}K_S = 3{,}86$ deutlich größer als $2$ und die Lösung nicht extrem verdünnt ist.",
+        "warum": {
+          "de": "Die Formel wird häufig auswendig gelernt, ohne die Annahme dahinter: Man tut so, als bliebe die Säurekonzentration unverändert, obwohl ein Teil protolysiert. Bei sehr starken oder sehr verdünnten Säuren stimmt das nicht mehr, und dieselbe Formel liefert dann grob falsche Werte. Eine Näherungsformel ohne ihre Voraussetzung ist im Abitur keine vollständige Begründung.",
+          "tr": "Bu formül çoğu zaman arkasındaki varsayım bilinmeden ezberlenir: bir kısmı protoliz olmasına rağmen asit derişimi değişmemiş gibi davranılır. Çok kuvvetli ya da çok seyreltik asitlerde bu artık geçerli değildir ve aynı formül kabaca yanlış değerler verir. Ön koşulu söylenmeyen bir yaklaşım formülü, Abitur'da tam bir gerekçe sayılmaz."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 3,
+        "titel": "pH-Wert der Ausgangslösung berechnen",
+        "inhalt": "Mit $\\mathrm{p}K_S = 3{,}86$ und $c_0 = 0{,}10\\ \\frac{\\text{mol}}{\\text{L}}$, also $\\lg c_0 = -1$:\n\n$$\\mathrm{pH} \\approx \\tfrac{1}{2}\\left(3{,}86 - (-1)\\right) = \\tfrac{1}{2}\\cdot 4{,}86 = 2{,}43$$\n\nDie Lösung ist deutlich sauer, aber weniger sauer als eine gleich konzentrierte Salzsäure, für die $\\mathrm{pH} = 1{,}0$ gälte.",
+        "warum": {
+          "de": "Der Vergleich mit der starken Säure ist der Sinn der Rechnung: Bei gleicher Einwaage unterscheiden sich die $\\mathrm{pH}$-Werte um mehr als eine Größenordnung in der Oxoniumkonzentration. Genau das ist der Unterschied zwischen der *Konzentration* einer Säure und ihrer *Stärke* — zwei Begriffe, die regelmäßig verwechselt werden.",
+          "tr": "Kuvvetli asitle karşılaştırma, hesabın asıl amacıdır: aynı tartımda $\\mathrm{pH}$ değerleri oksonyum derişimi bakımından bir büyüklük mertebesinden fazla ayrılır. Bir asidin *derişimi* ile *kuvveti* arasındaki fark tam olarak budur — sık sık karıştırılan iki kavram."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 4,
+        "titel": "Halbäquivalenzpunkt erkennen und pH bestimmen",
+        "inhalt": "Stoffmengen vor der Reaktion:\n\n$$n(\\mathrm{HA}) = 0{,}0500\\ \\text{L}\\cdot 0{,}10\\ \\tfrac{\\text{mol}}{\\text{L}} = 5{,}0\\ \\text{mmol}$$\n\n$$n(\\mathrm{OH^-}) = 0{,}0250\\ \\text{L}\\cdot 0{,}10\\ \\tfrac{\\text{mol}}{\\text{L}} = 2{,}5\\ \\text{mmol}$$\n\nDas Hydroxid neutralisiert die Säure vollständig zu Lactat:\n\n$$\\mathrm{HA} + \\mathrm{OH^-} \\longrightarrow \\mathrm{A^-} + \\mathrm{H_2O}$$\n\nEs verbleiben $5{,}0 - 2{,}5 = 2{,}5\\ \\text{mmol}$ Milchsäure neben $2{,}5\\ \\text{mmol}$ Lactat. Genau die Hälfte der Säure ist neutralisiert — das ist der Halbäquivalenzpunkt.\n\nHenderson-Hasselbalch-Gleichung:\n\n$$\\mathrm{pH} = \\mathrm{p}K_S + \\lg\\frac{n(\\mathrm{A^-})}{n(\\mathrm{HA})} = 3{,}86 + \\lg 1 = 3{,}86$$",
+        "warum": {
+          "de": "Der entscheidende Kunstgriff ist, mit Stoffmengen statt mit Konzentrationen zu rechnen: Durch das Zusammengießen ändert sich das Volumen, aber im Quotienten $n(\\mathrm{A^-})/n(\\mathrm{HA})$ kürzt sich das gemeinsame Volumen ohnehin heraus. Deshalb muss man das Mischvolumen hier gar nicht bestimmen — eine Verdünnung verschiebt den $\\mathrm{pH}$ eines Puffers nicht.",
+          "tr": "Asıl püf noktası derişim yerine mol miktarıyla hesap yapmaktır: karıştırmayla hacim değişir, ama $n(\\mathrm{A^-})/n(\\mathrm{HA})$ oranında ortak hacim zaten sadeleşir. Bu yüzden karışım hacmini bulmaya hiç gerek yoktur — seyreltme bir tamponun $\\mathrm{pH}$'ını kaydırmaz."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 5,
+        "titel": "Pufferwirkung erläutern",
+        "inhalt": "Die Lösung enthält nun die schwache Säure $\\mathrm{HA}$ und ihre korrespondierende Base $\\mathrm{A^-}$ nebeneinander in vergleichbarer Menge — ein Puffersystem.\n\nBei Zugabe von Säure fängt das Lactat die Oxonium-Ionen ab:\n\n$$\\mathrm{A^-} + \\mathrm{H_3O^+} \\longrightarrow \\mathrm{HA} + \\mathrm{H_2O}$$\n\nBei Zugabe von Lauge fängt die Milchsäure die Hydroxid-Ionen ab:\n\n$$\\mathrm{HA} + \\mathrm{OH^-} \\longrightarrow \\mathrm{A^-} + \\mathrm{H_2O}$$\n\nIn beiden Fällen wird das zugegebene Teilchen in Wasser beziehungsweise in den jeweils anderen Partner des Puffersystems überführt. Der Quotient $n(\\mathrm{A^-})/n(\\mathrm{HA})$ verschiebt sich dabei nur geringfügig, und da er logarithmisch in den $\\mathrm{pH}$ eingeht, bleibt dieser nahezu konstant. Die Pufferwirkung endet, wenn eine der beiden Komponenten aufgebraucht ist.",
+        "warum": {
+          "de": "Der Halbäquivalenzpunkt ist nicht zufällig auch der Punkt der besten Pufferwirkung: Dort ist der Quotient gleich eins und reagiert auf Zugaben in beide Richtungen am unempfindlichsten. Deshalb wählt man in der Praxis ein Puffersystem, dessen $\\mathrm{p}K_S$ möglichst nahe am gewünschten $\\mathrm{pH}$ liegt — Blut etwa wird bei $\\mathrm{pH}\\ 7{,}4$ vom Hydrogencarbonat-System gepuffert.",
+          "tr": "Yarı eşdeğerlik noktasının aynı zamanda en iyi tamponlamanın olduğu nokta olması tesadüf değildir: orada oran bire eşittir ve her iki yöndeki eklemelere karşı en duyarsızdır. Bu yüzden pratikte $\\mathrm{p}K_S$'i istenen $\\mathrm{pH}$'a en yakın olan tampon sistemi seçilir — örneğin kan $\\mathrm{pH}\\ 7{,}4$'te hidrojenkarbonat sistemiyle tamponlanır."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "Milchsäure wie eine starke Säure behandelt und $\\mathrm{pH} = -\\lg c_0 = 1{,}0$ angegeben.",
+      "Beim Logarithmieren $\\lg 0{,}10 = -1$ mit $+1$ verwechselt und dadurch $\\mathrm{pH} = 1{,}43$ erhalten.",
+      "Bei Aufgabenteil b) mit Konzentrationen statt Stoffmengen gerechnet und die Volumenzunahme nicht berücksichtigt.",
+      "Behauptet, der Puffer halte den $\\mathrm{pH}$ bei beliebig großen Zugaben konstant — die Pufferkapazität ist begrenzt."
+    ]
+  },
+  "quelle": "eigene Erstellung (Beispielaufgabe, Phase 1)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam (Beispielaufgabe)",
+  "version": 1
+}

@@ -1,0 +1,78 @@
+{
+  "bereich": "abitur",
+  "id": "physik-wellen-gitter-laser-schirm-022",
+  "titel": "Grüner Laser am Gitter: Abstand der Maxima 3. Ordnung",
+  "fach": "physik",
+  "themenbereich": "Wellen und Wellenoptik",
+  "themenbereich_slug": "wellen",
+  "unterthema": "Optisches Gitter",
+  "niveau": "GK",
+  "operatoren": ["berechnen", "begründen", "erklären"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 30,
+  "aufgabenstellung": "Das Licht eines grünen Lasers ($\\lambda = 532\\ \\text{nm}$) fällt senkrecht auf ein optisches Gitter mit der Gitterkonstanten $d = 4{,}0\\ \\mu\\text{m}$. Die Gitterspalte stehen senkrecht (also lotrecht), der ebene Schirm steht parallel zum Gitter im Abstand $e = 1{,}20\\ \\text{m}$. Auf dem Schirm erscheint eine waagerechte Kette heller Punkte.\n\na) Berechnen Sie den Abstand, den die beiden Maxima $3.$ Ordnung auf dem Schirm voneinander haben.\n\nb) Das Gitter wird anschließend um wenige Grad um seine senkrechte Mittelachse gedreht, also um eine Achse parallel zu den Spalten. Begründen Sie, wie sich dadurch der in a) berechnete Abstand ändert.\n\nc) Das Gitter steht wieder in der Ausgangslage. Nun wird der grüne Laser durch einen roten ($\\lambda = 650\\ \\text{nm}$) ersetzt. Erklären Sie, wie sich dadurch die Lage der Maxima und die höchste überhaupt auftretende Ordnung ändern.",
+  "material": [],
+  "tipps": [
+    "Achten Sie in a) genau darauf, wonach gefragt ist: nach dem Abstand *zwischen* den beiden Maxima gleicher Ordnung, nicht nach dem Abstand eines Maximums von der Mitte.",
+    "Prüfen Sie den Beugungswinkel, bevor Sie eine Näherung verwenden — bei Gitterkonstanten im Mikrometerbereich werden die Winkel schnell groß.",
+    "Überlegen Sie für b), welchen Abstand zwei benachbarte Spalte aus Sicht des einfallenden Lichtbündels noch haben, wenn das Gitter schräg steht."
+  ],
+  "loesung": {
+    "gesamtpunkte": 15,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Beugungswinkel der 3. Ordnung",
+        "inhalt": "Für konstruktive Interferenz am Gitter muss der Gangunterschied benachbarter Teilbündel ein ganzzahliges Vielfaches der Wellenlänge sein, $\\Delta s = n\\cdot\\lambda$, und im rechtwinkligen Dreieck am Gitter gilt $\\sin\\alpha_n = \\Delta s / d$. Daraus:\n\n$$\\sin\\alpha_n = \\frac{n\\cdot\\lambda}{d} \\quad\\Longrightarrow\\quad \\sin\\alpha_3 = \\frac{3\\cdot 532\\cdot 10^{-9}\\ \\text{m}}{4{,}0\\cdot 10^{-6}\\ \\text{m}} = 0{,}399$$\n\n$$\\alpha_3 \\approx 23{,}5^\\circ$$",
+        "warum": {
+          "de": "Am Gitter tragen sehr viele Spalte bei, trotzdem genügt der Gangunterschied *zweier benachbarter* Spalte für die Lage der Maxima: Stimmen benachbarte Beiträge überein, stimmen automatisch alle überein. Deshalb sieht die Gitterformel genauso aus wie die Maximumsbedingung des Doppelspalts.",
+          "tr": "Ağda çok sayıda yarık katkı verir, yine de maksimumların yerini bulmak için *iki komşu* yarığın yol farkı yeterlidir: komşu katkılar uyumluysa, geri kalan hepsi kendiliğinden uyumludur. Bu yüzden ağ formülü, çift yarığın maksimum koşuluyla birebir aynı görünür."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 2,
+        "titel": "Abstand auf dem Schirm",
+        "inhalt": "Der Winkel $23{,}5^\\circ$ ist deutlich größer als $10^\\circ$; die Kleinwinkelnäherung ist hier **nicht** zulässig, es muss mit dem Tangens gerechnet werden. Für den Abstand eines Maximums von der Schirmmitte gilt\n\n$$a_3 = e\\cdot\\tan\\alpha_3 = 1{,}20\\ \\text{m}\\cdot\\tan 23{,}5^\\circ = 1{,}20\\ \\text{m}\\cdot 0{,}435 \\approx 0{,}52\\ \\text{m}$$\n\nDa das Muster symmetrisch zur optischen Achse liegt, beträgt der Abstand der beiden Maxima $3.$ Ordnung\n\n$$D = 2\\cdot a_3 \\approx 1{,}04\\ \\text{m}$$",
+        "warum": {
+          "de": "Der Faktor $2$ am Schluss ist der häufigste Punktverlust in dieser Aufgabenart: Gefragt ist der Abstand der beiden Maxima gleicher Ordnung voneinander, gerechnet wird aber zunächst der Abstand von der Mitte. Umgekehrt muss man einen gemessenen Abstand zweier Maxima erst halbieren, bevor man ihn in $\\tan\\alpha = a/e$ einsetzt.",
+          "tr": "Sondaki $2$ çarpanı bu soru tipinde en sık puan kaybettiren yerdir: sorulan, aynı mertebeden iki maksimumun birbirine uzaklığıdır; hesaplanan ise önce ortadan uzaklıktır. Tersine, ölçülmüş bir maksimumlar arası uzaklık $\\tan\\alpha = a/e$'ye konmadan önce ikiye bölünmelidir."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 3,
+        "titel": "Drehung des Gitters um die Spaltrichtung",
+        "inhalt": "Wird das Gitter um eine Achse parallel zu den Spalten gedreht, so erscheinen die Spalte aus Richtung des einfallenden Lichts **enger beieinander**: Wirksam ist nur noch die Projektion des Spaltabstands quer zur Einfallsrichtung, also ein kleinerer Wert $d' < d$.\n\nNach $\\sin\\alpha_n = \\dfrac{n\\cdot\\lambda}{d'}$ wird bei kleinerem $d'$ der Sinus und damit der Beugungswinkel **größer**. Die Maxima rücken also weiter nach außen, und der Abstand der beiden Maxima $3.$ Ordnung **wächst**.",
+        "warum": {
+          "de": "Man muss unterscheiden, welche Eigenschaft des Gitters in der Formel überhaupt vorkommt: Die Länge der Spalte steht nirgends, ihr gegenseitiger Abstand dagegen schon. Eine Drehung um die Achse senkrecht zu den Spalten würde deshalb nichts an den Abständen ändern, eine Drehung um die Achse parallel dazu sehr wohl.",
+          "tr": "Ağın hangi özelliğinin formülde yer aldığını ayırt etmek gerekir: yarıkların uzunluğu hiçbir yerde geçmez, aralarındaki uzaklık ise geçer. Bu nedenle yarıklara dik eksen etrafındaki bir döndürme aralıkları değiştirmezken, yarıklara paralel eksen etrafındaki döndürme değiştirir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 4,
+        "titel": "Wechsel zum roten Laser",
+        "inhalt": "**Lage:** Rotes Licht hat die größere Wellenlänge. Nach $\\sin\\alpha_n = \\dfrac{n\\lambda}{d}$ gehört zu jeder Ordnung ein größerer Winkel, zum Beispiel\n\n$$\\sin\\alpha_3 = \\frac{3\\cdot 650\\cdot 10^{-9}\\ \\text{m}}{4{,}0\\cdot 10^{-6}\\ \\text{m}} = 0{,}4875 \\quad\\Longrightarrow\\quad \\alpha_3 \\approx 29{,}2^\\circ$$\n\nAlle Maxima rücken also weiter nach außen; nur das Maximum $0.$ Ordnung bleibt in der Mitte, denn für $n = 0$ ist der Winkel unabhängig von $\\lambda$ gleich null.\n\n**Höchste Ordnung:** Ein Maximum kann es nur geben, solange $\\sin\\alpha_n \\le 1$ ist, also $n \\le \\dfrac{d}{\\lambda}$:\n\n$$\\text{grün:}\\ \\frac{4{,}0\\ \\mu\\text{m}}{0{,}532\\ \\mu\\text{m}} = 7{,}5 \\Rightarrow n_{\\max} = 7, \\qquad \\text{rot:}\\ \\frac{4{,}0\\ \\mu\\text{m}}{0{,}650\\ \\mu\\text{m}} = 6{,}2 \\Rightarrow n_{\\max} = 6$$\n\nMit dem roten Laser tritt also eine Ordnung weniger auf.",
+        "warum": {
+          "de": "Hier zeigt sich, dass $\\sin\\alpha \\le 1$ keine mathematische Formalität ist, sondern eine echte physikalische Schranke: Eine Ordnung, die einen Sinus über $1$ verlangen würde, existiert schlicht nicht — sie fehlt nicht nur auf dem Schirm, sondern überhaupt. Deshalb liefern langwelliges Licht und feine Gitter grundsätzlich weniger Ordnungen.",
+          "tr": "Burada $\\sin\\alpha \\le 1$ koşulunun matematiksel bir ayrıntı değil, gerçek bir fiziksel sınır olduğu görülür: sinüsü $1$'den büyük olmasını gerektiren bir mertebe hiç var olmaz — yalnızca ekranda görünmemekle kalmaz, hiç oluşmaz. Bu yüzden uzun dalga boylu ışık ve sık ağlar ilke olarak daha az mertebe verir."
+        },
+        "teilpunkte": 4
+      }
+    ],
+    "haeufige_fehler": [
+      "Nur $a_3$ statt $2\\cdot a_3$ angegeben, obwohl nach dem Abstand der beiden Maxima gefragt ist.",
+      "Trotz $\\alpha_3 \\approx 23{,}5^\\circ$ mit der Kleinwinkelnäherung gerechnet und dadurch einen zu kleinen Abstand erhalten.",
+      "Behauptet, das Maximum $0.$ Ordnung wandere beim Farbwechsel mit — für $n = 0$ ist der Winkel für jede Wellenlänge null.",
+      "Die höchste Ordnung über die Schirmbreite statt über $\\sin\\alpha \\le 1$ begründet, obwohl nach der überhaupt auftretenden Ordnung gefragt ist."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen, Landesabitur Physik Grundkurs 2011, Aufgabe B2 (Optisches Gitter)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

@@ -1,0 +1,88 @@
+{
+  "bereich": "abitur",
+  "id": "physik-quanten-photoeffekt-gegenfeld-001",
+  "titel": "Bestimmung des Planckschen Wirkungsquantums mit der Gegenfeldmethode",
+  "fach": "physik",
+  "themenbereich": "Quantenphysik",
+  "themenbereich_slug": "quantenphysik",
+  "unterthema": "Photoeffekt",
+  "niveau": "LK",
+  "operatoren": ["bestimmen", "berechnen", "erläutern"],
+  "sprache": "de",
+  "schwierigkeit": 4,
+  "bearbeitungszeit_min": 35,
+  "aufgabenstellung": "Eine Photozelle mit Caesium-Kathode wird nacheinander mit monochromatischem Licht zweier Wellenlängen bestrahlt. Gemessen wird jeweils die Gegenspannung $U_G$, bei der der Photostrom gerade auf null zurückgeht.\n\nMessergebnisse: Bei $\\lambda_1 = 405\\ \\text{nm}$ ist $U_{G,1} = 0{,}98\\ \\text{V}$, bei $\\lambda_2 = 546\\ \\text{nm}$ ist $U_{G,2} = 0{,}20\\ \\text{V}$. Es gilt $c = 2{,}998\\cdot 10^{8}\\ \\frac{\\text{m}}{\\text{s}}$ und $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$.\n\na) Bestimmen Sie aus den beiden Messwerten das Plancksche Wirkungsquantum $h$.\n\nb) Berechnen Sie die Austrittsarbeit der Caesium-Kathode und geben Sie sie zusätzlich in Elektronenvolt an.\n\nc) Erläutern Sie, welche Beobachtung am Photoeffekt sich mit dem klassischen Wellenmodell des Lichts nicht vereinbaren lässt.",
+  "material": [],
+  "tipps": [
+    "Die Gegenspannung bremst die Elektronen ab. Welche Elektronen schaffen es gerade noch bis zur Anode, wenn der Strom auf null geht?",
+    "Stelle die Einstein-Gleichung für beide Wellenlängen getrennt auf. Du hast dann zwei Gleichungen mit zwei Unbekannten — $h$ und die Austrittsarbeit.",
+    "Wenn du die beiden Gleichungen voneinander abziehst, fällt eine der beiden Unbekannten weg."
+  ],
+  "loesung": {
+    "gesamtpunkte": 13,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Bedeutung der Gegenspannung klären",
+        "inhalt": "Die Gegenspannung ist so gepolt, dass sie die aus der Kathode ausgelösten Elektronen abbremst. Der Photostrom verschwindet genau dann, wenn selbst die schnellsten Elektronen die Anode nicht mehr erreichen. Für diese gilt:\n\n$$e\\cdot U_G = E_{kin,\\,max}$$",
+        "warum": {
+          "de": "Die maximale kinetische Energie der Elektronen lässt sich nicht direkt messen. Die Gegenfeldmethode übersetzt sie in eine Spannung, die man am Voltmeter ablesen kann — das ist der eigentliche Sinn des Aufbaus. Entscheidend ist das Wort *maximal*: Elektronen aus tieferen Schichten des Metalls sind langsamer, sie werden schon bei kleinerer Gegenspannung gestoppt.",
+          "tr": "Elektronların maksimum kinetik enerjisi doğrudan ölçülemez. Karşı alan yöntemi bunu voltmetreden okunabilen bir gerilime çevirir — düzeneğin asıl amacı budur. Belirleyici olan *maksimum* kelimesidir: metalin daha derin katmanlarından gelen elektronlar daha yavaştır, onlar daha küçük karşı gerilimde zaten durdurulur."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 2,
+        "titel": "Einstein-Gleichung für beide Messungen aufstellen",
+        "inhalt": "Die Energie eines Photons beträgt $E = h\\cdot f = \\frac{h\\cdot c}{\\lambda}$. Ein Teil davon wird als Austrittsarbeit $W_A$ verbraucht, der Rest bleibt als kinetische Energie:\n\n$$e\\,U_G = h\\,f - W_A$$\n\nFrequenzen der beiden Messungen:\n\n$$f_1 = \\frac{c}{\\lambda_1} = \\frac{2{,}998\\cdot 10^{8}}{405\\cdot 10^{-9}}\\ \\text{Hz} = 7{,}402\\cdot 10^{14}\\ \\text{Hz}$$\n\n$$f_2 = \\frac{c}{\\lambda_2} = \\frac{2{,}998\\cdot 10^{8}}{546\\cdot 10^{-9}}\\ \\text{Hz} = 5{,}491\\cdot 10^{14}\\ \\text{Hz}$$",
+        "warum": {
+          "de": "Die Umrechnung von Wellenlänge in Frequenz ist nicht bloß Kosmetik: Die Einstein-Gleichung ist in $f$ linear, in $\\lambda$ dagegen nicht. Nur in der Frequenzdarstellung lässt sich $h$ als Steigung einer Geraden deuten — genau so wird der Versuch im Diagramm ausgewertet.",
+          "tr": "Dalga boyunu frekansa çevirmek yalnızca biçimsel değil: Einstein denklemi $f$'e göre doğrusaldır, $\\lambda$'ya göre değil. $h$'ın bir doğrunun eğimi olarak yorumlanması ancak frekans gösteriminde mümkündür — deney grafikte tam olarak böyle değerlendirilir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 3,
+        "titel": "Differenzbildung: Austrittsarbeit eliminieren",
+        "inhalt": "Beide Messungen erfolgen an derselben Kathode, also ist $W_A$ in beiden Gleichungen dieselbe Größe. Subtraktion der zweiten von der ersten Gleichung:\n\n$$e\\,U_{G,1} - e\\,U_{G,2} = h\\,(f_1 - f_2)$$\n\n$$h = \\frac{e\\,(U_{G,1} - U_{G,2})}{f_1 - f_2} = \\frac{1{,}602\\cdot 10^{-19}\\ \\text{C}\\cdot 0{,}78\\ \\text{V}}{1{,}911\\cdot 10^{14}\\ \\text{Hz}}$$\n\n$$h = \\frac{1{,}250\\cdot 10^{-19}\\ \\text{J}}{1{,}911\\cdot 10^{14}\\ \\text{Hz}} \\approx 6{,}54\\cdot 10^{-34}\\ \\text{J}\\,\\text{s}$$\n\nDer Literaturwert beträgt $6{,}626\\cdot 10^{-34}\\ \\text{J}\\,\\text{s}$; die Abweichung liegt bei rund $1{,}3\\ \\%$.",
+        "warum": {
+          "de": "Die Differenzbildung ist der Grund, warum überhaupt zwei Wellenlängen gemessen werden. Mit einer einzigen Messung hätte man eine Gleichung mit zwei Unbekannten und käme nicht weiter. Im Diagramm entspricht dieser Rechenschritt der Steigung der Geraden $U_G(f)$ — die Austrittsarbeit steckt dort im Achsenabschnitt und fällt bei der Steigung heraus.",
+          "tr": "Fark alma, neden iki farklı dalga boyunun ölçüldüğünün cevabıdır. Tek ölçümle iki bilinmeyenli tek denklemin olur ve ilerleyemezsin. Grafikte bu adım $U_G(f)$ doğrusunun eğimine karşılık gelir — çıkış işi orada eksen kesim noktasındadır ve eğim alınırken düşer."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 4,
+        "titel": "Austrittsarbeit berechnen",
+        "inhalt": "Einsetzen in die erste Gleichung:\n\n$$W_A = h\\,f_1 - e\\,U_{G,1} = 6{,}54\\cdot 10^{-34}\\cdot 7{,}402\\cdot 10^{14}\\ \\text{J} - 1{,}602\\cdot 10^{-19}\\cdot 0{,}98\\ \\text{J}$$\n\n$$W_A = 4{,}84\\cdot 10^{-19}\\ \\text{J} - 1{,}57\\cdot 10^{-19}\\ \\text{J} = 3{,}27\\cdot 10^{-19}\\ \\text{J}$$\n\nUmrechnung in Elektronenvolt:\n\n$$W_A = \\frac{3{,}27\\cdot 10^{-19}\\ \\text{J}}{1{,}602\\cdot 10^{-19}\\ \\frac{\\text{J}}{\\text{eV}}} \\approx 2{,}0\\ \\text{eV}$$\n\nDas passt gut zum Tabellenwert für Caesium von etwa $2{,}1\\ \\text{eV}$.",
+        "warum": {
+          "de": "Das Elektronenvolt ist hier keine bloße Umrechnungsübung: Zahlen wie $10^{-19}\\ \\text{J}$ lassen sich nicht vergleichen, Werte um $2\\ \\text{eV}$ dagegen sofort — man erkennt auf einen Blick, dass sichtbares Licht mit ein bis drei Elektronenvolt gerade ausreicht. Deshalb ist $\\text{eV}$ die übliche Einheit der Atomphysik.",
+          "tr": "Elektronvolt burada sadece bir birim çevirme alıştırması değil: $10^{-19}\\ \\text{J}$ gibi sayılar karşılaştırılamaz, $2\\ \\text{eV}$ civarındaki değerler ise anında karşılaştırılır — görünür ışığın bir ila üç elektronvoltuyla bunun tam yettiği bir bakışta görülür. Atom fiziğinin olağan birimi bu yüzden $\\text{eV}$'dir."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 5,
+        "titel": "Widerspruch zum Wellenmodell erläutern",
+        "inhalt": "Nach dem klassischen Wellenmodell verteilt sich die Lichtenergie gleichmäßig über die gesamte Wellenfront. Ein Elektron müsste dann Energie ansammeln, bis sie zum Austritt reicht. Daraus folgten drei Vorhersagen, die alle im Experiment widerlegt werden:\n\nErstens: Bei genügend langer Bestrahlung müsste jedes Licht Elektronen auslösen. Tatsächlich tritt unterhalb einer Grenzfrequenz $f_{grenz} = \\frac{W_A}{h}$ kein Photostrom auf, gleichgültig wie lange man wartet.\n\nZweitens: Höhere Intensität müsste schnellere Elektronen liefern. Tatsächlich hängt $U_G$ und damit $E_{kin,\\,max}$ nur von der Frequenz ab; mehr Intensität liefert nur mehr Elektronen, nicht schnellere.\n\nDrittens: Bei schwachem Licht wäre eine messbare Verzögerung bis zum Einsetzen des Stroms zu erwarten. Tatsächlich setzt der Photostrom praktisch verzögerungsfrei ein.\n\nErklärbar ist das nur mit dem Photonenmodell: Licht überträgt Energie in Portionen $h\\,f$, und ein Elektron nimmt jeweils genau ein Photon auf.",
+        "warum": {
+          "de": "Der Operator „erläutern“ verlangt hier eine Gegenüberstellung von Vorhersage und Beobachtung, nicht die bloße Wiedergabe der Photonenhypothese. Das Argument trägt nur, weil man zuerst sagt, was das Wellenmodell *fordern würde* — erst dann ist die Beobachtung ein Widerspruch und nicht nur eine Behauptung.",
+          "tr": "*Erläutern* (açıklayınız) operatörü burada öngörü ile gözlemin karşılaştırılmasını ister, foton varsayımını tekrar etmeyi değil. Argüman ancak dalga modelinin ne *gerektireceğini* önce söylediğinde ayakta durur — ancak o zaman gözlem bir çelişki olur, yoksa yalnızca bir iddia kalır."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "$U_G$ direkt als Energie eingesetzt, ohne mit der Elementarladung zu multiplizieren.",
+      "Wellenlängen nicht in Frequenzen umgerechnet und dadurch eine nichtlineare Beziehung linear behandelt.",
+      "Austrittsarbeit mit der kinetischen Energie verwechselt — $W_A$ ist die Energie, die verbraucht wird, nicht die übrig bleibt.",
+      "Behauptet, hellere Beleuchtung erhöhe die Geschwindigkeit der Elektronen; sie erhöht nur deren Anzahl."
+    ]
+  },
+  "quelle": "eigene Erstellung (Beispielaufgabe, Phase 1)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam (Beispielaufgabe)",
+  "version": 1
+}

@@ -1,0 +1,87 @@
+{
+  "bereich": "abitur",
+  "id": "chemie-kohlenhydrate-fehling-disaccharide-001",
+  "titel": "Warum Saccharose die Fehling-Probe nicht besteht",
+  "fach": "chemie",
+  "themenbereich": "Kohlenhydrate",
+  "themenbereich_slug": "kohlenhydrate",
+  "unterthema": "Fehling-Probe und reduzierende Zucker",
+  "niveau": "LK",
+  "operatoren": ["beschreiben", "erklären", "begründen", "vergleichen"],
+  "sprache": "de",
+  "schwierigkeit": 4,
+  "bearbeitungszeit_min": 35,
+  "aufgabenstellung": "Vier Zuckerlösungen werden mit Fehling-Reagenz versetzt und erhitzt. Die Beobachtungen sind in Material 1 zusammengestellt.\n\na) Beschreiben Sie die Durchführung der Fehling-Probe und geben Sie an, welche funktionelle Gruppe sie nachweist.\n\nb) Erklären Sie am Beispiel der Glucose, warum ein Zucker, der in Lösung ganz überwiegend als Ring vorliegt, dennoch positiv reagiert. Gehen Sie dabei auf den Übergang zwischen Haworth- und Fischer-Darstellung ein.\n\nc) Begründen Sie den unterschiedlichen Befund bei Maltose und Saccharose anhand ihrer glykosidischen Bindungen.\n\nd) Vergleichen Sie das Verhalten von Fructose mit dem von Glucose und erklären Sie den überraschenden Befund.",
+  "material": [
+    {
+      "typ": "text",
+      "titel": "Material 1: Beobachtungen bei der Fehling-Probe",
+      "inhalt": "Alle vier Ansätze werden mit frisch gemischtem Fehling-Reagenz versetzt und im Wasserbad erhitzt.\n\nGlucose-Lösung: Die zunächst tiefblaue Lösung verfärbt sich über Grün und Gelb nach Orangerot; es fällt ein ziegelroter Niederschlag aus.\n\nFructose-Lösung: gleiches Verhalten wie bei Glucose, ziegelroter Niederschlag.\n\nMaltose-Lösung: ziegelroter Niederschlag, etwas langsamer einsetzend.\n\nSaccharose-Lösung: Die Lösung bleibt auch nach längerem Erhitzen tiefblau; es fällt kein Niederschlag aus.\n\nZur Struktur: In Maltose sind zwei Glucose-Einheiten über eine $\\alpha$-1,4-glykosidische Bindung verknüpft. In Saccharose sind eine Glucose- und eine Fructose-Einheit über eine 1,2-glykosidische Bindung verknüpft.",
+      "quelle": "eigene Erstellung nach dem Standardversuch zur Fehling-Probe",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Ein Zucker reagiert nur dann positiv, wenn er in Lösung eine offenkettige Form mit einer Aldehydgruppe bilden kann. Welche Gruppe im Ring ermöglicht die Ringöffnung?",
+    "Schau dir an, welche C-Atome bei der glykosidischen Bindung beteiligt sind. Ein anomeres C-Atom ist das ehemalige Carbonyl-Kohlenstoffatom.",
+    "Fructose hat keine Aldehyd-, sondern eine Ketogruppe. Überlege, was im stark alkalischen Milieu des Fehling-Reagenz mit einer Ketogruppe passieren kann."
+  ],
+  "loesung": {
+    "gesamtpunkte": 14,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Durchführung und Nachweisprinzip beschreiben",
+        "inhalt": "Fehling I ist eine Kupfer(II)-sulfat-Lösung, Fehling II eine alkalische Lösung von Kalium-Natrium-Tartrat (Seignettesalz). Beide werden erst unmittelbar vor dem Versuch zu gleichen Teilen gemischt; die Tartrat-Ionen bilden mit den Kupfer(II)-Ionen einen löslichen Komplex und verhindern so das Ausfallen von Kupfer(II)-hydroxid im alkalischen Milieu.\n\nBeim Erhitzen mit einem geeigneten Zucker läuft eine Redoxreaktion ab: Die Aldehydgruppe wird zur Carbonsäure oxidiert, die Kupfer(II)-Ionen werden zu Kupfer(I) reduziert und fallen als ziegelrotes Kupfer(I)-oxid aus:\n\n$$2\\,\\mathrm{Cu^{2+}} + 2\\,\\mathrm{OH^-} + \\mathrm{R\\text{-}CHO} \\longrightarrow \\mathrm{Cu_2O}\\downarrow + \\mathrm{R\\text{-}COOH} + \\mathrm{H_2O}$$\n\nNachgewiesen wird also die Aldehydgruppe; Zucker, die positiv reagieren, heißen reduzierende Zucker.",
+        "warum": {
+          "de": "Dass die beiden Lösungen getrennt aufbewahrt werden, ist kein Laborritual, sondern chemisch notwendig: Ohne Komplexbildner würde im alkalischen Milieu sofort Kupfer(II)-hydroxid ausfallen und dem Nachweis die reaktive Spezies entziehen. Wer den Aufbau erklären kann, hat verstanden, dass der Nachweis eine Redoxreaktion und keine Farbreaktion ist.",
+          "tr": "İki çözeltinin ayrı saklanması bir laboratuvar ritüeli değil, kimyasal bir zorunluluktur: kompleks yapıcı olmadan bazik ortamda hemen bakır(II) hidroksit çöker ve tepkimenin aktif türü ortadan kalkar. Düzeneği açıklayabilen kişi, bu testin bir renk tepkimesi değil bir redoks tepkimesi olduğunu kavramış demektir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Ringöffnung der Glucose erklären",
+        "inhalt": "In wässriger Lösung liegt Glucose zu über $99\\ \\%$ als Sechsring vor (Haworth-Darstellung, Pyranoseform). Der Ring entsteht dadurch, dass die Hydroxygruppe am C5-Atom an die Aldehydgruppe am C1-Atom addiert. Am C1 sitzen dann eine Hydroxy- und eine Ethergruppe: Es liegt ein Halbacetal vor, das C1 ist das anomere Kohlenstoffatom.\n\nEin Halbacetal steht in wässriger Lösung im Gleichgewicht mit der offenkettigen Form:\n\n$$\\text{Ringform (Halbacetal)} \\rightleftharpoons \\text{offene Kette (Fischer-Darstellung, mit Aldehydgruppe)}$$\n\nObwohl der Anteil der offenen Form nur bei etwa $0{,}02\\ \\%$ liegt, wird sie durch die Fehling-Reaktion laufend verbraucht. Nach dem Prinzip von Le Chatelier bildet sich sofort neue offenkettige Form nach, bis der gesamte Zucker umgesetzt ist.",
+        "warum": {
+          "de": "Hier verbinden sich zwei Themengebiete, die sonst getrennt gelernt werden: Der Nachweis funktioniert nicht *trotz*, sondern *wegen* des Gleichgewichts. Wer nur die Momentaufnahme betrachtet, hält den Anteil von $0{,}02\\ \\%$ für zu klein und erwartet einen negativen Befund. Erst das Nachrücken des Gleichgewichts erklärt die vollständige Umsetzung.",
+          "tr": "Burada normalde ayrı öğrenilen iki konu birleşir: test dengeye *rağmen* değil, denge *sayesinde* çalışır. Yalnızca anlık duruma bakan biri $0{,}02\\ \\%$'lik payı çok küçük bulur ve negatif sonuç bekler. Tam dönüşümü ancak dengenin yeniden kurulması açıklar."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 3,
+        "titel": "Maltose und Saccharose vergleichen",
+        "inhalt": "In der Maltose verknüpft die $\\alpha$-1,4-glykosidische Bindung das anomere C1-Atom der ersten Glucose mit dem C4-Atom der zweiten. Das anomere C-Atom der zweiten Glucose-Einheit bleibt dabei unverknüpft und liegt weiterhin als Halbacetal vor. Dieser Ring kann sich öffnen, eine freie Aldehydgruppe bilden — Maltose ist ein reduzierender Zucker und reagiert positiv.\n\nIn der Saccharose verknüpft die 1,2-glykosidische Bindung dagegen das anomere C1-Atom der Glucose mit dem anomeren C2-Atom der Fructose. Beide anomeren Zentren sind damit in der Bindung gebunden; es liegt ein Vollacetal vor. Keiner der beiden Ringe kann sich öffnen, es entsteht keine Carbonylgruppe — Saccharose ist ein nicht reduzierender Zucker und reagiert negativ.",
+        "warum": {
+          "de": "Die entscheidende Frage ist nicht, wie viele Bausteine ein Zucker hat, sondern ob mindestens ein anomeres C-Atom frei bleibt. Damit lässt sich das Verhalten jedes Di- oder Polysaccharids vorhersagen, ohne es einzeln zu lernen: Lactose reagiert positiv, Stärke praktisch nicht, weil bei ihren langen Ketten auf sehr viele Bausteine nur ein einziges freies Halbacetal kommt.",
+          "tr": "Belirleyici soru bir şekerin kaç birimden oluştuğu değil, en az bir anomerik C atomunun serbest kalıp kalmadığıdır. Bununla her disakkarit veya polisakkaridin davranışı tek tek ezberlenmeden öngörülebilir: laktoz pozitif verir, nişasta ise pratikte vermez, çünkü uzun zincirlerinde çok sayıda birime karşılık yalnızca tek bir serbest yarı asetal düşer."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 4,
+        "titel": "Verhalten der Fructose erklären",
+        "inhalt": "Fructose ist eine Ketose: In der offenkettigen Fischer-Darstellung trägt sie am C2-Atom eine Ketogruppe, keine Aldehydgruppe. Ketone lassen sich unter den milden Bedingungen der Fehling-Probe normalerweise nicht oxidieren — dennoch fällt der Befund positiv aus.\n\nDie Ursache liegt im stark alkalischen Milieu des Fehling-Reagenz. Dort steht die Ketogruppe über eine Keto-Enol-Tautomerie im Gleichgewicht mit einem Endiol, das sich wiederum zu einer Aldose umlagern kann:\n\n$$\\text{Fructose (Ketose)} \\rightleftharpoons \\text{Endiol} \\rightleftharpoons \\text{Glucose / Mannose (Aldosen)}$$\n\nDie so gebildete Aldehydgruppe wird von der Fehling-Lösung oxidiert und dem Gleichgewicht laufend entzogen. Fructose reagiert deshalb positiv, obwohl sie selbst keine Aldehydgruppe besitzt.",
+        "warum": {
+          "de": "Dieser Befund zeigt die Grenze des Nachweises: Die Fehling-Probe unterscheidet nicht zwischen Aldosen und Ketosen, sondern nur zwischen reduzierenden und nicht reduzierenden Zuckern. Wer aus einem positiven Ergebnis auf eine Aldehydgruppe im ursprünglichen Molekül schließt, überinterpretiert das Experiment — im Abitur ist genau diese Einschränkung eine typische Bewertungsfrage.",
+          "tr": "Bu bulgu testin sınırını gösterir: Fehling testi aldozları ketozlardan ayırmaz, yalnızca indirgeyen ile indirgemeyen şekerleri ayırır. Pozitif sonuçtan yola çıkıp özgün molekülde aldehit grubu olduğu sonucuna varan kişi, deneyi aşırı yorumlamış olur — Abitur'da tam olarak bu sınırlama tipik bir değerlendirme sorusudur."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "Behauptet, Glucose reagiere nicht, weil sie in Lösung als Ring vorliegt — das Ringöffnungsgleichgewicht wird übersehen.",
+      "Die Zahl der Bausteine als Kriterium genommen statt der Zahl der freien anomeren C-Atome.",
+      "Halbacetal und Vollacetal verwechselt oder gar nicht unterschieden.",
+      "Bei Fructose auf einen negativen Befund geschlossen, weil sie keine Aldehydgruppe trägt.",
+      "Fehling I und Fehling II vorab gemischt aufbewahrt; das Reagenz muss frisch angesetzt werden."
+    ]
+  },
+  "quelle": "eigene Erstellung (Beispielaufgabe, Phase 1)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam (Beispielaufgabe)",
+  "version": 1
+}

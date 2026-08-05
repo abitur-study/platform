@@ -1,0 +1,87 @@
+{
+  "bereich": "abitur",
+  "id": "mathe-stochastik-normalverteilung-abfuellmenge-011",
+  "titel": "Normalverteilte Abfüllmenge einer Olivenölanlage",
+  "fach": "mathematik",
+  "themenbereich": "Stochastik",
+  "themenbereich_slug": "stochastik",
+  "unterthema": "Normalverteilung",
+  "niveau": "GK",
+  "operatoren": ["berechnen", "bestimmen", "ermitteln", "vergleichen", "erläutern"],
+  "sprache": "de",
+  "schwierigkeit": 4,
+  "bearbeitungszeit_min": 40,
+  "aufgabenstellung": "Eine Ölmühle füllt Olivenöl in Flaschen ab. Die Zufallsgröße $X$ beschreibt die Füllmenge einer Flasche in Millilitern. $X$ ist normalverteilt mit dem Erwartungswert $\\mu = 500$ und der Standardabweichung $\\sigma = 4$.\n\nDie Qualitätskontrolle akzeptiert eine Flasche, wenn ihre Füllmenge zwischen $492\\ \\text{ml}$ und $508\\ \\text{ml}$ liegt. Der Tagesproduktion wird zufällig eine Flasche entnommen.\n\na) Berechnen Sie die Wahrscheinlichkeit dafür, dass die Flasche von der Kontrolle akzeptiert wird.\n\nb) Durch eine Fehljustierung verschiebt sich der Erwartungswert auf $\\mu = 502\\ \\text{ml}$, während die Standardabweichung unverändert bei $4\\ \\text{ml}$ bleibt. Berechnen Sie die Annahmewahrscheinlichkeit erneut und vergleichen Sie sie mit dem Ergebnis aus a).\n\nc) Nach einer Wartung arbeitet die Anlage wieder mit $\\mu = 500\\ \\text{ml}$. Die Zufallsgröße $Y$ beschreibt nun die Füllmenge und ist normalverteilt mit $\\mu = 500$ und unbekannter Standardabweichung $\\sigma$. Ermitteln Sie einen Wert für $\\sigma$, sodass eine Flasche mit einer Wahrscheinlichkeit von $0{,}99$ akzeptiert wird.\n\nd) Für die ursprüngliche Anlage ($\\mu = 500$, $\\sigma = 4$) soll eine Mindestfüllmenge $m$ auf das Etikett gedruckt werden, die von $90\\,\\%$ aller Flaschen erreicht oder überschritten wird. Bestimmen Sie $m$ und erläutern Sie, warum $m$ kleiner als $500\\ \\text{ml}$ sein muss.\n\nRunden Sie alle Wahrscheinlichkeiten auf vier Nachkommastellen.",
+  "material": [
+    {
+      "typ": "tabelle",
+      "titel": "Werte der Verteilungsfunktion $\\Phi$ der Standardnormalverteilung",
+      "inhalt": "$$\\begin{array}{c|c|c|c|c|c} z & 1{,}28 & 1{,}50 & 1{,}96 & 2{,}00 & 2{,}50 \\\\ \\hline \\Phi(z) & 0{,}8997 & 0{,}9332 & 0{,}9750 & 0{,}9772 & 0{,}9938 \\end{array}$$\n\nUmkehrwerte (Quantile): aus $\\Phi(z) = 0{,}995$ folgt $z \\approx 2{,}576$; aus $\\Phi(z) = 0{,}900$ folgt $z \\approx 1{,}282$. Für negative Argumente gilt $\\Phi(-z) = 1 - \\Phi(z)$.",
+      "quelle": "eigene Erstellung",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Jede Rechnung mit der Normalverteilung beginnt mit derselben Frage: Wie viele Standardabweichungen ist die Grenze vom Erwartungswert entfernt? Diese Zahl ist $z$.",
+    "Die Tabelle kennt nur positive $z$. Für negative Werte hilft die Symmetrie der Glockenkurve: $\\Phi(-z) = 1 - \\Phi(z)$.",
+    "In c) und d) ist nicht die Wahrscheinlichkeit gesucht, sondern eine der Größen im Inneren. Stelle zuerst die Gleichung mit $\\Phi$ auf und lies erst danach rückwärts in der Tabelle."
+  ],
+  "loesung": {
+    "gesamtpunkte": 15,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Annahmewahrscheinlichkeit bei $\\mu = 500$, $\\sigma = 4$",
+        "inhalt": "Standardisieren der beiden Grenzen:\n\n$$z_{\\text{oben}} = \\frac{508 - 500}{4} = 2{,}00, \\qquad z_{\\text{unten}} = \\frac{492 - 500}{4} = -2{,}00$$\n\n$$P(492 \\le X \\le 508) = \\Phi(2{,}00) - \\Phi(-2{,}00) = \\Phi(2{,}00) - \\bigl(1 - \\Phi(2{,}00)\\bigr) = 2 \\cdot \\Phi(2{,}00) - 1$$\n\n$$P(492 \\le X \\le 508) = 2 \\cdot 0{,}9772 - 1 = 0{,}9544$$\n\nEtwa $95{,}44\\,\\%$ der Flaschen werden akzeptiert.",
+        "warum": {
+          "de": "Das Standardisieren ist kein Rechentrick, sondern ein Maßstabswechsel: Aus „$508$ Milliliter“ wird „zwei Standardabweichungen über dem Mittelwert“. Erst dadurch wird die Frage von der konkreten Abfüllanlage unabhängig und kann mit einer einzigen Tabelle für alle Normalverteilungen beantwortet werden. Dass das Kontrollintervall hier genau die $2\\sigma$-Umgebung ist, erklärt auch, warum das Ergebnis mit der bekannten Faustregel $95{,}4\\,\\%$ übereinstimmt — die Sigma-Regeln sind nichts anderes als Sonderfälle dieser Rechnung.",
+          "tr": "Standartlaştırma bir hesap hilesi değil, ölçek değişimidir: „$508$ mililitre“ ifadesi „ortalamanın iki standart sapma üstü“ hâline gelir. Soru ancak böylece belirli bir dolum makinesinden bağımsızlaşır ve tüm normal dağılımlar için tek bir tabloyla yanıtlanabilir. Kontrol aralığının burada tam olarak $2\\sigma$ çevresi olması, sonucun bilinen $\\%95{,}4$ pratik kuralıyla örtüşmesini de açıklar — sigma kuralları bu hesabın özel hâllerinden başka bir şey değildir."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 2,
+        "titel": "Annahmewahrscheinlichkeit nach der Fehljustierung ($\\mu = 502$)",
+        "inhalt": "Die Grenzen bleiben, der Erwartungswert wandert:\n\n$$z_{\\text{oben}} = \\frac{508 - 502}{4} = 1{,}50, \\qquad z_{\\text{unten}} = \\frac{492 - 502}{4} = -2{,}50$$\n\n$$P(492 \\le X \\le 508) = \\Phi(1{,}50) - \\Phi(-2{,}50) = 0{,}9332 - (1 - 0{,}9938) = 0{,}9332 - 0{,}0062 = 0{,}9270$$\n\nDie Annahmewahrscheinlichkeit sinkt von $95{,}44\\,\\%$ auf $92{,}70\\,\\%$, der Ausschuss steigt also von $4{,}56\\,\\%$ auf $7{,}30\\,\\%$ — er hat sich durch eine Verschiebung um nur $2\\ \\text{ml}$ um mehr als die Hälfte erhöht.",
+        "warum": {
+          "de": "Hier zeigt sich, warum die Symmetrieformel $2\\Phi(z) - 1$ aus Teilaufgabe a) jetzt nicht mehr benutzt werden darf: Sie setzt voraus, dass der Erwartungswert genau in der Mitte des Intervalls liegt. Sobald $\\mu$ wandert, sind die beiden Abstände verschieden und beide Grenzen müssen einzeln standardisiert werden. Inhaltlich lehrreich ist die Größenordnung: Weil die Glockenkurve an den Rändern sehr steil abfällt, wirkt sich eine kleine Verschiebung des Mittelwerts überproportional stark auf den Ausschuss aus. Für die Praxis heißt das, dass die Justierung der Anlage wichtiger ist als eine geringfügig kleinere Streuung.",
+          "tr": "Burada, a) şıkkındaki simetri formülü $2\\Phi(z) - 1$'in neden artık kullanılamayacağı görülür: o formül beklenen değerin aralığın tam ortasında olmasını gerektirir. $\\mu$ kaydığı anda iki uzaklık farklılaşır ve her iki sınır ayrı ayrı standartlaştırılmalıdır. İçerik açısından öğretici olan büyüklük mertebesidir: çan eğrisi kenarlarda çok dik düştüğünden, ortalamadaki küçük bir kayma hurda oranını orantısız biçimde artırır. Pratikte bu, makinenin ayarının biraz daha küçük bir yayılımdan daha önemli olduğu anlamına gelir."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 3,
+        "titel": "Standardabweichung für eine Annahmewahrscheinlichkeit von $0{,}99$",
+        "inhalt": "Gefordert ist $P(492 \\le Y \\le 508) = 0{,}99$ bei $\\mu = 500$. Da $\\mu$ genau in der Mitte des Intervalls liegt, gilt\n\n$$2 \\cdot \\Phi\\!\\left(\\frac{508 - 500}{\\sigma}\\right) - 1 = 0{,}99 \\;\\Longleftrightarrow\\; \\Phi\\!\\left(\\frac{8}{\\sigma}\\right) = 0{,}995$$\n\nAus der Tabelle folgt $\\dfrac{8}{\\sigma} \\approx 2{,}576$ und damit\n\n$$\\sigma = \\frac{8}{2{,}576} \\approx 3{,}11$$\n\nDie Streuung muss auf etwa $3{,}11\\ \\text{ml}$ gesenkt werden.",
+        "warum": {
+          "de": "Diese Teilaufgabe läuft rückwärts durch die Tabelle: Gegeben ist die Wahrscheinlichkeit, gesucht ein Parameter der Verteilung. Der Umformungsschritt von $0{,}99$ auf $0{,}995$ ist die Stelle, an der die meisten Fehler passieren — die $0{,}99$ verteilen sich symmetrisch um $\\mu$, links und rechts bleiben also je $0{,}5\\,\\%$ übrig, und $\\Phi$ misst immer die gesamte Fläche links vom Wert, also $99{,}5\\,\\%$. Bemerkenswert ist außerdem, was die Antwort bedeutet: Um den Ausschuss von $4{,}6\\,\\%$ auf $1\\,\\%$ zu drücken, muss die Streuung um gut ein Fünftel sinken — Präzisionsgewinne werden zu den Rändern hin immer teurer.",
+          "tr": "Bu şık tabloyu ters yönde kullanır: olasılık verilmiş, dağılımın bir parametresi aranmaktadır. $0{,}99$'dan $0{,}995$'e geçiş, hataların en çok yapıldığı yerdir — $0{,}99$ olasılık $\\mu$ etrafında simetrik dağılır, sağda ve solda birer $\\%0{,}5$ kalır ve $\\Phi$ daima değerin solundaki toplam alanı, yani $\\%99{,}5$'i ölçer. Sonucun anlamı da dikkat çekicidir: hurdayı $\\%4{,}6$'dan $\\%1$'e indirmek için yayılımın beşte bir kadar azalması gerekir — hassasiyet kazanımları uçlara doğru giderek pahalılaşır."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 4,
+        "titel": "Mindestfüllmenge für das Etikett bestimmen",
+        "inhalt": "Gesucht ist $m$ mit $P(X \\ge m) = 0{,}90$, also $P(X < m) = 0{,}10$. Wegen $\\Phi(z) = 0{,}10 < 0{,}5$ liegt $m$ links von $\\mu$; mit $\\Phi(1{,}282) = 0{,}900$ folgt $z = -1{,}282$:\n\n$$\\frac{m - 500}{4} = -1{,}282 \\;\\Longrightarrow\\; m = 500 - 1{,}282 \\cdot 4 = 500 - 5{,}128 \\approx 494{,}9$$\n\nAuf das Etikett kann eine Mindestfüllmenge von etwa $494{,}9\\ \\text{ml}$ gedruckt werden.\n\n**Erläuterung:** Der Erwartungswert $500\\ \\text{ml}$ ist wegen der Symmetrie der Glockenkurve zugleich der Median — genau die Hälfte aller Flaschen enthält weniger als $500\\ \\text{ml}$. Eine Schranke, die von $90\\,\\%$ der Flaschen überschritten wird, muss deshalb zwingend unterhalb von $500\\ \\text{ml}$ liegen.",
+        "warum": {
+          "de": "Der entscheidende Gedanke ist die Übersetzung von „mindestens“ in eine Aussage über $\\Phi$: Die Tabelle liefert stets Wahrscheinlichkeiten für „höchstens“, also die Fläche links. Wer diesen Wechsel vergisst, sucht $1{,}282$ statt $-1{,}282$ und erhält $505{,}1\\ \\text{ml}$ — einen Wert, den nur $10\\,\\%$ der Flaschen erreichen und der als Etikettenangabe die Kunden systematisch täuschen würde. Das Vorzeichen ist hier also keine Formsache, sondern der Unterschied zwischen einer korrekten und einer irreführenden Angabe. Die Plausibilitätsprüfung über den Median deckt einen solchen Fehler sofort auf.",
+          "tr": "Belirleyici düşünce, „en az“ ifadesinin $\\Phi$ diline çevrilmesidir: tablo daima „en çok“ olasılıklarını, yani soldaki alanı verir. Bu değişimi unutan kişi $-1{,}282$ yerine $1{,}282$ arar ve $505{,}1\\ \\text{ml}$ bulur — şişelerin yalnızca $\\%10$'unun ulaştığı, etikette yazıldığında müşteriyi sistematik olarak yanıltacak bir değer. Yani işaret burada biçimsel bir ayrıntı değil, doğru ile yanıltıcı bilgi arasındaki farktır. Medyan üzerinden yapılan makullük kontrolü böyle bir hatayı anında ortaya çıkarır."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "Die Grenzen $492$ und $508$ direkt in die Tabelle eingesetzt, ohne sie vorher zu standardisieren.",
+      "In b) weiterhin mit der Symmetrieformel $2\\Phi(z) - 1$ gerechnet, obwohl $\\mu = 502$ nicht mehr in der Mitte des Intervalls liegt.",
+      "$\\Phi(-2{,}50)$ als $-\\Phi(2{,}50)$ statt als $1 - \\Phi(2{,}50)$ behandelt; $\\Phi$ ist eine Wahrscheinlichkeit und nie negativ.",
+      "In c) mit $\\Phi(8/\\sigma) = 0{,}99$ statt $0{,}995$ gearbeitet und die halbe Restwahrscheinlichkeit am linken Rand vergessen.",
+      "In d) das Vorzeichen von $z$ verwechselt und $m \\approx 505{,}1\\ \\text{ml}$ erhalten, obwohl die Schranke unter dem Median liegen muss."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Regionalabitur Mathematik 2022, Region 14 (Abu Dhabi, Dubai, Istanbul, Teheran), Aufgaben 3.4 und 3.5",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-05",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

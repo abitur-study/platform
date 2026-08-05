@@ -1,0 +1,96 @@
+{
+  "bereich": "abitur",
+  "id": "physik-atomphysik-grenzwellenlaenge-011",
+  "titel": "Zwei Betriebsspannungen einer Röntgenanlage zur Gemäldeuntersuchung",
+  "fach": "physik",
+  "themenbereich": "Atom- und Röntgenphysik",
+  "themenbereich_slug": "atomphysik",
+  "unterthema": "Bremsstrahlung und kurzwellige Grenze",
+  "niveau": "GK",
+  "operatoren": ["berechnen", "begründen", "erklären"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 35,
+  "aufgabenstellung": "In der Restaurierungswerkstatt eines Museums werden Gemälde durchleuchtet, um übermalte Bildschichten sichtbar zu machen. Die dafür genutzte Röntgenröhre besitzt eine Anode aus Silber und lässt sich in zwei Betriebsstufen schalten. Von beiden Stufen wurde je ein Spektrum aufgenommen (Material 1). Die zugehörigen Beschleunigungsspannungen sind am Gerät nicht mehr ablesbar und sollen aus den Spektren erschlossen werden.\n\na) Berechnen Sie aus den beiden abgelesenen Grenzwellenlängen die Beschleunigungsspannung der jeweiligen Betriebsstufe. (6 BE)\n\nb) Begründen Sie ohne weitere Rechnung, dass eine Verdopplung der Beschleunigungsspannung die kurzwellige Grenze stets halbiert. (2 BE)\n\nc) Erklären Sie, warum der kontinuierliche Anteil beider Spektren zu kurzen Wellenlängen hin abrupt abbricht, zu großen Wellenlängen hin aber ohne scharfe Grenze langsam ausläuft. (3 BE)\n\nd) Erklären Sie mithilfe der Angabe in Material 1, warum die beiden scharfen Linien in Stufe I vollständig fehlen. (3 BE)\n\nKonstanten: $h = 6{,}626\\cdot 10^{-34}\\ \\text{Js}$, $c = 3{,}00\\cdot 10^{8}\\ \\frac{\\text{m}}{\\text{s}}$, $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$",
+  "material": [
+    {
+      "typ": "text",
+      "titel": "Material 1: Die beiden aufgenommenen Spektren",
+      "inhalt": "In beiden Aufnahmen ist die Intensität gegen die Wellenlänge aufgetragen. Beide Male wurde dieselbe Silber-Anode verwendet.\n\n**Stufe I:** Zu Wellenlängen unter $62{,}0\\ \\text{pm}$ hin wird nichts registriert. Bei diesem Wert beginnt die Kurve, wächst rasch auf ein breites Maximum bei etwa $95\\ \\text{pm}$ an und fällt danach zu größeren Wellenlängen hin flach und ohne erkennbares Ende ab. Scharfe Spitzen treten nirgends auf.\n\n**Stufe II:** Der Kurvenverlauf hat dieselbe Gestalt, beginnt aber erst bei $31{,}0\\ \\text{pm}$ und liegt insgesamt deutlich höher. Zusätzlich ragen aus dem breiten Untergrund zwei schmale, sehr hohe Spitzen heraus: eine bei etwa $56\\ \\text{pm}$, eine bei etwa $50\\ \\text{pm}$.\n\n*Angabe aus einem Tabellenwerk:* Um aus der innersten Schale eines Silberatoms ein Elektron vollständig herauszuschlagen, muss das ankommende Elektron eine Energie von mindestens etwa $25\\ \\text{keV}$ mitbringen.",
+      "quelle": "eigene Erstellung nach dem Standardaufbau einer Röntgenröhre mit Silber-Anode",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Die kurzwellige Grenze gehört zu dem Photon mit der größten überhaupt möglichen Energie. Überlege, woher diese Energie stammt und wie groß sie höchstens sein kann.",
+    "Du kennst hier die Wellenlänge und suchst die Spannung — es ist dieselbe Gleichung wie sonst, nur nach einer anderen Größe umgestellt.",
+    "Vergleiche für Teil d) die Energie, die ein Elektron in Stufe I mitbringt, mit der Energie, die laut Tabellenangabe zum Herausschlagen nötig ist."
+  ],
+  "loesung": {
+    "gesamtpunkte": 14,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Energieansatz aufstellen und nach der Spannung umstellen",
+        "inhalt": "Ein Elektron durchläuft die Beschleunigungsspannung $U$ und besitzt beim Auftreffen die Energie $E = e\\cdot U$. Gibt es diese Energie in einem einzigen Bremsvorgang restlos an ein einziges Photon ab, so entsteht das energiereichste überhaupt mögliche Quant:\n\n$$e\\cdot U = h\\cdot f_{max} = \\frac{h\\cdot c}{\\lambda_{min}}$$\n\nAufgelöst nach der gesuchten Spannung:\n\n$$U = \\frac{h\\cdot c}{e\\cdot \\lambda_{min}}$$\n\nDas Produkt im Zähler ist für beide Stufen dasselbe:\n\n$$h\\cdot c = 6{,}626\\cdot 10^{-34}\\ \\text{Js}\\cdot 3{,}00\\cdot 10^{8}\\ \\frac{\\text{m}}{\\text{s}} = 1{,}988\\cdot 10^{-25}\\ \\text{Jm}$$",
+        "warum": {
+          "de": "Die Gleichung wird hier in der ungewohnten Richtung benutzt: Sonst ist die Spannung gegeben und die Grenzwellenlänge gesucht, hier ist es umgekehrt. Genau darin liegt der praktische Wert der kurzwelligen Grenze — sie ist ein direkt ablesbares Maß für die Betriebsspannung und erlaubt es, ein Gerät allein aus seinem Spektrum zu charakterisieren.",
+          "tr": "Denklem burada alışılmadık yönde kullanılıyor: normalde gerilim verilir ve sınır dalga boyu istenir, burada tam tersi. Kısa dalga sınırının pratik değeri de tam buradadır — doğrudan okunabilen bir çalışma gerilimi ölçüsüdür ve bir cihazı yalnızca spektrumundan tanımlamayı sağlar."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Beide Beschleunigungsspannungen berechnen",
+        "inhalt": "**Stufe I** mit $\\lambda_{min} = 62{,}0\\ \\text{pm} = 6{,}20\\cdot 10^{-11}\\ \\text{m}$:\n\n$$U_{I} = \\frac{1{,}988\\cdot 10^{-25}\\ \\text{Jm}}{1{,}602\\cdot 10^{-19}\\ \\text{C}\\cdot 6{,}20\\cdot 10^{-11}\\ \\text{m}} = \\frac{1{,}988\\cdot 10^{-25}}{9{,}932\\cdot 10^{-30}}\\ \\text{V} \\approx 2{,}00\\cdot 10^{4}\\ \\text{V} = 20{,}0\\ \\text{kV}$$\n\n**Stufe II** mit $\\lambda_{min} = 31{,}0\\ \\text{pm} = 3{,}10\\cdot 10^{-11}\\ \\text{m}$:\n\n$$U_{II} = \\frac{1{,}988\\cdot 10^{-25}\\ \\text{Jm}}{1{,}602\\cdot 10^{-19}\\ \\text{C}\\cdot 3{,}10\\cdot 10^{-11}\\ \\text{m}} = \\frac{1{,}988\\cdot 10^{-25}}{4{,}966\\cdot 10^{-30}}\\ \\text{V} \\approx 4{,}00\\cdot 10^{4}\\ \\text{V} = 40{,}0\\ \\text{kV}$$\n\nDie Anlage arbeitet also mit rund $20\\ \\text{kV}$ und rund $40\\ \\text{kV}$.",
+        "warum": {
+          "de": "Größenordnungen sind hier die beste Fehlerkontrolle: Röntgenröhren arbeiten typischerweise zwischen etwa zehn und zweihundert Kilovolt. Käme eine Spannung von $20\\ \\text{V}$ oder $20\\ \\text{MV}$ heraus, läge sicher ein Zehnerpotenzfehler bei der Umrechnung von Pikometern vor — $1\\ \\text{pm} = 10^{-12}\\ \\text{m}$, nicht $10^{-9}\\ \\text{m}$.",
+          "tr": "Burada en iyi hata kontrolü büyüklük mertebesidir: röntgen tüpleri tipik olarak on ile iki yüz kilovolt arasında çalışır. Sonuç $20\\ \\text{V}$ ya da $20\\ \\text{MV}$ çıksaydı, kesinlikle pikometre dönüşümünde bir on kuvveti hatası vardır — $1\\ \\text{pm} = 10^{-12}\\ \\text{m}$'dir, $10^{-9}\\ \\text{m}$ değil."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 3,
+        "titel": "Umgekehrte Proportionalität begründen",
+        "inhalt": "In der Gleichung $\\lambda_{min} = \\frac{h\\cdot c}{e\\cdot U}$ sind $h$, $c$ und $e$ Naturkonstanten. Die Spannung steht allein im Nenner, also gilt\n\n$$\\lambda_{min} \\sim \\frac{1}{U}$$\n\nWird $U$ verdoppelt, so halbiert sich $\\lambda_{min}$ — unabhängig vom Ausgangswert und unabhängig vom Anodenmaterial. Die gemessenen Werte bestätigen das: $40{,}0\\ \\text{kV}$ ist das Doppelte von $20{,}0\\ \\text{kV}$, und $31{,}0\\ \\text{pm}$ ist die Hälfte von $62{,}0\\ \\text{pm}$.",
+        "warum": {
+          "de": "Der Blick auf die Struktur der Gleichung ersetzt eine zweite Rechnung vollständig und ist im Abitur ausdrücklich erwünscht. Wichtig ist die saubere Unterscheidung: Proportional zur Spannung ist die Grenz*frequenz*, umgekehrt proportional die Grenz*wellenlänge*. Wer beides vertauscht, sagt die Verschiebung des Spektrums in die falsche Richtung voraus.",
+          "tr": "Denklemin yapısına bakmak ikinci bir hesabın yerini tamamen tutar ve Abitur'da açıkça beklenen şeydir. Önemli olan temiz ayrımdır: gerilimle doğru orantılı olan sınır *frekansı*, ters orantılı olan sınır *dalga boyu*dur. İkisini karıştıran, spektrumun kayma yönünü ters tahmin eder."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 4,
+        "titel": "Scharfen Abbruch und auslaufendes Ende erklären",
+        "inhalt": "Beim Eindringen in die Anode wird ein Elektron in der Nähe der Atomkerne aus seiner Bahn gerissen und dabei verlangsamt; die verlorene Bewegungsenergie verlässt das Material als Röntgenquant.\n\n**Nach kurzen Wellenlängen hin:** Ein Photon kann nie mehr Energie tragen, als das Elektron überhaupt mitbringt. Der Grenzfall ist die vollständige Abbremsung in einem einzigen Schritt. Kürzere Wellenlängen als $\\lambda_{min}$ würden eine größere Photonenenergie bedeuten, als überhaupt vorhanden ist — das verbietet der Energieerhaltungssatz, und deshalb endet das Spektrum dort schlagartig.\n\n**Nach langen Wellenlängen hin:** Wie stark ein Elektron gebremst wird, hängt davon ab, wie dicht es an einem Kern vorbeiläuft. Der Bremsbetrag kann jeden beliebigen Wert zwischen null und der vollen Energie annehmen, und die meisten Elektronen geben ihre Energie in mehreren kleinen Portionen ab. Zu kleinen Energien hin gibt es deshalb keine physikalische Schranke; die Kurve läuft ohne Grenze flach aus.",
+        "warum": {
+          "de": "Die Unsymmetrie der Kurve ist kein Schönheitsfehler der Messung, sondern trägt die eigentliche Aussage: An einem Ende steht ein hartes Verbot durch die Energieerhaltung, am anderen Ende nur eine Häufigkeitsverteilung. Genau daran erkennt man im Diagramm, welche Seite quantenphysikalisch etwas bedeutet und welche nur statistisch zustande kommt.",
+          "tr": "Eğrinin simetrik olmaması ölçümün bir kusuru değildir, asıl mesajı taşır: bir uçta enerjinin korunumundan gelen kesin bir yasak, diğer uçta yalnızca bir sıklık dağılımı vardır. Diyagramda hangi tarafın kuantum fiziksel bir anlam taşıdığı, hangisinin sadece istatistikten doğduğu tam da buradan anlaşılır."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 5,
+        "titel": "Fehlen der scharfen Linien in Stufe I erklären",
+        "inhalt": "Die scharfen Spitzen entstehen nicht durch Abbremsung, sondern durch einen Treffer in der Atomhülle: Ein ankommendes Elektron schlägt ein Elektron aus einer der innersten Schalen eines Silberatoms vollständig heraus. Die Lücke wird sofort von einem Elektron aus einer weiter außen liegenden Schale aufgefüllt, das dabei die frei werdende Energie als Photon abgibt. Weil die dabei möglichen Energiebeträge feste Eigenschaften des Silberatoms sind, liegen die Linien immer an denselben Stellen.\n\nDafür ist eine Mindestenergie nötig: Laut Material 1 sind bei Silber etwa $25\\ \\text{keV}$ erforderlich.\n\n- Stufe I: $U_{I} = 20{,}0\\ \\text{kV}$, ein Elektron bringt also $20\\ \\text{keV}$ mit — **weniger** als die nötigen $25\\ \\text{keV}$. Kein Elektron der innersten Schale wird herausgeschlagen, es entstehen keine Linien. Übrig bleibt nur der Bremsuntergrund.\n- Stufe II: $U_{II} = 40{,}0\\ \\text{kV}$, also $40\\ \\text{keV}$ pro Elektron — deutlich **mehr** als $25\\ \\text{keV}$. Der Vorgang läuft ab, die beiden Linien bei $56\\ \\text{pm}$ und $50\\ \\text{pm}$ erscheinen.",
+        "warum": {
+          "de": "Hier zeigt sich, dass die beiden Anteile des Spektrums nicht nur verschieden aussehen, sondern verschiedenen Regeln gehorchen: Bremsstrahlung entsteht bei jeder noch so kleinen Spannung, die charakteristische Strahlung dagegen erst oberhalb einer materialabhängigen Schwelle. Wer das übersieht, erwartet Linien in jedem Röntgenspektrum — tatsächlich sagt ihr Fehlen bereits etwas über die Betriebsspannung aus.",
+          "tr": "Burada spektrumun iki bileşeninin yalnızca farklı görünmediği, farklı kurallara uyduğu ortaya çıkar: Bremsstrahlung ne kadar küçük olursa olsun her gerilimde oluşur, karakteristik ışıma ise ancak malzemeye bağlı bir eşiğin üstünde. Bunu gözden kaçıran her röntgen spektrumunda çizgi bekler — oysa çizgilerin yokluğu bile çalışma gerilimi hakkında bilgi verir."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "Pikometer falsch umgerechnet: $62{,}0\\ \\text{pm} = 6{,}20\\cdot 10^{-11}\\ \\text{m}$, nicht $6{,}20\\cdot 10^{-8}\\ \\text{m}$.",
+      "Die Gleichung nicht umgestellt, sondern die abgelesene Grenzwellenlänge wie eine Spannung behandelt.",
+      "Behauptet, die Grenzwellenlänge hänge vom Anodenmaterial ab — sie folgt allein aus $U$ und drei Naturkonstanten.",
+      "Das Fehlen der Linien in Stufe I mit einer zu geringen Intensität statt mit der zu kleinen Elektronenenergie begründet."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Klausur 05 (Aufgabe 2.1, Röntgenstrahlung), İstanbul Erkek Lisesi",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-05",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

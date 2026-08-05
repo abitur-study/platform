@@ -1,0 +1,78 @@
+{
+  "bereich": "abitur",
+  "id": "physik-schwingungen-daempfung-021",
+  "titel": "Zwei Schwingkreise am Oszilloskop — mit und ohne Widerstand",
+  "fach": "physik",
+  "themenbereich": "Schwingungen und Schwingkreis",
+  "themenbereich_slug": "schwingungen",
+  "unterthema": "Gedämpfte Schwingung und Phasenlage",
+  "niveau": "GK",
+  "operatoren": ["beschreiben", "erklären", "vergleichen", "begründen"],
+  "sprache": "de",
+  "schwierigkeit": 2,
+  "bearbeitungszeit_min": 20,
+  "aufgabenstellung": "Im Praktikum stehen zwei baugleiche Schwingkreise nebeneinander. Beide bestehen aus derselben Spule und demselben Kondensator, und in beiden wird der Kondensator zunächst auf dieselbe Spannung $U_0$ aufgeladen und dann über die Spule entladen.\n\n- **Schwingkreis A** ist mit dicken, kurzen Kupferleitungen aufgebaut; sein ohmscher Widerstand ist so klein, dass er vernachlässigt werden kann.\n- **Schwingkreis B** ist bis auf einen zusätzlich eingebauten ohmschen Widerstand von $12\\ \\Omega$ mit A identisch.\n\nAn beiden Kreisen wird die Spannung am Kondensator mit einem Oszilloskop aufgezeichnet. Diese Aufgabe ist ohne Rechnung zu bearbeiten.\n\na) Beschreiben Sie für Schwingkreis A, wie sich die Energie im Verlauf der ersten halben Periode zwischen Kondensator und Spule umverteilt.\n\nb) Erklären Sie, weshalb die Stromstärke im Schwingkreis genau in dem Moment am größten ist, in dem die Spannung am Kondensator null ist.\n\nc) Vergleichen Sie die beiden am Oszilloskop sichtbaren $t$-$U$-Verläufe von A und B. Begründen Sie den beobachteten Unterschied energetisch.\n\nd) Erklären Sie mithilfe der Thomsonschen Schwingungsformel, wie sich die Frequenz von Schwingkreis A verändert, wenn man den Kondensator durch einen mit vierfacher Kapazität ersetzt.",
+  "material": [],
+  "tipps": [
+    "Verfolge bei a) gedanklich einen einzigen Zeitpunkt nach dem anderen und frage jedes Mal: Wo sitzt die Energie gerade, und welches Feld wächst dafür?",
+    "Für b) hilft der Vergleich mit einem Federpendel: Wann ist ein Pendelkörper am schnellsten — im Umkehrpunkt oder in der Ruhelage?",
+    "Bei c) darf nichts einfach verschwinden. Frage dich, in welche Energieform der Widerstand die Schwingungsenergie überführt und ob diese Form zurückkommen kann."
+  ],
+  "loesung": {
+    "gesamtpunkte": 12,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Energieumverteilung in der ersten halben Periode beschreiben",
+        "inhalt": "Zu Beginn ($t = 0$) ist der Kondensator maximal geladen. Die gesamte Energie steckt im elektrischen Feld zwischen seinen Platten, $E_C = \\frac{1}{2}C\\,U^2$ ist maximal, es fließt noch kein Strom, also ist $E_L = 0$.\n\nWährend der ersten Viertelperiode entlädt sich der Kondensator über die Spule. Das elektrische Feld wird schwächer, gleichzeitig wächst der Strom und mit ihm das magnetische Feld der Spule. Die Energie wandert also Stück für Stück aus dem Kondensator in die Spule, während die Summe $E_C + E_L$ konstant bleibt.\n\nNach einer Viertelperiode ist der Kondensator vollständig entladen: $E_C = 0$, und die gesamte Energie sitzt jetzt als $E_L = \\frac{1}{2}L\\,I^2$ im magnetischen Feld.\n\nIn der zweiten Viertelperiode läuft der Vorgang rückwärts: Das Magnetfeld baut sich ab, die dabei induzierte Spannung treibt den Strom in derselben Richtung weiter und lädt den Kondensator wieder auf — nun aber mit vertauschter Polung. Nach einer halben Periode ist die Energie wieder vollständig im elektrischen Feld, die Kondensatorspannung hat denselben Betrag wie am Anfang, aber das umgekehrte Vorzeichen.",
+        "warum": {
+          "de": "Wer nur „die Energie pendelt hin und her“ schreibt, bekommt kaum Punkte. Verlangt ist die Zuordnung jeder Phase zu einer konkreten Feldgröße — und die Feststellung, dass die Summe konstant bleibt, weil genau diese Konstanz später jede Rechnung zu $I_{\\text{max}}$ trägt.",
+          "tr": "Yalnızca \"enerji ileri geri salınır\" yazmak neredeyse hiç puan getirmez. İstenen, her evreyi somut bir alan büyüklüğüne bağlamak ve toplamın sabit kaldığını belirtmektir — çünkü ileride $I_{\\text{max}}$ hesabını taşıyan tam olarak bu sabitliktir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Phasenverschiebung zwischen Spannung und Stromstärke erklären",
+        "inhalt": "Die Spannung am Kondensator ist proportional zur gespeicherten Ladung, $U = \\frac{Q}{C}$; die Stromstärke ist die Geschwindigkeit, mit der sich diese Ladung ändert. Solange noch Ladung auf dem Kondensator sitzt, wirkt seine Spannung dem weiteren Anwachsen des Stromes entgegen. Erst wenn die Ladung — und damit die Spannung — null geworden ist, bremst nichts mehr, und der Strom hat seinen größten Wert erreicht.\n\nEnergetisch ausgedrückt: $U = 0$ bedeutet $E_C = 0$, also muss wegen der Energieerhaltung die gesamte Energie im magnetischen Feld stecken. $E_L = \\frac{1}{2}L\\,I^2$ ist genau dann maximal, wenn $|I|$ maximal ist.\n\n$U(t)$ und $I(t)$ sind daher um eine Viertelperiode gegeneinander verschoben: Das Maximum des einen fällt stets auf den Nulldurchgang des anderen.",
+        "warum": {
+          "de": "Hier steckt der typische Denkfehler, aus dem ohmschen Gesetz $I = U/R$ zu schließen, große Spannung bedeute großen Strom. Im Schwingkreis gilt das nicht, weil die Spule keine Spannungs-Strom-Proportionalität erzwingt, sondern eine Beziehung zwischen Spannung und Strom*änderung*.",
+          "tr": "Buradaki tipik düşünme hatası, $I = U/R$ bağıntısından yola çıkıp büyük gerilimin büyük akım demek olduğunu sanmaktır. Schwingkreis'te bu geçerli değildir, çünkü bobin gerilimle akım arasında değil, gerilimle akımın *değişimi* arasında bir bağıntı kurar."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 3,
+        "titel": "Ungedämpften und gedämpften Verlauf vergleichen",
+        "inhalt": "**Gemeinsamkeiten:** Beide Oszillogramme zeigen eine periodische Spannung, die zwischen positiven und negativen Werten hin- und herwechselt. Beide starten bei $t = 0$ mit demselben Höchstwert $U_0$, und die zeitlichen Abstände der Nulldurchgänge sind nahezu gleich.\n\n**Unterschied:** Bei A behält jeder Ausschlag dieselbe Höhe — die Schwingung läuft im Idealfall unbegrenzt weiter. Bei B wird jeder Ausschlag kleiner als der vorangegangene; die Spannungsmaxima liegen auf einer abfallenden Hüllkurve, und nach einigen Perioden ist praktisch nichts mehr zu sehen. Die Schwingung von B ist gedämpft.\n\n**Energetische Begründung:** In B fließt der Schwingungsstrom durch den ohmschen Widerstand. Dort wird bei jedem Stromfluss elektrische Energie in innere Energie (Wärme) umgewandelt. Diese Energie verlässt das System und steht dem Pendeln zwischen Kondensator und Spule nicht mehr zur Verfügung. Weil die Umwandlung in Wärme nicht umkehrbar ist, nimmt die Gesamtenergie des Schwingkreises fortlaufend ab, und mit ihr die Amplitude der Spannung.",
+        "warum": {
+          "de": "Der Vergleichsoperator verlangt beides: Gemeinsamkeiten und Unterschiede, nicht nur die Beschreibung eines Falls. Fachlich ist entscheidend, dass die Dämpfung die *Amplitude* angreift und nicht die *Periodendauer* — bei schwacher Dämpfung bleibt die Schwingungsdauer praktisch die aus der Thomsonschen Formel, was man an den fast unveränderten Nulldurchgängen sieht.",
+          "tr": "Karşılaştırma operatörü hem benzerlikleri hem farkları ister; tek bir durumu betimlemek yetmez. Fizik açısından belirleyici olan, sönümün *periyoda* değil *genliğe* dokunmasıdır — zayıf sönümde periyot pratikte Thomson formülünden gelen değerde kalır, bunu neredeyse yerinden oynamayan sıfır geçişlerinden anlarsınız."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 4,
+        "titel": "Wirkung einer vierfachen Kapazität erklären",
+        "inhalt": "Aus der Thomsonschen Schwingungsformel\n\n$$T = 2\\pi\\sqrt{L\\cdot C}\\qquad\\text{und}\\qquad f = \\frac{1}{T} = \\frac{1}{2\\pi\\sqrt{L\\cdot C}}$$\n\nliest man ab: $T$ ist proportional zu $\\sqrt{C}$, die Frequenz also umgekehrt proportional zu $\\sqrt{C}$.\n\nWird $C$ vervierfacht, so wächst $\\sqrt{C}$ auf das $\\sqrt{4} = 2$-fache. Die Schwingungsdauer verdoppelt sich, die Frequenz sinkt auf die Hälfte.\n\nAnschaulich: Der größere Kondensator nimmt bei gleicher Spannung mehr Ladung auf, und diese größere Ladungsmenge muss bei jeder Umladung durch die Spule transportiert werden — das dauert länger.",
+        "warum": {
+          "de": "Solche Verhältnisüberlegungen sind schneller und weniger fehleranfällig als zweimaliges Einsetzen von Zahlen, weil $L$ und alle Konstanten sich herauskürzen. Der typische Fehler ist, aus „vierfache Kapazität“ direkt auf „vierfache Schwingungsdauer“ zu schließen und die Wurzel zu übersehen.",
+          "tr": "Bu tür oran akıl yürütmeleri, sayıları iki kez formüle koymaktan daha hızlıdır ve daha az hata barındırır, çünkü $L$ ve bütün sabitler sadeleşir. Tipik hata, \"kapasite dört katına çıktı\" ifadesinden doğrudan \"periyot da dört katına çıkar\" sonucunu çıkarıp karekökü atlamaktır."
+        },
+        "teilpunkte": 2
+      }
+    ],
+    "haeufige_fehler": [
+      "Behauptet, im gedämpften Schwingkreis „gehe Energie verloren“ — sie wird im Widerstand in innere Energie umgewandelt und verlässt den Schwingkreis, verschwindet aber nicht.",
+      "Spannungsmaximum und Strommaximum zum selben Zeitpunkt angesetzt; beide sind um $T/4$ gegeneinander verschoben.",
+      "Der Dämpfung eine deutlich veränderte Schwingungsdauer zugeschrieben; bei schwacher Dämpfung nimmt vor allem die Amplitude ab.",
+      "Bei der Kapazitätsänderung die Wurzel in der Thomsonschen Formel übersehen und die Frequenz auf ein Viertel statt auf die Hälfte gesetzt."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen Landesabitur Physik 2010, Grundkurs, Aufgabe B2 (nur der Schwingungsteil)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

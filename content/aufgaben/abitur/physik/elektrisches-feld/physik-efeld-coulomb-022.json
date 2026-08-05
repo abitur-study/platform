@@ -1,0 +1,85 @@
+{
+  "bereich": "abitur",
+  "id": "physik-efeld-coulomb-022",
+  "titel": "Bestimmung der elektrischen und magnetischen Feldkonstanten – Coulomb und Biot-Savart",
+  "fach": "physik",
+  "themenbereich": "Elektrisches Feld und Kondensator",
+  "themenbereich_slug": "elektrisches-feld",
+  "unterthema": "Coulomb-Gesetz, Kapazität, magnetische Feldkonstante",
+  "niveau": "GK",
+  "operatoren": ["zeigen", "beschreiben", "bestimmen", "deuten"],
+  "sprache": "de",
+  "schwierigkeit": 4,
+  "bearbeitungszeit_min": 40,
+  "aufgabenstellung": "Die elektrische Feldkonstante $\\varepsilon_0$ und die magnetische Feldkonstante $\\mu_0$ sind fundamentale Naturkonstanten.\n\na) Ein Plattenkondensator hat die Plattenfläche $A$ und den Plattenabstand $d$. Leiten Sie aus der Beziehung $E = \\dfrac{Q}{\\varepsilon_0 A}$ die Formel für die Kapazität $C$ her.\n\nb) Eine geladene Hohlkugel mit der Ladung $Q_K = 5{,}0\\cdot 10^{-9}\\ \\text{C}$ erzeugt im Abstand $r = 0{,}20\\ \\text{m}$ eine Coulombkraft auf eine kleine Probeladung $q = 1{,}0\\cdot 10^{-10}\\ \\text{C}$ gleichen Vorzeichens. Berechnen Sie den Betrag der Kraft. Beschreiben Sie die Abhängigkeit der Kraft von $Q_K$, $q$ und $r$.\n\nc) Ein gerader, langer Leiter wird von einem Strom $I$ durchflossen. Die magnetische Flussdichte im Abstand $r$ beträgt $B(r) = \\dfrac{\\mu_0 I}{2\\pi r}$. Aus einer Messreihe (siehe Material) soll $\\mu_0$ bestimmt werden. Bestimmen Sie $\\mu_0$ als Mittelwert und beurteilen Sie die Messgenauigkeit.\n\nd) Berechnen Sie $\\dfrac{1}{\\sqrt{\\varepsilon_0 \\mu_0}}$ und deuten Sie das Ergebnis.",
+  "material": [
+    {
+      "typ": "tabelle",
+      "titel": "Messreihe zur magnetischen Flussdichte",
+      "inhalt": "$$\\begin{array}{c|c|c|c|c} I\\ \\text{in A} & 2 & 2 & 5 & 5 \\\\ \\hline r\\ \\text{in cm} & 4 & 8 & 10 & 20 \\\\ B\\ \\text{in }10^{-6}\\ \\text{T} & 10{,}0 & 5{,}0 & 10{,}0 & 5{,}0 \\end{array}$$",
+      "quelle": "eigene Erstellung",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Für die Kapazitätsformel nutzen Sie die Definition $C = Q/U$ und den Zusammenhang $E = U/d$.",
+    "Die Coulombkraft ist eine Zentralkraft; sie nimmt mit $1/r^2$ ab.",
+    "Bei der Bestimmung von $\\mu_0$ bilden Sie den Quotienten $\\mu_0 = \\dfrac{2\\pi r B}{I}$ und mitteln."
+  ],
+  "loesung": {
+    "gesamtpunkte": 18,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Kapazitätsformel herleiten",
+        "inhalt": "Aus $E = Q/(\\varepsilon_0 A)$ und $E = U/d$ folgt $Q/(\\varepsilon_0 A) = U/d$ ⇒ $Q/U = \\varepsilon_0 A/d$. Also $C = \\varepsilon_0 \\dfrac{A}{d}$.",
+        "warum": {
+          "de": "Diese Herleitung zeigt, dass die Kapazität allein durch die Geometrie und das Dielektrikum bestimmt wird – eine der wichtigsten Aussagen der Elektrostatik. Die Ladung $Q$ kürzt sich heraus, was oft überraschend wirkt.",
+          "tr": "Bu türetim, kapasitansın yalnızca geometri ve dielektrik ortam tarafından belirlendiğini gösterir – elektrostatiğin en önemli ifadelerinden biri. $Q$ yükü sadeleşir, bu genellikle şaşırtıcı gelir."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 2,
+        "titel": "Coulomb-Kraft berechnen und Abhängigkeiten beschreiben",
+        "inhalt": "$F = \\dfrac{1}{4\\pi\\varepsilon_0}\\dfrac{Q_K q}{r^2} = 8{,}99\\cdot 10^9 \\cdot \\dfrac{5{,}0\\cdot 10^{-9}\\cdot 1{,}0\\cdot 10^{-10}}{0{,}20^2} \\approx 1{,}12\\cdot 10^{-7}\\ \\text{N}$.\n$F \\propto Q_K$, $F \\propto q$, $F \\propto 1/r^2$.",
+        "warum": {
+          "de": "Die $1/r^2$-Abhängigkeit ist charakteristisch für das Coulomb-Feld und tritt auch bei der Gravitation auf. Die Kraft ist sehr klein, aber für geladene Kügelchen im Schulversuch durchaus messbar.",
+          "tr": "$1/r^2$ bağımlılığı Coulomb alanının karakteristiğidir ve kütleçekimde de görülür. Kuvvet çok küçüktür, ancak okul deneylerinde yüklü küreciklerle ölçülebilir."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 3,
+        "titel": "Magnetische Feldkonstante bestimmen",
+        "inhalt": "Für jedes Wertepaar: $\\mu_0 = \\dfrac{2\\pi r B}{I}$.\n$I=2$ A, $r=0{,}04$ m: $\\mu_0 = \\dfrac{2\\pi\\cdot0{,}04\\cdot10^{-5}}{2} = 1{,}257\\cdot10^{-6}$.\nWeitere Werte: 1,257·10$^{-6}$, 1,257·10$^{-6}$, 1,257·10$^{-6}$.\nMittelwert: $1{,}257\\cdot10^{-6}\\ \\text{Vs/(Am)}$. Der Literaturwert ist $1{,}257\\cdot10^{-6}$; die Messung ist auf drei Stellen genau.",
+        "warum": {
+          "de": "Die Konstanz der $\\mu_0$-Werte über alle Messpaare bestätigt die Antiproportionalität $B \\propto 1/r$ und die Proportionalität zu $I$. Die hohe Übereinstimmung mit dem Literaturwert zeigt, dass die Messung sehr präzise ist.",
+          "tr": "$\\mu_0$ değerlerinin tüm ölçüm çiftlerinde sabit olması, $B \\propto 1/r$ ters orantısını ve $I$ ile doğru orantıyı doğrular. Literatür değeriyle yüksek uyum, ölçümün çok hassas olduğunu gösterir."
+        },
+        "teilpunkte": 6
+      },
+      {
+        "nr": 4,
+        "titel": "Term berechnen und deuten",
+        "inhalt": "$\\dfrac{1}{\\sqrt{\\varepsilon_0 \\mu_0}} = \\dfrac{1}{\\sqrt{8{,}854\\cdot10^{-12}\\cdot 1{,}257\\cdot10^{-6}}} \\approx 2{,}998\\cdot10^8\\ \\text{m/s}$.\nDieser Wert entspricht der Vakuumlichtgeschwindigkeit $c$.",
+        "warum": {
+          "de": "Die Tatsache, dass sich die Lichtgeschwindigkeit aus elektrischen und magnetischen Konstanten ergibt, war ein historischer Durchbruch von Maxwell und führte zur Erkenntnis, dass Licht eine elektromagnetische Welle ist.",
+          "tr": "Işık hızının elektrik ve manyetik sabitlerden elde edilmesi, Maxwell'in tarihsel bir atılımıydı ve ışığın elektromanyetik bir dalga olduğunun anlaşılmasını sağladı."
+        },
+        "teilpunkte": 4
+      }
+    ],
+    "haeufige_fehler": [
+      "Bei der Herleitung der Kapazität wird $E = U/d$ nicht verwendet oder die Richtung verwechselt.",
+      "Bei der Coulomb-Kraft wird der Abstand nicht quadriert oder die Einheiten nicht in SI umgerechnet.",
+      "Bei $\\mu_0$ wird der Radius in cm statt in m eingesetzt, was den Wert um den Faktor 100 verfälscht."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen Landesabitur Physik 2014, Grundkurs, Aufgabe A2",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-3-7-sonnet / 2026-08-05",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

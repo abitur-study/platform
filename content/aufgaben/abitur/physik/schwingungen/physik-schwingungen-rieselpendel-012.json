@@ -1,0 +1,98 @@
+{
+  "bereich": "abitur",
+  "id": "physik-schwingungen-rieselpendel-012",
+  "titel": "Rieselndes Pendel — Nachweis des linearen Kraftgesetzes",
+  "fach": "physik",
+  "themenbereich": "Schwingungen und Schwingkreis",
+  "themenbereich_slug": "schwingungen",
+  "unterthema": "Bedingung für eine harmonische Schwingung",
+  "niveau": "GK",
+  "operatoren": ["berechnen", "zeigen", "begründen", "beschreiben", "skizzieren", "stellung nehmen"],
+  "sprache": "de",
+  "schwierigkeit": 4,
+  "bearbeitungszeit_min": 45,
+  "aufgabenstellung": "In einem Schulversuch hängt ein zylindrischer Streubehälter mit feinem Streusalz bifilar (an zwei Fäden) an der Decke, sodass er nur in einer einzigen senkrechten Ebene schwingen kann. Der Abstand zwischen Aufhängung und Behälterschwerpunkt beträgt $\\ell = 1{,}50\\ \\text{m}$.\n\nUnter dem Behälter steht eine flache Auffangrinne der Länge $24\\ \\text{cm}$, die durch dünne Trennwände in acht gleich breite Fächer unterteilt ist. Die Auslassöffnung des Behälters steht in der Ruhelage genau über der Mitte der Rinne, ihr Abstand zur Rinne ist praktisch null. Bei maximaler Auslenkung soll das Salz gerade in die beiden äußersten Fächer rieseln.\n\nDer leere Behälter hat die Masse $250\\ \\text{g}$. Gefüllt enthält er $80\\ \\text{cm}^3$ Streusalz der Dichte $\\rho = 2{,}2\\ \\frac{\\text{g}}{\\text{cm}^3}$.\n\n**Teil 1 — Auslassöffnung noch verschlossen.**\n\na) Berechnen Sie den maximalen Auslenkwinkel $\\varphi_0$. *(Zur Kontrolle: $\\varphi_0 \\approx 4{,}6^\\circ$)*\n\nb) Zeigen Sie durch eine Zerlegung der Gewichtskraft, dass für die rücktreibende Kraft näherungsweise $F_R = -D\\cdot s$ mit $D = \\frac{m\\,g}{\\ell}$ gilt, und begründen Sie damit, dass der Behälter eine harmonische Schwingung ausführt. Geben Sie an, wodurch die Gültigkeit dieser Aussage begrenzt ist.\n\nc) Berechnen Sie die Schwingungsdauer.\n\n**Teil 2 — Auslassöffnung geöffnet.** Bei sonst unverändertem Aufbau ist der Behälter nach genau $16$ vollen Schwingungen leer; das Salz rieselt dabei gleichmäßig aus. Die Lage des Schwerpunkts ändert sich durch die Massenabnahme nicht wesentlich.\n\nd) Bestimmen Sie die Masse des Pendels in dem Moment, in dem es zum dritten Mal den tiefsten Punkt durchläuft, und berechnen Sie seine kinetische Energie zu diesem Zeitpunkt.\n\ne) Beschreiben Sie, wie hoch das Salz nach dem vollständigen Entleeren in den einzelnen Fächern steht, wenn die Amplitude während des gesamten Versuchs konstant bleibt, und begründen Sie Ihre Aussage. Skizzieren Sie außerdem qualitativ den Füllstand für den Fall, dass die Schwingung stark gedämpft ist.\n\nf) Ein Kursmitglied behauptet: „Weil die Salzmasse im Behälter ständig abnimmt, das Pendel aber seine Energie behält, muss die Amplitude im Laufe des Versuchs immer größer werden.\" Nehmen Sie zu dieser Behauptung Stellung.",
+  "material": [],
+  "tipps": [
+    "Für a) ergänze die Skizze zu einem rechtwinkligen Dreieck: eine Kathete ist die halbe Rinnenlänge, die Hypotenuse die Pendellänge.",
+    "In b) zerlegst du die Gewichtskraft in eine Komponente längs der Fäden und eine senkrecht dazu. Nur die zweite treibt das Pendel zurück — und für kleine Winkel im Bogenmaß gilt $\\sin\\varphi \\approx \\varphi \\approx \\frac{s}{\\ell}$.",
+    "In d) zählst du zuerst, nach wie vielen Viertelperioden der tiefste Punkt zum dritten Mal erreicht ist. Das Pendel startet aus der maximalen Auslenkung."
+  ],
+  "loesung": {
+    "gesamtpunkte": 20,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Maximalen Auslenkwinkel berechnen",
+        "inhalt": "Bei maximaler Auslenkung steht die Öffnung über einem der äußersten Fächer, also über der Mitte des äußersten Feldes bzw. am Rand der Rinne. Der waagerechte Ausschlag beträgt damit die halbe Rinnenlänge:\n\n$$s_{\\max} = \\frac{24\\ \\text{cm}}{2} = 12\\ \\text{cm} = 0{,}12\\ \\text{m}$$\n\nMit der Pendellänge $\\ell = 1{,}50\\ \\text{m}$ folgt aus dem rechtwinkligen Dreieck\n\n$$\\tan\\varphi_0 \\approx \\frac{0{,}12\\ \\text{m}}{1{,}50\\ \\text{m}} = 0{,}080 \\quad\\Longrightarrow\\quad \\varphi_0 \\approx 4{,}6^\\circ$$\n\nMit dem Sinus erhielte man denselben Wert auf zwei geltende Ziffern.",
+        "warum": {
+          "de": "Streng genommen ist die vom Pendel überstrichene Strecke ein Kreisbogen und kein Dreiecksschenkel — die Rechnung ist also selbst schon eine Näherung. Dass Sinus und Tangens hier dasselbe Ergebnis liefern, ist kein Zufall, sondern genau das Kennzeichen des Kleinwinkelbereichs, auf den sich die ganze folgende Aufgabe stützt.",
+          "tr": "Kesin konuşursak sarkacın taradığı yol bir çember yayıdır, üçgen kenarı değil — yani hesabın kendisi de bir yaklaşımdır. Sinüs ile tanjantın burada aynı sonucu vermesi rastlantı değil, tam da bütün sorunun dayandığı küçük açı bölgesinin işaretidir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Rücktreibende Kraft herleiten und harmonische Schwingung nachweisen",
+        "inhalt": "Bei einer Auslenkung um den Winkel $\\varphi$ zerlegt man die Gewichtskraft $F_G = m\\cdot g$ in zwei Komponenten: eine Komponente $F_S$ längs der Fäden, die von der Aufhängung aufgenommen wird, und die dazu senkrechte Komponente $F_R$, die das Pendel zur Ruhelage zurücktreibt. Kräftedreieck und Streckendreieck sind ähnlich (der Winkel $\\varphi$ tritt als Wechselwinkel an Parallelen erneut auf), daher gilt\n\n$$\\sin\\varphi = \\frac{F_R}{F_G} \\qquad\\text{und}\\qquad \\sin\\varphi = \\frac{s}{\\ell}$$\n\nGleichsetzen liefert\n\n$$\\frac{F_R}{m\\,g} = \\frac{s}{\\ell} \\quad\\Longrightarrow\\quad F_R = \\frac{m\\,g}{\\ell}\\cdot s$$\n\nBerücksichtigt man, dass $F_R$ stets zur Ruhelage zeigt, also der Auslenkung $s$ entgegengerichtet ist:\n\n$$\\boxed{F_R = -\\frac{m\\,g}{\\ell}\\cdot s = -D\\cdot s \\qquad\\text{mit}\\qquad D = \\frac{m\\,g}{\\ell}}$$\n\nDa $m$, $g$ und $\\ell$ konstant sind, ist $D$ eine Konstante: Die rücktreibende Kraft ist dem Betrag nach proportional zur Auslenkung und ihr entgegengerichtet. Genau das ist die Bedingung für eine harmonische Schwingung; das Weg-Zeit-Gesetz ist dann sinusförmig.\n\n**Gültigkeitsgrenze:** Verwendet wurde die Kleinwinkelnäherung $\\sin\\varphi \\approx \\varphi \\approx \\frac{s}{\\ell}$ (im Bogenmaß). Sie ist nur für kleine Winkel — in der Schulpraxis bis etwa $5^\\circ$ bis $10^\\circ$ — brauchbar. Hier ist $\\varphi_0 \\approx 4{,}6^\\circ$, die Bedingung ist also erfüllt.",
+        "warum": {
+          "de": "Ohne die Kleinwinkelnäherung stünde dort $F_R = -m g \\sin\\varphi$ — und $\\sin\\varphi$ ist eben *nicht* proportional zu $\\varphi$. Das lineare Kraftgesetz $F = -D\\cdot s$ ist also keine Eigenschaft des Fadenpendels an sich, sondern eine Eigenschaft des Fadenpendels bei kleinen Ausschlägen. Beim Federpendel gilt es dagegen exakt und ohne Winkelbedingung — deshalb ist das Federpendel und nicht das Fadenpendel der eigentliche Prototyp der harmonischen Schwingung.",
+          "tr": "Küçük açı yaklaşımı olmasaydı orada $F_R = -m g \\sin\\varphi$ yazardı — ve $\\sin\\varphi$, $\\varphi$ ile orantılı *değildir*. Yani $F = -D\\cdot s$ doğrusal kuvvet yasası ipli sarkacın kendi özelliği değil, küçük genlikteki ipli sarkacın özelliğidir. Yay sarkacında ise bu yasa açı koşulu olmaksızın tam olarak geçerlidir — bu yüzden harmonik salınımın asıl prototipi ipli sarkaç değil yay sarkacıdır."
+        },
+        "teilpunkte": 5
+      },
+      {
+        "nr": 3,
+        "titel": "Schwingungsdauer berechnen",
+        "inhalt": "Für das Fadenpendel gilt\n\n$$T = 2\\pi\\cdot\\sqrt{\\frac{\\ell}{g}} = 2\\pi\\cdot\\sqrt{\\frac{1{,}50\\ \\text{m}}{9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}}} \\approx 2{,}46\\ \\text{s}$$\n\nDasselbe Ergebnis liefert der Weg über die allgemeine Formel $T = 2\\pi\\sqrt{m/D}$, wenn man $D = \\frac{m g}{\\ell}$ aus Schritt 2 einsetzt — die Masse kürzt sich dabei heraus.",
+        "warum": {
+          "de": "Der zweite Rechenweg zeigt, warum die Fadenpendelformel die Masse nicht enthält: In $D = \\frac{mg}{\\ell}$ steckt $m$ bereits, und in $T = 2\\pi\\sqrt{m/D}$ kürzt es sich vollständig heraus. Ein schwereres Pendel erfährt zwar eine größere Rückstellkraft, ist aber im selben Verhältnis träger. Diese Einsicht macht auch Teilaufgabe f) sofort verständlich.",
+          "tr": "İkinci yol, ipli sarkaç formülünde kütlenin neden bulunmadığını gösterir: $D = \\frac{mg}{\\ell}$ içinde $m$ zaten vardır ve $T = 2\\pi\\sqrt{m/D}$ ifadesinde tamamen sadeleşir. Daha ağır bir sarkaca daha büyük bir geri çağırma kuvveti etki eder, ama aynı oranda da eylemsizdir. Bu kavrayış f) şıkkını da anında anlaşılır kılar."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 4,
+        "titel": "Pendelmasse und kinetische Energie beim dritten Nulldurchgang",
+        "inhalt": "**Masse.** Das Pendel startet aus der maximalen Auslenkung. Den tiefsten Punkt erreicht es zum ersten Mal nach $\\tfrac{T}{4}$, zum zweiten Mal nach $\\tfrac{3T}{4}$ und zum dritten Mal nach $\\tfrac{5T}{4}$, also nach $1{,}25$ vollen Schwingungen. Da der Behälter nach $16$ Schwingungen leer ist, sind bis dahin\n\n$$\\frac{1{,}25}{16} = \\frac{5}{64}$$\n\nder Salzmasse ausgelaufen; es verbleiben $\\frac{59}{64}$. Die anfängliche Salzmasse beträgt\n\n$$m_{\\text{Salz},0} = \\rho\\cdot V = 2{,}2\\ \\tfrac{\\text{g}}{\\text{cm}^3}\\cdot 80\\ \\text{cm}^3 = 176\\ \\text{g}$$\n\nDamit ist die Pendelmasse zu diesem Zeitpunkt\n\n$$m = 250\\ \\text{g} + \\frac{59}{64}\\cdot 176\\ \\text{g} = 250\\ \\text{g} + 162{,}25\\ \\text{g} \\approx 412\\ \\text{g} = 0{,}412\\ \\text{kg}$$\n\n**Energie.** Im tiefsten Punkt liegt die gesamte Schwingungsenergie als kinetische Energie vor; sie ist gleich der potentiellen Energie im Umkehrpunkt. Die Steighöhe folgt aus dem Streckendreieck:\n\n$$h = \\ell - \\ell\\cos\\varphi_0 = \\ell\\,(1 - \\cos\\varphi_0) = 1{,}50\\ \\text{m}\\cdot(1 - \\cos 4{,}6^\\circ) \\approx 4{,}8\\cdot 10^{-3}\\ \\text{m}$$\n\n$$E_{\\text{kin}} = m\\cdot g\\cdot h = 0{,}412\\ \\text{kg}\\cdot 9{,}81\\ \\tfrac{\\text{m}}{\\text{s}^2}\\cdot 4{,}8\\cdot 10^{-3}\\ \\text{m} \\approx 1{,}9\\cdot 10^{-2}\\ \\text{J} = 19\\ \\text{mJ}$$\n\n**Kontrollweg.** Mit $v_{\\max} = \\omega\\cdot s_{\\max} = \\frac{2\\pi}{2{,}46\\ \\text{s}}\\cdot 0{,}12\\ \\text{m} \\approx 0{,}31\\ \\frac{\\text{m}}{\\text{s}}$ folgt $E_{\\text{kin}} = \\tfrac{1}{2}m v_{\\max}^2 \\approx 1{,}9\\cdot 10^{-2}\\ \\text{J}$ — dasselbe Ergebnis.",
+        "warum": {
+          "de": "Die Steighöhe $h \\approx 4{,}8\\ \\text{mm}$ ist rund fünfundzwanzigmal kleiner als der waagerechte Ausschlag von $12\\ \\text{cm}$. Wer $h$ mit der Amplitude verwechselt, erhält eine um denselben Faktor zu große Energie — deshalb lohnt sich hier der zweite, völlig unabhängige Rechenweg über $v_{\\max} = \\omega\\cdot s_{\\max}$. Zwei Wege, ein Ergebnis: das ist der einzige Weg, sich ohne Lösungsblatt sicher zu sein.",
+          "tr": "Yükselme yüksekliği $h \\approx 4{,}8\\ \\text{mm}$, $12\\ \\text{cm}$'lik yatay salınımdan yaklaşık yirmi beş kat küçüktür. $h$ ile genliği karıştıran, enerjiyi aynı çarpan kadar büyük bulur — bu yüzden $v_{\\max} = \\omega\\cdot s_{\\max}$ üzerinden giden ikinci ve tümüyle bağımsız yol burada değerlidir. İki yol, tek sonuç: cevap anahtarı olmadan emin olmanın tek yolu budur."
+        },
+        "teilpunkte": 5
+      },
+      {
+        "nr": 5,
+        "titel": "Füllstand in den Fächern beschreiben und begründen",
+        "inhalt": "**Konstante Amplitude.** Die Salzhöhe in einem Fach hängt davon ab, wie lange sich die Öffnung über diesem Fach aufhält, denn das Salz rieselt zeitlich gleichmäßig. In der Ruhelage ist die Geschwindigkeit maximal, das Pendel überquert die mittleren Fächer also besonders schnell und schüttet dort wenig hinein. Zu den Umkehrpunkten hin wird das Pendel immer langsamer und steht dort für einen Moment still — über den äußersten Fächern ist die Verweildauer daher am größten. Der Füllstand ist folglich in der Mitte am niedrigsten und steigt zu beiden Rändern hin stark an; die Verteilung ist symmetrisch zur Mitte.\n\n**Starke Dämpfung.** Nimmt die Amplitude von Periode zu Periode ab, werden die äußeren Fächer schon nach wenigen Schwingungen gar nicht mehr erreicht. Der überwiegende Teil des Salzes fällt dann in die mittleren Fächer. Die Skizze zeigt einen hohen Berg in der Mitte, der zu den Rändern hin steil abfällt; die äußersten Fächer bleiben nahezu leer.",
+        "warum": {
+          "de": "Der Behälter zeichnet damit nichts anderes als die Aufenthaltswahrscheinlichkeit des Pendels — ein Diagramm, das die Schwingung selbst geschrieben hat. Wichtig ist, den Denkfehler zu vermeiden, es rieselte an den Umkehrpunkten „mehr“ Salz: Die Rieselrate ist überall gleich, nur die Zeit ist verschieden. Die gedämpfte Verteilung kehrt das Bild um und macht den Unterschied zwischen konstanter und abnehmender Amplitude direkt sichtbar.",
+          "tr": "Kap böylece sarkacın bulunma olasılığından başka bir şey çizmez — salınımın kendi yazdığı bir grafik. Dönüm noktalarında „daha çok\" tuz aktığı düşüncesinden kaçınmak önemlidir: akış hızı her yerde aynıdır, farklı olan yalnızca süredir. Sönümlü dağılım bu görüntüyü tersine çevirir ve sabit genlikle azalan genlik arasındaki farkı doğrudan görünür kılar."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 6,
+        "titel": "Stellungnahme zur Behauptung",
+        "inhalt": "Die Behauptung ist falsch. Der Vergleich der Energien im tiefsten und im höchsten Punkt liefert\n\n$$m\\cdot g\\cdot h = \\frac{1}{2}m\\,v^2 \\quad\\Longrightarrow\\quad h = \\frac{v^2}{2g}$$\n\nDie Masse kürzt sich vollständig heraus: Steighöhe und damit Amplitude hängen gar nicht von $m$ ab. Das Pendel behält im ungedämpften Fall trotz sinkender Masse denselben maximalen Ausschlag.\n\nDer Denkfehler liegt in der Annahme, die Energie des Pendels bliebe bei abnehmender Masse erhalten: Das ausgelaufene Salz nimmt seinen Anteil an der Schwingungsenergie mit aus dem System heraus. Andernfalls hätte man ein Perpetuum mobile — Amplitude und Energie würden ohne Energiezufuhr wachsen.",
+        "warum": {
+          "de": "Der Fehler in der Hypothese ist eine falsche Systemgrenze: Sie behandelt das Salz beim Verlassen des Behälters so, als hörte es auf zu existieren, statt es als Teil eines offenen Systems zu bilanzieren. Solche Fragen prüfen, ob man den Energieerhaltungssatz wirklich verstanden hat oder ihn nur als Formel abrufen kann — der Satz gilt für ein abgeschlossenes System, und genau das liegt hier nicht vor.",
+          "tr": "Hipotezdeki hata yanlış bir sistem sınırıdır: tuz kaptan çıktığında sanki yok oluyormuş gibi ele alınıyor, oysa açık bir sistemin bilançosuna dâhil edilmeliydi. Böyle sorular, enerjinin korunumu yasasının gerçekten anlaşılıp anlaşılmadığını sınar — yasa kapalı bir sistem için geçerlidir ve burada tam olarak öyle bir sistem yoktur."
+        },
+        "teilpunkte": 2
+      }
+    ],
+    "haeufige_fehler": [
+      "$F_R = -D\\cdot s$ ohne das Minuszeichen notiert; es kodiert, dass die Kraft der Auslenkung entgegengerichtet ist — ohne es gäbe es keine Schwingung, sondern ein Wegfliegen.",
+      "Die Kleinwinkelnäherung mit $\\varphi$ in Grad statt im Bogenmaß angewendet; $\\sin\\varphi \\approx \\varphi$ gilt nur im Bogenmaß.",
+      "Beim dritten Nulldurchgang mit $\\tfrac{3}{4}T$ statt $\\tfrac{5}{4}T$ gerechnet — das Pendel startet im Umkehrpunkt, nicht in der Ruhelage.",
+      "Für die Steighöhe die waagerechte Amplitude $0{,}12\\ \\text{m}$ eingesetzt statt $h = \\ell(1-\\cos\\varphi_0) \\approx 0{,}0048\\ \\text{m}$."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen, Landesabitur Physik 2012, Grundkurs, Aufgabe B2 (Mechanische Schwingungen)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

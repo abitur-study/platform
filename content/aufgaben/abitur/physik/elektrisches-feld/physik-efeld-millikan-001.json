@@ -1,0 +1,88 @@
+{
+  "bereich": "abitur",
+  "id": "physik-efeld-millikan-001",
+  "titel": "Schwebendes Öltröpfchen im Plattenkondensator",
+  "fach": "physik",
+  "themenbereich": "Elektrisches Feld und Kondensator",
+  "themenbereich_slug": "elektrisches-feld",
+  "unterthema": "Millikan-Versuch",
+  "niveau": "LK",
+  "operatoren": ["bestimmen", "begründen", "erläutern"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 30,
+  "aufgabenstellung": "In einem Millikan-Versuch werden feinste Öltröpfchen zwischen die waagerechten Platten eines Kondensators gesprüht. Der Plattenabstand beträgt $d = 5{,}0\\ \\text{mm}$. Ein bestimmtes Tröpfchen mit dem Radius $r = 0{,}80\\ \\mu\\text{m}$ schwebt bei einer angelegten Spannung von $U = 300\\ \\text{V}$ bewegungslos zwischen den Platten. Für die Dichte des Öls gilt $\\rho = 900\\ \\frac{\\text{kg}}{\\text{m}^3}$, für die Fallbeschleunigung $g = 9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}$. Der Auftrieb in Luft wird vernachlässigt.\n\na) Bestimmen Sie die Ladung des Tröpfchens.\n\nb) Begründen Sie, warum sich aus vielen solchen Einzelmessungen auf die Existenz einer kleinsten, nicht weiter teilbaren Ladung schließen lässt.\n\nc) Erläutern Sie, welche Bedeutung der Schwebezustand für die Auswertung des Versuchs hat.",
+  "material": [],
+  "tipps": [
+    "Zeichne ein Kräftebild des schwebenden Tröpfchens. Wie viele Kräfte greifen an, und in welche Richtung zeigen sie?",
+    "Die Masse steht nicht in der Aufgabe — aber Dichte und Radius stehen da. Ein Öltröpfchen ist in guter Näherung eine Kugel.",
+    "Die Feldstärke im Plattenkondensator hängt nur von Spannung und Plattenabstand ab, nicht von der Ladung des Tröpfchens."
+  ],
+  "loesung": {
+    "gesamtpunkte": 13,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Kräftegleichgewicht im Schwebezustand aufstellen",
+        "inhalt": "Das Tröpfchen schwebt, es wird also nicht beschleunigt. Damit muss die Summe aller angreifenden Kräfte null sein. Angreifende Kräfte sind die Gewichtskraft $F_G$ nach unten und die elektrische Kraft $F_{el}$ nach oben:\n\n$$F_{el} = F_G \\quad\\Longleftrightarrow\\quad q\\cdot E = m\\cdot g$$",
+        "warum": {
+          "de": "Der Schwebezustand ist der ganze Trick des Versuchs: Nur wenn die Beschleunigung null ist, darf man die beiden Kräfte gleichsetzen. Damit wird aus einer schwer messbaren Bewegung eine einfache Gleichung. Die Reibung der Luft spielt dabei keine Rolle, weil sich das Tröpfchen nicht bewegt — genau deshalb wird der Schwebezustand angesteuert.",
+          "tr": "Bu deneyin bütün püf noktası askıda kalma (Schwebezustand) durumudur: ivme sıfır olduğu sürece iki kuvveti eşitleyebilirsin. Böylece ölçülmesi zor bir hareket, basit bir denkleme dönüşür. Havanın sürtünmesi de hesaba girmez, çünkü damla hareket etmiyor — askıda kalma durumunun özellikle aranmasının sebebi tam olarak budur."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 2,
+        "titel": "Elektrische Feldstärke berechnen",
+        "inhalt": "Zwischen den Platten eines Kondensators ist das Feld homogen:\n\n$$E = \\frac{U}{d} = \\frac{300\\ \\text{V}}{5{,}0\\cdot 10^{-3}\\ \\text{m}} = 6{,}0\\cdot 10^{4}\\ \\frac{\\text{V}}{\\text{m}}$$",
+        "warum": {
+          "de": "Die Formel $E = U/d$ gilt ausschließlich im homogenen Feld — also zwischen zwei parallelen Platten und fernab der Ränder. Diese Voraussetzung muss man mitdenken, sonst wendet man die Gleichung irgendwann falsch an, etwa beim Feld einer Punktladung, wo sie nicht gilt.",
+          "tr": "$E = U/d$ formülü yalnızca homojen alanda geçerlidir — yani iki paralel levha arasında ve kenarlardan uzakta. Bu ön koşulu aklında tutman gerekir, aksi halde formülü bir noktasal yükün alanı gibi geçerli olmadığı yerlerde de uygulama hatasına düşersin."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 3,
+        "titel": "Masse des Tröpfchens aus Radius und Dichte bestimmen",
+        "inhalt": "Das Tröpfchen wird als Kugel genähert:\n\n$$V = \\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi\\left(0{,}80\\cdot 10^{-6}\\ \\text{m}\\right)^3 = 2{,}14\\cdot 10^{-18}\\ \\text{m}^3$$\n\n$$m = \\rho\\cdot V = 900\\ \\frac{\\text{kg}}{\\text{m}^3}\\cdot 2{,}14\\cdot 10^{-18}\\ \\text{m}^3 = 1{,}93\\cdot 10^{-15}\\ \\text{kg}$$",
+        "warum": {
+          "de": "Die Masse ist im Versuch nicht direkt wägbar — ein Milliardstel Gramm legt man auf keine Waage. Der Umweg über Geometrie und Dichte ist deshalb kein Rechentrick, sondern der einzige Zugang zu dieser Größe. Die Kugelnäherung ist gerechtfertigt, weil die Oberflächenspannung kleine Tröpfchen kugelförmig hält.",
+          "tr": "Kütle deneyde doğrudan tartılamaz — bir gramın milyarda birini teraziye koyamazsın. Geometri ve yoğunluk üzerinden gitmek bu yüzden bir hesap oyunu değil, bu büyüklüğe ulaşmanın tek yoludur. Küre kabulü de haklıdır, çünkü yüzey gerilimi küçük damlaları küresel tutar."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 4,
+        "titel": "Ladung berechnen",
+        "inhalt": "Auflösen des Kräftegleichgewichts nach $q$:\n\n$$q = \\frac{m\\cdot g}{E} = \\frac{1{,}93\\cdot 10^{-15}\\ \\text{kg}\\cdot 9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}}{6{,}0\\cdot 10^{4}\\ \\frac{\\text{V}}{\\text{m}}}$$\n\n$$q = \\frac{1{,}89\\cdot 10^{-14}\\ \\text{N}}{6{,}0\\cdot 10^{4}\\ \\frac{\\text{V}}{\\text{m}}} \\approx 3{,}2\\cdot 10^{-19}\\ \\text{C}$$",
+        "warum": {
+          "de": "Erst hier zahlt sich die saubere Trennung der Schritte aus: Jede Größe der Endformel wurde vorher einzeln aus Messwerten gewonnen. Ein Blick auf die Einheiten ist Pflicht — $\\text{N}\\cdot\\text{m}/\\text{V}$ ergibt tatsächlich Coulomb, was zeigt, dass die Gleichung richtig aufgelöst wurde.",
+          "tr": "Adımları temiz ayırmanın karşılığını burada alırsın: son formüldeki her büyüklük daha önce ölçüm değerlerinden tek tek elde edildi. Birim kontrolü zorunludur — $\\text{N}\\cdot\\text{m}/\\text{V}$ gerçekten Coulomb verir, bu da denklemin doğru çözüldüğünü gösterir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 5,
+        "titel": "Deutung: Vielfaches der Elementarladung",
+        "inhalt": "Vergleich mit der Elementarladung $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$:\n\n$$\\frac{q}{e} = \\frac{3{,}2\\cdot 10^{-19}\\ \\text{C}}{1{,}602\\cdot 10^{-19}\\ \\text{C}} \\approx 2{,}0$$\n\nDas Tröpfchen trägt also zwei Elementarladungen. Misst man sehr viele Tröpfchen, so sind alle gefundenen Ladungen ganzzahlige Vielfache ein und desselben kleinsten Betrages. Zwischenwerte treten nicht auf — daraus folgt, dass die elektrische Ladung gequantelt ist.",
+        "warum": {
+          "de": "Ein einzelnes Tröpfchen beweist gar nichts; es könnte jede beliebige Ladung tragen. Erst die *Verteilung* vieler Messwerte trägt das Argument: Wenn alle Ergebnisse Vielfache eines gemeinsamen Grundbetrags sind und dazwischen nichts liegt, ist das nur mit einer nicht weiter teilbaren Ladungseinheit erklärbar. Die kleine Abweichung von exakt $2{,}0$ stammt vom vernachlässigten Auftrieb.",
+          "tr": "Tek bir damla hiçbir şey kanıtlamaz; herhangi bir yük taşıyor olabilir. Asıl kanıtı çok sayıda ölçümün *dağılımı* taşır: bütün sonuçlar ortak bir temel değerin tam katıysa ve aralarında hiçbir değer yoksa, bu ancak daha fazla bölünemeyen bir yük birimiyle açıklanabilir. Tam $2{,}0$'dan sapma, ihmal edilen kaldırma kuvvetinden gelir."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "Masse und Gewichtskraft verwechselt: In $q\\cdot E = m\\cdot g$ steht rechts eine Kraft, nicht die Masse.",
+      "Plattenabstand in Millimetern eingesetzt statt in Metern — führt zu einem Faktor $1000$ im Ergebnis.",
+      "Radius beim Volumen nicht in dritter Potenz genommen oder $\\mu\\text{m}$ nicht in Meter umgerechnet.",
+      "Behauptet, ein einziges Tröpfchen belege die Quantelung der Ladung — dafür braucht es die Statistik vieler Messungen."
+    ]
+  },
+  "quelle": "eigene Erstellung (Beispielaufgabe, Phase 1)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam (Beispielaufgabe)",
+  "version": 1
+}

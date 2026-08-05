@@ -1,0 +1,104 @@
+{
+  "bereich": "sprachzertifikat",
+  "id": "goethe-c1-schreiben-homeoffice-001",
+  "titel": "Homeoffice — Fortschritt oder Rückschritt für die Arbeitswelt?",
+  "zertifikat": "goethe-c1",
+  "modul": "schreiben",
+  "niveau": "C1",
+  "textsorte": "Forumsbeitrag",
+  "sprache": "de",
+  "schwierigkeit": 4,
+  "bearbeitungszeit_min": 70,
+  "aufgabenstellung": "In einem deutschsprachigen Online-Forum zum Thema Arbeitswelt wird darüber diskutiert, ob das Arbeiten von zu Hause die Arbeitswelt verbessert oder verschlechtert. Sie haben die beiden abgedruckten Beiträge gelesen und möchten sich an der Diskussion beteiligen.\n\nSchreiben Sie einen **Forumsbeitrag von etwa 230 Wörtern**. Gehen Sie dabei auf die folgenden Leitpunkte ein:\n\n- Fassen Sie kurz zusammen, worin sich die beiden Forumsbeiträge widersprechen.\n- Erläutern Sie, welche Vorteile das Homeoffice für Beschäftigte und für Unternehmen haben kann.\n- Gehen Sie auf mögliche Nachteile ein, insbesondere für Berufsanfängerinnen und Berufsanfänger.\n- Beschreiben Sie, welche Rolle das Homeoffice in Ihrem Heimatland spielt.\n- Nehmen Sie abschließend begründet Stellung: Unter welchen Bedingungen halten Sie Homeoffice für sinnvoll?\n\nAchten Sie auf einen klaren Aufbau (Einleitung, Hauptteil, Schluss), auf verbindende Konnektoren und auf eine dem Forum angemessene, sachliche Sprache.",
+  "material": [
+    {
+      "typ": "text",
+      "titel": "Aus einem Diskussionsforum: „Arbeiten, wo man will?“",
+      "inhalt": "**lindwurm82** schrieb:\n\nSeit drei Jahren arbeite ich vier Tage pro Woche von zu Hause. Ich spare täglich zwei Stunden Fahrtzeit, arbeite deutlich konzentrierter und sehe meine Kinder wieder wach. Wer mich zurück ins Großraumbüro holen will, muss schon sehr gute Argumente haben — bisher habe ich keines gehört.\n\n**K. Ravensberg** antwortete:\n\nMich macht das Homeoffice einsam. Der kurze Austausch in der Teeküche, das schnelle Nachfragen beim Kollegen am Nebentisch — all das fällt weg, und mit ihm ein Wissen, das in keinem Handbuch steht. Besonders die Jüngeren zahlen dafür: Wer neu im Beruf ist, lernt zu Hause fast nichts. Und einen Feierabend gibt es auch nicht mehr, weil der Laptop immer im Zimmer steht.",
+      "quelle": "eigene Erstellung",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Bevor Sie den ersten Satz schreiben: Ordnen Sie jedem Leitpunkt ein Stichwort und ein grobes Wortkontingent zu. Bei 230 Wörtern bleiben pro Leitpunkt kaum mehr als 40 bis 45 Wörter — das zwingt zur Auswahl statt zur Aufzählung.",
+    "Ein Argument ist erst dann eines, wenn Behauptung, Begründung und Beispiel zusammenkommen. Prüfen Sie jeden Absatz: Steht darin ein „weil“, „denn“ oder „so zeigt sich“ — oder nur eine Meinung?",
+    "Sammeln Sie vorab vier Konnektoren aus **unterschiedlichen** Klassen (etwa: denn / zudem / obwohl / folglich). Jede Klasse verlangt eine andere Wortstellung; wer das bewusst plant, verliert im Text keine Punkte mehr daran."
+  ],
+  "loesung": {
+    "gesamtpunkte": 20,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Aufgabe entschlüsseln: Textsorte, Adressat, Leitpunkte",
+        "inhalt": "Vier Festlegungen vor dem Schreiben:\n\n1. **Textsorte:** Forumsbeitrag — kein Brief. Also keine Anrede „Sehr geehrte Damen und Herren“ und keine Grußformel, aber trotzdem sachlich-schriftsprachlich, nicht umgangssprachlich.\n2. **Adressat:** die anderen Forenteilnehmer, insbesondere lindwurm82 und K. Ravensberg. Auf sie darf und soll namentlich Bezug genommen werden.\n3. **Leitpunkte als Fragen notieren:** Worin widersprechen sich die beiden? Welche Vorteile? Welche Nachteile für Berufsanfänger? Wie ist es in meinem Heimatland? Unter welchen Bedingungen sinnvoll?\n4. **Wortbudget:** Einleitung ca. 35, Vorteile ca. 50, Nachteile ca. 50, Heimatland ca. 40, Schluss ca. 40 Wörter.\n\nStichwortliste (nicht ausformuliert): *Zeitgewinn — Bürokosten — Bewerberkreis / Isolation — informelles Lernen — keine Grenze Arbeit/Freizeit / Heimatland: erst seit der Pandemie verbreitet, oft nur in der IT / Bedingung: feste Präsenztage.*",
+        "warum": {
+          "de": "Das Bewertungskriterium **Erfüllung** prüft die Leitpunkte einzeln. Ein ausgelassener oder nur gestreifter Leitpunkt kostet mehr Punkte als drei Grammatikfehler, denn Grammatik wird in einem eigenen Kriterium bewertet und wirkt sich nicht doppelt aus. Das Wortbudget verhindert außerdem den häufigsten Zeitfehler: Der erste Leitpunkt frisst 120 Wörter, der letzte wird zu einem Halbsatz.",
+          "tr": "Goethe C1'de puanın dörtte biri **Erfüllung** (görevi yerine getirme) kriterinden gelir ve her Leitpunkt ayrı ayrı kontrol edilir. Atlanan bir Leitpunkt, üç gramer hatasından daha pahalıdır: gramer zaten ayrı bir kriterde değerlendirilir, yani iki kez cezalandırılmazsın. Kelime bütçesi de şu klasik tuzağı önler — ilk maddeye 120 kelime harcayıp son maddeyi yarım cümleyle geçiştirmek. Ayrıca Türk öğrencilerin sık yaptığı bir şey: Forumsbeitrag'a mektup gibi „Sehr geehrte Damen und Herren“ ile başlamak. Bu, metin türünü ıskaladığın anlamına gelir ve doğrudan Erfüllung'dan puan götürür."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 2,
+        "titel": "Gliederung festlegen und die Einleitung schreiben",
+        "inhalt": "**Gliederung:** Einleitung (Bezug + Streitfrage + eigene Leitthese) → Absatz 1 (Vorteile) → Absatz 2 (Nachteile mit Widerlegung) → Absatz 3 (Heimatland) → Schluss (Bedingungen).\n\n**Ausformulierte Einleitung:**\n\n„Ob das Arbeiten von zu Hause die Arbeitswelt tatsächlich verbessert, wird in diesem Forum sehr kontrovers diskutiert. Während lindwurm82 vor allem den Zeitgewinn und die höhere Konzentration hervorhebt, beklagt K. Ravensberg die soziale Isolation und die verschwimmende Grenze zwischen Beruf und Privatleben. Meines Erachtens lässt sich die Frage nicht pauschal beantworten: Entscheidend ist nicht das Homeoffice selbst, sondern die Art, wie es organisiert wird.“\n\n**Redemittel dieser Einleitung:** *Ob …, wird kontrovers diskutiert* · *Während A …, betont B …* · *Meines Erachtens* · *lässt sich nicht pauschal beantworten*.",
+        "warum": {
+          "de": "Die Einleitung leistet drei Dinge gleichzeitig: Sie erledigt den ersten Leitpunkt (Widerspruch der beiden Positionen), sie benennt die Streitfrage und sie kündigt die eigene These an. Die Konstruktion mit „Während A …, B …“ stellt zwei Positionen in **einem** Satz gegenüber und zeigt damit genau die satzübergreifende Verknüpfung, die das Kriterium Kohärenz verlangt. Ein Metasatz wie „In diesem Beitrag schreibe ich über Homeoffice“ leistet dagegen nichts davon.",
+          "tr": "Bu giriş üç işi aynı anda yapar: birinci Leitpunkt'u kapatır, tartışma sorusunu adlandırır ve kendi tezini duyurur. „Während A …, B …“ yapısı iki karşıt görüşü **tek** cümlede karşılaştırır — Kohärenz kriterinin aradığı tam da bu. Dikkat: buradaki „während“ zaman değil karşıtlık bildirir ve bir Nebensatz açar, yani fiil sona gider („Während lindwurm82 … hervorhebt“). Türk öğrencilerin en sık girişi „Bu konu hakkında yazmak istiyorum“un birebir çevirisidir: „Ich möchte über dieses Thema schreiben“. Türkçede doğal duran bu açılış, Almanca C1'de içeriksiz bir meta-cümledir; okuyucu ne tezini ne de tartışmayı öğrenir, üstelik 10 kelimeni boşa harcar."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 3,
+        "titel": "Hauptteil I — These, Begründung, Beispiel",
+        "inhalt": "Jeder Argumentationsabsatz folgt demselben Dreischritt. Für den Leitpunkt „Vorteile“:\n\n- **These:** Für das Homeoffice spricht zunächst der Zeitgewinn.\n- **Begründung:** Wegfall des Arbeitswegs, geringere Bürokosten, größerer Bewerberkreis.\n- **Beispiel:** ländliche Mittelständler, die heute Fachkräfte gewinnen.\n\n**Ausformuliert:**\n\n„Für das Homeoffice spricht zunächst der Zeitgewinn. Da lange Arbeitswege entfallen, steht den Beschäftigten mehr Zeit für Familie und Erholung zur Verfügung; die Unternehmen wiederum profitieren von geringeren Bürokosten und einem größeren Bewerberkreis, weil der Wohnort seine Bedeutung verliert. So können mittelständische Betriebe in ländlichen Regionen heute Fachkräfte gewinnen, die vor zehn Jahren für sie unerreichbar gewesen wären.“\n\n**Redemittel:** *Für X spricht zunächst …* · *Da …, …* · *X wiederum profitiert von …* · *So können …* (beispielführend, nicht folgernd).",
+        "warum": {
+          "de": "Eine Behauptung ohne Begründung und Beleg bleibt eine Meinung und zählt in der Bewertung als halbes Argument. Der Dreischritt These–Begründung–Beispiel ist zugleich ein Kohärenz-Motor: Er erzeugt automatisch kausale Verknüpfungen („da“, „weil“) und einen Beispielsatz („so“). Der Konjunktiv II „gewesen wären“ markiert die irreale Vergangenheit — eine Struktur, die auf C1 erwartet und auf B2 fast nie produziert wird.",
+          "tr": "Gerekçesi ve örneği olmayan bir iddia sadece bir görüştür ve puanlamada yarım argüman sayılır. These–Begründung–Beispiel üçlüsü aynı zamanda bir Kohärenz motorudur: „da“, „weil“, „so“ bağlaçlarını kendiliğinden üretir. İki dilsel nokta: (1) „So können …“ buradaki „so“ *böylece/sonuç* değil, *örneğin* anlamındadır — Türkçe „böylece“ refleksiyle sonuç cümlesi kurarsan mantık zinciri kırılır. (2) „unerreichbar gewesen wären“ Konjunktiv II'nin geçmiş zamanıdır, yani gerçekleşmemiş bir durum. Türkçedeki „ulaşılmaz olurdu“ kalıbını Almancada „wären … gewesen“ olarak kurmak zorundasın; „würden sein“ ile çevirmek yaygın bir hatadır ve C1 seviyesinde göze batar."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 4,
+        "titel": "Hauptteil II — Gegenposition benennen und einschränken",
+        "inhalt": "Der Nachteil-Absatz wird nicht als Gegenmeinung *gegen* die eigene These gebaut, sondern als Einwand, der die These **präzisiert**:\n\n„Zwar lässt sich vieles digital erledigen, dennoch ersetzt kein Videochat das beiläufige Gespräch im Flur. K. Ravensberg weist zu Recht darauf hin, dass gerade Berufsanfänger im Homeoffice kaum von erfahrenen Kolleginnen lernen können; informelles Wissen wird eben nebenbei weitergegeben und steht in keinem Handbuch. Dieser Einwand ist insofern berechtigt, als er ein reales Problem benennt — er spricht allerdings nicht gegen das Homeoffice an sich, sondern gegen dessen unbegleitete Einführung.“\n\n**Redemittel:** *Zwar …, dennoch …* · *X weist zu Recht darauf hin, dass …* · *Dieser Einwand ist insofern berechtigt, als …* · *… spricht nicht gegen X an sich, sondern gegen …*",
+        "warum": {
+          "de": "Ein einseitiger Text sinkt sprachlich wie inhaltlich auf B2. Wer den stärksten Gegeneinwand selbst formuliert und anschließend einschränkt, zeigt die abwägende Argumentation, die C1 verlangt. Wichtig ist die Wortstellung: „zwar“ und „dennoch“ stehen im Vorfeld, das finite Verb bleibt an Position 2, das Subjekt rutscht dahinter („dennoch **ersetzt** kein Videochat …“). „Insofern …, als …“ ist ein gehobenes Einschränkungsmuster, das kaum ein B2-Text enthält.",
+          "tr": "Tek yanlı metin, dili ne kadar iyi olursa olsun içerik olarak B2'ye düşer. En güçlü karşı argümanı kendin dile getirip sonra sınırlaman, C1'in beklediği *abwägend* (tartıp değerlendiren) düşünmeyi gösterir. Kritik nokta kelime dizilimi: „zwar“ ve „dennoch“ birer **Adverb**'dür, Vorfeld'i işgal ederler, dolayısıyla çekimli fiil hemen arkalarından gelir ve özne fiilin arkasına düşer („dennoch **ersetzt** kein Videochat …“). Türkçede „yine de“ dedikten sonra cümlenin dizilimi hiç değişmediği için bu yer değiştirme unutulur ve „dennoch kein Videochat ersetzt“ gibi hatalı cümleler çıkar. Ayrıca „obwohl“ ile karıştırma: o bir Subjunktion'dur ve fiili sona gönderir. „insofern …, als …“ kalıbı ise B2 metinlerinde neredeyse hiç görülmez; tam da bu yüzden C1 sayılır."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 5,
+        "titel": "Heimatland-Leitpunkt und Schluss mit eigener Position",
+        "inhalt": "**Heimatland (kurz und konkret, keine Statistik erfinden):**\n\n„In der Türkei hat sich das Homeoffice erst mit der Pandemie durchgesetzt, und zwar vor allem in der IT-Branche und in internationalen Unternehmen. In vielen Betrieben gilt Anwesenheit nach wie vor als Beleg für Einsatz — eine Haltung, die sich nur langsam ändert.“\n\n**Schluss:**\n\n„Abwägend komme ich zu dem Schluss, dass das Homeoffice weder Fortschritt noch Rückschritt ist, sondern ein Werkzeug, dessen Wirkung von den Rahmenbedingungen abhängt. Sinnvoll erscheint es mir dort, wo feste Präsenztage, verbindliche Erreichbarkeitszeiten und eine echte Einarbeitung neuer Mitarbeiter gesichert sind. Entscheidend wird künftig sein, ob Unternehmen bereit sind, Vertrauen zu organisieren statt Anwesenheit zu kontrollieren.“\n\n**Redemittel:** *Abwägend komme ich zu dem Schluss, dass …* · *Sinnvoll erscheint mir …, wo …* · *Entscheidend wird künftig sein, ob …*",
+        "warum": {
+          "de": "Der Schluss ist eine Bilanz, keine Wiederholung: Er beantwortet die in der Einleitung gestellte Frage und liefert mit dem Ausblick („Entscheidend wird künftig sein, ob …“) einen Rahmen, der Anfang und Ende verklammert. Neue Argumente gehören nicht hierher. Die Formel „weder … noch …, sondern …“ ersetzt ein platt zustimmendes oder ablehnendes Fazit durch eine differenzierte Position — genau das erwartet die Bewertung.",
+          "tr": "Sonuç bölümü bir bilanço, bir tekrar değil: girişte sorduğun soruyu cevaplar, „Entscheidend wird künftig sein, ob …“ ile bir Ausblick vererek başlangıçla sonu birbirine kenetler. Buraya yeni argüman eklenmez. Türkçe kompozisyon geleneğinde sonuç çoğu zaman girişin yeniden yazılmış hâlidir; Almanca C1'de bu, Kohärenz'den puan kaybettirir çünkü metin ilerlememiş olur. Bir uyarı daha: kendi görüşünü sadece „Meiner Meinung nach“ ile işaretlemek B1 seviyesidir. „Abwägend komme ich zu dem Schluss, dass …“ hem bir değerlendirme süreci geçirdiğini gösterir hem de arkasından bir dass-cümlesi getirir — yani fiil sona gider, ki bu da yapı puanına yazar. „weder … noch …, sondern …“ kalıbı ise siyah-beyaz cevap vermekten seni kurtarır."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 6,
+        "titel": "Sprachliche Überarbeitung: Wortstellung, Konnektoren, Nominalstil",
+        "inhalt": "Fünf Minuten Endkontrolle mit fester Reihenfolge:\n\n1. **Verb an Position 2 nach Vorfeld-Adverbien:**\n   - falsch: „Deshalb viele Unternehmen sparen Bürokosten.“\n   - richtig: „Deshalb **sparen** viele Unternehmen Bürokosten.“\n2. **Verb ans Ende im Nebensatz:**\n   - falsch: „…, weil das Vertrauen ist wichtiger als Kontrolle.“\n   - richtig: „…, weil Vertrauen wichtiger **ist** als Kontrolle.“\n3. **Ein Nominalstil-Satz pro Text:**\n   - vorher: „Weil die Arbeit flexibler geworden ist, ändert sich die Führung.“\n   - nachher: „**Mit der zunehmenden Flexibilisierung der Arbeit** ändert sich auch die Führung.“\n4. **Konnektoren zählen:** Wenn „und“ mehr als viermal vorkommt, zwei davon ersetzen durch *zudem*, *darüber hinaus*, *hingegen*, *folglich*.\n5. **Meinungsformeln variieren:** *Meines Erachtens* / *Aus meiner Sicht* / *Vieles spricht dafür, dass* statt dreimal „Ich denke, dass“.\n6. **Wörter zählen.** 230 Wörter plus/minus zehn Prozent; deutlich zu kurze Texte werden im Kriterium Erfüllung abgewertet.",
+        "warum": {
+          "de": "Die letzten beiden Bewertungskriterien — Wortschatz und Strukturen — entscheiden sich fast vollständig in dieser Überarbeitungsrunde, nicht beim ersten Schreiben. Deutsche Konnektoren zerfallen in drei Klassen mit drei verschiedenen Wortstellungen: Konjunktionen (und, aber, denn) ändern nichts; Konjunktionaladverbien (deshalb, zudem, allerdings) besetzen das Vorfeld und erzwingen die Inversion; Subjunktionen (weil, obwohl, da) schicken das Verb ans Satzende. Wer diese drei Klassen sauber trennt, verliert keinen Strukturpunkt mehr.",
+          "tr": "Son iki kriter — Wortschatz ve Strukturen — neredeyse tamamen bu gözden geçirme turunda kazanılır, ilk yazımda değil. Almanca bağlaçlar üç sınıfa ayrılır ve **her sınıf fiili başka yere koyar**: (1) Konjunktion (und, aber, denn, sondern) — dizilime hiç dokunmaz; (2) Konjunktionaladverb (deshalb, zudem, allerdings, dennoch) — Vorfeld'i işgal eder, fiil hemen arkasından gelir; (3) Subjunktion (weil, obwohl, da, dass) — fiili cümlenin sonuna gönderir. Türkçede bağlaç cümlenin dizilimini değiştirmediği için („bu yüzden“, „ama“, „çünkü“ hepsinden sonra dizilim aynıdır) bu üçlü ayrım Türk öğrenci için ezberlenmesi değil, her metinde tek tek kontrol edilmesi gereken bir şeydir. Nominalstil de ayrı bir kazanç: „Mit der zunehmenden Flexibilisierung der Arbeit“ gibi bir ifade Türkçeye „işin giderek esnekleşmesiyle“ diye rahat çevrilir, ama Almancada bu yapı yazı diline ait sayılır ve doğrudan Wortschatz puanını yükseltir."
+        },
+        "teilpunkte": 4
+      }
+    ],
+    "haeufige_fehler": [
+      "Nach Vorfeld-Adverbien wie *deshalb*, *trotzdem*, *zudem* oder *dennoch* wird das Subjekt vor das Verb gestellt („Deshalb viele Firmen sparen …“). Diese Adverbien besetzen das Vorfeld, das finite Verb muss an Position 2 folgen.",
+      "Im Nebensatz mit *weil*, *dass* oder *obwohl* rutscht das finite Verb an die zweite Stelle („…, weil das Vertrauen ist wichtig“). Im geschriebenen Deutsch gehört es ans Satzende.",
+      "Ein Leitpunkt wird ausgelassen oder nur mit einem Halbsatz gestreift — meist der Heimatland-Punkt, weil vorher zu viele Wörter verbraucht wurden.",
+      "Durchgehendes *wir*, wo das unpersönliche *man* oder eine Passivkonstruktion angemessen wäre: „Wir müssen die Arbeitszeit kontrollieren“ klingt in einem sachlichen Forumsbeitrag unpassend persönlich.",
+      "Aufzählung statt Argumentation: fünf Vorteile in fünf Hauptsätzen, ohne Begründung und ohne ein einziges Beispiel — inhaltlich B1, egal wie korrekt die Grammatik ist."
+    ]
+  },
+  "quelle": "eigene Erstellung (handgeschriebenes Gold-Beispiel, Phase 1)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "geprueft_von": "Projektteam (Seed-Aufgabe)",
+  "version": 1
+}

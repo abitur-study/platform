@@ -1,0 +1,97 @@
+{
+  "bereich": "abitur",
+  "id": "biologie-neurobiologie-curare-synapse-001",
+  "titel": "Wirkort des Pfeilgifts Curare an der motorischen Endplatte",
+  "fach": "biologie",
+  "themenbereich": "Neurobiologie",
+  "themenbereich_slug": "neurobiologie",
+  "unterthema": "Chemische Synapse und Synapsengifte",
+  "niveau": "LK",
+  "operatoren": ["beschreiben", "bestimmen", "begründen", "erläutern"],
+  "sprache": "de",
+  "schwierigkeit": 4,
+  "bearbeitungszeit_min": 40,
+  "aufgabenstellung": "Curare ist der Wirkstoff eines Pfeilgifts, das von indigenen Gruppen Südamerikas zur Jagd verwendet wird. Getroffene Beutetiere erschlaffen zunehmend und sterben schließlich an Atemstillstand, obwohl sie bis zuletzt bei Bewusstsein sind. Zur Aufklärung des Wirkorts wurde ein isoliertes Nerv-Muskel-Präparat untersucht; die Befunde sind in Material 1 zusammengefasst.\n\na) Beschreiben Sie den Ablauf der Erregungsübertragung an einer cholinergen Synapse vom Eintreffen des Aktionspotentials in der Präsynapse bis zur Beendigung des Signals.\n\nb) Bestimmen Sie mithilfe von Material 1 den Wirkort von Curare und begründen Sie Ihre Entscheidung, indem Sie jeden Befund einzeln auswerten.\n\nc) Erläutern Sie, weshalb das Aktionspotential dem Alles-oder-Nichts-Prinzip gehorcht, das postsynaptische Potential dagegen abgestuft ausfällt, und welche Bedeutung die Summation für die Erregungsübertragung hat.",
+  "material": [
+    {
+      "typ": "text",
+      "titel": "Material 1: Messbefunde am isolierten Nerv-Muskel-Präparat",
+      "inhalt": "Untersucht wurde ein herauspräpariertes Muskelfaserbündel mit dem zugehörigen motorischen Nerv in einer Nährlösung. Mit Mikroelektroden konnten die Spannungen am Axon der Präsynapse und an der Muskelfaser getrennt voneinander abgeleitet werden. Alle Messungen wurden zunächst ohne und anschließend mit Curare in der Nährlösung durchgeführt.\n\nBefund 1: Ohne Curare löst eine Reizung des motorischen Nervs am Axon ein Aktionspotential aus, das etwa 3 ms später an der Muskelfaser ein depolarisierendes Potential und daraufhin eine kräftige Kontraktion hervorruft.\n\nBefund 2: Nach Zugabe von Curare bleiben Amplitude, Zeitverlauf und Fortleitungsgeschwindigkeit des Aktionspotentials im Axon der Präsynapse unverändert. An der Muskelfaser ist dagegen keinerlei Spannungsänderung mehr messbar, und es kommt zu keiner Kontraktion.\n\nBefund 3: Eine chemische Analyse der Flüssigkeit im synaptischen Spalt zeigt, dass unter Curare bei jeder Reizung praktisch gleich viel Acetylcholin freigesetzt wird wie ohne Curare. Auch der enzymatische Abbau des Acetylcholins läuft unverändert ab.\n\nBefund 4: Wird Acetylcholin mit einer feinen Pipette unmittelbar auf die Membran der Muskelfaser aufgebracht, so entsteht ohne Curare ein deutliches depolarisierendes Potential, unter Curare dagegen nicht.\n\nBefund 5: Erhöht man die aufgebrachte Acetylcholin-Menge unter Curare schrittweise sehr stark, so tritt die Depolarisation allmählich wieder auf. Umgekehrt lässt sich die Wirkung des Gifts durch Erhöhung der Curare-Konzentration erneut aufheben.\n\nBefund 6: Eine direkte elektrische Reizung der Muskelfaser unter Umgehung der Synapse führt auch unter Curare zu einer normalen Kontraktion.",
+      "quelle": "eigene Erstellung nach klassischen Nerv-Muskel-Experimenten (didaktisch vereinfacht)",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Gehe die Synapse in der Reihenfolge des Signalwegs durch: Präsynapse, synaptischer Spalt, postsynaptische Membran. Jeder Befund in Material 1 schließt genau einen dieser Abschnitte als Wirkort aus oder ein.",
+    "Befund 6 klärt eine Frage, die mit der Synapse gar nichts zu tun hat. Überlege, welche Alternativerklärung für die Lähmung dieser Befund beseitigt.",
+    "Befund 5 sagt etwas über die *Art* der Hemmung aus, nicht über ihren Ort. Denke daran, wie sich ein Hemmstoff verhält, der um dieselbe Bindestelle konkurriert wie der natürliche Ligand."
+  ],
+  "loesung": {
+    "gesamtpunkte": 16,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Ablauf der Erregungsübertragung an der cholinergen Synapse",
+        "inhalt": "Das Aktionspotential erreicht das Endknöpfchen und depolarisiert dessen Membran. Dadurch öffnen sich spannungsgesteuerte $\\mathrm{Ca^{2+}}$-Kanäle, und $\\mathrm{Ca^{2+}}$ strömt entlang seines elektrochemischen Gradienten in die Präsynapse ein.\n\nDer $\\mathrm{Ca^{2+}}$-Einstrom veranlasst die mit Acetylcholin gefüllten Vesikel, mit der präsynaptischen Membran zu verschmelzen; der Transmitter wird durch Exocytose in den synaptischen Spalt entleert.\n\nAcetylcholin diffundiert durch den etwa 20 nm breiten Spalt und bindet an die Acetylcholin-Rezeptoren der postsynaptischen Membran. Diese Rezeptoren sind zugleich Ionenkanäle (ligandengesteuerte Kanäle): Sie öffnen sich, $\\mathrm{Na^+}$ strömt ein, und die postsynaptische Membran wird depolarisiert. Es entsteht ein erregendes postsynaptisches Potential (EPSP).\n\nÜberschreitet die Depolarisation an der Muskelfaser den Schwellenwert, werden dort spannungsgesteuerte $\\mathrm{Na^+}$-Kanäle geöffnet und ein Aktionspotential ausgelöst, das die Kontraktion einleitet.\n\nBeendet wird das Signal durch die Acetylcholinesterase im synaptischen Spalt, die Acetylcholin in Essigsäure und Cholin spaltet. Cholin wird in die Präsynapse zurücktransportiert und dort wiederverwendet; die Rezeptoren schließen sich, und die Postsynapse kehrt zum Ruhepotential zurück.",
+        "warum": {
+          "de": "Der Ablauf ist die Bezugsgröße für die gesamte weitere Auswertung: Ein Gift kann nur an einer Station eingreifen, die es in diesem Ablauf überhaupt gibt. Wer die Kette einmal sauber in ihre Einzelschritte zerlegt hat, besitzt damit eine vollständige Liste möglicher Angriffspunkte und muss diese anschließend nur noch mit den Befunden abgleichen. Besonders wichtig ist der Abbauschritt am Ende — ohne ihn bliebe die Postsynapse dauerhaft erregt.",
+          "tr": "Bu akış, sonraki bütün değerlendirmenin ölçüsüdür: bir zehir ancak bu zincirde gerçekten var olan bir istasyona etki edebilir. Zinciri temiz biçimde adımlara ayıran öğrenci, olası etki noktalarının tam listesine sahip olur ve sonra bunları bulgularla karşılaştırması yeter. Sondaki parçalanma adımını atlamayın — asetilkolinesteraz olmasaydı postsinaps sürekli uyarılmış kalırdı; bu adım sınavda sık unutulur."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 2,
+        "titel": "Präsynapse und Muskelfaser als Wirkort ausschließen",
+        "inhalt": "Befund 2 zeigt, dass das Aktionspotential in der Präsynapse in Amplitude, Zeitverlauf und Leitungsgeschwindigkeit völlig unverändert bleibt. Ruhepotential, spannungsgesteuerte Kanäle und Erregungsleitung des Axons können also nicht betroffen sein.\n\nBefund 3 ergänzt dies für die Transmitterfreisetzung: Die freigesetzte Acetylcholin-Menge ist unverändert, folglich arbeiten auch $\\mathrm{Ca^{2+}}$-Einstrom und Exocytose normal. Da auch der enzymatische Abbau unverändert abläuft, scheidet die Acetylcholinesterase als Angriffspunkt aus.\n\nBefund 6 schließt schließlich die Muskelfaser selbst aus: Bei direkter elektrischer Reizung kontrahiert sie auch unter Curare normal. Der kontraktile Apparat ist demnach intakt, die Lähmung beruht nicht auf einem Muskeldefekt.\n\nDamit bleibt als Wirkort nur noch die postsynaptische Membran übrig.",
+        "warum": {
+          "de": "Die Aufgabe verlangt eine Eingrenzung, und die geschieht durch systematisches Ausschließen — dieselbe Logik wie bei jeder Indizienkette. Entscheidend ist, dass jeder Befund einer bestimmten Station zugeordnet und deren Unversehrtheit ausdrücklich festgestellt wird; erst dadurch wird der übrig bleibende Ort zwingend und nicht bloß plausibel. Ein Kontrollbefund wie Befund 6 wirkt nebensächlich, verhindert aber eine völlig andere Fehldeutung.",
+          "tr": "Soru bir daraltma ister; bu da sistematik eleme ile yapılır, tıpkı bir delil zincirinde olduğu gibi. Önemli olan, her bulguyu belirli bir istasyona bağlayıp o istasyonun sağlam olduğunu açıkça söylemek; geriye kalan yer ancak böyle zorunlu hale gelir, yoksa sadece \"muhtemel\" kalır. Bulgu 6 gibi kontrol deneyleri önemsiz görünür ama bambaşka bir yanlış yorumu (kasın kendisinin bozulduğu) engeller — bu yüzden yorumsuz bırakılmamalı."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 3,
+        "titel": "Acetylcholin-Rezeptor als Wirkort nachweisen",
+        "inhalt": "Befund 4 ist der entscheidende Nachweis: Wird Acetylcholin direkt auf die postsynaptische Membran aufgebracht, so wird die gesamte Präsynapse umgangen — Transmitterfreisetzung, Diffusion und Spaltgeschehen spielen keine Rolle mehr. Ohne Curare entsteht dabei ein depolarisierendes Potential, unter Curare nicht.\n\nDie postsynaptische Membran spricht also selbst dann nicht auf Acetylcholin an, wenn der Transmitter im Überschuss vorliegt. Folglich ist die Bindung des Acetylcholins an seinen Rezeptor gestört: **Curare blockiert die Acetylcholin-Rezeptoren der postsynaptischen Membran.**\n\nDie ligandengesteuerten $\\mathrm{Na^+}$-Kanäle bleiben geschlossen, es entsteht kein EPSP, der Schwellenwert wird nicht erreicht, kein Aktionspotential an der Muskelfaser — die Muskulatur erschlafft. Da auch die Zwerchfell- und Zwischenrippenmuskulatur betroffen ist, führt eine ausreichende Dosis zum Atemstillstand, während Sinneswahrnehmung und Bewusstsein unbeeinträchtigt bleiben.",
+        "warum": {
+          "de": "Befund 4 ist deshalb so aussagekräftig, weil er das Präparat gezielt in zwei Hälften teilt und nur eine davon prüft. Alle vorgelagerten Stationen werden experimentell übersprungen, sodass ein negatives Ergebnis eindeutig der verbliebenen Station zuzuschreiben ist. Dieses Prinzip — eine Station künstlich umgehen und schauen, ob der Ausfall bestehen bleibt — ist das Standardverfahren zur Lokalisation eines Wirkorts.",
+          "tr": "Bulgu 4'ün gücü, düzeneği kasıtlı olarak ikiye bölüp yalnızca bir yarısını sınamasından gelir. Önceki bütün istasyonlar deneysel olarak atlandığı için, olumsuz sonuç ancak geriye kalan istasyona atfedilebilir. Bir istasyonu yapay olarak devre dışı bırakıp arızanın sürüp sürmediğine bakmak — etki yerini bulmanın standart yöntemidir. Cevapta yalnızca \"postsinapsta etkili\" demek yetmez, hangi molekülün bloke edildiğini adlandırmak gerekir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 4,
+        "titel": "Befund 5 als kompetitive Hemmung deuten",
+        "inhalt": "Nach Befund 5 lässt sich die Curare-Wirkung durch sehr große Acetylcholin-Mengen wieder aufheben und durch mehr Curare erneut herstellen. Die Wirkung ist also von den Konzentrationen beider Stoffe abhängig, das Gift ist verdrängbar.\n\nDas ist das Kennzeichen einer **kompetitiven Hemmung**: Curare ähnelt dem Acetylcholin in seiner räumlichen Struktur so weit, dass es an dieselbe Bindestelle des Rezeptors passt. Es besetzt diese Stelle, löst dort aber keine Konformationsänderung und damit keine Kanalöffnung aus. Beide Moleküle konkurrieren um dieselben Rezeptoren, sodass das Mengenverhältnis entscheidet, welcher Stoff die Bindestellen überwiegend besetzt.\n\nEine nicht-kompetitive oder irreversible Blockade wäre durch Acetylcholin-Überschuss dagegen nicht aufzuheben.",
+        "warum": {
+          "de": "Die Verdrängbarkeit ist der einzige Befund, der etwas über die Art der Bindung aussagt statt über ihren Ort — sie zu übersehen kostet die halbe Antwort auf das „Wie“. Aus der Umkehrbarkeit folgt unmittelbar, dass Curare an dieselbe Stelle wie der natürliche Ligand bindet und diese nicht dauerhaft zerstört. Das erklärt zugleich die medizinische Nutzung curareartiger Substanzen als steuerbare Muskelrelaxantien in der Narkose.",
+          "tr": "Yer değiştirebilirlik, bağlanmanın *yerini* değil *türünü* gösteren tek bulgudur; onu atlamak \"nasıl\" sorusunun yarısını kaybettirir. Geri döndürülebilir olması, kürarın doğal ligandla aynı bölgeye bağlandığını ve orayı kalıcı olarak tahrip etmediğini doğrudan gösterir. Aynı gerekçe, kürar benzeri maddelerin anestezide kontrol edilebilir kas gevşetici olarak kullanılmasını da açıklar. Not: yapısal benzerlik olmadan rekabet de olmaz — cevapta bunu belirtin."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 5,
+        "titel": "Alles-oder-Nichts-Prinzip, abgestuftes EPSP und Summation",
+        "inhalt": "**Aktionspotential:** Es wird durch spannungsgesteuerte $\\mathrm{Na^+}$-Kanäle erzeugt, die sich erst beim Erreichen des Schwellenwerts öffnen. Ihre Öffnung wirkt selbstverstärkend: Der $\\mathrm{Na^+}$-Einstrom depolarisiert weiter und öffnet dadurch noch mehr Kanäle. Ist der Schwellenwert einmal überschritten, läuft dieser Vorgang unabhängig von der Reizstärke bis zum Maximum ab. Ein unterschwelliger Reiz löst dagegen gar kein Aktionspotential aus. Es gibt also nur „ganz“ oder „gar nicht“ — das **Alles-oder-Nichts-Prinzip**. Die Amplitude eines einzelnen Aktionspotentials trägt daher keine Information über die Reizstärke; diese wird über die Frequenz codiert.\n\n**EPSP:** Es entsteht an ligandengesteuerten Kanälen. Wie viele davon öffnen, hängt unmittelbar davon ab, wie viele Transmittermoleküle gerade gebunden sind. Doppelt so viel Acetylcholin öffnet näherungsweise doppelt so viele Kanäle und erzeugt eine entsprechend größere Depolarisation. Das EPSP ist also **abgestuft** und klingt zudem beim passiven Fortlaufen zum Axonhügel ab.\n\n**Summation:** Ein einzelnes EPSP reicht meist nicht bis zum Schwellenwert. Bei der **zeitlichen Summation** feuert dieselbe Synapse so rasch hintereinander, dass ein neues EPSP eintrifft, bevor das vorige abgeklungen ist. Bei der **räumlichen Summation** treffen EPSP mehrerer Synapsen gleichzeitig am selben Neuron ein. In beiden Fällen addieren sich die Depolarisationen am Axonhügel; erst wenn ihre Summe den Schwellenwert übersteigt, entsteht ein Aktionspotential.\n\nDie Postsynapse arbeitet dadurch als Rechenstelle: Sie verrechnet erregende und hemmende Eingänge und entscheidet erst danach über das digitale Ausgangssignal. Genau in diese Verrechnung greift Curare ein, indem es die Zahl verfügbarer Rezeptoren senkt und damit die erreichbare EPSP-Größe unter den Schwellenwert drückt.",
+        "warum": {
+          "de": "Der Kern liegt im Unterschied der beteiligten Kanaltypen: spannungsgesteuerte Kanäle mit Rückkopplung erzeugen eine Alles-oder-Nichts-Antwort, ligandengesteuerte Kanäle ohne Rückkopplung eine proportionale. Erst dieser Gegensatz erklärt, wieso ein Neuron überhaupt abwägen kann, statt auf jeden Reiz gleich zu reagieren. Die Summation ist damit keine Zusatzinformation, sondern die eigentliche Verbindung zwischen dem analogen Eingang und dem digitalen Ausgang einer Nervenzelle.",
+          "tr": "Asıl mesele kanal tiplerinin farkıdır: geri beslemeli voltaj kapılı kanallar \"ya hep ya hiç\" yanıtı üretir, geri beslemesiz ligand kapılı kanallar ise orantılı bir yanıt. Bu karşıtlık olmasaydı nöron tartıp değerlendiremez, her uyarana aynı şekilde tepki verirdi. Summation bu yüzden ek bilgi değil, analog girdi ile dijital çıktı arasındaki asıl köprüdür. Sık hata: uyaran şiddetinin aksiyon potansiyelinin *genliğiyle* kodlandığını sanmak — kodlama frekansladır."
+        },
+        "teilpunkte": 4
+      }
+    ],
+    "haeufige_fehler": [
+      "Den Wirkort nur behauptet, ohne die übrigen Stationen mithilfe der einzelnen Befunde ausdrücklich auszuschließen — die Begründung besteht gerade aus diesem Ausschlussverfahren.",
+      "Befund 6 unausgewertet gelassen und dadurch die Möglichkeit einer Schädigung des Muskels selbst nicht widerlegt.",
+      "Curare eine Hemmung der Acetylcholinesterase zugeschrieben; das wäre die Wirkung von Nervengiften wie E 605 und hätte eine Dauererregung statt einer Lähmung zur Folge.",
+      "Behauptet, die Amplitude des Aktionspotentials wachse mit der Reizstärke; tatsächlich ändert sich nur die Frequenz der Aktionspotentiale.",
+      "Räumliche und zeitliche Summation vertauscht oder das EPSP selbst bereits als Aktionspotential bezeichnet."
+    ]
+  },
+  "quelle": "eigene Erstellung (Beispielaufgabe, Phase 1)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam (Beispielaufgabe)",
+  "version": 1
+}
