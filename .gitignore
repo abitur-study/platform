@@ -56,3 +56,4 @@ next-env.d.ts
 
 # Ekran görüntüleri — tasarım çalışma notu, repoya girmez
 /docs/screenshots/
+/docs/DESIGN-BRIEF.md
