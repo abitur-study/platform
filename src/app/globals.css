@@ -48,8 +48,10 @@
 }
 
 @theme {
-  --color-papier: #fff9f0;
-  --color-papier-2: #fdf1de;
+  /* Zemin ile tıklama rengi arasında 8 birim fark vardı: telefonda ikisi tek
+     bir sarı yığınına dönüşüyordu. Zemin beyaza çekildi, fark 24 birime çıktı. */
+  --color-papier: #fffcf8;
+  --color-papier-2: #f6efe4;
   --color-tinte: #000609;
   --color-tinte-schwach: #5c6266;
   --color-linie: #000609;
