@@ -85,6 +85,37 @@ export function pruefeLatex(a: Aufgabe): string[] {
   });
 }
 
+// --- 3b) Ham HTML kapısı ------------------------------------------------
+//
+// markdown.ts ham HTML geçirir, çünkü sorular kendi SVG diyagramlarını taşıyor.
+// Bu kapı olmadan dışarıdan gelen bir içerik PR'ı build'e <script> enjekte
+// edebilirdi — statik export'ta bu, yayınlanan sayfaya doğrudan girer.
+// İzin verilen: <svg> ve çizim çocukları. Yasak: her şey.
+
+const SVG_TAGS = new Set([
+  "svg", "g", "path", "line", "polyline", "polygon", "rect", "circle",
+  "ellipse", "text", "tspan", "defs", "marker", "title", "desc",
+]);
+
+export function pruefeHtml(a: Aufgabe): string[] {
+  return mdFelder(a).flatMap(([feld, roh]) => {
+    const fehler: string[] = [];
+    // Matematik bölgeleri önce çıkarılır: "$a < v$" içindeki "< v" HTML değil.
+    const text = roh.replace(/\$\$[\s\S]*?\$\$/g, " ").replace(/\$[^$\n]*\$/g, " ");
+    for (const [, tag] of text.matchAll(/<\s*\/?\s*([a-zA-Z][a-zA-Z0-9-]*)[\s/>]/g)) {
+      if (!SVG_TAGS.has(tag.toLowerCase())) {
+        fehler.push(`${feld}: izin verilmeyen HTML etiketi <${tag}> (yalnızca SVG serbest)`);
+      }
+    }
+    // Olay öznitelikleri ve javascript: URL'leri SVG içinde de çalışır.
+    for (const [treffer] of text.matchAll(/\son[a-z]+\s*=/gi)) {
+      fehler.push(`${feld}: olay özniteliği yasak ("${treffer.trim()}")`);
+    }
+    if (/javascript:/i.test(text)) fehler.push(`${feld}: "javascript:" URL yasak`);
+    return [...new Set(fehler)];
+  });
+}
+
 // --- 4) Adım kalitesi ---------------------------------------------------
 
 export function pruefeSchritte(a: Aufgabe): string[] {
@@ -162,6 +193,7 @@ export function pruefeAufgabe(a: Aufgabe): string[] {
   return [
     ...mc,
     ...pruefeLatex(a),
+    ...pruefeHtml(a),
     ...pruefeSchritte(a),
     ...pruefePunkte(a),
     ...pruefeOperatoren(a),

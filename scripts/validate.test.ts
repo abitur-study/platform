@@ -15,6 +15,7 @@ import type { Aufgabe, AbiturAufgabe } from "../content/schema";
 import {
   findeMultipleChoice,
   pruefeLatex,
+  pruefeHtml,
   pruefeOperatoren,
   pruefePunkte,
   pruefeSchritte,
@@ -77,6 +78,29 @@ test("geçerli LaTeX geçer, bozuk LaTeX yakalanır", () => {
   const fehler = pruefeLatex(kaputt);
   assert.equal(fehler.length, 1);
   assert.match(fehler[0], /^aufgabenstellung:/);
+});
+
+// --- 3b) Ham HTML kapısı -------------------------------------------------
+
+test("SVG serbest, geri kalan HTML yasak", () => {
+  const svg = klon(gold);
+  svg.aufgabenstellung = '<svg viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" /></svg>';
+  assert.deepEqual(pruefeHtml(svg), []);
+
+  const skript = klon(gold);
+  skript.aufgabenstellung = "<script>alert(1)</script>";
+  assert.equal(pruefeHtml(skript).length, 1);
+
+  const olay = klon(gold);
+  olay.aufgabenstellung = '<svg onload="alert(1)"></svg>';
+  assert.equal(pruefeHtml(olay).length, 1);
+});
+
+test("LaTeX'teki küçüktür işareti HTML sanılmaz", () => {
+  const mathe = klon(gold);
+  // "$a < v$" içindeki "< v" bir etiket değil; matematik bölgeleri elenmeli.
+  mathe.aufgabenstellung = "Es gilt $a < v$ und $$b < g$$.";
+  assert.deepEqual(pruefeHtml(mathe), []);
 });
 
 // --- 4) Adım kalitesi ----------------------------------------------------
