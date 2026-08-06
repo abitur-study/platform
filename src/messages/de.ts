@@ -10,6 +10,8 @@ export const de: Messages = {
     home: "Startseite",
     abitur: "Abitur",
     sz: "Sprachzertifikat",
+    alleFaecher: "Alle Fächer",
+    alleZertifikate: "Alle Zertifikate",
     language: "Sprache",
     skipToContent: "Zum Inhalt springen",
   },

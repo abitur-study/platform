@@ -9,6 +9,8 @@ export const tr = {
     home: "Ana sayfa",
     abitur: "Abitur",
     sz: "Sprachzertifikat",
+    alleFaecher: "Tüm dersler",
+    alleZertifikate: "Tüm sertifikalar",
     language: "Dil",
     skipToContent: "İçeriğe geç",
   },

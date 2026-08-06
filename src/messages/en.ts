@@ -10,6 +10,8 @@ export const en: Messages = {
     home: "Home",
     abitur: "Abitur",
     sz: "Sprachzertifikat",
+    alleFaecher: "All subjects",
+    alleZertifikate: "All certificates",
     language: "Language",
     skipToContent: "Skip to content",
   },
