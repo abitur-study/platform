@@ -63,5 +63,11 @@ export const zertifikatAufgaben = (zertifikat: string, modul: string) =>
       a.modul === modul,
   );
 
-export const aufgabeById = (id: string) =>
-  alleAufgaben().find((a) => a.id === id);
+// Global bir aufgabeById yok — `id` artık yalnızca klasörü içinde benzersiz
+// ("q001" her konuda var). Çözümleme her zaman yola göre kapsamlanır:
+// (fach, themenbereich_slug, id) ya da (zertifikat, modul, id).
+export const abiturAufgabe = (fach: string, themaSlug: string, id: string) =>
+  abiturAufgaben(fach, themaSlug).find((a) => a.id === id);
+
+export const zertifikatAufgabe = (zertifikat: string, modul: string, id: string) =>
+  zertifikatAufgaben(zertifikat, modul).find((a) => a.id === id);

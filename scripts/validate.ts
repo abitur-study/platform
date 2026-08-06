@@ -8,7 +8,7 @@
  */
 
 import { readdirSync } from "node:fs";
-import { basename, join } from "node:path";
+import { basename, dirname, join } from "node:path";
 import type { Aufgabe } from "../content/schema";
 import { OPERATOREN } from "../content/registry";
 import { ladeDatei } from "../src/lib/content";
@@ -209,7 +209,7 @@ function main() {
     .sort();
 
   const fehler: string[] = [];
-  const gesehen = new Map<string, string>(); // id -> dosya
+  const gesehen = new Map<string, string>(); // "klasör\0id" -> dosya
   const texte: { pfad: string; text: string }[] = [];
 
   for (const pfad of dateien) {
@@ -227,10 +227,13 @@ function main() {
     const name = basename(pfad, ".json");
     if (a.id !== name) fehler.push(`${pfad}: id "${a.id}" dosya adı "${name}" ile aynı değil`);
 
-    // 9) id benzersizliği
-    const vorher = gesehen.get(a.id);
-    if (vorher) fehler.push(`${pfad}: id "${a.id}" zaten ${vorher} içinde kullanılmış`);
-    else gesehen.set(a.id, pfad);
+    // 9) id benzersizliği — klasör içinde. "q001" her konuda var; benzersiz
+    // olan (klasör, id) çiftidir, çünkü URL de klasör yoluyla kapsamlanıyor.
+    const schluessel = `${dirname(pfad)}\0${a.id}`;
+    const vorher = gesehen.get(schluessel);
+    if (vorher) {
+      fehler.push(`${pfad}: id "${a.id}" aynı klasörde zaten ${vorher} içinde kullanılmış`);
+    } else gesehen.set(schluessel, pfad);
 
     texte.push({ pfad, text: a.aufgabenstellung });
   }

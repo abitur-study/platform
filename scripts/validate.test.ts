@@ -30,7 +30,7 @@ const alleDateien = readdirSync(WURZEL, { recursive: true, encoding: "utf8" })
   .sort();
 
 const gold = ladeDatei(
-  join(WURZEL, "abitur/mathematik/analysis/mathe-analysis-extremwert-schachtel-001.json"),
+  join(WURZEL, "abitur/mathematik/analysis/q003.json"),
 ) as AbiturAufgabe;
 const klon = <T extends Aufgabe>(a: T): T => structuredClone(a);
 
