@@ -27,7 +27,7 @@ export function Chrome({
       </a>
 
       <header className="kein-druck sticky top-0 z-40 border-b border-linie bg-papier">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-7 gap-y-2 px-10 py-5">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-7 gap-y-2 px-5 py-5 sm:px-10">
           <Link href={kok} className="flex items-center gap-2.5 text-base font-bold">
             <span aria-hidden className="block size-3.5 bg-akzent" />
             {t.site.title}
@@ -55,7 +55,7 @@ export function Chrome({
       </header>
 
 
-      <main id="inhalt" className="mx-auto w-full max-w-6xl flex-1 px-10 py-12">
+      <main id="inhalt" className="mx-auto w-full max-w-6xl flex-1 px-5 py-12 sm:px-10">
         {children}
       </main>
 

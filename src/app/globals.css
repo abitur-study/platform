@@ -94,13 +94,15 @@ h3 {
   line-height: 1.1;
   letter-spacing: 1.04px;
 }
+/* Masaüstünde spec değeri (52/32px), dar ekranda küçülür. Sabit px bırakılırsa
+   telefonda "Mathematik" kendi kartından taşıyor — clamp'in üst sınırı spec. */
 .t-52 {
-  font-size: 52px;
+  font-size: clamp(2rem, 6vw, 52px);
   line-height: 1.23;
   letter-spacing: 0.47px;
 }
 .t-32 {
-  font-size: 32px;
+  font-size: clamp(1.5rem, 4.2vw, 32px);
   line-height: 1.2;
 }
 .t-22 {

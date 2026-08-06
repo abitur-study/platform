@@ -116,7 +116,7 @@ export function AufgabeView({
       {a.material.length > 0 && (
         <section className="mt-10">
           {a.material.map((m) => (
-            <figure key={m.titel} className="mt-6 border border-linie p-8">
+            <figure key={m.titel} className="mt-6 border border-linie p-6 sm:p-8">
               <figcaption className="text-base font-bold">{m.titel}</figcaption>
               <Md src={m.inhalt} className="mt-4" />
               <p className="mt-6 text-base text-tinte-schwach">
