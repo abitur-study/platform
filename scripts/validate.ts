@@ -116,6 +116,23 @@ export function pruefeHtml(a: Aufgabe): string[] {
   });
 }
 
+// --- 3c) Düz metin alanları ---------------------------------------------
+//
+// `titel` ve `unterthema` renderMd()'den GEÇMEZ: <h1>, kart, breadcrumb ve
+// <title> etiketinde düz metin olarak basılır — sonuncusuna HTML zaten
+// giremez. İçlerine LaTeX yazılırsa sayfada "$f(x)=x\,e^{-x}$" diye ham
+// görünür. Üst simge gerekiyorsa Unicode kullan: e⁻ˣ, a⁻¹, b².
+
+export function pruefeKlartext(a: Aufgabe): string[] {
+  const felder: [string, string][] = [["titel", a.titel]];
+  if (a.bereich === "abitur") felder.push(["unterthema", a.unterthema]);
+  return felder.flatMap(([feld, text]) =>
+    text.includes("$")
+      ? [`${feld}: düz metin alanında LaTeX ("$") — render edilmez, Unicode kullan (e⁻ˣ)`]
+      : [],
+  );
+}
+
 // --- 4) Adım kalitesi ---------------------------------------------------
 
 export function pruefeSchritte(a: Aufgabe): string[] {
@@ -194,6 +211,7 @@ export function pruefeAufgabe(a: Aufgabe): string[] {
     ...mc,
     ...pruefeLatex(a),
     ...pruefeHtml(a),
+    ...pruefeKlartext(a),
     ...pruefeSchritte(a),
     ...pruefePunkte(a),
     ...pruefeOperatoren(a),

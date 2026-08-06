@@ -16,6 +16,7 @@ import {
   findeMultipleChoice,
   pruefeLatex,
   pruefeHtml,
+  pruefeKlartext,
   pruefeOperatoren,
   pruefePunkte,
   pruefeSchritte,
@@ -101,6 +102,13 @@ test("LaTeX'teki küçüktür işareti HTML sanılmaz", () => {
   // "$a < v$" içindeki "< v" bir etiket değil; matematik bölgeleri elenmeli.
   mathe.aufgabenstellung = "Es gilt $a < v$ und $$b < g$$.";
   assert.deepEqual(pruefeHtml(mathe), []);
+});
+
+test("başlıkta LaTeX yakalanır", () => {
+  assert.deepEqual(pruefeKlartext(gold), []);
+  const roh = klon(gold);
+  roh.titel = "Untersuchung von $f(x)=x^2$";
+  assert.equal(pruefeKlartext(roh).length, 1);
 });
 
 // --- 4) Adım kalitesi ----------------------------------------------------

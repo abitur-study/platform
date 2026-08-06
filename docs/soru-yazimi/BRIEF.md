@@ -265,6 +265,11 @@ durdurur; bu bilinçli bir tasarım.
   `"\\cdot"`. Satır sonu `\n`.
 - ⚠️ **`€` karakteri KaTeX fontlarında yok** — boş kutu çıkar.
   Para tutarını `$4{,}20\ \text{EUR}$` diye yaz. *(Bu da gerçekten oldu.)*
+- ⚠️ **`titel` ve `unterthema` alanlarında LaTeX YASAK.** Bu iki alan render
+  edilmez; `<h1>`, kart, breadcrumb ve `<title>` etiketinde düz metin olarak
+  basılır. `"$f(x)=x\\,e^{-x}$"` yazarsan sayfada dolar işaretleriyle ham
+  görünür. Üst simge gerekiyorsa Unicode kullan: `e⁻ˣ`, `a⁻¹`, `b²`, `x³`.
+  Doğrulayıcı bu alanlarda `$` görürse dosyayı reddeder. *(Bu da gerçekten oldu.)*
 - İzinli/denenmiş komutlar: `\frac \sqrt \cdot \approx \Delta \lambda \omega
   \varphi \alpha \pi \vec{} \text{} \begin{array} \hline \Longrightarrow
   \tfrac \left( \right) \sin \cos \tan \ln \int \sum \infty \circ \mu \Omega
@@ -313,6 +318,7 @@ reddedilir:
 - [ ] Her `warum.de` ve `warum.tr` ≥ 40 karakter
 - [ ] Her `$$…$$` tek satırda
 - [ ] `€` yok
+- [ ] `titel` ve `unterthema` içinde `$` yok (üst simge gerekiyorsa `e⁻ˣ`)
 - [ ] JSON ayrıştırılıyor (`python3 -m json.tool dosya.json`)
 - [ ] **Her sayıyı hesap makinesiyle bir kez daha doğruladın**
 - [ ] Müfredat dışı hiçbir kavram girmedi

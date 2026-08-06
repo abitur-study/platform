@@ -1,13 +1,17 @@
 {
   "bereich": "abitur",
   "id": "q001",
-  "titel": "Untersuchung der Funktion $f(x)=x\\,e^{-x}$",
+  "titel": "Untersuchung der Funktion f(x) = x · e⁻ˣ",
   "fach": "mathematik",
   "themenbereich": "Analysis",
   "themenbereich_slug": "analysis",
   "unterthema": "Exponentialfunktionen",
   "niveau": "LK",
-  "operatoren": ["bestimmen", "nachweisen", "untersuchen"],
+  "operatoren": [
+    "bestimmen",
+    "nachweisen",
+    "untersuchen"
+  ],
   "sprache": "de",
   "schwierigkeit": 4,
   "bearbeitungszeit_min": 35,
