@@ -127,7 +127,7 @@ export function Kacheln({
             href={k.href}
             data-reveal="right"
             data-reveal-delay={i * 60}
-            className={`grid items-start sm:grid-cols-[auto_minmax(0,1fr)_minmax(12.5rem,17.5rem)] ${KARTE}`}
+            className={`grid items-start sm:grid-cols-[auto_minmax(0,1fr)_auto] ${KARTE}`}
           >
             <div className="t-32 tabular-nums text-akzent">
               {k.zahl ?? i + 1}
@@ -136,7 +136,12 @@ export function Kacheln({
               <h3 className="t-22 text-pretty">{k.titel}</h3>
               {k.text && <p className="mt-2">{k.text}</p>}
             </div>
-            <div className="flex flex-wrap items-center gap-2 text-base font-bold sm:justify-end">
+            {/* whitespace-nowrap: pill metni kendi içinde bölünmesin ki üçüncü
+                sütunun max-content'i tek satır genişliği olsun — auto sütun o
+                genişliği alır, etiketler geniş ekranda tek çizgide durur.
+                Dar ekranda sütun min-content'e kadar büzülür, flex-wrap
+                devreye girer: sarma orada istenen davranış. */}
+            <div className="flex flex-wrap items-center gap-2 whitespace-nowrap text-base font-bold sm:justify-end">
               {k.marken?.map((m, j) => (
                 <span
                   key={m}
