@@ -268,10 +268,20 @@ durdurur; bu bilinçli bir tasarım.
   \varepsilon \begin{pmatrix}`
 - **Yasak** (KaTeX bilmez): `\begin{tabular}`, `\usepackage`, `\newcommand`,
   `\SI{}{}`, `\unit{}`, `\intertext`, `\shortintertext`, `\mbox`
-- **Görsel dosyası yok.** Kaynakta şekil varsa ya kelimelerle tarif et
-  ("Uzunluğu … olan iletken çubuk, iki paralel ray üzerinde sürtünmesiz
-  kayar…") ya da `skizzieren` operatörünü kullan; öğrenci çizsin, çözüm de
-  çizimi kelimeyle anlatsın.
+- **Görsel dosyası yok — ama SVG var.** Soyağacı, ölçüm eğrisi, devre şeması
+  gibi şekilleri düzyazıyla tarif etme; `inhalt` alanına doğrudan inline
+  `<svg>` yaz. Şekli okumadan çözülemeyen bir şıkkı kelimeyle anlatmak soruyu
+  çözülemez yapar.
+  - `"typ": "abbildung"` kullan.
+  - Renk vermek yerine tema değişkenleri: `var(--color-tinte)` (çizgi/yazı),
+    `var(--color-papier)` (zemin). Sabit `#000` koyma.
+  - `viewBox` + `width="100%"`, sabit piksel genişliği yok (mobil).
+  - Ekran okuyucu için içeriye `<title>` ve `<desc>` koy.
+  - **İzinli etiketler yalnızca:** `svg g path line polyline polygon rect
+    circle ellipse text tspan defs marker title desc`. Başka HTML etiketi,
+    `on…=` olay özniteliği ve `javascript:` URL'i doğrulayıcı tarafından
+    reddedilir.
+  - Öğrencinin kendisinin çizmesi isteniyorsa yine `skizzieren` operatörü.
 
 ---
 
