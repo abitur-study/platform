@@ -142,14 +142,27 @@ Kaynak metinde geçse bile: müfredat dışıysa o kısmı **atla**, uyarlama.
 ### ❌ KESİNLİKLE YASAK (hiç işlenmedi)
 
 Görelilik kuramı · Radyoaktivite · Çekirdek fiziği hesapları ·
-Bohr atom modeli · Terim şeması · Çizgi spektrumu · Balmer serisi ·
-Franck-Hertz · de-Broglie · Elektron kırınımı · Compton olayı ·
 Potansiyel kuyusu · **Kondansatörün e-fonksiyonlu dolma/boşalma eğrisi ve
 zaman sabiti $\tau$** (nitel anlatım serbest, hesap yasak) ·
 **Öz indüksiyonda e-fonksiyonlu hesap** · Empedans/faz açısıyla AC devre ·
 Tek yarık kırınımı (ana konu olarak) · Bragg yansıması · Doppler olayı ·
 Polarizasyon · Diferansiyel denklemler · Bağlı sarkaçlar · Vuru (Schwebung) ·
 **Matrisler ayrı bir konu olarak** · **Geçiş matrisleri / Markov zincirleri**
+
+### ⚠️ Bu listeden ÇIKARILDI — işlendi, yazılabilir
+
+Aşağıdakiler önceki sürümde yanlışlıkla yasak sayılmıştı. Öğrenci teyit etti:
+**hepsi işlendi.** O yılın Abitur'unda çıkmadılar, ama müfredat içindeler ve
+ileriki yıllarda çıkabilirler — soru yazılabilir, sadece öncelikleri düşük.
+
+Bohrsches Atommodell · Linienspektrum (Emission/Absorption) ·
+Termschema ($E = h\,f$, geçişler) · Balmer-Serie · Franck-Hertz-Versuch ·
+de-Broglie-Wellenlänge $\lambda = h/p$ **(hesap dâhil)** ·
+Elektronenbeugung **(hesap dâhil)**
+
+**Tek istisna — Compton-Effekt yalnızca NİTEL.** Fotonun momentumu olduğu ve
+saçılmada dalga boyunun arttığı işlendi; $\Delta\lambda = (h/m_e c)(1-\cos\theta)$
+ile **hesap yaptırılmadı**. Soruda hesap olarak kullanma, açıklama düzeyinde kal.
 
 > Determinant yalnızca doğrusal bağımlılık kontrolünde kullanılır,
 > ayrı bir matris bölümü olarak değil.
