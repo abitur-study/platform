@@ -172,16 +172,45 @@ h3 {
   font-size: 20px;
   line-height: 1.7;
 }
-/* Blok formül — spec'te mavi bir kenar çizgisiyle metinden ayrılıyor. */
+/* Blok formül — spec'te mavi bir kenar çizgisiyle metinden ayrılıyor.
+   Uzun blok formüller sayfayı yatay kaydırmak yerine kendi içinde kaysın. */
 .prose .katex-display {
   border-left: 4px solid var(--color-akzent);
   padding: 12px 24px;
   margin: 1rem 0;
   font-size: 1.05em;
   text-align: left;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .prose .katex-display > .katex {
+  display: block;
   text-align: left;
+}
+
+/* Satır içi formül. KaTeX'in satır içi çıktısı (\frac, \sqrt, üs+alt indis)
+   34px'lik satır kutusunun iki katı yükseklikte olabiliyor; satır içi eleman
+   satır kutusunu büyütmediği için formül üstteki ve alttaki satırın üzerine
+   biniyordu — fizik sorularında her sayfada görülen "iç içe girmiş yazı".
+   inline-block satır kutusunu formülün gerçek yüksekliğine büyütür; overflow
+   görünür kaldığı için taban çizgisi hizası bozulmaz (basit $v$ kayarsa fark
+   edilirdi). max-width uzun bir formülün sayfayı yatay kaydırmasını engeller,
+   fazlası paragrafın kendi kaydırmasına düşer. */
+.prose .katex {
+  display: inline-block;
+  max-width: 100%;
+}
+/* Tek bir dev formül (uzun sayısal kesir) satır içinde kırılamaz — o paragraf
+   sayfayı değil kendini kaydırsın. Blok formüldeki davranışın aynısı.
+   Kaydırma <li> üzerine değil <ul>/<ol> üzerine konur: madde işareti
+   list-style-position:outside ile li'nin kutusunun DIŞINDA çizilir, li'ye
+   overflow verilirse tarayıcı işareti kırpar ve maddeler işaretsiz kalır
+   (headless Chrome ile doğrulandı). Liste kabında kırpma olmaz. */
+.prose p,
+.prose ul,
+.prose ol {
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .prose > * + * {
   margin-top: 0.9em;
@@ -222,13 +251,6 @@ h3 {
   border: 1px solid var(--color-linie);
   padding: 0.4em 0.6em;
   text-align: left;
-}
-
-/* Blok formüller uzun olabilir — sayfayı yatay kaydırmak yerine kendi içinde kaysın. */
-.prose .katex-display {
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 0.35em 0;
 }
 
 summary {
