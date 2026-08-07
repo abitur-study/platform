@@ -7,7 +7,12 @@
   "themenbereich_slug": "elektrisches-feld",
   "unterthema": "Coulomb-Gesetz, Kapazität, magnetische Feldkonstante",
   "niveau": "GK",
-  "operatoren": ["zeigen", "beschreiben", "bestimmen", "deuten"],
+  "operatoren": [
+    "zeigen",
+    "beschreiben",
+    "bestimmen",
+    "deuten"
+  ],
   "sprache": "de",
   "schwierigkeit": 4,
   "bearbeitungszeit_min": 40,
@@ -17,6 +22,13 @@
       "typ": "tabelle",
       "titel": "Messreihe zur magnetischen Flussdichte",
       "inhalt": "$$\\begin{array}{c|c|c|c|c} I\\ \\text{in A} & 2 & 2 & 5 & 5 \\\\ \\hline r\\ \\text{in cm} & 4 & 8 & 10 & 20 \\\\ B\\ \\text{in }10^{-6}\\ \\text{T} & 10{,}0 & 5{,}0 & 10{,}0 & 5{,}0 \\end{array}$$",
+      "quelle": "eigene Erstellung",
+      "lizenz": "CC BY-SA 4.0"
+    },
+    {
+      "typ": "abbildung",
+      "titel": "Versuchsanordnungen zu ε₀ und μ₀",
+      "inhalt": "<svg viewBox=\"0 0 660 285\" width=\"100%\" role=\"img\" aria-label=\"Zwei Teilbilder: Schnitt durch einen Plattenkondensator und Magnetfeld eines geraden stromdurchflossenen Leiters\"><defs><marker id=\"pf-ef-q003\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"var(--color-akzent)\"/></marker></defs><title>Versuchsanordnungen zu ε₀ und μ₀</title><desc>Zwei nebeneinanderstehende Teilbilder, getrennt durch eine senkrechte gestrichelte Linie. Links der Schnitt durch einen Plattenkondensator: zwei gleich lange, waagerechte Platten übereinander. Die Länge der oberen Platte ist als Plattenfläche A bemaßt, der lichte Abstand der beiden Platten als d. Darunter steht der Hinweis, dass die Platten die Ladung Q tragen; Feldlinien und Ladungsvorzeichen sind nicht eingezeichnet. Rechts ein langer gerader Leiter, der senkrecht durch das Bild verläuft und an dessen oberem Ende ein Pfeil die Stromrichtung I angibt. Um den Leiter herum liegen drei konzentrische, perspektivisch als Ellipsen gezeichnete magnetische Feldlinien. Vom Leiter aus zeigt ein Maßpfeil r waagerecht nach außen bis zur mittleren Feldlinie, die mit B von r beschriftet ist.</desc><rect x=\"60\" y=\"90\" width=\"220\" height=\"8\" fill=\"var(--color-tinte)\"/><rect x=\"60\" y=\"182\" width=\"220\" height=\"8\" fill=\"var(--color-tinte)\"/><line x1=\"60\" y1=\"86\" x2=\"60\" y2=\"62\" stroke=\"var(--color-akzent)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"280\" y1=\"86\" x2=\"280\" y2=\"62\" stroke=\"var(--color-akzent)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"60\" y1=\"68\" x2=\"280\" y2=\"68\" stroke=\"var(--color-akzent)\" stroke-width=\"1.4\" marker-start=\"url(#pf-ef-q003)\" marker-end=\"url(#pf-ef-q003)\"/><text x=\"170\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" fill=\"var(--color-akzent)\">Plattenfläche A</text><line x1=\"106\" y1=\"98\" x2=\"106\" y2=\"182\" stroke=\"var(--color-akzent)\" stroke-width=\"1.4\" marker-start=\"url(#pf-ef-q003)\" marker-end=\"url(#pf-ef-q003)\"/><text x=\"114\" y=\"144\" text-anchor=\"start\" font-size=\"13\" fill=\"var(--color-akzent)\">d</text><text x=\"170\" y=\"214\" text-anchor=\"middle\" font-size=\"12\" fill=\"var(--color-tinte)\">Die Platten tragen die Ladung Q.</text><text x=\"170\" y=\"262\" text-anchor=\"middle\" font-size=\"13\" fill=\"var(--color-tinte)\" font-weight=\"bold\">Plattenkondensator</text><line x1=\"330\" y1=\"40\" x2=\"330\" y2=\"268\" stroke=\"var(--color-tinte)\" stroke-width=\"1.2\" stroke-dasharray=\"6 5\"/><ellipse cx=\"470\" cy=\"150\" rx=\"30\" ry=\"10\" fill=\"none\" stroke=\"var(--color-akzent)\" stroke-width=\"1.2\"/><ellipse cx=\"470\" cy=\"150\" rx=\"56\" ry=\"18\" fill=\"none\" stroke=\"var(--color-akzent)\" stroke-width=\"1.2\"/><ellipse cx=\"470\" cy=\"150\" rx=\"82\" ry=\"26\" fill=\"none\" stroke=\"var(--color-akzent)\" stroke-width=\"1.2\"/><line x1=\"470\" y1=\"54\" x2=\"470\" y2=\"232\" stroke=\"var(--color-tinte)\" stroke-width=\"2.6\"/><polygon points=\"470,44 465,58 475,58\" fill=\"var(--color-tinte)\"/><text x=\"458\" y=\"72\" text-anchor=\"end\" font-size=\"13\" fill=\"var(--color-tinte)\">I</text><line x1=\"526\" y1=\"168\" x2=\"526\" y2=\"196\" stroke=\"var(--color-akzent)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"470\" y1=\"190\" x2=\"526\" y2=\"190\" stroke=\"var(--color-akzent)\" stroke-width=\"1.4\" marker-start=\"url(#pf-ef-q003)\" marker-end=\"url(#pf-ef-q003)\"/><text x=\"498\" y=\"208\" text-anchor=\"middle\" font-size=\"13\" fill=\"var(--color-akzent)\">r</text><text x=\"556\" y=\"154\" text-anchor=\"start\" font-size=\"13\" fill=\"var(--color-akzent)\">B(r)</text><text x=\"470\" y=\"262\" text-anchor=\"middle\" font-size=\"13\" fill=\"var(--color-tinte)\" font-weight=\"bold\">gerader stromdurchflossener Leiter</text></svg>",
       "quelle": "eigene Erstellung",
       "lizenz": "CC BY-SA 4.0"
     }

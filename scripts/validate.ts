@@ -36,11 +36,28 @@ export function mdFelder(a: Aufgabe): [string, string][] {
 // --- 2) Çoktan seçmeli dedektörü ---------------------------------------
 
 const MC_WOERTER = [
-  "kreuze",
   "welche der folgenden",
   "richtig oder falsch",
   "mehrfachauswahl",
   "multiple choice",
+];
+
+/**
+ * "ankreuzen" — çoktan seçmeli emrinin kendisi.
+ *
+ * Çıplak "kreuze" aranamaz: Almancada `Kreuze` sıradan bir isimdir (çarpılar)
+ * ve manyetik alan şekillerinde sürekli geçer — "Zwei Kreuze markieren die
+ * Feldrichtung". Sadece "an" parçacığı aramak da yetmez: "Die Kreuze zeigen
+ * an, dass…" cümlesindeki *an* başka bir ayrılabilir fiile (anzeigen) ait.
+ *
+ * İki güvenli imza kaldı:
+ *   1. Bitişik hâller — ankreuzen, anzukreuzen, angekreuzt. Bunlar tek anlamlı.
+ *   2. Cümle başında emir kipi + sonrasında "an" parçacığı. İsim hâli cümle
+ *      başında artikelsiz durmaz ("Die/Zwei Kreuze…"), fiil hâli durur.
+ */
+const ANKREUZEN = [
+  /\ban(?:zu|ge)?kreuz\w*/i,
+  /(?:^|[.!?]\s+|\n\s*)kreuz(?:e|en)\b[^.!?\n]*\ban\b/i,
 ];
 
 /** Satır başındaki "A)" / "a)" şıkları. */
@@ -58,6 +75,13 @@ export function findeMultipleChoice(text: string): string[] {
 
   for (const w of MC_WOERTER) {
     if (klein.includes(w)) fehler.push(`çoktan seçmeli ifadesi: "${w}"`);
+  }
+  for (const re of ANKREUZEN) {
+    const treffer = text.match(re);
+    if (treffer) {
+      fehler.push(`çoktan seçmeli ifadesi: "${treffer[0].trim()}"`);
+      break;
+    }
   }
   if (text.includes("☐")) fehler.push('kutucuk işareti: "☐"');
   if (text.includes("[ ]")) fehler.push('kutucuk işareti: "[ ]"');
