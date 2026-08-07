@@ -1,0 +1,88 @@
+{
+  "bereich": "abitur",
+  "id": "q007",
+  "titel": "Funktionenschar mit natürlichem Logarithmus — Schablonen für Drachensegel",
+  "fach": "mathematik",
+  "themenbereich": "Analysis",
+  "themenbereich_slug": "analysis",
+  "unterthema": "Funktionenscharen mit ln",
+  "niveau": "GK",
+  "operatoren": ["bestimmen", "zeigen", "untersuchen", "nachweisen", "ermitteln"],
+  "sprache": "de",
+  "schwierigkeit": 5,
+  "bearbeitungszeit_min": 45,
+  "aufgabenstellung": "Eine Werkstatt fertigt Schablonen für Drachensegel in unterschiedlichen Größen, aber ähnlicher Grundform. Der obere Rand einer Schablone entsteht als Graph einer Funktion $f_k$, der untere Rand als dessen Spiegelbild an der $x$-Achse. Für die Schablone ist nur der Bereich zwischen den beiden Nullstellen von Bedeutung. Gegeben ist die Funktionenschar\n\n$$f_k(x) = \\left(\\frac{x}{3} - k\\right) \\cdot \\ln(x+3), \\qquad k \\in \\mathbb{R},\\ k > -1.$$\n\na) Bestimmen Sie den maximalen Definitionsbereich von $f_k$, untersuchen Sie das Verhalten von $f_k$ für $x \\to \\infty$ und bestimmen Sie die Nullstellen von $f_k$ in Abhängigkeit von $k$.\n\nb) Zeigen Sie, dass gilt: $f_k{}'(x) = \\frac{1}{3}\\left(\\ln(x+3) + \\frac{x-3k}{x+3}\\right)$.\n\nc) Bestimmen Sie den Wert von $k$, für den der Graph von $f_k$ einen Extrempunkt auf der $y$-Achse besitzt. (Auf die hinreichende Bedingung darf verzichtet werden.)\n\nd) Untersuchen Sie rechnerisch, ob unter den zur Modellierung verwendeten Graphen mit $k > -1$ einer einen Wendepunkt besitzt.\n\ne) Weisen Sie nach, dass alle Graphen der Schar den Punkt $P(-2 \\mid 0)$ gemeinsam haben. Ermitteln Sie eine Gleichung der Tangente $t_k$ an den Graphen von $f_k$ im Punkt $P$ und bestimmen Sie den Wert von $k$, für den $t_k$ zusammen mit den Koordinatenachsen ein gleichschenkliges Dreieck bildet.",
+  "material": [],
+  "tipps": [
+    "Der Logarithmus $\\ln(x+3)$ ist nur definiert, wenn sein Argument echt positiv ist — daraus folgt der Definitionsbereich, und alle späteren Lösungen müssen darin liegen.",
+    "$f_k$ ist ein Produkt zweier Faktoren. Für die Nullstellen genügt der Satz vom Nullprodukt, für die Ableitung brauchst du die Produktregel.",
+    "Ein gleichschenkliges Dreieck mit den beiden Koordinatenachsen als Katheten entsteht genau dann, wenn die beiden Achsenabschnitte gleich lang sind. Überlege, welchen Betrag die Steigung der Geraden dafür haben muss."
+  ],
+  "loesung": {
+    "gesamtpunkte": 22,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Definitionsbereich, Grenzverhalten und Nullstellen",
+        "inhalt": "Der Logarithmus verlangt $x + 3 > 0$, also\n\n$$D_{f_k} = \\left]-3;\\,\\infty\\right[.$$\n\nFür $x \\to \\infty$ wachsen beide Faktoren unbeschränkt: $\\frac{x}{3} - k \\to \\infty$ und $\\ln(x+3) \\to \\infty$, also\n\n$$\\lim_{x \\to \\infty} f_k(x) = \\infty.$$\n\nNullstellen mit dem Satz vom Nullprodukt:\n\n$$\\frac{x}{3} - k = 0 \\ \\Longrightarrow\\ x_1 = 3k \\qquad\\text{oder}\\qquad \\ln(x+3) = 0 \\ \\Longrightarrow\\ x + 3 = 1 \\ \\Longrightarrow\\ x_2 = -2$$\n\nWegen $k > -1$ ist $3k > -3$, die Nullstelle $x_1 = 3k$ liegt also stets im Definitionsbereich.",
+        "warum": {
+          "de": "Die Bedingung $k > -1$ ist keine Willkür, sondern sichert, dass $x_1 = 3k$ überhaupt im Definitionsbereich liegt und von $x_2 = -2$ verschieden bleibt. Für $k = -\\frac{2}{3}$ fielen beide Nullstellen zusammen; Ober- und Unterkurve berührten sich dann nur, und die Schablone schlösse keine Fläche mehr ein.",
+          "tr": "$k > -1$ koşulu keyfî değildir; $x_1 = 3k$ sıfırının tanım kümesinde kalmasını ve $x_2 = -2$ ile çakışmamasını güvence altına alır. $k = -\\frac{2}{3}$ olsaydı iki sıfır üst üste gelirdi; üst ve alt eğri yalnızca teğet olur ve şablon hiçbir alan çevrelemezdi."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 2,
+        "titel": "Ableitung mit der Produktregel nachweisen",
+        "inhalt": "Mit $u(x) = \\frac{x}{3} - k$, $u'(x) = \\frac{1}{3}$ und $v(x) = \\ln(x+3)$, $v'(x) = \\frac{1}{x+3}$ liefert die Produktregel\n\n$$f_k{}'(x) = \\frac{1}{3}\\ln(x+3) + \\left(\\frac{x}{3} - k\\right)\\cdot\\frac{1}{x+3}.$$\n\nDen zweiten Summanden auf den Hauptnenner bringen:\n\n$$\\left(\\frac{x}{3} - k\\right)\\cdot\\frac{1}{x+3} = \\frac{x - 3k}{3(x+3)}$$\n\nAusklammern von $\\frac{1}{3}$ ergibt die behauptete Form:\n\n$$f_k{}'(x) = \\frac{1}{3}\\left(\\ln(x+3) + \\frac{x-3k}{x+3}\\right)$$",
+        "warum": {
+          "de": "Die vorgegebene Zielform ist deutlich rechenfreundlicher als die rohe Produktregel: an der Stelle $x = -2$ verschwindet der Logarithmus, und an der Stelle $x = 0$ vereinfacht sich der Bruch zu $-k$. Genau diese beiden Auswertungen werden in c) und e) gebraucht — deshalb lohnt sich das Zusammenfassen, statt mit dem unaufgeräumten Term weiterzurechnen.",
+          "tr": "Verilen hedef biçim, ham çarpım kuralı sonucuna göre çok daha hesap dostudur: $x = -2$ noktasında logaritma yok olur, $x = 0$ noktasında ise kesir $-k$'ye sadeleşir. Tam bu iki hesap c) ve e) şıklarında gerekecektir — bu yüzden dağınık ifadeyle devam etmek yerine sadeleştirmek işe yarar."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 3,
+        "titel": "Parameter für einen Extrempunkt auf der $y$-Achse",
+        "inhalt": "Ein Extrempunkt auf der $y$-Achse bedeutet, dass die Extremstelle bei $x = 0$ liegt. Notwendige Bedingung:\n\n$$f_k{}'(0) = \\frac{1}{3}\\left(\\ln(0+3) + \\frac{0 - 3k}{0+3}\\right) = \\frac{1}{3}\\left(\\ln 3 - k\\right) \\stackrel{!}{=} 0$$\n\n$$\\Longrightarrow\\quad k = \\ln 3 \\approx 1{,}10$$\n\nFür $k = \\ln 3$ liegt der Extrempunkt des Graphen auf der $y$-Achse.",
+        "warum": {
+          "de": "„Auf der $y$-Achse“ ist eine Aussage über die $x$-Koordinate, nicht über den Funktionswert — der häufigste Fehler ist, stattdessen $f_k(0) = 0$ anzusetzen. Bemerkenswert ist außerdem, dass ein transzendenter Parameterwert herauskommt: die Schar enthält also durchaus Fälle, die man nicht durch Probieren mit ganzen Zahlen findet.",
+          "tr": "\"$y$ ekseni üzerinde\" ifadesi, fonksiyon değeri hakkında değil $x$ koordinatı hakkında bir bilgidir — en sık yapılan hata bunun yerine $f_k(0) = 0$ kurmaktır. Ayrıca dikkat çekicidir ki sonuç transandant bir parametre değeridir: yani şema, tam sayılarla deneyerek bulunamayacak durumlar da içerir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 4,
+        "titel": "Untersuchung auf Wendepunkte",
+        "inhalt": "Zweite Ableitung mit Quotientenregel für den Bruch:\n\n$$f_k{}''(x) = \\frac{1}{3}\\left(\\frac{1}{x+3} + \\frac{1\\cdot(x+3) - (x-3k)\\cdot 1}{(x+3)^2}\\right) = \\frac{1}{3}\\left(\\frac{x+3}{(x+3)^2} + \\frac{3+3k}{(x+3)^2}\\right)$$\n\n$$f_k{}''(x) = \\frac{x + 6 + 3k}{3\\,(x+3)^2}$$\n\nDer Nenner ist auf $D_{f_k}$ stets positiv, also gilt $f_k{}''(x) = 0$ genau dann, wenn der Zähler null wird:\n\n$$x_W = -6 - 3k$$\n\nDamit $x_W$ im Definitionsbereich liegt, müsste $-6 - 3k > -3$ gelten, also $-3k > 3$ und damit $k < -1$. Wegen der Voraussetzung $k > -1$ ist das ausgeschlossen: **keiner** der zur Modellierung verwendeten Graphen besitzt einen Wendepunkt.",
+        "warum": {
+          "de": "Die Rechnung liefert zwar eine Wendestelle, aber sie liegt außerhalb des Definitionsbereichs — eine Nullstelle der zweiten Ableitung ist nur dann eine Wendestelle, wenn sie überhaupt zum Definitionsbereich gehört. Wer diese Prüfung überspringt, behauptet fälschlich einen Wendepunkt für jedes $k$ und kehrt damit die Aussage der Aufgabe genau um.",
+          "tr": "Hesap bir dönüm noktası veriyor gibi görünse de, bulunan yer tanım kümesinin dışındadır — ikinci türevin sıfırı, ancak tanım kümesine ait olduğunda dönüm noktası olabilir. Bu kontrolü atlayan kişi her $k$ için yanlışlıkla bir dönüm noktası iddia eder ve sorunun cevabını tam tersine çevirir."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 5,
+        "titel": "Gemeinsamer Punkt, Tangentenschar und gleichschenkliges Dreieck",
+        "inhalt": "**Gemeinsamer Punkt.** Für $x = -2$ gilt $\\ln(-2+3) = \\ln 1 = 0$ und damit\n\n$$f_k(-2) = \\left(\\frac{-2}{3} - k\\right)\\cdot 0 = 0 \\qquad\\text{für jedes } k.$$\n\nAlle Graphen verlaufen also durch $P(-2 \\mid 0)$.\n\n**Tangente.** Steigung an dieser Stelle:\n\n$$m_k = f_k{}'(-2) = \\frac{1}{3}\\left(\\ln 1 + \\frac{-2 - 3k}{1}\\right) = \\frac{-2-3k}{3} = -\\frac{2}{3} - k$$\n\nMit der Punkt-Steigungs-Form durch $P(-2\\mid 0)$:\n\n$$t_k:\\ y = m_k\\,(x+2) = \\left(-\\frac{2}{3} - k\\right)x - \\frac{4}{3} - 2k$$\n\n**Gleichschenkliges Dreieck.** Die Tangente bildet mit den Koordinatenachsen ein rechtwinkliges Dreieck. Es ist genau dann gleichschenklig, wenn die beiden Katheten — also die Abschnitte auf $x$- und $y$-Achse — gleich lang sind, wenn also $|m_k| = 1$ gilt.\n\nFall 1: $-\\frac{2}{3} - k = 1 \\Longrightarrow k = -\\frac{5}{3}$. Dieser Wert entfällt, da $k > -1$ gefordert ist.\n\nFall 2: $-\\frac{2}{3} - k = -1 \\Longrightarrow k = \\frac{1}{3}$.\n\nFür $k = \\frac{1}{3}$ lautet die Tangente $t_{1/3}:\\ y = -x - 2$; sie schneidet die Achsen in $(-2\\mid 0)$ und $(0 \\mid -2)$, die Katheten haben beide die Länge $2$. Das Dreieck ist gleichschenklig.",
+        "warum": {
+          "de": "Der gemeinsame Punkt entsteht nicht durch Zufall, sondern weil bei $x = -2$ der parameterfreie Faktor $\\ln(x+3)$ verschwindet — der Parameter $k$ steckt vollständig im anderen Faktor und wird dadurch wirkungslos. Bei der Dreiecksbedingung ist wichtig, beide Vorzeichenfälle zu prüfen und den unzulässigen anschließend mit Verweis auf $k > -1$ zu verwerfen; wer nur einen Fall betrachtet, hat die Lösung zwar, aber die Vollständigkeit fehlt.",
+          "tr": "Ortak nokta tesadüf değildir: $x = -2$ noktasında parametre içermeyen $\\ln(x+3)$ çarpanı sıfır olur — $k$ parametresi tamamen diğer çarpanın içindedir ve böylece etkisiz kalır. Üçgen koşulunda ise her iki işaret durumunu da incelemek ve geçersiz olanı $k > -1$ koşuluna dayanarak elemek gerekir; tek durumu inceleyen öğrenci sonucu bulsa da çözümü eksik kalır."
+        },
+        "teilpunkte": 7
+      }
+    ],
+    "haeufige_fehler": [
+      "Definitionsbereich als $x \\ne -3$ statt $x > -3$ angegeben — der Logarithmus verlangt ein echt positives Argument.",
+      "„Extrempunkt auf der $y$-Achse“ als $f_k(0) = 0$ statt als $f_k{}'(0) = 0$ übersetzt.",
+      "Die Wendestelle $x_W = -6-3k$ berechnet, aber nicht gegen den Definitionsbereich geprüft.",
+      "Bei der Bedingung für das gleichschenklige Dreieck nur $m_k = -1$ betrachtet und den Fall $m_k = 1$ nicht ausgeschlossen."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil des Regionalabiturs 2022, Vorschlag 1, Aufgabe 1 (Analysis)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-05",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

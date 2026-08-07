@@ -1,0 +1,104 @@
+{
+  "bereich": "sprachzertifikat",
+  "id": "q004",
+  "titel": "Soziale Medien und Jugendliche — Mindestalter statt Medienbildung?",
+  "zertifikat": "goethe-c1",
+  "modul": "schreiben",
+  "niveau": "C1",
+  "textsorte": "Leserbrief",
+  "sprache": "de",
+  "schwierigkeit": 4,
+  "bearbeitungszeit_min": 65,
+  "aufgabenstellung": "In einer deutschsprachigen Wochenzeitung ist der abgedruckte Kommentar erschienen. Er hat eine lebhafte Debatte ausgelöst; die Redaktion bittet ihre Leserinnen und Leser um Zuschriften.\n\nSchreiben Sie einen **Leserbrief an die Redaktion von etwa 230 Wörtern**. Gehen Sie dabei auf die folgenden Leitpunkte ein:\n\n- Nehmen Sie auf den Kommentar Bezug und geben Sie seine Kernaussage in eigenen Worten wieder.\n- Erläutern Sie, welche der genannten Risiken Sie für ernst zu nehmen halten und welche Ihnen übertrieben erscheinen.\n- Begründen Sie, ob ein gesetzliches Mindestalter das Problem Ihrer Ansicht nach lösen oder verfehlen würde.\n- Schlagen Sie eine Alternative oder Ergänzung vor und benennen Sie, wer dafür zuständig wäre.\n- Schließen Sie mit einer klaren Empfehlung an die Redaktion.\n\nAchten Sie auf die Konventionen des Leserbriefs (Anrede, Bezugnahme, Grußformel), auf einen sachlichen Ton und auf einen erkennbaren roten Faden.",
+  "material": [
+    {
+      "typ": "text",
+      "titel": "Kommentar: „Der Bildschirm erzieht mit — und wir schauen zu“",
+      "inhalt": "Wer heute vierzehn ist, verbringt einen erheblichen Teil des Tages in Anwendungen, die von Erwachsenen entworfen wurden, um Aufmerksamkeit möglichst lange zu binden. Das ist kein Vorwurf an die Jugendlichen, sondern eine Beschreibung des Geschäftsmodells.\n\nDie Folgen werden inzwischen breit diskutiert: unterbrochener Schlaf, sinkende Konzentrationsspannen, ein permanenter Vergleich mit Körpern und Lebensläufen, die es so nie gegeben hat. Manche Fachleute halten die Belege für eindeutig, andere warnen davor, jede Krise der Jugend dem Telefon zuzuschreiben.\n\nDennoch bleibt die politische Antwort erstaunlich schmal. Statt die Plattformen in die Pflicht zu nehmen, wird über ein Mindestalter von sechzehn Jahren gestritten — eine Grenze, die jedes halbwegs geübte Kind in drei Minuten umgeht. Vielleicht sollten wir aufhören zu fragen, ab wann Jugendliche diese Anwendungen nutzen dürfen, und anfangen zu fragen, wie diese Anwendungen gebaut sein müssen, damit man sie Jugendlichen zumuten kann.",
+      "quelle": "eigene Erstellung",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Ein Leserbrief ist kein Aufsatz mit Anrede. Er reagiert: Der erste Satz sollte erkennbar machen, auf welchen Text Sie antworten und ob Sie zustimmen, widersprechen oder differenzieren.",
+    "Wenn Sie die Position der Autorin wiedergeben, brauchen Sie ein sprachliches Mittel, das deutlich macht: Das ist ihre Aussage, nicht meine. Überlegen Sie, welche Verbform das Deutsche dafür bereithält.",
+    "Formulieren Sie beim Leitpunkt „Risiken“ bewusst zweiseitig: etwas, das Sie für belegt halten, **und** etwas, das Sie für übertrieben halten. Ein Leserbrief, der nur zustimmt, hat keinen Grund, geschrieben zu werden."
+  ],
+  "loesung": {
+    "gesamtpunkte": 20,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Textsorte Leserbrief: Rahmen setzen und Leitpunkte gewichten",
+        "inhalt": "**Formaler Rahmen (kostet nur ca. 15 Wörter, bringt aber Erfüllungspunkte):**\n\n- Anrede: „Sehr geehrte Redaktion,“ — danach klein weiterschreiben.\n- Bezug im ersten Satz: Titel des Kommentars nennen.\n- Grußformel: „Mit freundlichen Grüßen“ plus Name.\n\n**Gewichtung der fünf Leitpunkte bei 230 Wörtern:**\n\n| Leitpunkt | Wörter |\n| --- | --- |\n| Bezug + Kernaussage | 40 |\n| Risiken: belegt vs. übertrieben | 55 |\n| Mindestalter: löst oder verfehlt | 55 |\n| Alternative + Zuständigkeit | 45 |\n| Empfehlung an die Redaktion | 35 |\n\n**Position vorab festlegen (sonst schreibt man sich in einen Widerspruch):** Die Risiken sind teilweise real, das Mindestalter ist Symbolpolitik, zuständig sind Plattformen und Schule gemeinsam.",
+        "warum": {
+          "de": "Ein Leserbrief wird in der Prüfung auch daran gemessen, ob er als Leserbrief erkennbar ist: Anrede, Bezugnahme und Grußformel gehören zum Kriterium Erfüllung, nicht zur Kür. Ebenso wichtig ist die vorab festgelegte Position: Wer beim Schreiben erst herausfindet, was er meint, produziert einen Text, der im dritten Absatz das Gegenteil des ersten behauptet — und verliert dafür Kohärenzpunkte.",
+          "tr": "Leserbrief sınavda ayrıca „Leserbrief gibi duruyor mu?“ diye ölçülür: hitap, hangi yazıya cevap verdiğinin belirtilmesi ve kapanış formülü Erfüllung kriterinin parçasıdır, süs değil. Bir ayrıntı: Almanca resmi mektupta „Sehr geehrte Redaktion,“ virgülle biter ve sonraki cümle **küçük harfle** başlar — Türkçede hitaptan sonra büyük harfle devam etmeye alışkın olduğun için burası sık hata verir. Pozisyonunu önceden belirlemek de şart: ne düşündüğünü yazarken keşfedersen, üçüncü paragrafta birincinin tersini söyleyen bir metin çıkar ve Kohärenz'den kaybedersin."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Einleitung: Bezug nehmen und fremde Aussagen im Konjunktiv I referieren",
+        "inhalt": "**Ausformuliert:**\n\n„Sehr geehrte Redaktion,\n\nmit großem Interesse habe ich Ihren Kommentar „Der Bildschirm erzieht mit“ gelesen. Die Autorin argumentiert, nicht das Alter der Nutzer sei das eigentliche Problem, sondern die Bauweise der Plattformen; ein Mindestalter von sechzehn Jahren halte sie deshalb für eine Scheinlösung. Diesem Befund stimme ich in weiten Teilen zu — allerdings scheint mir die Rolle der Schule darin zu kurz zu kommen.“\n\n**Redemittel:** *Mit großem Interesse habe ich … gelesen* · *Die Autorin argumentiert, … sei …* · *Diesem Befund stimme ich in weiten Teilen zu* · *Allerdings scheint mir … zu kurz zu kommen.*\n\n**Konjunktiv-I-Formen, die hier gebraucht werden:** sein → *sei*, haben → *habe*, halten → *halte*, müssen → *müsse*, können → *könne*.",
+        "warum": {
+          "de": "Der Konjunktiv I trennt in einem einzigen Buchstaben die fremde Aussage von der eigenen: „Die Autorin argumentiert, das Alter **sei** nicht das Problem“ referiert; „… **ist** nicht das Problem“ würde die Behauptung zur eigenen machen. In einem Leserbrief, der sich auf einen anderen Text bezieht, ist diese Unterscheidung inhaltlich entscheidend — und sie ist eines der klarsten Signale für C1-Niveau, weil sie auf B2 praktisch nie produziert wird.",
+          "tr": "Konjunktiv I, başkasının sözünü kendi iddiandan tek bir harfle ayırır: „Die Autorin argumentiert, das Alter **sei** nicht das Problem“ aktarımdır; „… **ist** …“ dersen o iddiayı sen sahiplenmiş olursun. Türkçede bu ayrımı „-mış/-dığını“ ekiyle neredeyse otomatik yaparsın („sorunun yaş olmadığını savunuyor“), bu yüzden aktarım yaptığını fark etmezsin bile — ve Almancaya çevirirken düz Indikativ kurarsın. Başka bir yazıya cevap veren bir Leserbrief'te bu, hem anlam hatası hem de kaçırılmış bir C1 fırsatıdır: Konjunktiv I B2 metinlerinde neredeyse hiç üretilmez, dolayısıyla değerlendirmede hemen göze çarpar. Pratik kural: „sein“ fiilinin Konjunktiv I biçimleri (sei, seist, sei, seien) düzensizdir ve dass'sız aktarımda en çok bunlara ihtiyaç duyarsın."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 3,
+        "titel": "Hauptteil I: differenzieren statt verallgemeinern",
+        "inhalt": "Der Leitpunkt verlangt ausdrücklich eine Zweiteilung — belegt **und** übertrieben:\n\n„Für ernst zu nehmen halte ich vor allem den Eingriff in den Schlaf. Je später Jugendliche abends noch scrollen, desto kürzer fällt ihre Nachtruhe aus, und Schlafmangel wirkt sich nachweislich auf Konzentration und Stimmung aus. Deutlich vorsichtiger wäre ich dagegen bei der Behauptung, soziale Medien seien die Ursache psychischer Krisen. Hier wird häufig ein Zusammenhang mit einer Ursache verwechselt: Wer sich ohnehin schlecht fühlt, greift öfter zum Telefon — nicht unbedingt umgekehrt.“\n\n**Redemittel:** *Für ernst zu nehmen halte ich …* · *Je …, desto …* · *Deutlich vorsichtiger wäre ich bei der Behauptung, …* · *Hier wird ein Zusammenhang mit einer Ursache verwechselt.*",
+        "warum": {
+          "de": "Differenzierung ist auf C1 kein Stilmittel, sondern eine Anforderung: Wer alle Risiken pauschal bejaht oder pauschal bestreitet, argumentiert nicht, sondern bekennt. Der Hinweis auf die Verwechslung von Korrelation und Ursache hebt den Text zusätzlich, weil er eine Denkfigur statt einer Meinung enthält. Beachten Sie die Struktur „Je …, desto …“: Der „je“-Teil ist ein Nebensatz mit Verb am Ende, der „desto“-Teil ein Hauptsatz mit Inversion.",
+          "tr": "C1'de ayrım yapmak (differenzieren) bir üslup süsü değil, doğrudan bir beklentidir: bütün riskleri toptan onaylayan ya da toptan reddeden metin argüman değil, inanç bildirir. Korelasyon–nedensellik ayrımını yazıya sokmak da metni yükseltir, çünkü orada bir görüş değil bir düşünme biçimi vardır. Dil tarafı: „Je …, desto …“ Türkçedeki „ne kadar … o kadar“ kalıbının karşılığıdır, ama dizilimi bambaşkadır. „Je“ bir Subjunktion'dur, kendi cümlesinde fiili sona atar („Je später Jugendliche abends noch **scrollen**“); „desto“ ise Vorfeld'de durur ve arkasından **hemen fiil** gelir („desto kürzer **fällt** ihre Nachtruhe aus“). Türkçe kalıbı birebir taşıyıp iki tarafı da düz cümle yapmak burada en sık görülen hatadır. Bir de karşılaştırma sıfatı her iki tarafta da **Komparativ** olmak zorundadır: „je später … desto kürzer“."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 4,
+        "titel": "Hauptteil II: das Mindestalter prüfen — Konzession und irrealer Konditional",
+        "inhalt": "„Ein gesetzliches Mindestalter würde das Problem meines Erachtens verfehlen. Zwar signalisiert der Staat damit, dass er die Sache ernst nimmt, doch verlagert eine Altersgrenze die Verantwortung auf die Schwächsten: auf Familien, die kontrollieren sollen, was sie technisch nicht kontrollieren können. Würde man stattdessen die Plattformen verpflichten, endlose Empfehlungsschleifen für minderjährige Konten abzuschalten, so wäre der Wirkung nach mehr gewonnen als durch jedes Verbot.“\n\n**Redemittel:** *X würde das Problem verfehlen* · *Zwar …, doch …* · *Verantwortung auf jemanden verlagern* · *Würde man …, so wäre …* (Konditionalsatz ohne „wenn“).",
+        "warum": {
+          "de": "Der irreale Konditionalsatz ohne „wenn“ — Verb an erster Stelle, Hauptsatz oft mit „so“ eingeleitet — ist eine der wenigen Strukturen, die zuverlässig als C1 gelesen werden. Inhaltlich leistet der Absatz zweierlei: Er räumt dem Gegner etwas ein („Zwar signalisiert der Staat …“) und stellt dem Verbot eine konkrete Alternative gegenüber, statt es nur abzulehnen. Nach „doch“ in der Bedeutung „jedoch“ steht das finite Verb direkt dahinter.",
+          "tr": "„wenn“siz irreal koşul cümlesi — fiil en başta, ana cümle çoğu zaman „so“ ile — güvenilir biçimde C1 olarak okunan birkaç yapıdan biridir: „Würde man …, so wäre …“. Türkçede koşul eki fiilin içine gömülüdür („zorunlu kılınsaydı“), bu yüzden Almancada koşulu **kelime sırasıyla** işaretleme fikri yabancı gelir; ama tam da bu yüzden değerlidir. İkinci nokta: buradaki „doch“ „jedoch“ anlamındadır ve Vorfeld'de durur, dolayısıyla çekimli fiil hemen arkasından gelir („doch **verlagert** eine Altersgrenze …“). Uyarı: „doch“ bazı bağlamlarda „aber“ gibi dizilim dışı da kullanılabilir; ikisi de doğrudur, ama karışıklığa düşmemek için sınavda tek bir kalıba sadık kal. İçerik tarafında da paragraf iki iş yapıyor: karşı tarafa bir şey teslim ediyor („Zwar …“) ve yasağı sadece reddetmek yerine yerine somut bir alternatif koyuyor."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 5,
+        "titel": "Alternative benennen und mit einer Empfehlung schließen",
+        "inhalt": "„Notwendig wäre drittens eine Medienbildung, die diesen Namen verdient — nicht als einmaliger Projekttag, sondern als fester Bestandteil des Unterrichts, in dem Jugendliche lernen, wie Empfehlungsalgorithmen ihre Aufmerksamkeit bewirtschaften. Zuständig dafür sind die Schulen; die Plattformbetreiber wiederum müssten offenlegen, nach welchen Kriterien sie Inhalte ausspielen.\n\nIch würde mir daher wünschen, dass Ihre Redaktion die Debatte nicht bei der Altersgrenze enden lässt, sondern in einem Folgebeitrag fragt, was Schulen und Anbieter konkret leisten müssen.\n\nMit freundlichen Grüßen\nElif Yıldırım“\n\n**Redemittel:** *Notwendig wäre drittens …* · *nicht als …, sondern als …* · *Zuständig dafür sind …* · *Ich würde mir wünschen, dass …*",
+        "warum": {
+          "de": "Der Schluss eines Leserbriefs richtet sich an einen realen Adressaten und darf deshalb etwas fordern — ein Appell an die Redaktion schließt den Text sichtbar. Der Konjunktiv II in der Höflichkeitsfunktion („Ich würde mir wünschen, dass …“) formuliert diese Forderung verbindlich, ohne belehrend zu wirken. Wichtig ist außerdem, dass die Alternative eine **Zuständigkeit** nennt: Ein Vorschlag ohne Akteur bleibt ein Wunsch.",
+          "tr": "Leserbrief'in sonu gerçek bir muhataba yöneliktir, dolayısıyla bir şey talep edebilir — redaksiyona yapılan çağrı metni görünür biçimde kapatır. Buradaki Konjunktiv II nezaket işlevindedir: „Ich würde mir wünschen, dass …“ talebi bağlayıcı biçimde dile getirir ama ders verir gibi olmaz. Türkçede „isterdim“ dediğinde çoğu zaman gerçekleşmemiş bir istek anlaşılır; Almancada bu kalıp gerçekleşmemişliği değil, **kibarlığı** işaretler — bu ince farkı bilmezsen ya fazla sert („Sie müssen …“) ya da fazla çekingen yazarsın. Bir de şuna dikkat: önerin bir **sorumlu** belirtmeli. Failsiz öneri („Man sollte mehr tun“) dilek olarak kalır ve Erfüllung'da tam puan getirmez."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 6,
+        "titel": "Überarbeitung: Register, Pronomenbezug, Satzlänge",
+        "inhalt": "Endkontrolle in vier Durchgängen:\n\n1. **Register:** Umgangssprachliches streichen. „krass“, „voll wichtig“, „Handy-Sucht“ → „bedenklich“, „von erheblicher Bedeutung“, „problematisches Nutzungsverhalten“.\n2. **Pronomenbezug:** Jedes „das“, „dies“, „sie“ prüfen — worauf bezieht es sich eindeutig? Unklar: „Das ist ein Problem.“ Klar: „Diese Verlagerung der Verantwortung ist das eigentliche Problem.“\n3. **Satzlänge mischen:** Nach zwei langen Sätzen ein kurzer. Ein Text aus lauter Schachtelsätzen liest sich nicht als C1, sondern als unübersichtlich.\n4. **Konjunktiv-I-Kontrolle:** Überall dort, wo die Autorin referiert wird, muss die Konjunktiv-I-Form stehen — nicht nur im ersten Satz.\n5. **Wortzahl und Anrede/Gruß** noch einmal prüfen: Beides fehlt erfahrungsgemäß genau dann, wenn die Zeit knapp wird.",
+        "warum": {
+          "de": "Wortschatz wird auf C1 nicht an seltenen Wörtern gemessen, sondern an der Angemessenheit des Registers: Ein einziges umgangssprachliches Wort in einem Leserbrief fällt stärker auf als ein fehlender Artikel. Der Pronomenbezug wiederum gehört zur Kohärenz — unklare Verweise zwingen den Leser zurückzuspringen, und genau das protokolliert die Bewertung als Bruch im roten Faden.",
+          "tr": "C1'de Wortschatz nadir kelimelerle değil, **register uygunluğuyla** ölçülür: bir Leserbrief'teki tek bir günlük-konuşma kelimesi, eksik bir artikelden daha çok göze batar. „Handy-Sucht“ gibi ifadeler günlük dildir; „problematisches Nutzungsverhalten“ yazı dilidir. Zamir referansı ise Kohärenz'e girer. Burada Türkçe kaynaklı özel bir tuzak var: Türkçede özne ve nesne çoğu zaman düşürülür, bağlam yeter („Bu bir sorun.“). Almancada bu boşluğu „das“ ile doldurursun ama „das“ neye gönderme yaptığı belirsiz kalır. Çözüm, işaret zamirini bir isimle desteklemektir: „Diese Verlagerung der Verantwortung …“. Böylece hem belirsizlik kalkar hem de metne bir Nominalstil ifadesi daha girmiş olur."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "Die Position des Kommentars wird im Indikativ wiedergegeben („Die Autorin sagt, das Mindestalter ist eine Scheinlösung“). Ohne Konjunktiv I verschmelzen fremde und eigene Behauptung.",
+      "„Je …, desto …“ wird nach türkischem Muster („ne kadar … o kadar …“) mit zweimal normaler Wortstellung gebaut. Der je-Satz ist ein Nebensatz (Verb am Ende), der desto-Satz verlangt Inversion.",
+      "Anrede oder Grußformel fehlt, oder nach „Sehr geehrte Redaktion,“ wird großgeschrieben weitergeschrieben — beides sind vermeidbare Erfüllungs- und Orthografieverluste.",
+      "Der Leitpunkt „übertriebene Risiken“ wird übergangen, weil die eigene Meinung eindeutig ist. Die Aufgabe verlangt aber ausdrücklich beide Seiten.",
+      "Umgangssprachliche Wendungen aus dem Alltagsdeutsch („voll krass“, „total abhängig“) in einem Text, der an eine Redaktion gerichtet ist — Registerbruch wiegt im Kriterium Wortschatz schwer."
+    ]
+  },
+  "quelle": "eigene Erstellung (handgeschriebenes Gold-Beispiel, Phase 1)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "geprueft_von": "Projektteam (Seed-Aufgabe)",
+  "version": 1
+}

@@ -1,0 +1,89 @@
+{
+  "bereich": "abitur",
+  "id": "q002",
+  "titel": "Energiependeln im ungedämpften Schwingkreis",
+  "fach": "physik",
+  "themenbereich": "Schwingungen und Schwingkreis",
+  "themenbereich_slug": "schwingungen",
+  "unterthema": "Energieumwandlung im LC-Schwingkreis",
+  "niveau": "GK",
+  "operatoren": ["berechnen", "erklären", "skizzieren", "bestimmen"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 25,
+  "aufgabenstellung": "In einer Physik-AG wird ein Schwingkreis aus einer Spule mit der Induktivität $L = 2{,}5\\ \\text{mH}$ und einem Kondensator mit der Kapazität $C = 40\\ \\text{nF}$ aufgebaut. Der Kondensator wird zuerst über eine Gleichspannungsquelle auf $U_0 = 60\\ \\text{V}$ aufgeladen. Zum Zeitpunkt $t = 0$ legt ein Umschalter den geladenen Kondensator an die Spule. Die ohmschen Widerstände der Leitungen sind so klein, dass sie hier vernachlässigt werden dürfen.\n\na) Berechnen Sie die Schwingungsdauer und die Frequenz dieses Schwingkreises. (Zur Kontrolle: $T \\approx 63\\ \\mu\\text{s}$)\n\nb) Erklären Sie den Ablauf einer vollen Schwingung in seinen wesentlichen Phasen. Gehen Sie dabei ausdrücklich auf das elektrische Feld im Kondensator und das magnetische Feld in der Spule ein.\n\nc) Skizzieren Sie in einem gemeinsamen $t$-$E$-Diagramm den zeitlichen Verlauf der Energie im elektrischen Feld des Kondensators und der Energie im magnetischen Feld der Spule über eine volle Periode.\n\nd) Bestimmen Sie die Zeitpunkte innerhalb der ersten Periode, zu denen beide Felder gleich viel Energie tragen.\n\ne) Berechnen Sie die maximal im Kondensator gespeicherte Energie und daraus die größte im Schwingkreis auftretende Stromstärke.",
+  "material": [],
+  "tipps": [
+    "Alle Größen zuerst in SI-Einheiten umschreiben: $\\text{mH}$ und $\\text{nF}$ unterscheiden sich um sechs Zehnerpotenzen. Wer hier schludert, landet um Faktor $1000$ daneben.",
+    "Frage dich bei b) für jede Phase nur zwei Dinge: Wo steckt gerade die Energie, und wohin fließt sie als Nächstes? Der Rest der Beschreibung folgt daraus von selbst.",
+    "Für e) brauchst du keine Zeitfunktion. Es genügt der Gedanke, dass die Summe beider Energien konstant ist — also ist das Maximum der einen gleich dem Maximum der anderen."
+  ],
+  "loesung": {
+    "gesamtpunkte": 15,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Schwingungsdauer und Frequenz berechnen",
+        "inhalt": "Für den ungedämpften Schwingkreis gilt die Thomsonsche Schwingungsformel\n\n$$T = 2\\pi\\sqrt{L\\cdot C}$$\n\nEinsetzen mit $L = 2{,}5\\cdot 10^{-3}\\ \\text{H}$ und $C = 4{,}0\\cdot 10^{-8}\\ \\text{F}$:\n\n$$L\\cdot C = 2{,}5\\cdot 10^{-3}\\ \\text{H}\\cdot 4{,}0\\cdot 10^{-8}\\ \\text{F} = 1{,}0\\cdot 10^{-10}\\ \\text{s}^2$$\n\n$$T = 2\\pi\\cdot\\sqrt{1{,}0\\cdot 10^{-10}\\ \\text{s}^2} = 2\\pi\\cdot 1{,}0\\cdot 10^{-5}\\ \\text{s} \\approx 6{,}3\\cdot 10^{-5}\\ \\text{s} = 63\\ \\mu\\text{s}$$\n\nDie Frequenz ist der Kehrwert:\n\n$$f = \\frac{1}{T} = \\frac{1}{6{,}28\\cdot 10^{-5}\\ \\text{s}} \\approx 1{,}6\\cdot 10^{4}\\ \\text{Hz} = 15{,}9\\ \\text{kHz}$$",
+        "warum": {
+          "de": "In der Thomsonschen Formel steht die Wurzel aus dem Produkt $L\\cdot C$ — deshalb ändert eine Verdopplung der Kapazität die Schwingungsdauer nur um den Faktor $\\sqrt{2}$ und nicht um $2$. Wer das übersieht, schätzt beim Umbau einer Schaltung die neue Frequenz systematisch falsch ein.",
+          "tr": "Thomson formülünde $L\\cdot C$ çarpımının karekökü vardır — bu yüzden kapasiteyi iki katına çıkarmak periyodu $2$ katına değil, yalnızca $\\sqrt{2}$ katına çıkarır. Bunu gözden kaçıran, devreyi değiştirdiğinde yeni frekansı sistematik olarak yanlış tahmin eder."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Die vier Phasen der Schwingung erklären",
+        "inhalt": "**Phase 1 ($t = 0$ bis $t = T/4$):** Der Kondensator trägt die maximale Ladung, zwischen seinen Platten steht das stärkste elektrische Feld, es fließt noch kein Strom. Der Kondensator entlädt sich über die Spule. Weil der wachsende Strom in der Spule ein Magnetfeld aufbaut, wird nach der Lenzschen Regel eine Spannung induziert, die dem Anwachsen des Stromes entgegenwirkt — der Strom steigt deshalb allmählich und nicht schlagartig an.\n\n**Phase 2 ($T/4$ bis $T/2$):** Der Kondensator ist entladen, das elektrische Feld ist verschwunden. Strom und Magnetfeld der Spule sind maximal, die gesamte Energie steckt jetzt im magnetischen Feld. Das Magnetfeld baut sich nun ab; die dabei selbstinduzierte Spannung hält den Strom in derselben Richtung aufrecht, sodass der Kondensator mit umgekehrter Polung wieder aufgeladen wird.\n\n**Phase 3 ($T/2$ bis $3T/4$):** Wie Phase 1, aber mit umgekehrten Vorzeichen: Der Kondensator ist maximal geladen, seine Platten sind gegenüber dem Start vertauscht geladen, und der anschließende Strom fließt in die Gegenrichtung.\n\n**Phase 4 ($3T/4$ bis $T$):** Wie Phase 2 mit umgekehrter Stromrichtung. Am Ende von Phase 4 herrscht wieder genau der Anfangszustand — der Vorgang wiederholt sich periodisch.",
+        "warum": {
+          "de": "Der entscheidende Punkt ist die Rolle der Spule: Ohne ihre Selbstinduktion wäre der Kondensator nach einem einzigen kurzen Stromstoß entladen und nichts würde schwingen. Erst die Trägheit, mit der die Spule jede Stromänderung bremst, sorgt für das Überschwingen und damit für die Umladung — sie spielt genau die Rolle, die beim Federpendel die Masse hat.",
+          "tr": "Kilit nokta bobinin rolüdür: öz indüksiyonu olmasaydı kondansatör tek bir kısa akım darbesiyle boşalır ve hiçbir salınım olmazdı. Akımdaki her değişimi frenleyen bu atalet, akımın sıfırı aşıp devam etmesini ve böylece kondansatörün ters yönde dolmasını sağlar — yay sarkacındaki kütlenin rolünün tam karşılığıdır."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 3,
+        "titel": "Energieverläufe skizzieren",
+        "inhalt": "Beide Kurven sind gegeneinander verschobene $\\sin^2$- bzw. $\\cos^2$-Verläufe, die die $t$-Achse berühren, aber nie negativ werden:\n\n- $E_C(t)$ startet bei $t = 0$ mit dem Maximalwert, ist bei $t = T/4$ null, bei $t = T/2$ wieder maximal, bei $t = 3T/4$ null und bei $t = T$ wieder maximal.\n- $E_L(t)$ verläuft genau umgekehrt: null bei $t = 0$, maximal bei $t = T/4$, null bei $t = T/2$, maximal bei $t = 3T/4$, null bei $t = T$.\n\nBeide Kurven erreichen denselben Höchstwert. Jede der beiden Energien durchläuft während einer Periode $T$ des Schwingkreises **zwei** volle Maxima, hat also die halbe Periodendauer $T/2$. Die Summe $E_C(t) + E_L(t)$ ist zu jedem Zeitpunkt konstant; als waagerechte Linie eingezeichnet liegt sie auf Höhe des gemeinsamen Maximalwertes.",
+        "warum": {
+          "de": "Der häufigste Fehler ist, die Energiekurven wie $U(t)$ und $I(t)$ sinusförmig um die Nulllinie zu zeichnen. Energie kann aber nicht negativ werden, und in beide Energieformeln geht die Größe quadratisch ein — deshalb halbiert sich die Periodendauer der Energie gegenüber der von Spannung und Strom.",
+          "tr": "En sık yapılan hata, enerji eğrilerini $U(t)$ ve $I(t)$ gibi sıfır çizgisi etrafında sinüs biçiminde çizmektir. Oysa enerji negatif olamaz ve her iki enerji formülünde de büyüklük karesiyle girer — bu yüzden enerjinin periyodu, gerilim ve akımın periyodunun yarısıdır."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 4,
+        "titel": "Zeitpunkte der Energiegleichverteilung bestimmen",
+        "inhalt": "Gleiche Energie in beiden Feldern heißt: Die beiden Kurven aus Schritt 3 schneiden sich. Das geschieht genau in der Mitte zwischen einem Maximum und dem folgenden Nulldurchgang, also bei den ungeradzahligen Vielfachen von $T/8$:\n\n$$t_n = (2n-1)\\cdot\\frac{T}{8}\\ ,\\qquad n = 1,\\,2,\\,3,\\,\\ldots$$\n\nMit $T = 62{,}8\\ \\mu\\text{s}$ ist $\\frac{T}{8} = 7{,}85\\ \\mu\\text{s}$ und damit innerhalb der ersten Periode:\n\n$$t_1 \\approx 7{,}9\\ \\mu\\text{s},\\quad t_2 \\approx 23{,}6\\ \\mu\\text{s},\\quad t_3 \\approx 39{,}3\\ \\mu\\text{s},\\quad t_4 \\approx 55{,}0\\ \\mu\\text{s}$$\n\nIn einer Periode tritt die Gleichverteilung also viermal auf. Jedes Feld trägt in diesen Momenten die Hälfte der Gesamtenergie, hier je $36\\ \\mu\\text{J}$.",
+        "warum": {
+          "de": "Verführerisch ist die Antwort $T/4$ — dort ist aber nicht Gleichverteilung, sondern der vollständige Wechsel von einer Energieform in die andere. Der Schnittpunkt der beiden Kurven liegt bei der halben Höhe, und den erreicht eine $\\sin^2$-Kurve schon nach einem Achtel der Periode, nicht erst nach einem Viertel.",
+          "tr": "$T/4$ cevabı çekicidir, ama orada enerji eşit paylaşılmaz; tam tersine bir enerji biçiminden diğerine tam geçiş tamamlanmıştır. İki eğrinin kesişimi maksimumun yarı yüksekliğindedir ve bir $\\sin^2$ eğrisi bu yüksekliğe periyodun dörtte birinde değil, sekizde birinde ulaşır."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 5,
+        "titel": "Maximale Energie und maximale Stromstärke berechnen",
+        "inhalt": "Zum Zeitpunkt $t = 0$ steckt die gesamte Energie im elektrischen Feld des Kondensators:\n\n$$E_{C,\\text{max}} = \\frac{1}{2}\\cdot C\\cdot U_0^2 = \\frac{1}{2}\\cdot 4{,}0\\cdot 10^{-8}\\ \\text{F}\\cdot (60\\ \\text{V})^2 = 7{,}2\\cdot 10^{-5}\\ \\text{J} = 72\\ \\mu\\text{J}$$\n\nWeil kein ohmscher Widerstand Energie in Wärme umsetzt, ist die Gesamtenergie konstant. Wenn der Kondensator vollständig entladen ist, muss dieselbe Energie im Magnetfeld der Spule stecken:\n\n$$E_{L,\\text{max}} = \\frac{1}{2}\\cdot L\\cdot I_{\\text{max}}^2 = E_{C,\\text{max}}$$\n\n$$I_{\\text{max}} = \\sqrt{\\frac{2\\cdot E_{C,\\text{max}}}{L}} = \\sqrt{\\frac{2\\cdot 7{,}2\\cdot 10^{-5}\\ \\text{J}}{2{,}5\\cdot 10^{-3}\\ \\text{H}}} = \\sqrt{5{,}76\\cdot 10^{-2}\\ \\text{A}^2} = 0{,}24\\ \\text{A}$$\n\nIm Schwingkreis fließen also kurzzeitig $240\\ \\text{mA}$, obwohl die Quelle nur $60\\ \\text{V}$ geliefert hat.",
+        "warum": {
+          "de": "Der Energieerhaltungssatz ersetzt hier eine ganze Zeitfunktion: Man muss $I(t)$ gar nicht kennen, um $I_{\\text{max}}$ zu bestimmen, weil die beiden Maxima zu verschiedenen Zeiten auftreten und trotzdem gleich groß sein müssen. Genau dieses Gleichsetzen zweier Maximalwerte ist der Standardgriff bei jeder Schwingkreisaufgabe.",
+          "tr": "Enerjinin korunumu burada koca bir zaman fonksiyonunun yerini tutar: $I_{\\text{max}}$'ı bulmak için $I(t)$'yi bilmeye gerek yoktur, çünkü iki maksimum farklı anlarda ortaya çıksa da eşit olmak zorundadır. İki maksimum değeri eşitlemek, her Schwingkreis sorusunda kullanılan standart hamledir."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "$\\text{nF}$ und $\\mu\\text{F}$ bzw. $\\text{mH}$ und $\\text{H}$ verwechselt — das Produkt $L\\cdot C$ stimmt dann um Zehnerpotenzen nicht.",
+      "In der Thomsonschen Formel die Wurzel vergessen und $T = 2\\pi\\cdot L\\cdot C$ gerechnet.",
+      "Die Energiekurven sinusförmig mit negativen Werten gezeichnet; Energie ist nie negativ, und ihre Periode ist nur $T/2$.",
+      "Für die Energiegleichverteilung $T/4$ statt $T/8$ angegeben.",
+      "$I_{\\text{max}}$ über $I = U_0/R$ oder $I = C\\cdot U_0$ zu bestimmen versucht, statt die beiden Energiemaxima gleichzusetzen."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen Landesabitur Physik 2007, Grundkurs, Aufgabe B1",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

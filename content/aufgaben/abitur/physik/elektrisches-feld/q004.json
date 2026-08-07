@@ -1,0 +1,96 @@
+{
+  "bereich": "abitur",
+  "id": "q004",
+  "titel": "Elementarladung aus einer Messreihe von fünf Öltröpfchen",
+  "fach": "physik",
+  "themenbereich": "Elektrisches Feld und Kondensator",
+  "themenbereich_slug": "elektrisches-feld",
+  "unterthema": "Millikan-Versuch: Auswertung einer Messreihe",
+  "niveau": "GK",
+  "operatoren": ["zeigen", "berechnen", "ermitteln", "beurteilen"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 45,
+  "aufgabenstellung": "Eine Physik-Arbeitsgemeinschaft wertet die Messprotokolle einer Millikan-Apparatur aus, die sie über mehrere Nachmittage aufgenommen hat. Der Plattenabstand des waagerecht liegenden Kondensators beträgt $d = 6{,}20\\ \\text{mm}$, die Dichte des verwendeten Öls $\\rho = 950\\ \\frac{\\text{kg}}{\\text{m}^3}$. Es wird mit $g = 9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}$ gerechnet, der Auftrieb in Luft wird vernachlässigt. Zu jedem Tröpfchen wurden die Spannung $U$, bei der es genau schwebt, und die aus einer unabhängigen Messung bekannte Masse $m$ notiert (Material 1).\n\na) Zeigen Sie, dass für die Ladung eines schwebenden Tröpfchens $q = \\dfrac{m\\cdot g\\cdot d}{U}$ gilt. (3 BE)\n\nb) Berechnen Sie die Ladungen der fünf Tröpfchen. Ordnen Sie jeder Ladung die Anzahl $n$ der enthaltenen Elementarladungen zu und ermitteln Sie daraus unter Einbeziehung aller Messwerte einen Wert für die Elementarladung $e$. (7 BE)\n\nc) Ermitteln Sie den Radius des Tröpfchens Nr. 3. (3 BE)\n\nd) Berechnen Sie die elektrische Feldstärke zwischen den Platten bei der Messung Nr. 3 auf zwei voneinander unabhängigen Wegen und beurteilen Sie das Ergebnis. (3 BE)",
+  "material": [
+    {
+      "typ": "tabelle",
+      "titel": "Material 1: Messprotokoll von fünf Öltröpfchen",
+      "inhalt": "$$\\begin{array}{c|c|c|c|c|c} \\text{Tröpfchen Nr.} & 1 & 2 & 3 & 4 & 5 \\\\ \\hline U\\ \\text{in V} & 155 & 205 & 197 & 192 & 180 \\\\ \\hline m\\ \\text{in }10^{-16}\\ \\text{kg} & 8{,}40 & 5{,}30 & 21{,}0 & 14{,}8 & 9{,}60 \\end{array}$$",
+      "quelle": "eigene Erstellung",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Im Schwebezustand wird das Tröpfchen nicht beschleunigt. Schreibe zuerst die beiden angreifenden Kräfte einzeln hin, bevor du sie gleichsetzt.",
+    "Die Ladungen liegen alle in der Größenordnung $10^{-19}\\ \\text{C}$. Teile sie durch den kleinsten gefundenen Wert — dann siehst du die ganzen Zahlen $n$ fast von allein.",
+    "Für den Radius brauchst du die Dichte und das Kugelvolumen $V = \\tfrac{4}{3}\\pi r^3$. Löse erst allgemein nach $r$ auf, setze dann ein."
+  ],
+  "loesung": {
+    "gesamtpunkte": 16,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Kräftegleichgewicht aufstellen und nach $q$ auflösen",
+        "inhalt": "Das Tröpfchen schwebt, also ist die Summe der angreifenden Kräfte null. Nach unten wirkt die Gewichtskraft, nach oben die elektrische Kraft:\n\n$$F_{el} = F_G \\quad\\Longleftrightarrow\\quad q\\cdot E = m\\cdot g$$\n\nIm homogenen Feld des Plattenkondensators gilt $E = \\dfrac{U}{d}$. Einsetzen liefert\n\n$$q\\cdot\\frac{U}{d} = m\\cdot g \\quad\\Longleftrightarrow\\quad q = \\frac{m\\cdot g\\cdot d}{U}$$",
+        "warum": {
+          "de": "Die Herleitung ist deshalb so kurz, weil der Schwebezustand alle schwierigen Größen aus der Gleichung wirft: keine Beschleunigung, keine Geschwindigkeit, keine Luftreibung. Übrig bleiben nur $U$, $d$ und $m$ — und genau diese drei kann man im Experiment tatsächlich messen. Das ist der Grund, warum Millikan überhaupt auf den Schwebefall gezielt hat.",
+          "tr": "Bu türetmenin bu kadar kısa olmasının nedeni, askıda kalma durumunun bütün zor büyüklükleri denklemden atmasıdır: ivme yok, hız yok, hava sürtünmesi yok. Geriye yalnızca $U$, $d$ ve $m$ kalır — ve deneyde gerçekten ölçülebilen tam olarak bu üçüdür. Millikan'ın neden özellikle askıda kalma durumunu hedeflediğinin sebebi budur."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Ladungen der fünf Tröpfchen berechnen",
+        "inhalt": "Beispielrechnung für Tröpfchen Nr. 1 mit $m = 8{,}40\\cdot 10^{-16}\\ \\text{kg}$, $U = 155\\ \\text{V}$ und $d = 6{,}20\\cdot 10^{-3}\\ \\text{m}$:\n\n$$q_1 = \\frac{8{,}40\\cdot 10^{-16}\\ \\text{kg}\\cdot 9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}\\cdot 6{,}20\\cdot 10^{-3}\\ \\text{m}}{155\\ \\text{V}} = \\frac{5{,}11\\cdot 10^{-17}\\ \\text{Nm}}{155\\ \\text{V}} \\approx 3{,}30\\cdot 10^{-19}\\ \\text{C}$$\n\nAnalog für die übrigen Tröpfchen:\n\n$$\\begin{array}{c|c|c|c|c|c} \\text{Nr.} & 1 & 2 & 3 & 4 & 5 \\\\ \\hline q\\ \\text{in }10^{-19}\\ \\text{C} & 3{,}30 & 1{,}57 & 6{,}48 & 4{,}69 & 3{,}24 \\end{array}$$",
+        "warum": {
+          "de": "Die Einheitenkontrolle lohnt sich hier besonders: $\\frac{\\text{kg}\\cdot\\frac{\\text{m}}{\\text{s}^2}\\cdot\\text{m}}{\\text{V}} = \\frac{\\text{Nm}}{\\text{V}} = \\frac{\\text{J}}{\\text{V}} = \\text{C}$. Wenn am Ende Coulomb herauskommt, hat man die Formel garantiert richtig aufgelöst — bei fünf gleichartigen Rechnungen ist das die schnellste Absicherung gegen einen systematischen Fehler in allen fünf.",
+          "tr": "Birim kontrolü burada özellikle işe yarar: $\\frac{\\text{kg}\\cdot\\frac{\\text{m}}{\\text{s}^2}\\cdot\\text{m}}{\\text{V}} = \\frac{\\text{Nm}}{\\text{V}} = \\frac{\\text{J}}{\\text{V}} = \\text{C}$. Sonuçta Coulomb çıkıyorsa formülü kesinlikle doğru çözmüşsündür — birbirinin aynısı beş hesapta bu, beşini birden bozacak sistematik bir hataya karşı en hızlı güvencedir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 3,
+        "titel": "Anzahl der Elementarladungen zuordnen und $e$ ermitteln",
+        "inhalt": "Der kleinste gemessene Wert ist $q_2 = 1{,}57\\cdot 10^{-19}\\ \\text{C}$. Teilt man alle Ladungen durch diesen Wert, ergeben sich Zahlen dicht bei $2$, $1$, $4$, $3$ und $2$. Man setzt also $q = n\\cdot e$ mit ganzzahligem $n$ an und berechnet für jedes Tröpfchen $e = \\frac{q}{n}$:\n\n$$\\begin{array}{c|c|c|c|c|c} \\text{Nr.} & 1 & 2 & 3 & 4 & 5 \\\\ \\hline q\\ \\text{in }10^{-19}\\ \\text{C} & 3{,}30 & 1{,}57 & 6{,}48 & 4{,}69 & 3{,}24 \\\\ \\hline n & 2 & 1 & 4 & 3 & 2 \\\\ \\hline e = \\frac{q}{n}\\ \\text{in }10^{-19}\\ \\text{C} & 1{,}65 & 1{,}57 & 1{,}62 & 1{,}56 & 1{,}62 \\end{array}$$\n\nMittelwert über alle fünf Messungen:\n\n$$e = \\frac{(1{,}65 + 1{,}57 + 1{,}62 + 1{,}56 + 1{,}62)\\cdot 10^{-19}\\ \\text{C}}{5} \\approx 1{,}60\\cdot 10^{-19}\\ \\text{C}$$\n\nDas stimmt mit dem Literaturwert $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$ sehr gut überein.",
+        "warum": {
+          "de": "Die Zuordnung der ganzen Zahlen $n$ ist kein Rechenschritt, sondern eine physikalische Behauptung: Man unterstellt, dass jedes Tröpfchen nur ein ganzzahliges Vielfaches einer kleinsten Ladung tragen kann. Dass diese Annahme trägt, sieht man erst hinterher daran, dass die fünf Quotienten $q/n$ trotz völlig verschiedener Massen und Spannungen alle auf denselben Wert fallen. Wäre die Ladung stetig teilbar, käme hier fünfmal etwas anderes heraus.",
+          "tr": "Tam sayı $n$'lerin atanması bir hesap adımı değil, fiziksel bir iddiadır: her damlanın ancak en küçük bir yükün tam katını taşıyabildiği varsayılır. Bu varsayımın tuttuğunu ancak sonradan görürsün — kütleler ve gerilimler tamamen farklı olmasına rağmen beş $q/n$ oranı aynı değere düşüyor. Yük sürekli bölünebilseydi burada beş ayrı değer çıkardı."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 4,
+        "titel": "Radius des Tröpfchens Nr. 3 ermitteln",
+        "inhalt": "Das Tröpfchen wird als Kugel behandelt. Aus $m = \\rho\\cdot V$ und $V = \\frac{4}{3}\\pi r^3$ folgt\n\n$$m = \\rho\\cdot\\frac{4}{3}\\pi r^3 \\quad\\Longleftrightarrow\\quad r = \\sqrt[3]{\\frac{3m}{4\\pi\\rho}}$$\n\nMit $m = 21{,}0\\cdot 10^{-16}\\ \\text{kg} = 2{,}10\\cdot 10^{-15}\\ \\text{kg}$ und $\\rho = 950\\ \\frac{\\text{kg}}{\\text{m}^3}$:\n\n$$r = \\sqrt[3]{\\frac{3\\cdot 2{,}10\\cdot 10^{-15}\\ \\text{kg}}{4\\pi\\cdot 950\\ \\frac{\\text{kg}}{\\text{m}^3}}} = \\sqrt[3]{5{,}28\\cdot 10^{-19}\\ \\text{m}^3} \\approx 8{,}1\\cdot 10^{-7}\\ \\text{m} = 0{,}81\\ \\mu\\text{m}$$",
+        "warum": {
+          "de": "Ein Radius unter einem Mikrometer ist keine Nebensächlichkeit, sondern erklärt den ganzen Versuchsaufbau: So kleine Tröpfchen sieht man nur im Mikroskop, sie fallen langsam genug zum Beobachten, und ihre Gewichtskraft ist so winzig, dass schon einige wenige Elementarladungen sie tragen können. Wären die Tröpfchen millimetergroß, bräuchte man Spannungen von vielen Millionen Volt.",
+          "tr": "Bir mikrometrenin altındaki yarıçap ayrıntı değil, bütün deney düzeneğini açıklayan şeydir: bu kadar küçük damlalar ancak mikroskopta görülür, gözlemlenecek kadar yavaş düşer ve ağırlıkları öyle küçüktür ki birkaç elementer yük bile onları taşıyabilir. Damlalar milimetre boyutunda olsaydı milyonlarca voltluk gerilimler gerekirdi."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 5,
+        "titel": "Feldstärke auf zwei Wegen berechnen und Ergebnis beurteilen",
+        "inhalt": "**Weg 1 — über Spannung und Plattenabstand:**\n\n$$E = \\frac{U}{d} = \\frac{197\\ \\text{V}}{6{,}20\\cdot 10^{-3}\\ \\text{m}} \\approx 3{,}18\\cdot 10^{4}\\ \\frac{\\text{V}}{\\text{m}}$$\n\n**Weg 2 — über das Kräftegleichgewicht:**\n\n$$E = \\frac{F_G}{q} = \\frac{m\\cdot g}{q_3} = \\frac{2{,}10\\cdot 10^{-15}\\ \\text{kg}\\cdot 9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}}{6{,}48\\cdot 10^{-19}\\ \\text{C}} = \\frac{2{,}06\\cdot 10^{-14}\\ \\text{N}}{6{,}48\\cdot 10^{-19}\\ \\text{C}} \\approx 3{,}18\\cdot 10^{4}\\ \\frac{\\text{V}}{\\text{m}}$$\n\nBeurteilung: Beide Wege liefern denselben Wert. Das ist allerdings kein unabhängiger Test der Messung, denn $q_3$ wurde in Teilaufgabe b) selbst aus $U$, $d$ und $m$ berechnet. Bestätigt wird also nur, dass in b) richtig gerechnet wurde — eine Kontrolle des Rechenwegs, keine Kontrolle der Physik.",
+        "warum": {
+          "de": "Genau hier trennt sich eine echte von einer scheinbaren Kontrolle. Wer die Übereinstimmung als Bestätigung des Versuchsergebnisses verkauft, hat übersehen, dass beide Wege dieselben drei Messgrößen benutzen — der zweite Weg ist algebraisch nur die Rückwärtsrichtung des ersten. Ein wirklich unabhängiger Test bräuchte eine Größe, die noch gar nicht eingegangen ist.",
+          "tr": "Gerçek kontrol ile görünürdeki kontrol tam burada ayrılır. Bu uyumu deney sonucunun doğrulanması diye sunan kişi, iki yolun da aynı üç ölçüm büyüklüğünü kullandığını gözden kaçırmıştır — ikinci yol cebirsel olarak birincinin tersten yürütülmüş halidir. Gerçekten bağımsız bir test için henüz hiç kullanılmamış bir büyüklük gerekirdi."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "Plattenabstand in Millimetern statt Metern eingesetzt — das Ergebnis für $q$ ist dann um den Faktor $1000$ zu groß.",
+      "Für $n$ auch nicht ganzzahlige Werte wie $2{,}1$ zugelassen; $n$ muss eine natürliche Zahl sein, sonst ist die Grundidee $q = n\\cdot e$ aufgegeben.",
+      "Bei der Mittelung über $e$ nur die Ladungen $q$ statt der Quotienten $q/n$ gemittelt — das ergibt einen sinnlosen Zahlenwert.",
+      "Beim Radius vergessen, die dritte Wurzel zu ziehen, oder das Volumen mit $r^2$ statt $r^3$ angesetzt."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Landesabitur Physik Hessen 2012, Grundkurs, Aufgabe A2 (Bestimmung der elektrischen Elementarladung)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

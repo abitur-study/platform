@@ -8,7 +8,7 @@
  */
 
 import { readdirSync } from "node:fs";
-import { basename, join } from "node:path";
+import { basename, dirname, join } from "node:path";
 import type { Aufgabe } from "../content/schema";
 import { OPERATOREN } from "../content/registry";
 import { ladeDatei } from "../src/lib/content";
@@ -116,6 +116,23 @@ export function pruefeHtml(a: Aufgabe): string[] {
   });
 }
 
+// --- 3c) Düz metin alanları ---------------------------------------------
+//
+// `titel` ve `unterthema` renderMd()'den GEÇMEZ: <h1>, kart, breadcrumb ve
+// <title> etiketinde düz metin olarak basılır — sonuncusuna HTML zaten
+// giremez. İçlerine LaTeX yazılırsa sayfada "$f(x)=x\,e^{-x}$" diye ham
+// görünür. Üst simge gerekiyorsa Unicode kullan: e⁻ˣ, a⁻¹, b².
+
+export function pruefeKlartext(a: Aufgabe): string[] {
+  const felder: [string, string][] = [["titel", a.titel]];
+  if (a.bereich === "abitur") felder.push(["unterthema", a.unterthema]);
+  return felder.flatMap(([feld, text]) =>
+    text.includes("$")
+      ? [`${feld}: düz metin alanında LaTeX ("$") — render edilmez, Unicode kullan (e⁻ˣ)`]
+      : [],
+  );
+}
+
 // --- 4) Adım kalitesi ---------------------------------------------------
 
 export function pruefeSchritte(a: Aufgabe): string[] {
@@ -194,6 +211,7 @@ export function pruefeAufgabe(a: Aufgabe): string[] {
     ...mc,
     ...pruefeLatex(a),
     ...pruefeHtml(a),
+    ...pruefeKlartext(a),
     ...pruefeSchritte(a),
     ...pruefePunkte(a),
     ...pruefeOperatoren(a),
@@ -209,7 +227,7 @@ function main() {
     .sort();
 
   const fehler: string[] = [];
-  const gesehen = new Map<string, string>(); // id -> dosya
+  const gesehen = new Map<string, string>(); // "klasör\0id" -> dosya
   const texte: { pfad: string; text: string }[] = [];
 
   for (const pfad of dateien) {
@@ -227,10 +245,13 @@ function main() {
     const name = basename(pfad, ".json");
     if (a.id !== name) fehler.push(`${pfad}: id "${a.id}" dosya adı "${name}" ile aynı değil`);
 
-    // 9) id benzersizliği
-    const vorher = gesehen.get(a.id);
-    if (vorher) fehler.push(`${pfad}: id "${a.id}" zaten ${vorher} içinde kullanılmış`);
-    else gesehen.set(a.id, pfad);
+    // 9) id benzersizliği — klasör içinde. "q001" her konuda var; benzersiz
+    // olan (klasör, id) çiftidir, çünkü URL de klasör yoluyla kapsamlanıyor.
+    const schluessel = `${dirname(pfad)}\0${a.id}`;
+    const vorher = gesehen.get(schluessel);
+    if (vorher) {
+      fehler.push(`${pfad}: id "${a.id}" aynı klasörde zaten ${vorher} içinde kullanılmış`);
+    } else gesehen.set(schluessel, pfad);
 
     texte.push({ pfad, text: a.aufgabenstellung });
   }

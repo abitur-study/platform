@@ -1,0 +1,100 @@
+{
+  "bereich": "abitur",
+  "id": "q002",
+  "titel": "Binomialverteilung in der Qualitätskontrolle",
+  "fach": "mathematik",
+  "themenbereich": "Stochastik",
+  "themenbereich_slug": "stochastik",
+  "unterthema": "Binomialverteilung",
+  "niveau": "GK",
+  "operatoren": ["begründen", "berechnen", "bestimmen", "ermitteln"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 40,
+  "aufgabenstellung": "Eine Abfüllanlage füllt Teebeutel ab. Erfahrungsgemäß sind $15\\,\\%$ aller produzierten Beutel untergewichtig. Der Produktion wird eine Stichprobe von $20$ Beuteln entnommen. Die Zufallsgröße $X$ beschreibe die Anzahl der untergewichtigen Beutel in der Stichprobe.\n\na) Begründen Sie, dass $X$ näherungsweise binomialverteilt ist, und geben Sie die Parameter an.\n\nb) Berechnen Sie die Wahrscheinlichkeit dafür, dass genau drei Beutel untergewichtig sind.\n\nc) Berechnen Sie die Wahrscheinlichkeit dafür, dass höchstens zwei Beutel untergewichtig sind.\n\nd) Berechnen Sie die Wahrscheinlichkeit dafür, dass mindestens ein Beutel untergewichtig ist.\n\ne) Bestimmen Sie den Erwartungswert und die Standardabweichung von $X$.\n\nf) Ermitteln Sie den kleinsten Stichprobenumfang $n$, für den mit einer Wahrscheinlichkeit von mindestens $95\\,\\%$ wenigstens ein untergewichtiger Beutel in der Stichprobe enthalten ist.\n\nRunden Sie alle Wahrscheinlichkeiten auf vier Nachkommastellen.",
+  "material": [],
+  "tipps": [
+    "Prüfe zuerst die drei Bedingungen einer Bernoulli-Kette: nur zwei Ausgänge, feste Trefferwahrscheinlichkeit, unabhängige Wiederholungen. Erst danach darfst du die Formel benutzen.",
+    "Bei „mindestens eins“ lohnt sich fast immer das Gegenereignis — die Alternative wäre eine Summe aus zwanzig Einzelwahrscheinlichkeiten.",
+    "In Teilaufgabe f) steht $n$ im Exponenten. Eine Ungleichung mit unbekanntem Exponenten löst man durch Logarithmieren; achte dabei auf das Vorzeichen von $\\ln(0{,}85)$."
+  ],
+  "loesung": {
+    "gesamtpunkte": 15,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Modellierung als Bernoulli-Kette begründen",
+        "inhalt": "Für jeden entnommenen Beutel gibt es genau zwei relevante Ausgänge: „untergewichtig“ (Treffer) oder „nicht untergewichtig“ (Niete). Die Trefferwahrscheinlichkeit ist mit $p = 0{,}15$ für jeden Beutel gleich, und da die Stichprobe klein gegenüber der Gesamtproduktion ist, dürfen die Ziehungen als unabhängig angesehen werden.\n\nAlso gilt näherungsweise\n\n$$X \\sim B(20;\\, 0{,}15), \\qquad n = 20, \\quad p = 0{,}15.$$\n\n$$P(X = k) = \\binom{20}{k} \\cdot 0{,}15^{\\,k} \\cdot 0{,}85^{\\,20-k}$$",
+        "warum": {
+          "de": "Die Binomialformel ist kein Universalwerkzeug, sondern gilt nur unter drei Voraussetzungen: zwei Ausgänge, konstantes $p$, unabhängige Wiederholungen. Der kritische Punkt ist hier die Unabhängigkeit — streng genommen wird ohne Zurücklegen gezogen, wodurch sich $p$ mit jeder Entnahme minimal ändert. Weil die Stichprobe aber sehr klein gegenüber der Gesamtproduktion ist, bleibt diese Änderung vernachlässigbar; genau das steckt hinter dem Wort „näherungsweise“ in der Aufgabenstellung. Wer diese Begründung überspringt, wendet eine Formel an, deren Gültigkeit er nicht geprüft hat.",
+          "tr": "Binom formülü her yerde geçerli bir araç değildir; yalnızca üç koşul altında geçerlidir: iki sonuç, sabit $p$, bağımsız tekrarlar. Buradaki kritik nokta bağımsızlıktır — kesin konuşmak gerekirse çekiliş iadesizdir ve her çekimde $p$ çok az değişir. Ne var ki örneklem toplam üretimin yanında çok küçük olduğundan bu değişim ihmal edilebilir kalır; soru metnindeki „yaklaşık olarak“ ifadesinin arkasında tam olarak bu vardır. Bu gerekçelendirmeyi atlayan kişi, geçerliliğini denetlemediği bir formülü uygulamış olur."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 2,
+        "titel": "Wahrscheinlichkeit für genau drei untergewichtige Beutel",
+        "inhalt": "$$P(X = 3) = \\binom{20}{3} \\cdot 0{,}15^{3} \\cdot 0{,}85^{17}$$\n\nMit $\\binom{20}{3} = \\dfrac{20 \\cdot 19 \\cdot 18}{1 \\cdot 2 \\cdot 3} = 1140$, $\\;0{,}15^{3} = 0{,}003375$ und $0{,}85^{17} \\approx 0{,}063113$:\n\n$$P(X = 3) \\approx 1140 \\cdot 0{,}003375 \\cdot 0{,}063113 = 3{,}8475 \\cdot 0{,}063113 \\approx 0{,}2428$$\n\nMit einer Wahrscheinlichkeit von etwa $24{,}3\\,\\%$ sind genau drei Beutel untergewichtig.",
+        "warum": {
+          "de": "Die Formel setzt sich aus zwei inhaltlich verschiedenen Teilen zusammen. Das Produkt $0{,}15^{3} \\cdot 0{,}85^{17}$ ist die Wahrscheinlichkeit *einer einzigen* festgelegten Reihenfolge, etwa „die ersten drei sind untergewichtig, die übrigen nicht“ — sie folgt aus der Unabhängigkeit, denn nur dann darf man Einzelwahrscheinlichkeiten multiplizieren. Der Binomialkoeffizient zählt, auf wie viele Arten sich die drei Treffer auf die zwanzig Plätze verteilen lassen. Weil alle diese Reihenfolgen dieselbe Wahrscheinlichkeit haben und einander ausschließen, darf man sie einfach addieren, also mit $\\binom{20}{3}$ multiplizieren.",
+          "tr": "Formül, içerik olarak birbirinden farklı iki parçadan oluşur. $0{,}15^{3} \\cdot 0{,}85^{17}$ çarpımı, *belirli tek bir* sıralamanın olasılığıdır; örneğin „ilk üçü eksik gramajlı, kalanlar değil“. Bu çarpım bağımsızlıktan gelir, çünkü tek tek olasılıkları ancak o zaman çarpabilirsin. Binom katsayısı ise üç isabetin yirmi yere kaç farklı biçimde dağılabileceğini sayar. Bütün bu sıralamaların olasılığı aynı ve birbirini dışlayan olaylar olduğundan, onları toplamak — yani $\\binom{20}{3}$ ile çarpmak — serbesttir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 3,
+        "titel": "Wahrscheinlichkeit für höchstens zwei untergewichtige Beutel",
+        "inhalt": "$$P(X \\le 2) = P(X=0) + P(X=1) + P(X=2)$$\n\n- $P(X=0) = 0{,}85^{20} \\approx 0{,}0388$\n- $P(X=1) = 20 \\cdot 0{,}15 \\cdot 0{,}85^{19} \\approx 3 \\cdot 0{,}045599 \\approx 0{,}1368$\n- $P(X=2) = \\binom{20}{2} \\cdot 0{,}15^{2} \\cdot 0{,}85^{18} = 190 \\cdot 0{,}0225 \\cdot 0{,}053646 \\approx 0{,}2293$\n\n$$P(X \\le 2) \\approx 0{,}0388 + 0{,}1368 + 0{,}2293 = 0{,}4049$$\n\nMit einer Wahrscheinlichkeit von etwa $40{,}5\\,\\%$ sind höchstens zwei Beutel untergewichtig.",
+        "warum": {
+          "de": "„Höchstens zwei“ ist kein einzelnes Ereignis, sondern die Vereinigung der drei Ereignisse $X=0$, $X=1$ und $X=2$. Diese schließen sich gegenseitig aus — es können nicht gleichzeitig null und zwei Beutel untergewichtig sein —, und nur deshalb darf man die Einzelwahrscheinlichkeiten addieren statt sie aufwendiger zu kombinieren. Genau diese Summe ist es, die in der kumulierten Binomialverteilung $F(20;\\,0{,}15;\\,2)$ bereits fertig tabelliert ist; wer den Tafelwert benutzt, sollte wissen, dass dahinter nichts anderes steht als diese drei addierten Terme.",
+          "tr": "„En çok iki“ tek bir olay değil, $X=0$, $X=1$ ve $X=2$ olaylarının birleşimidir. Bu olaylar birbirini dışlar — aynı anda hem sıfır hem iki poşet eksik gramajlı olamaz — ve tek tek olasılıkları toplayabilmenin nedeni tam olarak budur. Kümülatif binom dağılımında $F(20;\\,0{,}15;\\,2)$ olarak hazır tablolanmış olan da işte bu toplamdır; tablo değerini kullanan kişi, arkasında bu üç terimin toplamından başka bir şey olmadığını bilmelidir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 4,
+        "titel": "Wahrscheinlichkeit für mindestens einen untergewichtigen Beutel",
+        "inhalt": "Gegenereignis zu „mindestens ein Treffer“ ist „kein Treffer“:\n\n$$P(X \\ge 1) = 1 - P(X = 0) = 1 - 0{,}85^{20} \\approx 1 - 0{,}0388 = 0{,}9612$$\n\nMit einer Wahrscheinlichkeit von etwa $96{,}1\\,\\%$ ist mindestens ein Beutel untergewichtig.",
+        "warum": {
+          "de": "Der Weg über das Gegenereignis ist hier nicht nur bequemer, sondern qualitativ anders: Die direkte Summe hätte zwanzig Terme, das Gegenereignis nur einen. Der Grund für die enorme Vereinfachung liegt in der Struktur des Ereignisses — „mindestens eins“ ist die Verneinung von „genau null“, und die Verneinung eines Randfalls ist immer der billigste Fall. Als Faustregel: Bei „mindestens“ und „höchstens“ lohnt sich immer die Überlegung, ob das Gegenereignis weniger Summanden hat.",
+          "tr": "Tümleyen olay üzerinden gitmek burada yalnızca daha kolay değil, niteliksel olarak farklı bir yoldur: doğrudan toplam yirmi terimden, tümleyen ise tek terimden oluşur. Bu büyük sadeleşmenin nedeni olayın yapısındadır — „en az bir“, „tam olarak sıfır“ ifadesinin değillemesidir ve bir uç durumun değillemesi daima en ucuz durumdur. Pratik kural: „en az“ ve „en çok“ gördüğünde, tümleyen olayın daha az terim içerip içermediğini mutlaka düşün."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 5,
+        "titel": "Erwartungswert und Standardabweichung",
+        "inhalt": "$$\\mu = E(X) = n \\cdot p = 20 \\cdot 0{,}15 = 3$$\n\n$$\\sigma = \\sqrt{n \\cdot p \\cdot (1-p)} = \\sqrt{20 \\cdot 0{,}15 \\cdot 0{,}85} = \\sqrt{2{,}55} \\approx 1{,}60$$\n\nIm Mittel sind also $3$ von $20$ Beuteln untergewichtig, mit einer typischen Streuung von etwa $1{,}6$ Beuteln.",
+        "warum": {
+          "de": "Der Erwartungswert $n \\cdot p$ ist der Anteil $p$, hochgerechnet auf $n$ Versuche — inhaltlich also nichts anderes als der Durchschnitt auf lange Sicht, nicht etwa der „wahrscheinlichste“ Wert (auch wenn beide hier zufällig zusammenfallen). Die Standardabweichung misst, wie stark die tatsächliche Trefferzahl typischerweise um diesen Mittelwert schwankt. Der Faktor $p(1-p)$ erklärt eine wichtige Eigenschaft: Die Streuung ist bei $p = 0{,}5$ am größten und wird zu den Rändern hin kleiner — bei sehr kleinem oder sehr großem $p$ ist das Ergebnis eben gut vorhersagbar.",
+          "tr": "Beklenen değer $n \\cdot p$, $p$ oranının $n$ denemeye ölçeklenmiş halidir — yani uzun vadede ortalama demektir, „en olası“ değer değil (burada ikisi tesadüfen çakışsa bile). Standart sapma ise gerçek isabet sayısının bu ortalamanın etrafında tipik olarak ne kadar dalgalandığını ölçer. $p(1-p)$ çarpanı önemli bir özelliği açıklar: yayılım $p = 0{,}5$'te en büyüktür ve uçlara doğru küçülür — $p$ çok küçük ya da çok büyükken sonuç zaten iyi tahmin edilebilirdir."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 6,
+        "titel": "Mindestens erforderlichen Stichprobenumfang ermitteln",
+        "inhalt": "Bedingung:\n\n$$P(X \\ge 1) = 1 - 0{,}85^{\\,n} \\ge 0{,}95 \\;\\Longleftrightarrow\\; 0{,}85^{\\,n} \\le 0{,}05$$\n\nLogarithmieren:\n\n$$n \\cdot \\ln(0{,}85) \\le \\ln(0{,}05)$$\n\nDa $\\ln(0{,}85) \\approx -0{,}1625 < 0$ ist, kehrt sich beim Teilen das Ungleichheitszeichen um:\n\n$$n \\ge \\frac{\\ln(0{,}05)}{\\ln(0{,}85)} \\approx \\frac{-2{,}9957}{-0{,}1625} \\approx 18{,}43$$\n\nDa $n$ ganzzahlig ist, folgt $n = 19$. Kontrolle:\n\n- $n = 18$: $0{,}85^{18} \\approx 0{,}0536 > 0{,}05$, also $P(X \\ge 1) \\approx 0{,}9464 < 0{,}95$\n- $n = 19$: $0{,}85^{19} \\approx 0{,}0456 \\le 0{,}05$, also $P(X \\ge 1) \\approx 0{,}9544 \\ge 0{,}95$\n\nEs müssen mindestens $19$ Beutel entnommen werden.",
+        "warum": {
+          "de": "Das Gegenereignis ist hier nicht nur eine Abkürzung, sondern die Voraussetzung dafür, dass die Aufgabe überhaupt geschlossen lösbar wird: Es macht aus einer Summe von $n$ Termen eine einzige Potenz, und nur eine Potenz lässt sich nach dem Exponenten auflösen. Der Logarithmus ist genau das Werkzeug dafür — er holt die Unbekannte aus dem Exponenten herunter. Der entscheidende und am häufigsten übersehene Punkt ist das Umkehren des Ungleichheitszeichens: $\\ln(0{,}85)$ ist negativ, weil $0{,}85 < 1$ ist, und Division durch eine negative Zahl dreht jede Ungleichung um. Die abschließende Probe mit $n=18$ und $n=19$ zeigt, dass wirklich der kleinste zulässige Wert gefunden wurde.",
+          "tr": "Tümleyen olay burada yalnızca bir kısayol değil, sorunun kapalı biçimde çözülebilmesinin ön koşuludur: $n$ terimli bir toplamı tek bir üsse indirger ve yalnızca bir üs ifadesi üs cinsinden çözülebilir. Logaritma tam da bunun aracıdır — bilinmeyeni üsten aşağı indirir. En kritik ve en sık gözden kaçan nokta eşitsizlik yönünün değişmesidir: $0{,}85 < 1$ olduğu için $\\ln(0{,}85)$ negatiftir ve negatif bir sayıya bölmek her eşitsizliği ters çevirir. Sondaki $n=18$ ve $n=19$ kontrolü, gerçekten en küçük geçerli değerin bulunduğunu gösterir."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "Die Bedingungen der Bernoulli-Kette gar nicht geprüft und sofort mit der Formel gerechnet — in a) wird ausdrücklich eine Begründung verlangt.",
+      "Bei c) den Fall $X = 0$ vergessen; „höchstens zwei“ schließt null Treffer mit ein.",
+      "Bei d) die zwanzig Einzelwahrscheinlichkeiten aufsummiert statt das Gegenereignis zu nutzen — richtig, aber im Abitur ein Zeitgrab.",
+      "Bei e) die Varianz $2{,}55$ als Standardabweichung angegeben, ohne die Wurzel zu ziehen.",
+      "Bei f) beim Teilen durch $\\ln(0{,}85)$ das Ungleichheitszeichen nicht umgedreht und dadurch $n \\le 18{,}43$, also fälschlich $n = 18$, erhalten.",
+      "Bei f) auf $18$ abgerundet statt aufzurunden; gefordert ist die Erfüllung der Ungleichung, nicht die Nähe zum Grenzwert."
+    ]
+  },
+  "quelle": "DEMO — Platzhalter, wird ersetzt sobald Lehrplan und Altklausuren vorliegen",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-01",
+  "geprueft_von": "— (Demo, ungeprüft)",
+  "version": 1
+}

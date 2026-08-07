@@ -116,7 +116,7 @@ export function AufgabeView({
       {a.material.length > 0 && (
         <section className="mt-10">
           {a.material.map((m) => (
-            <figure key={m.titel} className="mt-6 border border-linie p-8">
+            <figure key={m.titel} className="mt-6 border border-linie p-6 sm:p-8">
               <figcaption className="text-base font-bold">{m.titel}</figcaption>
               <Md src={m.inhalt} className="mt-4" />
               <p className="mt-6 text-base text-tinte-schwach">
@@ -166,9 +166,14 @@ export function AufgabeView({
         */}
         <summary className="block p-0">
           <div className="pointer-events-none flex flex-wrap items-center justify-between gap-8 border-b border-linie p-8">
-            <span>
-              {schritte.length} {t.aufgabe.schritt.toLocaleLowerCase(locale)} ·{" "}
-              {a.loesung.gesamtpunkte} {t.aufgabe.punkte} · {t.aufgabe.mitBegruendung}
+            {/* Başlık biçimi Klappe ile birebir aynı: nokta · kalın başlık · soluk bilgi */}
+            <span className="flex flex-wrap items-center gap-4">
+              <span aria-hidden className="block size-3.5 shrink-0 rounded-full bg-akzent" />
+              <span className="t-22 font-bold">{t.aufgabe.musterloesung}</span>
+              <span className="text-base">
+                {schritte.length} {t.aufgabe.schritt.toLocaleLowerCase(locale)} ·{" "}
+                {a.loesung.gesamtpunkte} {t.aufgabe.punkte} · {t.aufgabe.mitBegruendung}
+              </span>
             </span>
             <span className="pointer-events-auto cursor-pointer rounded-full border border-linie px-[1.875rem] py-3.5 text-base font-bold whitespace-nowrap transition-colors hover:bg-papier-2 group-open:bg-papier-2">
               {t.aufgabe.erklaerMir}{" "}

@@ -5,7 +5,7 @@ import {
 import { AufgabeView } from "@/components/AufgabeView";
 import { Kopf } from "@/components/Kacheln";
 import { getMessages, isLocale, LOCALES } from "@/i18n";
-import { alleAufgaben, aufgabeById } from "@/lib/content";
+import { alleAufgaben, zertifikatAufgabe } from "@/lib/content";
 import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
@@ -34,7 +34,7 @@ export default async function SzAufgabeSeite({
   const { locale, zertifikat: zSlug, modul: mSlug, id } = await params;
   const z = zertifikatBySlug(zSlug);
   const m = modulBySlug(mSlug);
-  const a = aufgabeById(id);
+  const a = zertifikatAufgabe(zSlug, mSlug, id);
   if (!isLocale(locale) || !z || !m || !a || a.bereich !== "sprachzertifikat")
     notFound();
   const t = getMessages(locale);

@@ -1,0 +1,101 @@
+{
+  "bereich": "abitur",
+  "id": "q002",
+  "titel": "Geschwindigkeitsmessung mit einer Leiterschleife",
+  "fach": "physik",
+  "themenbereich": "Elektromagnetische Induktion",
+  "themenbereich_slug": "induktion",
+  "unterthema": "Induktion durch Flächen- und Flussdichteänderung",
+  "niveau": "GK",
+  "operatoren": [
+    "erklären",
+    "zeigen",
+    "berechnen",
+    "begründen"
+  ],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 40,
+  "aufgabenstellung": "Auf einer geraden waagerechten Schiene rollt ein Messschlitten reibungsarm mit konstanter Geschwindigkeit. An ihm ist senkrecht eine rechteckige Leiterschleife mit einer Windung befestigt: Ihre Höhe beträgt $a = 4{,}0\\ \\text{cm}$, ihre Länge in Fahrtrichtung $b = 10\\ \\text{cm}$. Über zwei Schleifkontakte ist die Schleife mit einem hochohmigen Spannungsmessgerät verbunden.\n\nEin Abschnitt der Fahrstrecke wird von einem homogenen Magnetfeld der Flussdichte $B = 0{,}35\\ \\text{T}$ durchsetzt. Die Feldlinien verlaufen waagerecht und stehen senkrecht auf der Schleifenebene. In Fahrtrichtung ist dieser Feldbereich $L = 15\\ \\text{cm}$ lang und scharf begrenzt.\n\na) Erklären Sie, wodurch beim Durchfahren des Feldbereichs am Messgerät überhaupt eine Spannung auftritt. (4 BE)\n\nb) Zeigen Sie ausgehend vom Induktionsgesetz, dass für den Betrag der Induktionsspannung während des Eintauchens $|U_{ind}| = B\\cdot a\\cdot v$ gilt, und formen Sie die Beziehung nach der gesuchten Geschwindigkeit $v$ um. (4 BE)\n\nc) Der Schlitten taucht mit $v = 45\\ \\frac{\\text{cm}}{\\text{s}}$ in den Feldbereich ein. Berechnen Sie den Spannungswert, den das Messgerät in diesem Moment anzeigt. (3 BE)\n\nd) Begründen Sie, in welchen Abschnitten der Fahrstrecke das Messgerät ausschlägt und in welchen nicht. (3 BE)\n\ne) In einem zweiten Versuch steht der Schlitten still; die Leiterschleife befindet sich vollständig innerhalb des Feldbereichs. Nun wird die Flussdichte zeitlich verändert: Von $t = 0$ bis $t = 2{,}5\\ \\text{s}$ wächst sie gleichmäßig von $0$ auf $0{,}35\\ \\text{T}$, bleibt bis $t = 4{,}0\\ \\text{s}$ konstant und sinkt anschließend bis $t = 9{,}0\\ \\text{s}$ gleichmäßig wieder auf $0$. Berechnen Sie die Induktionsspannung in jedem der drei Zeitabschnitte. (4 BE)",
+  "material": [
+    {
+      "typ": "tabelle",
+      "titel": "Zeitlicher Verlauf der Flussdichte im zweiten Versuch",
+      "inhalt": "$$\\begin{array}{c|c|c|c} \\text{Abschnitt} & \\text{I} & \\text{II} & \\text{III} \\\\ \\hline t\\ \\text{in s} & 0 \\ldots 2{,}5 & 2{,}5 \\ldots 4{,}0 & 4{,}0 \\ldots 9{,}0 \\\\ \\hline B\\ \\text{in T} & 0 \\rightarrow 0{,}35 & 0{,}35 & 0{,}35 \\rightarrow 0 \\end{array}$$\n\nInnerhalb jedes Abschnitts ändert sich $B$ gleichmäßig (linear) mit der Zeit.",
+      "quelle": "eigene Erstellung",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Halte zuerst fest, welche der beiden Größen im Produkt $\\Phi = B\\cdot A$ sich im jeweiligen Versuch ändert — im ersten Versuch eine andere als im zweiten.",
+    "Beim Eintauchen wächst die vom Feld durchsetzte Fläche. Schreibe diesen Zuwachs als Produkt aus einer festen Kantenlänge und dem in der Zeit $\\Delta t$ zurückgelegten Weg.",
+    "Für Teil d) reicht es, drei Momentaufnahmen zu vergleichen: Schleife noch ganz draußen, Schleife halb drin, Schleife ganz drin. Frage dich jedes Mal nur: Ändert sich die durchsetzte Fläche?"
+  ],
+  "loesung": {
+    "gesamtpunkte": 18,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Entstehung der Spannung erklären",
+        "inhalt": "**Erklärung über die Flussänderung:** Solange die Leiterschleife in den Feldbereich hineinragt, aber noch nicht vollständig darin ist, wächst die vom Magnetfeld durchsetzte Fläche $A$ der Schleife. Da $B$ konstant ist, ändert sich damit der magnetische Fluss\n\n$$\\Phi = B\\cdot A$$\n\nNach dem Induktionsgesetz $U_{ind} = -N\\cdot\\frac{\\Delta\\Phi}{\\Delta t}$ hat jede Flussänderung eine Induktionsspannung zur Folge.\n\n**Gleichwertige Erklärung über die Lorentzkraft:** Auf die Leitungselektronen in der vorderen, senkrechten Kante der Schleife wirkt im Feld die Lorentzkraft $F_L = e\\cdot v\\cdot B$. Sie verschiebt die Elektronen längs dieser Kante zu einem Ende hin. Dort entsteht Elektronenüberschuss, am anderen Ende Elektronenmangel. Das dabei aufgebaute elektrische Feld übt eine Gegenkraft aus; im Gleichgewicht bleibt eine feste Potentialdifferenz bestehen — das ist die gemessene Spannung.",
+        "warum": {
+          "de": "Beide Erklärungen sind für diese Situation richtig und im Abitur gleichwertig, sie beschreiben aber verschiedene Ebenen: Das Induktionsgesetz ist die Bilanz für den ganzen Stromkreis, die Lorentzkraft der Mechanismus an einem einzelnen Elektron. Wer nur eine Sprechweise kennt, scheitert an der jeweils anderen Aufgabenvariante — bei einem ruhenden Leiter im veränderlichen Feld versagt die Lorentzkraft-Erzählung nämlich, weil sich dort gar nichts bewegt.",
+          "tr": "Bu durumda iki açıklama da doğrudur ve Abitur'da eşdeğer sayılır, ama farklı düzeyleri anlatırlar: indüksiyon yasası bütün devre için bir bilançodur, Lorentz kuvveti ise tek bir elektron üzerindeki mekanizmadır. Yalnızca birini bilen öğrenci öteki soru tipinde takılır — çünkü değişen alan içinde duran bir iletkende Lorentz kuvveti anlatısı çöker, orada hareket eden hiçbir şey yoktur."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 2,
+        "titel": "Die Messformel aus dem Induktionsgesetz entwickeln",
+        "inhalt": "Mit $N = 1$ und konstantem $B$ vereinfacht sich das Induktionsgesetz zu\n\n$$|U_{ind}| = \\left|\\frac{\\Delta\\Phi}{\\Delta t}\\right| = \\left|\\frac{\\Delta (B\\cdot A)}{\\Delta t}\\right| = B\\cdot\\frac{\\Delta A}{\\Delta t}$$\n\nSchiebt sich die Schleife in der Zeit $\\Delta t$ um die Strecke $\\Delta s$ weiter in das Feld hinein, so überstreicht die vordere senkrechte Kante der Höhe $a$ dabei die zusätzliche Fläche\n\n$$\\Delta A = a\\cdot\\Delta s$$\n\nEingesetzt:\n\n$$|U_{ind}| = B\\cdot\\frac{a\\cdot\\Delta s}{\\Delta t} = B\\cdot a\\cdot\\frac{\\Delta s}{\\Delta t} = B\\cdot a\\cdot v$$\n\nAuflösen nach der gesuchten Geschwindigkeit:\n\n$$v = \\frac{|U_{ind}|}{B\\cdot a}$$",
+        "warum": {
+          "de": "Erst die Herleitung macht sichtbar, warum in der Formel die Höhe $a$ steht und nicht die Länge $b$: Nur die Kante, die die Feldgrenze überquert, „fegt“ neue Fläche in das Feld. Genau deshalb ist die Messung auch überhaupt brauchbar — $B$ und $a$ sind feste Apparaturkonstanten, sodass die angezeigte Spannung direkt proportional zur gesuchten Geschwindigkeit ist und ohne Kalibrierkurve umgerechnet werden kann.",
+          "tr": "Formülü ancak türetme anlaşılır kılar: içinde neden $b$ uzunluğunun değil $a$ yüksekliğinin bulunduğunu gösterir — alan sınırını geçen kenar, alanın içine yeni yüzey \"süpüren\" tek kenardır. Ölçümün kullanışlı olmasının nedeni de tam budur: $B$ ve $a$ düzeneğin sabitleridir, dolayısıyla okunan gerilim aranan hızla doğru orantılıdır ve kalibrasyon eğrisi olmadan çevrilebilir."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 3,
+        "titel": "Spannungswert berechnen",
+        "inhalt": "Zuerst alle Größen in SI-Einheiten:\n\n$$a = 4{,}0\\ \\text{cm} = 0{,}040\\ \\text{m}, \\qquad v = 45\\ \\frac{\\text{cm}}{\\text{s}} = 0{,}45\\ \\frac{\\text{m}}{\\text{s}}$$\n\n$$|U_{ind}| = B\\cdot a\\cdot v = 0{,}35\\ \\text{T}\\cdot 0{,}040\\ \\text{m}\\cdot 0{,}45\\ \\frac{\\text{m}}{\\text{s}} = 6{,}3\\cdot 10^{-3}\\ \\text{V} = 6{,}3\\ \\text{mV}$$",
+        "warum": {
+          "de": "Die Größenordnung ist selbst ein Ergebnis: Wenige Millivolt sind der Grund, weshalb die Aufgabe ausdrücklich ein hochohmiges Messgerät nennt. Ein niederohmiges Gerät würde einen merklichen Strom ziehen, dieser Strom erzeugte nach der Lenzschen Regel eine Bremskraft — der Messvorgang würde die Geschwindigkeit verändern, die er messen soll.",
+          "tr": "Büyüklük mertebesi başlı başına bir sonuçtur: sonucun birkaç milivolt çıkması, soruda neden özellikle yüksek dirençli bir ölçü aletinden söz edildiğini açıklar. Düşük dirençli bir alet kayda değer bir akım çeker, bu akım Lenz kuralına göre bir frenleme kuvveti doğurur — ölçüm, ölçmek istediği hızı değiştirmiş olur."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 4,
+        "titel": "Streckenabschnitte mit und ohne Ausschlag begründen",
+        "inhalt": "Maßgeblich ist allein, ob sich die vom Feld durchsetzte Fläche ändert:\n\n- **Schleife vollständig vor dem Feldbereich:** $A = 0$, konstant $\\Longrightarrow$ kein Ausschlag.\n- **Schleife taucht ein** (Fahrweg $10\\ \\text{cm}$, da $b = 10\\ \\text{cm}$): $A$ wächst $\\Longrightarrow$ Ausschlag.\n- **Schleife vollständig im Feld:** Wegen $b = 10\\ \\text{cm} < L = 15\\ \\text{cm}$ gibt es diese Phase; sie dauert über einen Fahrweg von $L - b = 5{,}0\\ \\text{cm}$. Hier ist $A = a\\cdot b$ konstant $\\Longrightarrow$ kein Ausschlag, obwohl der Schlitten weiterfährt.\n- **Schleife taucht aus:** $A$ nimmt ab $\\Longrightarrow$ Ausschlag, jetzt mit umgekehrtem Vorzeichen.\n- **Schleife vollständig hinter dem Feldbereich:** wieder $A = 0$ $\\Longrightarrow$ kein Ausschlag.\n\nDas Messverfahren funktioniert also nur, solange eine der beiden senkrechten Kanten die Feldgrenze überquert.",
+        "warum": {
+          "de": "Hier entscheidet sich, ob das Induktionsgesetz wirklich verstanden wurde: Der Schlitten bewegt sich in der mittleren Phase genauso schnell wie beim Eintauchen, und trotzdem zeigt das Gerät null an. Bewegung allein induziert nichts — nur die Änderung des Flusses tut es. Der Zahlenvergleich $b < L$ ist dabei kein Nebensatz: Wäre die Schleife länger als der Feldbereich, entfiele diese Nullphase vollständig.",
+          "tr": "İndüksiyon yasasının gerçekten anlaşılıp anlaşılmadığı burada belli olur: orta evrede kızak, alana girerkenki hızın aynısıyla ilerler, buna rağmen alet sıfır gösterir. Hareketin kendisi hiçbir şey indüklemez — bunu yalnızca akının değişimi yapar. $b < L$ karşılaştırması da bir ayrıntı değildir: ilmek alan bölgesinden uzun olsaydı bu sıfır evresi hiç oluşmazdı."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 5,
+        "titel": "Induktionsspannung bei zeitlich veränderlicher Flussdichte",
+        "inhalt": "Jetzt steht die Schleife still, die Fläche ist konstant:\n\n$$A = a\\cdot b = 0{,}040\\ \\text{m}\\cdot 0{,}10\\ \\text{m} = 4{,}0\\cdot 10^{-3}\\ \\text{m}^2$$\n\nDas Induktionsgesetz vereinfacht sich nun auf die andere Hälfte:\n\n$$|U_{ind}| = A\\cdot\\frac{\\Delta B}{\\Delta t}$$\n\n**Abschnitt I** ($0 \\ldots 2{,}5\\ \\text{s}$):\n\n$$|U_{ind}| = 4{,}0\\cdot 10^{-3}\\ \\text{m}^2\\cdot\\frac{0{,}35\\ \\text{T}}{2{,}5\\ \\text{s}} = 4{,}0\\cdot 10^{-3}\\cdot 0{,}14\\ \\text{V} = 5{,}6\\cdot 10^{-4}\\ \\text{V} = 0{,}56\\ \\text{mV}$$\n\n**Abschnitt II** ($2{,}5 \\ldots 4{,}0\\ \\text{s}$): $\\Delta B = 0$, also $U_{ind} = 0\\ \\text{V}$.\n\n**Abschnitt III** ($4{,}0 \\ldots 9{,}0\\ \\text{s}$):\n\n$$|U_{ind}| = 4{,}0\\cdot 10^{-3}\\ \\text{m}^2\\cdot\\frac{0{,}35\\ \\text{T}}{5{,}0\\ \\text{s}} = 2{,}8\\cdot 10^{-4}\\ \\text{V} = 0{,}28\\ \\text{mV}$$\n\nDa $B$ hier abnimmt statt zuzunehmen, hat diese Spannung das entgegengesetzte Vorzeichen zu Abschnitt I.",
+        "warum": {
+          "de": "Derselbe Aufbau, aber die andere Hälfte des Induktionsgesetzes: Im ersten Versuch war $B$ fest und $A$ veränderlich, jetzt genau umgekehrt. Bemerkenswert ist Abschnitt III: Die Flussdichte fällt auf denselben Betrag, um den sie vorher gestiegen ist, doch weil sie doppelt so viel Zeit dafür braucht, ist die Spannung halb so groß. Nicht die Größe der Änderung zählt, sondern ihre Rate.",
+          "tr": "Aynı düzenek, ama indüksiyon yasasının öteki yarısı: ilk deneyde $B$ sabit, $A$ değişkendi; şimdi tam tersi. Asıl dikkat çekici olan III. bölümdür: akı yoğunluğu, daha önce yükseldiği kadar düşer, ama bunun için iki kat süre harcadığından gerilim yarı yarıya küçüktür. Önemli olan değişimin büyüklüğü değil, hızıdır."
+        },
+        "teilpunkte": 4
+      }
+    ],
+    "haeufige_fehler": [
+      "Die Länge $b = 10\\ \\text{cm}$ statt der Höhe $a = 4{,}0\\ \\text{cm}$ in $|U| = B\\,a\\,v$ eingesetzt.",
+      "Behauptet, das Gerät zeige während der gesamten Durchfahrt Spannung an — solange die Schleife vollständig im Feld ist, ist $\\Phi$ konstant.",
+      "Einheiten nicht umgerechnet: $45\\ \\frac{\\text{cm}}{\\text{s}}$ und $4{,}0\\ \\text{cm}$ direkt eingesetzt, Ergebnis um den Faktor $10^{4}$ zu groß.",
+      "In Teil e) weiter mit $|U| = B\\,a\\,v$ gerechnet, obwohl der Schlitten steht und sich nun $B$ statt $A$ ändert."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen, Landesabitur Physik 2008, Grundkurs, Aufgabe A1",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

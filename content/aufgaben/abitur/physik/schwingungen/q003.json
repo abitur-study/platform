@@ -1,0 +1,88 @@
+{
+  "bereich": "abitur",
+  "id": "q003",
+  "titel": "Fallbeschleunigung aus einer Fadenpendel-Messreihe",
+  "fach": "physik",
+  "themenbereich": "Schwingungen und Schwingkreis",
+  "themenbereich_slug": "schwingungen",
+  "unterthema": "Fadenpendel und Linearisierung einer Messreihe",
+  "niveau": "GK",
+  "operatoren": ["darstellen", "begründen", "bestimmen", "erläutern", "erklären"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 40,
+  "aufgabenstellung": "Eine Physik-AG will die Fallbeschleunigung $g$ am Schulstandort mit einem Fadenpendel bestimmen. Für fünf verschiedene Fadenlängen $\\ell$ wird jeweils die Zeit $t_{20}$ für $20$ vollständige Schwingungen gestoppt. Die Auslenkung bleibt dabei stets unter $5^\\circ$.\n\n$$\\begin{array}{c|c|c|c|c|c} \\ell\\ \\text{in m} & 0{,}30 & 0{,}60 & 0{,}90 & 1{,}20 & 1{,}50 \\\\ \\hline t_{20}\\ \\text{in s} & 22{,}1 & 31{,}0 & 38{,}2 & 43{,}8 & 49{,}3 \\end{array}$$\n\na) Berechnen Sie zu jeder Fadenlänge die Schwingungsdauer $T$ und das Quadrat $T^2$ und stellen Sie die Messreihe in einem Diagramm dar, in dem $T^2$ über $\\ell$ aufgetragen ist. Wählen Sie die Skalierung $1\\ \\text{cm} \\;\\widehat{=}\\; 0{,}20\\ \\text{m}$ für die erste Achse und $1\\ \\text{cm} \\;\\widehat{=}\\; 1{,}0\\ \\text{s}^2$ für die zweite Achse.\n\nb) Begründen Sie ausgehend von der Formel für die Schwingungsdauer des Fadenpendels durch eine Rechnung, dass die Messpunkte theoretisch auf einer Ursprungsgeraden mit der Steigung $\\frac{4\\pi^2}{g}$ liegen müssen.\n\nc) Zeichnen Sie in Ihr Diagramm eine Ursprungsgerade ein, die die Messpunkte möglichst gut annähert, ermitteln Sie deren Steigung und bestimmen Sie damit den experimentellen Wert für $g$.\n\nd) Erläutern Sie qualitativ die Energieumwandlung beim Fadenpendel während einer vollen Periode und berechnen Sie die Geschwindigkeit des Pendelkörpers beim Durchgang durch den tiefsten Punkt, wenn er zuvor um die Höhe $h = 0{,}080\\ \\text{m}$ angehoben wurde.\n\ne) Eine Raumstationsbesatzung besitzt ein Fadenpendel, ein Federpendel mit bekannter Federkonstante und eine Stoppuhr. Erklären Sie, wie sich damit die Masse eines unbekannten Körpers in der Schwerelosigkeit bestimmen lässt.",
+  "material": [],
+  "tipps": [
+    "Ergänze die Tabelle um zwei Zeilen: eine für $T$ und eine für $T^2$. Erst danach lohnt es sich, überhaupt zu zeichnen.",
+    "Forme die Pendelformel so um, dass links nur noch $T^2$ steht. Vergleiche das Ergebnis mit der Geradengleichung $y = m\\cdot x$ und überlege, welche Größe die Rolle von $x$ und welche die Rolle von $m$ übernimmt.",
+    "Für Teil e): Frage dich zuerst, in welcher der beiden Pendelformeln die schwingende Masse überhaupt vorkommt — und welche Kraft im schwerelosen Raum noch übrig bleibt."
+  ],
+  "loesung": {
+    "gesamtpunkte": 18,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Messwerte in $T$ und $T^2$ umrechnen",
+        "inhalt": "Die Schwingungsdauer folgt aus $T = \\dfrac{t_{20}}{20}$, danach wird quadriert:\n\n$$\\begin{array}{c|c|c|c|c|c} \\ell\\ \\text{in m} & 0{,}30 & 0{,}60 & 0{,}90 & 1{,}20 & 1{,}50 \\\\ \\hline t_{20}\\ \\text{in s} & 22{,}1 & 31{,}0 & 38{,}2 & 43{,}8 & 49{,}3 \\\\ \\hline T\\ \\text{in s} & 1{,}105 & 1{,}550 & 1{,}910 & 2{,}190 & 2{,}465 \\\\ \\hline T^2\\ \\text{in s}^2 & 1{,}22 & 2{,}40 & 3{,}65 & 4{,}80 & 6{,}08 \\end{array}$$\n\nDie fünf Wertepaare $(\\ell \\mid T^2)$ werden mit der vorgegebenen Skalierung eingetragen. Sie liegen erkennbar nahe an einer Geraden durch den Ursprung.",
+        "warum": {
+          "de": "Gemessen wird die Zeit für 20 Schwingungen und nicht für eine einzige, weil sich der Reaktionsfehler beim Starten und Stoppen der Uhr dadurch auf zwanzig Perioden verteilt und der relative Fehler auf ein Zwanzigstel sinkt. Genau deshalb darf man am Ende auch nicht vergessen zu dividieren — das ist der häufigste Fehler in dieser Aufgabe.",
+          "tr": "Tek bir salınım yerine 20 salınımın süresi ölçülür, çünkü kronometreyi başlatıp durdururkenki tepki hatası yirmi periyoda dağılır ve bağıl hata yirmide bire iner. Tam da bu yüzden sonunda 20'ye bölmeyi unutmamak gerekir — bu soruda en sık yapılan hata budur."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Theoretische Begründung der Ursprungsgeraden",
+        "inhalt": "Für das Fadenpendel gilt bei kleinen Auslenkungen\n\n$$T = 2\\pi\\cdot\\sqrt{\\frac{\\ell}{g}}$$\n\nQuadrieren beider Seiten liefert\n\n$$T^2 = 4\\pi^2\\cdot\\frac{\\ell}{g} = \\underbrace{\\frac{4\\pi^2}{g}}_{\\text{Steigung}}\\cdot\\ \\ell$$\n\nDas ist eine Gleichung der Form $y = m\\cdot x$ mit $y = T^2$, $x = \\ell$ und $m = \\frac{4\\pi^2}{g}$. Da kein konstanter Summand auftritt, geht die Gerade durch den Ursprung; $T^2$ ist also direkt proportional zu $\\ell$.",
+        "warum": {
+          "de": "Trägt man $T$ direkt über $\\ell$ auf, entsteht eine Wurzelkurve, aus der man ohne Ausgleichsrechnung nichts ablesen kann. Das Quadrieren ist eine Linearisierung: Sie verwandelt die gesuchte Naturkonstante in die Steigung einer Geraden — und eine Gerade kann man mit Lineal und Steigungsdreieck auswerten. Dieses Vorgehen ist das Standardwerkzeug jeder physikalischen Messreihe.",
+          "tr": "$T$ doğrudan $\\ell$ üzerine çizilirse bir karekök eğrisi çıkar ve ondan uyum hesabı olmadan hiçbir şey okunamaz. Kare almak bir doğrusallaştırmadır: aranan doğa sabitini bir doğrunun eğimine dönüştürür — doğruyu ise cetvel ve eğim üçgeniyle değerlendirebilirsiniz. Bu yöntem her fizik ölçüm serisinin standart aracıdır."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 3,
+        "titel": "Steigung ablesen und $g$ bestimmen",
+        "inhalt": "Die Ausgleichsgerade wird so durch den Ursprung gelegt, dass etwa gleich viele Messpunkte ober- und unterhalb liegen. Mit dem Steigungsdreieck vom Ursprung zum Punkt $(1{,}50\\ \\text{m} \\mid 6{,}05\\ \\text{s}^2)$ folgt\n\n$$m_{\\text{exp}} = \\frac{\\Delta (T^2)}{\\Delta \\ell} = \\frac{6{,}05\\ \\text{s}^2}{1{,}50\\ \\text{m}} \\approx 4{,}03\\ \\frac{\\text{s}^2}{\\text{m}}$$\n\nAus $m_{\\text{exp}} = \\frac{4\\pi^2}{g}$ ergibt sich\n\n$$g = \\frac{4\\pi^2}{m_{\\text{exp}}} = \\frac{39{,}48}{4{,}03}\\ \\frac{\\text{m}}{\\text{s}^2} \\approx 9{,}80\\ \\frac{\\text{m}}{\\text{s}^2}$$\n\nDer Literaturwert $9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}$ wird damit auf etwa $0{,}1\\ \\%$ genau reproduziert.",
+        "warum": {
+          "de": "Das Steigungsdreieck muss an der gezeichneten Ausgleichsgeraden abgegriffen werden, nicht an zwei beliebigen Messpunkten — sonst geht der ganze Mittelungseffekt der Messreihe verloren und ein einzelner Ausreißer bestimmt das Ergebnis. Der Vergleich mit dem Literaturwert am Schluss ist Pflicht: Er ist die einzige unabhängige Kontrolle dafür, dass beim Quadrieren oder beim Kehrwert kein Fehler passiert ist.",
+          "tr": "Eğim üçgeni, iki rastgele ölçüm noktasından değil, çizilen uyum doğrusundan alınmalıdır — aksi hâlde ölçüm serisinin bütün ortalama etkisi kaybolur ve tek bir sapan nokta sonucu belirler. Sondaki literatür değeriyle karşılaştırma zorunludur: kare alırken ya da tersini alırken hata yapılmadığının tek bağımsız kontrolü budur."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 4,
+        "titel": "Energieumwandlung und Geschwindigkeit im tiefsten Punkt",
+        "inhalt": "Beim Fadenpendel wandeln sich fortwährend potentielle Energie $E_{\\text{pot}} = m\\cdot g\\cdot h$ und kinetische Energie $E_{\\text{kin}} = \\tfrac{1}{2}m v^2$ ineinander um.\n\n- $t = 0$ (Umkehrpunkt, Höhe $h$ maximal): $E_{\\text{pot}}$ maximal, $v = 0$, also $E_{\\text{kin}} = 0$.\n- $t = \\tfrac{T}{4}$ (Ruhelage, tiefster Punkt): $h = 0$, $E_{\\text{pot}} = 0$, $v$ und damit $E_{\\text{kin}}$ maximal.\n- $t = \\tfrac{T}{2}$ (Umkehrpunkt auf der anderen Seite): wieder $E_{\\text{pot}}$ maximal, $E_{\\text{kin}} = 0$.\n- In der zweiten Halbperiode läuft derselbe Wechsel in umgekehrter Bewegungsrichtung ab.\n\nDie Summe $E_{\\text{ges}} = E_{\\text{pot}} + E_{\\text{kin}}$ bleibt dabei konstant. Aus $m\\cdot g\\cdot h = \\tfrac{1}{2}m v^2$ folgt nach Kürzen von $m$:\n\n$$v = \\sqrt{2\\,g\\,h} = \\sqrt{2\\cdot 9{,}81\\ \\tfrac{\\text{m}}{\\text{s}^2}\\cdot 0{,}080\\ \\text{m}} \\approx 1{,}25\\ \\frac{\\text{m}}{\\text{s}}$$",
+        "warum": {
+          "de": "Dass sich die Masse hier vollständig herauskürzt, ist die eigentliche Aussage: Ein schwerer und ein leichter Pendelkörper durchlaufen den tiefsten Punkt mit exakt derselben Geschwindigkeit. Wer den Ansatz mit $E_{\\text{pot}}$ und $E_{\\text{kin}}$ wählt, statt eine Bewegungsgleichung zu lösen, kommt in zwei Zeilen zum Ziel — die Energiebilanz kennt nur Anfangs- und Endzustand und braucht den Bahnverlauf dazwischen gar nicht.",
+          "tr": "Kütlenin burada tamamen sadeleşmesi asıl mesajdır: ağır ve hafif bir sarkaç cismi en alçak noktadan tam olarak aynı hızla geçer. Hareket denklemini çözmek yerine $E_{\\text{pot}}$ ve $E_{\\text{kin}}$ kurulumunu seçen iki satırda sonuca ulaşır — enerji bilançosu yalnızca başlangıç ve bitiş durumunu bilir, arada izlenen yolu hiç gerektirmez."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 5,
+        "titel": "Massenbestimmung in der Schwerelosigkeit",
+        "inhalt": "Für die Massenbestimmung eignet sich nur das **Federpendel**. Seine rücktreibende Kraft ist die Spannkraft der Feder, $F = -D\\cdot s$; sie ist von $g$ völlig unabhängig und existiert deshalb auch im schwerelosen Raum. Die Besatzung befestigt den unbekannten Körper an der Feder, regt eine Schwingung an und misst mit der Stoppuhr die Periodendauer $T$. Umstellen von\n\n$$T = 2\\pi\\cdot\\sqrt{\\frac{m}{D}} \\qquad\\Longrightarrow\\qquad m = \\frac{D\\cdot T^2}{4\\pi^2}$$\n\nliefert die gesuchte Masse. Das Fadenpendel scheidet aus zwei Gründen aus: Seine Periodendauer $T = 2\\pi\\sqrt{\\ell/g}$ enthält die Pendelmasse gar nicht, und in der Schwerelosigkeit fehlt mit der Gewichtskraft überhaupt die rücktreibende Kraft — es schwingt dort nicht.",
+        "warum": {
+          "de": "Diese Teilaufgabe trennt die beiden Begriffe Masse und Gewichtskraft, die im Alltag ständig verwechselt werden. Eine Waage misst im All nichts, weil sie eine Kraft misst; die Trägheit des Körpers bleibt dagegen erhalten und genau sie steckt im $m$ der Federpendelformel. Real wird an Bord der ISS mit exakt diesem Prinzip (Body Mass Measurement Device) gearbeitet.",
+          "tr": "Bu şık, günlük dilde sürekli karıştırılan kütle ve ağırlık kavramlarını birbirinden ayırır. Terazi uzayda hiçbir şey ölçmez, çünkü bir kuvvet ölçer; cismin eylemsizliği ise korunur ve yay sarkacı formülündeki $m$ tam olarak odur. ISS'te de kütle ölçümü gerçekten tam bu ilkeyle (Body Mass Measurement Device) yapılır."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "$t_{20}$ direkt als Schwingungsdauer eingesetzt — die Division durch $20$ vergessen; das Ergebnis für $g$ ist dann um den Faktor $400$ zu klein.",
+      "$T$ statt $T^2$ über $\\ell$ aufgetragen; die entstehende Wurzelkurve hat keine ablesbare Steigung.",
+      "Beim Umstellen $g = \\frac{4\\pi^2}{m}$ mit $g = 4\\pi^2\\cdot m$ verwechselt — Einheitenkontrolle ($\\text{s}^2/\\text{m}$ im Nenner) deckt das sofort auf.",
+      "Für die Massenbestimmung im All das Fadenpendel gewählt, obwohl dessen Formel die Masse überhaupt nicht enthält."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen, Landesabitur Physik 2008, Grundkurs, Aufgabe B1 (Mechanische Schwingungen)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

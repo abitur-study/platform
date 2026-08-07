@@ -2,7 +2,7 @@ import { fachBySlug, themaBySlug } from "../../../../../../../content/registry";
 import { AufgabeView } from "@/components/AufgabeView";
 import { Kopf } from "@/components/Kacheln";
 import { getMessages, isLocale, LOCALES } from "@/i18n";
-import { alleAufgaben, aufgabeById } from "@/lib/content";
+import { abiturAufgabe, alleAufgaben } from "@/lib/content";
 import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
@@ -26,7 +26,7 @@ export default async function AufgabeSeite({
   const { locale, fach: fachSlug, thema: themaSlug, id } = await params;
   const fach = fachBySlug(fachSlug);
   const thema = themaBySlug(fach, themaSlug);
-  const a = aufgabeById(id);
+  const a = abiturAufgabe(fachSlug, themaSlug, id);
   if (!isLocale(locale) || !fach || !thema || !a || a.bereich !== "abitur")
     notFound();
   const t = getMessages(locale);

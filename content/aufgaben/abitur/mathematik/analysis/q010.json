@@ -1,0 +1,88 @@
+{
+  "bereich": "abitur",
+  "id": "q010",
+  "titel": "Warteschlange an einem Fähranleger",
+  "fach": "mathematik",
+  "themenbereich": "Analysis",
+  "themenbereich_slug": "analysis",
+  "unterthema": "Änderungsrate und Rekonstruktion von Beständen",
+  "niveau": "GK",
+  "operatoren": ["berechnen", "bestimmen", "zeigen", "interpretieren"],
+  "sprache": "de",
+  "schwierigkeit": 4,
+  "bearbeitungszeit_min": 40,
+  "aufgabenstellung": "Am Fähranleger von Eminönü bildet sich zur Hauptverkehrszeit eine Warteschlange. Zu Beobachtungsbeginn $t = 0$ warten dort bereits zahlreiche Fahrgäste. Die momentane Änderungsrate der Anzahl der wartenden Fahrgäste wird für $t \\in [0;\\,8]$ modelliert durch\n\n$$f(t) = 60\\,e^{-t}\\left(2\\,e^{-t} - 1{,}1\\right).$$\n\nDabei ist $t$ die Zeit in Stunden ab Beobachtungsbeginn und $f(t)$ die Änderungsrate in $10$ Fahrgästen pro Stunde.\n\na) Berechnen Sie $f(1)$ und interpretieren Sie das Vorzeichen des Ergebnisses im Sachzusammenhang.\n\nb) Bestimmen Sie rechnerisch den Zeitpunkt, zu dem sich die Länge der Warteschlange momentan nicht ändert.\n\nc) Zeigen Sie, dass für die Ableitungsfunktion gilt: $f'(t) = 6\\,e^{-t}\\left(11 - 40\\,e^{-t}\\right)$.\n\nd) Bestimmen Sie Lage und Art des Extrempunkts des Graphen von $f$ und interpretieren Sie den zugehörigen Zeitpunkt im Sachzusammenhang.\n\ne) Eine im Sachzusammenhang passende Stammfunktion von $f$ ist $F$ mit $F(t) = 66\\,e^{-t} - 60\\,e^{-2t}$. Berechnen Sie, um wie viele Fahrgäste die Warteschlange zwischen $t = 0$ und $t = 8$ kürzer wird.",
+  "material": [],
+  "tipps": [
+    "Multipliziere den Term zuerst aus: $f(t) = 120\\,e^{-2t} - 66\\,e^{-t}$. In dieser Form lässt sich bequem ableiten, in der Produktform bequem Nullstellen ablesen.",
+    "Für Nullstellen und Extremstellen hilft die Substitution $u = e^{-t}$; beachte dabei, dass $u > 0$ immer erfüllt ist und der Faktor $e^{-t}$ deshalb nie null wird.",
+    "Ein Integral über eine Änderungsrate liefert keine Rate, sondern eine Bestandsänderung. Achte auf die Einheit „$10$ Fahrgäste“."
+  ],
+  "loesung": {
+    "gesamtpunkte": 18,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Funktionswert an der Stelle $t = 1$ berechnen und deuten",
+        "inhalt": "Ausmultipliziert lautet die Funktion\n\n$$f(t) = 120\\,e^{-2t} - 66\\,e^{-t}.$$\n\nEinsetzen von $t = 1$:\n\n$$f(1) = 120\\,e^{-2} - 66\\,e^{-1} \\approx 120 \\cdot 0{,}1353 - 66 \\cdot 0{,}3679 \\approx 16{,}24 - 24{,}28 = -8{,}04$$\n\nDas Ergebnis ist negativ. Eine Stunde nach Beobachtungsbeginn nimmt die Zahl der Wartenden also ab, und zwar mit etwa $8{,}04 \\cdot 10 \\approx 80$ Fahrgästen pro Stunde. Es verlassen zu diesem Zeitpunkt mehr Fahrgäste die Schlange (weil sie einsteigen), als neue hinzukommen.",
+        "warum": {
+          "de": "Das Vorzeichen der Änderungsrate ist die eigentliche Information, nicht der Zahlenwert: es unterscheidet Wachsen von Schrumpfen des Bestands. Wer $-8{,}04$ als „es warten $-80$ Fahrgäste“ liest, verwechselt die Rate mit dem Bestand — die Funktion $f$ sagt über die tatsächliche Länge der Schlange gar nichts aus.",
+          "tr": "Değişim hızının işareti asıl bilgidir, sayısal değeri değil: mevcudun artmasını mı azalmasını mı gösterdiğini o belirler. $-8{,}04$ değerini \"$-80$ yolcu bekliyor\" diye okuyan kişi, hızı miktarla karıştırır — $f$ fonksiyonu kuyruğun gerçek uzunluğu hakkında hiçbir şey söylemez."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Zeitpunkt ohne momentane Änderung bestimmen",
+        "inhalt": "Gesucht ist die Nullstelle von $f$:\n\n$$60\\,e^{-t}\\left(2\\,e^{-t} - 1{,}1\\right) = 0$$\n\nDa $60\\,e^{-t} > 0$ für alle $t$ gilt, kann nur der zweite Faktor null werden:\n\n$$2\\,e^{-t} = 1{,}1 \\quad\\Longrightarrow\\quad e^{-t} = 0{,}55 \\quad\\Longrightarrow\\quad t = \\ln\\!\\left(\\frac{20}{11}\\right) \\approx 0{,}598$$\n\nNach etwa $0{,}60$ Stunden — also rund $36$ Minuten nach Beobachtungsbeginn — kommen genauso viele Fahrgäste hinzu, wie die Schlange verlassen. Die Warteschlange ist zu diesem Zeitpunkt am längsten.",
+        "warum": {
+          "de": "Der Satz vom Nullprodukt ist hier nur zulässig, weil vorher begründet wurde, dass der Exponentialfaktor niemals null wird — genau daran scheitern viele Lösungen, die $e^{-t} = 0$ als „Lösung“ mitschleppen. Inhaltlich ist der Nulldurchgang der Rate der Umschlagpunkt zwischen Anwachsen und Abbau der Schlange.",
+          "tr": "Çarpımın sıfır olması kuralı burada ancak üstel çarpanın asla sıfır olmadığı önceden gerekçelendirildiği için uygulanabilir — birçok çözüm tam bu noktada, $e^{-t} = 0$'ı \"çözüm\" diye taşıyarak hata yapar. Anlamca ise hızın sıfırdan geçtiği an, kuyruğun büyümesinden erimesine geçtiği dönüm noktasıdır."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 3,
+        "titel": "Ableitungsfunktion nachweisen",
+        "inhalt": "Ausgehend von $f(t) = 120\\,e^{-2t} - 66\\,e^{-t}$ liefert die Kettenregel\n\n$$f'(t) = 120 \\cdot (-2)\\,e^{-2t} - 66 \\cdot (-1)\\,e^{-t} = -240\\,e^{-2t} + 66\\,e^{-t}.$$\n\nAusklammern von $6\\,e^{-t}$:\n\n$$f'(t) = 6\\,e^{-t}\\left(-40\\,e^{-t} + 11\\right) = 6\\,e^{-t}\\left(11 - 40\\,e^{-t}\\right)$$\n\nDas ist die behauptete Darstellung.",
+        "warum": {
+          "de": "Die vorgegebene Zielform ist kein Selbstzweck: das ausgeklammerte $6\\,e^{-t}$ ist der Faktor, der garantiert positiv ist, sodass in Schritt 4 allein die Klammer über das Vorzeichen entscheidet. Bei einem Zeigen-Auftrag muss zudem der ganze Weg dokumentiert werden — das bloße Nachrechnen der Übereinstimmung an einer Stelle reicht als Nachweis nicht aus.",
+          "tr": "Verilen hedef biçim keyfî değildir: dışarı alınan $6\\,e^{-t}$ her zaman pozitif olan çarpandır, böylece 4. adımda işareti yalnızca parantez belirler. Ayrıca \"gösteriniz\" görevinde tüm yol yazılmalıdır — tek bir noktada eşitliği doğrulamak kanıt sayılmaz."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 4,
+        "titel": "Extrempunkt bestimmen und interpretieren",
+        "inhalt": "Notwendige Bedingung $f'(t) = 0$. Da $6\\,e^{-t} > 0$ ist:\n\n$$11 - 40\\,e^{-t} = 0 \\quad\\Longrightarrow\\quad e^{-t} = \\frac{11}{40} = 0{,}275 \\quad\\Longrightarrow\\quad t_E = \\ln\\!\\left(\\frac{40}{11}\\right) \\approx 1{,}29$$\n\nHinreichende Bedingung mit $f''(t) = 480\\,e^{-2t} - 66\\,e^{-t}$ und $e^{-t_E} = 0{,}275$:\n\n$$f''(t_E) = 480 \\cdot 0{,}275^2 - 66 \\cdot 0{,}275 = 36{,}30 - 18{,}15 = 18{,}15 > 0$$\n\nAlso liegt ein Tiefpunkt vor. Funktionswert:\n\n$$f(t_E) = 120 \\cdot 0{,}275^2 - 66 \\cdot 0{,}275 = 9{,}075 - 18{,}15 = -9{,}075$$\n\nTiefpunkt $T(1{,}29 \\mid -9{,}08)$. Etwa $1{,}29$ Stunden (rund $77$ Minuten) nach Beobachtungsbeginn schrumpft die Warteschlange am schnellsten — mit etwa $91$ Fahrgästen pro Stunde.",
+        "warum": {
+          "de": "Ein Tiefpunkt der Änderungsrate ist kein Minimum der Warteschlange, sondern der Zeitpunkt der stärksten Abnahme — das ist die klassische Verwechslung bei Rekonstruktionsaufgaben. Die Länge der Schlange selbst hat dort einen Wendepunkt, weil $f$ die Ableitung des Bestands ist.",
+          "tr": "Değişim hızının minimumu, kuyruğun minimumu değildir; en hızlı azalma anıdır — miktar geri kazanma sorularında klasik karışıklık tam budur. Kuyruğun uzunluğunun kendisi orada bir dönüm noktasına sahiptir, çünkü $f$ miktarın türevidir."
+        },
+        "teilpunkte": 5
+      },
+      {
+        "nr": 5,
+        "titel": "Bestandsänderung über den gesamten Zeitraum berechnen",
+        "inhalt": "Die Änderung des Bestands zwischen $t = 0$ und $t = 8$ ist das Integral über die Änderungsrate:\n\n$$\\int_0^{8} f(t)\\,dt = F(8) - F(0)$$\n\n$$F(0) = 66\\,e^{0} - 60\\,e^{0} = 66 - 60 = 6$$\n\n$$F(8) = 66\\,e^{-8} - 60\\,e^{-16} \\approx 66 \\cdot 3{,}355\\cdot 10^{-4} - 60 \\cdot 1{,}125 \\cdot 10^{-7} \\approx 0{,}0221$$\n\n$$F(8) - F(0) \\approx 0{,}0221 - 6 = -5{,}98$$\n\nDer Wert ist in der Einheit $10$ Fahrgäste angegeben. Die Warteschlange wird in den acht Stunden also um etwa $5{,}98 \\cdot 10 \\approx 60$ Fahrgäste kürzer.",
+        "warum": {
+          "de": "Das Integral liefert nur die Differenz der Bestände, nicht die Bestände selbst — die Anzahl der Wartenden zu Beobachtungsbeginn bleibt unbekannt und lässt sich aus $f$ prinzipiell nicht rekonstruieren. Dass $F(8)$ fast null ist, zeigt zudem, dass sich nach acht Stunden praktisch nichts mehr ändert: beide Exponentialterme sind dann längst abgeklungen.",
+          "tr": "İntegral yalnızca miktarlar arasındaki farkı verir, miktarların kendisini değil — gözlem başındaki bekleyen sayısı bilinmez kalır ve ilke olarak $f$'ten geri elde edilemez. Ayrıca $F(8)$ değerinin neredeyse sıfır olması, sekiz saat sonra pratikte hiçbir şeyin değişmediğini gösterir: her iki üstel terim de çoktan sönmüştür."
+        },
+        "teilpunkte": 4
+      }
+    ],
+    "haeufige_fehler": [
+      "Die Änderungsrate $f$ als Anzahl der Wartenden gedeutet — $f$ beschreibt nur, wie schnell sich diese Anzahl ändert.",
+      "Beim Lösen von $f(t) = 0$ den Faktor $e^{-t}$ null gesetzt; die Exponentialfunktion hat keine Nullstelle.",
+      "Den Tiefpunkt von $f$ als „kürzeste Warteschlange“ statt als „stärkste Abnahme“ interpretiert.",
+      "Am Ende die Einheit „$10$ Fahrgäste“ unterschlagen und das Ergebnis als $6$ Personen angegeben."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil des Regionalabiturs 2023, Vorschlag 1, Aufgabe 1 (Analysis)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-05",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

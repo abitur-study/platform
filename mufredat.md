@@ -124,9 +124,27 @@ bağlantı** önemli.
 - **Bremsstrahlung**
 - **Charakteristische Röntgenstrahlung**
 
+**6b. Atommodell und Quantenobjekte** ✅ — *işlendi, ama o yılın Abitur'unda
+çıkmadı. Müfredat içindedir; ileriki yıllarda çıkabilir, o yüzden soru
+yazılabilir — sadece öncelik sırasında aşağıda.*
+- **Bohrsches Atommodell** ✅
+- **Linienspektrum** (Emission und Absorption) ✅
+- **Termschema** — Energieniveaus, Übergänge, $E = h\,f$ ✅
+- **Balmer-Serie** ✅
+- **Franck-Hertz-Versuch** ✅
+- **de-Broglie-Wellenlänge** $\lambda = h/p$ ✅ — **hesap dâhil**
+- **Elektronenbeugung** ✅ — hesap dâhil
+- **Compton-Effekt** ✅ — **YALNIZCA NİTEL**: fotonun momentumu olduğu ve
+  saçılmada dalga boyunun arttığı. $\Delta\lambda = (h/m_e c)(1-\cos\theta)$
+  ile **hesap yaptırılmadı**, soruya hesap olarak girmez.
+
 **7. Kernphysik** — **çok az** işlendi ✅
 
 **Yok:** Relativitätstheorie, Radioaktivität.
+
+> ⚠️ 6b düzeltmedir. Bu bölüm başta hiç yazılmamıştı ve `BRIEF.md` bunları
+> yanlışlıkla "kesinlikle yasak" listesine koymuştu. Öğrenci teyit etti:
+> hepsi işlendi.
 
 ---
 

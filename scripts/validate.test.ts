@@ -16,6 +16,7 @@ import {
   findeMultipleChoice,
   pruefeLatex,
   pruefeHtml,
+  pruefeKlartext,
   pruefeOperatoren,
   pruefePunkte,
   pruefeSchritte,
@@ -30,7 +31,7 @@ const alleDateien = readdirSync(WURZEL, { recursive: true, encoding: "utf8" })
   .sort();
 
 const gold = ladeDatei(
-  join(WURZEL, "abitur/mathematik/analysis/mathe-analysis-extremwert-schachtel-001.json"),
+  join(WURZEL, "abitur/mathematik/analysis/q003.json"),
 ) as AbiturAufgabe;
 const klon = <T extends Aufgabe>(a: T): T => structuredClone(a);
 
@@ -101,6 +102,13 @@ test("LaTeX'teki küçüktür işareti HTML sanılmaz", () => {
   // "$a < v$" içindeki "< v" bir etiket değil; matematik bölgeleri elenmeli.
   mathe.aufgabenstellung = "Es gilt $a < v$ und $$b < g$$.";
   assert.deepEqual(pruefeHtml(mathe), []);
+});
+
+test("başlıkta LaTeX yakalanır", () => {
+  assert.deepEqual(pruefeKlartext(gold), []);
+  const roh = klon(gold);
+  roh.titel = "Untersuchung von $f(x)=x^2$";
+  assert.equal(pruefeKlartext(roh).length, 1);
 });
 
 // --- 4) Adım kalitesi ----------------------------------------------------

@@ -1,0 +1,88 @@
+{
+  "bereich": "abitur",
+  "id": "q003",
+  "titel": "Der Hallwachs-Versuch an der geladenen Zinkplatte",
+  "fach": "physik",
+  "themenbereich": "Quantenphysik",
+  "themenbereich_slug": "quantenphysik",
+  "unterthema": "Nachweis des Photoeffekts",
+  "niveau": "GK",
+  "operatoren": ["beschreiben", "berechnen", "erklären", "begründen"],
+  "sprache": "de",
+  "schwierigkeit": 2,
+  "bearbeitungszeit_min": 25,
+  "aufgabenstellung": "Eine blank geschmirgelte Zinkplatte ist leitend mit einem Elektroskop verbunden. Die Platte wird negativ aufgeladen; der Zeigerausschlag des Elektroskops bleibt über mehrere Minuten unverändert. Bestrahlt man die Platte anschließend mit dem Licht einer Quecksilberdampflampe, die einen hohen Ultraviolettanteil besitzt, so fällt der Zeiger rasch zurück.\n\nDaran schließen sich drei Abwandlungen an:\n\n(A) Zwischen Lampe und Platte wird ein Rotfilter gestellt, das nur Licht mit $\\lambda > 600\\ \\text{nm}$ durchlässt. Der Zeigerausschlag bleibt nun beliebig lange erhalten.\n\n(B) Das Filter wird wieder entfernt, stattdessen wird die Lampe auf den doppelten Abstand gebracht. Der Zeiger fällt weiterhin zurück, nur deutlich langsamer.\n\n(C) Die Platte wird positiv aufgeladen und ohne Filter aus dem ursprünglichen Abstand bestrahlt. Der Zeigerausschlag ändert sich nicht.\n\nFür Zink beträgt die Austrittsarbeit $W_A = 4{,}28\\ \\text{eV}$. Verwenden Sie $h = 6{,}626\\cdot 10^{-34}\\ \\text{J}\\,\\text{s}$, $c = 3{,}00\\cdot 10^{8}\\ \\frac{\\text{m}}{\\text{s}}$ und $1\\ \\text{eV} = 1{,}602\\cdot 10^{-19}\\ \\text{J}$.\n\na) Beschreiben Sie, welcher Vorgang an der Zinkplatte abläuft, und erklären Sie damit den Rückgang des Zeigerausschlags im Grundversuch. (4 BE)\n\nb) Berechnen Sie die Grenzwellenlänge von Zink und erklären Sie mit diesem Ergebnis die Beobachtung in Versuch (A). (5 BE)\n\nc) Erklären Sie den Unterschied zwischen den Versuchen (A) und (B) im Photonenmodell und begründen Sie, warum gerade dieser Unterschied das klassische Wellenmodell des Lichts widerlegt. (4 BE)\n\nd) Erklären Sie die Beobachtung in Versuch (C). (3 BE)",
+  "material": [],
+  "tipps": [
+    "Ein Elektroskop zeigt nur den Betrag der Ladung an. Überlege dir zuerst, welche Ladungsträger an einer Metallplatte überhaupt beweglich sind.",
+    "Die Grenzwellenlänge ist die Wellenlänge, bei der die Photonenenergie gerade noch für die Austrittsarbeit reicht — die Elektronen kommen dann mit der kinetischen Energie null heraus.",
+    "In (A) ändert sich die Farbe des Lichts, in (B) nur seine Intensität. Frage dich getrennt, was jede der beiden Größen im Photonenmodell bedeutet."
+  ],
+  "loesung": {
+    "gesamtpunkte": 16,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Vorgang an der Platte: äußerer Photoeffekt",
+        "inhalt": "Das auftreffende Licht löst aus der Zinkoberfläche Elektronen heraus — das ist der äußere Photoeffekt. Ein Photon der Energie $E = h\\cdot f$ gibt seine Energie vollständig an ein einzelnes Elektron im Metall ab. Reicht diese Energie aus, um die Austrittsarbeit $W_A$ zu verrichten, so verlässt das Elektron das Metall; der Rest bleibt ihm als kinetische Energie:\n\n$$E_{kin,\\,max} = h\\cdot f - W_A$$\n\nDie Platte trägt zu Beginn einen Elektronenüberschuss. Mit jedem austretenden Elektron verringert sich dieser Überschuss, die Platte wird also elektrisch neutraler. Da der Zeigerausschlag des Elektroskops ein Maß für die Ladung ist, geht er zurück.",
+        "warum": {
+          "de": "Der Versuch beweist nicht, dass Licht Elektronen erzeugt, sondern dass es bereits vorhandene Leitungselektronen aus dem Metall befreit. Die Austrittsarbeit ist genau die Energie, die diese Elektronen an der Metalloberfläche festhält — ohne sie würde jedes Metall bei Raumtemperatur von selbst Elektronen verlieren.",
+          "tr": "Deney, ışığın elektron ürettiğini değil, metalde zaten var olan iletim elektronlarını serbest bıraktığını gösterir. Çıkış işi tam olarak bu elektronları metal yüzeyinde tutan enerjidir — o olmasaydı her metal oda sıcaklığında kendiliğinden elektron kaybederdi."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 2,
+        "titel": "Grenzwellenlänge von Zink berechnen",
+        "inhalt": "An der Grenze verlassen die Elektronen das Metall gerade eben, also mit $E_{kin,\\,max} = 0$. Damit gilt\n\n$$h\\cdot f_g = W_A \\quad\\text{und}\\quad f_g = \\frac{c}{\\lambda_g} \\quad\\Longrightarrow\\quad \\lambda_g = \\frac{h\\cdot c}{W_A}$$\n\nZuerst die Austrittsarbeit in Joule:\n\n$$W_A = 4{,}28\\ \\text{eV}\\cdot 1{,}602\\cdot 10^{-19}\\ \\frac{\\text{J}}{\\text{eV}} = 6{,}857\\cdot 10^{-19}\\ \\text{J}$$\n\n$$\\lambda_g = \\frac{6{,}626\\cdot 10^{-34}\\ \\text{J}\\,\\text{s}\\cdot 3{,}00\\cdot 10^{8}\\ \\frac{\\text{m}}{\\text{s}}}{6{,}857\\cdot 10^{-19}\\ \\text{J}} = \\frac{1{,}988\\cdot 10^{-25}\\ \\text{J}\\,\\text{m}}{6{,}857\\cdot 10^{-19}\\ \\text{J}} \\approx 2{,}90\\cdot 10^{-7}\\ \\text{m}$$\n\nAlso $\\lambda_g \\approx 290\\ \\text{nm}$ — das liegt im ultravioletten Bereich.",
+        "warum": {
+          "de": "Das Ergebnis erklärt, warum der Versuch überhaupt eine UV-Lampe braucht: Sichtbares Licht reicht von etwa $400$ bis $750\\ \\text{nm}$ und liegt damit vollständig oberhalb der Grenzwellenlänge von Zink. Genau deshalb blockiert auch eine gewöhnliche Fensterglasscheibe den Versuch — Glas absorbiert UV.",
+          "tr": "Sonuç, deneyin neden bir UV lambası gerektirdiğini açıklar: görünür ışık yaklaşık $400$ ile $750\\ \\text{nm}$ arasındadır, yani tamamen çinkonun sınır dalga boyunun üstünde kalır. Sıradan bir pencere camının deneyi durdurmasının nedeni de tam budur — cam UV'yi soğurur."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 3,
+        "titel": "Versuch (A) deuten: Rotfilter",
+        "inhalt": "Das Rotfilter lässt nur Licht mit $\\lambda > 600\\ \\text{nm}$ durch, also mit $\\lambda > \\lambda_g = 290\\ \\text{nm}$. Für die Photonenenergie folgt daraus\n\n$$E = \\frac{h\\cdot c}{\\lambda} < \\frac{h\\cdot c}{\\lambda_g} = W_A$$\n\nKein einzelnes Photon dieses Lichts besitzt genug Energie, um ein Elektron abzulösen. Es tritt kein Photoeffekt auf, die Platte behält ihre Ladung — und zwar unabhängig davon, wie lange man wartet.",
+        "warum": {
+          "de": "Der Zusatz „unabhängig von der Wartezeit“ ist der eigentliche Kern. Die Grenzwellenlänge ist eine *obere* Schranke, kein Schwellwert für die Geduld: Ein Elektron nimmt genau ein Photon auf und kann Energie nicht über die Zeit ansammeln, weil es die aufgenommene Energie im Metall in extrem kurzer Zeit wieder an das Gitter abgibt.",
+          "tr": "\"Ne kadar beklenirse beklensin\" eki asıl çekirdektir. Sınır dalga boyu bir *üst* sınırdır, sabır eşiği değil: bir elektron tam olarak bir foton soğurur ve enerjiyi zamanla biriktiremez, çünkü aldığı enerjiyi metal içinde çok kısa sürede örgüye geri verir."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 4,
+        "titel": "Versuche (A) und (B) gegenüberstellen — Widerspruch zum Wellenmodell",
+        "inhalt": "In (B) wird nur der Abstand verdoppelt. Dadurch sinkt die Lichtintensität, das Licht bleibt aber dasselbe Licht: Die Frequenz und damit die Energie $h\\cdot f$ jedes einzelnen Photons ändert sich nicht. Es treffen pro Sekunde nur weniger Photonen auf die Platte, folglich werden pro Sekunde weniger Elektronen ausgelöst. Die Entladung läuft deshalb langsamer ab, findet aber statt.\n\nIn (A) wird dagegen die Frequenz verändert. Damit sinkt die Energie *jedes einzelnen* Photons unter $W_A$, und der Effekt setzt vollständig aus.\n\nNach dem klassischen Wellenmodell verteilt sich die Lichtenergie gleichmäßig über die Wellenfront; entscheidend wäre allein die eingestrahlte Energie pro Zeit, also die Intensität. Dann müsste sich (A) durch eine stärkere Lampe oder durch längeres Warten erzwingen lassen, und (B) müsste bei genügend geringer Intensität ganz aufhören. Beobachtet wird das Gegenteil: Die Farbe entscheidet über das *Ob*, die Intensität nur über das *Wie schnell*. Diese Rollenverteilung kann das Wellenmodell nicht erklären, das Photonenmodell dagegen unmittelbar.",
+        "warum": {
+          "de": "Der Vergleich (A) gegen (B) trägt die gesamte Beweislast, weil er die beiden Eigenschaften des Lichts sauber trennt: In (B) ändert sich nur die Photonenzahl, in (A) nur die Photonenenergie. Ein einzelner Versuch wäre immer mehrdeutig — erst das Paar zeigt, dass Frequenz und Intensität physikalisch völlig verschiedene Wirkungen haben.",
+          "tr": "(A) ile (B) karşılaştırması bütün kanıt yükünü taşır, çünkü ışığın iki özelliğini temiz biçimde ayırır: (B)'de yalnızca foton sayısı, (A)'da yalnızca foton enerjisi değişir. Tek bir deney her zaman çok anlamlı kalırdı — ancak bu çift, frekans ile şiddetin fiziksel olarak bambaşka etkileri olduğunu gösterir."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 5,
+        "titel": "Versuch (C) erklären: positiv geladene Platte",
+        "inhalt": "Auch bei positiver Ladung werden durch das UV-Licht Elektronen ausgelöst. Die Platte hat jedoch Elektronenmangel und ist deshalb positiv; sie zieht die austretenden Elektronen zurück. Da die maximale kinetische Energie nach $E_{kin,\\,max} = h\\,f - W_A$ nur wenige Elektronenvolt beträgt, genügt bereits ein geringes positives Potential, um jedes ausgelöste Elektron wieder einzufangen. Die Ladung der Platte bleibt daher erhalten, der Zeigerausschlag ändert sich nicht.",
+        "warum": {
+          "de": "Hier steckt schon die Idee der Gegenfeldmethode: Ein Potential wirkt als Energiebarriere $e\\cdot U$ für die austretenden Elektronen. Genau dieser Rückhalteeffekt begrenzt später auch die Aufladung bestrahlter Metallflächen — sie lädt sich nur so weit auf, bis die schnellsten Elektronen nicht mehr entkommen.",
+          "tr": "Burada karşı alan yönteminin fikri şimdiden gizlidir: bir potansiyel, çıkan elektronlar için $e\\cdot U$ büyüklüğünde bir enerji engeli oluşturur. Aynı geri tutma etkisi, ışınlanan metal yüzeylerin yüklenmesini de sınırlar — yüzey ancak en hızlı elektronlar kaçamayacak hale gelene kadar yüklenir."
+        },
+        "teilpunkte": 2
+      }
+    ],
+    "haeufige_fehler": [
+      "Behauptet, das Licht „lade die Platte um“ oder bringe Ladung mit; tatsächlich transportiert Licht keine Ladung, es löst nur vorhandene Elektronen ab.",
+      "Die Grenzwellenlänge als Mindestwellenlänge bezeichnet — sie ist die größte noch wirksame Wellenlänge, weil zu großer Wellenlänge kleine Energie gehört.",
+      "Die geringere Wirkung im Versuch (B) mit einer kleineren Photonenenergie begründet; der Abstand ändert die Anzahl der Photonen, nicht deren Energie.",
+      "Bei (C) angenommen, es werde gar kein Photoeffekt mehr ausgelöst; die Elektronen treten aus, kehren aber sofort zur Platte zurück."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen Landesabitur Physik GK 2011, Aufgabe C2 und GK 2008, Aufgabe C2",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

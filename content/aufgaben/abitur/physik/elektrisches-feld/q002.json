@@ -1,0 +1,96 @@
+{
+  "bereich": "abitur",
+  "id": "q002",
+  "titel": "Coulombkraft zwischen zwei geladenen Messingkugeln",
+  "fach": "physik",
+  "themenbereich": "Elektrisches Feld und Kondensator",
+  "themenbereich_slug": "elektrisches-feld",
+  "unterthema": "Coulombsches Gesetz und radiales Feld",
+  "niveau": "GK",
+  "operatoren": ["nennen", "erläutern", "berechnen", "vergleichen", "begründen", "bestimmen"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 45,
+  "aufgabenstellung": "Zwei baugleiche Messingkugeln $K_1$ und $K_2$ mit dem Durchmesser $3{,}0\\ \\text{cm}$ tragen jeweils die Ladung $Q = +65\\ \\text{nC}$. $K_1$ ist auf einem Stativ fest montiert, $K_2$ hängt an einem elektronischen Kraftmesser. Damit wird der Betrag der abstoßenden Kraft in Abhängigkeit vom Abstand $r$ der beiden Kugelmittelpunkte gemessen (Material 1).\n\na) Nennen Sie das Coulombsche Gesetz und erläutern Sie, welche Aussagen die Formel über die auftretende Kraft macht. Berechnen Sie anschließend die theoretisch zu erwartenden Kräfte für die Abstände $r = 6\\ \\text{cm}$, $8\\ \\text{cm}$, $12\\ \\text{cm}$, $18\\ \\text{cm}$, $25\\ \\text{cm}$ und $40\\ \\text{cm}$. (6 BE)\n\nb) Vergleichen Sie die Messwerte aus Material 1 mit Ihren berechneten Werten und begründen Sie die auftretenden Abweichungen. (4 BE)\n\nc) Bestimmen Sie aus einem einzigen Wertepaar der Messreihe die elektrische Feldkonstante $\\varepsilon_0$ und begründen Sie, warum Sie gerade dieses Wertepaar gewählt haben. (4 BE)\n\nd) Beide Kugeln werden entladen und danach neu aufgeladen: $K_1$ auf $Q_1 = +5{,}0\\cdot 10^{-8}\\ \\text{C}$, $K_2$ auf $Q_2 = -5{,}0\\cdot 10^{-8}\\ \\text{C}$. Sie stehen jetzt ohne Kraftmesser auf einer waagerechten Schiene, $K_1$ links und $K_2$ rechts, der Abstand ihrer Mittelpunkte beträgt $21\\ \\text{cm}$. Der Punkt $P$ liegt auf der Verbindungsgeraden zwischen beiden Kugeln, und zwar $6{,}0\\ \\text{cm}$ rechts von $K_1$. Bestimmen Sie Betrag und Richtung der elektrischen Feldstärke in $P$ (Richtungsangabe „nach links\" oder „nach rechts\"). (4 BE)",
+  "material": [
+    {
+      "typ": "tabelle",
+      "titel": "Material 1: Gemessene Kraft auf $K_2$",
+      "inhalt": "$$\\begin{array}{c|c|c|c|c|c|c} r\\ \\text{in cm} & 6 & 8 & 12 & 18 & 25 & 40 \\\\ \\hline F\\ \\text{in mN} & 5{,}9 & 4{,}2 & 2{,}35 & 1{,}14 & 0{,}60 & 0{,}235 \\end{array}$$",
+      "quelle": "eigene Erstellung",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Rechne konsequent alles in SI-Einheiten um, bevor du einsetzt: $\\text{nC}$ in $\\text{C}$ und $\\text{cm}$ in $\\text{m}$. Der Abstand quadriert jeden Umrechnungsfehler.",
+    "Das Coulombsche Gesetz gilt streng nur für Punktladungen. Überlege bei Teilaufgabe b), bei welchen Abständen die Kugeln mit $3{,}0\\ \\text{cm}$ Durchmesser noch als punktförmig durchgehen.",
+    "In $P$ überlagern sich zwei Felder. Zeichne für beide Einzelfelder einen Pfeil ein — erst die Richtungen klären, dann rechnen."
+  ],
+  "loesung": {
+    "gesamtpunkte": 18,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Coulombsches Gesetz nennen und erläutern",
+        "inhalt": "Für den Betrag der Kraft zwischen zwei kugelsymmetrisch verteilten Ladungen $Q_1$ und $Q_2$ im Abstand $r$ ihrer Mittelpunkte gilt\n\n$$F(r) = \\frac{1}{4\\pi\\varepsilon_0}\\cdot\\frac{Q_1\\cdot Q_2}{r^2}$$\n\nAussagen der Formel:\n\n- Die Kraft ist proportional zum **Produkt** beider Ladungen. Verdoppelt man nur eine der beiden Ladungen, verdoppelt sich die Kraft.\n- Die Kraft ist **umgekehrt proportional zum Quadrat** des Abstandes. Verdreifacht man $r$, so sinkt $F$ auf ein Neuntel.\n- Sie wirkt längs der Verbindungsgeraden der Mittelpunkte, bei gleichen Vorzeichen abstoßend, bei ungleichen anziehend.\n- $\\varepsilon_0 = 8{,}854\\cdot 10^{-12}\\ \\frac{\\text{As}}{\\text{Vm}}$ ist eine Naturkonstante und legt fest, wie stark diese Wechselwirkung im Vakuum überhaupt ausfällt.",
+        "warum": {
+          "de": "Die Formel wird oft nur als Rechenvorschrift auswendig gelernt. Für den Operator „erläutern\" musst du aber jede Größe einzeln durchgehen und sagen, wie $F$ auf ihre Änderung reagiert. Genau das quadratische Abstandsgesetz ist der Punkt, an dem die meisten Fehleinschätzungen entstehen: Ein doppelter Abstand viertelt die Kraft, halbiert sie nicht.",
+          "tr": "Bu formül çoğu zaman sadece bir hesap kuralı olarak ezberlenir. Ama „erläutern\" operatörü, her büyüklüğü tek tek ele alıp $F$'in o büyüklüğün değişimine nasıl tepki verdiğini söylemeni ister. Asıl yanlış anlaşılan yer de kareyle ters orantı: mesafe iki katına çıkınca kuvvet yarıya değil, dörtte bire iner."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Theoretische Kräfte berechnen",
+        "inhalt": "Mit $Q_1 = Q_2 = 65\\ \\text{nC} = 6{,}5\\cdot 10^{-8}\\ \\text{C}$ und $\\frac{1}{4\\pi\\varepsilon_0} = 8{,}99\\cdot 10^{9}\\ \\frac{\\text{Nm}^2}{\\text{C}^2}$ ergibt sich als Beispielrechnung für $r = 6\\ \\text{cm} = 0{,}060\\ \\text{m}$:\n\n$$F = 8{,}99\\cdot 10^{9}\\ \\frac{\\text{Nm}^2}{\\text{C}^2}\\cdot\\frac{\\left(6{,}5\\cdot 10^{-8}\\ \\text{C}\\right)^2}{\\left(0{,}060\\ \\text{m}\\right)^2} = \\frac{3{,}80\\cdot 10^{-5}\\ \\text{Nm}^2}{3{,}6\\cdot 10^{-3}\\ \\text{m}^2} \\approx 1{,}05\\cdot 10^{-2}\\ \\text{N} = 10{,}5\\ \\text{mN}$$\n\nDie übrigen Abstände werden genauso behandelt:\n\n$$\\begin{array}{c|c|c|c|c|c|c} r\\ \\text{in cm} & 6 & 8 & 12 & 18 & 25 & 40 \\\\ \\hline F_{\\text{theor}}\\ \\text{in mN} & 10{,}5 & 5{,}93 & 2{,}64 & 1{,}17 & 0{,}608 & 0{,}237 \\end{array}$$",
+        "warum": {
+          "de": "Der Zähler $\\frac{1}{4\\pi\\varepsilon_0}\\cdot Q^2 = 3{,}80\\cdot 10^{-5}\\ \\text{Nm}^2$ ändert sich in der ganzen Reihe nicht. Wer ihn einmal ausrechnet und dann nur noch durch $r^2$ teilt, spart nicht bloß Zeit, sondern vermeidet auch, sich bei sechs Rechnungen sechsmal neu bei den Zehnerpotenzen zu verrechnen.",
+          "tr": "Paydaki $\\frac{1}{4\\pi\\varepsilon_0}\\cdot Q^2 = 3{,}80\\cdot 10^{-5}\\ \\text{Nm}^2$ değeri bütün seride hiç değişmez. Bunu bir kez hesaplayıp sonra sadece $r^2$'ye bölmek yalnızca zaman kazandırmaz; altı ayrı hesapta onluk kuvvetlerini altı kez yeniden yanlış yazma riskini de ortadan kaldırır."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 3,
+        "titel": "Messwerte und Theoriewerte vergleichen, Abweichung begründen",
+        "inhalt": "Gegenüberstellung:\n\n$$\\begin{array}{c|c|c|c|c|c|c} r\\ \\text{in cm} & 6 & 8 & 12 & 18 & 25 & 40 \\\\ \\hline F_{\\text{theor}}\\ \\text{in mN} & 10{,}5 & 5{,}93 & 2{,}64 & 1{,}17 & 0{,}608 & 0{,}237 \\\\ \\hline F_{\\text{mess}}\\ \\text{in mN} & 5{,}9 & 4{,}2 & 2{,}35 & 1{,}14 & 0{,}60 & 0{,}235 \\end{array}$$\n\nBeschreibung: Für $r \\geq 18\\ \\text{cm}$ stimmen Messung und Rechnung auf wenige Prozent überein. Für kleine Abstände liegen die Messwerte deutlich unter den berechneten Werten, bei $r = 6\\ \\text{cm}$ nur noch bei etwa der Hälfte.\n\nBegründung: Das Coulombsche Gesetz gilt für Punktladungen. Die Kugeln haben aber einen Durchmesser von $3{,}0\\ \\text{cm}$; bei $r = 6\\ \\text{cm}$ liegt der Abstand also nur bei zwei Kugeldurchmessern. Dann verschieben sich die frei beweglichen Ladungen auf den Metalloberflächen durch Influenz: Sie stoßen einander ab und sammeln sich auf den voneinander abgewandten Seiten. Der wirksame Ladungsschwerpunkt rückt dadurch weiter auseinander als der Mittelpunktsabstand, und die gemessene Kraft fällt kleiner aus. Bei großem $r$ ist dieser Effekt vernachlässigbar, die Kugeln verhalten sich dann wie Punktladungen.",
+        "warum": {
+          "de": "Hier wird nicht die Messung schlechtgeredet, sondern eine Modellgrenze sichtbar gemacht: Nicht das Gerät ist ungenau, sondern die Voraussetzung „Punktladung\" ist bei kleinem Abstand verletzt. Diese Unterscheidung zwischen Messfehler und Modellgrenze ist genau das, was der Operator „begründen\" hier verlangt — und sie erklärt auch, warum die Messwerte systematisch nach unten abweichen und nicht zufällig streuen.",
+          "tr": "Burada ölçüm kötülenmiyor, bir model sınırı görünür kılınıyor: cihaz hatalı değil, küçük mesafelerde „noktasal yük\" varsayımı çöküyor. Ölçüm hatası ile model sınırı arasındaki bu ayrım, „begründen\" operatörünün burada tam olarak istediği şeydir — ayrıca ölçüm değerlerinin neden rastgele saçılmayıp sistematik olarak aşağıda kaldığını da açıklar."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 4,
+        "titel": "Elektrische Feldkonstante aus einem Messwert bestimmen",
+        "inhalt": "Wahl des Wertepaares: Man nimmt ein Wertepaar mit möglichst großem Abstand, hier $r = 40\\ \\text{cm}$ mit $F = 0{,}235\\ \\text{mN}$. Nur dort sind die Kugeln in guter Näherung Punktladungen, sodass das Coulombsche Gesetz überhaupt anwendbar ist.\n\nUmstellen nach $\\varepsilon_0$:\n\n$$F = \\frac{1}{4\\pi\\varepsilon_0}\\cdot\\frac{Q_1 Q_2}{r^2} \\quad\\Longleftrightarrow\\quad \\varepsilon_0 = \\frac{Q_1 Q_2}{4\\pi\\cdot F\\cdot r^2}$$\n\n$$\\varepsilon_0 = \\frac{\\left(6{,}5\\cdot 10^{-8}\\ \\text{C}\\right)^2}{4\\pi\\cdot 2{,}35\\cdot 10^{-4}\\ \\text{N}\\cdot\\left(0{,}40\\ \\text{m}\\right)^2} = \\frac{4{,}225\\cdot 10^{-15}\\ \\text{C}^2}{4{,}72\\cdot 10^{-4}\\ \\text{Nm}^2} \\approx 8{,}94\\cdot 10^{-12}\\ \\frac{\\text{C}^2}{\\text{Nm}^2}$$\n\nWegen $1\\ \\frac{\\text{C}^2}{\\text{Nm}^2} = 1\\ \\frac{\\text{As}}{\\text{Vm}}$ ist das $\\varepsilon_0 \\approx 8{,}94\\cdot 10^{-12}\\ \\frac{\\text{As}}{\\text{Vm}}$. Der Literaturwert beträgt $8{,}854\\cdot 10^{-12}\\ \\frac{\\text{As}}{\\text{Vm}}$, die Abweichung liegt also bei etwa $1\\ \\%$.",
+        "warum": {
+          "de": "Die Begründung der Messwertwahl ist hier kein Zierrat, sondern trägt die halbe Punktzahl: Hätte man das Paar bei $r = 6\\ \\text{cm}$ genommen, käme wegen der Influenz ein fast doppelt so großes $\\varepsilon_0$ heraus. Man darf eine Naturkonstante nur aus dem Bereich bestimmen, in dem das zugrunde liegende Modell nachweislich gilt — sonst misst man den Modellfehler statt der Konstante.",
+          "tr": "Ölçüm çiftinin seçim gerekçesi burada süs değil, puanın yarısını taşır: $r = 6\\ \\text{cm}$ çifti alınsaydı influenz yüzünden neredeyse iki katı büyüklükte bir $\\varepsilon_0$ çıkardı. Bir doğa sabiti ancak, temelindeki modelin geçerli olduğu kanıtlanmış aralıktan belirlenebilir — aksi halde sabiti değil, modelin hatasını ölçmüş olursun."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 5,
+        "titel": "Feldstärke im Punkt $P$ nach Betrag und Richtung bestimmen",
+        "inhalt": "Richtung: Elektrische Feldlinien verlaufen von der positiven zur negativen Ladung. $Q_1$ ist positiv und liegt links, $Q_2$ ist negativ und liegt rechts. Das Feld von $Q_1$ zeigt in $P$ von $Q_1$ weg, also nach rechts; das Feld von $Q_2$ zeigt in $P$ auf $Q_2$ zu, ebenfalls nach rechts. **Beide Teilfelder zeigen in dieselbe Richtung, nach rechts.**\n\nAbstände: $a = 6{,}0\\ \\text{cm} = 0{,}060\\ \\text{m}$ zu $Q_1$ und $b = 21\\ \\text{cm} - 6{,}0\\ \\text{cm} = 15\\ \\text{cm} = 0{,}15\\ \\text{m}$ zu $Q_2$.\n\nAus $F = q\\cdot E$ und dem Coulombschen Gesetz folgt für das Feld einer Punktladung $E(r) = \\frac{1}{4\\pi\\varepsilon_0}\\cdot\\frac{Q}{r^2}$:\n\n$$E_1 = 8{,}99\\cdot 10^{9}\\ \\frac{\\text{Nm}^2}{\\text{C}^2}\\cdot\\frac{5{,}0\\cdot 10^{-8}\\ \\text{C}}{\\left(0{,}060\\ \\text{m}\\right)^2} \\approx 1{,}25\\cdot 10^{5}\\ \\frac{\\text{V}}{\\text{m}}$$\n\n$$E_2 = 8{,}99\\cdot 10^{9}\\ \\frac{\\text{Nm}^2}{\\text{C}^2}\\cdot\\frac{5{,}0\\cdot 10^{-8}\\ \\text{C}}{\\left(0{,}15\\ \\text{m}\\right)^2} \\approx 2{,}00\\cdot 10^{4}\\ \\frac{\\text{V}}{\\text{m}}$$\n\nDa beide Vektoren gleichgerichtet sind, addieren sich die Beträge:\n\n$$E_P = 1{,}25\\cdot 10^{5}\\ \\frac{\\text{V}}{\\text{m}} + 0{,}200\\cdot 10^{5}\\ \\frac{\\text{V}}{\\text{m}} = 1{,}45\\cdot 10^{5}\\ \\frac{\\text{V}}{\\text{m}}\\ \\text{nach rechts}$$",
+        "warum": {
+          "de": "Die Feldstärke ist ein Vektor, deshalb muss die Richtung vor der Rechnung geklärt sein. Zwei entgegengesetzte Ladungen erzeugen zwischen sich gleichgerichtete Teilfelder — die Beträge werden addiert. Außerhalb der Anordnung wäre es umgekehrt und man müsste subtrahieren. Wer die Vorzeichen einfach mitschleppt und blind addiert, bekommt genau in einem der beiden Fälle das falsche Ergebnis.",
+          "tr": "Alan şiddeti bir vektördür, bu yüzden yön hesaptan önce netleşmelidir. Zıt işaretli iki yükün arasında kalan bölgede iki kısmi alan aynı yönü gösterir — bu yüzden büyüklükler toplanır. Düzeneğin dışında durum tersine döner ve çıkarma yapmak gerekir. İşaretleri düşünmeden körü körüne toplayan biri, bu iki durumdan tam birinde yanlış sonuca varır."
+        },
+        "teilpunkte": 4
+      }
+    ],
+    "haeufige_fehler": [
+      "Abstände in Zentimetern eingesetzt: Weil $r$ quadriert wird, verfehlt man das Ergebnis um den Faktor $10^4$.",
+      "Statt des Mittelpunktsabstands den Abstand der Kugeloberflächen benutzt — das Coulombsche Gesetz verlangt den Abstand der Ladungsschwerpunkte.",
+      "Bei der Bestimmung von $\\varepsilon_0$ ein Wertepaar mit kleinem $r$ gewählt und die Wahl nicht begründet; dort ist das Punktladungsmodell verletzt.",
+      "In $P$ die beiden Feldstärken voneinander abgezogen, weil eine Ladung negativ ist — die Vektoren zeigen dort aber beide nach rechts."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Landesabitur Physik Hessen 2010, Grundkurs, Aufgabe A1 (Radiales elektrisches Feld)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

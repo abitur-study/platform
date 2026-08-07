@@ -1,0 +1,81 @@
+{
+  "bereich": "abitur",
+  "id": "q008",
+  "titel": "Funktionsterm aus gegebenen Eigenschaften bestimmen",
+  "fach": "mathematik",
+  "themenbereich": "Analysis",
+  "themenbereich_slug": "analysis",
+  "unterthema": "Steckbriefaufgaben",
+  "niveau": "GK",
+  "operatoren": [
+    "ermitteln",
+    "begründen",
+    "überprüfen"
+  ],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 25,
+  "aufgabenstellung": "Der Graph einer ganzrationalen Funktion $f$ dritten Grades besitzt die folgenden Eigenschaften:\n\n- Er ist punktsymmetrisch zum Koordinatenursprung.\n- Im Wendepunkt $W(0\\mid 0)$ hat er die Steigung $-3$.\n- An der Stelle $x = 1$ besitzt er einen Tiefpunkt.\n\na) Ermitteln Sie den Funktionsterm von $f$.\n\nb) Überprüfen Sie, ob an der Stelle $x = 1$ tatsächlich ein Tiefpunkt vorliegt, und geben Sie die Koordinaten dieses Punktes an.",
+  "material": [],
+  "tipps": [
+    "Beginne mit dem allgemeinen Ansatz $f(x) = ax^3 + bx^2 + cx + d$. Jede gegebene Eigenschaft wird zu einer Gleichung für diese vier Unbekannten.",
+    "Punktsymmetrie zum Ursprung bedeutet $f(-x) = -f(x)$. Prüfe, welche Koeffizienten das erzwingt — das spart dir zwei Unbekannte.",
+    "„Steigung“ ist immer eine Aussage über $f'$, „Tiefpunkt“ eine über $f'$ *und* $f''$."
+  ],
+  "loesung": {
+    "gesamtpunkte": 14,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Allgemeinen Ansatz aufstellen und Symmetrie auswerten",
+        "inhalt": "Ansatz für eine ganzrationale Funktion dritten Grades:\n\n$$f(x) = ax^3 + bx^2 + cx + d, \\qquad a \\neq 0$$\n\nPunktsymmetrie zum Ursprung bedeutet $f(-x) = -f(x)$ für alle $x$:\n\n$$-ax^3 + bx^2 - cx + d \\;\\overset{!}{=}\\; -ax^3 - bx^2 - cx - d$$\n\nKoeffizientenvergleich liefert $b = -b$ und $d = -d$, also\n\n$$b = 0 \\qquad\\text{und}\\qquad d = 0.$$\n\nDamit vereinfacht sich der Ansatz zu $f(x) = ax^3 + cx$.",
+        "warum": {
+          "de": "Symmetrie wird bewusst **zuerst** ausgewertet, weil sie die einzige Bedingung ist, die gleich zwei Unbekannte auf einmal beseitigt. Danach bleiben nur noch zwei Gleichungen für zwei Unbekannte statt vier für vier. Die Merkregel dahinter: Punktsymmetrie zum Ursprung heißt „nur ungerade Exponenten“ — $x^3$ und $x^1$ bleiben, $x^2$ und $x^0$ fallen weg.",
+          "tr": "Simetri bilinçli olarak **en başta** kullanılır, çünkü tek hamlede iki bilinmeyeni birden yok eden tek koşul odur. Sonrasında dörde dört yerine ikiye iki denklem kalır. Arkasındaki pratik kural: orijine göre tek simetri „yalnızca tek dereceli üsler“ demektir — $x^3$ ve $x^1$ kalır, $x^2$ ile sabit terim düşer. Sınavda bu kuralı doğrudan yazabilirsin ama gerekçesini göstermek puan getirir."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 2,
+        "titel": "Restliche Bedingungen in Gleichungen übersetzen",
+        "inhalt": "Ableitung des vereinfachten Ansatzes:\n\n$$f'(x) = 3ax^2 + c$$\n\n**Bedingung 1** — Steigung $-3$ an der Stelle $x = 0$:\n$$f'(0) = c = -3$$\n\n**Bedingung 2** — Tiefpunkt bei $x = 1$, also waagerechte Tangente dort:\n$$f'(1) = 3a + c = 0$$",
+        "warum": {
+          "de": "Jede Formulierung im Aufgabentext muss in eine Gleichung übersetzt werden, und die Kunst besteht darin, die richtige Funktion zu wählen: „Steigung“ und „Tiefpunkt“ sind beides Aussagen über $f'$, nicht über $f$. Die Angabe $W(0\\mid 0)$ liefert hier keine zusätzliche Gleichung — dass der Wendepunkt im Ursprung liegt, folgt bei $b=d=0$ bereits automatisch aus der Symmetrie. Solche redundanten Angaben sind in Steckbriefaufgaben üblich und dienen der Plausibilitätskontrolle.",
+          "tr": "Soru metnindeki her ifade bir denkleme çevrilmeli; ustalık, doğru fonksiyonu seçmekte: „eğim“ de „minimum“ da $f$ hakkında değil $f'$ hakkında ifadelerdir. $W(0\\mid 0)$ bilgisi burada fazladan denklem vermez — $b=d=0$ olunca dönüm noktasının orijinde olması simetriden zaten çıkar. Steckbrief sorularında bu tür fazlalık bilgiler sık görülür ve kontrol amaçlıdır; „bir bilgi verildiyse mutlaka bir denklem olmalı“ diye zorlama, yanlış denklem kurmana yol açar."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 3,
+        "titel": "Gleichungssystem lösen und Funktionsterm angeben",
+        "inhalt": "Einsetzen von $c = -3$ in die zweite Gleichung:\n\n$$3a + (-3) = 0 \\;\\Rightarrow\\; 3a = 3 \\;\\Rightarrow\\; a = 1$$\n\nDamit lautet der gesuchte Funktionsterm\n\n$$f(x) = x^3 - 3x.$$",
+        "warum": {
+          "de": "Weil die erste Gleichung bereits nach $c$ aufgelöst ist, genügt das Einsetzungsverfahren — ein aufwendigeres Verfahren wäre hier verschenkte Zeit. Die Bedingung $a \\neq 0$ aus dem Ansatz ist erfüllt, der Grad drei bleibt also gewahrt; wäre $a = 0$ herausgekommen, hätte das auf einen Fehler oder auf widersprüchliche Vorgaben hingedeutet.",
+          "tr": "Birinci denklem zaten $c$ için çözülmüş olduğundan yerine koyma yöntemi yeter; daha ağır bir yöntem burada boşa zaman olurdu. Baştaki $a \\neq 0$ koşulu sağlanıyor, yani fonksiyon gerçekten üçüncü dereceden kalıyor. Eğer $a = 0$ çıksaydı bu ya bir hesap hatasına ya da soru verilerinin çelişkili olduğuna işaret ederdi — bu kontrolü yapmak alışkanlık hâline gelmeli."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 4,
+        "titel": "Tiefpunkt überprüfen und Koordinaten angeben",
+        "inhalt": "$$f'(x) = 3x^2 - 3, \\qquad f''(x) = 6x$$\n\nNotwendige Bedingung: $f'(1) = 3 - 3 = 0$ ✓\n\nHinreichende Bedingung: $f''(1) = 6 > 0$, also Linkskrümmung und damit ein **Tiefpunkt**. ✓\n\nFunktionswert:\n$$f(1) = 1^3 - 3\\cdot 1 = -2$$\n\n$$T(1 \\mid -2)$$",
+        "warum": {
+          "de": "Der Operator „überprüfen“ verlangt einen echten Nachweis, keine Wiederholung der Voraussetzung. Beim Aufstellen wurde nur $f'(1)=0$ benutzt — das allein lässt auch einen Hoch- oder Sattelpunkt zu. Erst $f''(1) > 0$ schließt beides aus. Dieser Schritt ist zugleich die Probe: Hätte sich hier ein Hochpunkt ergeben, wäre die Rechnung in Schritt 2 oder 3 falsch gewesen.",
+          "tr": "*Überprüfen* (kontrol ediniz) operatörü gerçek bir kanıt ister, verilenin tekrarını değil. Kurarken yalnızca $f'(1)=0$ kullanıldı — bu tek başına tepe noktasına da yatay dönüm noktasına da izin verir. İkisini birden eleyen şey $f''(1) > 0$'dır. Bu adım aynı zamanda sağlamadır: burada tepe noktası çıksaydı, 2. veya 3. adımdaki hesap yanlış demektir. Son olarak noktayı $T(1\\mid -2)$ diye tam koordinatıyla yazmak gerekir; yalnızca $x=1$ demek eksik cevaptır."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "Symmetriebedingung nicht ausgewertet und mit allen vier Unbekannten weitergerechnet.",
+      "„Steigung $-3$“ als $f(0) = -3$ statt als $f'(0) = -3$ übersetzt.",
+      "Aus $f'(1) = 0$ direkt auf einen Tiefpunkt geschlossen, ohne $f''$ zu prüfen.",
+      "Nur die Stelle $x = 1$ angegeben statt des vollständigen Punktes $T(1\\mid -2)$."
+    ]
+  },
+  "quelle": "eigene Erstellung (handgeschriebenes Gold-Beispiel, Phase 1)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "geprueft_von": "Projektteam (Seed-Aufgabe)",
+  "version": 1
+}

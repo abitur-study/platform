@@ -1,0 +1,103 @@
+{
+  "bereich": "abitur",
+  "id": "q002",
+  "titel": "Messreihe am Doppelspalt: Wellenlänge, Farbe und Vergleich mit dem Gitter",
+  "fach": "physik",
+  "themenbereich": "Wellen und Wellenoptik",
+  "themenbereich_slug": "wellen",
+  "unterthema": "Doppelspaltversuch",
+  "niveau": "GK",
+  "operatoren": ["bestimmen", "nennen", "beschreiben"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 35,
+  "aufgabenstellung": "Eine Arbeitsgruppe beleuchtet einen Doppelspalt mit dem Spaltmittenabstand $d = 0{,}20\\ \\text{mm}$ senkrecht mit einem Laser unbekannter Wellenlänge. Auf einem Schirm im Abstand $e = 5{,}00\\ \\text{m}$ misst sie die Abstände $a_n$ der Maxima von der Schirmmitte für die Ordnungen $n = 1$ bis $n = 4$ (Material 1).\n\na) Bestimmen Sie aus allen vier Messwerten die Wellenlänge des Lasers. Werten Sie dazu jede Ordnung einzeln aus und bilden Sie anschließend den Mittelwert.\n\nb) Nennen Sie mithilfe von Material 2 die Farbe des Laserlichts.\n\nc) Der Doppelspalt wird nun durch ein optisches Gitter mit demselben Spaltmittenabstand ersetzt, die Lichtquelle bleibt unverändert. Beschreiben Sie, wie sich das Bild auf dem Schirm dadurch ändert.",
+  "material": [
+    {
+      "typ": "tabelle",
+      "titel": "Material 1: Messwerte",
+      "inhalt": "$$\\begin{array}{c|c|c|c|c} \\text{Ordnung } n & 1 & 2 & 3 & 4 \\\\ \\hline a_n\\ \\text{in cm} & 1{,}6 & 3{,}1 & 4{,}6 & 6{,}2 \\end{array}$$",
+      "quelle": "eigene Erstellung",
+      "lizenz": "CC BY-SA 4.0"
+    },
+    {
+      "typ": "tabelle",
+      "titel": "Material 2: Spektralfarben des sichtbaren Lichts",
+      "inhalt": "$$\\begin{array}{c|c} \\lambda\\ \\text{in nm} & \\text{Farbton} \\\\ \\hline 380 - 420 & \\text{Violett} \\\\ 420 - 490 & \\text{Blau} \\\\ 490 - 575 & \\text{Grün} \\\\ 575 - 585 & \\text{Gelb} \\\\ 585 - 650 & \\text{Orange} \\\\ 650 - 750 & \\text{Rot} \\end{array}$$",
+      "quelle": "eigene Erstellung",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Stellen Sie zuerst die Formel für eine beliebige Ordnung $n$ auf und setzen Sie erst danach Zahlen ein — sonst rechnen Sie viermal dieselbe Herleitung.",
+    "Prüfen Sie, wie groß der Beugungswinkel bei $n = 4$ höchstens wird. Erst danach entscheiden Sie, ob Sie mit dem Tangens oder mit der Näherung arbeiten.",
+    "Ergänzen Sie die gegebene Tabelle um eine Zeile für die jeweils berechnete Wellenlänge — so sehen Sie sofort, ob ein Wert aus der Reihe fällt."
+  ],
+  "loesung": {
+    "gesamtpunkte": 15,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Bedingung für Maxima und Geometrie verknüpfen",
+        "inhalt": "Ein Maximum $n$-ter Ordnung entsteht, wenn der Gangunterschied der beiden Teilwellen $\\Delta s = n\\cdot\\lambda$ beträgt. Im kleinen Dreieck am Doppelspalt gilt $\\sin\\alpha_n = \\dfrac{\\Delta s}{d}$, im großen Dreieck bis zum Schirm $\\tan\\alpha_n = \\dfrac{a_n}{e}$. Zusammen:\n\n$$\\sin\\alpha_n = \\frac{n\\cdot\\lambda}{d}, \\qquad \\tan\\alpha_n = \\frac{a_n}{e}$$",
+        "warum": {
+          "de": "Beide Beziehungen enthalten denselben Winkel, aber verschiedene Winkelfunktionen — deshalb muss man den Winkel als Zwischengröße nehmen oder sauber begründen, warum man ihn überspringen darf. Wer $\\sin$ und $\\tan$ ohne Begründung gleichsetzt, hat die Näherung benutzt, ohne sie erwähnt zu haben.",
+          "tr": "Her iki bağıntıda da aynı açı vardır ama farklı trigonometrik fonksiyonlar kullanılır — bu yüzden açıyı ara büyüklük olarak hesaplamak ya da onu atlamanın nedenini açıkça yazmak gerekir. $\\sin$ ile $\\tan$'ı gerekçesiz eşitleyen öğrenci, yaklaşımı adını anmadan kullanmış olur."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Winkel abschätzen und Näherung rechtfertigen",
+        "inhalt": "Der größte auftretende Winkel gehört zur $4.$ Ordnung:\n\n$$\\tan\\alpha_4 = \\frac{6{,}2\\cdot 10^{-2}\\ \\text{m}}{5{,}00\\ \\text{m}} = 1{,}24\\cdot 10^{-2} \\quad\\Longrightarrow\\quad \\alpha_4 \\approx 0{,}71^\\circ$$\n\nAlle Winkel liegen weit unter $1^\\circ$. Damit ist $\\sin\\alpha \\approx \\tan\\alpha$ zulässig und es gilt\n\n$$\\frac{n\\cdot\\lambda}{d} \\approx \\frac{a_n}{e} \\quad\\Longrightarrow\\quad \\lambda \\approx \\frac{a_n\\cdot d}{n\\cdot e}$$",
+        "warum": {
+          "de": "Die Näherung darf man nicht als Gewohnheit anwenden, sondern nur nach einer Abschätzung — und die macht man sinnvollerweise für die höchste Ordnung, weil dort der Winkel am größten ist. Ist die Näherung für $n = 4$ zulässig, dann erst recht für alle kleineren Ordnungen.",
+          "tr": "Yaklaşım alışkanlıkla değil, ancak bir kestirimden sonra kullanılır — ve bu kestirim en yüksek mertebe için yapılır, çünkü açı orada en büyüktür. $n = 4$ için geçerliyse, daha küçük mertebeler için zaten fazlasıyla geçerlidir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 3,
+        "titel": "Auswertung aller vier Messwerte",
+        "inhalt": "Einsetzen von $d = 2{,}0\\cdot 10^{-4}\\ \\text{m}$ und $e = 5{,}00\\ \\text{m}$, zum Beispiel für $n = 3$:\n\n$$\\lambda_3 = \\frac{4{,}6\\cdot 10^{-2}\\ \\text{m}\\cdot 2{,}0\\cdot 10^{-4}\\ \\text{m}}{3\\cdot 5{,}00\\ \\text{m}} = \\frac{9{,}2\\cdot 10^{-6}}{15}\\ \\text{m} \\approx 6{,}13\\cdot 10^{-7}\\ \\text{m}$$\n\nAnalog für die übrigen Ordnungen:\n\n$$\\begin{array}{c|c|c|c|c} n & 1 & 2 & 3 & 4 \\\\ \\hline a_n\\ \\text{in cm} & 1{,}6 & 3{,}1 & 4{,}6 & 6{,}2 \\\\ \\hline \\lambda\\ \\text{in nm} & 640 & 620 & 613 & 620 \\end{array}$$",
+        "warum": {
+          "de": "Der Wert der $1.$ Ordnung fällt mit $640\\ \\text{nm}$ nach oben aus der Reihe, und das ist kein Zufall: Ein Ablesefehler von einem halben Millimeter wirkt sich bei $1{,}6\\ \\text{cm}$ prozentual viermal so stark aus wie bei $6{,}2\\ \\text{cm}$. Deshalb misst man in solchen Versuchen möglichst hohe Ordnungen.",
+          "tr": "$1.$ mertebenin $640\\ \\text{nm}$ değeri diğerlerinden yukarı doğru sapar ve bu tesadüf değildir: yarım milimetrelik bir okuma hatası, $1{,}6\\ \\text{cm}$'de $6{,}2\\ \\text{cm}$'ye göre yüzdesel olarak dört kat büyük etki yapar. Bu yüzden bu tür deneylerde olabildiğince yüksek mertebeler ölçülür."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 4,
+        "titel": "Mittelwert und Farbe",
+        "inhalt": "$$\\bar{\\lambda} = \\frac{640 + 620 + 613 + 620}{4}\\ \\text{nm} \\approx 623\\ \\text{nm}$$\n\nNach Material 2 liegt $623\\ \\text{nm}$ im Bereich $585$–$650\\ \\text{nm}$: Das Laserlicht ist **orange**.",
+        "warum": {
+          "de": "Der Mittelwert ist hier nicht bloß Rechenkosmetik: Jede einzelne Ordnung liefert eine unabhängige Messung derselben Größe, und die zufälligen Ablesefehler heben sich beim Mitteln teilweise auf. Systematische Fehler — etwa ein falsch abgelesener Schirmabstand — verschwinden dagegen durch Mitteln nicht.",
+          "tr": "Ortalama burada yalnızca hesap süsü değildir: her mertebe aynı büyüklüğün bağımsız bir ölçümünü verir ve rastgele okuma hataları ortalamada kısmen birbirini götürür. Buna karşılık sistematik hatalar — örneğin yanlış okunmuş bir ekran uzaklığı — ortalama alınarak yok olmaz."
+        },
+        "teilpunkte": 2
+      },
+      {
+        "nr": 5,
+        "titel": "Gitter statt Doppelspalt",
+        "inhalt": "Da die Gitterkonstante gleich dem bisherigen Spaltmittenabstand ist, bleibt die Bedingung $\\sin\\alpha_n = \\dfrac{n\\cdot\\lambda}{d}$ unverändert: **Die Maxima liegen an genau denselben Stellen wie vorher.** Verändert hat sich ihr Aussehen:\n\n- Die Maxima sind deutlich **schärfer** — sie werden zu schmalen, scharf begrenzten Streifen.\n- Sie sind **heller**, weil sehr viel mehr Spalte Licht beitragen.\n- Die Bereiche **zwischen** den Maxima werden nahezu vollständig dunkel, während beim Doppelspalt die Helligkeit dort noch weich abfällt.",
+        "warum": {
+          "de": "Die entscheidende Einsicht ist, dass sich die Lage der Maxima nicht ändert, obwohl das Bild völlig anders aussieht: Die Lage folgt aus dem Gangunterschied *benachbarter* Spalte, und der hängt nur von $d$ ab. Die vielen zusätzlichen Spalte wirken sich nicht auf die Lage, sondern nur auf Schärfe und Helligkeit aus.",
+          "tr": "Asıl kavranması gereken nokta şudur: görüntü tamamen değişse de maksimumların yeri değişmez. Yer, *komşu* yarıkların yol farkından çıkar ve bu da yalnızca $d$'ye bağlıdır. Eklenen çok sayıda yarık, konumu değil yalnızca keskinliği ve parlaklığı etkiler."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "Nur eine Ordnung ausgewertet, obwohl vier Messwerte gegeben sind — die Aufgabe verlangt ausdrücklich alle.",
+      "$d = 0{,}20\\ \\text{mm}$ als $0{,}20\\ \\text{m}$ oder $2{,}0\\cdot 10^{-3}\\ \\text{m}$ eingesetzt; ein Zehnerpotenzfehler verschiebt das Ergebnis um den Faktor 10.",
+      "Die Kleinwinkelnäherung ohne jede Abschätzung des Winkels verwendet.",
+      "Beim Gitter behauptet, die Maxima rückten weiter auseinander — das gilt nur bei geänderter Gitterkonstante, nicht bei gleicher."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen, Landesabitur Physik Grundkurs 2008, Aufgabe B2 (Interferenz an Doppelspalt und Gitter)",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

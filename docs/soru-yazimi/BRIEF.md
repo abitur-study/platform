@@ -31,63 +31,66 @@ Kaynak metinler gerçek Abitur sınavları ve okul yazılılarıdır; her birind
 
 ### Fizik — Elektrisches Feld (4 soru)
 
-| Dosya adı | Kaynak |
+| Soru | Kaynak |
 |---|---|
-| `physik-efeld-<anahtar>-013.json` | `kaynaklar/efeld-hessen-2013-A1.txt` |
-| `physik-efeld-<anahtar>-014.json` | `kaynaklar/efeld-hessen-2016-B1.txt` |
-| `physik-efeld-<anahtar>-022.json` | `kaynaklar/efeld-hessen-2014-A2.txt` |
-| `physik-efeld-<anahtar>-023.json` | `kaynaklar/efeld-okul-klausur-03.txt` |
+| 1. | `kaynaklar/efeld-hessen-2013-A1.txt` |
+| 2. | `kaynaklar/efeld-hessen-2016-B1.txt` |
+| 3. | `kaynaklar/efeld-hessen-2014-A2.txt` |
+| 4. | `kaynaklar/efeld-okul-klausur-03.txt` |
 
 - `"themenbereich": "Elektrisches Feld und Kondensator"`
 - `"themenbereich_slug": "elektrisches-feld"`
 
 ### Fizik — Induktion (4 soru)
 
-| Dosya adı | Kaynak |
+| Soru | Kaynak |
 |---|---|
-| `physik-induktion-<anahtar>-012.json` | `kaynaklar/induktion-hessen-2011-A2.txt` |
-| `physik-induktion-<anahtar>-013.json` | `kaynaklar/induktion-hessen-2013-A2.txt` |
-| `physik-induktion-<anahtar>-022.json` | `kaynaklar/induktion-hessen-2015-B1.txt` |
-| `physik-induktion-<anahtar>-023.json` | `kaynaklar/induktion-okul-klausur-01.txt` |
+| 1. | `kaynaklar/induktion-hessen-2011-A2.txt` |
+| 2. | `kaynaklar/induktion-hessen-2013-A2.txt` |
+| 3. | `kaynaklar/induktion-hessen-2015-B1.txt` |
+| 4. | `kaynaklar/induktion-okul-klausur-01.txt` |
 
 - `"themenbereich": "Elektromagnetische Induktion"`
 - `"themenbereich_slug": "induktion"`
 
 ### Fizik — Wellen (4 soru)
 
-| Dosya adı | Kaynak |
+| Soru | Kaynak |
 |---|---|
-| `physik-wellen-<anahtar>-012.json` | `kaynaklar/wellen-hessen-2016-B2.txt` (mekanik dalga) |
-| `physik-wellen-<anahtar>-013.json` | `kaynaklar/wellen-hessen-2013-B2.txt` (mekanik dalga) |
-| `physik-wellen-<anahtar>-023.json` | `kaynaklar/wellen-hessen-2012-B1.txt` (dalga optiği) |
-| `physik-wellen-<anahtar>-024.json` | `kaynaklar/wellen-hessen-2015-A2.txt` (dalga optiği) |
+| 1. | `kaynaklar/wellen-hessen-2016-B2.txt` (mekanik dalga) |
+| 2. | `kaynaklar/wellen-hessen-2013-B2.txt` (mekanik dalga) |
+| 3. | `kaynaklar/wellen-hessen-2012-B1.txt` (dalga optiği) |
+| 4. | `kaynaklar/wellen-hessen-2015-A2.txt` (dalga optiği) |
 
 - `"themenbereich": "Wellen und Wellenoptik"`
 - `"themenbereich_slug": "wellen"`
 
 ### Fizik — Mekanik salınımlar (2 soru)
 
-| Dosya adı | Kaynak |
+| Soru | Kaynak |
 |---|---|
-| `physik-schwingungen-<anahtar>-013.json` | `kaynaklar/schwingungen-hessen-2013-B1.txt` |
-| `physik-schwingungen-<anahtar>-014.json` | `kaynaklar/schwingungen-hessen-2015-A1.txt` |
+| 1. | `kaynaklar/schwingungen-hessen-2013-B1.txt` |
+| 2. | `kaynaklar/schwingungen-hessen-2015-A1.txt` |
 
 - `"themenbereich": "Schwingungen und Schwingkreis"`
 - `"themenbereich_slug": "schwingungen"`
 
 ### Matematik — Analytische Geometrie (5 soru)
 
-| Dosya adı | Kaynak |
+| Soru | Kaynak |
 |---|---|
-| `mathe-ageo-<anahtar>-010.json` … `-014.json` | `kaynaklar/mathe-*.txt` dosyalarının **tamamı** — içlerinden geometri sorularını seç |
+| 1.–5. | `kaynaklar/mathe-*.txt` dosyalarının **tamamı** — içlerinden geometri sorularını seç |
 
 - `"fach": "mathematik"`
 - `"themenbereich": "Analytische Geometrie"`
 - `"themenbereich_slug": "analytische-geometrie"`
 
-> `<anahtar>` kısmını sen seç: küçük harf, yalnızca `a-z0-9-`.
-> Örnek: `physik-efeld-plattenkondensator-013`.
-> **`id` alanı dosya adının `.json`'suz hâliyle birebir aynı olmalı.**
+> **Dosya adı `q<üç haneli sıra>.json`** — numaralandırma her konu klasörü
+> içinde 1'den başlar. Yeni dosyalar o klasördeki son numaradan devam eder:
+> klasörde `q001`–`q010` varsa yenileri `q011.json`, `q012.json`, …
+> Örnek: `content/aufgaben/abitur/physik/elektrisches-feld/q011.json`.
+> **`id` alanı dosya adının `.json`'suz hâliyle birebir aynı olmalı** (`"id": "q011"`).
+> `id` yalnızca kendi klasöründe benzersizdir — her konuda bir `q001` vardır.
 
 ---
 
@@ -139,14 +142,27 @@ Kaynak metinde geçse bile: müfredat dışıysa o kısmı **atla**, uyarlama.
 ### ❌ KESİNLİKLE YASAK (hiç işlenmedi)
 
 Görelilik kuramı · Radyoaktivite · Çekirdek fiziği hesapları ·
-Bohr atom modeli · Terim şeması · Çizgi spektrumu · Balmer serisi ·
-Franck-Hertz · de-Broglie · Elektron kırınımı · Compton olayı ·
 Potansiyel kuyusu · **Kondansatörün e-fonksiyonlu dolma/boşalma eğrisi ve
 zaman sabiti $\tau$** (nitel anlatım serbest, hesap yasak) ·
 **Öz indüksiyonda e-fonksiyonlu hesap** · Empedans/faz açısıyla AC devre ·
 Tek yarık kırınımı (ana konu olarak) · Bragg yansıması · Doppler olayı ·
 Polarizasyon · Diferansiyel denklemler · Bağlı sarkaçlar · Vuru (Schwebung) ·
 **Matrisler ayrı bir konu olarak** · **Geçiş matrisleri / Markov zincirleri**
+
+### ⚠️ Bu listeden ÇIKARILDI — işlendi, yazılabilir
+
+Aşağıdakiler önceki sürümde yanlışlıkla yasak sayılmıştı. Öğrenci teyit etti:
+**hepsi işlendi.** O yılın Abitur'unda çıkmadılar, ama müfredat içindeler ve
+ileriki yıllarda çıkabilirler — soru yazılabilir, sadece öncelikleri düşük.
+
+Bohrsches Atommodell · Linienspektrum (Emission/Absorption) ·
+Termschema ($E = h\,f$, geçişler) · Balmer-Serie · Franck-Hertz-Versuch ·
+de-Broglie-Wellenlänge $\lambda = h/p$ **(hesap dâhil)** ·
+Elektronenbeugung **(hesap dâhil)**
+
+**Tek istisna — Compton-Effekt yalnızca NİTEL.** Fotonun momentumu olduğu ve
+saçılmada dalga boyunun arttığı işlendi; $\Delta\lambda = (h/m_e c)(1-\cos\theta)$
+ile **hesap yaptırılmadı**. Soruda hesap olarak kullanma, açıklama düzeyinde kal.
 
 > Determinant yalnızca doğrusal bağımlılık kontrolünde kullanılır,
 > ayrı bir matris bölümü olarak değil.
@@ -177,7 +193,7 @@ Polarizasyon · Diferansiyel denklemler · Bağlı sarkaçlar · Vuru (Schwebung
 ```jsonc
 {
   "bereich": "abitur",
-  "id": "physik-efeld-plattenkondensator-013",  // == dosya adı, yalnızca [a-z0-9-]
+  "id": "q011",                                 // == dosya adı (qNNN)
   "titel": "…",                                  // Almanca
   "fach": "physik",                              // veya "mathematik"
   "themenbereich": "Elektrisches Feld und Kondensator",  // tablodaki metin birebir
@@ -262,6 +278,11 @@ durdurur; bu bilinçli bir tasarım.
   `"\\cdot"`. Satır sonu `\n`.
 - ⚠️ **`€` karakteri KaTeX fontlarında yok** — boş kutu çıkar.
   Para tutarını `$4{,}20\ \text{EUR}$` diye yaz. *(Bu da gerçekten oldu.)*
+- ⚠️ **`titel` ve `unterthema` alanlarında LaTeX YASAK.** Bu iki alan render
+  edilmez; `<h1>`, kart, breadcrumb ve `<title>` etiketinde düz metin olarak
+  basılır. `"$f(x)=x\\,e^{-x}$"` yazarsan sayfada dolar işaretleriyle ham
+  görünür. Üst simge gerekiyorsa Unicode kullan: `e⁻ˣ`, `a⁻¹`, `b²`, `x³`.
+  Doğrulayıcı bu alanlarda `$` görürse dosyayı reddeder. *(Bu da gerçekten oldu.)*
 - İzinli/denenmiş komutlar: `\frac \sqrt \cdot \approx \Delta \lambda \omega
   \varphi \alpha \pi \vec{} \text{} \begin{array} \hline \Longrightarrow
   \tfrac \left( \right) \sin \cos \tan \ln \int \sum \infty \circ \mu \Omega
@@ -298,7 +319,7 @@ reddedilir:
 6. Operatörler beyaz listede
 7. Zertifikat ↔ niveau tutarlılığı
 8. `id` == uzantısız dosya adı
-9. `id` tüm dosyalarda benzersiz
+9. `id` kendi klasöründe benzersiz
 10. **`aufgabenstellung` benzerliği**: herhangi iki dosya arasında
     trigram-Jaccard > 0,85 ise hata. → Yeni soruların hem birbirine hem
     mevcut sorulara benzemesin; bağlamı ve cümle kuruluşunu gerçekten değiştir.
@@ -310,6 +331,7 @@ reddedilir:
 - [ ] Her `warum.de` ve `warum.tr` ≥ 40 karakter
 - [ ] Her `$$…$$` tek satırda
 - [ ] `€` yok
+- [ ] `titel` ve `unterthema` içinde `$` yok (üst simge gerekiyorsa `e⁻ˣ`)
 - [ ] JSON ayrıştırılıyor (`python3 -m json.tool dosya.json`)
 - [ ] **Her sayıyı hesap makinesiyle bir kez daha doğruladın**
 - [ ] Müfredat dışı hiçbir kavram girmedi

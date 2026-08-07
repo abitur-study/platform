@@ -1,0 +1,104 @@
+{
+  "bereich": "abitur",
+  "id": "q004",
+  "titel": "Induktion zwischen zwei ineinander gewickelten Spulen",
+  "fach": "physik",
+  "themenbereich": "Elektromagnetische Induktion",
+  "themenbereich_slug": "induktion",
+  "unterthema": "Induktion durch Änderung der Flussdichte, Induktivität",
+  "niveau": "GK",
+  "operatoren": [
+    "beschreiben",
+    "erklären",
+    "entwickeln",
+    "berechnen",
+    "skizzieren",
+    "begründen"
+  ],
+  "sprache": "de",
+  "schwierigkeit": 4,
+  "bearbeitungszeit_min": 45,
+  "aufgabenstellung": "Auf ein gerades Kunststoffrohr der Länge $\\ell = 45\\ \\text{cm}$ mit der Querschnittsfläche $A = 0{,}018\\ \\text{m}^2$ sind zwei gegeneinander isolierte Drähte gleichsinnig übereinander gewickelt. Die **Erregerspule** trägt $N_{err} = 600$ Windungen und ist an eine regelbare Gleichstromquelle angeschlossen. Die **Induktionsspule** trägt $N_{ind} = 1200$ Windungen und ist mit einem hochohmigen Spannungsmesser verbunden, dessen Nullpunkt in der Mitte der Skala liegt. Der Spulenkörper ist unmagnetisch ($\\mu_r = 1$); das Feld im Rohrinneren darf als homogen angesehen werden, das gesamte Feld der Erregerspule durchsetzt auch die Induktionsspule.\n\nDie Stromstärke in der Erregerspule wird periodisch verändert: Sie wächst in $0{,}25\\ \\text{s}$ gleichmäßig von $0$ auf $350\\ \\text{mA}$, bleibt danach $0{,}15\\ \\text{s}$ konstant, fällt anschließend in $0{,}50\\ \\text{s}$ gleichmäßig wieder auf $0$ und bleibt dann $0{,}10\\ \\text{s}$ bei null. Danach wiederholt sich der Vorgang.\n\na) Beschreiben Sie, was der Spannungsmesser anzeigt, während die Stromstärke in der Erregerspule zunimmt, und erklären Sie mithilfe der Lenzschen Regel, wie der Induktionsstrom gegenüber dem Erregerstrom gerichtet ist. (4 BE)\n\nb) Entwickeln Sie aus dem Induktionsgesetz und dem magnetischen Fluss einer langen Spule eine Gleichung, die $U_{ind}$ allein durch $N_{ind}$, $N_{err}$, $A$, $\\ell$ und $\\frac{\\Delta I}{\\Delta t}$ ausdrückt. (4 BE)\n\nc) Berechnen Sie die Induktionsspannung in den vier Zeitabschnitten einer Periode und skizzieren Sie den Verlauf von $U_{ind}(t)$ für $0 \\le t \\le 2{,}0\\ \\text{s}$. (5 BE)\n\nd) Berechnen Sie den größten magnetischen Fluss, der eine Windung der Induktionsspule durchsetzt, und begründen Sie, in welchen Zeitabschnitten er auftritt. (3 BE)\n\ne) Berechnen Sie die Induktivität der Erregerspule in Millihenry. (3 BE)",
+  "material": [
+    {
+      "typ": "tabelle",
+      "titel": "Erregerstrom in einer Periode",
+      "inhalt": "$$\\begin{array}{c|c|c|c|c} \\text{Abschnitt} & 1 & 2 & 3 & 4 \\\\ \\hline t\\ \\text{in s} & 0 \\ldots 0{,}25 & 0{,}25 \\ldots 0{,}40 & 0{,}40 \\ldots 0{,}90 & 0{,}90 \\ldots 1{,}00 \\\\ \\hline I\\ \\text{in mA} & 0 \\rightarrow 350 & 350 & 350 \\rightarrow 0 & 0 \\end{array}$$\n\nDie Periodendauer beträgt somit $1{,}00\\ \\text{s}$; innerhalb jedes Abschnitts ändert sich $I$ gleichmäßig.\n\nNaturkonstante: $\\mu_0 = 4\\pi\\cdot 10^{-7}\\ \\frac{\\text{Vs}}{\\text{Am}}$",
+      "quelle": "eigene Erstellung",
+      "lizenz": "CC BY-SA 4.0"
+    }
+  ],
+  "tipps": [
+    "Zwei Formeln reichen für die ganze Aufgabe: das Induktionsgesetz $U_{ind} = -N_{ind}\\cdot\\frac{\\Delta\\Phi}{\\Delta t}$ und der Fluss $\\Phi = B\\cdot A$ mit der Flussdichte im Inneren einer langen Spule.",
+    "Setze $\\Phi$ in das Induktionsgesetz ein, bevor du Zahlen einsetzt. Alle Größen außer der Stromstärke sind konstant und dürfen vor die Änderungsrate gezogen werden.",
+    "Für die Skizze brauchst du keine neuen Rechnungen: In welchen Abschnitten ist $\\frac{\\Delta I}{\\Delta t}$ null, in welchen positiv, in welchen negativ? Achte darauf, dass der Betrag in Abschnitt 3 kleiner ausfällt als in Abschnitt 1."
+  ],
+  "loesung": {
+    "gesamtpunkte": 19,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Anzeige des Messgeräts und Richtung des Induktionsstroms",
+        "inhalt": "**Beschreibung:** Solange die Stromstärke in der Erregerspule wächst, wächst auch die Flussdichte in ihrem Inneren und damit der magnetische Fluss durch die Induktionsspule. Nach dem Induktionsgesetz wird deshalb in der Induktionsspule eine Spannung induziert; der Zeiger schlägt aus und bleibt während des gleichmäßigen Anstiegs auf einem konstanten Wert stehen, weil die Änderungsrate $\\frac{\\Delta I}{\\Delta t}$ in diesem Abschnitt konstant ist.\n\n**Erklärung mit der Lenzschen Regel:** Der Induktionsstrom ist stets so gerichtet, dass er seiner Ursache entgegenwirkt. Die Ursache ist hier die Zunahme des Flusses. Der Induktionsstrom fließt daher so, dass sein eigenes Magnetfeld dem Feld der Erregerspule entgegengesetzt ist. Da beide Spulen gleichsinnig gewickelt sind, bedeutet das: Der Strom in der Induktionsspule ist dem Erregerstrom entgegengerichtet.",
+        "warum": {
+          "de": "Die entscheidende Unterscheidung lautet: Der Ausschlag hängt nicht davon ab, wie groß der Erregerstrom ist, sondern wie schnell er sich ändert. Ein starker, aber konstanter Strom erzeugt keinerlei Anzeige. Die Lenzsche Regel ist dabei keine zusätzliche Merkregel, sondern Energieerhaltung: Wäre der Induktionsstrom gleichgerichtet, würde er den Fluss verstärken, dieser wiederum den Induktionsstrom — die Anordnung würde sich ohne Energiezufuhr selbst aufschaukeln.",
+          "tr": "Belirleyici ayrım şudur: sapma, uyarma akımının ne kadar büyük olduğuna değil, ne kadar hızlı değiştiğine bağlıdır. Güçlü ama sabit bir akım hiçbir gösterge vermez. Lenz kuralı burada ek bir ezber değil, enerjinin korunumudur: indüksiyon akımı aynı yönde olsaydı akıyı güçlendirir, akı da indüksiyon akımını — düzenek dışarıdan enerji almadan kendi kendini büyütürdü."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 2,
+        "titel": "Gleichung für die Induktionsspannung entwickeln",
+        "inhalt": "Im Inneren einer langen Spule gilt für die Flussdichte\n\n$$B = \\mu_0\\cdot\\mu_r\\cdot\\frac{N_{err}\\cdot I}{\\ell}, \\qquad \\mu_r = 1$$\n\nDamit lautet der magnetische Fluss durch eine Windung der Induktionsspule\n\n$$\\Phi = B\\cdot A = \\mu_0\\cdot\\frac{N_{err}\\cdot A}{\\ell}\\cdot I$$\n\nEingesetzt in das Induktionsgesetz:\n\n$$U_{ind} = -N_{ind}\\cdot\\frac{\\Delta\\Phi}{\\Delta t} = -N_{ind}\\cdot\\frac{\\Delta}{\\Delta t}\\left(\\mu_0\\cdot\\frac{N_{err}\\cdot A}{\\ell}\\cdot I\\right)$$\n\nAlle Größen außer $I$ sind konstant und dürfen aus der Änderungsrate herausgezogen werden:\n\n$$U_{ind} = -\\mu_0\\cdot\\frac{N_{ind}\\cdot N_{err}\\cdot A}{\\ell}\\cdot\\frac{\\Delta I}{\\Delta t}$$\n\nDer Vorfaktor ist eine reine Apparaturkonstante:\n\n$$\\mu_0\\cdot\\frac{N_{ind}\\cdot N_{err}\\cdot A}{\\ell} = 4\\pi\\cdot 10^{-7}\\ \\tfrac{\\text{Vs}}{\\text{Am}}\\cdot\\frac{1200\\cdot 600\\cdot 0{,}018\\ \\text{m}^2}{0{,}45\\ \\text{m}} \\approx 3{,}62\\cdot 10^{-2}\\ \\frac{\\text{Vs}}{\\text{A}}$$",
+        "warum": {
+          "de": "Das Herausziehen der konstanten Faktoren ist der eigentliche Erkenntnisgewinn: Übrig bleibt eine Proportionalität $U_{ind} \\sim \\frac{\\Delta I}{\\Delta t}$ mit einem festen Vorfaktor, der nur von der Bauform abhängt. Wer stattdessen für jeden Zeitabschnitt $B$, dann $\\Phi$, dann $U$ einzeln ausrechnet, kommt zwar zum selben Ergebnis, macht sich aber dreimal so viel Arbeit und übersieht, dass es sich um eine einzige Gerätekonstante handelt.",
+          "tr": "Asıl kazanım, sabit çarpanların dışarı alınmasıdır: geriye yalnızca yapının biçimine bağlı sabit bir çarpanla $U_{ind} \\sim \\frac{\\Delta I}{\\Delta t}$ orantısı kalır. Her zaman aralığı için önce $B$, sonra $\\Phi$, sonra $U$ hesaplayan öğrenci aynı sonuca varır ama üç kat fazla iş yapar ve burada tek bir cihaz sabiti bulunduğunu gözden kaçırır."
+        },
+        "teilpunkte": 4
+      },
+      {
+        "nr": 3,
+        "titel": "Induktionsspannung in den vier Abschnitten und Verlauf",
+        "inhalt": "Mit dem Vorfaktor $k \\approx 3{,}62\\cdot 10^{-2}\\ \\frac{\\text{Vs}}{\\text{A}}$ gilt $|U_{ind}| = k\\cdot\\left|\\frac{\\Delta I}{\\Delta t}\\right|$.\n\n**Abschnitt 1** ($0 \\ldots 0{,}25\\ \\text{s}$):\n\n$$\\frac{\\Delta I}{\\Delta t} = \\frac{0{,}350\\ \\text{A}}{0{,}25\\ \\text{s}} = 1{,}40\\ \\frac{\\text{A}}{\\text{s}} \\quad\\Longrightarrow\\quad |U_{ind}| \\approx 3{,}62\\cdot 10^{-2}\\cdot 1{,}40\\ \\text{V} \\approx 5{,}07\\cdot 10^{-2}\\ \\text{V} = 50{,}7\\ \\text{mV}$$\n\n**Abschnitt 2** ($0{,}25 \\ldots 0{,}40\\ \\text{s}$): $\\Delta I = 0 \\Longrightarrow U_{ind} = 0\\ \\text{V}$.\n\n**Abschnitt 3** ($0{,}40 \\ldots 0{,}90\\ \\text{s}$):\n\n$$\\frac{\\Delta I}{\\Delta t} = \\frac{-0{,}350\\ \\text{A}}{0{,}50\\ \\text{s}} = -0{,}70\\ \\frac{\\text{A}}{\\text{s}} \\quad\\Longrightarrow\\quad |U_{ind}| \\approx 2{,}53\\cdot 10^{-2}\\ \\text{V} = 25{,}3\\ \\text{mV}$$\n\nDas Vorzeichen ist dem von Abschnitt 1 entgegengesetzt.\n\n**Abschnitt 4** ($0{,}90 \\ldots 1{,}00\\ \\text{s}$): $\\Delta I = 0 \\Longrightarrow U_{ind} = 0\\ \\text{V}$.\n\n**Skizze:** Das $t$-$U_{ind}$-Diagramm besteht aus waagerechten Stufen mit senkrechten Sprüngen an den Abschnittsgrenzen: $-50{,}7\\ \\text{mV}$ von $0$ bis $0{,}25\\ \\text{s}$, dann $0$ bis $0{,}40\\ \\text{s}$, dann $+25{,}3\\ \\text{mV}$ bis $0{,}90\\ \\text{s}$, dann $0$ bis $1{,}00\\ \\text{s}$; ab $1{,}00\\ \\text{s}$ wiederholt sich dasselbe Muster bis $2{,}0\\ \\text{s}$. Ein an der Zeitachse gespiegelter Graph ist ebenfalls richtig, solange der Vorzeichenwechsel zwischen Abschnitt 1 und Abschnitt 3 erhalten bleibt.",
+        "warum": {
+          "de": "Die beiden Zahlenwerte sind der Kern der Aufgabe: Die Stromstärke ändert sich in Abschnitt 3 um genau denselben Betrag wie in Abschnitt 1, aber sie braucht die doppelte Zeit dafür — also ist die Spannung halb so groß. Auch die Sprungstellen sind Absicht: Ein Knick im $I(t)$-Graphen wird im $U(t)$-Graphen zu einem Sprung, weil die Induktionsspannung die Steigung von $I(t)$ abbildet, nicht $I(t)$ selbst.",
+          "tr": "İki sayısal değer sorunun özüdür: akım 3. bölümde 1. bölümdekiyle tam olarak aynı miktarda değişir, ama bunun için iki katı süre harcar — dolayısıyla gerilim yarı yarıya küçüktür. Sıçramalar da kasıtlıdır: $I(t)$ grafiğindeki bir kırılma, $U(t)$ grafiğinde sıçramaya dönüşür, çünkü indüksiyon gerilimi $I(t)$'nin kendisini değil eğimini yansıtır."
+        },
+        "teilpunkte": 5
+      },
+      {
+        "nr": 4,
+        "titel": "Größter magnetischer Fluss",
+        "inhalt": "Der Fluss durch eine Windung ist proportional zur Stromstärke:\n\n$$\\Phi = \\mu_0\\cdot\\frac{N_{err}\\cdot A}{\\ell}\\cdot I$$\n\nEr ist also maximal, wenn $I$ maximal ist, d. h. bei $I_{max} = 350\\ \\text{mA} = 0{,}350\\ \\text{A}$:\n\n$$\\Phi_{max} = 4\\pi\\cdot 10^{-7}\\ \\tfrac{\\text{Vs}}{\\text{Am}}\\cdot\\frac{600\\cdot 0{,}018\\ \\text{m}^2}{0{,}45\\ \\text{m}}\\cdot 0{,}350\\ \\text{A} \\approx 1{,}06\\cdot 10^{-5}\\ \\text{Vs}$$\n\n**Begründung des Zeitpunkts:** $\\mu_0$, $N_{err}$, $A$ und $\\ell$ sind fest, also hängt $\\Phi$ nur von $I$ ab. Das Maximum tritt daher in Abschnitt 2 jeder Periode auf, also von $0{,}25\\ \\text{s}$ bis $0{,}40\\ \\text{s}$ sowie von $1{,}25\\ \\text{s}$ bis $1{,}40\\ \\text{s}$ — genau in dem Abschnitt, in dem der Spannungsmesser null anzeigt.",
+        "warum": {
+          "de": "Dieses Nebeneinander ist die wichtigste Einsicht der ganzen Aufgabe: Der Fluss ist genau dann am größten, wenn die Induktionsspannung null ist. Wer Fluss und Spannung gedanklich gleichsetzt, verwechselt eine Größe mit ihrer Änderungsrate — derselbe Fehler wie Ort und Geschwindigkeit in der Mechanik zu verwechseln. Auch die Einheit hilft beim Selbsttest: $1\\ \\text{Vs} = 1\\ \\text{Wb}$, also Spannung mal Zeit, nicht Spannung.",
+          "tr": "Bu yan yanalık, sorunun en önemli kavrayışıdır: akı tam olarak indüksiyon geriliminin sıfır olduğu anda en büyüktür. Akı ile gerilimi zihninde eşitleyen öğrenci bir büyüklükle onun değişim hızını karıştırır — mekanikte konumla hızı karıştırmakla aynı hata. Birim de öz denetime yarar: $1\\ \\text{Vs} = 1\\ \\text{Wb}$, yani gerilim çarpı zaman, gerilim değil."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 5,
+        "titel": "Induktivität der Erregerspule",
+        "inhalt": "Für eine lange Spule gilt\n\n$$L = \\mu_0\\cdot\\mu_r\\cdot\\frac{N^2\\cdot A}{\\ell}$$\n\nMit $\\mu_r = 1$, $N = N_{err} = 600$, $A = 0{,}018\\ \\text{m}^2$ und $\\ell = 0{,}45\\ \\text{m}$:\n\n$$L = 4\\pi\\cdot 10^{-7}\\ \\tfrac{\\text{Vs}}{\\text{Am}}\\cdot\\frac{600^2\\cdot 0{,}018\\ \\text{m}^2}{0{,}45\\ \\text{m}} = 4\\pi\\cdot 10^{-7}\\ \\tfrac{\\text{Vs}}{\\text{Am}}\\cdot 14400\\ \\text{m}$$\n\n$$L \\approx 1{,}81\\cdot 10^{-2}\\ \\text{H} = 18{,}1\\ \\text{mH}$$",
+        "warum": {
+          "de": "Die quadratische Abhängigkeit von der Windungszahl ist kein Zufall und der häufigste Rechenfehler: $N$ steht einmal in der Formel für das erzeugte Feld und ein zweites Mal, weil jede der $N$ Windungen von diesem Feld durchsetzt wird. Deshalb verachtfacht ein Kunststoffkern mit $\\mu_r = 1$ nichts, während ein Eisenkern mit $\\mu_r \\approx 1000$ die Induktivität um drei Zehnerpotenzen anhebt — bei sonst identischer Spule.",
+          "tr": "Sarım sayısına karesel bağımlılık rastlantı değildir ve en sık yapılan hesap hatasıdır: $N$ formülde bir kez üretilen alan için, bir kez de bu alanın $N$ sarımın her birinden geçmesi nedeniyle bulunur. Bu yüzden $\\mu_r = 1$ olan plastik gövde hiçbir şeyi çoğaltmazken, $\\mu_r \\approx 1000$ olan bir demir çekirdek — bobin aynı kalsa bile — indüktansı üç on kuvveti birden yükseltir."
+        },
+        "teilpunkte": 3
+      }
+    ],
+    "haeufige_fehler": [
+      "$U_{ind}$ proportional zur Stromstärke $I$ statt zur Änderungsrate $\\frac{\\Delta I}{\\Delta t}$ angesetzt — im konstanten Abschnitt käme dann fälschlich die größte Spannung heraus.",
+      "Windungszahlen vertauscht: $N_{err}$ gehört in die Formel für $B$, $N_{ind}$ vor die Flussänderung im Induktionsgesetz.",
+      "In Abschnitt 3 denselben Betrag wie in Abschnitt 1 angegeben, weil nur die Stromänderung $0{,}350\\ \\text{A}$, nicht aber die verdoppelte Dauer beachtet wurde.",
+      "Bei der Induktivität $N$ statt $N^2$ eingesetzt; das Ergebnis fällt dann um den Faktor $600$ zu klein aus.",
+      "Spulenlänge in Zentimetern belassen, wodurch alle Ergebnisse um den Faktor $100$ zu groß werden."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen, Landesabitur Physik 2009, Grundkurs, Aufgabe A1",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-opus-5 / 2026-08-04",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

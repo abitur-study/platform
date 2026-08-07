@@ -1,0 +1,77 @@
+{
+  "bereich": "abitur",
+  "id": "q005",
+  "titel": "Influenz, Kräftegleichgewicht und LED-Standlicht – eine Plattenkondensator-Aufgabe",
+  "fach": "physik",
+  "themenbereich": "Elektrisches Feld und Kondensator",
+  "themenbereich_slug": "elektrisches-feld",
+  "unterthema": "Influenz, Kapazität, Energie",
+  "niveau": "GK",
+  "operatoren": ["berechnen", "erläutern", "begründen", "skizzieren"],
+  "sprache": "de",
+  "schwierigkeit": 3,
+  "bearbeitungszeit_min": 35,
+  "aufgabenstellung": "Ein luftgefüllter Plattenkondensator hat quadratische Platten mit Kantenlänge $a = 40\\ \\text{cm}$ und Plattenabstand $d = 8\\ \\text{cm}$. Er trägt die Ladung $Q = 2{,}0\\cdot 10^{-8}\\ \\text{C}$.\n\na) Berechnen Sie die Kapazität des Kondensators.\n\nb) In das homogene Feld wird ein kleines, elektrisch neutrales Plattenpaar (Metallplatten an Isolierstielen, parallel zu den Kondensatorplatten) gebracht. Erläutern Sie, was in den kleinen Platten geschieht (Influenz). Begründen Sie, warum zwischen den getrennten Platten ein feldfreier Raum entsteht, und skizzieren Sie die Ladungsverteilung.\n\nc) Ein neutrales Kügelchen der Masse $m = 0{,}80\\ \\text{g}$ hängt an einem Faden der Länge $\\ell = 2{,}00\\ \\text{m}$ genau in der Mitte zwischen den Kondensatorplatten. Es wird negativ geladen; bei $U = 1{,}5\\ \\text{kV}$ wird es um $s = 2{,}0\\ \\text{cm}$ ausgelenkt und ruht. Zeigen Sie, dass für die Ladung $q = \\dfrac{m g d s}{U \\ell}$ gilt, und berechnen Sie $q$.\n\nd) Ein Kondensator mit $C = 1\\ \\text{F}$ wird von einem Dynamo auf $U_0 = 6\\ \\text{V}$ aufgeladen. Ein LED-Standlicht benötigt mindestens $U_{\\min} = 3{,}6\\ \\text{V}$ bei $I = 15\\ \\text{mA}$. Berechnen Sie die verfügbare Energie $\\Delta E = \\frac{1}{2}C(U_0^2 - U_{\\min}^2)$ und die maximale Leuchtdauer.",
+  "material": [],
+  "tipps": [
+    "Die Kapazität eines Plattenkondensators berechnet sich mit $C = \\varepsilon_0 A/d$.",
+    "Bei der Influenz trennen sich die Ladungen im Plattenpaar; zwischen den getrennten Platten heben sich das äußere und das innere Feld auf.",
+    "Für die Ladung des Kügelchens verwenden Sie das Kräftegleichgewicht und die Kleinwinkelnäherung."
+  ],
+  "loesung": {
+    "gesamtpunkte": 19,
+    "schritte": [
+      {
+        "nr": 1,
+        "titel": "Kapazität berechnen",
+        "inhalt": "$A = (0{,}40\\ \\text{m})^2 = 0{,}16\\ \\text{m}^2$.\n$C = \\varepsilon_0 \\dfrac{A}{d} = 8{,}854\\cdot 10^{-12} \\cdot \\dfrac{0{,}16}{0{,}08} = 1{,}77\\cdot 10^{-11}\\ \\text{F} = 17{,}7\\ \\text{pF}$.",
+        "warum": {
+          "de": "Die Kapazität hängt nur von der Geometrie und dem Dielektrikum ab, nicht von der Ladung. Der Wert von knapp 18 pF ist typisch für einen Schulversuch – damit lässt sich die Größenordnung gut veranschaulichen.",
+          "tr": "Kapasitans yalnızca geometriye ve dielektrik ortama bağlıdır, yüke değil. Yaklaşık 18 pF değeri okul deneyleri için tipiktir – büyüklük mertebesini göstermek için iyidir."
+        },
+        "teilpunkte": 3
+      },
+      {
+        "nr": 2,
+        "titel": "Influenz und feldfreier Raum erklären",
+        "inhalt": "Im elektrischen Feld werden die Ladungsträger im Metall verschoben: Elektronen wandern zur einen Seite, die andere wird positiv. Zwischen den auseinandergezogenen Platten entsteht ein Gegenfeld, das das äußere Feld kompensiert; die Felder addieren sich zu null.",
+        "warum": {
+          "de": "Die Influenz ist ein zentrales Phänomen, das zeigt, dass Leiter im elektrostatischen Gleichgewicht feldfrei sind. Die Kompensation des äußeren Feldes durch das innere Feld ist die Grundlage für die Abschirmung von elektrischen Feldern.",
+          "tr": "İnfluenz, elektrostatik dengedeki iletkenlerin alansız olduğunu gösteren merkezi bir olgudur. Dış alanın iç alan tarafından dengelenmesi, elektrik alanlardan korunmanın temelidir."
+        },
+        "teilpunkte": 5
+      },
+      {
+        "nr": 3,
+        "titel": "Ladung des Kügelchens herleiten und berechnen",
+        "inhalt": "Im Kräftegleichgewicht: $\\tan\\alpha = F_{el}/F_G = qE/(mg) = qU/(mgd)$. Mit $\\tan\\alpha \\approx \\sin\\alpha = s/\\ell$ folgt $q = mgds/(U\\ell)$.\nEinsetzen: $q = \\frac{0{,}80\\cdot 10^{-3}\\cdot 9{,}81\\cdot 0{,}08\\cdot 0{,}020}{1{,}5\\cdot 10^{3}\\cdot 2{,}00} \\approx 4{,}19\\cdot 10^{-9}\\ \\text{C} = 4{,}19\\ \\text{nC}$.",
+        "warum": {
+          "de": "Die Formel zeigt, dass die Ladung bei gleicher Geometrie direkt proportional zur Auslenkung ist – eine lineare Abhängigkeit, die man im Experiment gut prüfen kann. Die berechnete Ladung im Nano-Coulomb-Bereich ist plausibel für ein Reibungskügelchen.",
+          "tr": "Formül, aynı geometride yükün sapmayla doğru orantılı olduğunu gösterir – bu doğrusal bağımlılık deneyde kolayca test edilebilir. Hesaplanan nano-Coulomb mertebesindeki yük, sürtünme küreciği için makuldür."
+        },
+        "teilpunkte": 6
+      },
+      {
+        "nr": 4,
+        "titel": "LED-Betriebsdauer",
+        "inhalt": "$\\Delta E = \\frac{1}{2}\\cdot 1\\cdot (6^2 - 3{,}6^2) = 11{,}52\\ \\text{J}$.\n$t = \\dfrac{\\Delta E}{U_{\\min}\\cdot I} = \\dfrac{11{,}52}{3{,}6\\cdot 0{,}015} \\approx 213{,}3\\ \\text{s} \\approx 3{,}56\\ \\text{min}$.",
+        "warum": {
+          "de": "Die nutzbare Energie ist die Differenz der gespeicherten Energien bei Anfangs- und Endspannung. Da die Spannung während der Entladung sinkt, ist die Annahme einer konstanten Spannung von 3,6 V eine konservative Abschätzung – die tatsächliche Leuchtdauer kann etwas länger sein.",
+          "tr": "Kullanılabilir enerji, başlangıç ve bitiş gerilimlerindeki depolanmış enerjilerin farkıdır. Deşarj sırasında gerilim düştüğü için, 3,6 V sabit gerilim varsayımı ihtiyatlı bir tahmindir – gerçek süre biraz daha uzun olabilir."
+        },
+        "teilpunkte": 5
+      }
+    ],
+    "haeufige_fehler": [
+      "Bei der Kapazität wird die Fläche nicht in Quadratmeter umgerechnet.",
+      "Die Influenz wird mit Leitfähigkeit verwechselt; die Ladungstrennung wird nicht korrekt beschrieben.",
+      "Bei der LED-Betriebsdauer wird die verfügbare Energie mit der Gesamtenergie bei 6 V gleichgesetzt, ohne die Mindestspannung zu berücksichtigen."
+    ]
+  },
+  "quelle": "eigene Aufgabe im Stil von Hessen Landesabitur Physik 2016, Grundkurs, Aufgabe B1",
+  "lizenz": "CC BY-SA 4.0",
+  "status": "veroeffentlicht",
+  "generiert_mit": "claude-3-7-sonnet / 2026-08-05",
+  "geprueft_von": "Projektteam",
+  "version": 1
+}

@@ -24,7 +24,7 @@ export type Kachel = {
 type Variante = "fach" | "thema" | "aufgabe";
 
 const KARTE =
-  "border border-linie p-8 transition-colors hover:bg-papier-2 items-center gap-6";
+  "border border-linie p-6 transition-colors sm:p-8 hover:bg-papier-2 items-center gap-6";
 
 function Pfeil() {
   return (
@@ -37,7 +37,7 @@ function Pfeil() {
 /** Henüz yazılmamış ders/konu — tıklanamaz, kısa bir not taşır. */
 function BaldKarte({ k, label }: { k: Kachel; label: string }) {
   return (
-    <div className="flex min-h-[12.5rem] flex-col justify-between border border-linie p-8 opacity-55">
+    <div className="flex min-h-[12.5rem] flex-col justify-between border border-linie p-6 opacity-55 sm:p-8">
       <h3 className="t-22">{k.titel}</h3>
       <p className="text-base leading-relaxed">{k.text ?? label}</p>
     </div>
@@ -80,7 +80,7 @@ export function Kacheln({
                   key={k.href}
                   href={k.href}
                   data-reveal="right"
-                  className={`grid grid-cols-[minmax(0,1fr)_auto] ${KARTE}`}
+                  className={`grid sm:grid-cols-[minmax(0,1fr)_auto] ${KARTE}`}
                 >
                   <div>
                     <p className="flex items-center gap-3 text-base font-bold text-akzent">
@@ -90,7 +90,7 @@ export function Kacheln({
                     <h3 className="t-52 mt-4">{k.titel}</h3>
                     {k.text && <p className="mt-2">{k.text}</p>}
                   </div>
-                  <div className="text-right">
+                  <div className="sm:text-right">
                     <div className="t-52">{k.zahl}</div>
                     <div className="text-base">{k.meta}</div>
                     <div className="mt-4 text-base font-bold">
@@ -127,7 +127,7 @@ export function Kacheln({
             href={k.href}
             data-reveal="right"
             data-reveal-delay={i * 60}
-            className={`grid items-start sm:grid-cols-[auto_minmax(0,1fr)_minmax(12.5rem,17.5rem)] ${KARTE}`}
+            className={`grid items-start sm:grid-cols-[auto_minmax(0,1fr)_auto] ${KARTE}`}
           >
             <div className="t-32 tabular-nums text-akzent">
               {k.zahl ?? i + 1}
@@ -136,7 +136,12 @@ export function Kacheln({
               <h3 className="t-22 text-pretty">{k.titel}</h3>
               {k.text && <p className="mt-2">{k.text}</p>}
             </div>
-            <div className="flex flex-wrap items-center gap-2 text-base font-bold sm:justify-end">
+            {/* whitespace-nowrap: pill metni kendi içinde bölünmesin ki üçüncü
+                sütunun max-content'i tek satır genişliği olsun — auto sütun o
+                genişliği alır, etiketler geniş ekranda tek çizgide durur.
+                Dar ekranda sütun min-content'e kadar büzülür, flex-wrap
+                devreye girer: sarma orada istenen davranış. */}
+            <div className="flex flex-wrap items-center gap-2 whitespace-nowrap text-base font-bold sm:justify-end">
               {k.marken?.map((m, j) => (
                 <span
                   key={m}
@@ -165,7 +170,7 @@ export function Kacheln({
           return (
             <div
               key={k.href}
-              className="grid items-center gap-6 border border-linie p-8 opacity-55 sm:grid-cols-[auto_minmax(0,1fr)_auto]"
+              className="grid items-center gap-6 border border-linie p-6 opacity-55 sm:p-8 sm:grid-cols-[auto_minmax(0,1fr)_auto]"
             >
               <div className="t-52 !leading-none tabular-nums">{nr}</div>
               <div>
