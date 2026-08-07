@@ -6,28 +6,31 @@
   "themenbereich": "Kohlenhydrate",
   "themenbereich_slug": "kohlenhydrate",
   "unterthema": "Fehling-Probe und reduzierende Zucker",
-  "niveau": "LK",
-  "operatoren": ["beschreiben", "erklären", "begründen", "vergleichen"],
+  "niveau": "GK",
+  "operatoren": [
+    "beschreiben",
+    "erklären",
+    "begründen"
+  ],
   "sprache": "de",
   "schwierigkeit": 4,
-  "bearbeitungszeit_min": 35,
-  "aufgabenstellung": "Vier Zuckerlösungen werden mit Fehling-Reagenz versetzt und erhitzt. Die Beobachtungen sind in Material 1 zusammengestellt.\n\na) Beschreiben Sie die Durchführung der Fehling-Probe und geben Sie an, welche funktionelle Gruppe sie nachweist.\n\nb) Erklären Sie am Beispiel der Glucose, warum ein Zucker, der in Lösung ganz überwiegend als Ring vorliegt, dennoch positiv reagiert. Gehen Sie dabei auf den Übergang zwischen Haworth- und Fischer-Darstellung ein.\n\nc) Begründen Sie den unterschiedlichen Befund bei Maltose und Saccharose anhand ihrer glykosidischen Bindungen.\n\nd) Vergleichen Sie das Verhalten von Fructose mit dem von Glucose und erklären Sie den überraschenden Befund.",
+  "bearbeitungszeit_min": 28,
+  "aufgabenstellung": "Drei Zuckerlösungen werden mit Fehling-Reagenz versetzt und erhitzt. Die Beobachtungen sind in Material 1 zusammengestellt.\n\na) Beschreiben Sie die Durchführung der Fehling-Probe und geben Sie an, welche funktionelle Gruppe sie nachweist.\n\nb) Erklären Sie am Beispiel der Glucose, warum ein Zucker, der in Lösung ganz überwiegend als Ring vorliegt, dennoch positiv reagiert. Gehen Sie dabei auf den Übergang zwischen Haworth- und Fischer-Darstellung ein.\n\nc) Begründen Sie den unterschiedlichen Befund bei Maltose und Saccharose anhand ihrer glykosidischen Bindungen.",
   "material": [
     {
       "typ": "text",
       "titel": "Material 1: Beobachtungen bei der Fehling-Probe",
-      "inhalt": "Alle vier Ansätze werden mit frisch gemischtem Fehling-Reagenz versetzt und im Wasserbad erhitzt.\n\nGlucose-Lösung: Die zunächst tiefblaue Lösung verfärbt sich über Grün und Gelb nach Orangerot; es fällt ein ziegelroter Niederschlag aus.\n\nFructose-Lösung: gleiches Verhalten wie bei Glucose, ziegelroter Niederschlag.\n\nMaltose-Lösung: ziegelroter Niederschlag, etwas langsamer einsetzend.\n\nSaccharose-Lösung: Die Lösung bleibt auch nach längerem Erhitzen tiefblau; es fällt kein Niederschlag aus.\n\nZur Struktur: In Maltose sind zwei Glucose-Einheiten über eine $\\alpha$-1,4-glykosidische Bindung verknüpft. In Saccharose sind eine Glucose- und eine Fructose-Einheit über eine 1,2-glykosidische Bindung verknüpft.",
+      "inhalt": "Alle drei Ansätze werden mit frisch gemischtem Fehling-Reagenz versetzt und im Wasserbad erhitzt.\n\nGlucose-Lösung: Die zunächst tiefblaue Lösung verfärbt sich über Grün und Gelb nach Orangerot; es fällt ein ziegelroter Niederschlag aus.\n\nMaltose-Lösung: ziegelroter Niederschlag, etwas langsamer einsetzend.\n\nSaccharose-Lösung: Die Lösung bleibt auch nach längerem Erhitzen tiefblau; es fällt kein Niederschlag aus.\n\nZur Struktur: In Maltose sind zwei Glucose-Einheiten über eine $\\alpha$-1,4-glykosidische Bindung verknüpft. In Saccharose sind eine Glucose- und eine Fructose-Einheit über eine 1,2-glykosidische Bindung verknüpft.",
       "quelle": "eigene Erstellung nach dem Standardversuch zur Fehling-Probe",
       "lizenz": "CC BY-SA 4.0"
     }
   ],
   "tipps": [
     "Ein Zucker reagiert nur dann positiv, wenn er in Lösung eine offenkettige Form mit einer Aldehydgruppe bilden kann. Welche Gruppe im Ring ermöglicht die Ringöffnung?",
-    "Schau dir an, welche C-Atome bei der glykosidischen Bindung beteiligt sind. Ein anomeres C-Atom ist das ehemalige Carbonyl-Kohlenstoffatom.",
-    "Fructose hat keine Aldehyd-, sondern eine Ketogruppe. Überlege, was im stark alkalischen Milieu des Fehling-Reagenz mit einer Ketogruppe passieren kann."
+    "Schau dir an, welche C-Atome bei der glykosidischen Bindung beteiligt sind. Ein anomeres C-Atom ist das ehemalige Carbonyl-Kohlenstoffatom."
   ],
   "loesung": {
-    "gesamtpunkte": 14,
+    "gesamtpunkte": 11,
     "schritte": [
       {
         "nr": 1,
@@ -58,23 +61,12 @@
           "tr": "Belirleyici soru bir şekerin kaç birimden oluştuğu değil, en az bir anomerik C atomunun serbest kalıp kalmadığıdır. Bununla her disakkarit veya polisakkaridin davranışı tek tek ezberlenmeden öngörülebilir: laktoz pozitif verir, nişasta ise pratikte vermez, çünkü uzun zincirlerinde çok sayıda birime karşılık yalnızca tek bir serbest yarı asetal düşer."
         },
         "teilpunkte": 4
-      },
-      {
-        "nr": 4,
-        "titel": "Verhalten der Fructose erklären",
-        "inhalt": "Fructose ist eine Ketose: In der offenkettigen Fischer-Darstellung trägt sie am C2-Atom eine Ketogruppe, keine Aldehydgruppe. Ketone lassen sich unter den milden Bedingungen der Fehling-Probe normalerweise nicht oxidieren — dennoch fällt der Befund positiv aus.\n\nDie Ursache liegt im stark alkalischen Milieu des Fehling-Reagenz. Dort steht die Ketogruppe über eine Keto-Enol-Tautomerie im Gleichgewicht mit einem Endiol, das sich wiederum zu einer Aldose umlagern kann:\n\n$$\\text{Fructose (Ketose)} \\rightleftharpoons \\text{Endiol} \\rightleftharpoons \\text{Glucose / Mannose (Aldosen)}$$\n\nDie so gebildete Aldehydgruppe wird von der Fehling-Lösung oxidiert und dem Gleichgewicht laufend entzogen. Fructose reagiert deshalb positiv, obwohl sie selbst keine Aldehydgruppe besitzt.",
-        "warum": {
-          "de": "Dieser Befund zeigt die Grenze des Nachweises: Die Fehling-Probe unterscheidet nicht zwischen Aldosen und Ketosen, sondern nur zwischen reduzierenden und nicht reduzierenden Zuckern. Wer aus einem positiven Ergebnis auf eine Aldehydgruppe im ursprünglichen Molekül schließt, überinterpretiert das Experiment — im Abitur ist genau diese Einschränkung eine typische Bewertungsfrage.",
-          "tr": "Bu bulgu testin sınırını gösterir: Fehling testi aldozları ketozlardan ayırmaz, yalnızca indirgeyen ile indirgemeyen şekerleri ayırır. Pozitif sonuçtan yola çıkıp özgün molekülde aldehit grubu olduğu sonucuna varan kişi, deneyi aşırı yorumlamış olur — Abitur'da tam olarak bu sınırlama tipik bir değerlendirme sorusudur."
-        },
-        "teilpunkte": 3
       }
     ],
     "haeufige_fehler": [
       "Behauptet, Glucose reagiere nicht, weil sie in Lösung als Ring vorliegt — das Ringöffnungsgleichgewicht wird übersehen.",
       "Die Zahl der Bausteine als Kriterium genommen statt der Zahl der freien anomeren C-Atome.",
       "Halbacetal und Vollacetal verwechselt oder gar nicht unterschieden.",
-      "Bei Fructose auf einen negativen Befund geschlossen, weil sie keine Aldehydgruppe trägt.",
       "Fehling I und Fehling II vorab gemischt aufbewahrt; das Reagenz muss frisch angesetzt werden."
     ]
   },
