@@ -15,7 +15,7 @@
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 35,
-  "aufgabenstellung": "Milchsäure (2-Hydroxypropansäure) ist eine einprotonige Säure mit dem $\\mathrm{p}K_S$-Wert $3{,}86$. Im Labor stehen $50{,}0\\ \\text{mL}$ einer Milchsäure-Lösung der Konzentration $c_0 = 0{,}10\\ \\frac{\\text{mol}}{\\text{L}}$ zur Verfügung.\n\na) Formulieren Sie die Protolysegleichung von Milchsäure in Wasser und berechnen Sie den $\\mathrm{pH}$-Wert der Ausgangslösung.\n\nb) Zu den $50{,}0\\ \\text{mL}$ werden $25{,}0\\ \\text{mL}$ Natronlauge der Konzentration $0{,}10\\ \\frac{\\text{mol}}{\\text{L}}$ gegeben. Berechnen Sie den $\\mathrm{pH}$-Wert der entstehenden Lösung und begründen Sie Ihren Rechenweg.\n\nc) Erläutern Sie anhand von Reaktionsgleichungen, wie diese Lösung auf die Zugabe kleiner Mengen Säure beziehungsweise Lauge reagiert.",
+  "aufgabenstellung": "Milchsäure (2-Hydroxypropansäure) ist eine einprotonige Säure mit dem $\\mathrm{p}K_S$-Wert $3{,}86$. Im Labor stehen $50{,}0\\ \\text{mL}$ einer Milchsäure-Lösung der Konzentration $c_0 = 0{,}10\\ \\text{mol/L}$ zur Verfügung.\n\na) Formulieren Sie die Protolysegleichung von Milchsäure in Wasser und berechnen Sie den $\\mathrm{pH}$-Wert der Ausgangslösung.\n\nb) Zu den $50{,}0\\ \\text{mL}$ werden $25{,}0\\ \\text{mL}$ Natronlauge der Konzentration $0{,}10\\ \\text{mol/L}$ gegeben. Berechnen Sie den $\\mathrm{pH}$-Wert der entstehenden Lösung und begründen Sie Ihren Rechenweg.\n\nc) Erläutern Sie anhand von Reaktionsgleichungen, wie diese Lösung auf die Zugabe kleiner Mengen Säure beziehungsweise Lauge reagiert.",
   "material": [],
   "tipps": [
     "Milchsäure ist eine schwache Säure. Was bedeutet das für die Konzentration der undissoziierten Säure im Gleichgewicht?",
@@ -48,7 +48,7 @@
       {
         "nr": 3,
         "titel": "pH-Wert der Ausgangslösung berechnen",
-        "inhalt": "Mit $\\mathrm{p}K_S = 3{,}86$ und $c_0 = 0{,}10\\ \\frac{\\text{mol}}{\\text{L}}$, also $\\lg c_0 = -1$:\n\n$$\\mathrm{pH} \\approx \\tfrac{1}{2}\\left(3{,}86 - (-1)\\right) = \\tfrac{1}{2}\\cdot 4{,}86 = 2{,}43$$\n\nDie Lösung ist deutlich sauer, aber weniger sauer als eine gleich konzentrierte Salzsäure, für die $\\mathrm{pH} = 1{,}0$ gälte.",
+        "inhalt": "Mit $\\mathrm{p}K_S = 3{,}86$ und $c_0 = 0{,}10\\ \\text{mol/L}$, also $\\lg c_0 = -1$:\n\n$$\\mathrm{pH} \\approx \\tfrac{1}{2}\\left(3{,}86 - (-1)\\right) = \\tfrac{1}{2}\\cdot 4{,}86 = 2{,}43$$\n\nDie Lösung ist deutlich sauer, aber weniger sauer als eine gleich konzentrierte Salzsäure, für die $\\mathrm{pH} = 1{,}0$ gälte.",
         "warum": {
           "de": "Der Vergleich mit der starken Säure ist der Sinn der Rechnung: Bei gleicher Einwaage unterscheiden sich die $\\mathrm{pH}$-Werte um mehr als eine Größenordnung in der Oxoniumkonzentration. Genau das ist der Unterschied zwischen der *Konzentration* einer Säure und ihrer *Stärke* — zwei Begriffe, die regelmäßig verwechselt werden.",
           "tr": "Kuvvetli asitle karşılaştırma, hesabın asıl amacıdır: aynı tartımda $\\mathrm{pH}$ değerleri oksonyum derişimi bakımından bir büyüklük mertebesinden fazla ayrılır. Bir asidin *derişimi* ile *kuvveti* arasındaki fark tam olarak budur — sık sık karıştırılan iki kavram."

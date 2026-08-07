@@ -7,11 +7,16 @@
   "themenbereich_slug": "quantenphysik",
   "unterthema": "Äußerer Photoeffekt und Austrittsarbeit",
   "niveau": "GK",
-  "operatoren": ["berechnen", "begründen", "bestimmen", "erklären"],
+  "operatoren": [
+    "berechnen",
+    "begründen",
+    "bestimmen",
+    "erklären"
+  ],
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 35,
-  "aufgabenstellung": "Die Kathode einer Vakuum-Photozelle ist mit Barium beschichtet. Für Barium beträgt die Austrittsarbeit $W_A = 2{,}48\\ \\text{eV}$.\n\nRechnen Sie mit $h = 6{,}626\\cdot 10^{-34}\\ \\text{J}\\,\\text{s}$, $c = 3{,}00\\cdot 10^{8}\\ \\frac{\\text{m}}{\\text{s}}$, $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$ und der Elektronenmasse $m_e = 9{,}109\\cdot 10^{-31}\\ \\text{kg}$.\n\na) Berechnen Sie die Grenzwellenlänge des Bariums und begründen Sie, ob der Photoeffekt oberhalb oder unterhalb dieser Wellenlänge auftritt. (4 BE)\n\nb) Die Kathode wird mit monochromatischem Licht der Wellenlänge $\\lambda = 320\\ \\text{nm}$ bestrahlt. Berechnen Sie die maximale kinetische Energie der Photoelektronen in Joule und in Elektronenvolt. (5 BE)\n\nc) Bestimmen Sie die größte Geschwindigkeit, mit der Photoelektronen bei dieser Bestrahlung aus der Kathode austreten. (4 BE)\n\nd) Berechnen Sie die Gegenspannung, bei der der Photostrom gerade verschwindet, und begründen Sie, dass dieser Wert sich nicht ändert, wenn man die Lampe heller einstellt. (4 BE)\n\ne) Erklären Sie, warum die in Teilaufgabe c) berechnete Geschwindigkeit ein Höchstwert ist und der überwiegende Teil der Photoelektronen langsamer aus der Kathode austritt. (3 BE)",
+  "aufgabenstellung": "Die Kathode einer Vakuum-Photozelle ist mit Barium beschichtet. Für Barium beträgt die Austrittsarbeit $W_A = 2{,}48\\ \\text{eV}$.\n\nRechnen Sie mit $h = 6{,}626\\cdot 10^{-34}\\ \\text{J}\\,\\text{s}$, $c = 3{,}00\\cdot 10^{8}\\ \\text{m/s}$, $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$ und der Elektronenmasse $m_e = 9{,}109\\cdot 10^{-31}\\ \\text{kg}$.\n\na) Berechnen Sie die Grenzwellenlänge des Bariums und begründen Sie, ob der Photoeffekt oberhalb oder unterhalb dieser Wellenlänge auftritt. (4 BE)\n\nb) Die Kathode wird mit monochromatischem Licht der Wellenlänge $\\lambda = 320\\ \\text{nm}$ bestrahlt. Berechnen Sie die maximale kinetische Energie der Photoelektronen in Joule und in Elektronenvolt. (5 BE)\n\nc) Bestimmen Sie die größte Geschwindigkeit, mit der Photoelektronen bei dieser Bestrahlung aus der Kathode austreten. (4 BE)\n\nd) Berechnen Sie die Gegenspannung, bei der der Photostrom gerade verschwindet, und begründen Sie, dass dieser Wert sich nicht ändert, wenn man die Lampe heller einstellt. (4 BE)\n\ne) Erklären Sie, warum die in Teilaufgabe c) berechnete Geschwindigkeit ein Höchstwert ist und der überwiegende Teil der Photoelektronen langsamer aus der Kathode austritt. (3 BE)",
   "material": [],
   "tipps": [
     "An der Grenze reicht die Energie eines Photons gerade eben aus, um ein Elektron abzulösen — es bleibt nichts übrig, was es noch beschleunigen könnte.",
@@ -46,8 +51,8 @@
         "titel": "Größte Austrittsgeschwindigkeit bestimmen",
         "inhalt": "Die kinetische Energie der schnellsten Elektronen ist $E_{kin,\\,max} = \\frac{1}{2}\\,m_e\\,v_{max}^2$. Auflösen nach $v_{max}$:\n\n$$v_{max} = \\sqrt{\\frac{2\\,E_{kin,\\,max}}{m_e}} = \\sqrt{\\frac{2\\cdot 2{,}239\\cdot 10^{-19}\\ \\text{J}}{9{,}109\\cdot 10^{-31}\\ \\text{kg}}}$$\n\n$$v_{max} = \\sqrt{4{,}916\\cdot 10^{11}\\ \\frac{\\text{m}^2}{\\text{s}^2}} \\approx 7{,}0\\cdot 10^{5}\\ \\frac{\\text{m}}{\\text{s}}$$",
         "warum": {
-          "de": "Der klassische Ausdruck $\\frac{1}{2}m v^2$ darf hier benutzt werden, weil das Ergebnis mit $7{,}0\\cdot 10^{5}\\ \\frac{\\text{m}}{\\text{s}}$ nur etwa $0{,}2\\ \\%$ der Lichtgeschwindigkeit erreicht. Diese Kontrolle gehört zur Rechnung dazu: Erst der Blick auf $\\frac{v}{c}$ rechtfertigt die verwendete Formel. Bei Röntgenphotonen mit einigen $\\text{keV}$ wäre sie nicht mehr zulässig.",
-          "tr": "Klasik $\\frac{1}{2}m v^2$ ifadesi burada kullanılabilir, çünkü sonuç $7{,}0\\cdot 10^{5}\\ \\frac{\\text{m}}{\\text{s}}$ ile ışık hızının ancak yaklaşık $\\%0{,}2$'sidir. Bu kontrol hesabın parçasıdır: kullanılan formülü haklı çıkaran şey $\\frac{v}{c}$ oranına bakmaktır. Birkaç $\\text{keV}$'lik röntgen fotonlarında bu formül artık geçerli olmazdı."
+          "de": "Der klassische Ausdruck $\\frac{1}{2}m v^2$ darf hier benutzt werden, weil das Ergebnis mit $7{,}0\\cdot 10^{5}\\ \\text{m/s}$ nur etwa $0{,}2\\ \\%$ der Lichtgeschwindigkeit erreicht. Diese Kontrolle gehört zur Rechnung dazu: Erst der Blick auf $\\frac{v}{c}$ rechtfertigt die verwendete Formel. Bei Röntgenphotonen mit einigen $\\text{keV}$ wäre sie nicht mehr zulässig.",
+          "tr": "Klasik $\\frac{1}{2}m v^2$ ifadesi burada kullanılabilir, çünkü sonuç $7{,}0\\cdot 10^{5}\\ \\text{m/s}$ ile ışık hızının ancak yaklaşık $\\%0{,}2$'sidir. Bu kontrol hesabın parçasıdır: kullanılan formülü haklı çıkaran şey $\\frac{v}{c}$ oranına bakmaktır. Birkaç $\\text{keV}$'lik röntgen fotonlarında bu formül artık geçerli olmazdı."
         },
         "teilpunkte": 4
       },
@@ -64,7 +69,7 @@
       {
         "nr": 5,
         "titel": "Warum die Geschwindigkeit ein Höchstwert ist",
-        "inhalt": "Die Austrittsarbeit $W_A$ ist die *kleinste* Energie, die zum Verlassen des Metalls nötig ist. Sie gilt für Elektronen, die unmittelbar an der Oberfläche und energetisch am günstigsten gebunden sind. Für ein Elektron aus tieferen Schichten ist mehr Arbeit erforderlich; außerdem gibt ein solches Elektron auf dem Weg zur Oberfläche durch Stöße mit dem Metallgitter einen Teil seiner Energie ab.\n\nDie Einstein-Gleichung liefert deshalb nur eine obere Schranke:\n\n$$E_{kin} \\le h\\cdot f - W_A$$\n\nDie Photoelektronen verlassen die Kathode also mit allen Geschwindigkeiten von null bis $7{,}0\\cdot 10^{5}\\ \\frac{\\text{m}}{\\text{s}}$; nur die günstigsten erreichen den Maximalwert.",
+        "inhalt": "Die Austrittsarbeit $W_A$ ist die *kleinste* Energie, die zum Verlassen des Metalls nötig ist. Sie gilt für Elektronen, die unmittelbar an der Oberfläche und energetisch am günstigsten gebunden sind. Für ein Elektron aus tieferen Schichten ist mehr Arbeit erforderlich; außerdem gibt ein solches Elektron auf dem Weg zur Oberfläche durch Stöße mit dem Metallgitter einen Teil seiner Energie ab.\n\nDie Einstein-Gleichung liefert deshalb nur eine obere Schranke:\n\n$$E_{kin} \\le h\\cdot f - W_A$$\n\nDie Photoelektronen verlassen die Kathode also mit allen Geschwindigkeiten von null bis $7{,}0\\cdot 10^{5}\\ \\text{m/s}$; nur die günstigsten erreichen den Maximalwert.",
         "warum": {
           "de": "Aus dieser Energieverteilung folgt unmittelbar, wie die Gegenfeldmethode praktisch abläuft: Der Photostrom bricht nicht schlagartig ab, sondern nimmt mit wachsender Gegenspannung allmählich ab, weil immer mehr der langsameren Elektronen zurückgehalten werden. Erst bei $U_G$ wird er null. Wer $E_{kin}$ für alle Elektronen gleich hält, kann die gemessene Stromkurve nicht deuten.",
           "tr": "Bu enerji dağılımından karşı alan yönteminin pratikte nasıl işlediği doğrudan çıkar: fotoakım birden kesilmez, karşı gerilim arttıkça yavaş yavaş azalır, çünkü giderek daha çok yavaş elektron geri tutulur. Sıfır olması ancak $U_G$'de gerçekleşir. $E_{kin}$'i bütün elektronlar için aynı sanan öğrenci ölçülen akım eğrisini yorumlayamaz."
@@ -73,7 +78,7 @@
       }
     ],
     "haeufige_fehler": [
-      "Die Austrittsarbeit in Elektronenvolt direkt in eine Formel mit Joule eingesetzt, ohne mit $1{,}602\\cdot 10^{-19}\\ \\frac{\\text{J}}{\\text{eV}}$ umzurechnen.",
+      "Die Austrittsarbeit in Elektronenvolt direkt in eine Formel mit Joule eingesetzt, ohne mit $1{,}602\\cdot 10^{-19}\\ \\text{J/eV}$ umzurechnen.",
       "Die Grenzwellenlänge als kleinste wirksame Wellenlänge gedeutet; wegen $E = \\frac{h\\,c}{\\lambda}$ ist sie die größte.",
       "Bei der Geschwindigkeit die Photonenenergie statt der kinetischen Energie in $\\frac{1}{2}m v^2$ eingesetzt und dadurch die Austrittsarbeit unterschlagen.",
       "Behauptet, eine hellere Lampe erhöhe die Gegenspannung; sie erhöht nur die Zahl der Photoelektronen pro Sekunde.",

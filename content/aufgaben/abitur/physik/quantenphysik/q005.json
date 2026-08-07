@@ -7,11 +7,17 @@
   "themenbereich_slug": "quantenphysik",
   "unterthema": "Gegenfeldmethode und grafische Auswertung",
   "niveau": "GK",
-  "operatoren": ["berechnen", "darstellen", "ermitteln", "erläutern", "beurteilen"],
+  "operatoren": [
+    "berechnen",
+    "darstellen",
+    "ermitteln",
+    "erläutern",
+    "beurteilen"
+  ],
   "sprache": "de",
   "schwierigkeit": 4,
   "bearbeitungszeit_min": 40,
-  "aufgabenstellung": "In einem Schulversuch wird eine Vakuum-Photozelle nacheinander mit fünf Leuchtdioden bekannter Wellenlänge bestrahlt. Für jede Diode wird die Gegenspannung $U_G$ eingestellt, bei der der Photostrom gerade auf null zurückgeht. Alle fünf Messungen erfolgen an derselben Kathode.\n\n$$\\begin{array}{l|c|c|c|c|c} \\lambda\\ \\text{in nm} & 375 & 430 & 470 & 525 & 590 \\\\ \\hline U_G\\ \\text{in V} & 1{,}05 & 0{,}65 & 0{,}40 & 0{,}12 & \\text{kein Photostrom} \\end{array}$$\n\nVerwenden Sie $c = 3{,}00\\cdot 10^{8}\\ \\frac{\\text{m}}{\\text{s}}$, $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$ und den Literaturwert $h_{Lit} = 6{,}626\\cdot 10^{-34}\\ \\text{J}\\,\\text{s}$.\n\na) Berechnen Sie zu den vier Wellenlängen mit messbarer Gegenspannung die zugehörigen Frequenzen und geben Sie die maximale kinetische Energie der Photoelektronen jeweils in der Einheit $\\text{eV}$ an. (5 BE)\n\nb) Stellen Sie die Messwerte in einem $f$-$E_{kin}$-Diagramm dar und erläutern Sie, welche physikalische Bedeutung die Steigung der Ausgleichsgeraden sowie ihre beiden Achsenschnittpunkte haben. (5 BE)\n\nc) Ermitteln Sie aus der Messreihe das Plancksche Wirkungsquantum und beurteilen Sie die Qualität der Messung durch einen Vergleich mit dem Literaturwert. (5 BE)\n\nd) Ermitteln Sie die Austrittsarbeit der Kathode und geben Sie mithilfe der folgenden Tabelle das Kathodenmaterial an. Zeigen Sie außerdem, dass die fünfte Messung zu diesem Ergebnis passt. (5 BE)\n\n$$\\begin{array}{l|c} \\text{Material} & W_A\\ \\text{in eV} \\\\ \\hline \\text{Caesium} & 1{,}94 \\\\ \\text{Kalium} & 2{,}25 \\\\ \\text{Calcium} & 2{,}87 \\\\ \\text{Zink} & 4{,}28 \\end{array}$$",
+  "aufgabenstellung": "In einem Schulversuch wird eine Vakuum-Photozelle nacheinander mit fünf Leuchtdioden bekannter Wellenlänge bestrahlt. Für jede Diode wird die Gegenspannung $U_G$ eingestellt, bei der der Photostrom gerade auf null zurückgeht. Alle fünf Messungen erfolgen an derselben Kathode.\n\n$$\\begin{array}{l|c|c|c|c|c} \\lambda\\ \\text{in nm} & 375 & 430 & 470 & 525 & 590 \\\\ \\hline U_G\\ \\text{in V} & 1{,}05 & 0{,}65 & 0{,}40 & 0{,}12 & \\text{kein Photostrom} \\end{array}$$\n\nVerwenden Sie $c = 3{,}00\\cdot 10^{8}\\ \\text{m/s}$, $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$ und den Literaturwert $h_{Lit} = 6{,}626\\cdot 10^{-34}\\ \\text{J}\\,\\text{s}$.\n\na) Berechnen Sie zu den vier Wellenlängen mit messbarer Gegenspannung die zugehörigen Frequenzen und geben Sie die maximale kinetische Energie der Photoelektronen jeweils in der Einheit $\\text{eV}$ an. (5 BE)\n\nb) Stellen Sie die Messwerte in einem $f$-$E_{kin}$-Diagramm dar und erläutern Sie, welche physikalische Bedeutung die Steigung der Ausgleichsgeraden sowie ihre beiden Achsenschnittpunkte haben. (5 BE)\n\nc) Ermitteln Sie aus der Messreihe das Plancksche Wirkungsquantum und beurteilen Sie die Qualität der Messung durch einen Vergleich mit dem Literaturwert. (5 BE)\n\nd) Ermitteln Sie die Austrittsarbeit der Kathode und geben Sie mithilfe der folgenden Tabelle das Kathodenmaterial an. Zeigen Sie außerdem, dass die fünfte Messung zu diesem Ergebnis passt. (5 BE)\n\n$$\\begin{array}{l|c} \\text{Material} & W_A\\ \\text{in eV} \\\\ \\hline \\text{Caesium} & 1{,}94 \\\\ \\text{Kalium} & 2{,}25 \\\\ \\text{Calcium} & 2{,}87 \\\\ \\text{Zink} & 4{,}28 \\end{array}$$",
   "material": [
     {
       "typ": "tabelle",

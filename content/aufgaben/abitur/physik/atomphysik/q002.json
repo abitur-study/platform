@@ -7,11 +7,16 @@
   "themenbereich_slug": "atomphysik",
   "unterthema": "Erzeugung von Röntgenstrahlung",
   "niveau": "GK",
-  "operatoren": ["ermitteln", "berechnen", "erklären", "begründen"],
+  "operatoren": [
+    "ermitteln",
+    "berechnen",
+    "erklären",
+    "begründen"
+  ],
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 30,
-  "aufgabenstellung": "Im Physikraum steht ein Schulröntgengerät. Seine Röhre wird zunächst mit der Beschleunigungsspannung $U_1 = 12\\ \\text{kV}$ betrieben. Die aus der Glühkathode austretenden Elektronen haben eine so geringe Anfangsgeschwindigkeit, dass sie vernachlässigt werden darf; im evakuierten Kolben verlieren sie unterwegs keine Energie.\n\na) Ermitteln Sie die Geschwindigkeit, mit der ein Elektron auf die Anode auftrifft. (4 BE)\n\nb) Berechnen Sie die kleinste Wellenlänge und die größte Frequenz, die im erzeugten Spektrum vorkommen können. (4 BE)\n\nc) Erklären Sie, warum trotzdem nur ein verschwindend kleiner Teil der Elektronen ein Photon mit genau dieser Grenzenergie erzeugt. (3 BE)\n\nd) Die Spannung wird auf $U_2 = 24\\ \\text{kV}$ verdoppelt. Begründen Sie, dass sich die Grenzfrequenz dabei verdoppelt, die Auftreffgeschwindigkeit aber nur auf das $\\sqrt{2}$-fache anwächst. (3 BE)\n\nKonstanten: $h = 6{,}626\\cdot 10^{-34}\\ \\text{Js}$, $c = 3{,}00\\cdot 10^{8}\\ \\frac{\\text{m}}{\\text{s}}$, $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$, $m_e = 9{,}109\\cdot 10^{-31}\\ \\text{kg}$",
+  "aufgabenstellung": "Im Physikraum steht ein Schulröntgengerät. Seine Röhre wird zunächst mit der Beschleunigungsspannung $U_1 = 12\\ \\text{kV}$ betrieben. Die aus der Glühkathode austretenden Elektronen haben eine so geringe Anfangsgeschwindigkeit, dass sie vernachlässigt werden darf; im evakuierten Kolben verlieren sie unterwegs keine Energie.\n\na) Ermitteln Sie die Geschwindigkeit, mit der ein Elektron auf die Anode auftrifft. (4 BE)\n\nb) Berechnen Sie die kleinste Wellenlänge und die größte Frequenz, die im erzeugten Spektrum vorkommen können. (4 BE)\n\nc) Erklären Sie, warum trotzdem nur ein verschwindend kleiner Teil der Elektronen ein Photon mit genau dieser Grenzenergie erzeugt. (3 BE)\n\nd) Die Spannung wird auf $U_2 = 24\\ \\text{kV}$ verdoppelt. Begründen Sie, dass sich die Grenzfrequenz dabei verdoppelt, die Auftreffgeschwindigkeit aber nur auf das $\\sqrt{2}$-fache anwächst. (3 BE)\n\nKonstanten: $h = 6{,}626\\cdot 10^{-34}\\ \\text{Js}$, $c = 3{,}00\\cdot 10^{8}\\ \\text{m/s}$, $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$, $m_e = 9{,}109\\cdot 10^{-31}\\ \\text{kg}$",
   "material": [],
   "tipps": [
     "Die gesamte Arbeit, die das elektrische Feld an einem Elektron verrichtet, findet sich als Bewegungsenergie wieder. Schreibe beide Terme auf und setze sie gleich.",
@@ -34,7 +39,7 @@
       {
         "nr": 2,
         "titel": "Geschwindigkeit berechnen",
-        "inhalt": "Einsetzen von $U_1 = 12\\ \\text{kV} = 1{,}2\\cdot 10^{4}\\ \\text{V}$:\n\n$$v_1 = \\sqrt{\\frac{2\\cdot 1{,}602\\cdot 10^{-19}\\ \\text{C}\\cdot 1{,}2\\cdot 10^{4}\\ \\text{V}}{9{,}109\\cdot 10^{-31}\\ \\text{kg}}} = \\sqrt{\\frac{3{,}845\\cdot 10^{-15}\\ \\text{J}}{9{,}109\\cdot 10^{-31}\\ \\text{kg}}} = \\sqrt{4{,}221\\cdot 10^{15}\\ \\frac{\\text{m}^{2}}{\\text{s}^{2}}}$$\n\n$$v_1 \\approx 6{,}50\\cdot 10^{7}\\ \\frac{\\text{m}}{\\text{s}}$$\n\nDas Elektron trifft also mit rund $65\\,000\\ \\frac{\\text{km}}{\\text{s}}$ auf die Anode.",
+        "inhalt": "Einsetzen von $U_1 = 12\\ \\text{kV} = 1{,}2\\cdot 10^{4}\\ \\text{V}$:\n\n$$v_1 = \\sqrt{\\frac{2\\cdot 1{,}602\\cdot 10^{-19}\\ \\text{C}\\cdot 1{,}2\\cdot 10^{4}\\ \\text{V}}{9{,}109\\cdot 10^{-31}\\ \\text{kg}}} = \\sqrt{\\frac{3{,}845\\cdot 10^{-15}\\ \\text{J}}{9{,}109\\cdot 10^{-31}\\ \\text{kg}}} = \\sqrt{4{,}221\\cdot 10^{15}\\ \\frac{\\text{m}^{2}}{\\text{s}^{2}}}$$\n\n$$v_1 \\approx 6{,}50\\cdot 10^{7}\\ \\frac{\\text{m}}{\\text{s}}$$\n\nDas Elektron trifft also mit rund $65\\,000\\ \\text{km/s}$ auf die Anode.",
         "warum": {
           "de": "Beim Wurzelziehen aus einer Zehnerpotenz ist ein ungerader Exponent die häufigste Fehlerquelle: $\\sqrt{10^{15}}$ ist keine glatte Potenz. Schreibt man den Radikanden als $42{,}21\\cdot 10^{14}$ um, bleibt der Exponent gerade und man rechnet gefahrlos $\\sqrt{42{,}21}\\cdot 10^{7}$. Diese Umformung spart im Abitur mehr Punkte als jede Formelkenntnis.",
           "tr": "Bir on kuvvetinin karekökünü alırken en sık yapılan hata tek üslü ifadelerdir: $\\sqrt{10^{15}}$ düzgün bir kuvvet değildir. Kök içi $42{,}21\\cdot 10^{14}$ biçiminde yazılırsa üs çift kalır ve güvenle $\\sqrt{42{,}21}\\cdot 10^{7}$ hesaplanır. Bu dönüştürme Abitur'da her formül bilgisinden daha çok puan kurtarır."
