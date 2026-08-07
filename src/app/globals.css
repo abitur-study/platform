@@ -60,6 +60,12 @@
   --color-warnung: #ee4623;
   --color-warnung-schwach: #f4c6c6;
   --color-markierung: #ffd23f;
+  /* Yalnızca soru diyagramları için — arayüzde kullanılmaz. Kimya soruları
+     renk gözlemine dayanıyor (Fehling: tiefblau → grün → gelb → orangerot);
+     paletteki diğer üç renk bunu karşılıyordu, yeşil eksikti.
+     Kâğıt zemininde kontrast 5.30 — mavi akzent'in 5.27'siyle aynı ağırlıkta,
+     hem çizgi hem metin için WCAG'i geçiyor. */
+  --color-gruen: #0f7a3d;
 
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-serif: Georgia, ui-serif, "Times New Roman", serif;
