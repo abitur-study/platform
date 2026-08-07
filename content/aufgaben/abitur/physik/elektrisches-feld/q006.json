@@ -6,8 +6,12 @@
   "themenbereich": "Elektrisches Feld und Kondensator",
   "themenbereich_slug": "elektrisches-feld",
   "unterthema": "Millikan-Versuch",
-  "niveau": "LK",
-  "operatoren": ["bestimmen", "begründen", "erläutern"],
+  "niveau": "GK",
+  "operatoren": [
+    "bestimmen",
+    "begründen",
+    "erläutern"
+  ],
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 30,

@@ -6,8 +6,12 @@
   "themenbereich": "Analysis",
   "themenbereich_slug": "analysis",
   "unterthema": "Extremwertprobleme",
-  "niveau": "LK",
-  "operatoren": ["bestimmen", "nachweisen", "interpretieren"],
+  "niveau": "GK",
+  "operatoren": [
+    "bestimmen",
+    "nachweisen",
+    "interpretieren"
+  ],
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 25,

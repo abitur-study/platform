@@ -6,8 +6,13 @@
   "themenbereich": "Molekulargenetik und Gentechnik",
   "themenbereich_slug": "molekulargenetik",
   "unterthema": "Proteinbiosynthese und Punktmutationen",
-  "niveau": "LK",
-  "operatoren": ["bestimmen", "nennen", "erläutern", "beurteilen"],
+  "niveau": "GK",
+  "operatoren": [
+    "bestimmen",
+    "nennen",
+    "erläutern",
+    "beurteilen"
+  ],
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 30,

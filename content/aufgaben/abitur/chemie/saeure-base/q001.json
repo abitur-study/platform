@@ -6,8 +6,12 @@
   "themenbereich": "Säure-Base-Chemie und Titration",
   "themenbereich_slug": "saeure-base",
   "unterthema": "pH-Berechnung und Puffer",
-  "niveau": "LK",
-  "operatoren": ["berechnen", "begründen", "erläutern"],
+  "niveau": "GK",
+  "operatoren": [
+    "berechnen",
+    "begründen",
+    "erläutern"
+  ],
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 35,

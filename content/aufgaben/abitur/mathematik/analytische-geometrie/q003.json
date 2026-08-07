@@ -6,8 +6,13 @@
   "themenbereich": "Analytische Geometrie",
   "themenbereich_slug": "analytische-geometrie",
   "unterthema": "Lagebeziehungen von Geraden",
-  "niveau": "LK",
-  "operatoren": ["zeigen", "bestimmen", "berechnen", "erläutern"],
+  "niveau": "GK",
+  "operatoren": [
+    "zeigen",
+    "bestimmen",
+    "berechnen",
+    "erläutern"
+  ],
   "sprache": "de",
   "schwierigkeit": 4,
   "bearbeitungszeit_min": 40,

@@ -6,8 +6,13 @@
   "themenbereich": "Neurobiologie",
   "themenbereich_slug": "neurobiologie",
   "unterthema": "Chemische Synapse und Synapsengifte",
-  "niveau": "LK",
-  "operatoren": ["beschreiben", "bestimmen", "begründen", "erläutern"],
+  "niveau": "GK",
+  "operatoren": [
+    "beschreiben",
+    "bestimmen",
+    "begründen",
+    "erläutern"
+  ],
   "sprache": "de",
   "schwierigkeit": 4,
   "bearbeitungszeit_min": 40,

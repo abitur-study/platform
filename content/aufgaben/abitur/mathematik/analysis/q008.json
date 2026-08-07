@@ -6,8 +6,12 @@
   "themenbereich": "Analysis",
   "themenbereich_slug": "analysis",
   "unterthema": "Steckbriefaufgaben",
-  "niveau": "LK",
-  "operatoren": ["ermitteln", "begründen", "überprüfen"],
+  "niveau": "GK",
+  "operatoren": [
+    "ermitteln",
+    "begründen",
+    "überprüfen"
+  ],
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 25,

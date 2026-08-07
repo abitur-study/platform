@@ -6,8 +6,12 @@
   "themenbereich": "Wellen und Wellenoptik",
   "themenbereich_slug": "wellen",
   "unterthema": "Doppelspaltversuch",
-  "niveau": "LK",
-  "operatoren": ["bestimmen", "überprüfen", "erklären"],
+  "niveau": "GK",
+  "operatoren": [
+    "bestimmen",
+    "überprüfen",
+    "erklären"
+  ],
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 30,

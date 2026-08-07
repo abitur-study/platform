@@ -6,8 +6,12 @@
   "themenbereich": "Chemisches Gleichgewicht",
   "themenbereich_slug": "chemisches-gleichgewicht",
   "unterthema": "Prinzip von Le Chatelier",
-  "niveau": "LK",
-  "operatoren": ["darstellen", "erklären", "beurteilen"],
+  "niveau": "GK",
+  "operatoren": [
+    "darstellen",
+    "erklären",
+    "beurteilen"
+  ],
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 30,

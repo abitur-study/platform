@@ -6,8 +6,12 @@
   "themenbereich": "Elektromagnetische Induktion",
   "themenbereich_slug": "induktion",
   "unterthema": "Induktion bei bewegtem Leiter",
-  "niveau": "LK",
-  "operatoren": ["entwickeln", "berechnen", "erklären"],
+  "niveau": "GK",
+  "operatoren": [
+    "entwickeln",
+    "berechnen",
+    "erklären"
+  ],
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 30,

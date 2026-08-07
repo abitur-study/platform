@@ -6,8 +6,13 @@
   "themenbereich": "Atom- und Röntgenphysik",
   "themenbereich_slug": "atomphysik",
   "unterthema": "Röntgenstrahlung",
-  "niveau": "LK",
-  "operatoren": ["beschreiben", "erklären", "berechnen", "begründen"],
+  "niveau": "GK",
+  "operatoren": [
+    "beschreiben",
+    "erklären",
+    "berechnen",
+    "begründen"
+  ],
   "sprache": "de",
   "schwierigkeit": 4,
   "bearbeitungszeit_min": 35,

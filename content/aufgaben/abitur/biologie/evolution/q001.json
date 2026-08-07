@@ -6,8 +6,12 @@
   "themenbereich": "Evolution",
   "themenbereich_slug": "evolution",
   "unterthema": "Adaptive Radiation und Artbildung",
-  "niveau": "LK",
-  "operatoren": ["erklären", "vergleichen", "beurteilen"],
+  "niveau": "GK",
+  "operatoren": [
+    "erklären",
+    "vergleichen",
+    "beurteilen"
+  ],
   "sprache": "de",
   "schwierigkeit": 4,
   "bearbeitungszeit_min": 45,

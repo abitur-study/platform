@@ -6,8 +6,13 @@
   "themenbereich": "Elektrochemie",
   "themenbereich_slug": "elektrochemie",
   "unterthema": "Galvanische Zelle und Nernst-Gleichung",
-  "niveau": "LK",
-  "operatoren": ["darstellen", "berechnen", "erklären", "vergleichen"],
+  "niveau": "GK",
+  "operatoren": [
+    "darstellen",
+    "berechnen",
+    "erklären",
+    "vergleichen"
+  ],
   "sprache": "de",
   "schwierigkeit": 4,
   "bearbeitungszeit_min": 35,

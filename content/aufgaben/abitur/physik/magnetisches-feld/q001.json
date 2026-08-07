@@ -6,8 +6,13 @@
   "themenbereich": "Magnetisches Feld und Lorentzkraft",
   "themenbereich_slug": "magnetisches-feld",
   "unterthema": "Fadenstrahlrohr",
-  "niveau": "LK",
-  "operatoren": ["begründen", "entwickeln", "bestimmen", "beurteilen"],
+  "niveau": "GK",
+  "operatoren": [
+    "begründen",
+    "entwickeln",
+    "bestimmen",
+    "beurteilen"
+  ],
   "sprache": "de",
   "schwierigkeit": 4,
   "bearbeitungszeit_min": 35,

@@ -6,8 +6,12 @@
   "themenbereich": "Quantenphysik",
   "themenbereich_slug": "quantenphysik",
   "unterthema": "Photoeffekt",
-  "niveau": "LK",
-  "operatoren": ["bestimmen", "berechnen", "erläutern"],
+  "niveau": "GK",
+  "operatoren": [
+    "bestimmen",
+    "berechnen",
+    "erläutern"
+  ],
   "sprache": "de",
   "schwierigkeit": 4,
   "bearbeitungszeit_min": 35,
