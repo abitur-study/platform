@@ -150,11 +150,13 @@ export default async function Landing({
         <h1 className="t-hero mt-6">
           {t.landing.heroA}
           <br />
-          <span className="text-akzent">{t.landing.heroB}</span>
+          {t.landing.heroB}
         </h1>
-        {/* Soru sayısı build sırasında sayılır: slogan soru eklendikçe
-            kendiliğinden güncellenir, elle bakım istemez ve hep doğru kalır. */}
-        <p className="mx-auto mt-6 max-w-[35rem]">
+        {/* Vurgu rengi başlıktan alt satıra taşındı: başlık tek parça okunur,
+            mavi de sayfadaki tek somut bilgiyi (soru sayısı) taşır.
+            Sayı build sırasında sayılır — soru eklendikçe kendiliğinden
+            güncellenir, elle bakım istemez ve hep doğru kalır. */}
+        <p className="t-22 mx-auto mt-6 max-w-[35rem] font-bold text-akzent">
           {t.landing.heroText.replace("{n}", String(alle.length))}
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
