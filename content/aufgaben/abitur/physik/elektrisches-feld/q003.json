@@ -1,7 +1,7 @@
 {
   "bereich": "abitur",
   "id": "q003",
-  "titel": "Bestimmung der elektrischen und magnetischen Feldkonstanten – Coulomb und Biot-Savart",
+  "titel": "Bestimmung der elektrischen und magnetischen Feldkonstanten mit Coulomb und Biot-Savart",
   "fach": "physik",
   "themenbereich": "Elektrisches Feld und Kondensator",
   "themenbereich_slug": "elektrisches-feld",
@@ -46,8 +46,8 @@
         "titel": "Kapazitätsformel herleiten",
         "inhalt": "Aus $E = Q/(\\varepsilon_0 A)$ und $E = U/d$ folgt $Q/(\\varepsilon_0 A) = U/d$ ⇒ $Q/U = \\varepsilon_0 A/d$. Also $C = \\varepsilon_0 \\dfrac{A}{d}$.",
         "warum": {
-          "de": "Diese Herleitung zeigt, dass die Kapazität allein durch die Geometrie und das Dielektrikum bestimmt wird – eine der wichtigsten Aussagen der Elektrostatik. Die Ladung $Q$ kürzt sich heraus, was oft überraschend wirkt.",
-          "tr": "Bu türetim, kapasitansın yalnızca geometri ve dielektrik ortam tarafından belirlendiğini gösterir – elektrostatiğin en önemli ifadelerinden biri. $Q$ yükü sadeleşir, bu genellikle şaşırtıcı gelir."
+          "de": "Diese Herleitung zeigt, dass die Kapazität allein durch die Geometrie und das Dielektrikum bestimmt wird, eine der wichtigsten Aussagen der Elektrostatik. Die Ladung $Q$ kürzt sich heraus, was oft überraschend wirkt.",
+          "tr": "Bu türetim, kapasitansın yalnızca geometri ve dielektrik ortam tarafından belirlendiğini gösterir. Bu, elektrostatiğin en önemli ifadelerinden biridir. $Q$ yükü sadeleşir, bu genellikle şaşırtıcı gelir."
         },
         "teilpunkte": 4
       },

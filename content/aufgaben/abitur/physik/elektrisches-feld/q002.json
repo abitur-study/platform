@@ -31,7 +31,7 @@
   "tipps": [
     "Rechne konsequent alles in SI-Einheiten um, bevor du einsetzt: $\\text{nC}$ in $\\text{C}$ und $\\text{cm}$ in $\\text{m}$. Der Abstand quadriert jeden Umrechnungsfehler.",
     "Das Coulombsche Gesetz gilt streng nur für Punktladungen. Überlege bei Teilaufgabe b), bei welchen Abständen die Kugeln mit $3{,}0\\ \\text{cm}$ Durchmesser noch als punktförmig durchgehen.",
-    "In $P$ überlagern sich zwei Felder. Zeichne für beide Einzelfelder einen Pfeil ein — erst die Richtungen klären, dann rechnen."
+    "In $P$ überlagern sich zwei Felder. Zeichne für beide Einzelfelder einen Pfeil ein: erst die Richtungen klären, dann rechnen."
   ],
   "loesung": {
     "gesamtpunkte": 18,
@@ -61,8 +61,8 @@
         "titel": "Messwerte und Theoriewerte vergleichen, Abweichung begründen",
         "inhalt": "Gegenüberstellung:\n\n$$\\begin{array}{c|c|c|c|c|c|c} r\\ \\text{in cm} & 6 & 8 & 12 & 18 & 25 & 40 \\\\ \\hline F_{\\text{theor}}\\ \\text{in mN} & 10{,}5 & 5{,}93 & 2{,}64 & 1{,}17 & 0{,}608 & 0{,}237 \\\\ \\hline F_{\\text{mess}}\\ \\text{in mN} & 5{,}9 & 4{,}2 & 2{,}35 & 1{,}14 & 0{,}60 & 0{,}235 \\end{array}$$\n\nBeschreibung: Für $r \\geq 18\\ \\text{cm}$ stimmen Messung und Rechnung auf wenige Prozent überein. Für kleine Abstände liegen die Messwerte deutlich unter den berechneten Werten, bei $r = 6\\ \\text{cm}$ nur noch bei etwa der Hälfte.\n\nBegründung: Das Coulombsche Gesetz gilt für Punktladungen. Die Kugeln haben aber einen Durchmesser von $3{,}0\\ \\text{cm}$; bei $r = 6\\ \\text{cm}$ liegt der Abstand also nur bei zwei Kugeldurchmessern. Dann verschieben sich die frei beweglichen Ladungen auf den Metalloberflächen durch Influenz: Sie stoßen einander ab und sammeln sich auf den voneinander abgewandten Seiten. Der wirksame Ladungsschwerpunkt rückt dadurch weiter auseinander als der Mittelpunktsabstand, und die gemessene Kraft fällt kleiner aus. Bei großem $r$ ist dieser Effekt vernachlässigbar, die Kugeln verhalten sich dann wie Punktladungen.",
         "warum": {
-          "de": "Hier wird nicht die Messung schlechtgeredet, sondern eine Modellgrenze sichtbar gemacht: Nicht das Gerät ist ungenau, sondern die Voraussetzung „Punktladung\" ist bei kleinem Abstand verletzt. Diese Unterscheidung zwischen Messfehler und Modellgrenze ist genau das, was der Operator „begründen\" hier verlangt — und sie erklärt auch, warum die Messwerte systematisch nach unten abweichen und nicht zufällig streuen.",
-          "tr": "Burada ölçüm kötülenmiyor, bir model sınırı görünür kılınıyor: cihaz hatalı değil, küçük mesafelerde „noktasal yük\" varsayımı çöküyor. Ölçüm hatası ile model sınırı arasındaki bu ayrım, „begründen\" operatörünün burada tam olarak istediği şeydir — ayrıca ölçüm değerlerinin neden rastgele saçılmayıp sistematik olarak aşağıda kaldığını da açıklar."
+          "de": "Hier wird nicht die Messung schlechtgeredet, sondern eine Modellgrenze sichtbar gemacht: Nicht das Gerät ist ungenau, sondern die Voraussetzung „Punktladung\" ist bei kleinem Abstand verletzt. Diese Unterscheidung zwischen Messfehler und Modellgrenze ist genau das, was der Operator „begründen\" hier verlangt, und sie erklärt auch, warum die Messwerte systematisch nach unten abweichen und nicht zufällig streuen.",
+          "tr": "Burada ölçüm kötülenmiyor, bir model sınırı görünür kılınıyor: cihaz hatalı değil, küçük mesafelerde „noktasal yük\" varsayımı çöküyor. Ölçüm hatası ile model sınırı arasındaki bu ayrım, „begründen\" operatörünün burada tam olarak istediği şeydir. Ayrıca ölçüm değerlerinin neden rastgele saçılmayıp sistematik olarak aşağıda kaldığını da açıklar."
         },
         "teilpunkte": 4
       },
@@ -71,8 +71,8 @@
         "titel": "Elektrische Feldkonstante aus einem Messwert bestimmen",
         "inhalt": "Wahl des Wertepaares: Man nimmt ein Wertepaar mit möglichst großem Abstand, hier $r = 40\\ \\text{cm}$ mit $F = 0{,}235\\ \\text{mN}$. Nur dort sind die Kugeln in guter Näherung Punktladungen, sodass das Coulombsche Gesetz überhaupt anwendbar ist.\n\nUmstellen nach $\\varepsilon_0$:\n\n$$F = \\frac{1}{4\\pi\\varepsilon_0}\\cdot\\frac{Q_1 Q_2}{r^2} \\quad\\Longleftrightarrow\\quad \\varepsilon_0 = \\frac{Q_1 Q_2}{4\\pi\\cdot F\\cdot r^2}$$\n\n$$\\varepsilon_0 = \\frac{\\left(6{,}5\\cdot 10^{-8}\\ \\text{C}\\right)^2}{4\\pi\\cdot 2{,}35\\cdot 10^{-4}\\ \\text{N}\\cdot\\left(0{,}40\\ \\text{m}\\right)^2} = \\frac{4{,}225\\cdot 10^{-15}\\ \\text{C}^2}{4{,}72\\cdot 10^{-4}\\ \\text{Nm}^2} \\approx 8{,}94\\cdot 10^{-12}\\ \\frac{\\text{C}^2}{\\text{Nm}^2}$$\n\nWegen $1\\ \\frac{\\text{C}^2}{\\text{Nm}^2} = 1\\ \\text{As/Vm}$ ist das $\\varepsilon_0 \\approx 8{,}94\\cdot 10^{-12}\\ \\text{As/Vm}$. Der Literaturwert beträgt $8{,}854\\cdot 10^{-12}\\ \\text{As/Vm}$, die Abweichung liegt also bei etwa $1\\ \\%$.",
         "warum": {
-          "de": "Die Begründung der Messwertwahl ist hier kein Zierrat, sondern trägt die halbe Punktzahl: Hätte man das Paar bei $r = 6\\ \\text{cm}$ genommen, käme wegen der Influenz ein fast doppelt so großes $\\varepsilon_0$ heraus. Man darf eine Naturkonstante nur aus dem Bereich bestimmen, in dem das zugrunde liegende Modell nachweislich gilt — sonst misst man den Modellfehler statt der Konstante.",
-          "tr": "Ölçüm çiftinin seçim gerekçesi burada süs değil, puanın yarısını taşır: $r = 6\\ \\text{cm}$ çifti alınsaydı influenz yüzünden neredeyse iki katı büyüklükte bir $\\varepsilon_0$ çıkardı. Bir doğa sabiti ancak, temelindeki modelin geçerli olduğu kanıtlanmış aralıktan belirlenebilir — aksi halde sabiti değil, modelin hatasını ölçmüş olursun."
+          "de": "Die Begründung der Messwertwahl ist hier kein Zierrat, sondern trägt die halbe Punktzahl: Hätte man das Paar bei $r = 6\\ \\text{cm}$ genommen, käme wegen der Influenz ein fast doppelt so großes $\\varepsilon_0$ heraus. Man darf eine Naturkonstante nur aus dem Bereich bestimmen, in dem das zugrunde liegende Modell nachweislich gilt. Sonst misst man den Modellfehler statt der Konstante.",
+          "tr": "Ölçüm çiftinin seçim gerekçesi burada süs değil, puanın yarısını taşır: $r = 6\\ \\text{cm}$ çifti alınsaydı influenz yüzünden neredeyse iki katı büyüklükte bir $\\varepsilon_0$ çıkardı. Bir doğa sabiti ancak, temelindeki modelin geçerli olduğu kanıtlanmış aralıktan belirlenebilir. Aksi halde sabiti değil, modelin hatasını ölçmüş olursun."
         },
         "teilpunkte": 4
       },
@@ -81,17 +81,17 @@
         "titel": "Feldstärke im Punkt $P$ nach Betrag und Richtung bestimmen",
         "inhalt": "Richtung: Elektrische Feldlinien verlaufen von der positiven zur negativen Ladung. $Q_1$ ist positiv und liegt links, $Q_2$ ist negativ und liegt rechts. Das Feld von $Q_1$ zeigt in $P$ von $Q_1$ weg, also nach rechts; das Feld von $Q_2$ zeigt in $P$ auf $Q_2$ zu, ebenfalls nach rechts. **Beide Teilfelder zeigen in dieselbe Richtung, nach rechts.**\n\nAbstände: $a = 6{,}0\\ \\text{cm} = 0{,}060\\ \\text{m}$ zu $Q_1$ und $b = 21\\ \\text{cm} - 6{,}0\\ \\text{cm} = 15\\ \\text{cm} = 0{,}15\\ \\text{m}$ zu $Q_2$.\n\nAus $F = q\\cdot E$ und dem Coulombschen Gesetz folgt für das Feld einer Punktladung $E(r) = \\frac{1}{4\\pi\\varepsilon_0}\\cdot\\frac{Q}{r^2}$:\n\n$$E_1 = 8{,}99\\cdot 10^{9}\\ \\frac{\\text{Nm}^2}{\\text{C}^2}\\cdot\\frac{5{,}0\\cdot 10^{-8}\\ \\text{C}}{\\left(0{,}060\\ \\text{m}\\right)^2} \\approx 1{,}25\\cdot 10^{5}\\ \\frac{\\text{V}}{\\text{m}}$$\n\n$$E_2 = 8{,}99\\cdot 10^{9}\\ \\frac{\\text{Nm}^2}{\\text{C}^2}\\cdot\\frac{5{,}0\\cdot 10^{-8}\\ \\text{C}}{\\left(0{,}15\\ \\text{m}\\right)^2} \\approx 2{,}00\\cdot 10^{4}\\ \\frac{\\text{V}}{\\text{m}}$$\n\nDa beide Vektoren gleichgerichtet sind, addieren sich die Beträge:\n\n$$E_P = 1{,}25\\cdot 10^{5}\\ \\frac{\\text{V}}{\\text{m}} + 0{,}200\\cdot 10^{5}\\ \\frac{\\text{V}}{\\text{m}} = 1{,}45\\cdot 10^{5}\\ \\frac{\\text{V}}{\\text{m}}\\ \\text{nach rechts}$$",
         "warum": {
-          "de": "Die Feldstärke ist ein Vektor, deshalb muss die Richtung vor der Rechnung geklärt sein. Zwei entgegengesetzte Ladungen erzeugen zwischen sich gleichgerichtete Teilfelder — die Beträge werden addiert. Außerhalb der Anordnung wäre es umgekehrt und man müsste subtrahieren. Wer die Vorzeichen einfach mitschleppt und blind addiert, bekommt genau in einem der beiden Fälle das falsche Ergebnis.",
-          "tr": "Alan şiddeti bir vektördür, bu yüzden yön hesaptan önce netleşmelidir. Zıt işaretli iki yükün arasında kalan bölgede iki kısmi alan aynı yönü gösterir — bu yüzden büyüklükler toplanır. Düzeneğin dışında durum tersine döner ve çıkarma yapmak gerekir. İşaretleri düşünmeden körü körüne toplayan biri, bu iki durumdan tam birinde yanlış sonuca varır."
+          "de": "Die Feldstärke ist ein Vektor, deshalb muss die Richtung vor der Rechnung geklärt sein. Zwei entgegengesetzte Ladungen erzeugen zwischen sich gleichgerichtete Teilfelder, deshalb werden die Beträge addiert. Außerhalb der Anordnung wäre es umgekehrt und man müsste subtrahieren. Wer die Vorzeichen einfach mitschleppt und blind addiert, bekommt genau in einem der beiden Fälle das falsche Ergebnis.",
+          "tr": "Alan şiddeti bir vektördür, bu yüzden yön hesaptan önce netleşmelidir. Zıt işaretli iki yükün arasında kalan bölgede iki kısmi alan aynı yönü gösterir, bu yüzden büyüklükler toplanır. Düzeneğin dışında durum tersine döner ve çıkarma yapmak gerekir. İşaretleri düşünmeden körü körüne toplayan biri, bu iki durumdan tam birinde yanlış sonuca varır."
         },
         "teilpunkte": 4
       }
     ],
     "haeufige_fehler": [
       "Abstände in Zentimetern eingesetzt: Weil $r$ quadriert wird, verfehlt man das Ergebnis um den Faktor $10^4$.",
-      "Statt des Mittelpunktsabstands den Abstand der Kugeloberflächen benutzt — das Coulombsche Gesetz verlangt den Abstand der Ladungsschwerpunkte.",
+      "Statt des Mittelpunktsabstands den Abstand der Kugeloberflächen benutzt. Das Coulombsche Gesetz verlangt den Abstand der Ladungsschwerpunkte.",
       "Bei der Bestimmung von $\\varepsilon_0$ ein Wertepaar mit kleinem $r$ gewählt und die Wahl nicht begründet; dort ist das Punktladungsmodell verletzt.",
-      "In $P$ die beiden Feldstärken voneinander abgezogen, weil eine Ladung negativ ist — die Vektoren zeigen dort aber beide nach rechts."
+      "In $P$ die beiden Feldstärken voneinander abgezogen, weil eine Ladung negativ ist. Die Vektoren zeigen dort aber beide nach rechts."
     ]
   },
   "quelle": "eigene Aufgabe im Stil von Landesabitur Physik Hessen 2010, Grundkurs, Aufgabe A1 (Radiales elektrisches Feld)",

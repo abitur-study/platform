@@ -1,7 +1,7 @@
 {
   "bereich": "abitur",
   "id": "q007",
-  "titel": "Millikan-Versuch und Fadenstrahlrohr – Bestimmung von Elementarladung und spezifischer Ladung",
+  "titel": "Millikan-Versuch und Fadenstrahlrohr: Bestimmung von Elementarladung und spezifischer Ladung",
   "fach": "physik",
   "themenbereich": "Elektrisches Feld und Kondensator",
   "themenbereich_slug": "elektrisches-feld",
@@ -16,7 +16,7 @@
   "sprache": "de",
   "schwierigkeit": 4,
   "bearbeitungszeit_min": 40,
-  "aufgabenstellung": "**Teil 1 – Millikan-Versuch**\n\nEin Öltröpfchen der Masse $m = 1{,}35\\cdot 10^{-15}\\ \\text{kg}$ schwebt in einem Plattenkondensator ($d = 8{,}0\\ \\text{mm}$) bei einer Spannung $U = 220\\ \\text{V}$. Es trägt eine positive Ladung $Q$.\n\na) Skizzieren Sie die wirkenden Kräfte und berechnen Sie $Q$.\n\nb) Eine Messreihe ergibt für verschiedene Tröpfchen folgende Ladungen (in $10^{-19}$ C): 6,40; 4,80; 3,20; 8,00; 6,40. Bestimmen Sie daraus die Elementarladung $e$ und geben Sie die Anzahl der überschüssigen Elementarladungen pro Tröpfchen an.\n\nc) Erklären Sie, warum ein Elektron im Gravitationsfeld nicht durch ein homogenes Magnetfeld zum Schweben gebracht werden kann.\n\n**Teil 2 – Fadenstrahlrohr**\n\nElektronen werden mit $U_A = 320\\ \\text{V}$ beschleunigt und treten senkrecht in ein homogenes Magnetfeld $B = 1{,}2\\ \\text{mT}$ ein. Sie beschreiben eine Kreisbahn mit Radius $r$.\n\nd) Entwickeln Sie die Formel $\\dfrac{e}{m_e} = \\dfrac{2U_A}{r^2 B^2}$ und berechnen Sie $e/m_e$ für $r = 5{,}0\\ \\text{cm}$.",
+  "aufgabenstellung": "**Teil 1: Millikan-Versuch**\n\nEin Öltröpfchen der Masse $m = 1{,}35\\cdot 10^{-15}\\ \\text{kg}$ schwebt in einem Plattenkondensator ($d = 8{,}0\\ \\text{mm}$) bei einer Spannung $U = 220\\ \\text{V}$. Es trägt eine positive Ladung $Q$.\n\na) Skizzieren Sie die wirkenden Kräfte und berechnen Sie $Q$.\n\nb) Eine Messreihe ergibt für verschiedene Tröpfchen folgende Ladungen (in $10^{-19}$ C): 6,40; 4,80; 3,20; 8,00; 6,40. Bestimmen Sie daraus die Elementarladung $e$ und geben Sie die Anzahl der überschüssigen Elementarladungen pro Tröpfchen an.\n\nc) Erklären Sie, warum ein Elektron im Gravitationsfeld nicht durch ein homogenes Magnetfeld zum Schweben gebracht werden kann.\n\n**Teil 2: Fadenstrahlrohr**\n\nElektronen werden mit $U_A = 320\\ \\text{V}$ beschleunigt und treten senkrecht in ein homogenes Magnetfeld $B = 1{,}2\\ \\text{mT}$ ein. Sie beschreiben eine Kreisbahn mit Radius $r$.\n\nd) Entwickeln Sie die Formel $\\dfrac{e}{m_e} = \\dfrac{2U_A}{r^2 B^2}$ und berechnen Sie $e/m_e$ für $r = 5{,}0\\ \\text{cm}$.",
   "material": [],
   "tipps": [
     "Beim schwebenden Tröpfchen gilt $F_G = F_{el}$, also $mg = Q\\,E$.",
@@ -31,17 +31,17 @@
         "titel": "Ladung des schwebenden Tröpfchens",
         "inhalt": "$F_G = F_{el} \\Rightarrow mg = Q \\cdot \\dfrac{U}{d} \\Rightarrow Q = \\dfrac{mgd}{U}$.\n\n$$Q = \\frac{1{,}35\\cdot10^{-15}\\ \\text{kg}\\cdot 9{,}81\\ \\tfrac{\\text{m}}{\\text{s}^2}\\cdot 0{,}0080\\ \\text{m}}{220\\ \\text{V}} \\approx 4{,}82\\cdot10^{-19}\\ \\text{C}$$\n\nDas sind $Q/e \\approx 3{,}0$, also genau **drei** Elementarladungen.",
         "warum": {
-          "de": "Dass hier eine nahezu ganze Zahl herauskommt, ist die eigentliche Aussage des Versuchs: Ergäbe die Rechnung etwa $2{,}7\\,e$, wäre entweder ein Messwert ungenau oder ein Rechenfehler passiert — die Natur liefert keine Bruchteile von Elektronen. Die Quantelung der Ladung wird so zur Selbstkontrolle des eigenen Ergebnisses.",
-          "tr": "Burada neredeyse tam sayı çıkması deneyin asıl mesajıdır: hesap $2{,}7\\,e$ verseydi ya bir ölçüm değeri hatalı olurdu ya da işlem hatası yapılmıştır — doğa elektronun kesirli parçasını vermez. Yükün kuantumlu oluşu böylece kendi sonucunu denetleme aracına dönüşür."
+          "de": "Dass hier eine nahezu ganze Zahl herauskommt, ist die eigentliche Aussage des Versuchs: Ergäbe die Rechnung etwa $2{,}7\\,e$, wäre entweder ein Messwert ungenau oder ein Rechenfehler passiert; die Natur liefert keine Bruchteile von Elektronen. Die Quantelung der Ladung wird so zur Selbstkontrolle des eigenen Ergebnisses.",
+          "tr": "Burada neredeyse tam sayı çıkması deneyin asıl mesajıdır: hesap $2{,}7\\,e$ verseydi ya bir ölçüm değeri hatalı olurdu ya da işlem hatası yapılmıştır. Doğa elektronun kesirli parçasını vermez. Yükün kuantumlu oluşu böylece kendi sonucunu denetleme aracına dönüşür."
         },
         "teilpunkte": 3
       },
       {
         "nr": 2,
         "titel": "Elementarladung aus Messreihe",
-        "inhalt": "Man sucht den größten gemeinsamen Teiler der gemessenen Ladungen. Alle Werte sind Vielfache von $1{,}60\\cdot10^{-19}\\ \\text{C}$:\n\n$$\\begin{array}{c|c|c|c|c|c} Q\\ \\text{in}\\ 10^{-19}\\,\\text{C} & 6{,}40 & 4{,}80 & 3{,}20 & 8{,}00 & 6{,}40 \\\\ \\hline Q/e & 4 & 3 & 2 & 5 & 4 \\end{array}$$\n\nDamit ist $e \\approx 1{,}60\\cdot10^{-19}\\ \\text{C}$ — der Literaturwert beträgt $1{,}602\\cdot10^{-19}\\ \\text{C}$.",
+        "inhalt": "Man sucht den größten gemeinsamen Teiler der gemessenen Ladungen. Alle Werte sind Vielfache von $1{,}60\\cdot10^{-19}\\ \\text{C}$:\n\n$$\\begin{array}{c|c|c|c|c|c} Q\\ \\text{in}\\ 10^{-19}\\,\\text{C} & 6{,}40 & 4{,}80 & 3{,}20 & 8{,}00 & 6{,}40 \\\\ \\hline Q/e & 4 & 3 & 2 & 5 & 4 \\end{array}$$\n\nDamit ist $e \\approx 1{,}60\\cdot10^{-19}\\ \\text{C}$, und der Literaturwert beträgt $1{,}602\\cdot10^{-19}\\ \\text{C}$.",
         "warum": {
-          "de": "Entscheidend ist, dass man den größten gemeinsamen Teiler sucht und nicht den kleinsten Messwert nimmt: Der kleinste gemessene Tropfen muss nicht ein einziges Elektron tragen. Käme ein Wert heraus, der die anderen nicht ganzzahlig teilt, wäre das ein Hinweis auf einen Messfehler — nicht auf eine kleinere Ladungseinheit.",
+          "de": "Entscheidend ist, dass man den größten gemeinsamen Teiler sucht und nicht den kleinsten Messwert nimmt: Der kleinste gemessene Tropfen muss nicht ein einziges Elektron tragen. Käme ein Wert heraus, der die anderen nicht ganzzahlig teilt, wäre das ein Hinweis auf einen Messfehler, nicht auf eine kleinere Ladungseinheit.",
           "tr": "Belirleyici olan, en küçük ölçüm değerini almak değil en büyük ortak böleni aramaktır: en küçük damlanın tek bir elektron taşıması gerekmez. Diğerlerini tam bölmeyen bir değer çıkarsa bu daha küçük bir yük birimine değil, bir ölçüm hatasına işarettir."
         },
         "teilpunkte": 5
@@ -61,8 +61,8 @@
         "titel": "e/m-Formel entwickeln und auswerten",
         "inhalt": "Energieerhaltung: $\\frac{1}{2}m_e v^2 = e U_A \\Rightarrow v = \\sqrt{2eU_A/m_e}$.\n\nKreisbahn: $e v B = m_e v^2/r \\Rightarrow e B r = m_e v$. Quadrieren beseitigt die Wurzel:\n\n$$e^2 B^2 r^2 = m_e^2 v^2 = 2 m_e e U_A \\quad\\Longrightarrow\\quad \\frac{e}{m_e} = \\frac{2U_A}{r^2 B^2}$$\n\nEinsetzen von $U_A = 320\\ \\text{V}$, $r = 0{,}050\\ \\text{m}$, $B = 1{,}2\\cdot10^{-3}\\ \\text{T}$:\n\n$$\\frac{e}{m_e} = \\frac{2\\cdot 320}{(0{,}050)^2\\cdot(1{,}2\\cdot10^{-3})^2} = \\frac{640}{3{,}6\\cdot10^{-9}} \\approx 1{,}78\\cdot10^{11}\\ \\frac{\\text{C}}{\\text{kg}}$$\n\nDer Literaturwert beträgt $1{,}759\\cdot10^{11}\\ \\tfrac{\\text{C}}{\\text{kg}}$; die Messung trifft ihn auf gut ein Prozent genau.",
         "warum": {
-          "de": "Der Versuch liefert nur das Verhältnis $e/m_e$, nicht $e$ und $m_e$ einzeln — beide Größen treten in Beschleunigung und Ablenkung stets gemeinsam auf. Erst der Millikan-Versuch aus Teil 1, der $e$ unabhängig bestimmt, macht aus diesem Verhältnis die Elektronenmasse. Deshalb stehen beide Versuche in dieser Aufgabe nebeneinander.",
-          "tr": "Deney yalnızca $e/m_e$ oranını verir, $e$ ile $m_e$'yi ayrı ayrı değil — iki büyüklük hem hızlanmada hem sapmada hep birlikte görünür. Bu oranı elektron kütlesine ancak 1. bölümdeki, $e$'yi bağımsız belirleyen Millikan deneyi dönüştürür. İki deneyin bu soruda yan yana durmasının sebebi budur."
+          "de": "Der Versuch liefert nur das Verhältnis $e/m_e$, nicht $e$ und $m_e$ einzeln; beide Größen treten in Beschleunigung und Ablenkung stets gemeinsam auf. Erst der Millikan-Versuch aus Teil 1, der $e$ unabhängig bestimmt, macht aus diesem Verhältnis die Elektronenmasse. Deshalb stehen beide Versuche in dieser Aufgabe nebeneinander.",
+          "tr": "Deney yalnızca $e/m_e$ oranını verir, $e$ ile $m_e$'yi ayrı ayrı değil. İki büyüklük hem hızlanmada hem sapmada hep birlikte görünür. Bu oranı elektron kütlesine ancak 1. bölümdeki, $e$'yi bağımsız belirleyen Millikan deneyi dönüştürür. İki deneyin bu soruda yan yana durmasının sebebi budur."
         },
         "teilpunkte": 8
       }

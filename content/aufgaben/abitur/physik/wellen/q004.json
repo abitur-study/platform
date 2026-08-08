@@ -14,7 +14,7 @@
   "aufgabenstellung": "In einem Schulversuch wird ein optisches Gitter mit dem Spaltmittenabstand $d = 3{,}0\\ \\mu\\text{m}$ senkrecht von grünem Licht der Wellenlänge $\\lambda = 546\\ \\text{nm}$ durchstrahlt. Der Beobachtungsschirm ist $40\\ \\text{cm}$ breit, steht parallel zum Gitter im Abstand $e = 12\\ \\text{cm}$ und ist symmetrisch zur optischen Achse aufgestellt.\n\na) Berechnen Sie den Abstand des Maximums $2.$ Ordnung von der optischen Achse.\n\nb) Ermitteln Sie, wie viele Helligkeitsmaxima insgesamt auf dem Schirm zu sehen sind.\n\nc) Ein Mitschüler wertet den Versuch mit der Näherungsformel $\\lambda = \\dfrac{a\\cdot d}{n\\cdot e}$ aus. Begründen Sie anhand einer Rechnung, warum er damit hier ein deutlich falsches Ergebnis erhält.",
   "material": [],
   "tipps": [
-    "Am Gitter legt der Gangunterschied den Beugungswinkel fest, die Geometrie zwischen Gitter und Schirm den Ort des Maximums. Das sind zwei getrennte Schritte — erst der Winkel, dann der Abstand.",
+    "Am Gitter legt der Gangunterschied den Beugungswinkel fest, die Geometrie zwischen Gitter und Schirm den Ort des Maximums. Das sind zwei getrennte Schritte: erst der Winkel, dann der Abstand.",
     "Für Teilaufgabe b) hilft die Frage: Welcher Winkel gehört zum äußersten Punkt des Schirms? Der Schirm ist symmetrisch, also steht nur die halbe Breite zur Verfügung.",
     "Für c) rechnen Sie einmal $\\sin\\alpha$ und einmal $\\tan\\alpha$ desselben Winkels aus und vergleichen Sie die beiden Zahlen."
   ],
@@ -26,7 +26,7 @@
         "titel": "Beugungswinkel des Maximums 2. Ordnung",
         "inhalt": "Zwei benachbarte Gitteröffnungen liegen um $d$ auseinander; der Gangunterschied ihrer Teilbündel ist $\\Delta s = d\\cdot\\sin\\alpha$. Ein Maximum entsteht, wenn $\\Delta s = n\\cdot\\lambda$ gilt. Daraus folgt die Gitterformel\n\n$$\\sin\\alpha_n = \\frac{n\\cdot\\lambda}{d}$$\n\nFür $n = 2$:\n\n$$\\sin\\alpha_2 = \\frac{2\\cdot 546\\cdot 10^{-9}\\ \\text{m}}{3{,}0\\cdot 10^{-6}\\ \\text{m}} = 0{,}364 \\quad\\Longrightarrow\\quad \\alpha_2 \\approx 21{,}4^\\circ$$",
         "warum": {
-          "de": "Die Gitterformel enthält den Schirmabstand nicht. Der Beugungswinkel wird allein durch Wellenlänge und Gitterkonstante festgelegt — der Schirm entscheidet nur darüber, wo dieser Winkel auftrifft. Wer beides vermischt, sucht in der Gitterformel vergeblich nach $e$.",
+          "de": "Die Gitterformel enthält den Schirmabstand nicht. Der Beugungswinkel wird allein durch Wellenlänge und Gitterkonstante festgelegt. Der Schirm entscheidet nur darüber, wo dieser Winkel auftrifft. Wer beides vermischt, sucht in der Gitterformel vergeblich nach $e$.",
           "tr": "Gitter (ağ) formülünde ekran uzaklığı yer almaz. Kırınım açısını yalnızca dalga boyu ile ağ sabiti belirler; ekran ise bu açının nereye düştüğünü belirler. İkisini karıştıran öğrenci, formülde boş yere $e$ arar."
         },
         "teilpunkte": 4
@@ -34,7 +34,7 @@
       {
         "nr": 2,
         "titel": "Abstand auf dem Schirm berechnen",
-        "inhalt": "Im großen Dreieck zwischen Gitter und Schirm gilt $\\tan\\alpha_n = \\dfrac{a_n}{e}$, also\n\n$$a_2 = e\\cdot\\tan\\alpha_2 = 12\\ \\text{cm}\\cdot\\tan 21{,}4^\\circ = 12\\ \\text{cm}\\cdot 0{,}391 \\approx 4{,}7\\ \\text{cm}$$\n\nDas Maximum $2.$ Ordnung liegt also rund $4{,}7\\ \\text{cm}$ neben der optischen Achse — auf beiden Seiten je eines.",
+        "inhalt": "Im großen Dreieck zwischen Gitter und Schirm gilt $\\tan\\alpha_n = \\dfrac{a_n}{e}$, also\n\n$$a_2 = e\\cdot\\tan\\alpha_2 = 12\\ \\text{cm}\\cdot\\tan 21{,}4^\\circ = 12\\ \\text{cm}\\cdot 0{,}391 \\approx 4{,}7\\ \\text{cm}$$\n\nDas Maximum $2.$ Ordnung liegt also rund $4{,}7\\ \\text{cm}$ neben der optischen Achse, auf beiden Seiten je eines.",
         "warum": {
           "de": "Hier steht zwingend der Tangens, nicht der Sinus: Der Schirm ist eine Ebene, kein Kreisbogen um das Gitter, deshalb ist $a$ die Gegenkathete zur Ankathete $e$. Wer hier $\\sin$ einsetzt, rechnet stillschweigend mit einem gekrümmten Schirm und erhält bei großen Winkeln einen zu kleinen Abstand.",
           "tr": "Burada zorunlu olarak tanjant kullanılır, sinüs değil: ekran bir düzlemdir, ağ merkezli bir yay değil; bu yüzden $a$ karşı dik kenar, $e$ komşu dik kenardır. Burada $\\sin$ yazan, farkında olmadan eğri bir ekranla hesap yapar ve büyük açılarda gerçekten küçük bir uzaklık bulur."
@@ -46,7 +46,7 @@
         "titel": "Größter auf dem Schirm noch erfassbarer Winkel",
         "inhalt": "Der Schirm ist symmetrisch, vom Mittelpunkt bis zum Rand stehen also nur $a_{\\max} = 20\\ \\text{cm}$ zur Verfügung:\n\n$$\\tan\\alpha_{\\max} = \\frac{20\\ \\text{cm}}{12\\ \\text{cm}} = 1{,}67 \\quad\\Longrightarrow\\quad \\alpha_{\\max} \\approx 59{,}0^\\circ, \\qquad \\sin\\alpha_{\\max} \\approx 0{,}857$$",
         "warum": {
-          "de": "Der typische Fehler ist, die volle Schirmbreite von $40\\ \\text{cm}$ einzusetzen. Das Maximum $0.$ Ordnung liegt aber in der Mitte, und das Muster ist symmetrisch — jede Seite bekommt nur die halbe Breite. Derselbe Fehler steckt in Aufgaben, in denen der Abstand zweier Maxima gleicher Ordnung angegeben ist.",
+          "de": "Der typische Fehler ist, die volle Schirmbreite von $40\\ \\text{cm}$ einzusetzen. Das Maximum $0.$ Ordnung liegt aber in der Mitte, und das Muster ist symmetrisch, jede Seite bekommt also nur die halbe Breite. Derselbe Fehler steckt in Aufgaben, in denen der Abstand zweier Maxima gleicher Ordnung angegeben ist.",
           "tr": "Tipik hata, ekranın $40\\ \\text{cm}$ olan tam genişliğini kullanmaktır. Oysa $0.$ mertebe maksimum tam ortadadır ve desen simetriktir; her tarafa genişliğin yalnızca yarısı düşer. Aynı hata, aynı mertebeden iki maksimum arasındaki uzaklığın verildiği sorularda da yapılır."
         },
         "teilpunkte": 2
@@ -56,24 +56,24 @@
         "titel": "Höchste sichtbare Ordnung und Gesamtzahl",
         "inhalt": "Ein Maximum liegt genau dann noch auf dem Schirm, wenn $\\sin\\alpha_n \\le \\sin\\alpha_{\\max}$ ist:\n\n$$n \\le \\frac{d\\cdot\\sin\\alpha_{\\max}}{\\lambda} = \\frac{3{,}0\\cdot 10^{-6}\\ \\text{m}\\cdot 0{,}857}{546\\cdot 10^{-9}\\ \\text{m}} \\approx 4{,}7 \\quad\\Longrightarrow\\quad n_{\\max} = 4$$\n\nAuf jeder Seite liegen also die Ordnungen $1$ bis $4$, dazu das Maximum $0.$ Ordnung in der Mitte:\n\n$$N = 4 + 4 + 1 = 9$$\n\nEs sind $9$ Maxima zu sehen. (Physikalisch möglich wäre wegen $n \\le d/\\lambda = 5{,}5$ sogar noch die $5.$ Ordnung; sie träfe wegen $\\alpha_5 \\approx 65{,}5^\\circ$ erst $26\\ \\text{cm}$ neben der Mitte auf und geht am Schirm vorbei.)",
         "warum": {
-          "de": "Zwei verschiedene Grenzen wirken hier gleichzeitig, und man muss die schärfere nehmen: die Physik erlaubt nur $\\sin\\alpha \\le 1$, also $n \\le d/\\lambda$; der Aufbau begrenzt zusätzlich über die Schirmbreite. Hier ist der Schirm die engere Schranke — wer nur $d/\\lambda$ rechnet, zählt zwei Maxima zu viel.",
-          "tr": "Burada iki ayrı sınır aynı anda etkilidir ve daha dar olanı almak gerekir: fizik yalnızca $\\sin\\alpha \\le 1$, yani $n \\le d/\\lambda$ izin verir; düzenek ise ekran genişliğiyle ayrıca sınırlar. Bu soruda dar olan sınır ekrandır — sadece $d/\\lambda$ hesaplayan iki maksimum fazla sayar."
+          "de": "Zwei verschiedene Grenzen wirken hier gleichzeitig, und man muss die schärfere nehmen: die Physik erlaubt nur $\\sin\\alpha \\le 1$, also $n \\le d/\\lambda$; der Aufbau begrenzt zusätzlich über die Schirmbreite. Hier ist der Schirm die engere Schranke. Wer nur $d/\\lambda$ rechnet, zählt zwei Maxima zu viel.",
+          "tr": "Burada iki ayrı sınır aynı anda etkilidir ve daha dar olanı almak gerekir: fizik yalnızca $\\sin\\alpha \\le 1$, yani $n \\le d/\\lambda$ izin verir; düzenek ise ekran genişliğiyle ayrıca sınırlar. Bu soruda dar olan sınır ekrandır. Sadece $d/\\lambda$ hesaplayan iki maksimum fazla sayar."
         },
         "teilpunkte": 3
       },
       {
         "nr": 5,
         "titel": "Warum die Näherungsformel hier versagt",
-        "inhalt": "Die Näherungsformel entsteht aus $\\sin\\alpha \\approx \\tan\\alpha$. Mit dem gemessenen Abstand $a_2 = 4{,}7\\ \\text{cm}$ ergäbe sie\n\n$$\\lambda_{\\text{Näh}} = \\frac{a_2\\cdot d}{n\\cdot e} = \\frac{4{,}69\\cdot 10^{-2}\\ \\text{m}\\cdot 3{,}0\\cdot 10^{-6}\\ \\text{m}}{2\\cdot 0{,}12\\ \\text{m}} \\approx 5{,}86\\cdot 10^{-7}\\ \\text{m} = 586\\ \\text{nm}$$\n\nstatt der tatsächlichen $546\\ \\text{nm}$ — eine Abweichung von rund $7\\ \\%$, aus grünem Licht würde rechnerisch oranges. Der Grund: Bei $\\alpha_2 \\approx 21{,}4^\\circ$ ist $\\sin\\alpha_2 = 0{,}364$, aber $\\tan\\alpha_2 = 0{,}391$; die beiden Werte unterscheiden sich bereits um $7\\ \\%$. Als Faustregel gilt die Näherung nur bis etwa $5^\\circ$.",
+        "inhalt": "Die Näherungsformel entsteht aus $\\sin\\alpha \\approx \\tan\\alpha$. Mit dem gemessenen Abstand $a_2 = 4{,}7\\ \\text{cm}$ ergäbe sie\n\n$$\\lambda_{\\text{Näh}} = \\frac{a_2\\cdot d}{n\\cdot e} = \\frac{4{,}69\\cdot 10^{-2}\\ \\text{m}\\cdot 3{,}0\\cdot 10^{-6}\\ \\text{m}}{2\\cdot 0{,}12\\ \\text{m}} \\approx 5{,}86\\cdot 10^{-7}\\ \\text{m} = 586\\ \\text{nm}$$\n\nstatt der tatsächlichen $546\\ \\text{nm}$, eine Abweichung von rund $7\\ \\%$, aus grünem Licht würde rechnerisch oranges. Der Grund: Bei $\\alpha_2 \\approx 21{,}4^\\circ$ ist $\\sin\\alpha_2 = 0{,}364$, aber $\\tan\\alpha_2 = 0{,}391$; die beiden Werte unterscheiden sich bereits um $7\\ \\%$. Als Faustregel gilt die Näherung nur bis etwa $5^\\circ$.",
         "warum": {
-          "de": "Genau das ist der Unterschied zwischen Doppelspalt- und Gitterversuchen: Beim Doppelspalt liegt $d$ im Bereich von Zehntelmillimetern und die Winkel bleiben unter einem Grad, beim Gitter liegt $d$ bei wenigen Mikrometern und die Winkel werden groß. Dieselbe Näherung, die dort auf vier Stellen genau ist, ist hier unbrauchbar — eine Näherung ist immer nur zusammen mit ihrem Gültigkeitsbereich richtig.",
-          "tr": "Çift yarık ile ağ deneyleri arasındaki fark tam olarak budur: çift yarıkta $d$ onda bir milimetre mertebesindedir ve açılar bir derecenin altında kalır; ağda ise $d$ birkaç mikrometredir ve açılar büyür. Orada dört haneye kadar doğru olan aynı yaklaşım burada kullanılamaz — bir yaklaşım ancak geçerlilik aralığıyla birlikte doğrudur."
+          "de": "Genau das ist der Unterschied zwischen Doppelspalt- und Gitterversuchen: Beim Doppelspalt liegt $d$ im Bereich von Zehntelmillimetern und die Winkel bleiben unter einem Grad, beim Gitter liegt $d$ bei wenigen Mikrometern und die Winkel werden groß. Dieselbe Näherung, die dort auf vier Stellen genau ist, ist hier unbrauchbar, denn eine Näherung ist immer nur zusammen mit ihrem Gültigkeitsbereich richtig.",
+          "tr": "Çift yarık ile ağ deneyleri arasındaki fark tam olarak budur: çift yarıkta $d$ onda bir milimetre mertebesindedir ve açılar bir derecenin altında kalır; ağda ise $d$ birkaç mikrometredir ve açılar büyür. Orada dört haneye kadar doğru olan aynı yaklaşım burada kullanılamaz, çünkü bir yaklaşım ancak geçerlilik aralığıyla birlikte doğrudur."
         },
         "teilpunkte": 4
       }
     ],
     "haeufige_fehler": [
-      "Für den Abstand auf dem ebenen Schirm $\\sin\\alpha$ statt $\\tan\\alpha$ verwendet — das gilt nur bei kleinen Winkeln.",
+      "Für den Abstand auf dem ebenen Schirm $\\sin\\alpha$ statt $\\tan\\alpha$ verwendet. Das gilt nur bei kleinen Winkeln.",
       "Bei der Zahl der Maxima die volle Schirmbreite statt der halben eingesetzt.",
       "Das Maximum $0.$ Ordnung beim Abzählen vergessen, deshalb $8$ statt $9$ Maxima angegeben.",
       "Die Kleinwinkelnäherung $\\lambda = a\\,d/(n\\,e)$ auch bei Gittern angewandt, obwohl die Beugungswinkel dort meist über $10^\\circ$ liegen.",

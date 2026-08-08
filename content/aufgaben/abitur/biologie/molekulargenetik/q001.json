@@ -1,7 +1,7 @@
 {
   "bereich": "abitur",
   "id": "q001",
-  "titel": "Vom codogenen Strang zum Protein — zwei Punktmutationen im Vergleich",
+  "titel": "Vom codogenen Strang zum Protein: zwei Punktmutationen im Vergleich",
   "fach": "biologie",
   "themenbereich": "Molekulargenetik und Gentechnik",
   "themenbereich_slug": "molekulargenetik",
@@ -34,7 +34,7 @@
     }
   ],
   "tipps": [
-    "Die mRNA ist zum codogenen Strang komplementär **und** antiparallel. Überlege zuerst, welche Base in der RNA einem Adenin der DNA gegenübersteht — und welche einem Thymin.",
+    "Die mRNA ist zum codogenen Strang komplementär **und** antiparallel. Überlege zuerst, welche Base in der RNA einem Adenin der DNA gegenübersteht, und welche einem Thymin.",
     "Teile die fertige mRNA erst ab dem Startcodon in Dreiergruppen ein. Erst diese Einteilung zeigt, welches Codon von einer Mutation überhaupt betroffen ist.",
     "Vergleiche jede Mutation auf drei Ebenen nacheinander: ausgetauschte Base (Purin oder Pyrimidin?), verändertes Codon, resultierende Aminosäure. Jede Ebene liefert einen anderen Teil der Antwort."
   ],
@@ -46,54 +46,54 @@
         "titel": "Transkription: mRNA vom codogenen Strang ableiten",
         "inhalt": "Die RNA-Polymerase synthetisiert die mRNA komplementär und antiparallel zum codogenen Strang. Dabei paart Adenin der DNA mit Uracil der RNA, Thymin mit Adenin, Guanin mit Cytosin und Cytosin mit Guanin.\n\nCodogener Strang: `3'-TAC AAG CCT GTA ACC TTT ATT-5'`\n\nmRNA: `5'-AUG UUC GGA CAU UGG AAA UAA-3'`\n\nDa der codogene Strang in Richtung 3' → 5' abgelesen wird, entsteht die mRNA in Richtung 5' → 3'. Thymin kommt in der mRNA nicht vor, an seiner Stelle steht Uracil.",
         "warum": {
-          "de": "Die Basenpaarungsregeln sind der eigentliche Informationsträger der Transkription: Nur weil jede Base genau einen komplementären Partner hat, ist die Übertragung der Sequenz eindeutig und wiederholbar. Die Antiparallelität ist dabei keine Nebensache, sondern legt die Leserichtung fest — ohne sie wäre nicht bestimmt, welches Ende der mRNA das Startcodon trägt.",
-          "tr": "Baz eşleşme kuralları transkripsiyonun asıl bilgi taşıyıcısıdır: her bazın tam olarak bir tamamlayıcısı olduğu için dizi aktarımı tek anlamlıdır ve tekrarlanabilir. Antiparalellik ayrıntı değil, okuma yönünü belirleyen şeydir. En sık yapılan hata: kodogen zinciri olduğu gibi yazıp yalnızca T'leri U yapmak — bu sana mRNA'yı değil, kodojenik olmayan (kodlayıcı) zinciri verir."
+          "de": "Die Basenpaarungsregeln sind der eigentliche Informationsträger der Transkription: Nur weil jede Base genau einen komplementären Partner hat, ist die Übertragung der Sequenz eindeutig und wiederholbar. Die Antiparallelität ist dabei keine Nebensache, sondern legt die Leserichtung fest; ohne sie wäre nicht bestimmt, welches Ende der mRNA das Startcodon trägt.",
+          "tr": "Baz eşleşme kuralları transkripsiyonun asıl bilgi taşıyıcısıdır: her bazın tam olarak bir tamamlayıcısı olduğu için dizi aktarımı tek anlamlıdır ve tekrarlanabilir. Antiparalellik ayrıntı değil, okuma yönünü belirleyen şeydir. En sık yapılan hata: kodogen zinciri olduğu gibi yazıp yalnızca T'leri U yapmak. Bu sana mRNA'yı değil, kodojenik olmayan (kodlayıcı) zinciri verir."
         },
         "teilpunkte": 3
       },
       {
         "nr": 2,
         "titel": "Translation: Aminosäuresequenz des Wildtyp-Peptids bestimmen",
-        "inhalt": "Die Translation beginnt am Startcodon AUG und schreitet in Dreierschritten in Richtung 5' → 3' fort. Mit Material 1 ergibt sich:\n\n- AUG → Methionin (Start)\n- UUC → Phenylalanin\n- GGA → Glycin\n- CAU → Histidin\n- UGG → Tryptophan\n- AAA → Lysin\n- UAA → Stoppcodon, keine Aminosäure\n\nDas Peptid lautet also: **Met – Phe – Gly – His – Trp – Lys**, also sechs Aminosäuren. Am Stoppcodon UAA löst sich der Ribosomenkomplex, das Peptid wird freigesetzt.",
+        "inhalt": "Die Translation beginnt am Startcodon AUG und schreitet in Dreierschritten in Richtung 5' → 3' fort. Mit Material 1 ergibt sich:\n\n- AUG → Methionin (Start)\n- UUC → Phenylalanin\n- GGA → Glycin\n- CAU → Histidin\n- UGG → Tryptophan\n- AAA → Lysin\n- UAA → Stoppcodon, keine Aminosäure\n\nDas Peptid lautet also: **Met-Phe-Gly-His-Trp-Lys**, also sechs Aminosäuren. Am Stoppcodon UAA löst sich der Ribosomenkomplex, das Peptid wird freigesetzt.",
         "warum": {
           "de": "Der genetische Code ist ein Triplettcode ohne Kommata und ohne Überlappung: Erst der festgelegte Startpunkt legt das Leseraster fest, in dem alle folgenden Codons gelesen werden. Deshalb muss die Einteilung in Dreiergruppen vom Startcodon aus erfolgen und nicht vom Sequenzanfang aus geraten werden. Das Stoppcodon gehört zwingend zur Antwort, weil es die Länge des Genprodukts festlegt.",
-          "tr": "Genetik kod virgülsüz ve örtüşmesiz bir üçlü koddur: okuma çerçevesini belirleyen şey başlangıç noktasıdır. Bu yüzden üçerli gruplama dizinin başından değil, AUG'den itibaren yapılır. Stop kodonu da cevabın parçasıdır, çünkü ürünün uzunluğunu o belirler. Dikkat: stop kodonu için bir aminoasit yazmak sık görülen bir hatadır — ona karşılık gelen tRNA yoktur."
+          "tr": "Genetik kod virgülsüz ve örtüşmesiz bir üçlü koddur: okuma çerçevesini belirleyen şey başlangıç noktasıdır. Bu yüzden üçerli gruplama dizinin başından değil, AUG'den itibaren yapılır. Stop kodonu da cevabın parçasıdır, çünkü ürünün uzunluğunu o belirler. Dikkat: stop kodonu için bir aminoasit yazmak sık görülen bir hatadır, çünkü ona karşılık gelen tRNA yoktur."
         },
         "teilpunkte": 3
       },
       {
         "nr": 3,
         "titel": "Stamm I: stumme Mutation durch Degeneration des Codes",
-        "inhalt": "Im codogenen Strang wird `AAG` zu `AAA`. Ausgetauscht ist die Purinbase Guanin gegen die Purinbase Adenin — ein Austausch innerhalb derselben Basenklasse, also eine **Substitution vom Typ Transition**.\n\nFolge für die mRNA: Aus `UUC` wird `UUU`. Nach Material 1 codieren jedoch sowohl UUC als auch UUU für Phenylalanin.\n\nDie Aminosäuresequenz bleibt unverändert: Met – Phe – Gly – His – Trp – Lys. Es handelt sich um eine **stumme (stille) Mutation**. Ursache ist die **Degeneration des genetischen Codes**: Für die meisten Aminosäuren existieren mehrere Codons, die sich häufig nur in der dritten Base unterscheiden.",
+        "inhalt": "Im codogenen Strang wird `AAG` zu `AAA`. Ausgetauscht ist die Purinbase Guanin gegen die Purinbase Adenin, ein Austausch innerhalb derselben Basenklasse und damit eine **Substitution vom Typ Transition**.\n\nFolge für die mRNA: Aus `UUC` wird `UUU`. Nach Material 1 codieren jedoch sowohl UUC als auch UUU für Phenylalanin.\n\nDie Aminosäuresequenz bleibt unverändert: Met-Phe-Gly-His-Trp-Lys. Es handelt sich um eine **stumme (stille) Mutation**. Ursache ist die **Degeneration des genetischen Codes**: Für die meisten Aminosäuren existieren mehrere Codons, die sich häufig nur in der dritten Base unterscheiden.",
         "warum": {
-          "de": "Ohne den Begriff der Degeneration bliebe unerklärlich, wieso eine nachweisbare Veränderung der DNA gar keine Wirkung zeigt. Der Code puffert Basenaustausche vor allem an der dritten Codonposition ab — diese Redundanz ist ein Schutzmechanismus, der einen Teil der Mutationen folgenlos macht. Genau deshalb ist die dritte Position die statistisch variabelste Stelle eines Codons.",
-          "tr": "Dejenerasyon kavramı olmadan, DNA'da ölçülebilir bir değişikliğin neden hiçbir etki yaratmadığı açıklanamaz. Kod, özellikle üçüncü kodon pozisyonundaki baz değişimlerini tamponlar; bu artıklık bir koruma mekanizmasıdır. Sık yapılan hata: sessiz mutasyona \"mutasyon değil\" demek — DNA gerçekten değişmiştir, değişmeyen yalnızca proteindir."
+          "de": "Ohne den Begriff der Degeneration bliebe unerklärlich, wieso eine nachweisbare Veränderung der DNA gar keine Wirkung zeigt. Der Code puffert Basenaustausche vor allem an der dritten Codonposition ab; diese Redundanz ist ein Schutzmechanismus, der einen Teil der Mutationen folgenlos macht. Genau deshalb ist die dritte Position die statistisch variabelste Stelle eines Codons.",
+          "tr": "Dejenerasyon kavramı olmadan, DNA'da ölçülebilir bir değişikliğin neden hiçbir etki yaratmadığı açıklanamaz. Kod, özellikle üçüncü kodon pozisyonundaki baz değişimlerini tamponlar; bu artıklık bir koruma mekanizmasıdır. Sık yapılan hata: sessiz mutasyona \"mutasyon değil\" demek. Oysa DNA gerçekten değişmiştir, değişmeyen yalnızca proteindir."
         },
         "teilpunkte": 3
       },
       {
         "nr": 4,
         "titel": "Stamm II: Nonsense-Mutation durch vorzeitiges Stoppcodon",
-        "inhalt": "Im codogenen Strang wird `CCT` zu `ACT`. Die Pyrimidinbase Cytosin wird durch die Purinbase Adenin ersetzt — ein Austausch über die Basenklassen hinweg, also eine **Substitution vom Typ Transversion**.\n\nFolge für die mRNA: Aus `GGA` wird `UGA`. Nach Material 1 ist UGA kein Codon für eine Aminosäure, sondern ein **Stoppcodon**.\n\nDie Translation bricht daher schon nach dem zweiten Codon ab. Statt des sechs Aminosäuren langen Peptids entsteht nur noch das Dipeptid **Met – Phe**. Da ein sinntragendes Codon in ein Stoppsignal umgewandelt wird, handelt es sich um eine **Nonsense-Mutation**.\n\nDas Leseraster selbst bleibt erhalten — es wurde eine Base ersetzt und keine eingefügt oder entfernt. Eine Rasterschubmutation liegt also ausdrücklich nicht vor.",
+        "inhalt": "Im codogenen Strang wird `CCT` zu `ACT`. Die Pyrimidinbase Cytosin wird durch die Purinbase Adenin ersetzt, ein Austausch über die Basenklassen hinweg und damit eine **Substitution vom Typ Transversion**.\n\nFolge für die mRNA: Aus `GGA` wird `UGA`. Nach Material 1 ist UGA kein Codon für eine Aminosäure, sondern ein **Stoppcodon**.\n\nDie Translation bricht daher schon nach dem zweiten Codon ab. Statt des sechs Aminosäuren langen Peptids entsteht nur noch das Dipeptid **Met-Phe**. Da ein sinntragendes Codon in ein Stoppsignal umgewandelt wird, handelt es sich um eine **Nonsense-Mutation**.\n\nDas Leseraster selbst bleibt erhalten, denn es wurde eine Base ersetzt und keine eingefügt oder entfernt. Eine Rasterschubmutation liegt also ausdrücklich nicht vor.",
         "warum": {
-          "de": "Die beiden Klassifikationsebenen müssen sauber getrennt werden: Transition und Transversion beschreiben, *welche Basen* getauscht wurden, während stumm, missense und nonsense beschreiben, *was das für das Genprodukt bedeutet*. Beide Ebenen sind unabhängig voneinander — eine Transversion kann folgenlos bleiben, eine Transition kann ein Protein zerstören. Nur die Kombination beider Angaben beantwortet die Frage vollständig.",
-          "tr": "İki sınıflandırma düzeyi karıştırılmamalı: transisyon/transversiyon *hangi bazların* değiştiğini, sessiz/missense/nonsense ise bunun *ürün için ne anlama geldiğini* söyler. İkisi birbirinden bağımsızdır. Ayrıca dikkat: burada bir baz değiştirildi, eklenmedi veya silinmedi — dolayısıyla çerçeve kayması (Rasterschub) yoktur; bu ikisi sınavda en sık karıştırılan mutasyon tipleridir."
+          "de": "Die beiden Klassifikationsebenen müssen sauber getrennt werden: Transition und Transversion beschreiben, *welche Basen* getauscht wurden, während stumm, missense und nonsense beschreiben, *was das für das Genprodukt bedeutet*. Beide Ebenen sind unabhängig voneinander: eine Transversion kann folgenlos bleiben, eine Transition kann ein Protein zerstören. Nur die Kombination beider Angaben beantwortet die Frage vollständig.",
+          "tr": "İki sınıflandırma düzeyi karıştırılmamalı: transisyon/transversiyon *hangi bazların* değiştiğini, sessiz/missense/nonsense ise bunun *ürün için ne anlama geldiğini* söyler. İkisi birbirinden bağımsızdır. Ayrıca dikkat: burada bir baz değiştirildi, eklenmedi veya silinmedi, dolayısıyla çerçeve kayması (Rasterschub) yoktur; bu ikisi sınavda en sık karıştırılan mutasyon tipleridir."
         },
         "teilpunkte": 3
       },
       {
         "nr": 5,
         "titel": "Folgen für den Organismus beurteilen",
-        "inhalt": "**Stamm I:** Das Genprodukt ist mit dem des Wildtyps identisch. Aminosäuresequenz, Faltung und damit Funktion des Proteins bleiben unverändert; phänotypisch ist keine Veränderung zu erwarten. Die Mutation ist zwar im Genom nachweisbar — etwa über eine Sequenzierung — bleibt aber ohne Auswirkung auf den Organismus.\n\n**Stamm II:** Von sechs Aminosäuren bleiben nur zwei übrig. Ein derart verkürztes Fragment kann die für die Funktion nötige Tertiärstruktur nicht ausbilden; ein aktives Zentrum oder eine Bindestelle kann darin nicht mehr enthalten sein. Das Protein ist mit hoher Wahrscheinlichkeit vollständig funktionslos, es liegt faktisch ein Genausfall vor.\n\n**Beurteilung:** Die Mutation in Stamm II beeinträchtigt den Organismus deutlich stärker. Wie gravierend die Folge tatsächlich ist, hängt zusätzlich davon ab, welche Aufgabe das betroffene Protein erfüllt: Bei einem lebensnotwendigen Enzym ohne Ersatzweg kann der Ausfall letal sein, bei einem entbehrlichen Genprodukt bleibt er unter Umständen unbemerkt.",
+        "inhalt": "**Stamm I:** Das Genprodukt ist mit dem des Wildtyps identisch. Aminosäuresequenz, Faltung und damit Funktion des Proteins bleiben unverändert; phänotypisch ist keine Veränderung zu erwarten. Die Mutation ist zwar im Genom nachweisbar, etwa über eine Sequenzierung, bleibt aber ohne Auswirkung auf den Organismus.\n\n**Stamm II:** Von sechs Aminosäuren bleiben nur zwei übrig. Ein derart verkürztes Fragment kann die für die Funktion nötige Tertiärstruktur nicht ausbilden; ein aktives Zentrum oder eine Bindestelle kann darin nicht mehr enthalten sein. Das Protein ist mit hoher Wahrscheinlichkeit vollständig funktionslos, es liegt faktisch ein Genausfall vor.\n\n**Beurteilung:** Die Mutation in Stamm II beeinträchtigt den Organismus deutlich stärker. Wie gravierend die Folge tatsächlich ist, hängt zusätzlich davon ab, welche Aufgabe das betroffene Protein erfüllt: Bei einem lebensnotwendigen Enzym ohne Ersatzweg kann der Ausfall letal sein, bei einem entbehrlichen Genprodukt bleibt er unter Umständen unbemerkt.",
         "warum": {
           "de": "Der Operator „beurteilen“ verlangt ein begründetes Abwägen und nicht die bloße Wiedergabe der Mutationstypen. Die Begründung muss über die Sequenz hinaus auf die Ebene von Struktur und Funktion gehen, denn die Aminosäuresequenz wirkt sich nur über die Raumstruktur des Proteins auf den Phänotyp aus. Zu einer vollständigen Beurteilung gehört außerdem die ehrliche Angabe, welche Information für ein endgültiges Urteil noch fehlt.",
-          "tr": "*Beurteilen* (değerlendiriniz) operatörü, mutasyon tiplerini tekrar etmeyi değil, gerekçeli bir tartma ister. Gerekçe dizi düzeyinde kalmamalı, yapı ve işlev düzeyine inmelidir: aminoasit dizisi fenotipi ancak proteinin uzaysal yapısı üzerinden etkiler. Tam bir değerlendirme, kesin yargı için hangi bilginin eksik olduğunu da söyler — bu, Abitur'da puan getiren bir alışkanlıktır."
+          "tr": "*Beurteilen* (değerlendiriniz) operatörü, mutasyon tiplerini tekrar etmeyi değil, gerekçeli bir tartma ister. Gerekçe dizi düzeyinde kalmamalı, yapı ve işlev düzeyine inmelidir: aminoasit dizisi fenotipi ancak proteinin uzaysal yapısı üzerinden etkiler. Tam bir değerlendirme, kesin yargı için hangi bilginin eksik olduğunu da söyler. Bu, Abitur'da puan getiren bir alışkanlıktır."
         },
         "teilpunkte": 3
       }
     ],
     "haeufige_fehler": [
-      "Den codogenen Strang einfach abgeschrieben und nur T durch U ersetzt — das ergibt den nicht-codogenen (codierenden) Strang als RNA, nicht das Transkript.",
+      "Den codogenen Strang einfach abgeschrieben und nur T durch U ersetzt: das ergibt den nicht-codogenen (codierenden) Strang als RNA, nicht das Transkript.",
       "Die Antiparallelität übergangen und die mRNA in der falschen Leserichtung notiert, sodass die Codoneinteilung und damit die gesamte Aminosäuresequenz nicht mehr stimmt.",
       "Thymin in der mRNA stehen gelassen oder umgekehrt Uracil in die DNA geschrieben.",
       "Für das Stoppcodon eine Aminosäure angegeben, statt den Abbruch der Translation zu beschreiben.",

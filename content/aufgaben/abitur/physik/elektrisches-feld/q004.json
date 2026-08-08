@@ -35,7 +35,7 @@
   ],
   "tipps": [
     "Im Schwebezustand wird das Tröpfchen nicht beschleunigt. Schreibe zuerst die beiden angreifenden Kräfte einzeln hin, bevor du sie gleichsetzt.",
-    "Die Ladungen liegen alle in der Größenordnung $10^{-19}\\ \\text{C}$. Teile sie durch den kleinsten gefundenen Wert — dann siehst du die ganzen Zahlen $n$ fast von allein.",
+    "Die Ladungen liegen alle in der Größenordnung $10^{-19}\\ \\text{C}$. Teile sie durch den kleinsten gefundenen Wert. Dann siehst du die ganzen Zahlen $n$ fast von allein.",
     "Für den Radius brauchst du die Dichte und das Kugelvolumen $V = \\tfrac{4}{3}\\pi r^3$. Löse erst allgemein nach $r$ auf, setze dann ein."
   ],
   "loesung": {
@@ -46,8 +46,8 @@
         "titel": "Kräftegleichgewicht aufstellen und nach $q$ auflösen",
         "inhalt": "Das Tröpfchen schwebt, also ist die Summe der angreifenden Kräfte null. Nach unten wirkt die Gewichtskraft, nach oben die elektrische Kraft:\n\n$$F_{el} = F_G \\quad\\Longleftrightarrow\\quad q\\cdot E = m\\cdot g$$\n\nIm homogenen Feld des Plattenkondensators gilt $E = \\dfrac{U}{d}$. Einsetzen liefert\n\n$$q\\cdot\\frac{U}{d} = m\\cdot g \\quad\\Longleftrightarrow\\quad q = \\frac{m\\cdot g\\cdot d}{U}$$",
         "warum": {
-          "de": "Die Herleitung ist deshalb so kurz, weil der Schwebezustand alle schwierigen Größen aus der Gleichung wirft: keine Beschleunigung, keine Geschwindigkeit, keine Luftreibung. Übrig bleiben nur $U$, $d$ und $m$ — und genau diese drei kann man im Experiment tatsächlich messen. Das ist der Grund, warum Millikan überhaupt auf den Schwebefall gezielt hat.",
-          "tr": "Bu türetmenin bu kadar kısa olmasının nedeni, askıda kalma durumunun bütün zor büyüklükleri denklemden atmasıdır: ivme yok, hız yok, hava sürtünmesi yok. Geriye yalnızca $U$, $d$ ve $m$ kalır — ve deneyde gerçekten ölçülebilen tam olarak bu üçüdür. Millikan'ın neden özellikle askıda kalma durumunu hedeflediğinin sebebi budur."
+          "de": "Die Herleitung ist deshalb so kurz, weil der Schwebezustand alle schwierigen Größen aus der Gleichung wirft: keine Beschleunigung, keine Geschwindigkeit, keine Luftreibung. Übrig bleiben nur $U$, $d$ und $m$, und genau diese drei kann man im Experiment tatsächlich messen. Das ist der Grund, warum Millikan überhaupt auf den Schwebefall gezielt hat.",
+          "tr": "Bu türetmenin bu kadar kısa olmasının nedeni, askıda kalma durumunun bütün zor büyüklükleri denklemden atmasıdır: ivme yok, hız yok, hava sürtünmesi yok. Geriye yalnızca $U$, $d$ ve $m$ kalır, ve deneyde gerçekten ölçülebilen tam olarak bu üçüdür. Millikan'ın neden özellikle askıda kalma durumunu hedeflediğinin sebebi budur."
         },
         "teilpunkte": 3
       },
@@ -56,8 +56,8 @@
         "titel": "Ladungen der fünf Tröpfchen berechnen",
         "inhalt": "Beispielrechnung für Tröpfchen Nr. 1 mit $m = 8{,}40\\cdot 10^{-16}\\ \\text{kg}$, $U = 155\\ \\text{V}$ und $d = 6{,}20\\cdot 10^{-3}\\ \\text{m}$:\n\n$$q_1 = \\frac{8{,}40\\cdot 10^{-16}\\ \\text{kg}\\cdot 9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}\\cdot 6{,}20\\cdot 10^{-3}\\ \\text{m}}{155\\ \\text{V}} = \\frac{5{,}11\\cdot 10^{-17}\\ \\text{Nm}}{155\\ \\text{V}} \\approx 3{,}30\\cdot 10^{-19}\\ \\text{C}$$\n\nAnalog für die übrigen Tröpfchen:\n\n$$\\begin{array}{c|c|c|c|c|c} \\text{Nr.} & 1 & 2 & 3 & 4 & 5 \\\\ \\hline q\\ \\text{in }10^{-19}\\ \\text{C} & 3{,}30 & 1{,}57 & 6{,}48 & 4{,}69 & 3{,}24 \\end{array}$$",
         "warum": {
-          "de": "Die Einheitenkontrolle lohnt sich hier besonders: $\\frac{\\text{kg}\\cdot\\frac{\\text{m}}{\\text{s}^2}\\cdot\\text{m}}{\\text{V}} = \\text{Nm/V} = \\text{J/V} = \\text{C}$. Wenn am Ende Coulomb herauskommt, hat man die Formel garantiert richtig aufgelöst — bei fünf gleichartigen Rechnungen ist das die schnellste Absicherung gegen einen systematischen Fehler in allen fünf.",
-          "tr": "Birim kontrolü burada özellikle işe yarar: $\\frac{\\text{kg}\\cdot\\frac{\\text{m}}{\\text{s}^2}\\cdot\\text{m}}{\\text{V}} = \\text{Nm/V} = \\text{J/V} = \\text{C}$. Sonuçta Coulomb çıkıyorsa formülü kesinlikle doğru çözmüşsündür — birbirinin aynısı beş hesapta bu, beşini birden bozacak sistematik bir hataya karşı en hızlı güvencedir."
+          "de": "Die Einheitenkontrolle lohnt sich hier besonders: $\\frac{\\text{kg}\\cdot\\frac{\\text{m}}{\\text{s}^2}\\cdot\\text{m}}{\\text{V}} = \\text{Nm/V} = \\text{J/V} = \\text{C}$. Wenn am Ende Coulomb herauskommt, hat man die Formel garantiert richtig aufgelöst. Bei fünf gleichartigen Rechnungen ist das die schnellste Absicherung gegen einen systematischen Fehler in allen fünf.",
+          "tr": "Birim kontrolü burada özellikle işe yarar: $\\frac{\\text{kg}\\cdot\\frac{\\text{m}}{\\text{s}^2}\\cdot\\text{m}}{\\text{V}} = \\text{Nm/V} = \\text{J/V} = \\text{C}$. Sonuçta Coulomb çıkıyorsa formülü kesinlikle doğru çözmüşsündür. Birbirinin aynısı beş hesapta bu, beşini birden bozacak sistematik bir hataya karşı en hızlı güvencedir."
         },
         "teilpunkte": 3
       },
@@ -67,7 +67,7 @@
         "inhalt": "Der kleinste gemessene Wert ist $q_2 = 1{,}57\\cdot 10^{-19}\\ \\text{C}$. Teilt man alle Ladungen durch diesen Wert, ergeben sich Zahlen dicht bei $2$, $1$, $4$, $3$ und $2$. Man setzt also $q = n\\cdot e$ mit ganzzahligem $n$ an und berechnet für jedes Tröpfchen $e = \\frac{q}{n}$:\n\n$$\\begin{array}{c|c|c|c|c|c} \\text{Nr.} & 1 & 2 & 3 & 4 & 5 \\\\ \\hline q\\ \\text{in }10^{-19}\\ \\text{C} & 3{,}30 & 1{,}57 & 6{,}48 & 4{,}69 & 3{,}24 \\\\ \\hline n & 2 & 1 & 4 & 3 & 2 \\\\ \\hline e = \\frac{q}{n}\\ \\text{in }10^{-19}\\ \\text{C} & 1{,}65 & 1{,}57 & 1{,}62 & 1{,}56 & 1{,}62 \\end{array}$$\n\nMittelwert über alle fünf Messungen:\n\n$$e = \\frac{(1{,}65 + 1{,}57 + 1{,}62 + 1{,}56 + 1{,}62)\\cdot 10^{-19}\\ \\text{C}}{5} \\approx 1{,}60\\cdot 10^{-19}\\ \\text{C}$$\n\nDas stimmt mit dem Literaturwert $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$ sehr gut überein.",
         "warum": {
           "de": "Die Zuordnung der ganzen Zahlen $n$ ist kein Rechenschritt, sondern eine physikalische Behauptung: Man unterstellt, dass jedes Tröpfchen nur ein ganzzahliges Vielfaches einer kleinsten Ladung tragen kann. Dass diese Annahme trägt, sieht man erst hinterher daran, dass die fünf Quotienten $q/n$ trotz völlig verschiedener Massen und Spannungen alle auf denselben Wert fallen. Wäre die Ladung stetig teilbar, käme hier fünfmal etwas anderes heraus.",
-          "tr": "Tam sayı $n$'lerin atanması bir hesap adımı değil, fiziksel bir iddiadır: her damlanın ancak en küçük bir yükün tam katını taşıyabildiği varsayılır. Bu varsayımın tuttuğunu ancak sonradan görürsün — kütleler ve gerilimler tamamen farklı olmasına rağmen beş $q/n$ oranı aynı değere düşüyor. Yük sürekli bölünebilseydi burada beş ayrı değer çıkardı."
+          "tr": "Tam sayı $n$'lerin atanması bir hesap adımı değil, fiziksel bir iddiadır: her damlanın ancak en küçük bir yükün tam katını taşıyabildiği varsayılır. Bu varsayımın tuttuğunu ancak sonradan görürsün: kütleler ve gerilimler tamamen farklı olmasına rağmen beş $q/n$ oranı aynı değere düşüyor. Yük sürekli bölünebilseydi burada beş ayrı değer çıkardı."
         },
         "teilpunkte": 4
       },
@@ -84,18 +84,18 @@
       {
         "nr": 5,
         "titel": "Feldstärke auf zwei Wegen berechnen und Ergebnis beurteilen",
-        "inhalt": "**Weg 1 — über Spannung und Plattenabstand:**\n\n$$E = \\frac{U}{d} = \\frac{197\\ \\text{V}}{6{,}20\\cdot 10^{-3}\\ \\text{m}} \\approx 3{,}18\\cdot 10^{4}\\ \\frac{\\text{V}}{\\text{m}}$$\n\n**Weg 2 — über das Kräftegleichgewicht:**\n\n$$E = \\frac{F_G}{q} = \\frac{m\\cdot g}{q_3} = \\frac{2{,}10\\cdot 10^{-15}\\ \\text{kg}\\cdot 9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}}{6{,}48\\cdot 10^{-19}\\ \\text{C}} = \\frac{2{,}06\\cdot 10^{-14}\\ \\text{N}}{6{,}48\\cdot 10^{-19}\\ \\text{C}} \\approx 3{,}18\\cdot 10^{4}\\ \\frac{\\text{V}}{\\text{m}}$$\n\nBeurteilung: Beide Wege liefern denselben Wert. Das ist allerdings kein unabhängiger Test der Messung, denn $q_3$ wurde in Teilaufgabe b) selbst aus $U$, $d$ und $m$ berechnet. Bestätigt wird also nur, dass in b) richtig gerechnet wurde — eine Kontrolle des Rechenwegs, keine Kontrolle der Physik.",
+        "inhalt": "**Weg 1: über Spannung und Plattenabstand.**\n\n$$E = \\frac{U}{d} = \\frac{197\\ \\text{V}}{6{,}20\\cdot 10^{-3}\\ \\text{m}} \\approx 3{,}18\\cdot 10^{4}\\ \\frac{\\text{V}}{\\text{m}}$$\n\n**Weg 2: über das Kräftegleichgewicht.**\n\n$$E = \\frac{F_G}{q} = \\frac{m\\cdot g}{q_3} = \\frac{2{,}10\\cdot 10^{-15}\\ \\text{kg}\\cdot 9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}}{6{,}48\\cdot 10^{-19}\\ \\text{C}} = \\frac{2{,}06\\cdot 10^{-14}\\ \\text{N}}{6{,}48\\cdot 10^{-19}\\ \\text{C}} \\approx 3{,}18\\cdot 10^{4}\\ \\frac{\\text{V}}{\\text{m}}$$\n\nBeurteilung: Beide Wege liefern denselben Wert. Das ist allerdings kein unabhängiger Test der Messung, denn $q_3$ wurde in Teilaufgabe b) selbst aus $U$, $d$ und $m$ berechnet. Bestätigt wird also nur, dass in b) richtig gerechnet wurde, also eine Kontrolle des Rechenwegs, keine Kontrolle der Physik.",
         "warum": {
-          "de": "Genau hier trennt sich eine echte von einer scheinbaren Kontrolle. Wer die Übereinstimmung als Bestätigung des Versuchsergebnisses verkauft, hat übersehen, dass beide Wege dieselben drei Messgrößen benutzen — der zweite Weg ist algebraisch nur die Rückwärtsrichtung des ersten. Ein wirklich unabhängiger Test bräuchte eine Größe, die noch gar nicht eingegangen ist.",
-          "tr": "Gerçek kontrol ile görünürdeki kontrol tam burada ayrılır. Bu uyumu deney sonucunun doğrulanması diye sunan kişi, iki yolun da aynı üç ölçüm büyüklüğünü kullandığını gözden kaçırmıştır — ikinci yol cebirsel olarak birincinin tersten yürütülmüş halidir. Gerçekten bağımsız bir test için henüz hiç kullanılmamış bir büyüklük gerekirdi."
+          "de": "Genau hier trennt sich eine echte von einer scheinbaren Kontrolle. Wer die Übereinstimmung als Bestätigung des Versuchsergebnisses verkauft, hat übersehen, dass beide Wege dieselben drei Messgrößen benutzen. Der zweite Weg ist algebraisch nur die Rückwärtsrichtung des ersten. Ein wirklich unabhängiger Test bräuchte eine Größe, die noch gar nicht eingegangen ist.",
+          "tr": "Gerçek kontrol ile görünürdeki kontrol tam burada ayrılır. Bu uyumu deney sonucunun doğrulanması diye sunan kişi, iki yolun da aynı üç ölçüm büyüklüğünü kullandığını gözden kaçırmıştır. İkinci yol cebirsel olarak birincinin tersten yürütülmüş halidir. Gerçekten bağımsız bir test için henüz hiç kullanılmamış bir büyüklük gerekirdi."
         },
         "teilpunkte": 3
       }
     ],
     "haeufige_fehler": [
-      "Plattenabstand in Millimetern statt Metern eingesetzt — das Ergebnis für $q$ ist dann um den Faktor $1000$ zu groß.",
+      "Plattenabstand in Millimetern statt Metern eingesetzt. Das Ergebnis für $q$ ist dann um den Faktor $1000$ zu groß.",
       "Für $n$ auch nicht ganzzahlige Werte wie $2{,}1$ zugelassen; $n$ muss eine natürliche Zahl sein, sonst ist die Grundidee $q = n\\cdot e$ aufgegeben.",
-      "Bei der Mittelung über $e$ nur die Ladungen $q$ statt der Quotienten $q/n$ gemittelt — das ergibt einen sinnlosen Zahlenwert.",
+      "Bei der Mittelung über $e$ nur die Ladungen $q$ statt der Quotienten $q/n$ gemittelt. Das ergibt einen sinnlosen Zahlenwert.",
       "Beim Radius vergessen, die dritte Wurzel zu ziehen, oder das Volumen mit $r^2$ statt $r^3$ angesetzt."
     ]
   },

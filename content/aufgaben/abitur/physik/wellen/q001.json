@@ -30,28 +30,28 @@
         "titel": "Bedingung für ein Maximum aufstellen",
         "inhalt": "Konstruktive Interferenz tritt auf, wenn die beiden Teilwellen am Schirmpunkt in Phase eintreffen. Das ist genau dann der Fall, wenn der Gangunterschied ein ganzzahliges Vielfaches der Wellenlänge ist:\n\n$$\\Delta s = k\\cdot\\lambda \\qquad (k = 0,\\,1,\\,2,\\,\\ldots)$$\n\nHier ist $k = 5$.",
         "warum": {
-          "de": "Der Gangunterschied ist die einzige physikalische Größe, die über konstruktive oder destruktive Interferenz entscheidet — nicht der Abstand vom Spalt und nicht die Intensität. Alle weiteren Formeln des Doppelspalts sind nur geometrische Übersetzungen dieser einen Bedingung.",
-          "tr": "Yapıcı ya da yıkıcı girişime karar veren tek fiziksel büyüklük yol farkıdır — yarıktan uzaklık ya da şiddet değil. Çift yarığın diğer bütün formülleri, bu tek koşulun geometrik çevirilerinden ibarettir."
+          "de": "Der Gangunterschied ist die einzige physikalische Größe, die über konstruktive oder destruktive Interferenz entscheidet, nicht der Abstand vom Spalt und nicht die Intensität. Alle weiteren Formeln des Doppelspalts sind nur geometrische Übersetzungen dieser einen Bedingung.",
+          "tr": "Yapıcı ya da yıkıcı girişime karar veren tek fiziksel büyüklük yol farkıdır, yarıktan uzaklık ya da şiddet değil. Çift yarığın diğer bütün formülleri, bu tek koşulun geometrik çevirilerinden ibarettir."
         },
         "teilpunkte": 2
       },
       {
         "nr": 2,
         "titel": "Geometrie: Gangunterschied und Schirmabstand verknüpfen",
-        "inhalt": "Am Doppelspalt gilt für den Ablenkwinkel $\\alpha$ (rechtwinkliges Dreieck mit der Hypotenuse $d$):\n\n$$\\sin\\alpha = \\frac{\\Delta s}{d}$$\n\nZwischen Doppelspalt und Schirm gilt im großen Dreieck:\n\n$$\\tan\\alpha = \\frac{a}{e}$$\n\nBeide Beziehungen enthalten denselben Winkel $\\alpha$ — das ist die Brücke zwischen der mikroskopischen Größe $\\Delta s$ und den messbaren Größen $a$ und $e$.",
+        "inhalt": "Am Doppelspalt gilt für den Ablenkwinkel $\\alpha$ (rechtwinkliges Dreieck mit der Hypotenuse $d$):\n\n$$\\sin\\alpha = \\frac{\\Delta s}{d}$$\n\nZwischen Doppelspalt und Schirm gilt im großen Dreieck:\n\n$$\\tan\\alpha = \\frac{a}{e}$$\n\nBeide Beziehungen enthalten denselben Winkel $\\alpha$, und das ist die Brücke zwischen der mikroskopischen Größe $\\Delta s$ und den messbaren Größen $a$ und $e$.",
         "warum": {
-          "de": "Der Gangunterschied liegt im Bereich weniger hundert Nanometer und ist unmessbar klein. Messbar sind nur Abstände auf dem Schirm im Zentimeterbereich. Die Aufgabe des Winkels ist es, diese beiden Größenordnungen zu verbinden — deshalb steht in der einen Gleichung der Sinus und in der anderen der Tangens, und deshalb darf man sie nicht einfach gleichsetzen.",
-          "tr": "Yol farkı birkaç yüz nanometre mertebesindedir ve ölçülemez. Ölçülebilen tek şey ekrandaki santimetre mertebesindeki uzaklıklardır. Açının görevi bu iki büyüklük mertebesini birbirine bağlamaktır — bu yüzden bir denklemde sinüs, diğerinde tanjant vardır ve bu yüzden ikisi öylece eşitlenemez."
+          "de": "Der Gangunterschied liegt im Bereich weniger hundert Nanometer und ist unmessbar klein. Messbar sind nur Abstände auf dem Schirm im Zentimeterbereich. Die Aufgabe des Winkels ist es, diese beiden Größenordnungen zu verbinden. Deshalb steht in der einen Gleichung der Sinus und in der anderen der Tangens, und deshalb darf man sie nicht einfach gleichsetzen.",
+          "tr": "Yol farkı birkaç yüz nanometre mertebesindedir ve ölçülemez. Ölçülebilen tek şey ekrandaki santimetre mertebesindeki uzaklıklardır. Açının görevi bu iki büyüklük mertebesini birbirine bağlamaktır. Bu yüzden bir denklemde sinüs, diğerinde tanjant vardır ve bu yüzden ikisi öylece eşitlenemez."
         },
         "teilpunkte": 3
       },
       {
         "nr": 3,
         "titel": "Kleinwinkelnäherung anwenden und Wellenlänge berechnen",
-        "inhalt": "Für kleine Winkel gilt $\\sin\\alpha \\approx \\tan\\alpha$. Gleichsetzen der beiden Ausdrücke aus Schritt 2 liefert\n\n$$\\frac{k\\,\\lambda}{d} \\approx \\frac{a}{e} \\quad\\Longrightarrow\\quad \\lambda \\approx \\frac{a\\cdot d}{k\\cdot e}$$\n\n$$\\lambda \\approx \\frac{4{,}05\\cdot 10^{-2}\\ \\text{m}\\cdot 0{,}25\\cdot 10^{-3}\\ \\text{m}}{5\\cdot 3{,}20\\ \\text{m}} = \\frac{1{,}0125\\cdot 10^{-5}}{16}\\ \\text{m} \\approx 6{,}33\\cdot 10^{-7}\\ \\text{m}$$\n\nAlso $\\lambda \\approx 633\\ \\text{nm}$ — rotes Licht, wie es ein Helium-Neon-Laser aussendet.",
+        "inhalt": "Für kleine Winkel gilt $\\sin\\alpha \\approx \\tan\\alpha$. Gleichsetzen der beiden Ausdrücke aus Schritt 2 liefert\n\n$$\\frac{k\\,\\lambda}{d} \\approx \\frac{a}{e} \\quad\\Longrightarrow\\quad \\lambda \\approx \\frac{a\\cdot d}{k\\cdot e}$$\n\n$$\\lambda \\approx \\frac{4{,}05\\cdot 10^{-2}\\ \\text{m}\\cdot 0{,}25\\cdot 10^{-3}\\ \\text{m}}{5\\cdot 3{,}20\\ \\text{m}} = \\frac{1{,}0125\\cdot 10^{-5}}{16}\\ \\text{m} \\approx 6{,}33\\cdot 10^{-7}\\ \\text{m}$$\n\nAlso $\\lambda \\approx 633\\ \\text{nm}$, also rotes Licht, wie es ein Helium-Neon-Laser aussendet.",
         "warum": {
-          "de": "Die Plausibilitätsprüfung am Ende ist kein Beiwerk: $633\\ \\text{nm}$ liegt im sichtbaren Bereich und passt zur beobachteten roten Farbe. Käme etwa $633\\ \\mu\\text{m}$ heraus, wäre sofort klar, dass ein Zehnerpotenzfehler vorliegt — bei Aufgaben mit vier verschiedenen Einheitenpräfixen ist das die wahrscheinlichste Fehlerquelle.",
-          "tr": "Sondaki makullük kontrolü süs değildir: $633\\ \\text{nm}$ görünür bölgededir ve gözlenen kırmızı renkle uyuşur. Sonuç $633\\ \\mu\\text{m}$ çıksaydı, bir on kuvveti hatası olduğu hemen anlaşılırdı — dört farklı birim ön eki içeren sorularda en olası hata kaynağı budur."
+          "de": "Die Plausibilitätsprüfung am Ende ist kein Beiwerk: $633\\ \\text{nm}$ liegt im sichtbaren Bereich und passt zur beobachteten roten Farbe. Käme etwa $633\\ \\mu\\text{m}$ heraus, wäre sofort klar, dass ein Zehnerpotenzfehler vorliegt. Bei Aufgaben mit vier verschiedenen Einheitenpräfixen ist das die wahrscheinlichste Fehlerquelle.",
+          "tr": "Sondaki makullük kontrolü süs değildir: $633\\ \\text{nm}$ görünür bölgededir ve gözlenen kırmızı renkle uyuşur. Sonuç $633\\ \\mu\\text{m}$ çıksaydı, bir on kuvveti hatası olduğu hemen anlaşılırdı. Dört farklı birim ön eki içeren sorularda en olası hata kaynağı budur."
         },
         "teilpunkte": 3
       },
@@ -60,26 +60,26 @@
         "titel": "Näherung überprüfen",
         "inhalt": "Exakter Winkel aus der Tangens-Beziehung:\n\n$$\\tan\\alpha = \\frac{4{,}05\\cdot 10^{-2}\\ \\text{m}}{3{,}20\\ \\text{m}} = 1{,}2656\\cdot 10^{-2} \\quad\\Longrightarrow\\quad \\alpha \\approx 0{,}725^\\circ$$\n\nDamit ergibt sich exakt\n\n$$\\lambda = \\frac{d\\cdot\\sin\\alpha}{k} = \\frac{0{,}25\\cdot 10^{-3}\\ \\text{m}\\cdot 1{,}2655\\cdot 10^{-2}}{5} \\approx 6{,}33\\cdot 10^{-7}\\ \\text{m}$$\n\nGenäherter und exakter Wert stimmen auf vier geltende Ziffern überein; die relative Abweichung liegt unter $0{,}01\\ \\%$. Bei einem Winkel unter einem Grad ist die Näherung also klar gerechtfertigt.",
         "warum": {
-          "de": "Der Operator „überprüfen“ verlangt, das Ergebnis einer Rechnung an einem unabhängigen Weg zu messen — nicht, die Näherung nur zu behaupten. Ebenso wichtig ist die Kehrseite: Bei einem optischen Gitter mit sehr kleiner Gitterkonstante werden die Winkel groß, und dann bricht dieselbe Näherung zusammen. Eine Näherung ist immer nur zusammen mit ihrem Gültigkeitsbereich richtig.",
-          "tr": "*Überprüfen* (denetleyiniz) operatörü, bir hesabın sonucunu bağımsız bir yolla ölçmeyi ister — yaklaşımı sadece iddia etmeyi değil. Madalyonun öbür yüzü de önemli: çok küçük aralıklı bir optik ağda açılar büyür ve aynı yaklaşım çöker. Bir yaklaşım ancak geçerlilik aralığıyla birlikte doğrudur."
+          "de": "Der Operator „überprüfen“ verlangt, das Ergebnis einer Rechnung an einem unabhängigen Weg zu messen, nicht die Näherung nur zu behaupten. Ebenso wichtig ist die Kehrseite: Bei einem optischen Gitter mit sehr kleiner Gitterkonstante werden die Winkel groß, und dann bricht dieselbe Näherung zusammen. Eine Näherung ist immer nur zusammen mit ihrem Gültigkeitsbereich richtig.",
+          "tr": "*Überprüfen* (denetleyiniz) operatörü, bir hesabın sonucunu bağımsız bir yolla ölçmeyi ister, yaklaşımı sadece iddia etmeyi değil. Madalyonun öbür yüzü de önemli: çok küçük aralıklı bir optik ağda açılar büyür ve aynı yaklaşım çöker. Bir yaklaşım ancak geçerlilik aralığıyla birlikte doğrudur."
         },
         "teilpunkte": 3
       },
       {
         "nr": 5,
         "titel": "Entstehung eines Minimums erklären",
-        "inhalt": "An einer Stelle, an der die beiden Teilwellen gegenphasig eintreffen, löschen sie sich gegenseitig aus: Ein Wellenberg der einen Welle trifft auf ein Wellental der anderen. Das ist genau dann der Fall, wenn der Gangunterschied ein ungerades Vielfaches der halben Wellenlänge beträgt:\n\n$$\\Delta s = \\left(k + \\tfrac{1}{2}\\right)\\cdot\\lambda \\qquad (k = 0,\\,1,\\,2,\\,\\ldots)$$\n\nAn diesen Stellen bleibt der Schirm dunkel — es liegt destruktive Interferenz vor.",
+        "inhalt": "An einer Stelle, an der die beiden Teilwellen gegenphasig eintreffen, löschen sie sich gegenseitig aus: Ein Wellenberg der einen Welle trifft auf ein Wellental der anderen. Das ist genau dann der Fall, wenn der Gangunterschied ein ungerades Vielfaches der halben Wellenlänge beträgt:\n\n$$\\Delta s = \\left(k + \\tfrac{1}{2}\\right)\\cdot\\lambda \\qquad (k = 0,\\,1,\\,2,\\,\\ldots)$$\n\nAn diesen Stellen bleibt der Schirm dunkel, es liegt also destruktive Interferenz vor.",
         "warum": {
-          "de": "Wichtig ist die energetische Einordnung: Bei der Auslöschung verschwindet keine Energie, sie wird nur umverteilt — in den Maxima ist die Intensität entsprechend höher als bei einem einzelnen Spalt. Wer das Minimum als „Energieverlust“ beschreibt, verletzt den Energieerhaltungssatz und verliert im Abitur Punkte.",
-          "tr": "Enerjinin nasıl yorumlandığı burada önemlidir: sönümlemede enerji yok olmaz, yalnızca yeniden dağılır — maksimumlarda şiddet tek yarıktakinden buna karşılık daha yüksektir. Minimumu \"enerji kaybı\" diye açıklayan, enerjinin korunumu yasasını ihlal eder ve Abitur'da puan kaybeder."
+          "de": "Wichtig ist die energetische Einordnung: Bei der Auslöschung verschwindet keine Energie, sie wird nur umverteilt, und in den Maxima ist die Intensität entsprechend höher als bei einem einzelnen Spalt. Wer das Minimum als „Energieverlust“ beschreibt, verletzt den Energieerhaltungssatz und verliert im Abitur Punkte.",
+          "tr": "Enerjinin nasıl yorumlandığı burada önemlidir: sönümlemede enerji yok olmaz, yalnızca yeniden dağılır, maksimumlarda şiddet ise tek yarıktakinden buna karşılık daha yüksektir. Minimumu \"enerji kaybı\" diye açıklayan, enerjinin korunumu yasasını ihlal eder ve Abitur'da puan kaybeder."
         },
         "teilpunkte": 2
       }
     ],
     "haeufige_fehler": [
-      "Spaltbreite und Spaltmittenabstand verwechselt — in der Doppelspaltformel steht der Mittenabstand $d$.",
+      "Spaltbreite und Spaltmittenabstand verwechselt. In der Doppelspaltformel steht der Mittenabstand $d$.",
       "Ordnung $k$ falsch gezählt: Das helle Zentralmaximum ist $k = 0$, nicht $k = 1$.",
-      "$\\sin\\alpha \\approx \\tan\\alpha$ ohne Prüfung des Winkels verwendet — bei Gittern mit großen Winkeln ist das falsch.",
+      "$\\sin\\alpha \\approx \\tan\\alpha$ ohne Prüfung des Winkels verwendet, obwohl das bei Gittern mit großen Winkeln falsch ist.",
       "Minimumsbedingung als $\\Delta s = k\\cdot\\frac{\\lambda}{2}$ notiert; das schließt fälschlich auch die geradzahligen Vielfachen ein."
     ]
   },

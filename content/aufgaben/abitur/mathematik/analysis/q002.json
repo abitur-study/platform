@@ -15,7 +15,7 @@
   "material": [],
   "tipps": [
     "Die Höhe des Rechtecks ist nicht frei wählbar: sie ist durch die Dachhöhe an der äußeren Kante festgelegt, also durch $f(u)$.",
-    "Beim Ableiten von $u \\cdot 4e^{-0{,}5u}$ brauchst du Produkt- **und** Kettenregel. Klammere anschließend $e^{-0{,}5u}$ aus — der Faktor ist stets positiv.",
+    "Beim Ableiten von $u \\cdot 4e^{-0{,}5u}$ brauchst du Produkt- **und** Kettenregel. Klammere anschließend $e^{-0{,}5u}$ aus; der Faktor ist stets positiv.",
     "Für Teil d) ist $\\int e^{ax}dx = \\frac{1}{a}e^{ax}$ die einzige benötigte Stammfunktionsregel; anschließend bildest du den Quotienten aus Rechteckfläche und Gesamtfläche."
   ],
   "loesung": {
@@ -46,8 +46,8 @@
         "titel": "Nachweis, dass ein Maximum vorliegt",
         "inhalt": "Zweite Ableitung, wieder mit Produkt- und Kettenregel:\n\n$$A''(u) = -0{,}5\\,e^{-0{,}5u}(4-2u) + e^{-0{,}5u}\\cdot(-2) = e^{-0{,}5u}\\,(u - 4)$$\n\nAn der Stelle $u = 2$:\n\n$$A''(2) = e^{-1}\\,(2-4) = -2\\,e^{-1} \\approx -0{,}736 < 0$$\n\nEs liegt also ein lokales Maximum vor. Da $A$ auf $]0;\\infty[$ nur diese eine Extremstelle besitzt und an beiden Rändern gegen null geht, ist das Maximum sogar global.",
         "warum": {
-          "de": "Bei Extremwertproblemen genügt das lokale Maximum nicht automatisch — gefragt ist die insgesamt größte Fläche. Das Randverhalten liefert hier die fehlende Begründung, ohne dass man rechnen muss. Bei Aufgaben mit abgeschlossenem Intervall müssten stattdessen zusätzlich die Randwerte verglichen werden.",
-          "tr": "Ekstremum problemlerinde yerel maksimum kendiliğinden yetmez — sorulan, toplamda en büyük alandır. Burada eksik gerekçeyi, hesap yapmadan, uçlardaki davranış sağlar. Kapalı aralıklı sorularda ise ayrıca uç değerlerin karşılaştırılması gerekirdi."
+          "de": "Bei Extremwertproblemen genügt das lokale Maximum nicht automatisch, denn gefragt ist die insgesamt größte Fläche. Das Randverhalten liefert hier die fehlende Begründung, ohne dass man rechnen muss. Bei Aufgaben mit abgeschlossenem Intervall müssten stattdessen zusätzlich die Randwerte verglichen werden.",
+          "tr": "Ekstremum problemlerinde yerel maksimum kendiliğinden yetmez, çünkü sorulan toplamda en büyük alandır. Burada eksik gerekçeyi, hesap yapmadan, uçlardaki davranış sağlar. Kapalı aralıklı sorularda ise ayrıca uç değerlerin karşılaştırılması gerekirdi."
         },
         "teilpunkte": 2
       },
@@ -66,14 +66,14 @@
         "titel": "Fläche unter dem Dach und genutzter Anteil",
         "inhalt": "$$\\int_0^{8} 4\\,e^{-0{,}5x}\\,dx = \\left[\\frac{4}{-0{,}5}\\,e^{-0{,}5x}\\right]_0^{8} = \\left[-8\\,e^{-0{,}5x}\\right]_0^{8}$$\n\n$$= -8\\,e^{-4} + 8 = 8\\left(1 - e^{-4}\\right) \\approx 8 \\cdot 0{,}9817 \\approx 7{,}85$$\n\nDie Querschnittsfläche unter dem Dach beträgt also etwa $7{,}85\\ \\text{m}^2$. Anteil des Rechtecks:\n\n$$\\frac{2{,}94}{7{,}85} \\approx 0{,}375$$\n\nDer optimale Messestand nutzt nur etwa $37{,}5\\ \\%$ der zur Verfügung stehenden Querschnittsfläche. Mehr als ein Drittel ist damit zwar das Beste, was mit einem einzigen Rechteck erreichbar ist, doch der größte Teil des Raumes unter dem stark gekrümmten Dach bleibt ungenutzt.",
         "warum": {
-          "de": "Der Vergleich macht sichtbar, was „optimal“ hier bedeutet: optimal ist das Rechteck nur innerhalb der Klasse aller achsenparallelen Rechtecke — nicht optimal im Sinne guter Raumausnutzung. Bei einem flacheren Dach läge der Anteil deutlich höher; der Wert $37{,}5\\ \\%$ ist also eine Eigenschaft der starken Krümmung, nicht des Rechnungswegs.",
-          "tr": "Bu karşılaştırma \"en uygun\" sözcüğünün burada ne demek olduğunu görünür kılar: dikdörtgen yalnızca eksenlere paralel dikdörtgenler sınıfı içinde en uygundur — iyi hacim kullanımı anlamında değil. Daha yayvan bir çatıda bu oran belirgin biçimde yüksek olurdu; yani $37{,}5\\ \\%$ değeri hesap yolunun değil, güçlü eğriliğin bir özelliğidir."
+          "de": "Der Vergleich macht sichtbar, was „optimal“ hier bedeutet: optimal ist das Rechteck nur innerhalb der Klasse aller achsenparallelen Rechtecke, nicht optimal im Sinne guter Raumausnutzung. Bei einem flacheren Dach läge der Anteil deutlich höher; der Wert $37{,}5\\ \\%$ ist also eine Eigenschaft der starken Krümmung, nicht des Rechnungswegs.",
+          "tr": "Bu karşılaştırma \"en uygun\" sözcüğünün burada ne demek olduğunu görünür kılar: dikdörtgen yalnızca eksenlere paralel dikdörtgenler sınıfı içinde en uygundur, iyi hacim kullanımı anlamında değil. Daha yayvan bir çatıda bu oran belirgin biçimde yüksek olurdu; yani $37{,}5\\ \\%$ değeri hesap yolunun değil, güçlü eğriliğin bir özelliğidir."
         },
         "teilpunkte": 4
       }
     ],
     "haeufige_fehler": [
-      "Die Rechteckhöhe als eigene Variable behandelt statt sie über $f(u)$ an die Breite zu koppeln — dann gibt es kein Maximum.",
+      "Die Rechteckhöhe als eigene Variable behandelt statt sie über $f(u)$ an die Breite zu koppeln; dann gibt es kein Maximum.",
       "Beim Ableiten von $4u\\,e^{-0{,}5u}$ die Produktregel oder die innere Ableitung $-0{,}5$ vergessen.",
       "Aus $A'(u) = e^{-0{,}5u}(4-2u) = 0$ auch die „Lösung“ $e^{-0{,}5u} = 0$ mitgeschleppt.",
       "Beim Integrieren mit $-0{,}5$ multipliziert statt dividiert, sodass $-2\\,e^{-0{,}5x}$ statt $-8\\,e^{-0{,}5x}$ entsteht."

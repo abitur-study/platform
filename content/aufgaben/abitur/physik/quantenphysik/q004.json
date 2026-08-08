@@ -27,7 +27,7 @@
     }
   ],
   "tipps": [
-    "Beide Zellen bekommen dasselbe Licht. Was unterscheidet sie dann überhaupt — und welche Größe musst du deshalb nur ein einziges Mal ausrechnen?",
+    "Beide Zellen bekommen dasselbe Licht. Was unterscheidet sie dann überhaupt, und welche Größe musst du deshalb nur ein einziges Mal ausrechnen?",
     "Die Photonenenergie in Elektronenvolt lässt sich unmittelbar mit den Tabellenwerten vergleichen. Deshalb lohnt sich die Umrechnung, bevor du weiterrechnest.",
     "Ein Strom ist Ladung pro Zeit. Überlege dir, wie viel Ladung die ausgelösten Elektronen in einer Sekunde zusammen transportieren."
   ],
@@ -39,8 +39,8 @@
         "titel": "Photonenenergie berechnen und mit beiden Austrittsarbeiten vergleichen",
         "inhalt": "Für die Energie eines Photons gilt $E_{Ph} = h\\cdot f$ mit $f = \\frac{c}{\\lambda}$, zusammengefasst $E_{Ph} = \\frac{h\\cdot c}{\\lambda}$:\n\n$$E_{Ph} = \\frac{6{,}626\\cdot 10^{-34}\\ \\text{J}\\,\\text{s}\\cdot 3{,}00\\cdot 10^{8}\\ \\frac{\\text{m}}{\\text{s}}}{405\\cdot 10^{-9}\\ \\text{m}} = \\frac{1{,}988\\cdot 10^{-25}\\ \\text{J}\\,\\text{m}}{4{,}05\\cdot 10^{-7}\\ \\text{m}} = 4{,}908\\cdot 10^{-19}\\ \\text{J}$$\n\nUmrechnung in Elektronenvolt:\n\n$$E_{Ph} = \\frac{4{,}908\\cdot 10^{-19}\\ \\text{J}}{1{,}602\\cdot 10^{-19}\\ \\frac{\\text{J}}{\\text{eV}}} \\approx 3{,}06\\ \\text{eV}$$\n\nVergleich mit den Tabellenwerten:\n\n$$3{,}06\\ \\text{eV} > 2{,}70\\ \\text{eV}\\ \\text{(Kalzium)} \\qquad 3{,}06\\ \\text{eV} < 4{,}70\\ \\text{eV}\\ \\text{(Silber)}$$\n\nNur an der Kalziumzelle werden Elektronen ausgelöst, dort fließt ein Photostrom. An der Silberzelle bleibt der Strom null.",
         "warum": {
-          "de": "Weil beide Zellen dasselbe Licht empfangen, ist die Photonenenergie nur einmal zu bestimmen; alles Weitere ist ein Vergleich zweier Zahlen. Die Rechnung in Elektronenvolt ist hier kein Luxus, sondern der Grund, warum der Vergleich überhaupt auf einen Blick gelingt — in Joule stünden auf beiden Seiten Zahlen der Größenordnung $10^{-19}$, deren Verhältnis man nicht sofort sieht.",
-          "tr": "Her iki hücre de aynı ışığı aldığı için foton enerjisi yalnızca bir kez hesaplanır; gerisi iki sayının karşılaştırılmasıdır. Elektronvolt ile hesap burada bir süs değil, karşılaştırmanın bir bakışta yapılabilmesinin nedenidir — Joule cinsinden iki tarafta da $10^{-19}$ mertebesinde sayılar olurdu ve oranları hemen görülmezdi."
+          "de": "Weil beide Zellen dasselbe Licht empfangen, ist die Photonenenergie nur einmal zu bestimmen; alles Weitere ist ein Vergleich zweier Zahlen. Die Rechnung in Elektronenvolt ist hier kein Luxus, sondern der Grund, warum der Vergleich überhaupt auf einen Blick gelingt. In Joule stünden auf beiden Seiten Zahlen der Größenordnung $10^{-19}$, deren Verhältnis man nicht sofort sieht.",
+          "tr": "Her iki hücre de aynı ışığı aldığı için foton enerjisi yalnızca bir kez hesaplanır; gerisi iki sayının karşılaştırılmasıdır. Elektronvolt ile hesap burada bir süs değil, karşılaştırmanın bir bakışta yapılabilmesinin nedenidir. Joule cinsinden iki tarafta da $10^{-19}$ mertebesinde sayılar olurdu ve oranları hemen görülmezdi."
         },
         "teilpunkte": 5
       },
@@ -49,8 +49,8 @@
         "titel": "Gegenspannung an der Kalziumzelle",
         "inhalt": "Die überschüssige Energie bleibt den Elektronen als kinetische Energie:\n\n$$E_{kin,\\,max} = E_{Ph} - W_A = 3{,}06\\ \\text{eV} - 2{,}70\\ \\text{eV} = 0{,}36\\ \\text{eV}$$\n\nDer Photostrom verschwindet, wenn das Gegenfeld genau diese Energie aufzehrt:\n\n$$e\\cdot U_G = E_{kin,\\,max} \\quad\\Longrightarrow\\quad U_G = \\frac{0{,}36\\ \\text{eV}}{e} = 0{,}36\\ \\text{V}$$\n\nZur Kontrolle in Joule: $E_{kin,\\,max} = 0{,}36\\cdot 1{,}602\\cdot 10^{-19}\\ \\text{J} = 5{,}8\\cdot 10^{-20}\\ \\text{J}$, geteilt durch $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$ ergibt wieder $0{,}36\\ \\text{V}$.",
         "warum": {
-          "de": "Dass Maßzahl der Energie in $\\text{eV}$ und Maßzahl der Spannung in $\\text{V}$ übereinstimmen, ist genau die Definition des Elektronenvolts und keine glückliche Zufälligkeit dieser Aufgabe. Wer das durchschaut, spart sich den Umweg über Joule vollständig. Bemerkenswert ist außerdem die Größenordnung: $0{,}36\\ \\text{V}$ ist klein, weil die Photonenenergie nur knapp über der Austrittsarbeit liegt — die Zelle arbeitet dicht an ihrer Grenzwellenlänge.",
-          "tr": "Enerjinin $\\text{eV}$ cinsinden sayısı ile gerilimin $\\text{V}$ cinsinden sayısının aynı olması tam olarak elektronvoltun tanımıdır, bu sorunun şanslı bir rastlantısı değil. Bunu kavrayan öğrenci Joule üzerinden dolaşmaktan tamamen kurtulur. Büyüklük mertebesi de dikkat çekicidir: $0{,}36\\ \\text{V}$ küçüktür, çünkü foton enerjisi çıkış işinin ancak biraz üstündedir — hücre sınır dalga boyuna çok yakın çalışmaktadır."
+          "de": "Dass Maßzahl der Energie in $\\text{eV}$ und Maßzahl der Spannung in $\\text{V}$ übereinstimmen, ist genau die Definition des Elektronenvolts und keine glückliche Zufälligkeit dieser Aufgabe. Wer das durchschaut, spart sich den Umweg über Joule vollständig. Bemerkenswert ist außerdem die Größenordnung: $0{,}36\\ \\text{V}$ ist klein, weil die Photonenenergie nur knapp über der Austrittsarbeit liegt, und die Zelle arbeitet dicht an ihrer Grenzwellenlänge.",
+          "tr": "Enerjinin $\\text{eV}$ cinsinden sayısı ile gerilimin $\\text{V}$ cinsinden sayısının aynı olması tam olarak elektronvoltun tanımıdır, bu sorunun şanslı bir rastlantısı değil. Bunu kavrayan öğrenci Joule üzerinden dolaşmaktan tamamen kurtulur. Büyüklük mertebesi de dikkat çekicidir: $0{,}36\\ \\text{V}$ küçüktür, çünkü foton enerjisi çıkış işinin ancak biraz üstündedir, yani hücre sınır dalga boyuna çok yakın çalışmaktadır."
         },
         "teilpunkte": 4
       },
@@ -69,15 +69,15 @@
         "titel": "Stärke des Photostroms berechnen",
         "inhalt": "Von den auftreffenden Photonen lösen $0{,}25\\ \\% = 0{,}0025$ jeweils ein Elektron aus. Zahl der pro Sekunde ausgelösten Elektronen:\n\n$$\\frac{N_e}{t} = 0{,}0025\\cdot 8{,}0\\cdot 10^{14}\\ \\frac{1}{\\text{s}} = 2{,}0\\cdot 10^{12}\\ \\frac{1}{\\text{s}}$$\n\nJedes Elektron transportiert die Elementarladung $e$, also gilt für die Stromstärke\n\n$$I = \\frac{Q}{t} = \\frac{N_e\\cdot e}{t} = 2{,}0\\cdot 10^{12}\\ \\frac{1}{\\text{s}}\\cdot 1{,}602\\cdot 10^{-19}\\ \\text{C} \\approx 3{,}2\\cdot 10^{-7}\\ \\text{A}$$\n\nDas sind etwa $0{,}32\\ \\mu\\text{A}$.",
         "warum": {
-          "de": "Der kleine Zahlenwert von nur einem Drittel Mikroampere ist die eigentliche Aussage: Er erklärt, warum eine Photozelle im Unterricht ein empfindliches Strommessgerät oder einen Messverstärker braucht und warum sie sich nicht als Stromquelle eignet. Ursache ist die geringe Ausbeute von einem Elektron je $400$ Photonen — die meisten Photonen werden im Metall in Wärme umgesetzt, ohne ein Elektron nach außen zu befördern.",
-          "tr": "Yalnızca üçte bir mikroamperlik bu küçük değer asıl mesajdır: derste bir fotoselin neden hassas bir ampermetreye ya da ölçüm yükselticisine gerek duyduğunu ve neden bir akım kaynağı olarak işe yaramadığını açıklar. Nedeni, $400$ fotona karşılık bir elektronluk düşük verimdir — fotonların çoğu bir elektronu dışarı çıkarmadan metal içinde ısıya dönüşür."
+          "de": "Der kleine Zahlenwert von nur einem Drittel Mikroampere ist die eigentliche Aussage: Er erklärt, warum eine Photozelle im Unterricht ein empfindliches Strommessgerät oder einen Messverstärker braucht und warum sie sich nicht als Stromquelle eignet. Ursache ist die geringe Ausbeute von einem Elektron je $400$ Photonen. Die meisten Photonen werden im Metall in Wärme umgesetzt, ohne ein Elektron nach außen zu befördern.",
+          "tr": "Yalnızca üçte bir mikroamperlik bu küçük değer asıl mesajdır: derste bir fotoselin neden hassas bir ampermetreye ya da ölçüm yükselticisine gerek duyduğunu ve neden bir akım kaynağı olarak işe yaramadığını açıklar. Nedeni, $400$ fotona karşılık bir elektronluk düşük verimdir. Fotonların çoğu bir elektronu dışarı çıkarmadan metal içinde ısıya dönüşür."
         },
         "teilpunkte": 3
       },
       {
         "nr": 5,
         "titel": "Wirkung der verdoppelten Strahlungsleistung",
-        "inhalt": "Die Wellenlänge bleibt gleich, also behält jedes einzelne Photon die Energie $3{,}06\\ \\text{eV}$. Die verdoppelte Strahlungsleistung bedeutet daher nur, dass pro Sekunde doppelt so viele Photonen auftreffen.\n\nSättigungsstrom: Es werden pro Sekunde doppelt so viele Elektronen ausgelöst. Der Sättigungsstrom verdoppelt sich auf etwa $0{,}64\\ \\mu\\text{A}$. Gerade deshalb kann man die Lichtintensität aus dem Sättigungsstrom bestimmen — beide sind zueinander proportional.\n\nGegenspannung: $E_{kin,\\,max} = E_{Ph} - W_A$ enthält keine Größe, die von der Zahl der Photonen abhängt. Die Gegenspannung bleibt daher unverändert bei $U_G = 0{,}36\\ \\text{V}$. Im Strom-Spannungs-Diagramm verläuft der neue Graph überall oberhalb des alten, trifft die Spannungsachse aber im selben Punkt.",
+        "inhalt": "Die Wellenlänge bleibt gleich, also behält jedes einzelne Photon die Energie $3{,}06\\ \\text{eV}$. Die verdoppelte Strahlungsleistung bedeutet daher nur, dass pro Sekunde doppelt so viele Photonen auftreffen.\n\nSättigungsstrom: Es werden pro Sekunde doppelt so viele Elektronen ausgelöst. Der Sättigungsstrom verdoppelt sich auf etwa $0{,}64\\ \\mu\\text{A}$. Gerade deshalb kann man die Lichtintensität aus dem Sättigungsstrom bestimmen, denn beide sind zueinander proportional.\n\nGegenspannung: $E_{kin,\\,max} = E_{Ph} - W_A$ enthält keine Größe, die von der Zahl der Photonen abhängt. Die Gegenspannung bleibt daher unverändert bei $U_G = 0{,}36\\ \\text{V}$. Im Strom-Spannungs-Diagramm verläuft der neue Graph überall oberhalb des alten, trifft die Spannungsachse aber im selben Punkt.",
         "warum": {
           "de": "Diese Teilaufgabe trennt die beiden Kenngrößen des Lichts sauber voneinander: Die Intensität bestimmt *wie viele* Elektronen austreten, die Frequenz bestimmt *wie schnell* sie sind. Nach dem klassischen Wellenmodell müsste helleres Licht jedem Elektron mehr Energie zuführen und damit auch die Gegenspannung anheben. Dass genau das ausbleibt, ist einer der Befunde, an denen das Wellenmodell scheitert.",
           "tr": "Bu şık, ışığın iki karakteristik büyüklüğünü net biçimde ayırır: şiddet *kaç* elektronun çıktığını, frekans ise *ne kadar hızlı* olduklarını belirler. Klasik dalga modeline göre daha parlak ışık her elektrona daha çok enerji vermeli ve karşı gerilimi de yükseltmeliydi. Tam olarak bunun gerçekleşmemesi, dalga modelinin çöktüğü bulgulardan biridir."
@@ -87,7 +87,7 @@
     ],
     "haeufige_fehler": [
       "Angenommen, an der Silberzelle fließe ein schwächerer Strom; tatsächlich fließt gar keiner, weil kein einzelnes Photon die Austrittsarbeit aufbringt.",
-      "Die Prozentangabe $0{,}25\\ \\%$ als Faktor $0{,}25$ statt $0{,}0025$ verwendet — der Strom wird dann hundertmal zu groß.",
+      "Die Prozentangabe $0{,}25\\ \\%$ als Faktor $0{,}25$ statt $0{,}0025$ verwendet. Der Strom wird dann hundertmal zu groß.",
       "Bei der Grenzwellenlänge von Silber die Photonenenergie des LED-Lichts statt der Austrittsarbeit eingesetzt.",
       "Behauptet, die verdoppelte Leistung verdopple auch die Gegenspannung; sie hängt allein von der Wellenlänge und vom Kathodenmaterial ab.",
       "Die Elementarladung beim Photostrom vergessen und die Elektronenzahl pro Sekunde als Stromstärke in Ampere angegeben."

@@ -29,9 +29,9 @@
     }
   ],
   "tipps": [
-    "Stellen Sie zuerst die Formel für eine beliebige Ordnung $n$ auf und setzen Sie erst danach Zahlen ein — sonst rechnen Sie viermal dieselbe Herleitung.",
+    "Stellen Sie zuerst die Formel für eine beliebige Ordnung $n$ auf und setzen Sie erst danach Zahlen ein, sonst rechnen Sie viermal dieselbe Herleitung.",
     "Prüfen Sie, wie groß der Beugungswinkel bei $n = 4$ höchstens wird. Erst danach entscheiden Sie, ob Sie mit dem Tangens oder mit der Näherung arbeiten.",
-    "Ergänzen Sie die gegebene Tabelle um eine Zeile für die jeweils berechnete Wellenlänge — so sehen Sie sofort, ob ein Wert aus der Reihe fällt."
+    "Ergänzen Sie die gegebene Tabelle um eine Zeile für die jeweils berechnete Wellenlänge. So sehen Sie sofort, ob ein Wert aus der Reihe fällt."
   ],
   "loesung": {
     "gesamtpunkte": 15,
@@ -41,8 +41,8 @@
         "titel": "Bedingung für Maxima und Geometrie verknüpfen",
         "inhalt": "Ein Maximum $n$-ter Ordnung entsteht, wenn der Gangunterschied der beiden Teilwellen $\\Delta s = n\\cdot\\lambda$ beträgt. Im kleinen Dreieck am Doppelspalt gilt $\\sin\\alpha_n = \\dfrac{\\Delta s}{d}$, im großen Dreieck bis zum Schirm $\\tan\\alpha_n = \\dfrac{a_n}{e}$. Zusammen:\n\n$$\\sin\\alpha_n = \\frac{n\\cdot\\lambda}{d}, \\qquad \\tan\\alpha_n = \\frac{a_n}{e}$$",
         "warum": {
-          "de": "Beide Beziehungen enthalten denselben Winkel, aber verschiedene Winkelfunktionen — deshalb muss man den Winkel als Zwischengröße nehmen oder sauber begründen, warum man ihn überspringen darf. Wer $\\sin$ und $\\tan$ ohne Begründung gleichsetzt, hat die Näherung benutzt, ohne sie erwähnt zu haben.",
-          "tr": "Her iki bağıntıda da aynı açı vardır ama farklı trigonometrik fonksiyonlar kullanılır — bu yüzden açıyı ara büyüklük olarak hesaplamak ya da onu atlamanın nedenini açıkça yazmak gerekir. $\\sin$ ile $\\tan$'ı gerekçesiz eşitleyen öğrenci, yaklaşımı adını anmadan kullanmış olur."
+          "de": "Beide Beziehungen enthalten denselben Winkel, aber verschiedene Winkelfunktionen. Deshalb muss man den Winkel als Zwischengröße nehmen oder sauber begründen, warum man ihn überspringen darf. Wer $\\sin$ und $\\tan$ ohne Begründung gleichsetzt, hat die Näherung benutzt, ohne sie erwähnt zu haben.",
+          "tr": "Her iki bağıntıda da aynı açı vardır ama farklı trigonometrik fonksiyonlar kullanılır. Bu yüzden açıyı ara büyüklük olarak hesaplamak ya da onu atlamanın nedenini açıkça yazmak gerekir. $\\sin$ ile $\\tan$'ı gerekçesiz eşitleyen öğrenci, yaklaşımı adını anmadan kullanmış olur."
         },
         "teilpunkte": 3
       },
@@ -51,8 +51,8 @@
         "titel": "Winkel abschätzen und Näherung rechtfertigen",
         "inhalt": "Der größte auftretende Winkel gehört zur $4.$ Ordnung:\n\n$$\\tan\\alpha_4 = \\frac{6{,}2\\cdot 10^{-2}\\ \\text{m}}{5{,}00\\ \\text{m}} = 1{,}24\\cdot 10^{-2} \\quad\\Longrightarrow\\quad \\alpha_4 \\approx 0{,}71^\\circ$$\n\nAlle Winkel liegen weit unter $1^\\circ$. Damit ist $\\sin\\alpha \\approx \\tan\\alpha$ zulässig und es gilt\n\n$$\\frac{n\\cdot\\lambda}{d} \\approx \\frac{a_n}{e} \\quad\\Longrightarrow\\quad \\lambda \\approx \\frac{a_n\\cdot d}{n\\cdot e}$$",
         "warum": {
-          "de": "Die Näherung darf man nicht als Gewohnheit anwenden, sondern nur nach einer Abschätzung — und die macht man sinnvollerweise für die höchste Ordnung, weil dort der Winkel am größten ist. Ist die Näherung für $n = 4$ zulässig, dann erst recht für alle kleineren Ordnungen.",
-          "tr": "Yaklaşım alışkanlıkla değil, ancak bir kestirimden sonra kullanılır — ve bu kestirim en yüksek mertebe için yapılır, çünkü açı orada en büyüktür. $n = 4$ için geçerliyse, daha küçük mertebeler için zaten fazlasıyla geçerlidir."
+          "de": "Die Näherung darf man nicht als Gewohnheit anwenden, sondern nur nach einer Abschätzung, und die macht man sinnvollerweise für die höchste Ordnung, weil dort der Winkel am größten ist. Ist die Näherung für $n = 4$ zulässig, dann erst recht für alle kleineren Ordnungen.",
+          "tr": "Yaklaşım alışkanlıkla değil, ancak bir kestirimden sonra kullanılır ve bu kestirim en yüksek mertebe için yapılır, çünkü açı orada en büyüktür. $n = 4$ için geçerliyse, daha küçük mertebeler için zaten fazlasıyla geçerlidir."
         },
         "teilpunkte": 3
       },
@@ -69,17 +69,17 @@
       {
         "nr": 4,
         "titel": "Mittelwert und Farbe",
-        "inhalt": "$$\\bar{\\lambda} = \\frac{640 + 620 + 613 + 620}{4}\\ \\text{nm} \\approx 623\\ \\text{nm}$$\n\nNach Material 2 liegt $623\\ \\text{nm}$ im Bereich $585$–$650\\ \\text{nm}$: Das Laserlicht ist **orange**.",
+        "inhalt": "$$\\bar{\\lambda} = \\frac{640 + 620 + 613 + 620}{4}\\ \\text{nm} \\approx 623\\ \\text{nm}$$\n\nNach Material 2 liegt $623\\ \\text{nm}$ im Bereich $585$ bis $650\\ \\text{nm}$: Das Laserlicht ist **orange**.",
         "warum": {
-          "de": "Der Mittelwert ist hier nicht bloß Rechenkosmetik: Jede einzelne Ordnung liefert eine unabhängige Messung derselben Größe, und die zufälligen Ablesefehler heben sich beim Mitteln teilweise auf. Systematische Fehler — etwa ein falsch abgelesener Schirmabstand — verschwinden dagegen durch Mitteln nicht.",
-          "tr": "Ortalama burada yalnızca hesap süsü değildir: her mertebe aynı büyüklüğün bağımsız bir ölçümünü verir ve rastgele okuma hataları ortalamada kısmen birbirini götürür. Buna karşılık sistematik hatalar — örneğin yanlış okunmuş bir ekran uzaklığı — ortalama alınarak yok olmaz."
+          "de": "Der Mittelwert ist hier nicht bloß Rechenkosmetik: Jede einzelne Ordnung liefert eine unabhängige Messung derselben Größe, und die zufälligen Ablesefehler heben sich beim Mitteln teilweise auf. Systematische Fehler wie ein falsch abgelesener Schirmabstand verschwinden dagegen durch Mitteln nicht.",
+          "tr": "Ortalama burada yalnızca hesap süsü değildir: her mertebe aynı büyüklüğün bağımsız bir ölçümünü verir ve rastgele okuma hataları ortalamada kısmen birbirini götürür. Buna karşılık sistematik hatalar, örneğin yanlış okunmuş bir ekran uzaklığı, ortalama alınarak yok olmaz."
         },
         "teilpunkte": 2
       },
       {
         "nr": 5,
         "titel": "Gitter statt Doppelspalt",
-        "inhalt": "Da die Gitterkonstante gleich dem bisherigen Spaltmittenabstand ist, bleibt die Bedingung $\\sin\\alpha_n = \\dfrac{n\\cdot\\lambda}{d}$ unverändert: **Die Maxima liegen an genau denselben Stellen wie vorher.** Verändert hat sich ihr Aussehen:\n\n- Die Maxima sind deutlich **schärfer** — sie werden zu schmalen, scharf begrenzten Streifen.\n- Sie sind **heller**, weil sehr viel mehr Spalte Licht beitragen.\n- Die Bereiche **zwischen** den Maxima werden nahezu vollständig dunkel, während beim Doppelspalt die Helligkeit dort noch weich abfällt.",
+        "inhalt": "Da die Gitterkonstante gleich dem bisherigen Spaltmittenabstand ist, bleibt die Bedingung $\\sin\\alpha_n = \\dfrac{n\\cdot\\lambda}{d}$ unverändert: **Die Maxima liegen an genau denselben Stellen wie vorher.** Verändert hat sich ihr Aussehen:\n\n- Die Maxima sind deutlich **schärfer**: sie werden zu schmalen, scharf begrenzten Streifen.\n- Sie sind **heller**, weil sehr viel mehr Spalte Licht beitragen.\n- Die Bereiche **zwischen** den Maxima werden nahezu vollständig dunkel, während beim Doppelspalt die Helligkeit dort noch weich abfällt.",
         "warum": {
           "de": "Die entscheidende Einsicht ist, dass sich die Lage der Maxima nicht ändert, obwohl das Bild völlig anders aussieht: Die Lage folgt aus dem Gangunterschied *benachbarter* Spalte, und der hängt nur von $d$ ab. Die vielen zusätzlichen Spalte wirken sich nicht auf die Lage, sondern nur auf Schärfe und Helligkeit aus.",
           "tr": "Asıl kavranması gereken nokta şudur: görüntü tamamen değişse de maksimumların yeri değişmez. Yer, *komşu* yarıkların yol farkından çıkar ve bu da yalnızca $d$'ye bağlıdır. Eklenen çok sayıda yarık, konumu değil yalnızca keskinliği ve parlaklığı etkiler."
@@ -88,10 +88,10 @@
       }
     ],
     "haeufige_fehler": [
-      "Nur eine Ordnung ausgewertet, obwohl vier Messwerte gegeben sind — die Aufgabe verlangt ausdrücklich alle.",
+      "Nur eine Ordnung ausgewertet, obwohl vier Messwerte gegeben sind. Die Aufgabe verlangt ausdrücklich alle.",
       "$d = 0{,}20\\ \\text{mm}$ als $0{,}20\\ \\text{m}$ oder $2{,}0\\cdot 10^{-3}\\ \\text{m}$ eingesetzt; ein Zehnerpotenzfehler verschiebt das Ergebnis um den Faktor 10.",
       "Die Kleinwinkelnäherung ohne jede Abschätzung des Winkels verwendet.",
-      "Beim Gitter behauptet, die Maxima rückten weiter auseinander — das gilt nur bei geänderter Gitterkonstante, nicht bei gleicher."
+      "Beim Gitter behauptet, die Maxima rückten weiter auseinander. Das gilt nur bei geänderter Gitterkonstante, nicht bei gleicher."
     ]
   },
   "quelle": "eigene Aufgabe im Stil von Hessen, Landesabitur Physik Grundkurs 2008, Aufgabe B2 (Interferenz an Doppelspalt und Gitter)",

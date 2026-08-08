@@ -20,7 +20,7 @@
   "tipps": [
     "Zeichne die Schleife in drei Momentaufnahmen: vor dem Eintauchen, halb im Feld, ganz im Feld. In welcher Phase ändert sich die vom Feld durchsetzte Fläche?",
     "Die vom Magnetfeld durchsetzte Fläche wächst pro Zeit um Breite mal zurückgelegtem Weg. Was ist Weg pro Zeit?",
-    "Für die Geschwindigkeit nach einer Fallhöhe brauchst du kein Induktionswissen, sondern den freien Fall — Energieerhaltung genügt."
+    "Für die Geschwindigkeit nach einer Fallhöhe brauchst du kein Induktionswissen, sondern den freien Fall, denn Energieerhaltung genügt."
   ],
   "loesung": {
     "gesamtpunkte": 12,
@@ -28,10 +28,10 @@
       {
         "nr": 1,
         "titel": "Ursache der Induktion identifizieren",
-        "inhalt": "Solange die Schleife nur teilweise eingetaucht ist, wächst die vom Magnetfeld durchsetzte Fläche $A$ mit der Zeit. Da $B$ konstant ist, ändert sich der magnetische Fluss $\\Phi = B\\cdot A$ ausschließlich über $A$.\n\nWäre die Schleife dagegen vollständig im Feld, bliebe $A$ konstant, der Fluss änderte sich nicht — und es würde trotz Bewegung keine Spannung induziert.",
+        "inhalt": "Solange die Schleife nur teilweise eingetaucht ist, wächst die vom Magnetfeld durchsetzte Fläche $A$ mit der Zeit. Da $B$ konstant ist, ändert sich der magnetische Fluss $\\Phi = B\\cdot A$ ausschließlich über $A$.\n\nWäre die Schleife dagegen vollständig im Feld, bliebe $A$ konstant, der Fluss änderte sich nicht, und es würde trotz Bewegung keine Spannung induziert.",
         "warum": {
-          "de": "Das ist der Kern des Induktionsgesetzes und die häufigste Verständnislücke: Nicht die Bewegung an sich erzeugt eine Spannung, sondern allein die *Änderung* des magnetischen Flusses. Deshalb muss man zuerst klären, welche der drei Größen — $B$, $A$ oder der Winkel — sich hier überhaupt ändert.",
-          "tr": "İndüksiyon yasasının özü ve en sık görülen kavram boşluğu budur: gerilimi hareketin kendisi değil, yalnızca manyetik akının *değişimi* üretir. Bu yüzden önce üç büyüklükten — $B$, $A$ ya da açı — hangisinin burada gerçekten değiştiğini belirlemek gerekir."
+          "de": "Das ist der Kern des Induktionsgesetzes und die häufigste Verständnislücke: Nicht die Bewegung an sich erzeugt eine Spannung, sondern allein die *Änderung* des magnetischen Flusses. Deshalb muss man zuerst klären, welche der drei Größen sich hier überhaupt ändert: $B$, $A$ oder der Winkel.",
+          "tr": "İndüksiyon yasasının özü ve en sık görülen kavram boşluğu budur: gerilimi hareketin kendisi değil, yalnızca manyetik akının *değişimi* üretir. Bu yüzden önce üç büyüklükten hangisinin burada gerçekten değiştiğini ($B$, $A$ ya da açı) belirlemek gerekir."
         },
         "teilpunkte": 2
       },
@@ -50,8 +50,8 @@
         "titel": "Fallgeschwindigkeit bestimmen",
         "inhalt": "Beim freien Fall aus der Ruhe wird potentielle in kinetische Energie umgewandelt:\n\n$$m\\,g\\,h = \\frac{1}{2}m\\,v^2 \\quad\\Longrightarrow\\quad v = \\sqrt{2\\,g\\,h}$$\n\n$$v = \\sqrt{2\\cdot 9{,}81\\ \\tfrac{\\text{m}}{\\text{s}^2}\\cdot 0{,}80\\ \\text{m}} = \\sqrt{15{,}7\\ \\tfrac{\\text{m}^2}{\\text{s}^2}} \\approx 3{,}96\\ \\frac{\\text{m}}{\\text{s}}$$",
         "warum": {
-          "de": "Die Masse kürzt sich heraus — deshalb steht sie auch nicht in der Aufgabe. Das ist ein nützlicher Selbsttest: Wenn eine Größe im Text fehlt, die man zu brauchen glaubt, fällt sie meistens im Verlauf der Rechnung weg. Zulässig ist der Energiesatz hier nur, weil die Reibung vernachlässigt wird und die Bremswirkung der Induktion für diesen Moment noch nicht berücksichtigt werden soll.",
-          "tr": "Kütle sadeleşir — bu yüzden soruda da verilmemiştir. Bu iyi bir öz denetimdir: metinde eksik olduğunu düşündüğün bir büyüklük, çoğu zaman hesap içinde zaten sadeleşir. Enerji korunumunun burada kullanılabilmesinin nedeni sürtünmenin ihmal edilmesi ve indüksiyonun frenleme etkisinin bu an için hesaba katılmamasıdır."
+          "de": "Die Masse kürzt sich heraus und steht deshalb auch nicht in der Aufgabe. Das ist ein nützlicher Selbsttest: Wenn eine Größe im Text fehlt, die man zu brauchen glaubt, fällt sie meistens im Verlauf der Rechnung weg. Zulässig ist der Energiesatz hier nur, weil die Reibung vernachlässigt wird und die Bremswirkung der Induktion für diesen Moment noch nicht berücksichtigt werden soll.",
+          "tr": "Kütle sadeleşir, bu yüzden soruda da verilmemiştir. Bu iyi bir öz denetimdir: metinde eksik olduğunu düşündüğün bir büyüklük, çoğu zaman hesap içinde zaten sadeleşir. Enerji korunumunun burada kullanılabilmesinin nedeni sürtünmenin ihmal edilmesi ve indüksiyonun frenleme etkisinin bu an için hesaba katılmamasıdır."
         },
         "teilpunkte": 3
       },
@@ -60,8 +60,8 @@
         "titel": "Zahlenwert der Induktionsspannung",
         "inhalt": "$$|U_{ind}| = B\\,b\\,v = 0{,}45\\ \\text{T}\\cdot 0{,}12\\ \\text{m}\\cdot 3{,}96\\ \\frac{\\text{m}}{\\text{s}} \\approx 0{,}21\\ \\text{V}$$",
         "warum": {
-          "de": "Die Größenordnung ist ein Ergebnis für sich: Zweihundert Millivolt aus einem halben Meter Fallhöhe zeigen, dass Induktionsspannungen ohne viele Windungen klein bleiben. Genau deshalb arbeiten technische Generatoren mit Spulen von mehreren hundert Windungen — der Faktor $N$ ist der einzige frei skalierbare Parameter.",
-          "tr": "Büyüklük mertebesi başlı başına bir sonuçtur: yarım metrelik düşüşten iki yüz milivolt çıkması, çok sarımlı bobin olmadan indüksiyon geriliminin küçük kaldığını gösterir. Teknik jeneratörlerin yüzlerce sarımlı bobinlerle çalışmasının sebebi tam da budur — $N$ serbestçe ölçeklenebilen tek parametredir."
+          "de": "Die Größenordnung ist ein Ergebnis für sich: Zweihundert Millivolt aus einem halben Meter Fallhöhe zeigen, dass Induktionsspannungen ohne viele Windungen klein bleiben. Genau deshalb arbeiten technische Generatoren mit Spulen von mehreren hundert Windungen: der Faktor $N$ ist der einzige frei skalierbare Parameter.",
+          "tr": "Büyüklük mertebesi başlı başına bir sonuçtur: yarım metrelik düşüşten iki yüz milivolt çıkması, çok sarımlı bobin olmadan indüksiyon geriliminin küçük kaldığını gösterir. Teknik jeneratörlerin yüzlerce sarımlı bobinlerle çalışmasının sebebi tam da budur: $N$ serbestçe ölçeklenebilen tek parametredir."
         },
         "teilpunkte": 2
       },
@@ -70,14 +70,14 @@
         "titel": "Lenzsche Regel anwenden",
         "inhalt": "Nach der Lenzschen Regel ist der Induktionsstrom stets so gerichtet, dass er seiner Ursache entgegenwirkt. Die Ursache ist hier die Zunahme des magnetischen Flusses durch die Schleife.\n\nFolglich fließt der Strom so, dass sein eigenes Magnetfeld im Inneren der Schleife dem äußeren Feld entgegengerichtet ist und die Flusszunahme abschwächt. Auf die stromdurchflossene Unterkante im Feld wirkt dann eine Lorentzkraft nach oben, also entgegen der Fallrichtung.\n\nDie Schleife wird dadurch gebremst; sie fällt langsamer als im freien Fall. Bei ausreichender Fallstrecke stellt sich eine konstante Endgeschwindigkeit ein, bei der Bremskraft und Gewichtskraft gleich groß sind.",
         "warum": {
-          "de": "Die Lenzsche Regel ist keine zusätzliche Merkregel, sondern die Energieerhaltung in anderer Form: Der Induktionsstrom erwärmt den Leiter, diese Energie muss irgendwoher kommen — sie stammt aus der Bewegungsenergie der Schleife. Wäre der Strom umgekehrt gerichtet, würde die Schleife von selbst beschleunigen und dabei zusätzlich Wärme erzeugen; das wäre ein Perpetuum mobile.",
-          "tr": "Lenz kuralı ek bir ezber kuralı değil, enerjinin korunumunun başka bir biçimidir: indüksiyon akımı iletkeni ısıtır, bu enerjinin bir yerden gelmesi gerekir — ilmeğin hareket enerjisinden gelir. Akım ters yönde olsaydı, ilmek kendiliğinden hızlanır ve üstüne ısı da üretirdi; bu bir devri daim makinesi olurdu."
+          "de": "Die Lenzsche Regel ist keine zusätzliche Merkregel, sondern die Energieerhaltung in anderer Form: Der Induktionsstrom erwärmt den Leiter, diese Energie muss irgendwoher kommen, nämlich aus der Bewegungsenergie der Schleife. Wäre der Strom umgekehrt gerichtet, würde die Schleife von selbst beschleunigen und dabei zusätzlich Wärme erzeugen; das wäre ein Perpetuum mobile.",
+          "tr": "Lenz kuralı ek bir ezber kuralı değil, enerjinin korunumunun başka bir biçimidir: indüksiyon akımı iletkeni ısıtır, bu enerjinin bir yerden gelmesi gerekir ve o enerji ilmeğin hareketinden gelir. Akım ters yönde olsaydı, ilmek kendiliğinden hızlanır ve üstüne ısı da üretirdi; bu bir devri daim makinesi olurdu."
         },
         "teilpunkte": 2
       }
     ],
     "haeufige_fehler": [
-      "Behauptet, auch die vollständig eingetauchte Schleife erzeuge eine Spannung — dort ist $\\Phi$ konstant.",
+      "Behauptet, auch die vollständig eingetauchte Schleife erzeuge eine Spannung. Dort ist $\\Phi$ konstant.",
       "Höhe statt Breite der Schleife in $U = B\\,b\\,v$ eingesetzt.",
       "$v = g\\cdot h$ statt $v = \\sqrt{2gh}$ verwendet.",
       "Lenzsche Regel nur zitiert, ohne die Richtung des Stromes und die daraus folgende Bremskraft konkret zu benennen."

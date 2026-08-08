@@ -18,7 +18,7 @@
   "aufgabenstellung": "Gegeben ist die Funktion $f$ mit\n\n$$f(x) = x\\,e^{-x}, \\qquad x \\in \\mathbb{R}.$$\n\na) Bestimmen Sie $f'(x)$ und $f''(x)$.\n\nb) Bestimmen Sie den Extrempunkt des Graphen von $f$ und weisen Sie dessen Art nach.\n\nc) Bestimmen Sie den Wendepunkt des Graphen.\n\nd) Untersuchen Sie das Verhalten von $f$ für $x \\to +\\infty$ und $x \\to -\\infty$.",
   "material": [],
   "tipps": [
-    "$f$ ist ein Produkt zweier Funktionen. Die Produktregel lautet $(u\\cdot v)' = u'v + uv'$ — bestimme zuerst $u$, $v$ und deren Ableitungen einzeln.",
+    "$f$ ist ein Produkt zweier Funktionen. Die Produktregel lautet $(u\\cdot v)' = u'v + uv'$; bestimme zuerst $u$, $v$ und deren Ableitungen einzeln.",
     "Die innere Ableitung von $e^{-x}$ ist $-1$. Dieses Minuszeichen zieht sich durch die ganze Aufgabe.",
     "Klammere nach jedem Ableiten $e^{-x}$ aus. Da $e^{-x}$ nie null wird, hängen alle Nullstellen nur vom übrigen Faktor ab."
   ],
@@ -30,8 +30,8 @@
         "titel": "Erste Ableitung mit der Produktregel",
         "inhalt": "Mit $u(x) = x$, $u'(x) = 1$ und $v(x) = e^{-x}$, $v'(x) = -e^{-x}$:\n\n$$f'(x) = 1\\cdot e^{-x} + x\\cdot\\left(-e^{-x}\\right) = e^{-x}\\,(1 - x)$$",
         "warum": {
-          "de": "Die Produktregel ist nötig, weil $f$ das Produkt einer Potenz- und einer Exponentialfunktion ist — Summanden dürfte man einzeln ableiten, Faktoren nicht. Die innere Ableitung von $e^{-x}$ ist $-1$ (Kettenregel), daher $v'(x) = -e^{-x}$. Das anschließende Ausklammern von $e^{-x}$ ist der entscheidende Vorbereitungsschritt für alles Weitere.",
-          "tr": "Çarpım kuralı gerekli, çünkü $f$ bir kuvvet fonksiyonu ile üstel fonksiyonun çarpımı — toplananları tek tek türetebilirsin ama çarpanları türetemezsin. $e^{-x}$'in iç türevi $-1$'dir (zincir kuralı), bu yüzden $v'(x)=-e^{-x}$. Sonrasında $e^{-x}$'i parantezine almak, bundan sonraki her adımı hazırlayan kilit hamledir."
+          "de": "Die Produktregel ist nötig, weil $f$ das Produkt einer Potenz- und einer Exponentialfunktion ist: Summanden dürfte man einzeln ableiten, Faktoren nicht. Die innere Ableitung von $e^{-x}$ ist $-1$ (Kettenregel), daher $v'(x) = -e^{-x}$. Das anschließende Ausklammern von $e^{-x}$ ist der entscheidende Vorbereitungsschritt für alles Weitere.",
+          "tr": "Çarpım kuralı gerekli, çünkü $f$ bir kuvvet fonksiyonu ile üstel fonksiyonun çarpımı: toplananları tek tek türetebilirsin ama çarpanları türetemezsin. $e^{-x}$'in iç türevi $-1$'dir (zincir kuralı), bu yüzden $v'(x)=-e^{-x}$. Sonrasında $e^{-x}$'i parantezine almak, bundan sonraki her adımı hazırlayan kilit hamledir."
         },
         "teilpunkte": 3
       },
@@ -40,8 +40,8 @@
         "titel": "Extremstelle bestimmen",
         "inhalt": "Notwendige Bedingung $f'(x) = 0$:\n\n$$e^{-x}\\,(1-x) = 0$$\n\nDa $e^{-x} > 0$ für alle $x \\in \\mathbb{R}$ gilt, kann nur der zweite Faktor null werden:\n\n$$1 - x = 0 \\;\\Rightarrow\\; x_E = 1$$\n\n$$f(1) = 1\\cdot e^{-1} = \\frac{1}{e} \\approx 0{,}368$$",
         "warum": {
-          "de": "Der Satz vom Nullprodukt wird hier nur *halb* angewendet: Ein Produkt ist null, wenn ein Faktor null ist — aber $e^{-x}$ **kann nicht** null werden, die Exponentialfunktion ist überall echt positiv. Dieses Argument muss man hinschreiben; es ist der Grund, warum diese Aufgabengattung überhaupt handhabbar bleibt und warum es genau eine Extremstelle gibt.",
-          "tr": "Çarpımın sıfır olması kuralı burada yalnızca *yarım* uygulanır: bir çarpım, çarpanlarından biri sıfırsa sıfırdır — ama $e^{-x}$ **hiçbir zaman** sıfır olamaz, üstel fonksiyon her yerde kesin pozitiftir. Bu gerekçeyi yazmak zorundasın; bu tür soruların çözülebilir kalmasının ve tam olarak tek bir ekstremum çıkmasının sebebi budur."
+          "de": "Der Satz vom Nullprodukt wird hier nur *halb* angewendet: Ein Produkt ist null, wenn ein Faktor null ist, aber $e^{-x}$ **kann nicht** null werden, die Exponentialfunktion ist überall echt positiv. Dieses Argument muss man hinschreiben; es ist der Grund, warum diese Aufgabengattung überhaupt handhabbar bleibt und warum es genau eine Extremstelle gibt.",
+          "tr": "Çarpımın sıfır olması kuralı burada yalnızca *yarım* uygulanır: bir çarpım, çarpanlarından biri sıfırsa sıfırdır, ama $e^{-x}$ **hiçbir zaman** sıfır olamaz, üstel fonksiyon her yerde kesin pozitiftir. Bu gerekçeyi yazmak zorundasın; bu tür soruların çözülebilir kalmasının ve tam olarak tek bir ekstremum çıkmasının sebebi budur."
         },
         "teilpunkte": 3
       },
@@ -50,8 +50,8 @@
         "titel": "Zweite Ableitung bilden und Art des Extremums nachweisen",
         "inhalt": "Erneut Produktregel auf $f'(x) = e^{-x}(1-x)$ anwenden, mit $u = e^{-x}$, $u' = -e^{-x}$, $v = 1-x$, $v' = -1$:\n\n$$f''(x) = -e^{-x}(1-x) + e^{-x}\\cdot(-1) = e^{-x}\\big[-(1-x) - 1\\big] = e^{-x}\\,(x - 2)$$\n\nEinsetzen von $x_E = 1$:\n\n$$f''(1) = e^{-1}\\,(1-2) = -\\frac{1}{e} < 0$$\n\nAlso liegt ein **Hochpunkt** vor: $H\\!\\left(1 \\mid \\tfrac{1}{e}\\right)$.",
         "warum": {
-          "de": "Das Vorzeichen von $f''$ entscheidet über die Art des Extremums; negativ bedeutet Rechtskrümmung und damit Hochpunkt. Beim Auswerten muss man nur auf das Vorzeichen achten, nicht auf den genauen Wert — $e^{-1}$ ist positiv, also übernimmt der Faktor $(x-2)$ das Vorzeichen. Diese Vereinfachung spart Rechenzeit und Fehler.",
-          "tr": "Ekstremumun türünü $f''$'ün işareti belirler; negatif olması içbükeylik, yani tepe noktası demektir. Değerlendirirken kesin sayıya değil yalnızca işarete bakman yeter — $e^{-1}$ pozitif olduğundan işareti $(x-2)$ çarpanı belirler. Bu sadeleştirme hem zaman kazandırır hem hata riskini düşürür."
+          "de": "Das Vorzeichen von $f''$ entscheidet über die Art des Extremums; negativ bedeutet Rechtskrümmung und damit Hochpunkt. Beim Auswerten muss man nur auf das Vorzeichen achten, nicht auf den genauen Wert: $e^{-1}$ ist positiv, also übernimmt der Faktor $(x-2)$ das Vorzeichen. Diese Vereinfachung spart Rechenzeit und Fehler.",
+          "tr": "Ekstremumun türünü $f''$'ün işareti belirler; negatif olması içbükeylik, yani tepe noktası demektir. Değerlendirirken kesin sayıya değil yalnızca işarete bakman yeter: $e^{-1}$ pozitif olduğundan işareti $(x-2)$ çarpanı belirler. Bu sadeleştirme hem zaman kazandırır hem hata riskini düşürür."
         },
         "teilpunkte": 4
       },
@@ -70,15 +70,15 @@
         "titel": "Verhalten im Unendlichen untersuchen",
         "inhalt": "**Für $x \\to +\\infty$:** Umschreiben als Quotient $f(x) = \\dfrac{x}{e^{x}}$. Die Exponentialfunktion wächst schneller als jede Potenzfunktion, also\n\n$$\\lim_{x \\to +\\infty} \\frac{x}{e^{x}} = 0^{+}.$$\n\nDer Graph nähert sich der $x$-Achse von oben; $y = 0$ ist waagerechte Asymptote.\n\n**Für $x \\to -\\infty$:** Es gilt $x \\to -\\infty$ und $e^{-x} \\to +\\infty$, das Produkt eines negativen und eines beliebig großen positiven Faktors:\n\n$$\\lim_{x \\to -\\infty} x\\,e^{-x} = -\\infty.$$",
         "warum": {
-          "de": "Der Fall $x \\to +\\infty$ ist der interessante: $x \\to \\infty$ und $e^{-x} \\to 0$ ergibt zunächst den unbestimmten Ausdruck „$\\infty \\cdot 0$“, aus dem man nichts ablesen kann. Erst das Umschreiben als Bruch macht die Frage entscheidbar, und dann greift die Wachstumshierarchie: Exponentialfunktion schlägt Potenzfunktion. Für $x \\to -\\infty$ ist dagegen nichts unbestimmt — beide Faktoren streben eindeutig, das Produkt ebenso.",
-          "tr": "İlginç olan $x \\to +\\infty$ durumudur: $x \\to \\infty$ ve $e^{-x} \\to 0$ önce „$\\infty \\cdot 0$“ belirsizliğini verir, ondan hiçbir sonuç okunamaz. Kesir biçiminde yazmak soruyu karara bağlanabilir hale getirir; sonra büyüme hiyerarşisi devreye girer: üstel fonksiyon kuvvet fonksiyonunu her zaman yener. $x \\to -\\infty$ tarafında ise belirsizlik yoktur — iki çarpan da net biçimde yönelir, çarpım da öyle."
+          "de": "Der Fall $x \\to +\\infty$ ist der interessante: $x \\to \\infty$ und $e^{-x} \\to 0$ ergibt zunächst den unbestimmten Ausdruck „$\\infty \\cdot 0$“, aus dem man nichts ablesen kann. Erst das Umschreiben als Bruch macht die Frage entscheidbar, und dann greift die Wachstumshierarchie: Exponentialfunktion schlägt Potenzfunktion. Für $x \\to -\\infty$ ist dagegen nichts unbestimmt: beide Faktoren streben eindeutig, das Produkt ebenso.",
+          "tr": "İlginç olan $x \\to +\\infty$ durumudur: $x \\to \\infty$ ve $e^{-x} \\to 0$ önce „$\\infty \\cdot 0$“ belirsizliğini verir, ondan hiçbir sonuç okunamaz. Kesir biçiminde yazmak soruyu karara bağlanabilir hale getirir; sonra büyüme hiyerarşisi devreye girer: üstel fonksiyon kuvvet fonksiyonunu her zaman yener. $x \\to -\\infty$ tarafında ise belirsizlik yoktur: iki çarpan da net biçimde yönelir, çarpım da öyle."
         },
         "teilpunkte": 3
       }
     ],
     "haeufige_fehler": [
       "Innere Ableitung vergessen: $\\left(e^{-x}\\right)' = -e^{-x}$, nicht $e^{-x}$.",
-      "$e^{-x} = 0$ als Lösung mitgeführt — die Exponentialfunktion hat keine Nullstelle.",
+      "$e^{-x} = 0$ als Lösung mitgeführt; die Exponentialfunktion hat keine Nullstelle.",
       "Bei $x \\to +\\infty$ aus „$\\infty\\cdot 0$“ direkt auf $0$ oder $\\infty$ geschlossen, ohne den Term als Bruch umzuschreiben.",
       "Beim zweiten Ableiten die Produktregel nur auf einen der beiden Faktoren angewendet."
     ]

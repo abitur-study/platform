@@ -1,7 +1,7 @@
 {
   "bereich": "abitur",
   "id": "q005",
-  "titel": "Influenz, Kräftegleichgewicht und LED-Standlicht – eine Plattenkondensator-Aufgabe",
+  "titel": "Influenz, Kräftegleichgewicht und LED-Standlicht in einer Plattenkondensator-Aufgabe",
   "fach": "physik",
   "themenbereich": "Elektrisches Feld und Kondensator",
   "themenbereich_slug": "elektrisches-feld",
@@ -39,8 +39,8 @@
         "titel": "Kapazität berechnen",
         "inhalt": "$A = (0{,}40\\ \\text{m})^2 = 0{,}16\\ \\text{m}^2$.\n$C = \\varepsilon_0 \\dfrac{A}{d} = 8{,}854\\cdot 10^{-12} \\cdot \\dfrac{0{,}16}{0{,}08} = 1{,}77\\cdot 10^{-11}\\ \\text{F} = 17{,}7\\ \\text{pF}$.",
         "warum": {
-          "de": "Die Kapazität hängt nur von der Geometrie und dem Dielektrikum ab, nicht von der Ladung. Der Wert von knapp 18 pF ist typisch für einen Schulversuch – damit lässt sich die Größenordnung gut veranschaulichen.",
-          "tr": "Kapasitans yalnızca geometriye ve dielektrik ortama bağlıdır, yüke değil. Yaklaşık 18 pF değeri okul deneyleri için tipiktir – büyüklük mertebesini göstermek için iyidir."
+          "de": "Die Kapazität hängt nur von der Geometrie und dem Dielektrikum ab, nicht von der Ladung. Der Wert von knapp 18 pF ist typisch für einen Schulversuch. Damit lässt sich die Größenordnung gut veranschaulichen.",
+          "tr": "Kapasitans yalnızca geometriye ve dielektrik ortama bağlıdır, yüke değil. Yaklaşık 18 pF değeri okul deneyleri için tipiktir. Büyüklük mertebesini göstermek için iyidir."
         },
         "teilpunkte": 3
       },
@@ -59,8 +59,8 @@
         "titel": "Ladung des Kügelchens herleiten und berechnen",
         "inhalt": "Im Kräftegleichgewicht: $\\tan\\alpha = F_{el}/F_G = qE/(mg) = qU/(mgd)$. Mit $\\tan\\alpha \\approx \\sin\\alpha = s/\\ell$ folgt $q = mgds/(U\\ell)$.\nEinsetzen: $q = \\frac{0{,}80\\cdot 10^{-3}\\cdot 9{,}81\\cdot 0{,}08\\cdot 0{,}020}{1{,}5\\cdot 10^{3}\\cdot 2{,}00} \\approx 4{,}19\\cdot 10^{-9}\\ \\text{C} = 4{,}19\\ \\text{nC}$.",
         "warum": {
-          "de": "Die Formel zeigt, dass die Ladung bei gleicher Geometrie direkt proportional zur Auslenkung ist – eine lineare Abhängigkeit, die man im Experiment gut prüfen kann. Die berechnete Ladung im Nano-Coulomb-Bereich ist plausibel für ein Reibungskügelchen.",
-          "tr": "Formül, aynı geometride yükün sapmayla doğru orantılı olduğunu gösterir – bu doğrusal bağımlılık deneyde kolayca test edilebilir. Hesaplanan nano-Coulomb mertebesindeki yük, sürtünme küreciği için makuldür."
+          "de": "Die Formel zeigt, dass die Ladung bei gleicher Geometrie direkt proportional zur Auslenkung ist, also eine lineare Abhängigkeit, die man im Experiment gut prüfen kann. Die berechnete Ladung im Nano-Coulomb-Bereich ist plausibel für ein Reibungskügelchen.",
+          "tr": "Formül, aynı geometride yükün sapmayla doğru orantılı olduğunu gösterir ve bu doğrusal bağımlılık deneyde kolayca test edilebilir. Hesaplanan nano-Coulomb mertebesindeki yük, sürtünme küreciği için makuldür."
         },
         "teilpunkte": 6
       },
@@ -69,8 +69,8 @@
         "titel": "LED-Betriebsdauer",
         "inhalt": "$\\Delta E = \\frac{1}{2}\\cdot 1\\cdot (6^2 - 3{,}6^2) = 11{,}52\\ \\text{J}$.\n$t = \\dfrac{\\Delta E}{U_{\\min}\\cdot I} = \\dfrac{11{,}52}{3{,}6\\cdot 0{,}015} \\approx 213{,}3\\ \\text{s} \\approx 3{,}56\\ \\text{min}$.",
         "warum": {
-          "de": "Die nutzbare Energie ist die Differenz der gespeicherten Energien bei Anfangs- und Endspannung. Da die Spannung während der Entladung sinkt, ist die Annahme einer konstanten Spannung von 3,6 V eine konservative Abschätzung – die tatsächliche Leuchtdauer kann etwas länger sein.",
-          "tr": "Kullanılabilir enerji, başlangıç ve bitiş gerilimlerindeki depolanmış enerjilerin farkıdır. Deşarj sırasında gerilim düştüğü için, 3,6 V sabit gerilim varsayımı ihtiyatlı bir tahmindir – gerçek süre biraz daha uzun olabilir."
+          "de": "Die nutzbare Energie ist die Differenz der gespeicherten Energien bei Anfangs- und Endspannung. Da die Spannung während der Entladung sinkt, ist die Annahme einer konstanten Spannung von 3,6 V eine konservative Abschätzung. Die tatsächliche Leuchtdauer kann etwas länger sein.",
+          "tr": "Kullanılabilir enerji, başlangıç ve bitiş gerilimlerindeki depolanmış enerjilerin farkıdır. Deşarj sırasında gerilim düştüğü için, 3,6 V sabit gerilim varsayımı ihtiyatlı bir tahmindir. Gerçek süre biraz daha uzun olabilir."
         },
         "teilpunkte": 5
       }

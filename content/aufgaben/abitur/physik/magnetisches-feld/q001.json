@@ -20,7 +20,7 @@
   "material": [],
   "tipps": [
     "Vergleiche die Richtung der Lorentzkraft mit der Richtung der Geschwindigkeit. Was folgt daraus für den Betrag der Geschwindigkeit?",
-    "Die Geschwindigkeit der Elektronen taucht in der Aufgabenstellung nicht auf. Sie muss also aus der Beschleunigungsstrecke stammen — dort wird elektrische Energie in kinetische umgewandelt.",
+    "Die Geschwindigkeit der Elektronen taucht in der Aufgabenstellung nicht auf. Sie muss also aus der Beschleunigungsstrecke stammen. Dort wird elektrische Energie in kinetische umgewandelt.",
     "Du bekommst zwei Gleichungen mit $v$. Stelle beide nach $v$ um und setze sie gleich, dann fällt $v$ heraus."
   ],
   "loesung": {
@@ -31,8 +31,8 @@
         "titel": "Kreisbahn begründen",
         "inhalt": "Die Lorentzkraft $\\vec{F}_L = q\\,\\vec{v}\\times\\vec{B}$ steht stets senkrecht auf der Geschwindigkeit. Eine Kraft senkrecht zur Bewegungsrichtung verrichtet keine Arbeit und ändert deshalb nur die Richtung, nicht den Betrag der Geschwindigkeit.\n\nEine Kraft mit konstantem Betrag, die dauerhaft senkrecht zur Bahn wirkt, ist genau die Definition einer Zentripetalkraft. Also ist die Bahn ein Kreis:\n\n$$F_L = F_Z \\quad\\Longleftrightarrow\\quad e\\,v\\,B = \\frac{m\\,v^2}{r}$$",
         "warum": {
-          "de": "Der Unterschied zur Parabelbahn im elektrischen Feld ist genau dieser Punkt: Dort zeigt die Kraft immer in dieselbe Raumrichtung, hier dreht sie sich mit der Bewegung mit. Wer das einmal verstanden hat, muss sich nie merken, welches Feld welche Bahnform erzeugt — es folgt aus der Kraftrichtung.",
-          "tr": "Elektrik alanındaki parabol yörüngeden farkı tam olarak burasıdır: orada kuvvet hep aynı uzay yönünü gösterir, burada ise harekete göre döner. Bunu bir kez kavradıysan hangi alanın hangi yörüngeyi ürettiğini ezberlemene gerek kalmaz — doğrudan kuvvetin yönünden çıkar."
+          "de": "Der Unterschied zur Parabelbahn im elektrischen Feld ist genau dieser Punkt: Dort zeigt die Kraft immer in dieselbe Raumrichtung, hier dreht sie sich mit der Bewegung mit. Wer das einmal verstanden hat, muss sich nie merken, welches Feld welche Bahnform erzeugt, denn es folgt aus der Kraftrichtung.",
+          "tr": "Elektrik alanındaki parabol yörüngeden farkı tam olarak burasıdır: orada kuvvet hep aynı uzay yönünü gösterir, burada ise harekete göre döner. Bunu bir kez kavradıysan hangi alanın hangi yörüngeyi ürettiğini ezberlemene gerek kalmaz, çünkü bu doğrudan kuvvetin yönünden çıkar."
         },
         "teilpunkte": 3
       },
@@ -41,8 +41,8 @@
         "titel": "Geschwindigkeit aus der Beschleunigungsspannung",
         "inhalt": "Auf der Beschleunigungsstrecke wird die gesamte am Elektron verrichtete elektrische Arbeit in kinetische Energie umgesetzt (Start aus der Ruhe):\n\n$$e\\,U_B = \\frac{1}{2}m\\,v^2 \\quad\\Longrightarrow\\quad v = \\sqrt{\\frac{2\\,e\\,U_B}{m}}$$",
         "warum": {
-          "de": "Die Geschwindigkeit ist im Fadenstrahlrohr nicht direkt messbar — man sieht nur einen leuchtenden Kreis. Der Energiesatz ist deshalb die Brücke von einer bequem einstellbaren Größe (der Spannung) zu einer unzugänglichen Größe (der Geschwindigkeit). Wichtig: Das Elektron startet aus der Ruhe, sonst stünde links eine Energiedifferenz.",
-          "tr": "Hız, fadenstrahlrohr içinde doğrudan ölçülemez — sadece parlayan bir çember görürsün. Enerjinin korunumu bu yüzden kolayca ayarlanabilen bir büyüklükten (gerilim) erişilemeyen bir büyüklüğe (hız) giden köprüdür. Önemli nokta: elektron durgun halden başlar, aksi halde solda bir enerji farkı olurdu."
+          "de": "Die Geschwindigkeit ist im Fadenstrahlrohr nicht direkt messbar. Man sieht nur einen leuchtenden Kreis. Der Energiesatz ist deshalb die Brücke von einer bequem einstellbaren Größe (der Spannung) zu einer unzugänglichen Größe (der Geschwindigkeit). Wichtig: Das Elektron startet aus der Ruhe, sonst stünde links eine Energiedifferenz.",
+          "tr": "Hız, fadenstrahlrohr içinde doğrudan ölçülemez, yalnızca parlayan bir çember görürsün. Enerjinin korunumu bu yüzden kolayca ayarlanabilen bir büyüklükten (gerilim) erişilemeyen bir büyüklüğe (hız) giden köprüdür. Önemli nokta: elektron durgun halden başlar, aksi halde solda bir enerji farkı olurdu."
         },
         "teilpunkte": 3
       },
@@ -51,8 +51,8 @@
         "titel": "Geschwindigkeit eliminieren und nach $\\frac{e}{m}$ auflösen",
         "inhalt": "Aus dem Kräfteansatz folgt zunächst\n\n$$e\\,v\\,B = \\frac{m\\,v^2}{r} \\quad\\Longrightarrow\\quad v = \\frac{e\\,B\\,r}{m}$$\n\nGleichsetzen mit dem Ergebnis aus Schritt 2:\n\n$$\\frac{e\\,B\\,r}{m} = \\sqrt{\\frac{2\\,e\\,U_B}{m}}$$\n\nQuadrieren beider Seiten:\n\n$$\\frac{e^2 B^2 r^2}{m^2} = \\frac{2\\,e\\,U_B}{m} \\quad\\Longrightarrow\\quad \\frac{e}{m} = \\frac{2\\,U_B}{B^2 r^2}$$",
         "warum": {
-          "de": "Das Ziel des Versuchs ist nicht $e$ und nicht $m$ einzeln, sondern ihr Verhältnis — und das ist kein Zufall: In beiden Gleichungen treten Ladung und Masse nur als Quotient auf. Deshalb liefert dieser Aufbau grundsätzlich nur $\\frac{e}{m}$; für $e$ allein braucht man einen zweiten, unabhängigen Versuch (Millikan).",
-          "tr": "Deneyin amacı $e$ veya $m$'yi tek tek bulmak değil, oranlarını bulmaktır — ve bu tesadüf değil: her iki denklemde de yük ve kütle yalnızca bölüm olarak görünür. Bu yüzden bu düzenek ilkesel olarak sadece $\\frac{e}{m}$ verir; tek başına $e$ için ikinci ve bağımsız bir deney (Millikan) gerekir."
+          "de": "Das Ziel des Versuchs ist nicht $e$ und nicht $m$ einzeln, sondern ihr Verhältnis, und das ist kein Zufall: In beiden Gleichungen treten Ladung und Masse nur als Quotient auf. Deshalb liefert dieser Aufbau grundsätzlich nur $\\frac{e}{m}$; für $e$ allein braucht man einen zweiten, unabhängigen Versuch (Millikan).",
+          "tr": "Deneyin amacı $e$ veya $m$'yi tek tek bulmak değil, oranlarını bulmaktır, ve bu tesadüf değil: her iki denklemde de yük ve kütle yalnızca bölüm olarak görünür. Bu yüzden bu düzenek ilkesel olarak sadece $\\frac{e}{m}$ verir; tek başına $e$ için ikinci ve bağımsız bir deney (Millikan) gerekir."
         },
         "teilpunkte": 3
       },
@@ -61,8 +61,8 @@
         "titel": "Zahlenwert berechnen",
         "inhalt": "Einsetzen von $U_B = 250\\ \\text{V}$, $B = 1{,}15\\cdot 10^{-3}\\ \\text{T}$ und $r = 4{,}6\\cdot 10^{-2}\\ \\text{m}$:\n\n$$B^2 r^2 = \\left(1{,}15\\cdot 10^{-3}\\right)^2\\cdot\\left(4{,}6\\cdot 10^{-2}\\right)^2 = 1{,}32\\cdot 10^{-6}\\cdot 2{,}12\\cdot 10^{-3} = 2{,}80\\cdot 10^{-9}$$\n\n$$\\frac{e}{m} = \\frac{2\\cdot 250}{2{,}80\\cdot 10^{-9}} \\approx 1{,}79\\cdot 10^{11}\\ \\frac{\\text{C}}{\\text{kg}}$$",
         "warum": {
-          "de": "$B$ und $r$ gehen quadratisch ein — das ist beim Rechnen und beim Fehlerabschätzen entscheidend. Ein Ablesefehler von einem Prozent beim Radius schlägt mit rund zwei Prozent auf das Ergebnis durch. Deshalb wird der Radius im Versuch immer über den vollen Kreisdurchmesser gemessen und halbiert.",
-          "tr": "$B$ ve $r$ kareli olarak girer — bu hem hesapta hem hata tahmininde belirleyicidir. Yarıçapta yüzde birlik bir okuma hatası sonuca yaklaşık yüzde iki olarak yansır. Bu yüzden deneyde yarıçap her zaman tam çember çapı üzerinden ölçülüp ikiye bölünür."
+          "de": "$B$ und $r$ gehen quadratisch ein, und das ist beim Rechnen und beim Fehlerabschätzen entscheidend. Ein Ablesefehler von einem Prozent beim Radius schlägt mit rund zwei Prozent auf das Ergebnis durch. Deshalb wird der Radius im Versuch immer über den vollen Kreisdurchmesser gemessen und halbiert.",
+          "tr": "$B$ ve $r$ kareli olarak girer. Bu hem hesapta hem hata tahmininde belirleyicidir. Yarıçapta yüzde birlik bir okuma hatası sonuca yaklaşık yüzde iki olarak yansır. Bu yüzden deneyde yarıçap her zaman tam çember çapı üzerinden ölçülüp ikiye bölünür."
         },
         "teilpunkte": 2
       },
@@ -78,7 +78,7 @@
       }
     ],
     "haeufige_fehler": [
-      "Lorentzkraft und Zentripetalkraft als zwei verschiedene, zusätzlich wirkende Kräfte behandelt — die Lorentzkraft *ist* hier die Zentripetalkraft.",
+      "Lorentzkraft und Zentripetalkraft als zwei verschiedene, zusätzlich wirkende Kräfte behandelt. Die Lorentzkraft *ist* hier die Zentripetalkraft.",
       "Durchmesser statt Radius eingesetzt; wegen des Quadrats vervierfacht das den Fehler.",
       "$v$ nicht eliminiert, sondern mit einem geschätzten Wert weitergerechnet.",
       "$\\text{mT}$ und $\\text{cm}$ nicht in SI-Einheiten umgerechnet."

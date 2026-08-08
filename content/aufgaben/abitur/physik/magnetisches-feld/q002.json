@@ -1,7 +1,7 @@
 {
   "bereich": "abitur",
   "id": "q002",
-  "titel": "Heliumkerne im Geschwindigkeitsfilter — Materialprüfung mit einem Ionenstrahl",
+  "titel": "Heliumkerne im Geschwindigkeitsfilter: Materialprüfung mit einem Ionenstrahl",
   "fach": "physik",
   "themenbereich": "Magnetisches Feld und Lorentzkraft",
   "themenbereich_slug": "magnetisches-feld",
@@ -48,8 +48,8 @@
         "titel": "Beschleunigungsspannung über den Energieansatz berechnen",
         "inhalt": "Die im elektrischen Feld aufgenommene Energie erscheint vollständig als kinetische Energie:\n\n$$q_{He}\\cdot U_A = \\frac{1}{2}m_{He}v^2 \\quad\\Longrightarrow\\quad U_A = \\frac{m_{He}\\cdot v^2}{2\\, q_{He}}$$\n\n$$U_A = \\frac{6{,}70\\cdot 10^{-27}\\ \\text{kg}\\cdot \\left(2{,}5\\cdot 10^{6}\\ \\tfrac{\\text{m}}{\\text{s}}\\right)^2}{2\\cdot 3{,}20\\cdot 10^{-19}\\ \\text{C}} = \\frac{4{,}19\\cdot 10^{-14}\\ \\text{J}}{6{,}41\\cdot 10^{-19}\\ \\text{C}} \\approx 6{,}5\\cdot 10^{4}\\ \\text{V} = 65\\ \\text{kV}$$",
         "warum": {
-          "de": "Der Energieansatz ist hier dem Kraftansatz überlegen, weil weder die Länge der Beschleunigungsstrecke noch der genaue Feldverlauf in Sektor A bekannt sind — und beide gehen in die Energiebilanz gar nicht ein. Es zählt allein die durchlaufene Potentialdifferenz, und das macht die Rechnung unabhängig von der Bauform der Anlage.",
-          "tr": "Burada enerji yaklaşımı kuvvet yaklaşımından üstündür, çünkü ne hızlandırma yolunun uzunluğu ne de A sektöründeki alanın tam biçimi bilinmektedir — ve ikisi de enerji bilançosuna zaten girmez. Yalnızca kat edilen potansiyel farkı önemlidir; bu da hesabı düzeneğin yapısından bağımsız kılar."
+          "de": "Der Energieansatz ist hier dem Kraftansatz überlegen, weil weder die Länge der Beschleunigungsstrecke noch der genaue Feldverlauf in Sektor A bekannt sind, und beide gehen in die Energiebilanz gar nicht ein. Es zählt allein die durchlaufene Potentialdifferenz, und das macht die Rechnung unabhängig von der Bauform der Anlage.",
+          "tr": "Burada enerji yaklaşımı kuvvet yaklaşımından üstündür, çünkü ne hızlandırma yolunun uzunluğu ne de A sektöründeki alanın tam biçimi bilinmektedir. Zaten ikisi de enerji bilançosuna zaten girmez. Yalnızca kat edilen potansiyel farkı önemlidir; bu da hesabı düzeneğin yapısından bağımsız kılar."
         },
         "teilpunkte": 4
       },
@@ -58,15 +58,15 @@
         "titel": "Energie in Joule und in Elektronenvolt angeben",
         "inhalt": "Aus der kinetischen Energie folgt unmittelbar\n\n$$E = \\frac{1}{2}m_{He}v^2 = \\frac{1}{2}\\cdot 6{,}70\\cdot 10^{-27}\\ \\text{kg}\\cdot \\left(2{,}5\\cdot 10^{6}\\ \\tfrac{\\text{m}}{\\text{s}}\\right)^2 \\approx 2{,}09\\cdot 10^{-14}\\ \\text{J}$$\n\nUmrechnung mit $1\\ \\text{eV} = 1{,}602\\cdot 10^{-19}\\ \\text{J}$:\n\n$$E = \\frac{2{,}09\\cdot 10^{-14}\\ \\text{J}}{1{,}602\\cdot 10^{-19}\\ \\tfrac{\\text{J}}{\\text{eV}}} \\approx 1{,}31\\cdot 10^{5}\\ \\text{eV} = 131\\ \\text{keV}$$\n\nSchneller geht es über die Ladungszahl: Ein zweifach geladener Kern gewinnt beim Durchlaufen von $65\\ \\text{kV}$ gerade $2\\cdot 65\\ \\text{keV} = 130\\ \\text{keV}$.",
         "warum": {
-          "de": "Das Elektronenvolt ist hier keine bloße Umrechnungsübung: In dieser Einheit lässt sich die Energie ohne Taschenrechner als „Ladungszahl mal Spannung in Volt“ ablesen. Wer diesen Zusammenhang kennt, hat sofort eine unabhängige Kontrolle für das Joule-Ergebnis — die kleine Abweichung zwischen $131$ und $130$ keV stammt nur aus dem Runden von $U_A$.",
-          "tr": "Elektronvolt burada yalnızca bir birim çevirme alıştırması değildir: bu birimde enerji, hesap makinesi olmadan \"yük sayısı çarpı volt cinsinden gerilim\" olarak okunabilir. Bu bağıntıyı bilen, Joule sonucu için anında bağımsız bir denetim eder — $131$ ile $130$ keV arasındaki küçük fark yalnızca $U_A$'nın yuvarlanmasından gelir."
+          "de": "Das Elektronenvolt ist hier keine bloße Umrechnungsübung: In dieser Einheit lässt sich die Energie ohne Taschenrechner als „Ladungszahl mal Spannung in Volt“ ablesen. Wer diesen Zusammenhang kennt, hat sofort eine unabhängige Kontrolle für das Joule-Ergebnis. Die kleine Abweichung zwischen $131$ und $130$ keV stammt nur aus dem Runden von $U_A$.",
+          "tr": "Elektronvolt burada yalnızca bir birim çevirme alıştırması değildir: bu birimde enerji, hesap makinesi olmadan \"yük sayısı çarpı volt cinsinden gerilim\" olarak okunabilir. Bu bağıntıyı bilen, Joule sonucu için anında bağımsız bir denetim eder. $131$ ile $130$ keV arasındaki küçük fark yalnızca $U_A$'nın yuvarlanmasından gelir."
         },
         "teilpunkte": 3
       },
       {
         "nr": 4,
         "titel": "Wirkungsweise des Geschwindigkeitsfilters erklären",
-        "inhalt": "Auf einen Kern, der Sektor B durchquert, wirken zwei Kräfte senkrecht zur Flugrichtung:\n\n$$F_L = q_{He}\\cdot v\\cdot B_B \\qquad\\text{und}\\qquad F_{el} = q_{He}\\cdot E_B$$\n\nGeradlinig fliegt der Kern nur, wenn beide betragsgleich und entgegengesetzt gerichtet sind:\n\n$$q_{He}\\, v\\, B_B = q_{He}\\, E_B \\quad\\Longrightarrow\\quad v = \\frac{E_B}{B_B}$$\n\nEntscheidend ist der Vergleich der beiden Kraftgesetze: $F_L$ ist der Geschwindigkeit **proportional**, $F_{el}$ dagegen von ihr **unabhängig**. Deshalb kann sich das Gleichgewicht nur bei einer einzigen Geschwindigkeit einstellen — schnellere Kerne erfahren eine überwiegende Lorentzkraft und werden nach oben abgelenkt, langsamere eine überwiegende elektrische Kraft und werden nach unten abgelenkt. Beide treffen auf die Blende am Ausgang.\n\nZeigt die Lorentzkraft nach oben, muss die elektrische Kraft auf die **positiven** Kerne nach unten zeigen; das Feld $\\vec{E}$ zeigt also nach unten, und damit ist die **obere Platte positiv** und die untere negativ gepolt.\n\nBemerkenswert: Die Ladung $q_{He}$ kürzt sich heraus. Der Filter wirkt für jede Ionensorte gleich — er trennt nach Geschwindigkeit, nicht nach Masse oder Ladung.",
+        "inhalt": "Auf einen Kern, der Sektor B durchquert, wirken zwei Kräfte senkrecht zur Flugrichtung:\n\n$$F_L = q_{He}\\cdot v\\cdot B_B \\qquad\\text{und}\\qquad F_{el} = q_{He}\\cdot E_B$$\n\nGeradlinig fliegt der Kern nur, wenn beide betragsgleich und entgegengesetzt gerichtet sind:\n\n$$q_{He}\\, v\\, B_B = q_{He}\\, E_B \\quad\\Longrightarrow\\quad v = \\frac{E_B}{B_B}$$\n\nEntscheidend ist der Vergleich der beiden Kraftgesetze: $F_L$ ist der Geschwindigkeit **proportional**, $F_{el}$ dagegen von ihr **unabhängig**. Deshalb kann sich das Gleichgewicht nur bei einer einzigen Geschwindigkeit einstellen: schnellere Kerne erfahren eine überwiegende Lorentzkraft und werden nach oben abgelenkt, langsamere eine überwiegende elektrische Kraft und werden nach unten abgelenkt. Beide treffen auf die Blende am Ausgang.\n\nZeigt die Lorentzkraft nach oben, muss die elektrische Kraft auf die **positiven** Kerne nach unten zeigen; das Feld $\\vec{E}$ zeigt also nach unten, und damit ist die **obere Platte positiv** und die untere negativ gepolt.\n\nBemerkenswert: Die Ladung $q_{He}$ kürzt sich heraus. Der Filter wirkt für jede Ionensorte gleich, denn er trennt nach Geschwindigkeit, nicht nach Masse oder Ladung.",
         "warum": {
           "de": "Der Kern der Erklärung ist nicht das Kräftegleichgewicht selbst, sondern die unterschiedliche $v$-Abhängigkeit der beiden Kräfte. Wären beide proportional zu $v$, wäre das Gleichgewicht für alle Geschwindigkeiten gleichzeitig erfüllt und der Filter würde nichts filtern. Dass $q$ sich herauskürzt, erklärt zugleich, warum hinter dem Filter zwar eine scharfe Geschwindigkeit, aber noch ein Gemisch verschiedener Ionen stehen kann.",
           "tr": "Açıklamanın özü kuvvet dengesinin kendisi değil, iki kuvvetin $v$'ye farklı biçimde bağlı olmasıdır. İkisi de $v$ ile orantılı olsaydı denge bütün hızlar için aynı anda sağlanır ve filtre hiçbir şeyi süzmezdi. $q$'nun sadeleşmesi ise filtrenin ardında keskin bir hız bulunsa bile hâlâ farklı iyonlardan oluşan bir karışım olabileceğini açıklar."
@@ -79,7 +79,7 @@
         "inhalt": "Mit $E_B = \\dfrac{U_B}{d}$ folgt aus der Filterbedingung $v = \\dfrac{E_B}{B_B}$ unmittelbar\n\n$$U_B = v\\cdot B_B\\cdot d = 2{,}5\\cdot 10^{6}\\ \\tfrac{\\text{m}}{\\text{s}}\\cdot 3{,}0\\cdot 10^{-3}\\ \\text{T}\\cdot 4{,}0\\cdot 10^{-2}\\ \\text{m} = 300\\ \\text{V}$$",
         "warum": {
           "de": "Auffällig ist, dass in dieser Formel weder Masse noch Ladung vorkommen: Die Filterspannung hängt nur von der gewünschten Geschwindigkeit und der Geometrie ab. Praktisch heißt das, dass man die Anlage über $U_B$ stufenlos auf eine Zielgeschwindigkeit und damit auf eine Eindringtiefe einstellen kann, ohne über die Ionensorte nachzudenken.",
-          "tr": "Dikkat çekici olan, bu formülde ne kütlenin ne de yükün bulunmasıdır: filtre gerilimi yalnızca istenen hıza ve geometriye bağlıdır. Pratikte bu, düzeneğin $U_B$ üzerinden kademesiz biçimde bir hedef hıza — dolayısıyla bir nüfuz derinliğine — iyon türünü hiç düşünmeden ayarlanabileceği anlamına gelir."
+          "tr": "Dikkat çekici olan, bu formülde ne kütlenin ne de yükün bulunmasıdır: filtre gerilimi yalnızca istenen hıza ve geometriye bağlıdır. Pratikte bu, düzeneğin $U_B$ üzerinden kademesiz biçimde bir hedef hıza, dolayısıyla bir nüfuz derinliğine, iyon türünü hiç düşünmeden ayarlanabileceği anlamına gelir."
         },
         "teilpunkte": 3
       },
@@ -88,8 +88,8 @@
         "titel": "Flussdichte im Ablenksektor berechnen",
         "inhalt": "In Sektor C steht die Lorentzkraft in jedem Bahnpunkt senkrecht auf $\\vec{v}$ und wirkt daher als Zentripetalkraft:\n\n$$F_L = F_Z \\quad\\Longleftrightarrow\\quad q_{He}\\, v\\, B_C = \\frac{m_{He}\\, v^2}{r} \\quad\\Longrightarrow\\quad B_C = \\frac{m_{He}\\, v}{r\\, q_{He}}$$\n\n$$B_C = \\frac{6{,}70\\cdot 10^{-27}\\ \\text{kg}\\cdot 2{,}5\\cdot 10^{6}\\ \\tfrac{\\text{m}}{\\text{s}}}{3{,}5\\ \\text{m}\\cdot 3{,}20\\cdot 10^{-19}\\ \\text{C}} \\approx 1{,}5\\cdot 10^{-2}\\ \\text{T} = 15\\ \\text{mT}$$",
         "warum": {
-          "de": "Beim Gleichsetzen kürzt sich ein Faktor $v$ heraus — deshalb hängt $B_C$ nur linear und nicht quadratisch von der Geschwindigkeit ab. Das ist der Grund, warum eine Verdopplung der Strahlgeschwindigkeit lediglich eine Verdopplung des Ablenkfeldes erfordert und die Anlage überhaupt regelbar bleibt.",
-          "tr": "Eşitlemede bir $v$ çarpanı sadeleşir — bu yüzden $B_C$ hıza karesel değil yalnızca doğrusal bağlıdır. Demet hızının iki katına çıkarılmasının saptırma alanının da yalnızca iki katına çıkarılmasını gerektirmesinin ve düzeneğin ayarlanabilir kalmasının sebebi tam budur."
+          "de": "Beim Gleichsetzen kürzt sich ein Faktor $v$ heraus. Deshalb hängt $B_C$ nur linear und nicht quadratisch von der Geschwindigkeit ab. Das ist der Grund, warum eine Verdopplung der Strahlgeschwindigkeit lediglich eine Verdopplung des Ablenkfeldes erfordert und die Anlage überhaupt regelbar bleibt.",
+          "tr": "Eşitlemede bir $v$ çarpanı sadeleşir. Bu yüzden $B_C$ hıza karesel değil yalnızca doğrusal bağlıdır. Demet hızının iki katına çıkarılmasının saptırma alanının da yalnızca iki katına çıkarılmasını gerektirmesinin ve düzeneğin ayarlanabilir kalmasının sebebi tam budur."
         },
         "teilpunkte": 4
       }
@@ -99,7 +99,7 @@
       "In Teilaufgabe b) die Formel für Elektronen ($q = e$) übernommen und dadurch eine doppelt so große Beschleunigungsspannung erhalten.",
       "Den Plattenabstand $d = 4{,}0\\ \\text{cm}$ nicht in Meter umgerechnet, wodurch $U_B$ um den Faktor $100$ zu groß wird.",
       "In Teilaufgabe f) $F_L = F_Z$ nach $B$ aufgelöst, ohne das $v$ zu kürzen, und dadurch fälschlich $B_C \\sim v^2$ erhalten.",
-      "Bei der Polung nur an die Feldrichtung gedacht und vergessen, dass die Kraft auf eine positive Ladung in Feldrichtung zeigt — bei negativen Teilchen wäre die Polung genau umgekehrt."
+      "Bei der Polung nur an die Feldrichtung gedacht und vergessen, dass die Kraft auf eine positive Ladung in Feldrichtung zeigt. Bei negativen Teilchen wäre die Polung genau umgekehrt."
     ]
   },
   "quelle": "eigene Aufgabe im Stil von Hessen Landesabitur Physik 2014, Grundkurs, Aufgabe A1 (Therapie)",

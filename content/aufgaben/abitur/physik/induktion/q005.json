@@ -15,7 +15,7 @@
   "material": [],
   "tipps": [
     "Die Drehzahl ist in Umdrehungen pro Minute angegeben, die Kreisfrequenz braucht Umdrehungen pro Sekunde. Rechne zuerst um, bevor du irgendetwas einsetzt.",
-    "Überlege, welche Winkelfunktion bei $t = 0$ ihren Maximalwert hat — daran entscheidet sich, ob in $\\Phi(t)$ ein Sinus oder ein Kosinus steht.",
+    "Überlege, welche Winkelfunktion bei $t = 0$ ihren Maximalwert hat. Daran entscheidet sich, ob in $\\Phi(t)$ ein Sinus oder ein Kosinus steht.",
     "Für Teilaufgabe c) hilft der Blick auf die Steigung: Das Induktionsgesetz verknüpft die Spannung nicht mit dem Wert von $\\Phi$, sondern mit dessen Änderungsrate."
   ],
   "loesung": {
@@ -26,8 +26,8 @@
         "titel": "Kreisfrequenz und maximaler Fluss",
         "inhalt": "Drehzahl in Umdrehungen pro Sekunde:\n\n$$f = \\frac{600}{60\\ \\text{s}} = 10\\ \\text{s}^{-1} \\quad\\Longrightarrow\\quad \\omega = 2\\pi f \\approx 62{,}8\\ \\text{s}^{-1},\\qquad T = \\frac{1}{f} = 0{,}10\\ \\text{s}$$\n\nMaximaler Fluss durch eine Windung mit $A = 250\\ \\text{cm}^2 = 2{,}50\\cdot 10^{-2}\\ \\text{m}^2$:\n\n$$\\Phi_\\text{max} = B\\cdot A = 0{,}12\\ \\text{T}\\cdot 2{,}50\\cdot 10^{-2}\\ \\text{m}^2 = 3{,}0\\cdot 10^{-3}\\ \\text{Vs}$$",
         "warum": {
-          "de": "$\\Phi = B\\cdot A$ gilt nur, solange die Feldlinien senkrecht durch die Fläche treten — deshalb ist $3{,}0\\cdot 10^{-3}\\ \\text{Vs}$ nicht „der Fluss\", sondern nur sein Höchstwert im Augenblick $t = 0$. Diese Unterscheidung ist die Grundlage der ganzen Aufgabe.",
-          "tr": "$\\Phi = B\\cdot A$ bağıntısı yalnızca alan çizgileri yüzeyi dik kestiği sürece geçerlidir — bu yüzden $3{,}0\\cdot 10^{-3}\\ \\text{Vs}$ değeri „akı\" değil, yalnızca $t = 0$ anındaki en büyük değeridir. Bu ayrım sorunun tamamının temelidir."
+          "de": "$\\Phi = B\\cdot A$ gilt nur, solange die Feldlinien senkrecht durch die Fläche treten. Deshalb ist $3{,}0\\cdot 10^{-3}\\ \\text{Vs}$ nicht „der Fluss\", sondern nur sein Höchstwert im Augenblick $t = 0$. Diese Unterscheidung ist die Grundlage der ganzen Aufgabe.",
+          "tr": "$\\Phi = B\\cdot A$ bağıntısı yalnızca alan çizgileri yüzeyi dik kestiği sürece geçerlidir. Bu yüzden $3{,}0\\cdot 10^{-3}\\ \\text{Vs}$ değeri „akı\" değil, yalnızca $t = 0$ anındaki en büyük değeridir. Bu ayrım sorunun tamamının temelidir."
         },
         "teilpunkte": 3
       },
@@ -44,7 +44,7 @@
       {
         "nr": 3,
         "titel": "Diagramme für drei volle Umdrehungen",
-        "inhalt": "Drei Umdrehungen dauern $3\\cdot T = 0{,}30\\ \\text{s}$; die Zeitachse reicht also von $0$ bis $0{,}30\\ \\text{s}$.\n\n**Oberes Diagramm ($\\Phi$-$t$):** Kosinuskurve, Achsenbeschriftung $\\Phi$ in $10^{-3}\\ \\text{Vs}$. Start bei $+3{,}0\\cdot 10^{-3}\\ \\text{Vs}$, Nulldurchgang bei $0{,}025\\ \\text{s}$, Minimum $-3{,}0\\cdot 10^{-3}\\ \\text{Vs}$ bei $0{,}050\\ \\text{s}$, Nulldurchgang bei $0{,}075\\ \\text{s}$, wieder Maximum bei $0{,}10\\ \\text{s}$ — insgesamt drei vollständige Perioden.\n\n**Unteres Diagramm ($U$-$t$):** Sinuskurve mit derselben Periodendauer $0{,}10\\ \\text{s}$ und der Amplitude $75{,}4\\ \\text{V}$. Start im Nullpunkt, Maximum $+75{,}4\\ \\text{V}$ bei $0{,}025\\ \\text{s}$, Nulldurchgang bei $0{,}050\\ \\text{s}$, Minimum $-75{,}4\\ \\text{V}$ bei $0{,}075\\ \\text{s}$.\n\nBeide Kurven sind um eine Viertelperiode ($0{,}025\\ \\text{s}$) gegeneinander verschoben: Wo die eine Kurve einen Extremwert hat, schneidet die andere die Zeitachse.",
+        "inhalt": "Drei Umdrehungen dauern $3\\cdot T = 0{,}30\\ \\text{s}$; die Zeitachse reicht also von $0$ bis $0{,}30\\ \\text{s}$.\n\n**Oberes Diagramm ($\\Phi$-$t$):** Kosinuskurve, Achsenbeschriftung $\\Phi$ in $10^{-3}\\ \\text{Vs}$. Start bei $+3{,}0\\cdot 10^{-3}\\ \\text{Vs}$, Nulldurchgang bei $0{,}025\\ \\text{s}$, Minimum $-3{,}0\\cdot 10^{-3}\\ \\text{Vs}$ bei $0{,}050\\ \\text{s}$, Nulldurchgang bei $0{,}075\\ \\text{s}$, wieder Maximum bei $0{,}10\\ \\text{s}$, insgesamt also drei vollständige Perioden.\n\n**Unteres Diagramm ($U$-$t$):** Sinuskurve mit derselben Periodendauer $0{,}10\\ \\text{s}$ und der Amplitude $75{,}4\\ \\text{V}$. Start im Nullpunkt, Maximum $+75{,}4\\ \\text{V}$ bei $0{,}025\\ \\text{s}$, Nulldurchgang bei $0{,}050\\ \\text{s}$, Minimum $-75{,}4\\ \\text{V}$ bei $0{,}075\\ \\text{s}$.\n\nBeide Kurven sind um eine Viertelperiode ($0{,}025\\ \\text{s}$) gegeneinander verschoben: Wo die eine Kurve einen Extremwert hat, schneidet die andere die Zeitachse.",
         "warum": {
           "de": "Zwei Diagramme mit gemeinsamer Zeitachse untereinander zu zeichnen ist keine Formsache: Nur so wird die Viertelperioden-Verschiebung sichtbar, die man in Teilaufgabe c) begründen soll. Zwei getrennt gezeichnete Kurven mit unterschiedlichen Zeitmaßstäben verbergen genau die Aussage, um die es geht.",
           "tr": "İki grafiği ortak zaman ekseniyle alt alta çizmek biçimsel bir ayrıntı değildir: çeyrek periyotluk kaymayı ancak böyle görünür kılarsınız, ki c şıkkında gerekçelendirilmesi istenen tam da budur. Ayrı ölçeklerle ayrı ayrı çizilen iki eğri, asıl anlatılmak isteneni gizler."
@@ -54,10 +54,10 @@
       {
         "nr": 4,
         "titel": "Begründung der Phasenverschiebung",
-        "inhalt": "Das Induktionsgesetz verknüpft die Spannung mit der **Änderungsrate** des Flusses, nicht mit dessen Wert:\n\n$$U = -N\\cdot\\frac{\\Delta\\Phi}{\\Delta t}$$\n\nIm Diagramm entspricht $\\dfrac{\\Delta\\Phi}{\\Delta t}$ der Steigung der $\\Phi$-$t$-Kurve.\n\n- Beim **Nulldurchgang** von $\\Phi$ liegt die Spulenfläche parallel zu den Feldlinien. Dort verläuft die Kosinuskurve am steilsten, die Steigung ist betragsmäßig maximal — also ist auch $|U|$ maximal.\n- Im **Extremum** von $\\Phi$ steht die Spulenfläche senkrecht zu den Feldlinien. Dort hat die Kurve eine waagerechte Tangente, die Steigung ist null — also ist $U = 0$, obwohl der Fluss gerade am größten ist.\n\nAnschaulich: Beim Durchgang durch die Feldrichtung schneidet die Spule in derselben Zeit die meisten Feldlinien; im Umkehrpunkt ändert sich die durchsetzte Fläche momentan gar nicht.",
+        "inhalt": "Das Induktionsgesetz verknüpft die Spannung mit der **Änderungsrate** des Flusses, nicht mit dessen Wert:\n\n$$U = -N\\cdot\\frac{\\Delta\\Phi}{\\Delta t}$$\n\nIm Diagramm entspricht $\\dfrac{\\Delta\\Phi}{\\Delta t}$ der Steigung der $\\Phi$-$t$-Kurve.\n\n- Beim **Nulldurchgang** von $\\Phi$ liegt die Spulenfläche parallel zu den Feldlinien. Dort verläuft die Kosinuskurve am steilsten, die Steigung ist betragsmäßig maximal, also ist auch $|U|$ maximal.\n- Im **Extremum** von $\\Phi$ steht die Spulenfläche senkrecht zu den Feldlinien. Dort hat die Kurve eine waagerechte Tangente, die Steigung ist null, also ist $U = 0$, obwohl der Fluss gerade am größten ist.\n\nAnschaulich: Beim Durchgang durch die Feldrichtung schneidet die Spule in derselben Zeit die meisten Feldlinien; im Umkehrpunkt ändert sich die durchsetzte Fläche momentan gar nicht.",
         "warum": {
-          "de": "Hier sitzt der hartnäckigste Denkfehler der ganzen Induktion: „viel Fluss also viel Spannung\". Ein ruhender Magnet in einer Spule erzeugt beliebig großen Fluss und trotzdem null Volt. Induktion ist ausschließlich ein Effekt der Änderung — deshalb steht im Gesetz eine Ableitung und kein Produkt.",
-          "tr": "İndüksiyon konusunun en inatçı kavram yanılgısı buradadır: „akı büyükse gerilim de büyüktür\". Bobinin içinde duran bir mıknatıs istediği kadar büyük akı oluştursun, gerilim sıfırdır. İndüksiyon yalnızca değişimin sonucudur — yasada bu yüzden bir çarpım değil, bir türev vardır."
+          "de": "Hier sitzt der hartnäckigste Denkfehler der ganzen Induktion: „viel Fluss also viel Spannung\". Ein ruhender Magnet in einer Spule erzeugt beliebig großen Fluss und trotzdem null Volt. Induktion ist ausschließlich ein Effekt der Änderung. Deshalb steht im Gesetz eine Ableitung und kein Produkt.",
+          "tr": "İndüksiyon konusunun en inatçı kavram yanılgısı buradadır: „akı büyükse gerilim de büyüktür\". Bobinin içinde duran bir mıknatıs istediği kadar büyük akı oluştursun, gerilim sıfırdır. İndüksiyon yalnızca değişimin sonucudur. Yasada bu yüzden bir çarpım değil, bir türev vardır."
         },
         "teilpunkte": 4
       },
@@ -66,18 +66,18 @@
         "titel": "Drehzahl für einen Scheitelwert von 100 V",
         "inhalt": "Da $\\hat{U} = N\\cdot B\\cdot A\\cdot\\omega$ proportional zu $\\omega$ und damit zur Drehzahl ist, gilt\n\n$$\\frac{n_\\text{neu}}{n_\\text{alt}} = \\frac{\\hat{U}_\\text{neu}}{\\hat{U}_\\text{alt}} \\quad\\Longrightarrow\\quad n_\\text{neu} = 600\\ \\text{min}^{-1}\\cdot\\frac{100\\ \\text{V}}{75{,}4\\ \\text{V}} \\approx 796\\ \\text{min}^{-1}$$\n\nDie Turbine müsste also mit rund $8{,}0\\cdot 10^{2}$ Umdrehungen pro Minute laufen.\n\nKontrolle über den direkten Weg: $\\omega = \\dfrac{100\\ \\text{V}}{400\\cdot 3{,}0\\cdot 10^{-3}\\ \\text{Vs}} \\approx 83{,}3\\ \\text{s}^{-1}$, also $f \\approx 13{,}3\\ \\text{s}^{-1}$ und $n \\approx 796\\ \\text{min}^{-1}$.",
         "warum": {
-          "de": "Die Proportionalität ist der schnellere Weg, aber sie gilt nur, weil $N$, $B$ und $A$ unverändert bleiben. Änderte man zugleich die Windungszahl, wäre der Dreisatz falsch. Deshalb lohnt sich die Gegenrechnung über die Formel — sie prüft nicht nur die Zahl, sondern auch die Voraussetzung.",
-          "tr": "Doğru orantı daha hızlı yoldur, ama yalnızca $N$, $B$ ve $A$ değişmediği için geçerlidir. Aynı anda sarım sayısı da değiştirilseydi orantı yanlış olurdu. Bu yüzden formülle yapılan ikinci hesap değerlidir — yalnızca sayıyı değil, varsayımı da denetler."
+          "de": "Die Proportionalität ist der schnellere Weg, aber sie gilt nur, weil $N$, $B$ und $A$ unverändert bleiben. Änderte man zugleich die Windungszahl, wäre der Dreisatz falsch. Deshalb lohnt sich die Gegenrechnung über die Formel: sie prüft nicht nur die Zahl, sondern auch die Voraussetzung.",
+          "tr": "Doğru orantı daha hızlı yoldur, ama yalnızca $N$, $B$ ve $A$ değişmediği için geçerlidir. Aynı anda sarım sayısı da değiştirilseydi orantı yanlış olurdu. Bu yüzden formülle yapılan ikinci hesap değerlidir: yalnızca sayıyı değil, varsayımı da denetler."
         },
         "teilpunkte": 3
       },
       {
         "nr": 6,
         "titel": "Mehr Verbraucher, mehr Wasser: Energiebilanz und Lenzsche Regel",
-        "inhalt": "Werden Heizlüfter zugeschaltet, sinkt der Gesamtwiderstand des angeschlossenen Netzes und es fließt ein größerer Strom durch die Generatorspule. Die abgegebene elektrische Leistung $P = U\\cdot I$ steigt.\n\nNach der Lenzschen Regel wirkt der Induktionsstrom seiner Ursache entgegen: Auf die stromdurchflossene Spule wirkt im Magnetfeld ein bremsendes Drehmoment, das mit der Stromstärke wächst. Die Turbine würde daher langsamer werden.\n\nDamit die Drehzahl konstant bleibt, muss das Wasser ein entsprechend größeres Antriebsdrehmoment liefern — also muss pro Sekunde mehr Wasser durch die Turbine strömen. Die zusätzliche elektrische Energie stammt vollständig aus der mechanischen Energie des Wassers.",
+        "inhalt": "Werden Heizlüfter zugeschaltet, sinkt der Gesamtwiderstand des angeschlossenen Netzes und es fließt ein größerer Strom durch die Generatorspule. Die abgegebene elektrische Leistung $P = U\\cdot I$ steigt.\n\nNach der Lenzschen Regel wirkt der Induktionsstrom seiner Ursache entgegen: Auf die stromdurchflossene Spule wirkt im Magnetfeld ein bremsendes Drehmoment, das mit der Stromstärke wächst. Die Turbine würde daher langsamer werden.\n\nDamit die Drehzahl konstant bleibt, muss das Wasser ein entsprechend größeres Antriebsdrehmoment liefern, also muss pro Sekunde mehr Wasser durch die Turbine strömen. Die zusätzliche elektrische Energie stammt vollständig aus der mechanischen Energie des Wassers.",
         "warum": {
-          "de": "Ein Generator „erzeugt\" keine Energie, er wandelt sie um — und er entnimmt der Antriebsseite genau so viel, wie er elektrisch abgibt. Genau darum wird ein Kraftwerk bei steigender Last nicht von selbst schwächer, sondern muss aktiv nachgeregelt werden; dieselbe Überlegung erklärt auch die Bremswirkung beim Fahrraddynamo.",
-          "tr": "Bir jeneratör enerji „üretmez\", dönüştürür — ve elektriksel olarak verdiği kadarını tahrik tarafından çeker. Bir santralin yük arttığında kendiliğinden zayıflamayıp aktif olarak beslenmesi gerekmesinin nedeni tam olarak budur; aynı düşünce bisiklet dinamosunun frenleme etkisini de açıklar."
+          "de": "Ein Generator „erzeugt\" keine Energie, er wandelt sie um und entnimmt der Antriebsseite genau so viel, wie er elektrisch abgibt. Genau darum wird ein Kraftwerk bei steigender Last nicht von selbst schwächer, sondern muss aktiv nachgeregelt werden; dieselbe Überlegung erklärt auch die Bremswirkung beim Fahrraddynamo.",
+          "tr": "Bir jeneratör enerji „üretmez\", dönüştürür ve elektriksel olarak verdiği kadarını tahrik tarafından çeker. Bir santralin yük arttığında kendiliğinden zayıflamayıp aktif olarak beslenmesi gerekmesinin nedeni tam olarak budur; aynı düşünce bisiklet dinamosunun frenleme etkisini de açıklar."
         },
         "teilpunkte": 3
       }
@@ -86,7 +86,7 @@
       "Die Drehzahl $600\\ \\text{min}^{-1}$ direkt als $\\omega$ eingesetzt, statt erst durch $60\\ \\text{s}$ zu teilen und dann mit $2\\pi$ zu multiplizieren.",
       "$250\\ \\text{cm}^2$ als $0{,}25\\ \\text{m}^2$ statt als $2{,}50\\cdot 10^{-2}\\ \\text{m}^2$ umgerechnet.",
       "Sinus und Kosinus vertauscht: Bei maximalem Anfangsfluss beschreibt der Kosinus den Fluss und der Sinus die Spannung.",
-      "Behauptet, die Spannung sei dann am größten, wenn der Fluss am größten ist — maßgeblich ist die Steigung der $\\Phi$-$t$-Kurve, nicht ihr Wert."
+      "Behauptet, die Spannung sei dann am größten, wenn der Fluss am größten ist. Maßgeblich ist die Steigung der $\\Phi$-$t$-Kurve, nicht ihr Wert."
     ]
   },
   "quelle": "eigene Aufgabe im Stil von Hessen Landesabitur Physik 2014, Grundkurs, Aufgabe B2 (Windkraftanlagen)",

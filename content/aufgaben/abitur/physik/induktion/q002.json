@@ -27,7 +27,7 @@
     }
   ],
   "tipps": [
-    "Halte zuerst fest, welche der beiden Größen im Produkt $\\Phi = B\\cdot A$ sich im jeweiligen Versuch ändert — im ersten Versuch eine andere als im zweiten.",
+    "Halte zuerst fest, welche der beiden Größen im Produkt $\\Phi = B\\cdot A$ sich im jeweiligen Versuch ändert: im ersten Versuch eine andere als im zweiten.",
     "Beim Eintauchen wächst die vom Feld durchsetzte Fläche. Schreibe diesen Zuwachs als Produkt aus einer festen Kantenlänge und dem in der Zeit $\\Delta t$ zurückgelegten Weg.",
     "Für Teil d) reicht es, drei Momentaufnahmen zu vergleichen: Schleife noch ganz draußen, Schleife halb drin, Schleife ganz drin. Frage dich jedes Mal nur: Ändert sich die durchsetzte Fläche?"
   ],
@@ -37,10 +37,10 @@
       {
         "nr": 1,
         "titel": "Entstehung der Spannung erklären",
-        "inhalt": "**Erklärung über die Flussänderung:** Solange die Leiterschleife in den Feldbereich hineinragt, aber noch nicht vollständig darin ist, wächst die vom Magnetfeld durchsetzte Fläche $A$ der Schleife. Da $B$ konstant ist, ändert sich damit der magnetische Fluss\n\n$$\\Phi = B\\cdot A$$\n\nNach dem Induktionsgesetz $U_{ind} = -N\\cdot\\frac{\\Delta\\Phi}{\\Delta t}$ hat jede Flussänderung eine Induktionsspannung zur Folge.\n\n**Gleichwertige Erklärung über die Lorentzkraft:** Auf die Leitungselektronen in der vorderen, senkrechten Kante der Schleife wirkt im Feld die Lorentzkraft $F_L = e\\cdot v\\cdot B$. Sie verschiebt die Elektronen längs dieser Kante zu einem Ende hin. Dort entsteht Elektronenüberschuss, am anderen Ende Elektronenmangel. Das dabei aufgebaute elektrische Feld übt eine Gegenkraft aus; im Gleichgewicht bleibt eine feste Potentialdifferenz bestehen — das ist die gemessene Spannung.",
+        "inhalt": "**Erklärung über die Flussänderung:** Solange die Leiterschleife in den Feldbereich hineinragt, aber noch nicht vollständig darin ist, wächst die vom Magnetfeld durchsetzte Fläche $A$ der Schleife. Da $B$ konstant ist, ändert sich damit der magnetische Fluss\n\n$$\\Phi = B\\cdot A$$\n\nNach dem Induktionsgesetz $U_{ind} = -N\\cdot\\frac{\\Delta\\Phi}{\\Delta t}$ hat jede Flussänderung eine Induktionsspannung zur Folge.\n\n**Gleichwertige Erklärung über die Lorentzkraft:** Auf die Leitungselektronen in der vorderen, senkrechten Kante der Schleife wirkt im Feld die Lorentzkraft $F_L = e\\cdot v\\cdot B$. Sie verschiebt die Elektronen längs dieser Kante zu einem Ende hin. Dort entsteht Elektronenüberschuss, am anderen Ende Elektronenmangel. Das dabei aufgebaute elektrische Feld übt eine Gegenkraft aus; im Gleichgewicht bleibt eine feste Potentialdifferenz bestehen, und das ist die gemessene Spannung.",
         "warum": {
-          "de": "Beide Erklärungen sind für diese Situation richtig und im Abitur gleichwertig, sie beschreiben aber verschiedene Ebenen: Das Induktionsgesetz ist die Bilanz für den ganzen Stromkreis, die Lorentzkraft der Mechanismus an einem einzelnen Elektron. Wer nur eine Sprechweise kennt, scheitert an der jeweils anderen Aufgabenvariante — bei einem ruhenden Leiter im veränderlichen Feld versagt die Lorentzkraft-Erzählung nämlich, weil sich dort gar nichts bewegt.",
-          "tr": "Bu durumda iki açıklama da doğrudur ve Abitur'da eşdeğer sayılır, ama farklı düzeyleri anlatırlar: indüksiyon yasası bütün devre için bir bilançodur, Lorentz kuvveti ise tek bir elektron üzerindeki mekanizmadır. Yalnızca birini bilen öğrenci öteki soru tipinde takılır — çünkü değişen alan içinde duran bir iletkende Lorentz kuvveti anlatısı çöker, orada hareket eden hiçbir şey yoktur."
+          "de": "Beide Erklärungen sind für diese Situation richtig und im Abitur gleichwertig, sie beschreiben aber verschiedene Ebenen: Das Induktionsgesetz ist die Bilanz für den ganzen Stromkreis, die Lorentzkraft der Mechanismus an einem einzelnen Elektron. Wer nur eine Sprechweise kennt, scheitert an der jeweils anderen Aufgabenvariante: bei einem ruhenden Leiter im veränderlichen Feld versagt die Lorentzkraft-Erzählung nämlich, weil sich dort gar nichts bewegt.",
+          "tr": "Bu durumda iki açıklama da doğrudur ve Abitur'da eşdeğer sayılır, ama farklı düzeyleri anlatırlar: indüksiyon yasası bütün devre için bir bilançodur, Lorentz kuvveti ise tek bir elektron üzerindeki mekanizmadır. Yalnızca birini bilen öğrenci öteki soru tipinde takılır, çünkü değişen alan içinde duran bir iletkende Lorentz kuvveti anlatısı çöker, orada hareket eden hiçbir şey yoktur."
         },
         "teilpunkte": 4
       },
@@ -49,8 +49,8 @@
         "titel": "Die Messformel aus dem Induktionsgesetz entwickeln",
         "inhalt": "Mit $N = 1$ und konstantem $B$ vereinfacht sich das Induktionsgesetz zu\n\n$$|U_{ind}| = \\left|\\frac{\\Delta\\Phi}{\\Delta t}\\right| = \\left|\\frac{\\Delta (B\\cdot A)}{\\Delta t}\\right| = B\\cdot\\frac{\\Delta A}{\\Delta t}$$\n\nSchiebt sich die Schleife in der Zeit $\\Delta t$ um die Strecke $\\Delta s$ weiter in das Feld hinein, so überstreicht die vordere senkrechte Kante der Höhe $a$ dabei die zusätzliche Fläche\n\n$$\\Delta A = a\\cdot\\Delta s$$\n\nEingesetzt:\n\n$$|U_{ind}| = B\\cdot\\frac{a\\cdot\\Delta s}{\\Delta t} = B\\cdot a\\cdot\\frac{\\Delta s}{\\Delta t} = B\\cdot a\\cdot v$$\n\nAuflösen nach der gesuchten Geschwindigkeit:\n\n$$v = \\frac{|U_{ind}|}{B\\cdot a}$$",
         "warum": {
-          "de": "Erst die Herleitung macht sichtbar, warum in der Formel die Höhe $a$ steht und nicht die Länge $b$: Nur die Kante, die die Feldgrenze überquert, „fegt“ neue Fläche in das Feld. Genau deshalb ist die Messung auch überhaupt brauchbar — $B$ und $a$ sind feste Apparaturkonstanten, sodass die angezeigte Spannung direkt proportional zur gesuchten Geschwindigkeit ist und ohne Kalibrierkurve umgerechnet werden kann.",
-          "tr": "Formülü ancak türetme anlaşılır kılar: içinde neden $b$ uzunluğunun değil $a$ yüksekliğinin bulunduğunu gösterir — alan sınırını geçen kenar, alanın içine yeni yüzey \"süpüren\" tek kenardır. Ölçümün kullanışlı olmasının nedeni de tam budur: $B$ ve $a$ düzeneğin sabitleridir, dolayısıyla okunan gerilim aranan hızla doğru orantılıdır ve kalibrasyon eğrisi olmadan çevrilebilir."
+          "de": "Erst die Herleitung macht sichtbar, warum in der Formel die Höhe $a$ steht und nicht die Länge $b$: Nur die Kante, die die Feldgrenze überquert, „fegt“ neue Fläche in das Feld. Genau deshalb ist die Messung auch überhaupt brauchbar: $B$ und $a$ sind feste Apparaturkonstanten, sodass die angezeigte Spannung direkt proportional zur gesuchten Geschwindigkeit ist und ohne Kalibrierkurve umgerechnet werden kann.",
+          "tr": "Formülü ancak türetme anlaşılır kılar: içinde neden $b$ uzunluğunun değil $a$ yüksekliğinin bulunduğunu gösterir: alan sınırını geçen kenar, alanın içine yeni yüzey \"süpüren\" tek kenardır. Ölçümün kullanışlı olmasının nedeni de tam budur: $B$ ve $a$ düzeneğin sabitleridir, dolayısıyla okunan gerilim aranan hızla doğru orantılıdır ve kalibrasyon eğrisi olmadan çevrilebilir."
         },
         "teilpunkte": 4
       },
@@ -59,8 +59,8 @@
         "titel": "Spannungswert berechnen",
         "inhalt": "Zuerst alle Größen in SI-Einheiten:\n\n$$a = 4{,}0\\ \\text{cm} = 0{,}040\\ \\text{m}, \\qquad v = 45\\ \\frac{\\text{cm}}{\\text{s}} = 0{,}45\\ \\frac{\\text{m}}{\\text{s}}$$\n\n$$|U_{ind}| = B\\cdot a\\cdot v = 0{,}35\\ \\text{T}\\cdot 0{,}040\\ \\text{m}\\cdot 0{,}45\\ \\frac{\\text{m}}{\\text{s}} = 6{,}3\\cdot 10^{-3}\\ \\text{V} = 6{,}3\\ \\text{mV}$$",
         "warum": {
-          "de": "Die Größenordnung ist selbst ein Ergebnis: Wenige Millivolt sind der Grund, weshalb die Aufgabe ausdrücklich ein hochohmiges Messgerät nennt. Ein niederohmiges Gerät würde einen merklichen Strom ziehen, dieser Strom erzeugte nach der Lenzschen Regel eine Bremskraft — der Messvorgang würde die Geschwindigkeit verändern, die er messen soll.",
-          "tr": "Büyüklük mertebesi başlı başına bir sonuçtur: sonucun birkaç milivolt çıkması, soruda neden özellikle yüksek dirençli bir ölçü aletinden söz edildiğini açıklar. Düşük dirençli bir alet kayda değer bir akım çeker, bu akım Lenz kuralına göre bir frenleme kuvveti doğurur — ölçüm, ölçmek istediği hızı değiştirmiş olur."
+          "de": "Die Größenordnung ist selbst ein Ergebnis: Wenige Millivolt sind der Grund, weshalb die Aufgabe ausdrücklich ein hochohmiges Messgerät nennt. Ein niederohmiges Gerät würde einen merklichen Strom ziehen, dieser Strom erzeugte nach der Lenzschen Regel eine Bremskraft; der Messvorgang würde also die Geschwindigkeit verändern, die er messen soll.",
+          "tr": "Büyüklük mertebesi başlı başına bir sonuçtur: sonucun birkaç milivolt çıkması, soruda neden özellikle yüksek dirençli bir ölçü aletinden söz edildiğini açıklar. Düşük dirençli bir alet kayda değer bir akım çeker, bu akım Lenz kuralına göre bir frenleme kuvveti doğurur, yani ölçüm, ölçmek istediği hızı değiştirmiş olur."
         },
         "teilpunkte": 3
       },
@@ -69,8 +69,8 @@
         "titel": "Streckenabschnitte mit und ohne Ausschlag begründen",
         "inhalt": "Maßgeblich ist allein, ob sich die vom Feld durchsetzte Fläche ändert:\n\n- **Schleife vollständig vor dem Feldbereich:** $A = 0$, konstant $\\Longrightarrow$ kein Ausschlag.\n- **Schleife taucht ein** (Fahrweg $10\\ \\text{cm}$, da $b = 10\\ \\text{cm}$): $A$ wächst $\\Longrightarrow$ Ausschlag.\n- **Schleife vollständig im Feld:** Wegen $b = 10\\ \\text{cm} < L = 15\\ \\text{cm}$ gibt es diese Phase; sie dauert über einen Fahrweg von $L - b = 5{,}0\\ \\text{cm}$. Hier ist $A = a\\cdot b$ konstant $\\Longrightarrow$ kein Ausschlag, obwohl der Schlitten weiterfährt.\n- **Schleife taucht aus:** $A$ nimmt ab $\\Longrightarrow$ Ausschlag, jetzt mit umgekehrtem Vorzeichen.\n- **Schleife vollständig hinter dem Feldbereich:** wieder $A = 0$ $\\Longrightarrow$ kein Ausschlag.\n\nDas Messverfahren funktioniert also nur, solange eine der beiden senkrechten Kanten die Feldgrenze überquert.",
         "warum": {
-          "de": "Hier entscheidet sich, ob das Induktionsgesetz wirklich verstanden wurde: Der Schlitten bewegt sich in der mittleren Phase genauso schnell wie beim Eintauchen, und trotzdem zeigt das Gerät null an. Bewegung allein induziert nichts — nur die Änderung des Flusses tut es. Der Zahlenvergleich $b < L$ ist dabei kein Nebensatz: Wäre die Schleife länger als der Feldbereich, entfiele diese Nullphase vollständig.",
-          "tr": "İndüksiyon yasasının gerçekten anlaşılıp anlaşılmadığı burada belli olur: orta evrede kızak, alana girerkenki hızın aynısıyla ilerler, buna rağmen alet sıfır gösterir. Hareketin kendisi hiçbir şey indüklemez — bunu yalnızca akının değişimi yapar. $b < L$ karşılaştırması da bir ayrıntı değildir: ilmek alan bölgesinden uzun olsaydı bu sıfır evresi hiç oluşmazdı."
+          "de": "Hier entscheidet sich, ob das Induktionsgesetz wirklich verstanden wurde: Der Schlitten bewegt sich in der mittleren Phase genauso schnell wie beim Eintauchen, und trotzdem zeigt das Gerät null an. Bewegung allein induziert nichts, nur die Änderung des Flusses tut es. Der Zahlenvergleich $b < L$ ist dabei kein Nebensatz: Wäre die Schleife länger als der Feldbereich, entfiele diese Nullphase vollständig.",
+          "tr": "İndüksiyon yasasının gerçekten anlaşılıp anlaşılmadığı burada belli olur: orta evrede kızak, alana girerkenki hızın aynısıyla ilerler, buna rağmen alet sıfır gösterir. Hareketin kendisi hiçbir şey indüklemez, bunu yalnızca akının değişimi yapar. $b < L$ karşılaştırması da bir ayrıntı değildir: ilmek alan bölgesinden uzun olsaydı bu sıfır evresi hiç oluşmazdı."
         },
         "teilpunkte": 3
       },
@@ -87,7 +87,7 @@
     ],
     "haeufige_fehler": [
       "Die Länge $b = 10\\ \\text{cm}$ statt der Höhe $a = 4{,}0\\ \\text{cm}$ in $|U| = B\\,a\\,v$ eingesetzt.",
-      "Behauptet, das Gerät zeige während der gesamten Durchfahrt Spannung an — solange die Schleife vollständig im Feld ist, ist $\\Phi$ konstant.",
+      "Behauptet, das Gerät zeige während der gesamten Durchfahrt Spannung an; solange die Schleife vollständig im Feld ist, ist $\\Phi$ konstant.",
       "Einheiten nicht umgerechnet: $45\\ \\text{cm/s}$ und $4{,}0\\ \\text{cm}$ direkt eingesetzt, Ergebnis um den Faktor $10^{4}$ zu groß.",
       "In Teil e) weiter mit $|U| = B\\,a\\,v$ gerechnet, obwohl der Schlitten steht und sich nun $B$ statt $A$ ändert."
     ]

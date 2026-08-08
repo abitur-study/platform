@@ -28,9 +28,9 @@
     }
   ],
   "tipps": [
-    "Rechne die Wellenlängen zuerst in Frequenzen um. Die Einstein-Gleichung ist in $f$ linear — in $\\lambda$ nicht.",
+    "Rechne die Wellenlängen zuerst in Frequenzen um. Die Einstein-Gleichung ist in $f$ linear, in $\\lambda$ dagegen nicht.",
     "Beim Rechnen in Elektronenvolt ist die Umrechnung besonders bequem: Eine Gegenspannung von $0{,}40\\ \\text{V}$ gehört zu einer Energie von $0{,}40\\ \\text{eV}$. Überlege dir, warum das so ist.",
-    "Für die Steigung nimmt man das Wertepaar mit dem größten Frequenzabstand — dort wirken sich die Ablesefehler der einzelnen Messwerte am wenigsten aus."
+    "Für die Steigung nimmt man das Wertepaar mit dem größten Frequenzabstand; dort wirken sich die Ablesefehler der einzelnen Messwerte am wenigsten aus."
   ],
   "loesung": {
     "gesamtpunkte": 20,
@@ -50,8 +50,8 @@
         "titel": "Diagramm und Deutung der Geraden",
         "inhalt": "Trägt man $E_{kin,\\,max}$ über $f$ auf, so liegen die vier Punkte innerhalb der Ablesegenauigkeit auf einer Geraden. Die Achsen skaliert man von $0$ bis $8{,}5\\cdot 10^{14}\\ \\text{Hz}$ und von $-2{,}5\\ \\text{eV}$ bis $+1{,}5\\ \\text{eV}$, damit auch beide Achsenschnittpunkte im Bild liegen.\n\nDer Vergleich der Einstein-Gleichung mit der allgemeinen Geradengleichung\n\n$$E_{kin,\\,max} = h\\cdot f - W_A \\qquad\\text{gegen}\\qquad y = m\\cdot x + b$$\n\nliefert die Deutung:\n\n- Die Steigung ist das Plancksche Wirkungsquantum $h$. Sie ist bei jedem Kathodenmaterial gleich.\n- Der Schnittpunkt mit der Energieachse liegt bei $-W_A$, liefert also die Austrittsarbeit.\n- Der Schnittpunkt mit der Frequenzachse ist die Grenzfrequenz $f_g = \\frac{W_A}{h}$; unterhalb davon fließt kein Photostrom.",
         "warum": {
-          "de": "Der Wert der grafischen Auswertung liegt darin, dass sie drei verschiedene physikalische Größen an drei verschiedenen geometrischen Merkmalen derselben Geraden sichtbar macht. Wer statt der Geraden nur eine einzelne Messung auswertet, kann $h$ und $W_A$ prinzipiell nicht trennen — eine Gleichung mit zwei Unbekannten ist nicht lösbar.",
-          "tr": "Grafik değerlendirmenin değeri, üç farklı fiziksel büyüklüğü aynı doğrunun üç farklı geometrik özelliğinde görünür kılmasıdır. Doğru yerine tek bir ölçümü değerlendiren, $h$ ile $W_A$'yı ilkesel olarak ayıramaz — iki bilinmeyenli tek denklem çözülemez."
+          "de": "Der Wert der grafischen Auswertung liegt darin, dass sie drei verschiedene physikalische Größen an drei verschiedenen geometrischen Merkmalen derselben Geraden sichtbar macht. Wer statt der Geraden nur eine einzelne Messung auswertet, kann $h$ und $W_A$ prinzipiell nicht trennen, denn eine Gleichung mit zwei Unbekannten ist nicht lösbar.",
+          "tr": "Grafik değerlendirmenin değeri, üç farklı fiziksel büyüklüğü aynı doğrunun üç farklı geometrik özelliğinde görünür kılmasıdır. Doğru yerine tek bir ölçümü değerlendiren, $h$ ile $W_A$'yı ilkesel olarak ayıramaz, çünkü iki bilinmeyenli tek denklem çözülemez."
         },
         "teilpunkte": 5
       },
@@ -78,7 +78,7 @@
       {
         "nr": 5,
         "titel": "Fünfte Messung als Kontrolle",
-        "inhalt": "Aus der bestimmten Austrittsarbeit folgt die Grenzfrequenz\n\n$$f_g = \\frac{W_A}{h} = \\frac{2{,}20\\ \\text{eV}}{4{,}06\\cdot 10^{-15}\\ \\text{eV}\\,\\text{s}} \\approx 5{,}42\\cdot 10^{14}\\ \\text{Hz}$$\n\nund daraus die Grenzwellenlänge\n\n$$\\lambda_g = \\frac{c}{f_g} = \\frac{3{,}00\\cdot 10^{8}\\ \\frac{\\text{m}}{\\text{s}}}{5{,}42\\cdot 10^{14}\\ \\text{Hz}} \\approx 5{,}54\\cdot 10^{-7}\\ \\text{m} = 554\\ \\text{nm}$$\n\nDie fünfte Diode strahlt mit $590\\ \\text{nm} > \\lambda_g$. Ihre Photonen können die Austrittsarbeit nicht aufbringen, deshalb fließt kein Photostrom — die Messreihe ist in sich stimmig. Die vierte Diode mit $525\\ \\text{nm}$ liegt dagegen knapp unterhalb von $\\lambda_g$, was zu der sehr kleinen Gegenspannung von nur $0{,}12\\ \\text{V}$ passt.",
+        "inhalt": "Aus der bestimmten Austrittsarbeit folgt die Grenzfrequenz\n\n$$f_g = \\frac{W_A}{h} = \\frac{2{,}20\\ \\text{eV}}{4{,}06\\cdot 10^{-15}\\ \\text{eV}\\,\\text{s}} \\approx 5{,}42\\cdot 10^{14}\\ \\text{Hz}$$\n\nund daraus die Grenzwellenlänge\n\n$$\\lambda_g = \\frac{c}{f_g} = \\frac{3{,}00\\cdot 10^{8}\\ \\frac{\\text{m}}{\\text{s}}}{5{,}42\\cdot 10^{14}\\ \\text{Hz}} \\approx 5{,}54\\cdot 10^{-7}\\ \\text{m} = 554\\ \\text{nm}$$\n\nDie fünfte Diode strahlt mit $590\\ \\text{nm} > \\lambda_g$. Ihre Photonen können die Austrittsarbeit nicht aufbringen, deshalb fließt kein Photostrom; die Messreihe ist in sich stimmig. Die vierte Diode mit $525\\ \\text{nm}$ liegt dagegen knapp unterhalb von $\\lambda_g$, was zu der sehr kleinen Gegenspannung von nur $0{,}12\\ \\text{V}$ passt.",
         "warum": {
           "de": "Die Messung ohne Photostrom sieht aus wie ein wertloser Datenpunkt, ist aber der einzige unabhängige Test der gesamten Auswertung: Sie prüft eine Vorhersage, die aus $h$ und $W_A$ folgt, ohne selbst in deren Bestimmung eingegangen zu sein. Solche Konsistenzprüfungen werden im Abitur regelmäßig verlangt und sind mehr wert als eine weitere Rechnung.",
           "tr": "Fotoakımın olmadığı ölçüm değersiz bir veri noktası gibi görünür, oysa tüm değerlendirmenin tek bağımsız sınamasıdır: $h$ ve $W_A$'dan çıkan bir öngörüyü, kendisi bu büyüklüklerin belirlenmesine hiç girmeden test eder. Abitur'da bu tür tutarlılık kontrolleri sık istenir ve fazladan bir hesaptan daha değerlidir."
@@ -89,7 +89,7 @@
     "haeufige_fehler": [
       "$E_{kin}$ über $\\lambda$ statt über $f$ aufgetragen; der Zusammenhang ist dann keine Gerade und die Steigung liefert nicht $h$.",
       "Für die Steigung zwei eng benachbarte Messpunkte benutzt und dadurch die Messunsicherheit stark vergrößert.",
-      "Die Zehnerpotenz $10^{14}$ beim Bilden von $\\Delta f$ vergessen — das Ergebnis für $h$ ist dann um viele Größenordnungen falsch.",
+      "Die Zehnerpotenz $10^{14}$ beim Bilden von $\\Delta f$ vergessen; das Ergebnis für $h$ ist dann um viele Größenordnungen falsch.",
       "Die Austrittsarbeit als positiven Achsenabschnitt der Energieachse abgelesen; der Achsenabschnitt beträgt $-W_A$.",
       "Den fünften Messwert als Ausreißer verworfen, statt ihn als Bestätigung der Grenzwellenlänge zu deuten."
     ]

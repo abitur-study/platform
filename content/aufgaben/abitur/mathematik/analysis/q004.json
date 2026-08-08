@@ -36,8 +36,8 @@
         "titel": "Lage der Graphen begründen",
         "inhalt": "Prüfen an einer Stelle innerhalb des Intervalls, z. B. $x = 0$:\n\n$$f(0) = 4, \\qquad g(0) = 2$$\n\nWegen $f(0) > g(0)$ und weil sich die Graphen zwischen $x_1$ und $x_2$ nicht schneiden, verläuft der Graph von $f$ auf ganz $\\left]-2;\\,1\\right[$ oberhalb des Graphen von $g$.",
         "warum": {
-          "de": "Ein einziger Testwert genügt hier — aber nur mit Begründung: Zwischen zwei benachbarten Schnittstellen kann die Differenz $f-g$ ihr Vorzeichen nicht wechseln, denn ein Vorzeichenwechsel wäre eine weitere Nullstelle, also eine weitere Schnittstelle. Wer die Reihenfolge nur rät und $g-f$ integriert, erhält $-4{,}5$ und damit einen negativen „Flächeninhalt“, den es nicht gibt.",
-          "tr": "Burada tek bir test değeri yeter — ama gerekçesiyle birlikte: Komşu iki kesişim noktası arasında $f-g$ farkı işaret değiştiremez, çünkü işaret değişimi yeni bir kök, yani yeni bir kesişim noktası demek olurdu. Sırayı tahminle seçip $g-f$ integralini alan $-4{,}5$ bulur; negatif alan diye bir şey yoktur. *Begründen* operatörü zaten bu gerekçeyi yazmanı ister."
+          "de": "Ein einziger Testwert genügt hier, aber nur mit Begründung: Zwischen zwei benachbarten Schnittstellen kann die Differenz $f-g$ ihr Vorzeichen nicht wechseln, denn ein Vorzeichenwechsel wäre eine weitere Nullstelle, also eine weitere Schnittstelle. Wer die Reihenfolge nur rät und $g-f$ integriert, erhält $-4{,}5$ und damit einen negativen „Flächeninhalt“, den es nicht gibt.",
+          "tr": "Burada tek bir test değeri yeter, ama gerekçesiyle birlikte: Komşu iki kesişim noktası arasında $f-g$ farkı işaret değiştiremez, çünkü işaret değişimi yeni bir kök, yani yeni bir kesişim noktası demek olurdu. Sırayı tahminle seçip $g-f$ integralini alan $-4{,}5$ bulur; negatif alan diye bir şey yoktur. *Begründen* operatörü zaten bu gerekçeyi yazmanı ister."
         },
         "teilpunkte": 3
       },
@@ -47,7 +47,7 @@
         "inhalt": "$$f(x) - g(x) = (-x^2 + 4) - (x + 2) = -x^2 - x + 2$$\n\nEine Stammfunktion ist\n\n$$F(x) = -\\frac{x^3}{3} - \\frac{x^2}{2} + 2x.$$",
         "warum": {
           "de": "Die Differenz wird **vor** dem Integrieren gebildet, nicht danach: Ein Integral über eine Differenz ist einfacher und fehlerärmer als zwei getrennte Integrale, die man anschließend subtrahiert. Beim Ausklammern des Minuszeichens vor der Klammer $(x+2)$ passiert der häufigste Vorzeichenfehler der ganzen Aufgabe.",
-          "tr": "Fark integralden **önce** alınır, sonra değil: Bir farkın tek integrali, ayrı ayrı iki integral alıp çıkarmaktan hem kısa hem daha az hata yapılan yoldur. $(x+2)$ parantezinin önündeki eksiyi dağıtırken bu sorunun en sık işaret hatası yapılır — $-x-2$, $-x+2$ değil."
+          "tr": "Fark integralden **önce** alınır, sonra değil: Bir farkın tek integrali, ayrı ayrı iki integral alıp çıkarmaktan hem kısa hem daha az hata yapılan yoldur. $(x+2)$ parantezinin önündeki eksiyi dağıtırken bu sorunun en sık işaret hatası yapılır: $-x-2$, $-x+2$ değil."
         },
         "teilpunkte": 3
       },
@@ -56,7 +56,7 @@
         "titel": "Integral in den Grenzen auswerten",
         "inhalt": "$$A = \\int_{-2}^{1} \\left(-x^2 - x + 2\\right)\\,\\mathrm{d}x = \\Big[\\,F(x)\\,\\Big]_{-2}^{1}$$\n\nObere Grenze:\n$$F(1) = -\\frac{1}{3} - \\frac{1}{2} + 2 = \\frac{-2 - 3 + 12}{6} = \\frac{7}{6}$$\n\nUntere Grenze:\n$$F(-2) = \\frac{8}{3} - 2 - 4 = \\frac{8 - 18}{3} = -\\frac{10}{3}$$\n\nDifferenz:\n$$A = \\frac{7}{6} - \\left(-\\frac{10}{3}\\right) = \\frac{7}{6} + \\frac{20}{6} = \\frac{27}{6} = \\frac{9}{2}$$",
         "warum": {
-          "de": "Der Hauptsatz der Differential- und Integralrechnung erlaubt es, das Integral als Differenz zweier Funktionswerte der Stammfunktion zu berechnen — deshalb muss $F$ nur an zwei Stellen ausgewertet werden. Die häufigste Fehlerquelle ist das Minuszeichen vor $F(-2)$ in Verbindung mit dem negativen Wert: Minus mal minus ergibt plus, die Beiträge addieren sich.",
+          "de": "Der Hauptsatz der Differential- und Integralrechnung erlaubt es, das Integral als Differenz zweier Funktionswerte der Stammfunktion zu berechnen; deshalb muss $F$ nur an zwei Stellen ausgewertet werden. Die häufigste Fehlerquelle ist das Minuszeichen vor $F(-2)$ in Verbindung mit dem negativen Wert: Minus mal minus ergibt plus, die Beiträge addieren sich.",
           "tr": "Analizin temel teoremi, integrali ilkel fonksiyonun iki değerinin farkı olarak hesaplamaya izin verir; bu yüzden $F$'yi yalnızca iki noktada hesaplaman yeter. En sık hata, $F(-2)$'nin önündeki eksi ile değerin kendisinin negatif olmasının birleşmesidir: eksi çarpı eksi artı eder, iki katkı toplanır. Kesirleri ortak paydaya çevirip yazmak bu adımda hata oranını gözle görülür düşürür."
         },
         "teilpunkte": 3
@@ -66,15 +66,15 @@
         "titel": "Ergebnis angeben",
         "inhalt": "Die eingeschlossene Fläche hat den Inhalt\n\n$$A = \\frac{9}{2} = 4{,}5 \\ \\text{FE (Flächeneinheiten)}.$$",
         "warum": {
-          "de": "Der Wert ist positiv — das ist die eingebaute Plausibilitätskontrolle. Ein negatives Ergebnis hätte bedeutet, dass in Schritt 2 die Reihenfolge falsch gewählt wurde. Die Angabe „FE“ gehört dazu, solange die Aufgabe keine Einheiten wie Meter vorgibt.",
-          "tr": "Sonucun pozitif çıkması, işin içindeki hazır mantık kontrolüdür: negatif çıksaydı 2. adımda sırayı ters seçmiş olduğun anlaşılırdı. Soru metre gibi bir birim vermediği sürece „FE“ (alan birimi) yazmak beklenir — birimsiz sayı Abitur'da eksik cevap sayılır."
+          "de": "Der Wert ist positiv, und das ist die eingebaute Plausibilitätskontrolle. Ein negatives Ergebnis hätte bedeutet, dass in Schritt 2 die Reihenfolge falsch gewählt wurde. Die Angabe „FE“ gehört dazu, solange die Aufgabe keine Einheiten wie Meter vorgibt.",
+          "tr": "Sonucun pozitif çıkması, işin içindeki hazır mantık kontrolüdür: negatif çıksaydı 2. adımda sırayı ters seçmiş olduğun anlaşılırdı. Soru metre gibi bir birim vermediği sürece „FE“ (alan birimi) yazmak beklenir. Birimsiz sayı Abitur'da eksik cevap sayılır."
         },
         "teilpunkte": 1
       }
     ],
     "haeufige_fehler": [
       "Vorzeichenfehler beim Auflösen der Klammer: $-(x+2) = -x-2$, nicht $-x+2$.",
-      "Reihenfolge $f-g$ nicht begründet und stattdessen $g-f$ integriert — Ergebnis wird negativ.",
+      "Reihenfolge $f-g$ nicht begründet und stattdessen $g-f$ integriert; das Ergebnis wird negativ.",
       "Beim Einsetzen der unteren Grenze das Minuszeichen des Hauptsatzes vergessen.",
       "Flächeneinheit weggelassen oder die Schnittstellen nicht als Integrationsgrenzen genutzt."
     ]
