@@ -185,7 +185,7 @@ h3 {
 }
 /* Blok formül — spec'te mavi bir kenar çizgisiyle metinden ayrılıyor.
    Uzun blok formüller sayfayı yatay kaydırmak yerine kendi içinde kaysın. */
-.prose .katex-display {
+.katex-display {
   border-left: 4px solid var(--color-akzent);
   padding: 12px 24px;
   margin: 1rem 0;
@@ -194,9 +194,18 @@ h3 {
   overflow-x: auto;
   overflow-y: hidden;
 }
-.prose .katex-display > .katex {
+.katex-display > .katex {
   display: block;
   text-align: left;
+}
+/* Telefonda uzun bir denklem kutusundan taşıyor ve kaydırılabilir olduğu
+   anlaşılmıyor — "formül yarım görünüyor" şikayeti buradan geliyordu.
+   Bir kademe küçültmek çoğunu sığdırır; sığmayan yine kendi içinde kayar. */
+@media (max-width: 40rem) {
+  .katex-display {
+    padding: 10px 14px;
+    font-size: 0.92em;
+  }
 }
 
 /* Satır içi formül. KaTeX'in satır içi çıktısı (\frac, \sqrt, üs+alt indis)
@@ -206,10 +215,24 @@ h3 {
    inline-block satır kutusunu formülün gerçek yüksekliğine büyütür; overflow
    görünür kaldığı için taban çizgisi hizası bozulmaz (basit $v$ kayarsa fark
    edilirdi). max-width uzun bir formülün sayfayı yatay kaydırmasını engeller,
-   fazlası paragrafın kendi kaydırmasına düşer. */
-.prose .katex {
+   fazlası paragrafın kendi kaydırmasına düşer.
+
+   Kural bilerek .prose'a bağlı DEĞİL: AufgabeView'daki <MdSatir> aynı KaTeX
+   çıktısını .prose dışına — adım başlıklarına (h3), Erwartungshorizont
+   satırlarına, figcaption'a — basıyor. Orada display:inline kalırsa satır
+   kutusu büyümez ve kesir komşu satırın üstüne biner. */
+.katex {
   display: inline-block;
   max-width: 100%;
+}
+/* Kesirin payındaki üs, KaTeX'in kendi kutusunun ~0.75em üstüne çıkıyor
+   (ölçüldü); satır aralığı bunun ancak yarısını yutuyor, kalanı bir önceki
+   satırın harflerine değiyordu — $\frac{4\pi^2}{g}$ üstteki "des" kelimesinin
+   içine giriyordu. Kutuyu yukarı büyütüyoruz: inline-block olduğu için satır
+   kutusu da büyür ve önceki satır itilir. Yalnızca kesir+üs birleşimine
+   uygulanır; sade $v$ ya da $U_B$ satırları olduğu gibi kalır. */
+.katex:has(.mfrac .msupsub) {
+  padding-top: 0.4em;
 }
 /* Tek bir dev formül (uzun sayısal kesir) satır içinde kırılamaz — o paragraf
    sayfayı değil kendini kaydırsın. Blok formüldeki davranışın aynısı.
@@ -222,9 +245,20 @@ h3 {
 .prose ol {
   overflow-x: auto;
   overflow-y: hidden;
+  /* overflow-x:auto bir kaydırma kabı yaratır; overflow-y görünür kalamaz,
+     yani dikeyde KIRPAR. KaTeX'in mürekkebi kendi kutusunun dışına taşıyor
+     (üs, kesir payı, kök çatısı — ölçüldü: 20px gövdede ~7px yukarı), o
+     yüzden $v^2$'nin üssü tepeden kesiliyordu: "formül yarım görünüyor".
+     Dikey pay kırpma sınırını mürekkeğin dışına iter; aradaki fazlalık
+     aşağıdaki kardeş kuralıyla geri alınır, paragraf aralığı değişmez. */
+  padding-block: 0.45em;
 }
 .prose > * + * {
   margin-top: 0.9em;
+}
+/* 0.45em alt + 0.45em üst dolgu, kaldırılan 0.9em'lik boşluğun tam karşılığı. */
+.prose > :is(p, ul, ol) + :is(p, ul, ol) {
+  margin-top: 0;
 }
 .prose strong {
   font-weight: 650;

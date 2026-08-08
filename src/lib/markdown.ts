@@ -32,8 +32,22 @@ const pipeline = unified()
   })
   .use(rehypeStringify);
 
+/**
+ * remark-math, tek satıra yazılmış `$$…$$`'ı blok formül saymaz: açılış
+ * çitinden sonraki metni "meta" kabul eder, içinde `$` görünce vazgeçer ve
+ * satır içi matematiğe düşer. Sonuç: içerikteki 583 blok formülün tamamı
+ * paragrafın içinde satır içi basılıyordu — kesirler satır kutusuna sığmayıp
+ * komşu satıra biniyor, `.katex-display` (mavi kenar çizgisi, kendi kaydırma
+ * kutusu) ise hiç devreye girmiyordu.
+ *
+ * Çiti kendi satırlarına açmak bunu düzeltir. Yalnızca baştan sona `$$` olan
+ * satırlara dokunulur; çok satırlı bloklar zaten doğru çalışıyor.
+ */
+const bloeckeNormalisieren = (src: string) =>
+  src.replace(/^[ \t]*\$\$(.+?)\$\$[ \t]*$/gm, "$$$$\n$1\n$$$$");
+
 export function renderMd(src: string): string {
-  const datei = pipeline.processSync(src);
+  const datei = pipeline.processSync(bloeckeNormalisieren(src));
   // rehype-katex hatayı fırlatmaz, vfile mesajı olarak bırakır ve kırmızı bir
   // "katex-error" düğümü basar. Sessizce kırık formül yayınlamamak için burada patlatıyoruz.
   if (datei.messages.length > 0) {
