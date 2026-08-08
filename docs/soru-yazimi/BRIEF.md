@@ -295,7 +295,10 @@ durdurur; bu bilinçli bir tasarım.
   çözülemez yapar.
   - `"typ": "abbildung"` kullan.
   - Renk vermek yerine tema değişkenleri: `var(--color-tinte)` (çizgi/yazı),
-    `var(--color-papier)` (zemin). Sabit `#000` koyma.
+    `var(--color-papier)` (zemin), `var(--color-akzent)` (mavi vurgu),
+    `var(--color-warnung)` (turuncu-kırmızı), `var(--color-markierung)` (sarı),
+    `var(--color-gruen)` (yeşil — yalnızca diyagramda, kimya renk gözlemleri için).
+    Sabit `#000`/`#fff` koyma, yeni renk uydurma.
   - `viewBox` + `width="100%"`, sabit piksel genişliği yok (mobil).
   - Ekran okuyucu için içeriye `<title>` ve `<desc>` koy.
   - **İzinli etiketler yalnızca:** `svg g path line polyline polygon rect

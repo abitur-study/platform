@@ -11,6 +11,32 @@ import { MenueSchliesser } from "./MenueSchliesser";
 type Eintrag = { href: string; name: string; bald: boolean };
 
 /**
+ * Marka işareti — mezuniyet kepi. Geometrik ve düz: tahta bir eşkenar
+ * dörtgen, gövde tek bir yay. Süs yok, spec'teki İsviçre/editorial dile uyar.
+ * currentColor kullanmıyor: tahta mavi (akzent), gövde mürekkep — logo
+ * başlıktaki yazıyla aynı renkte erimesin.
+ */
+function Kep() {
+  return (
+    <svg
+      aria-hidden
+      viewBox="0 0 26 20"
+      className="block h-5 w-[1.625rem] shrink-0"
+      fill="none"
+    >
+      <path d="M13 1 25 7l-12 6L1 7z" fill="var(--color-akzent)" />
+      <path
+        d="M6 9.5v4.2c0 1.9 3.1 3.3 7 3.3s7-1.4 7-3.3V9.5"
+        stroke="var(--color-tinte)"
+        strokeWidth="1.7"
+        strokeLinecap="square"
+      />
+      <path d="M24 8v5.5" stroke="var(--color-tinte)" strokeWidth="1.7" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+/**
  * Başlıktaki açılır menü. Native `<details>`: açılıp kapanması, klavyesi ve
  * ekran okuyucudaki "genişletildi" durumu tarayıcıdan geliyor — Chrome sunucu
  * bileşeni olarak kalıyor, ders listesi istemciye taşınmıyor.
@@ -130,10 +156,16 @@ export function Chrome({
         {/* relative: dar ekranda açılır paneller bu kaba yaslanır (bkz. Menue). */}
         <div className="relative mx-auto flex max-w-6xl flex-wrap items-center gap-x-7 gap-y-2 px-5 py-5 sm:px-10">
           <Link href={kok} className="flex items-center gap-2.5 text-base font-bold">
-            <span aria-hidden className="block size-3.5 bg-akzent" />
+            <Kep />
             {t.site.title}
           </Link>
-          <nav aria-label={t.nav.home} className="flex gap-6 text-base font-bold">
+          {/* Telefonda kendi satırına iner (order-last + w-full), böylece dil
+              seçici logoyla aynı satırda kalır: sticky başlık üç satır
+              yerine iki satır olur. sm'den itibaren tek satır. */}
+          <nav
+            aria-label={t.nav.home}
+            className="order-last flex w-full gap-6 text-base font-bold sm:order-none sm:w-auto"
+          >
             <Menue
               titel={t.nav.abitur}
               alleHref={`${kok}/abitur`}

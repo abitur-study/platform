@@ -14,6 +14,15 @@ function Md({ src, className = "" }: { src: string; className?: string }) {
   );
 }
 
+/** Başlık içinde de $…$ çalışsın: renderMd tek paragraf verir, onu soyup span'e koyuyoruz. */
+function MdSatir({ src }: { src: string }) {
+  return (
+    <span
+      dangerouslySetInnerHTML={{ __html: renderMd(src).replace(/^<p>|<\/p>$/g, "") }}
+    />
+  );
+}
+
 /**
  * Katlanır bölüm — spec'teki "İpucu" / "Başlangıç adımı" kutusu.
  * Açıkken zemin değişmez: renk sıçraması tasarım dilinde yok, sadece ok döner.
@@ -117,7 +126,9 @@ export function AufgabeView({
         <section className="mt-10">
           {a.material.map((m) => (
             <figure key={m.titel} className="mt-6 border border-linie p-6 sm:p-8">
-              <figcaption className="text-base font-bold">{m.titel}</figcaption>
+              <figcaption className="text-base font-bold">
+                <MdSatir src={m.titel} />
+              </figcaption>
               <Md src={m.inhalt} className="mt-4" />
               <p className="mt-6 text-base text-tinte-schwach">
                 {m.quelle} · {m.lizenz}
@@ -153,7 +164,9 @@ export function AufgabeView({
         hinweis={t.aufgabe.ansatzHint}
         rechts={`1 / ${schritte.length}`}
       >
-        <p className="text-base font-bold">{schritte[0].titel}</p>
+        <p className="text-base font-bold">
+          <MdSatir src={schritte[0].titel} />
+        </p>
         <Md src={schritte[0].inhalt} className="mt-3" />
       </Klappe>
 
@@ -193,7 +206,8 @@ export function AufgabeView({
               href={`#adim-${s.nr}`}
               className="rounded-full border border-linie px-4 py-0.5 transition-colors hover:bg-akzent hover:text-papier"
             >
-              {s.nr} · {s.titel.split(/[\s—-]/)[0]}
+              {/* Kısayol etiketi tek kelime: formülü kırıp KaTeX'e vermek yerine $ ve \ atılır */}
+              {s.nr} · {s.titel.replace(/[$\\]/g, "").split(/[\s—-]/)[0]}
             </a>
           ))}
         </nav>
@@ -207,7 +221,9 @@ export function AufgabeView({
             <div className="t-52 !leading-none tabular-nums text-akzent">{s.nr}</div>
             <div>
               <div className="flex items-baseline justify-between gap-6">
-                <h3 className="t-22 !leading-snug">{s.titel}</h3>
+                <h3 className="t-22 !leading-snug">
+                <MdSatir src={s.titel} />
+              </h3>
                 <span className="shrink-0 text-base whitespace-nowrap">
                   {s.teilpunkte} {t.aufgabe.punkte}
                 </span>
@@ -233,7 +249,7 @@ export function AufgabeView({
                 className="flex justify-between gap-4 border-b border-linie py-2"
               >
                 <span>
-                  {s.nr}. {s.titel}
+                  {s.nr}. <MdSatir src={s.titel} />
                 </span>
                 <span className="shrink-0 tabular-nums">{s.teilpunkte}</span>
               </li>

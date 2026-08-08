@@ -60,6 +60,12 @@
   --color-warnung: #ee4623;
   --color-warnung-schwach: #f4c6c6;
   --color-markierung: #ffd23f;
+  /* Yalnızca soru diyagramları için — arayüzde kullanılmaz. Kimya soruları
+     renk gözlemine dayanıyor (Fehling: tiefblau → grün → gelb → orangerot);
+     paletteki diğer üç renk bunu karşılıyordu, yeşil eksikti.
+     Kâğıt zemininde kontrast 5.30 — mavi akzent'in 5.27'siyle aynı ağırlıkta,
+     hem çizgi hem metin için WCAG'i geçiyor. */
+  --color-gruen: #0f7a3d;
 
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-serif: Georgia, ui-serif, "Times New Roman", serif;
@@ -91,10 +97,15 @@ h3 {
   font-family: var(--font-display);
   font-weight: 400;
 }
+/* Alt sınır 52 -> 34px: yeni başlık ("Bugün ne öğrenmek istiyorsun?") eski
+   iki kelimelik sloganın yerini aldı ve 375px'te 52px ile dört satıra
+   bölünüyordu. Masaüstü değeri (80px) spec'teki gibi duruyor.
+   9vw ara eğimi, telefondan tablete geçişte sıçrama olmasın diye. */
 .t-hero {
-  font-size: clamp(52px, 6.4vw, 80px);
-  line-height: 1.1;
-  letter-spacing: 1.04px;
+  font-size: clamp(34px, 9vw, 80px);
+  line-height: 1.08;
+  letter-spacing: 0.02em;
+  text-wrap: balance;
 }
 /* Masaüstünde spec değeri (52/32px), dar ekranda küçülür. Sabit px bırakılırsa
    telefonda "Mathematik" kendi kartından taşıyor — clamp'in üst sınırı spec. */

@@ -55,6 +55,16 @@ test("anahtar kelimeleri ve kutucukları yakalar", () => {
   assert.ok(findeMultipleChoice("[ ] Hochpunkt\n[ ] Tiefpunkt").length > 0);
 });
 
+test("Kreuze ismi çoktan seçmeli sanılmaz", () => {
+  // Almancada `Kreuze` = çarpılar; manyetik alan şekillerinde sürekli geçer.
+  assert.deepEqual(findeMultipleChoice("Zwei Kreuze markieren die Feldrichtung."), []);
+  assert.deepEqual(findeMultipleChoice("Die Kreuze zeigen an, dass das Feld hineinzeigt."), []);
+  assert.deepEqual(findeMultipleChoice("Die Feldlinien kreuzen sich nicht."), []);
+  // Ama gerçek ankreuzen hâlâ yakalanmalı.
+  assert.ok(findeMultipleChoice("Kreuze die richtige Lösung an.").length > 0);
+  assert.ok(findeMultipleChoice("Die Antwort ist anzukreuzen.").length > 0);
+});
+
 test("gerçek Abitur alt şıkları yanlış pozitif vermez", () => {
   // Bu soruda a)/b)/c) meşru alt şıklardır — geçmeli.
   assert.deepEqual(findeMultipleChoice(gold.aufgabenstellung), []);

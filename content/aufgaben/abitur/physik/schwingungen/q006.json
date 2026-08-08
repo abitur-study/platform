@@ -7,7 +7,14 @@
   "themenbereich_slug": "schwingungen",
   "unterthema": "Bedingung für eine harmonische Schwingung",
   "niveau": "GK",
-  "operatoren": ["berechnen", "zeigen", "begründen", "beschreiben", "skizzieren", "stellung nehmen"],
+  "operatoren": [
+    "berechnen",
+    "zeigen",
+    "begründen",
+    "beschreiben",
+    "skizzieren",
+    "stellung nehmen"
+  ],
   "sprache": "de",
   "schwierigkeit": 4,
   "bearbeitungszeit_min": 45,
@@ -54,7 +61,7 @@
       {
         "nr": 4,
         "titel": "Pendelmasse und kinetische Energie beim dritten Nulldurchgang",
-        "inhalt": "**Masse.** Das Pendel startet aus der maximalen Auslenkung. Den tiefsten Punkt erreicht es zum ersten Mal nach $\\tfrac{T}{4}$, zum zweiten Mal nach $\\tfrac{3T}{4}$ und zum dritten Mal nach $\\tfrac{5T}{4}$, also nach $1{,}25$ vollen Schwingungen. Da der Behälter nach $16$ Schwingungen leer ist, sind bis dahin\n\n$$\\frac{1{,}25}{16} = \\frac{5}{64}$$\n\nder Salzmasse ausgelaufen; es verbleiben $\\frac{59}{64}$. Die anfängliche Salzmasse beträgt\n\n$$m_{\\text{Salz},0} = \\rho\\cdot V = 2{,}2\\ \\tfrac{\\text{g}}{\\text{cm}^3}\\cdot 80\\ \\text{cm}^3 = 176\\ \\text{g}$$\n\nDamit ist die Pendelmasse zu diesem Zeitpunkt\n\n$$m = 250\\ \\text{g} + \\frac{59}{64}\\cdot 176\\ \\text{g} = 250\\ \\text{g} + 162{,}25\\ \\text{g} \\approx 412\\ \\text{g} = 0{,}412\\ \\text{kg}$$\n\n**Energie.** Im tiefsten Punkt liegt die gesamte Schwingungsenergie als kinetische Energie vor; sie ist gleich der potentiellen Energie im Umkehrpunkt. Die Steighöhe folgt aus dem Streckendreieck:\n\n$$h = \\ell - \\ell\\cos\\varphi_0 = \\ell\\,(1 - \\cos\\varphi_0) = 1{,}50\\ \\text{m}\\cdot(1 - \\cos 4{,}6^\\circ) \\approx 4{,}8\\cdot 10^{-3}\\ \\text{m}$$\n\n$$E_{\\text{kin}} = m\\cdot g\\cdot h = 0{,}412\\ \\text{kg}\\cdot 9{,}81\\ \\tfrac{\\text{m}}{\\text{s}^2}\\cdot 4{,}8\\cdot 10^{-3}\\ \\text{m} \\approx 1{,}9\\cdot 10^{-2}\\ \\text{J} = 19\\ \\text{mJ}$$\n\n**Kontrollweg.** Mit $v_{\\max} = \\omega\\cdot s_{\\max} = \\frac{2\\pi}{2{,}46\\ \\text{s}}\\cdot 0{,}12\\ \\text{m} \\approx 0{,}31\\ \\frac{\\text{m}}{\\text{s}}$ folgt $E_{\\text{kin}} = \\tfrac{1}{2}m v_{\\max}^2 \\approx 1{,}9\\cdot 10^{-2}\\ \\text{J}$ — dasselbe Ergebnis.",
+        "inhalt": "**Masse.** Das Pendel startet aus der maximalen Auslenkung. Den tiefsten Punkt erreicht es zum ersten Mal nach $\\tfrac{T}{4}$, zum zweiten Mal nach $\\tfrac{3T}{4}$ und zum dritten Mal nach $\\tfrac{5T}{4}$, also nach $1{,}25$ vollen Schwingungen. Da der Behälter nach $16$ Schwingungen leer ist, sind bis dahin\n\n$$\\frac{1{,}25}{16} = \\frac{5}{64}$$\n\nder Salzmasse ausgelaufen; es verbleiben $\\frac{59}{64}$. Die anfängliche Salzmasse beträgt\n\n$$m_{\\text{Salz},0} = \\rho\\cdot V = 2{,}2\\ \\tfrac{\\text{g}}{\\text{cm}^3}\\cdot 80\\ \\text{cm}^3 = 176\\ \\text{g}$$\n\nDamit ist die Pendelmasse zu diesem Zeitpunkt\n\n$$m = 250\\ \\text{g} + \\frac{59}{64}\\cdot 176\\ \\text{g} = 250\\ \\text{g} + 162{,}25\\ \\text{g} \\approx 412\\ \\text{g} = 0{,}412\\ \\text{kg}$$\n\n**Energie.** Im tiefsten Punkt liegt die gesamte Schwingungsenergie als kinetische Energie vor; sie ist gleich der potentiellen Energie im Umkehrpunkt. Die Steighöhe folgt aus dem Streckendreieck:\n\n$$h = \\ell - \\ell\\cos\\varphi_0 = \\ell\\,(1 - \\cos\\varphi_0) = 1{,}50\\ \\text{m}\\cdot(1 - \\cos 4{,}6^\\circ) \\approx 4{,}8\\cdot 10^{-3}\\ \\text{m}$$\n\n$$E_{\\text{kin}} = m\\cdot g\\cdot h = 0{,}412\\ \\text{kg}\\cdot 9{,}81\\ \\tfrac{\\text{m}}{\\text{s}^2}\\cdot 4{,}8\\cdot 10^{-3}\\ \\text{m} \\approx 1{,}9\\cdot 10^{-2}\\ \\text{J} = 19\\ \\text{mJ}$$\n\n**Kontrollweg.** Mit $v_{\\max} = \\omega\\cdot s_{\\max} = \\frac{2\\pi}{2{,}46\\ \\text{s}}\\cdot 0{,}12\\ \\text{m} \\approx 0{,}31\\ \\text{m/s}$ folgt $E_{\\text{kin}} = \\tfrac{1}{2}m v_{\\max}^2 \\approx 1{,}9\\cdot 10^{-2}\\ \\text{J}$ — dasselbe Ergebnis.",
         "warum": {
           "de": "Die Steighöhe $h \\approx 4{,}8\\ \\text{mm}$ ist rund fünfundzwanzigmal kleiner als der waagerechte Ausschlag von $12\\ \\text{cm}$. Wer $h$ mit der Amplitude verwechselt, erhält eine um denselben Faktor zu große Energie — deshalb lohnt sich hier der zweite, völlig unabhängige Rechenweg über $v_{\\max} = \\omega\\cdot s_{\\max}$. Zwei Wege, ein Ergebnis: das ist der einzige Weg, sich ohne Lösungsblatt sicher zu sein.",
           "tr": "Yükselme yüksekliği $h \\approx 4{,}8\\ \\text{mm}$, $12\\ \\text{cm}$'lik yatay salınımdan yaklaşık yirmi beş kat küçüktür. $h$ ile genliği karıştıran, enerjiyi aynı çarpan kadar büyük bulur — bu yüzden $v_{\\max} = \\omega\\cdot s_{\\max}$ üzerinden giden ikinci ve tümüyle bağımsız yol burada değerlidir. İki yol, tek sonuç: cevap anahtarı olmadan emin olmanın tek yolu budur."

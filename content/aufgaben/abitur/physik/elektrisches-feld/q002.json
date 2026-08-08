@@ -7,7 +7,14 @@
   "themenbereich_slug": "elektrisches-feld",
   "unterthema": "Coulombsches Gesetz und radiales Feld",
   "niveau": "GK",
-  "operatoren": ["nennen", "erläutern", "berechnen", "vergleichen", "begründen", "bestimmen"],
+  "operatoren": [
+    "nennen",
+    "erläutern",
+    "berechnen",
+    "vergleichen",
+    "begründen",
+    "bestimmen"
+  ],
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 45,
@@ -32,7 +39,7 @@
       {
         "nr": 1,
         "titel": "Coulombsches Gesetz nennen und erläutern",
-        "inhalt": "Für den Betrag der Kraft zwischen zwei kugelsymmetrisch verteilten Ladungen $Q_1$ und $Q_2$ im Abstand $r$ ihrer Mittelpunkte gilt\n\n$$F(r) = \\frac{1}{4\\pi\\varepsilon_0}\\cdot\\frac{Q_1\\cdot Q_2}{r^2}$$\n\nAussagen der Formel:\n\n- Die Kraft ist proportional zum **Produkt** beider Ladungen. Verdoppelt man nur eine der beiden Ladungen, verdoppelt sich die Kraft.\n- Die Kraft ist **umgekehrt proportional zum Quadrat** des Abstandes. Verdreifacht man $r$, so sinkt $F$ auf ein Neuntel.\n- Sie wirkt längs der Verbindungsgeraden der Mittelpunkte, bei gleichen Vorzeichen abstoßend, bei ungleichen anziehend.\n- $\\varepsilon_0 = 8{,}854\\cdot 10^{-12}\\ \\frac{\\text{As}}{\\text{Vm}}$ ist eine Naturkonstante und legt fest, wie stark diese Wechselwirkung im Vakuum überhaupt ausfällt.",
+        "inhalt": "Für den Betrag der Kraft zwischen zwei kugelsymmetrisch verteilten Ladungen $Q_1$ und $Q_2$ im Abstand $r$ ihrer Mittelpunkte gilt\n\n$$F(r) = \\frac{1}{4\\pi\\varepsilon_0}\\cdot\\frac{Q_1\\cdot Q_2}{r^2}$$\n\nAussagen der Formel:\n\n- Die Kraft ist proportional zum **Produkt** beider Ladungen. Verdoppelt man nur eine der beiden Ladungen, verdoppelt sich die Kraft.\n- Die Kraft ist **umgekehrt proportional zum Quadrat** des Abstandes. Verdreifacht man $r$, so sinkt $F$ auf ein Neuntel.\n- Sie wirkt längs der Verbindungsgeraden der Mittelpunkte, bei gleichen Vorzeichen abstoßend, bei ungleichen anziehend.\n- $\\varepsilon_0 = 8{,}854\\cdot 10^{-12}\\ \\text{As/Vm}$ ist eine Naturkonstante und legt fest, wie stark diese Wechselwirkung im Vakuum überhaupt ausfällt.",
         "warum": {
           "de": "Die Formel wird oft nur als Rechenvorschrift auswendig gelernt. Für den Operator „erläutern\" musst du aber jede Größe einzeln durchgehen und sagen, wie $F$ auf ihre Änderung reagiert. Genau das quadratische Abstandsgesetz ist der Punkt, an dem die meisten Fehleinschätzungen entstehen: Ein doppelter Abstand viertelt die Kraft, halbiert sie nicht.",
           "tr": "Bu formül çoğu zaman sadece bir hesap kuralı olarak ezberlenir. Ama „erläutern\" operatörü, her büyüklüğü tek tek ele alıp $F$'in o büyüklüğün değişimine nasıl tepki verdiğini söylemeni ister. Asıl yanlış anlaşılan yer de kareyle ters orantı: mesafe iki katına çıkınca kuvvet yarıya değil, dörtte bire iner."
@@ -62,7 +69,7 @@
       {
         "nr": 4,
         "titel": "Elektrische Feldkonstante aus einem Messwert bestimmen",
-        "inhalt": "Wahl des Wertepaares: Man nimmt ein Wertepaar mit möglichst großem Abstand, hier $r = 40\\ \\text{cm}$ mit $F = 0{,}235\\ \\text{mN}$. Nur dort sind die Kugeln in guter Näherung Punktladungen, sodass das Coulombsche Gesetz überhaupt anwendbar ist.\n\nUmstellen nach $\\varepsilon_0$:\n\n$$F = \\frac{1}{4\\pi\\varepsilon_0}\\cdot\\frac{Q_1 Q_2}{r^2} \\quad\\Longleftrightarrow\\quad \\varepsilon_0 = \\frac{Q_1 Q_2}{4\\pi\\cdot F\\cdot r^2}$$\n\n$$\\varepsilon_0 = \\frac{\\left(6{,}5\\cdot 10^{-8}\\ \\text{C}\\right)^2}{4\\pi\\cdot 2{,}35\\cdot 10^{-4}\\ \\text{N}\\cdot\\left(0{,}40\\ \\text{m}\\right)^2} = \\frac{4{,}225\\cdot 10^{-15}\\ \\text{C}^2}{4{,}72\\cdot 10^{-4}\\ \\text{Nm}^2} \\approx 8{,}94\\cdot 10^{-12}\\ \\frac{\\text{C}^2}{\\text{Nm}^2}$$\n\nWegen $1\\ \\frac{\\text{C}^2}{\\text{Nm}^2} = 1\\ \\frac{\\text{As}}{\\text{Vm}}$ ist das $\\varepsilon_0 \\approx 8{,}94\\cdot 10^{-12}\\ \\frac{\\text{As}}{\\text{Vm}}$. Der Literaturwert beträgt $8{,}854\\cdot 10^{-12}\\ \\frac{\\text{As}}{\\text{Vm}}$, die Abweichung liegt also bei etwa $1\\ \\%$.",
+        "inhalt": "Wahl des Wertepaares: Man nimmt ein Wertepaar mit möglichst großem Abstand, hier $r = 40\\ \\text{cm}$ mit $F = 0{,}235\\ \\text{mN}$. Nur dort sind die Kugeln in guter Näherung Punktladungen, sodass das Coulombsche Gesetz überhaupt anwendbar ist.\n\nUmstellen nach $\\varepsilon_0$:\n\n$$F = \\frac{1}{4\\pi\\varepsilon_0}\\cdot\\frac{Q_1 Q_2}{r^2} \\quad\\Longleftrightarrow\\quad \\varepsilon_0 = \\frac{Q_1 Q_2}{4\\pi\\cdot F\\cdot r^2}$$\n\n$$\\varepsilon_0 = \\frac{\\left(6{,}5\\cdot 10^{-8}\\ \\text{C}\\right)^2}{4\\pi\\cdot 2{,}35\\cdot 10^{-4}\\ \\text{N}\\cdot\\left(0{,}40\\ \\text{m}\\right)^2} = \\frac{4{,}225\\cdot 10^{-15}\\ \\text{C}^2}{4{,}72\\cdot 10^{-4}\\ \\text{Nm}^2} \\approx 8{,}94\\cdot 10^{-12}\\ \\frac{\\text{C}^2}{\\text{Nm}^2}$$\n\nWegen $1\\ \\frac{\\text{C}^2}{\\text{Nm}^2} = 1\\ \\text{As/Vm}$ ist das $\\varepsilon_0 \\approx 8{,}94\\cdot 10^{-12}\\ \\text{As/Vm}$. Der Literaturwert beträgt $8{,}854\\cdot 10^{-12}\\ \\text{As/Vm}$, die Abweichung liegt also bei etwa $1\\ \\%$.",
         "warum": {
           "de": "Die Begründung der Messwertwahl ist hier kein Zierrat, sondern trägt die halbe Punktzahl: Hätte man das Paar bei $r = 6\\ \\text{cm}$ genommen, käme wegen der Influenz ein fast doppelt so großes $\\varepsilon_0$ heraus. Man darf eine Naturkonstante nur aus dem Bereich bestimmen, in dem das zugrunde liegende Modell nachweislich gilt — sonst misst man den Modellfehler statt der Konstante.",
           "tr": "Ölçüm çiftinin seçim gerekçesi burada süs değil, puanın yarısını taşır: $r = 6\\ \\text{cm}$ çifti alınsaydı influenz yüzünden neredeyse iki katı büyüklükte bir $\\varepsilon_0$ çıkardı. Bir doğa sabiti ancak, temelindeki modelin geçerli olduğu kanıtlanmış aralıktan belirlenebilir — aksi halde sabiti değil, modelin hatasını ölçmüş olursun."

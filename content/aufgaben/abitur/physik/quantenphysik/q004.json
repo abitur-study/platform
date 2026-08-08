@@ -7,11 +7,16 @@
   "themenbereich_slug": "quantenphysik",
   "unterthema": "Photostrom, Intensität und Frequenz",
   "niveau": "GK",
-  "operatoren": ["zeigen", "berechnen", "ermitteln", "erklären"],
+  "operatoren": [
+    "zeigen",
+    "berechnen",
+    "ermitteln",
+    "erklären"
+  ],
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 35,
-  "aufgabenstellung": "In einem Praktikum stehen zwei sonst baugleiche Vakuum-Photozellen nebeneinander: Die Kathode der einen Zelle besteht aus Kalzium, die der anderen aus Silber. Beide werden von derselben Leuchtdiode mit monochromatischem Licht der Wellenlänge $\\lambda = 405\\ \\text{nm}$ bestrahlt.\n\n$$\\begin{array}{l|c} \\text{Kathodenmaterial} & W_A\\ \\text{in eV} \\\\ \\hline \\text{Kalzium} & 2{,}70 \\\\ \\text{Silber} & 4{,}70 \\end{array}$$\n\nRechnen Sie mit $h = 6{,}626\\cdot 10^{-34}\\ \\text{J}\\,\\text{s}$, $c = 3{,}00\\cdot 10^{8}\\ \\frac{\\text{m}}{\\text{s}}$ und $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$.\n\na) Zeigen Sie durch eine Rechnung, an welcher der beiden Photozellen bei dieser Beleuchtung ein Photostrom zustande kommt. (5 BE)\n\nb) Berechnen Sie für die Kalziumzelle die Gegenspannung, bei der der Photostrom gerade auf null zurückgeht. (4 BE)\n\nc) Ermitteln Sie, welche Wellenlänge das eingestrahlte Licht höchstens haben darf, damit auch aus der Silberkathode Elektronen austreten, und ordnen Sie das Ergebnis einem Spektralbereich zu. (4 BE)\n\nd) Auf die Kalziumkathode treffen pro Sekunde $8{,}0\\cdot 10^{14}$ Photonen. Davon lösen $0{,}25\\ \\%$ jeweils ein Elektron aus; alle ausgelösten Elektronen erreichen die Auffangelektrode. Berechnen Sie die Stärke des Photostroms. (3 BE)\n\ne) Die Strahlungsleistung der Leuchtdiode wird verdoppelt, ihre Wellenlänge bleibt unverändert. Erklären Sie, wie sich dadurch der Sättigungsstrom der Kalziumzelle und die in Teilaufgabe b) bestimmte Gegenspannung ändern. (4 BE)",
+  "aufgabenstellung": "In einem Praktikum stehen zwei sonst baugleiche Vakuum-Photozellen nebeneinander: Die Kathode der einen Zelle besteht aus Kalzium, die der anderen aus Silber. Beide werden von derselben Leuchtdiode mit monochromatischem Licht der Wellenlänge $\\lambda = 405\\ \\text{nm}$ bestrahlt.\n\nRechnen Sie mit $h = 6{,}626\\cdot 10^{-34}\\ \\text{J}\\,\\text{s}$, $c = 3{,}00\\cdot 10^{8}\\ \\text{m/s}$ und $e = 1{,}602\\cdot 10^{-19}\\ \\text{C}$.\n\na) Zeigen Sie durch eine Rechnung, an welcher der beiden Photozellen bei dieser Beleuchtung ein Photostrom zustande kommt. (5 BE)\n\nb) Berechnen Sie für die Kalziumzelle die Gegenspannung, bei der der Photostrom gerade auf null zurückgeht. (4 BE)\n\nc) Ermitteln Sie, welche Wellenlänge das eingestrahlte Licht höchstens haben darf, damit auch aus der Silberkathode Elektronen austreten, und ordnen Sie das Ergebnis einem Spektralbereich zu. (4 BE)\n\nd) Auf die Kalziumkathode treffen pro Sekunde $8{,}0\\cdot 10^{14}$ Photonen. Davon lösen $0{,}25\\ \\%$ jeweils ein Elektron aus; alle ausgelösten Elektronen erreichen die Auffangelektrode. Berechnen Sie die Stärke des Photostroms. (3 BE)\n\ne) Die Strahlungsleistung der Leuchtdiode wird verdoppelt, ihre Wellenlänge bleibt unverändert. Erklären Sie, wie sich dadurch der Sättigungsstrom der Kalziumzelle und die in Teilaufgabe b) bestimmte Gegenspannung ändern. (4 BE)",
   "material": [
     {
       "typ": "tabelle",

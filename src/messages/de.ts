@@ -2,7 +2,7 @@ import type { Messages } from "./tr";
 
 export const de: Messages = {
   site: {
-    title: "Abitur & Sprachzertifikat",
+    title: "AbiStudy",
     tagline:
       "Offene Aufgaben, Lösungen mit Begründung in jedem Schritt. Kostenlos, werbefrei, Open Source.",
   },
@@ -27,10 +27,9 @@ export const de: Messages = {
     ],
     pick: "Womit möchtest du anfangen?",
     kicker: "Von Schülerinnen und Schülern des Deutschen Gymnasiums",
-    heroA: "Zwei Türen.",
-    heroB: "Ein Tisch.",
-    heroText:
-      "Offene Aufgaben, Lösungen mit Begründung für jeden Schritt. 40 Minuten an deinem Schreibtisch: lies, schreib selbst, dann öffne die Lösung. Kostenlos, werbefrei, ohne Konto.",
+    heroA: "Was möchtest du",
+    heroB: "heute lernen?",
+    heroText: "{n} Aufgaben, an einem Ort.",
     tuer: "Tür",
     faecher: "Fächer",
     szTitle: "Sprachzertifikat",

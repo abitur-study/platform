@@ -7,7 +7,12 @@
   "themenbereich_slug": "elektrisches-feld",
   "unterthema": "Millikan-Versuch: Auswertung einer Messreihe",
   "niveau": "GK",
-  "operatoren": ["zeigen", "berechnen", "ermitteln", "beurteilen"],
+  "operatoren": [
+    "zeigen",
+    "berechnen",
+    "ermitteln",
+    "beurteilen"
+  ],
   "sprache": "de",
   "schwierigkeit": 3,
   "bearbeitungszeit_min": 45,
@@ -17,6 +22,13 @@
       "typ": "tabelle",
       "titel": "Material 1: Messprotokoll von fünf Öltröpfchen",
       "inhalt": "$$\\begin{array}{c|c|c|c|c|c} \\text{Tröpfchen Nr.} & 1 & 2 & 3 & 4 & 5 \\\\ \\hline U\\ \\text{in V} & 155 & 205 & 197 & 192 & 180 \\\\ \\hline m\\ \\text{in }10^{-16}\\ \\text{kg} & 8{,}40 & 5{,}30 & 21{,}0 & 14{,}8 & 9{,}60 \\end{array}$$",
+      "quelle": "eigene Erstellung",
+      "lizenz": "CC BY-SA 4.0"
+    },
+    {
+      "typ": "abbildung",
+      "titel": "Material 2: Versuchsaufbau der Millikan-Apparatur",
+      "inhalt": "<svg viewBox=\"0 0 620 300\" width=\"100%\" role=\"img\" aria-label=\"Schnitt durch den waagerechten Plattenkondensator einer Millikan-Apparatur mit schwebendem Öltröpfchen\"><defs><marker id=\"pf-ef-q004\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"var(--color-akzent)\"/></marker></defs><title>Versuchsaufbau: waagerechter Plattenkondensator der Millikan-Apparatur</title><desc>Schnitt durch die waagerecht liegenden Platten einer Millikan-Apparatur. Zwei gleich lange, waagerechte Platten liegen genau übereinander; die obere ist die Deckplatte, die untere die Bodenplatte. Der lichte Abstand zwischen den einander zugewandten Plattenflächen ist mit einem Maßpfeil als d gleich 6,20 Millimeter bemaßt. Genau in der Mitte des Zwischenraums schwebt ein einzelnes kugelförmiges Öltröpfchen mit der Masse m und der Ladung q; die Dichte des Öls beträgt 950 Kilogramm je Kubikmeter. Rechts außerhalb der Platten führen zwei Leitungen von den Plattenenden zu einer regelbaren Spannungsquelle, die als Kreis mit dem Buchstaben U dargestellt ist. Feldlinien, Ladungsvorzeichen und Kraftpfeile sind bewusst nicht eingezeichnet.</desc><text x=\"140\" y=\"44\" text-anchor=\"start\" font-size=\"13\" fill=\"var(--color-tinte)\">Öl: ρ = 950 kg/m³</text><rect x=\"140\" y=\"70\" width=\"340\" height=\"8\" fill=\"var(--color-tinte)\"/><rect x=\"140\" y=\"218\" width=\"340\" height=\"8\" fill=\"var(--color-tinte)\"/><line x1=\"190\" y1=\"78\" x2=\"190\" y2=\"218\" stroke=\"var(--color-akzent)\" stroke-width=\"1.4\" marker-start=\"url(#pf-ef-q004)\" marker-end=\"url(#pf-ef-q004)\"/><text x=\"198\" y=\"152\" text-anchor=\"start\" font-size=\"13\" fill=\"var(--color-akzent)\">d = 6,20 mm</text><circle cx=\"320\" cy=\"148\" r=\"7\" fill=\"var(--color-papier)\" stroke=\"var(--color-tinte)\" stroke-width=\"1.6\"/><text x=\"334\" y=\"142\" text-anchor=\"start\" font-size=\"13\" fill=\"var(--color-tinte)\">Öltröpfchen</text><text x=\"334\" y=\"158\" text-anchor=\"start\" font-size=\"13\" fill=\"var(--color-tinte)\">Masse m, Ladung q</text><polyline points=\"480,74 546,74 546,132\" fill=\"none\" stroke=\"var(--color-tinte)\" stroke-width=\"1.6\"/><polyline points=\"480,222 546,222 546,164\" fill=\"none\" stroke=\"var(--color-tinte)\" stroke-width=\"1.6\"/><circle cx=\"546\" cy=\"148\" r=\"16\" fill=\"var(--color-papier)\" stroke=\"var(--color-tinte)\" stroke-width=\"1.6\"/><text x=\"546\" y=\"153\" text-anchor=\"middle\" font-size=\"13\" fill=\"var(--color-tinte)\">U</text><text x=\"546\" y=\"252\" text-anchor=\"middle\" font-size=\"13\" fill=\"var(--color-tinte)\">U (regelbar)</text><text x=\"140\" y=\"276\" text-anchor=\"start\" font-size=\"12\" fill=\"var(--color-tinte)\">Die Platten liegen waagerecht; der Aufbau ist nicht maßstäblich.</text></svg>",
       "quelle": "eigene Erstellung",
       "lizenz": "CC BY-SA 4.0"
     }
@@ -44,8 +56,8 @@
         "titel": "Ladungen der fünf Tröpfchen berechnen",
         "inhalt": "Beispielrechnung für Tröpfchen Nr. 1 mit $m = 8{,}40\\cdot 10^{-16}\\ \\text{kg}$, $U = 155\\ \\text{V}$ und $d = 6{,}20\\cdot 10^{-3}\\ \\text{m}$:\n\n$$q_1 = \\frac{8{,}40\\cdot 10^{-16}\\ \\text{kg}\\cdot 9{,}81\\ \\frac{\\text{m}}{\\text{s}^2}\\cdot 6{,}20\\cdot 10^{-3}\\ \\text{m}}{155\\ \\text{V}} = \\frac{5{,}11\\cdot 10^{-17}\\ \\text{Nm}}{155\\ \\text{V}} \\approx 3{,}30\\cdot 10^{-19}\\ \\text{C}$$\n\nAnalog für die übrigen Tröpfchen:\n\n$$\\begin{array}{c|c|c|c|c|c} \\text{Nr.} & 1 & 2 & 3 & 4 & 5 \\\\ \\hline q\\ \\text{in }10^{-19}\\ \\text{C} & 3{,}30 & 1{,}57 & 6{,}48 & 4{,}69 & 3{,}24 \\end{array}$$",
         "warum": {
-          "de": "Die Einheitenkontrolle lohnt sich hier besonders: $\\frac{\\text{kg}\\cdot\\frac{\\text{m}}{\\text{s}^2}\\cdot\\text{m}}{\\text{V}} = \\frac{\\text{Nm}}{\\text{V}} = \\frac{\\text{J}}{\\text{V}} = \\text{C}$. Wenn am Ende Coulomb herauskommt, hat man die Formel garantiert richtig aufgelöst — bei fünf gleichartigen Rechnungen ist das die schnellste Absicherung gegen einen systematischen Fehler in allen fünf.",
-          "tr": "Birim kontrolü burada özellikle işe yarar: $\\frac{\\text{kg}\\cdot\\frac{\\text{m}}{\\text{s}^2}\\cdot\\text{m}}{\\text{V}} = \\frac{\\text{Nm}}{\\text{V}} = \\frac{\\text{J}}{\\text{V}} = \\text{C}$. Sonuçta Coulomb çıkıyorsa formülü kesinlikle doğru çözmüşsündür — birbirinin aynısı beş hesapta bu, beşini birden bozacak sistematik bir hataya karşı en hızlı güvencedir."
+          "de": "Die Einheitenkontrolle lohnt sich hier besonders: $\\frac{\\text{kg}\\cdot\\frac{\\text{m}}{\\text{s}^2}\\cdot\\text{m}}{\\text{V}} = \\text{Nm/V} = \\text{J/V} = \\text{C}$. Wenn am Ende Coulomb herauskommt, hat man die Formel garantiert richtig aufgelöst — bei fünf gleichartigen Rechnungen ist das die schnellste Absicherung gegen einen systematischen Fehler in allen fünf.",
+          "tr": "Birim kontrolü burada özellikle işe yarar: $\\frac{\\text{kg}\\cdot\\frac{\\text{m}}{\\text{s}^2}\\cdot\\text{m}}{\\text{V}} = \\text{Nm/V} = \\text{J/V} = \\text{C}$. Sonuçta Coulomb çıkıyorsa formülü kesinlikle doğru çözmüşsündür — birbirinin aynısı beş hesapta bu, beşini birden bozacak sistematik bir hataya karşı en hızlı güvencedir."
         },
         "teilpunkte": 3
       },
