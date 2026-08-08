@@ -153,7 +153,8 @@ export default async function Landing({
         </h1>
         {/* Sayfadaki tek somut bilgi: soru sayısı. Build sırasında sayılır,
             soru eklendikçe kendiliğinden güncellenir, elle bakım istemez. */}
-        <p className="t-32 mx-auto mt-4 max-w-[35rem] text-balance font-bold text-akzent">
+        {/* t-32 ile t-52 arası: başlıktan küçük kalmalı, ama ondan da az değil. */}
+        <p className="mx-auto mt-4 max-w-[35rem] text-[clamp(1.75rem,5vw,40px)] leading-tight text-balance font-bold text-akzent">
           {t.landing.heroText.replace("{n}", String(alle.length))}
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
