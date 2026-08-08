@@ -147,16 +147,14 @@ export default async function Landing({
           <span aria-hidden className="block size-3 rounded-full bg-akzent" />
           {t.landing.kicker}
         </p>
-        <h1 className="t-hero mt-6">
-          {t.landing.heroA}
-          <br />
-          {t.landing.heroB}
+        {/* Soru tek satırda ve küçük: hero'nun ağırlığı somut bilgide, soruda değil. */}
+        <h1 className="t-32 mt-6 text-balance">
+          {t.landing.heroA} {t.landing.heroB}
         </h1>
-        {/* Vurgu rengi başlıktan alt satıra taşındı: başlık tek parça okunur,
-            mavi de sayfadaki tek somut bilgiyi (soru sayısı) taşır.
-            Sayı build sırasında sayılır — soru eklendikçe kendiliğinden
-            güncellenir, elle bakım istemez ve hep doğru kalır. */}
-        <p className="t-22 mx-auto mt-6 max-w-[35rem] font-bold text-akzent">
+        {/* Sayfadaki tek somut bilgi (soru sayısı) hero'nun en büyük satırı —
+            ama t-hero'dan bir kademe küçük. Sayı build sırasında sayılır:
+            soru eklendikçe kendiliğinden güncellenir, elle bakım istemez. */}
+        <p className="t-52 mx-auto mt-4 max-w-[35rem] text-balance font-bold text-akzent">
           {t.landing.heroText.replace("{n}", String(alle.length))}
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
