@@ -1,7 +1,7 @@
 /** Arayüz sözlüğü — TR referans dil. de.ts ve en.ts bu tipe uymak zorunda. */
 export const tr = {
   site: {
-    title: "Abitur & Sprachzertifikat",
+    title: "AbiStudy",
     tagline:
       "Açık uçlu sorular, her adımı gerekçeli çözümler. Ücretsiz, reklamsız, açık kaynak.",
   },
@@ -26,10 +26,9 @@ export const tr = {
     ],
     pick: "Nereden başlamak istersin?",
     kicker: "Özel Alman Lisesi öğrencileri tarafından",
-    heroA: "İki kapı.",
-    heroB: "Bir masa.",
-    heroText:
-      "Açık uçlu sorular, her adımı gerekçeli çözümler. Oturduğun yerden 40 dakika: oku, kendin yaz, sonra çözümü aç. Ücretsiz, reklamsız, hesapsız.",
+    heroA: "Bugün ne öğrenmek",
+    heroB: "istiyorsun?",
+    heroText: "{n} soru, tek bir yerde.",
     tuer: "Kapı",
     faecher: "ders",
     szTitle: "Sprachzertifikat",

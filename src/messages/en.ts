@@ -2,7 +2,7 @@ import type { Messages } from "./tr";
 
 export const en: Messages = {
   site: {
-    title: "Abitur & Sprachzertifikat",
+    title: "AbiStudy",
     tagline:
       "Open-ended questions, solutions that justify every step. Free, ad-free, open source.",
   },
@@ -27,10 +27,9 @@ export const en: Messages = {
     ],
     pick: "Where would you like to start?",
     kicker: "Made by students of the German High School",
-    heroA: "Two doors.",
-    heroB: "One desk.",
-    heroText:
-      "Open-ended questions, solutions that justify every step. Forty minutes at your own desk: read it, write it yourself, then open the solution. Free, ad-free, no account.",
+    heroA: "What do you want",
+    heroB: "to learn today?",
+    heroText: "{n} questions, all in one place.",
     tuer: "Door",
     faecher: "subjects",
     szTitle: "Language certificate",

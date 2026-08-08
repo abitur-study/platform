@@ -152,7 +152,11 @@ export default async function Landing({
           <br />
           <span className="text-akzent">{t.landing.heroB}</span>
         </h1>
-        <p className="mx-auto mt-6 max-w-[35rem]">{t.landing.heroText}</p>
+        {/* Soru sayısı build sırasında sayılır: slogan soru eklendikçe
+            kendiliğinden güncellenir, elle bakım istemez ve hep doğru kalır. */}
+        <p className="mx-auto mt-6 max-w-[35rem]">
+          {t.landing.heroText.replace("{n}", String(alle.length))}
+        </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           {tueren.map((k) => (
             <Link
